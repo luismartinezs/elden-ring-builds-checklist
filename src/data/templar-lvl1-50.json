@@ -1,0 +1,103 @@
+[
+  {
+    "id": "1",
+    "description": "<a href='https://www.youtube.com/watch?v=HfzZaFaeet4'>Watch the YouTube guide</a>"
+  },
+  {
+    "id": "2",
+    "description": "Confessor as starting class"
+  },
+  {
+    "id": "3",
+    "description": "Any keepsake (Stonesword Key recommended as you need one for the <a href='URL_TO_GREEN_TURTLE_TALISMAN'>Green Turtle Talisman</a>, but you also get one in Stormhill Shack)"
+  },
+  {
+    "id": "4",
+    "description": "As you progress, level both VGR and END to 20"
+  },
+  {
+    "id": "5",
+    "description": "Your initial weapon and shield are OK to start and upgrade"
+  },
+  {
+    "id": "6",
+    "description": "<a href='URL_TO_GREEN_TURTLE_TALISMAN'>Green Turtle Talisman</a> from Summonwater Village (northeast Limgrave) (requires one Stonesword Key)"
+  },
+  {
+    "id": "7",
+    "description": "Sacred Blade ash of war, dropped by a Teardrop Scarab North of the Third Church of Marika"
+  },
+  {
+    "id": "8",
+    "description": "Golden Vow Ash of War, dropped by a mounted Godrick Knight on the cliff southwest above the Deathtouched Catacombs when defeated (Stormhill, in the cliffs east of the colosseum)"
+  },
+  {
+    "id": "9",
+    "description": "Buy Great Helm from Nomadic Merchant in south Caelid",
+    "tags": ["optional"]
+  },
+  {
+    "id": "10",
+    "description": "Let Magrit kill you to have access to Roundtable Hold"
+  },
+  {
+    "id": "11",
+    "description": "Buy Knight Greaves and Knight gauntlets from Twin Maidens in Roundtable Hold",
+    "tags": ["optional"]
+  },
+  {
+    "id": "12",
+    "description": "Farm Noble's Slender Sword (longest reach straight sword) from Wandering Nobles among the Troll-pulled Carriage's caravan to the west of Waypoint Ruins OR keep using Broadsword (starting weapon) OR use any other weapon you like",
+    "tags": ["optional"]
+  },
+  {
+    "id": "13",
+    "description": "Upgrade your sword, you can level it up to +5 if you farm Smithing Stone 1 and 2 from Limgrave"
+  },
+  {
+    "id": "14",
+    "description": "Farm Brass Shield (STR 16) from outpost nearby Gatefront site of grace OR just keep killing Godrick Soldiers and Raya Lucaria Soldiers throughout the game until one drops it",
+    "tags": ["optional"]
+  },
+  {
+    "id": "15",
+    "description": "Once you get Brass Shield, raise STR to 16"
+  },
+  {
+    "id": "16",
+    "description": "Barricade Shield ash of war, dropped by Night's Cavalry at Weeping Peninsula"
+  },
+  {
+    "id": "17",
+    "description": "Beat Magrit"
+  },
+  {
+    "id": "18",
+    "description": "Curved Sword Talisman from Stormveil Cliffside Site of Grace in Stormveil Castle, in the dark room with the Banished Knight"
+  },
+  {
+    "id": "19",
+    "description": "Keep progressing through the game and leveling FAI to 29"
+  },
+  {
+    "id": "20",
+    "description": "Blessing's Boon (FAI 24), purchased from Miriel in the Church of Vows (Liurnia)"
+  },
+  {
+    "id": "21",
+    "description": "Aspect of the Crucible's Tail (FAI 27), dropped by the Crucible Knight boss in Stormhill Evergaol"
+  },
+  {
+    "id": "22",
+    "description": "Farm Mausoleum Knight Armor from Mausoleum Knights. Easiest one to farm is directly outside the Black Knife Catacombs entrance (Liurnia) (~3% drop rate)",
+    "tags": ["optional"]
+  },
+  {
+    "id": "23",
+    "description": "Assassin Cerulean Dagger from Black Knife Catacombs in northeast Liurnia"
+  },
+  {
+    "id": "24",
+    "description": "Past level 50 keep leveling END and FAI as primary stats, and VGR as secondary stat"
+  }
+]

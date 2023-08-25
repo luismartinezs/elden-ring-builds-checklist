@@ -6,7 +6,9 @@ export function PageLayout({ children }: { children: React.ReactNode }) {
     <div className="relative isolate flex h-full min-h-screen flex-col justify-between">
       <div>
         <Header className="z-30" />
-        <main className="relative isolate">{children}</main>
+        <main className="container relative isolate mx-auto px-4 py-8">
+          {children}
+        </main>
       </div>
       <Footer />
     </div>

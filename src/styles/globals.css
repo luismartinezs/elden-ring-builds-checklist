@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 body {
-  @apply bg-stone-900;
+  @apply bg-stone-900 text-stone-100;
+}
+
+a {
+  @apply text-amber-400 hover:text-amber-500;
 }

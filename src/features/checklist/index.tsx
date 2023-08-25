@@ -1,1 +1,1 @@
-export { Checklist } from "./components/Checklist";
+export { Checklist, type ChecklistItem } from "./components/Checklist";

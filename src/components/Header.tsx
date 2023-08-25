@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { FaStripe } from "react-icons/fa";
 import { GrFormClose } from "react-icons/gr";
 import { BsChevronRight } from "react-icons/bs";
 
@@ -48,10 +47,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
   }, [router.pathname]);
 
   return (
-    <header
-      className={classnames("absolute left-0 right-0 top-0", className)}
-      {...otherProps}
-    >
+    <header className={classnames(className)} {...otherProps}>
       <nav className="px-4 text-white lg:px-6">
         <div className="relative mx-auto flex max-w-screen-xl flex-wrap items-center justify-between py-2">
           <LogoLink className="lg:hidden" />
@@ -68,25 +64,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
               ))}
             </ul>
           </div>
-          <div className="hidden w-full items-center justify-between lg:order-2 lg:flex lg:w-auto">
-            <ul className="mt-4 flex flex-col items-center font-medium lg:mt-0 lg:flex-row lg:space-x-8">
-              <li>
-                <PrimaryLink href="#" className="group flex items-center gap-1">
-                  <span>Contact sales</span>
-                  <AnimatedArrow />
-                </PrimaryLink>
-              </li>
-              <li>
-                <PrimaryLink
-                  href="#"
-                  className="group flex items-center gap-1 rounded-full bg-white/25 py-[6px] pl-[18px] pr-[10px] transition-opacity hover:bg-white/40 hover:opacity-100"
-                >
-                  <span>Sign in</span>
-                  <AnimatedArrow />
-                </PrimaryLink>
-              </li>
-            </ul>
-          </div>
+
           {/* MOBILE NAV BAR */}
           <div
             className={classnames(
@@ -125,11 +103,6 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-auto flex w-full justify-center bg-slate-100 py-3">
-                  <ArrowButton className="bg-[#635BFF] py-[5px] pl-4 pr-2 font-semibold text-white hover:bg-slate-900">
-                    Sign in
-                  </ArrowButton>
-                </div>
               </div>
             </div>
           </div>

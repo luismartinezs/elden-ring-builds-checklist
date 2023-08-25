@@ -1,16 +1,24 @@
-const checklists = ["templar-lvl1-50"];
+import Link from "next/link";
+import { PageLayout } from "~/layouts/PageLayout";
 
-export function ChecklistsPage() {
+const checklists = [
+  {
+    path: "templar-lvl1-50",
+    label: "Templar Level 1-50",
+  },
+];
+
+export default function ChecklistsPage() {
   return (
-    <div>
-      <h1>Checklists</h1>
-      <ul>
-        {checklists.map((checklist) => (
-          <li key={checklist}>
-            <a href={`/checklists/${checklist}`}>{checklist}</a>
+    <PageLayout>
+      <h1 className="text-2xl">Checklists</h1>
+      <ul className="mt-4">
+        {checklists.map(({ path, label }) => (
+          <li key={path}>
+            <Link href={`/checklists/${path}`}>{label}</Link>
           </li>
         ))}
       </ul>
-    </div>
+    </PageLayout>
   );
 }

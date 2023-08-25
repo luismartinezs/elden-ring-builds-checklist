@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 
+export interface ChecklistItem {
+  id: string;
+  description: string;
+  tags?: string[];
+}
+
 export function Checklist({
   items,
 }: {
@@ -19,10 +25,10 @@ export function Checklist({
   };
 
   return (
-    <ul>
+    <ul className="flex flex-col gap-2 px-4">
       {items.map((item) => (
         <li key={item.id}>
-          <label>
+          <label className="flex gap-2">
             <input
               type="checkbox"
               name={item.id}

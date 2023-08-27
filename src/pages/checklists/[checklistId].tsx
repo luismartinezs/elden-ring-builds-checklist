@@ -2,6 +2,8 @@ import { Checklist, type TChecklist } from "~/features/checklist";
 import { PageLayout } from "~/layouts/PageLayout";
 import { lists } from "~/data";
 import { type GetStaticProps, type GetStaticPaths } from "next";
+import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
+import { Button } from "~/components/Button";
 
 export const getStaticPaths: GetStaticPaths = () => {
   const paths = Object.values(lists).map((list) => ({
@@ -31,12 +33,18 @@ export default function ChecklistPage({
 }: {
   checklist: TChecklist | null;
 }) {
+  const { setItems } = useCheckItem();
   if (!checklist) {
     return null;
   }
   return (
     <PageLayout>
       <h1 className="mb-4 text-2xl">{checklist.title}</h1>
+      <div className="gap my-4 flex items-center">
+        <Button onClick={() => setItems([])} variant="outline">
+          Uncheck all
+        </Button>
+      </div>
       <Checklist items={checklist.items} />
     </PageLayout>
   );

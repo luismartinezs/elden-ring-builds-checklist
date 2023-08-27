@@ -1,6 +1,6 @@
 import { produce } from "immer";
 import { useRouter } from "next/router";
-import { useLocalStorage } from "~/hooks/useLocalStorage";
+import { useLocalStorage } from 'usehooks-ts'
 
 export function useCheckItem() {
   const router = useRouter();
@@ -21,6 +21,8 @@ export function useCheckItem() {
   }) => {
     updateCheckedItems(
       produce(checkedItems, (draft) => {
+        console.log(itemId, checked)
+        console.log('checkItem draft before', draft)
         if (checked) {
           if (!draft.includes(itemId)) {
             draft.push(itemId);
@@ -31,6 +33,7 @@ export function useCheckItem() {
             draft.splice(index, 1);
           }
         }
+        console.log('checkItem draft after', draft)
         return draft;
       })
     );
@@ -41,5 +44,6 @@ export function useCheckItem() {
   return {
     checkItem,
     isChecked,
+    setItems: updateCheckedItems,
   };
 }

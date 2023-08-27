@@ -98,8 +98,86 @@ const list = {
     },
     {
       id: 'a42f9524-240e-4d60-8a7c-af6c109f5fff',
-      description: `Progress Varre questline to access Mohgwyn Palace: first, beat Godrick and get his Great Rune. talk to Enia in Roundtable Hold. Find Varre him in Rose Church (south east of TEMPLE QUARTER grace, Liurnia), get festering bloody finger from him, invade players 3 times (you can leave their world immediately). Talk to Varre again to get Lord of Blood's Favor. Go to the Four Belfries, get the Imbued Sword Key from the top (fourth) belfry, then enter the waygate in the Second Belfry (it has a message next to it "Precipice of Anticipation"). Kill the Grafted Scion and reach the Chapel of Anticipation. Soak Lord of Blood's Favor in the maiden inside the chapel. return to Rose Chuch to talk to Varre twice, then use the Pureblood Knight's Medal he gives you`,
-      tags: ['OPTIONAL']
+      description: `Progress Varre questline to access Mohgwyn Palace`,
+      tags: ['OPTIONAL'],
+      items: [
+        {
+          id: '47350604-1d3b-44f9-91ec-308bb46f59a8',
+          description: 'Beat Godrick and acquire his Great Rune.',
+          tags: []
+        },
+        {
+          id: '67896d0e-7fb5-4c8d-a368-4c65da98882b',
+          description: 'Talk to Enia in Roundtable Hold.',
+          tags: []
+        },
+        {
+          id: '0480105e-ee66-4786-88b3-d07bcafbe4d6',
+          description: 'Locate Varre in Rose Church (south east of TEMPLE QUARTER grace, Liurnia).',
+          tags: []
+        },
+        {
+          id: 'e104923a-32ba-488b-bb94-4c20b32c263a',
+          description: 'Obtain festering bloody finger from Varre.',
+          tags: []
+        },
+        {
+          id: 'fa2d45e0-ed58-4e1a-aa64-90e577ad386e',
+          description: 'Invade players 3 times (quick exits are allowed).',
+          tags: []
+        },
+        {
+          id: '4dc6eda1-baa7-4a38-b192-818e5199a3ed',
+          description: "Talk to Varre again to obtain Lord of Blood's Favor.",
+          tags: []
+        },
+        {
+          id: '76493b9d-9bcf-45b9-aef1-c61a3661de06',
+          description: 'Travel to the Four Belfries.',
+          tags: []
+        },
+        {
+          id: '29f20517-d0d3-4120-956b-ef670e368ecf',
+          description: 'Obtain the Imbued Sword Key from the top (fourth) belfry.',
+          tags: []
+        },
+        {
+          id: 'e569f1eb-bc95-4523-a168-f1dba784101a',
+          description: 'Enter the waygate in the Second Belfry (look for the message "Precipice of Anticipation").',
+          tags: []
+        },
+        {
+          id: '2c8b31a9-0f80-4118-b121-fc1c02dd692d',
+          description: 'Defeat the Grafted Scion.',
+          tags: []
+        },
+        {
+          id: 'e68bea6a-e1c9-48d0-a212-05baf275c9e5',
+          description: 'Reach the Chapel of Anticipation.',
+          tags: []
+        },
+        {
+          id: 'abfe6273-0a13-4842-8eef-93cec89de707',
+          description: "Soak Lord of Blood's Favor in the maiden inside the chapel.",
+          tags: []
+        },
+        {
+          id: '765ebc6c-fd56-4d73-b4e4-7f1edf38989c',
+          description: 'Return to Rose Church.',
+          tags: []
+        },
+        {
+          id: '0bd8f8ed-f721-4650-84f4-4cb752b9a119',
+          description: 'Talk to Varre twice.',
+          tags: []
+        },
+        {
+          id: 'fbb6c819-ecda-4180-98a1-880e6d342b55',
+          description: "Use the Pureblood Knight's Medal he provides.",
+          tags: []
+        }
+      ]
+
     },
     {
       id: '758a4f11-7626-4b58-bd3b-b8ba1cf2b607',

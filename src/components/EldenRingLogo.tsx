@@ -1,35 +1,5 @@
 import classnames from "classnames";
 
-function calcOffset(
-  size: number,
-  position: "center" | "top" | "left" | "right"
-): { top: string | number; left: string | number } {
-  const ratio = 1 / 3.33;
-
-  switch (position) {
-    case "center":
-      return {
-        top: 0,
-        left: 0,
-      };
-    case "top":
-      return {
-        top: `-${size * ratio}px`,
-        left: 0,
-      };
-    case "left":
-      return {
-        top: `${size * ratio}px`,
-        left: `-${size * ratio}px`,
-      };
-    case "right":
-      return {
-        top: `${size * ratio}px`,
-        left: `${size * ratio}px`,
-      };
-  }
-}
-
 function calcTransform(
   size: number,
   position: "center" | "top" | "left" | "right"
@@ -66,7 +36,6 @@ function Ring({
         height: size,
         transformOrigin: "center",
         transform: calcTransform(size, position),
-        // ...calcOffset(size, position),
       }}
     ></div>
   );

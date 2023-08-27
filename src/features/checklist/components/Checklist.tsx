@@ -5,7 +5,6 @@ import { Tag } from "~/features/checklist/components/Tag";
 import Toggler from "~/features/checklist/components/Toggler";
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
 import { useFilter } from "~/hooks/useFilter";
-import { produce } from "immer";
 
 const ChecklistLabel = ({
   description,

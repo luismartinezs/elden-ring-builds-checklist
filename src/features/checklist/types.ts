@@ -12,5 +12,6 @@ export interface TChecklist {
   id: string;
   slug: string;
   title: string;
+  notes?: string[];
   items: TChecklistItem[];
 }

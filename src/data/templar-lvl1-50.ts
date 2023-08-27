@@ -2,11 +2,10 @@ const list = {
   id: "545c07ad-a695-4422-8861-bab9c49a0a54",
   slug: "templar-lvl-1-50",
   title: "Templar Level 1-50",
+  notes: [
+    `Build based on this <a href='https://www.youtube.com/watch?v=HfzZaFaeet4' target='_blank'>Elden Ring Faith Build Guide</a>`,
+  ],
   items: [
-    {
-      "id": "dbb80659-fe5d-4ea5-8bdc-807e517bc617",
-      "description": "<a href='https://www.youtube.com/watch?v=HfzZaFaeet4' target='_blank'>Watch the YouTube guide</a>"
-    },
     {
       "id": "3b243472-ecb9-47aa-87a2-a0c3bd58938e",
       "description": "Confessor as starting class"

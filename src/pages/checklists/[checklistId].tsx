@@ -7,6 +7,7 @@ import { Button } from "~/components/Button";
 import { useFilter } from "~/hooks/useFilter";
 import { useIsClient } from "usehooks-ts";
 import Head from "next/head";
+import { Fragment } from "react";
 
 export const getStaticPaths: GetStaticPaths = () => {
   const paths = Object.values(lists).map((list) => ({
@@ -78,6 +79,13 @@ export default function ChecklistPage({
           </>
         )}
       </div>
+      {checklist.notes?.map((note, index) => (
+        <p
+          key={`${checklist.id}-note-${index}`}
+          className="mb-4"
+          dangerouslySetInnerHTML={{ __html: note }}
+        ></p>
+      ))}
       <Checklist items={checklist.items} />
     </PageLayout>
   );

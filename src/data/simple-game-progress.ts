@@ -3,7 +3,7 @@ const list = {
   slug: "simple-game-progress",
   title: "Simple Game Progress",
   notes: [
-    "I've marked as optional all non-required bosses. I've marked as non optional the ancient smithing stones that seemed to me less annoying to reach and the rest optional. Weapon upgrades are written as normal (somber). Kill all merchants you find and give the bells to the twin maidens in Roundtable Hold. Buy from them all smithing stones you can when available. Get whatever smithing stones you miss from caves (the ones that are displayed in the map) or by looking where to find them in Fextralife. As a rule of thumb of leveling, 1) Level up to match weapon requirements, 2) Every 2 levels, spend one point in VGR and the other in your primary stat, 3) If you didn't decide yey what your primary stat is, just level VGR until figuring out"
+    `All non-required bosses marked as optional. Easily reachable ancient smithing stones not marked as optional, others are optional. Weapon upgrades are written as "normal (somber)". Kill any merchants (except for maybe Kale) give their bells to the twin maidens to be able to easily buy smithing stones when you need them. If you're missing stones, explore caves or check Fextralife for locations.\nSimple rule of thumb for leveling: 1) Meet weapon needs first, 2) Every two levels, add one point to VGR and one to your main stat(s), 3) If unsure about your main stat, just boost VGR until you figure it out`
   ],
   items: [
     {

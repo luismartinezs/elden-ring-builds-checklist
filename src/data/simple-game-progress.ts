@@ -38,7 +38,7 @@ const list = {
     },
     {
       id: 'd9792932-bdf7-4d3f-8011-d2c2c45acbc9',
-      description: 'Get the Dectus Medallion (Left) from Fort Haight (optionally, kill Godrick Knight at the top level to get Bloody slash ash of war)',
+      description: 'Get the Dectus Medallion (Left) from Fort Haight (recommended, kill Godrick Knight at the top level to get Bloody slash ash of war)',
       tags: []
     },
     {

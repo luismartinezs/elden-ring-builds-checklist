@@ -16,6 +16,6 @@ This is to make it easier to play the game without having to look up guides cons
 - [ ] List items can have child lists
 - [x] Checked items are saved in localStorage
   - [x] save data has shape 'listId=[...itemIds]'
-- [ ] Button uncheck all
+- [x] Button uncheck all
 - [ ] Button filter completed
-- [ ] Filter by tag
+- [x] Filter by tag (optional)

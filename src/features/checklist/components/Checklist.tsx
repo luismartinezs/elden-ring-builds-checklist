@@ -4,6 +4,8 @@ import { type TChecklistItem } from "~/features/checklist/types";
 import { Tag } from "~/features/checklist/components/Tag";
 import Toggler from "~/features/checklist/components/Toggler";
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
+import { useFilter } from "~/hooks/useFilter";
+import { produce } from "immer";
 
 const ChecklistLabel = ({
   description,
@@ -48,13 +50,32 @@ const Checkbox = ({
   />
 );
 
+function hasItems(
+  item: TChecklistItem
+): item is TChecklistItem & { items: TChecklistItem[] } {
+  return "items" in item && Array.isArray(item.items);
+}
+
 const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
-  const { isChecked, checkItem } = useCheckItem();
+  const { isChecked, checkItem, checkItems } = useCheckItem();
   const [isExpanded, setIsExpanded] = useState(false);
+  const { filter: filterOptional } = useFilter("optional");
+  const { filter: filterCompleted } = useFilter("completed");
 
   function onCheckboxChange(event: React.ChangeEvent<HTMLInputElement>) {
-    const { checked, name } = event.target;
-    checkItem({ checked, itemId: name });
+    if (hasItems(item)) {
+      checkItems(item.items.map((el) => el.id));
+    } else {
+      checkItem(event.target.name);
+    }
+  }
+
+  if (isChecked(item.id) && filterCompleted) {
+    return null;
+  }
+
+  if (filterOptional && item.tags?.includes("OPTIONAL")) {
+    return null;
   }
 
   return (
@@ -62,7 +83,11 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
       <div className="flex items-start justify-start gap-3">
         <Checkbox
           itemId={item.id}
-          isChecked={isChecked(item.id)}
+          isChecked={
+            hasItems(item)
+              ? item.items.every((nested) => isChecked(nested.id))
+              : isChecked(item.id)
+          }
           onChange={onCheckboxChange}
           label={item.description + " " + item?.tags?.join(", ")}
         />

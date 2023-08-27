@@ -15,31 +15,55 @@ export function useCheckItem() {
     []
   );
 
-  const checkItem = ({ itemId, checked }: {
-    itemId: string;
-    checked: boolean;
-  }) => {
+  const checkItem = (itemId: string) => {
     updateCheckedItems(
       produce(checkedItems, (draft) => {
-        if (checked) {
-          if (!draft.includes(itemId)) {
-            draft.push(itemId);
-          }
-        } else {
-          const index = draft.indexOf(itemId);
-          if (index !== -1) {
-            draft.splice(index, 1);
-          }
+        const index = draft.indexOf(itemId);
+
+        if (index !== -1) {
+          draft.splice(index, 1);
         }
+        else {
+          draft.push(itemId);
+        }
+
         return draft;
       })
     );
   };
 
+
+  const checkItems = (itemIds: string[]) => {
+    updateCheckedItems(
+      produce(checkedItems, (draft) => {
+        const allChecked = itemIds.every((id) => draft.includes(id));
+
+        if (allChecked) {
+          itemIds.forEach((itemId) => {
+            const index = draft.indexOf(itemId);
+            if (index !== -1) {
+              draft.splice(index, 1);
+            }
+          });
+        } else {
+          itemIds.forEach((itemId) => {
+            if (!draft.includes(itemId)) {
+              draft.push(itemId);
+            }
+          });
+        }
+
+        return draft;
+      })
+    );
+  };
+
+
   const isChecked = (itemId: string) => checkedItems.includes(itemId);
 
   return {
     checkItem,
+    checkItems,
     isChecked,
     setItems: updateCheckedItems,
     items: checkedItems,

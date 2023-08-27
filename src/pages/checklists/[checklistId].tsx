@@ -4,6 +4,8 @@ import { lists } from "~/data";
 import { type GetStaticProps, type GetStaticPaths } from "next";
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
 import { Button } from "~/components/Button";
+import { useFilter } from "~/hooks/useFilter";
+import { useIsClient } from "usehooks-ts";
 
 export const getStaticPaths: GetStaticPaths = () => {
   const paths = Object.values(lists).map((list) => ({
@@ -33,14 +35,20 @@ export default function ChecklistPage({
 }: {
   checklist: TChecklist | null;
 }) {
+  const isClient = useIsClient();
   const { items, setItems } = useCheckItem();
+  const { filter: filterOptional, setFilter: setFilterOptional } =
+    useFilter("optional");
+  const { filter: filterCompleted, setFilter: setFilterCompleted } =
+    useFilter("completed");
+
   if (!checklist) {
     return null;
   }
   return (
     <PageLayout>
       <h1 className="mb-4 text-2xl">{checklist.title}</h1>
-      <div className="gap my-4 flex items-center">
+      <div className="my-4 flex items-center gap-2">
         <Button
           onClick={() => setItems([])}
           variant="outline"
@@ -48,6 +56,22 @@ export default function ChecklistPage({
         >
           Uncheck all
         </Button>
+        {isClient && (
+          <>
+            <Button
+              variant="outline"
+              onClick={() => setFilterOptional(!filterOptional)}
+            >
+              {filterOptional ? "show" : "hide"} optional
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => setFilterCompleted(!filterCompleted)}
+            >
+              {filterCompleted ? "show" : "hide"} completed
+            </Button>
+          </>
+        )}
       </div>
       <Checklist items={checklist.items} />
     </PageLayout>

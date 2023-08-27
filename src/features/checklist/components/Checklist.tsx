@@ -31,13 +31,15 @@ const Checkbox = ({
   itemId,
   isChecked,
   onChange,
+  label,
 }: {
   itemId: string;
   isChecked: boolean;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  label: string;
 }) => (
   <input
-    aria-label={itemId}
+    aria-label={label}
     type="checkbox"
     name={itemId}
     checked={isChecked}
@@ -57,11 +59,12 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
 
   return (
     <li>
-      <label className="flex items-start justify-start gap-3">
+      <div className="flex items-start justify-start gap-3">
         <Checkbox
           itemId={item.id}
           isChecked={isChecked(item.id)}
           onChange={onCheckboxChange}
+          label={item.description + " " + item?.tags?.join(", ")}
         />
         <ChecklistLabel description={item.description} tags={item.tags} />
         {item.items && (
@@ -73,7 +76,7 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
             isExpanded={isExpanded}
           />
         )}
-      </label>
+      </div>
       {item.items && isExpanded && (
         <ul className="mt-4 flex flex-col gap-5 px-4">
           {item.items.map((childItem) => (

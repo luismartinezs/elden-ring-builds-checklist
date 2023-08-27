@@ -21,8 +21,6 @@ export function useCheckItem() {
   }) => {
     updateCheckedItems(
       produce(checkedItems, (draft) => {
-        console.log(itemId, checked)
-        console.log('checkItem draft before', draft)
         if (checked) {
           if (!draft.includes(itemId)) {
             draft.push(itemId);
@@ -33,7 +31,6 @@ export function useCheckItem() {
             draft.splice(index, 1);
           }
         }
-        console.log('checkItem draft after', draft)
         return draft;
       })
     );

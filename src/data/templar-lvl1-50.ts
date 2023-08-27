@@ -5,7 +5,7 @@ const list = {
   items: [
     {
       "id": "dbb80659-fe5d-4ea5-8bdc-807e517bc617",
-      "description": "<a href='https://www.youtube.com/watch?v=HfzZaFaeet4'>Watch the YouTube guide</a>"
+      "description": "<a href='https://www.youtube.com/watch?v=HfzZaFaeet4' target='_blank'>Watch the YouTube guide</a>"
     },
     {
       "id": "3b243472-ecb9-47aa-87a2-a0c3bd58938e",
@@ -13,7 +13,7 @@ const list = {
     },
     {
       "id": "d3ac11dc-a765-4cca-8a5a-3529bc3deda3",
-      "description": "Any keepsake (Stonesword Key recommended as you need one for the <a href='URL_TO_GREEN_TURTLE_TALISMAN'>Green Turtle Talisman</a>, but you also get one in Stormhill Shack)"
+      "description": "Any keepsake (Stonesword Key recommended as you need one for the <a href='https://eldenring.wiki.fextralife.com/Green+Turtle+Talisman' target='_blank'>Green Turtle Talisman</a>, but you also get one in Stormhill Shack)"
     },
     {
       "id": "5856cfb0-9577-455f-9ba6-c84ef5f5fe9d",
@@ -25,7 +25,7 @@ const list = {
     },
     {
       "id": "c435be8c-cc16-477a-83b5-1eb70b15727f",
-      "description": "<a href='https://eldenring.wiki.fextralife.com/Green+Turtle+Talisman'>Green Turtle Talisman</a> from Summonwater Village (northeast Limgrave) (requires one Stonesword Key)"
+      "description": "<a href='https://eldenring.wiki.fextralife.com/Green+Turtle+Talisman' target='_blank'>Green Turtle Talisman</a> from Summonwater Village (northeast Limgrave) (requires one Stonesword Key)"
     },
     {
       "id": "e8330ca2-139f-4237-b3af-672aa3afbd67",

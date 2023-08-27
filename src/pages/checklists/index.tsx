@@ -18,8 +18,14 @@ export default function ChecklistsPage({
 }) {
   return (
     <PageLayout>
-      <h1 className="text-3xl font-semibold">Elden Ring Checklists</h1>
-      <ul className="mt-4 text-lg">
+      <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">
+        Elden Ring Checklists
+      </h1>
+      <p className="mb-6 text-lg font-normal text-stone-400 lg:text-xl">
+        Checklists for character builds for Elden Ring, so you don&apos;t have
+        to look at a guide for every step
+      </p>
+      <ul className="mt-4 flex flex-col gap-2 text-2xl">
         {Object.values(checklists).map(({ slug, title }) => (
           <li key={slug}>
             <Link href={`/checklists/${slug}`}>{title}</Link>

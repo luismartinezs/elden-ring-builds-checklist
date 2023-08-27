@@ -9,13 +9,14 @@ This is to make it easier to play the game without having to look up guides cons
   - [x] Data files are ts
   - [x] item ids are uuid
   - [x] Checklists have title and slug properties
-- [ ] UX
-  - [ ] A button expand / collapse all expands and collapses all sublists
+- [x] UX
+  - [-] A button expand / collapse all expands and collapses all sublists
   - [x] checkbox is big and nice to use on mobile
   - [x] Style tags
-- [ ] List items can have child lists
+- [x] List items can have child lists
 - [x] Checked items are saved in localStorage
   - [x] save data has shape 'listId=[...itemIds]'
 - [x] Button uncheck all
-- [ ] Button filter completed
+- [x] Button filter completed
 - [x] Filter by tag (optional)
+- [ ] Feedback widget

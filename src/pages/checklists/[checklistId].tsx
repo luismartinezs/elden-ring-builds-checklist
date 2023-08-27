@@ -33,7 +33,7 @@ export default function ChecklistPage({
 }: {
   checklist: TChecklist | null;
 }) {
-  const { setItems } = useCheckItem();
+  const { items, setItems } = useCheckItem();
   if (!checklist) {
     return null;
   }
@@ -41,7 +41,11 @@ export default function ChecklistPage({
     <PageLayout>
       <h1 className="mb-4 text-2xl">{checklist.title}</h1>
       <div className="gap my-4 flex items-center">
-        <Button onClick={() => setItems([])} variant="outline">
+        <Button
+          onClick={() => setItems([])}
+          variant="outline"
+          disabled={items.length === 0}
+        >
           Uncheck all
         </Button>
       </div>

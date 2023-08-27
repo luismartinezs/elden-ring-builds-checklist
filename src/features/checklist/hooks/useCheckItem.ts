@@ -42,5 +42,6 @@ export function useCheckItem() {
     checkItem,
     isChecked,
     setItems: updateCheckedItems,
+    items: checkedItems,
   };
 }

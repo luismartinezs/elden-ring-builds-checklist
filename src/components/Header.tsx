@@ -45,15 +45,19 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
   }, [router.pathname]);
 
   return (
-    <header className={classnames(className)} {...otherProps}>
+    <header className={classnames(className, "px-4 py-4")} {...otherProps}>
       <nav className="px-4 text-white lg:px-6">
         <div className="relative mx-auto flex max-w-screen-xl flex-wrap items-center justify-between py-2">
           <LogoLink className="lg:hidden" />
+          <div className="lg:hidden">Elden Ring Checklists</div>
           <div className="flex items-center lg:order-2 lg:hidden">
             <BurgerButton onClick={toggleMenu} />
           </div>
-          <div className="hidden w-full items-center justify-between gap-12 lg:order-1 lg:flex lg:w-auto">
-            <LogoLink />
+          <div className="hidden w-full items-center justify-between gap-12 lg:order-1 lg:flex">
+            <div className="flex items-center gap-4">
+              <LogoLink />
+              <div className="hidden lg:block">Elden Ring Checklists</div>
+            </div>
             <ul className="mt-4 flex flex-col font-medium lg:mt-0 lg:flex-row lg:space-x-8">
               {links.map((link) => (
                 <li key={link.label}>
@@ -80,7 +84,10 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
             >
               <div className="flex h-full flex-col items-center">
                 <div className="flex w-full items-start justify-between px-6 pt-4">
-                  <LogoLink />
+                  <div className="flex items-center gap-2">
+                    <LogoLink className="scale-50" />
+                    <span>Elden Ring Checklists</span>
+                  </div>
                   <button
                     onClick={toggleMenu}
                     className="max-h-[50px] self-end rounded-xl p-2 text-white hover:bg-stone-800"

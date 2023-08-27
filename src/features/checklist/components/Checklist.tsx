@@ -103,7 +103,7 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
         )}
       </div>
       {item.items && isExpanded && (
-        <ul className="mt-4 flex flex-col gap-5 pl-8">
+        <ul className="my-6 flex flex-col gap-6 pl-8">
           {item.items.map((childItem) => (
             <ChecklistItem key={childItem.id} item={childItem} />
           ))}
@@ -115,7 +115,7 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
 
 export function Checklist({ items }: { items: TChecklistItem[] }) {
   return (
-    <ul className="flex flex-col gap-5 px-4">
+    <ul className="flex flex-col gap-6 px-4">
       {items.map((item) => (
         <ChecklistItem key={item.id} item={item} />
       ))}

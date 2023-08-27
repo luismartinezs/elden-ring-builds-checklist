@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { GrFormClose } from "react-icons/gr";
 import { BsChevronRight } from "react-icons/bs";
 
 import { PrimaryLink } from "~/components/PrimaryLink";
 import { BurgerButton } from "~/components/BurgerButton";
 import classnames from "classnames";
 import { EldenRingLogo } from "~/components/EldenRingLogo";
+import { AiOutlineClose } from "react-icons/ai";
 
 const links = [
   {
@@ -66,7 +66,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
           {/* MOBILE NAV BAR */}
           <div
             className={classnames(
-              "fixed inset-4 grid grid-cols-1 text-slate-600 transition-opacity duration-500 ease-out md:grid-cols-2 lg:hidden",
+              "fixed inset-4 z-10 grid grid-cols-1 text-white transition-opacity duration-500 ease-out md:grid-cols-2 lg:hidden",
               open ? "opacity-100" : "pointer-events-none opacity-0"
             )}
             id="mobile-menu"
@@ -74,30 +74,33 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
             <div className="col-span-1 hidden md:block"></div>
             <div
               className={classnames(
-                "col-span-1 rounded-xl bg-white text-slate-600 shadow-xl transition-opacity duration-300 ease-out lg:hidden"
+                "col-span-1 rounded-xl bg-black text-white shadow-xl transition-opacity duration-300 ease-out lg:hidden"
               )}
               id="mobile-menu"
             >
               <div className="flex h-full flex-col items-center">
                 <div className="flex w-full items-start justify-between px-6 pt-4">
-                  <LogoLink className="max-h-[50px] text-[#635BFF]" />
+                  <LogoLink />
                   <button
                     onClick={toggleMenu}
-                    className="dark:hover:bg-primary-900 max-h-[50px] self-end rounded-xl pb-[10px]"
+                    className="max-h-[50px] self-end rounded-xl p-2 text-white hover:bg-stone-800"
                   >
-                    <GrFormClose color="#334155" size={30} />
+                    <AiOutlineClose color="#ffffff" size={30} />
                   </button>
                 </div>
-                <ul className="mt-4 flex w-full flex-col items-center text-xl text-slate-600">
+                <ul className="mt-4 flex w-full flex-col items-center text-xl text-white">
                   {links.map((link) => (
                     <li
                       key={link.label}
-                      className="w-full border-b border-dashed border-slate-200 last:border-0"
+                      className="w-full border-b border-dashed border-stone-200 last:border-0"
                     >
-                      <button className="flex w-full items-center justify-between px-6 py-5 hover:text-slate-500">
+                      <PrimaryLink
+                        href={link.href}
+                        className="flex w-full items-center justify-between px-6 py-5 hover:text-stone-300"
+                      >
                         <span className="font-semibold">{link.label}</span>
                         <BsChevronRight size={20} strokeWidth={1} />
-                      </button>
+                      </PrimaryLink>
                     </li>
                   ))}
                 </ul>

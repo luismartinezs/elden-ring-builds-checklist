@@ -18,8 +18,8 @@ export default function ChecklistsPage({
 }) {
   return (
     <PageLayout>
-      <h1 className="text-2xl">Checklists</h1>
-      <ul className="mt-4">
+      <h1 className="text-3xl font-semibold">Elden Ring Checklists</h1>
+      <ul className="mt-4 text-lg">
         {Object.values(checklists).map(({ slug, title }) => (
           <li key={slug}>
             <Link href={`/checklists/${slug}`}>{title}</Link>

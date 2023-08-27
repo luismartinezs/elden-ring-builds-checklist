@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-stone-900 text-stone-100;
+  @apply bg-stone-900 text-lg text-stone-100;
 }
 
 a {

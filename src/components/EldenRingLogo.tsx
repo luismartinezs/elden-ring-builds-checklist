@@ -77,6 +77,7 @@ export function EldenRingLogo() {
 
   return (
     <div className="relative h-[35px] w-[35px]">
+      <span className="sr-only">Elden Ring Logo</span>
       <Ring
         className="absolute"
         size={size + (size / 20) * 3}

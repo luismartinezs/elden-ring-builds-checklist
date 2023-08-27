@@ -5,9 +5,7 @@ import { BsChevronRight } from "react-icons/bs";
 
 import { PrimaryLink } from "~/components/PrimaryLink";
 import { BurgerButton } from "~/components/BurgerButton";
-import { AnimatedArrow } from "~/components/AnimatedArrow";
 import classnames from "classnames";
-import { ArrowButton } from "~/components/ArrowButton";
 import { EldenRingLogo } from "~/components/EldenRingLogo";
 
 const links = [

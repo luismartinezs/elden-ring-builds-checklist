@@ -6,9 +6,9 @@ This is to make it easier to play the game without having to look up guides cons
 
 - [x] Home should probably redirect to /checklists for now
 - [ ] Structure project properly (local static data)
-  - [ ] Data files are ts
-  - [ ] item ids are uuid
-  - [ ] Checklists have title and slug properties
+  - [x] Data files are ts
+  - [x] item ids are uuid
+  - [x] Checklists have title and slug properties
 - [ ] UX
   - [ ] A button expand / collapse all expands and collapses all sublists
   - [ ] checkbox is big and nice to use on mobile

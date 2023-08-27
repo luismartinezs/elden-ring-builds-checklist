@@ -2,6 +2,7 @@ import { type GetStaticProps } from "next";
 import Link from "next/link";
 import { PageLayout } from "~/layouts/PageLayout";
 import { lists } from "~/data";
+import Head from "next/head";
 
 export const getStaticProps: GetStaticProps = () => {
   return {
@@ -18,6 +19,10 @@ export default function ChecklistsPage({
 }) {
   return (
     <PageLayout>
+      <Head>
+        <title>Checklists | Elden Ring Builds</title>
+        <meta name="description" content="Elden Ring Builds" />
+      </Head>
       <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">
         Elden Ring Checklists
       </h1>

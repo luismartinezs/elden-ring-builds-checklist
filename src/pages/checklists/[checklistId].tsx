@@ -6,6 +6,7 @@ import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
 import { Button } from "~/components/Button";
 import { useFilter } from "~/hooks/useFilter";
 import { useIsClient } from "usehooks-ts";
+import Head from "next/head";
 
 export const getStaticPaths: GetStaticPaths = () => {
   const paths = Object.values(lists).map((list) => ({
@@ -47,6 +48,10 @@ export default function ChecklistPage({
   }
   return (
     <PageLayout>
+      <Head>
+        <title>{checklist.title} | Elden Ring Builds</title>
+        <meta name="description" content={checklist.title} />
+      </Head>
       <h1 className="mb-4 text-2xl">{checklist.title}</h1>
       <div className="my-4 flex items-center gap-2">
         <Button

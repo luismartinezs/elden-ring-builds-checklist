@@ -14,5 +14,6 @@ This is to make it easier to play the game without having to look up guides cons
   - [ ] checkbox is big and nice to use on mobile
 - [ ] List items can have child lists
 - [ ] Checked items are saved in localStorage
+  - [ ] save data has shape 'listId=[...itemIds]'
 - [ ] Button uncheck all
 - [ ] Button filter completed

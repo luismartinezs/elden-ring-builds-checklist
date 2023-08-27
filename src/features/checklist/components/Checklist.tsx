@@ -1,20 +1,7 @@
 import React, { useState } from "react";
+import { type TChecklistItem } from "~/features/checklist/types";
 
-export interface ChecklistItem {
-  id: string;
-  description: string;
-  tags?: string[];
-}
-
-export function Checklist({
-  items,
-}: {
-  items: {
-    id: string;
-    description: string;
-    tags?: string[];
-  }[];
-}) {
+export function Checklist({ items }: { items: TChecklistItem[] }) {
   const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({});
 
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {

@@ -1,21 +1,28 @@
+import { type GetStaticProps } from "next";
 import Link from "next/link";
 import { PageLayout } from "~/layouts/PageLayout";
+import { lists } from "~/data";
 
-const checklists = [
-  {
-    path: "templar-lvl1-50",
-    label: "Templar Level 1-50",
-  },
-];
+export const getStaticProps: GetStaticProps = () => {
+  return {
+    props: {
+      checklists: lists,
+    },
+  };
+};
 
-export default function ChecklistsPage() {
+export default function ChecklistsPage({
+  checklists,
+}: {
+  checklists: typeof lists;
+}) {
   return (
     <PageLayout>
       <h1 className="text-2xl">Checklists</h1>
       <ul className="mt-4">
-        {checklists.map(({ path, label }) => (
-          <li key={path}>
-            <Link href={`/checklists/${path}`}>{label}</Link>
+        {Object.values(checklists).map(({ slug, title }) => (
+          <li key={slug}>
+            <Link href={`/checklists/${slug}`}>{title}</Link>
           </li>
         ))}
       </ul>

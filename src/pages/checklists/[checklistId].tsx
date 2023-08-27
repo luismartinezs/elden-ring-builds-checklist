@@ -1,29 +1,43 @@
-import { Checklist, type ChecklistItem } from "~/features/checklist";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { Checklist, type TChecklist } from "~/features/checklist";
 import { PageLayout } from "~/layouts/PageLayout";
+import { lists } from "~/data";
+import { type GetStaticProps, type GetStaticPaths } from "next";
 
-export default function ChecklistPage() {
-  const router = useRouter();
-  const { checklistId } = router.query;
-  const [items, setItems] = useState<ChecklistItem[]>([]);
+export const getStaticPaths: GetStaticPaths = () => {
+  const paths = Object.values(lists).map((list) => ({
+    params: { checklistId: list.slug },
+  }));
 
-  useEffect(() => {
-    if (checklistId && typeof checklistId === "string") {
-      import(`~/data/${checklistId}.json`)
-        .then((module: { default: ChecklistItem[] }) => {
-          setItems(module.default);
-        })
-        .catch((err) => {
-          console.error("Failed to load checklist:", err);
-        });
-    }
-  }, [checklistId]);
+  return { paths, fallback: false };
+};
 
+export const getStaticProps: GetStaticProps = ({ params }) => {
+  console.log(params);
+  if (!params?.checklistId) {
+    return { props: { checklist: null } };
+  }
+
+  return {
+    props: {
+      checklist: Object.values(lists).find(
+        (list) => list.slug === params.checklistId
+      ),
+    },
+  };
+};
+
+export default function ChecklistPage({
+  checklist,
+}: {
+  checklist: TChecklist | null;
+}) {
+  if (!checklist) {
+    return null;
+  }
   return (
     <PageLayout>
-      <h1 className="mb-4 text-2xl">{checklistId}</h1>
-      <Checklist items={items} />
+      <h1 className="mb-4 text-2xl">{checklist.title}</h1>
+      <Checklist items={checklist.items} />
     </PageLayout>
   );
 }

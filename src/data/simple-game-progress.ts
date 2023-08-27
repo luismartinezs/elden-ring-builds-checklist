@@ -256,8 +256,81 @@ const list = {
     },
     {
       id: '12787077-f61f-411e-b883-99d3c8f17750',
-      description: "Progress Ranni's questline: Beat Loretta in Caria Manor and talk to Ranni and her servants. Kill Radahn. Get Fingerslayer Blade from Nokron. Talk to Ranni again (she will give you Carian Inverted Statue). Talk to Iji. Go through Renna's Rise waygate and get Ranni's doll. Progress through Ainsel and Nokstella to get the Palace Key. Get the Dark Moon Ring from Rennala's room. Go through the Lake of Rot (Flame, Cleanse Me incantation or lots of HP flasks recommended). Kill Astel. Reach the Moonlight Altar, then the Cathedral of Manus Celes, and give Ranni the ring. Get the Dark Moon Greatsword.",
-      tags: ['OPTIONAL']
+      description: "Progress Ranni's questline",
+      tags: ['OPTIONAL'],
+      items: [
+        {
+          id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
+          description: 'Beat Loretta in Caria Manor',
+          tags: []
+        },
+        {
+          id: '983e4f51-15f7-4b5a-a927-5eee5c12f5c1',
+          description: 'Talk to Ranni and her servants',
+          tags: []
+        },
+        {
+          id: '2c83a29b-616a-4da8-8fd7-450d7f40d313',
+          description: 'Kill Radahn',
+          tags: []
+        },
+        {
+          id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
+          description: 'Get Fingerslayer Blade from Nokron',
+          tags: []
+        },
+        {
+          id: '588cc80e-1d8e-4853-85bf-7ade0c31fdff',
+          description: 'Talk to Ranni again to receive Carian Inverted Statue',
+          tags: []
+        },
+        {
+          id: 'b74b0892-6ec4-42f7-86a5-9abb664deb48',
+          description: 'Talk to Iji',
+          tags: []
+        },
+        {
+          id: '8419e6fc-6209-42cd-ad18-d5f972d7a9f5',
+          description: "Go through Renna's Rise waygate and get Ranni's doll",
+          tags: []
+        },
+        {
+          id: '6f0f64d0-961a-4fd6-b4f9-dbfc2aecc30c',
+          description: 'Progress through Ainsel and Nokstella to get the Palace Key',
+          tags: []
+        },
+        {
+          id: '053b4389-4d66-4ae6-b78e-92f7d2946b60',
+          description: "Get the Dark Moon Ring from Rennala's room",
+          tags: []
+        },
+        {
+          id: '72415649-ec6d-4fd5-845c-950088a6403b',
+          description: 'Go through the Lake of Rot (Flame, Cleanse Me incantation or lots of HP flasks recommended)',
+          tags: []
+        },
+        {
+          id: '76b7e4a0-77f3-4f48-a55e-ba59bce9cb2d',
+          description: 'Kill Astel',
+          tags: []
+        },
+        {
+          id: '12e9a4f4-a78c-482c-aa68-c3656058b92c',
+          description: 'Reach the Moonlight Altar',
+          tags: []
+        },
+        {
+          id: '3e04c2f6-9d9c-4508-ad27-442a2b144222',
+          description: 'Reach the Cathedral of Manus Celes',
+          tags: []
+        },
+        {
+          id: 'e294f45d-34ec-4f01-a121-4a26cd8b7b11',
+          description: 'Give Ranni the Dark Moon Ring and Get the Dark Moon Greatsword',
+          tags: []
+        }
+      ]
+
     },
     {
       id: '35ea6a80-fe78-419d-b817-002882705950',
@@ -396,8 +469,41 @@ const list = {
     },
     {
       id: '047b1d46-f0c4-427c-afc6-e6463722cb97',
-      description: "You can get Somber Ancient Dragon Smithing Stones from: killing Anastasia, Tarnished-Eater southwest of Ordina, Liturgical Town / From completing Latenna's questline / In a chest at the feet of the massive statue by the Dynasty Mausoleum Midpoint in Mohgwyn Palace. There are also 3 in Elphael, 1 in Leyndell Ashen Capital and 1 in Farum Azula",
-      tags: ['OPTIONAL']
+      description: "Get remaining Somber Ancient Dragon Smithing Stones",
+      tags: ['OPTIONAL'],
+      items: [
+        {
+          id: 'c74bcc2a-f8ae-4c7e-81cc-18ba4dd5112a',
+          description: 'Get Somber Ancient Dragon Smithing Stone killing Anastasia, Tarnished-Eater southwest of Ordina, Liturgical Town',
+          tags: []
+        },
+        {
+          id: '32d60d71-9174-4fe0-bb58-ebaa945fa6a9',
+          description: "Get Somber Ancient Dragon Smithing Stone by completing Latenna's questline",
+          tags: []
+        },
+        {
+          id: 'ea3a7740-c1d5-4f97-aceb-c4f7434ec0b8',
+          description: 'Get Somber Ancient Dragon Smithing Stone from a chest at the feet of the massive statue by the Dynasty Mausoleum Midpoint in Mohgwyn Palace',
+          tags: []
+        },
+        {
+          id: '145bd056-e157-4e9c-826c-ca53345451ad',
+          description: 'Get 3 Somber Ancient Dragon Smithing Stones in Elphael',
+          tags: []
+        },
+        {
+          id: '7f879ef9-a71c-4689-bb33-61ca6789fb87',
+          description: 'Get 1 Somber Ancient Dragon Smithing Stone in Leyndell Ashen Capital',
+          tags: []
+        },
+        {
+          id: 'efaa8891-1bf7-4fa8-b519-2b207aa5dd4c',
+          description: 'Get 1 Somber Ancient Dragon Smithing Stone in Farum Azula',
+          tags: []
+        }
+      ]
+
     },
     {
       id: '52bfb466-e488-4a1b-8eab-7a84dc19ab14',

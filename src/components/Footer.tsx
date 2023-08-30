@@ -11,7 +11,7 @@ const links = [
 
 export function Footer() {
   return (
-    <footer className="container mx-auto max-w-7xl px-2 py-2 font-medium lg:px-0">
+    <footer className="container mx-auto max-w-7xl px-2 py-2 font-medium xl:px-0">
       <div className="flex justify-between">
         <div className="text-sm text-stone-400">Luis Martinez @2023</div>
         <div className="flex justify-center space-x-6">

@@ -45,7 +45,10 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
   }, [router.pathname]);
 
   return (
-    <header className={classnames(className, "px-4 py-4")} {...otherProps}>
+    <header
+      className={classnames(className, "bg-stone-800 px-2 py-2")}
+      {...otherProps}
+    >
       <nav className="px-4 text-white lg:px-6">
         <div className="relative mx-auto flex max-w-screen-xl flex-wrap items-center justify-between py-2">
           <LogoLink className="lg:hidden" />

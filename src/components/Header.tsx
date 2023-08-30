@@ -13,6 +13,10 @@ const links = [
     label: "Checklists",
     href: "/checklists",
   },
+  {
+    label: "FAQ",
+    href: "/faq",
+  },
 ];
 
 function LogoLink(props: React.ComponentPropsWithoutRef<"a">) {

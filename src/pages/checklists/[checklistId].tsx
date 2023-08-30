@@ -7,7 +7,6 @@ import { Button } from "~/components/Button";
 import { useFilter } from "~/hooks/useFilter";
 import { useIsClient } from "usehooks-ts";
 import Head from "next/head";
-import { Fragment } from "react";
 
 export const getStaticPaths: GetStaticPaths = () => {
   const paths = Object.values(lists).map((list) => ({

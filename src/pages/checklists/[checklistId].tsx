@@ -2,11 +2,8 @@ import { Checklist, type TChecklist } from "~/features/checklist";
 import { PageLayout } from "~/layouts/PageLayout";
 import { lists } from "~/data";
 import { type GetStaticProps, type GetStaticPaths } from "next";
-import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
-import { Button } from "~/components/Button";
-import { useFilter } from "~/hooks/useFilter";
-import { useIsClient } from "usehooks-ts";
 import Head from "next/head";
+import { SettingsMenu } from "~/components/SettingsMenu";
 
 export const getStaticPaths: GetStaticPaths = () => {
   const paths = Object.values(lists).map((list) => ({
@@ -36,13 +33,6 @@ export default function ChecklistPage({
 }: {
   checklist: TChecklist | null;
 }) {
-  const isClient = useIsClient();
-  const { items, setItems } = useCheckItem();
-  const { filter: filterOptional, setFilter: setFilterOptional } =
-    useFilter("optional");
-  const { filter: filterCompleted, setFilter: setFilterCompleted } =
-    useFilter("completed");
-
   if (!checklist) {
     return null;
   }
@@ -52,32 +42,11 @@ export default function ChecklistPage({
         <title>{checklist.title} | Elden Ring Builds</title>
         <meta name="description" content={checklist.title} />
       </Head>
-      <h1 className="mb-4 text-2xl">{checklist.title}</h1>
-      <div className="my-4 flex items-center gap-2">
-        <Button
-          onClick={() => setItems([])}
-          variant="outline"
-          disabled={items.length === 0}
-        >
-          Uncheck all
-        </Button>
-        {isClient && (
-          <>
-            <Button
-              variant="outline"
-              onClick={() => setFilterOptional(!filterOptional)}
-            >
-              {filterOptional ? "show" : "hide"} optional
-            </Button>
-            <Button
-              variant="outline"
-              onClick={() => setFilterCompleted(!filterCompleted)}
-            >
-              {filterCompleted ? "show" : "hide"} completed
-            </Button>
-          </>
-        )}
+      <div className="sticky top-[66px] z-10 -mx-4 mb-4 flex justify-between bg-stone-900 px-4 py-4">
+        <h1 className="text-2xl">{checklist.title}</h1>
+        <SettingsMenu />
       </div>
+
       {checklist.notes?.map((note, index) => (
         <p
           key={`${checklist.id}-note-${index}`}

@@ -87,7 +87,6 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
               className={classnames(
                 "col-span-1 rounded-xl bg-black text-white shadow-xl transition-opacity duration-300 ease-out lg:hidden"
               )}
-              id="mobile-menu"
             >
               <div className="flex h-full flex-col items-center">
                 <div className="flex w-full items-start justify-between px-6 pt-4">
@@ -106,7 +105,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
                   {links.map((link) => (
                     <li
                       key={link.label}
-                      className="w-full border-b border-dashed border-stone-200 last:border-0"
+                      className="w-full border-b border-stone-500 last:border-0"
                     >
                       <PrimaryLink
                         href={link.href}

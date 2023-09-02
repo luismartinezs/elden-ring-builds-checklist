@@ -4,7 +4,7 @@ import { PiCaretUpBold, PiCaretDownBold } from "react-icons/pi";
 import { useAccordionContext } from "~/components/Accordion/Accordion.context";
 
 export type TQuestion = JSX.Element | string;
-type TAnswer = TQuestion;
+export type TAnswer = TQuestion;
 
 export function Item({
   question,
@@ -47,7 +47,7 @@ export function Item({
         )}
         aria-labelledby={headingId}
       >
-        <div className="p-5 text-stone-500  dark:bg-stone-900 dark:text-stone-400">
+        <div className="p-5 text-stone-500 dark:bg-stone-800 dark:text-stone-300">
           {answer}
         </div>
       </div>

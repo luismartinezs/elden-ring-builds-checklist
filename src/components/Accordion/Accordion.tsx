@@ -1,13 +1,17 @@
 import { AccordionContextProvider } from "~/components/Accordion/Accordion.context";
-import { Item } from "~/components/Accordion/Item";
+import {
+  Item,
+  type TAnswer,
+  type TQuestion,
+} from "~/components/Accordion/Item";
 
 export function Accordion({
   items,
   initialActiveId = null,
 }: {
   items: {
-    question: string;
-    answer: string;
+    question: TQuestion;
+    answer: TAnswer;
   }[];
   initialActiveId?: number | null;
 }) {

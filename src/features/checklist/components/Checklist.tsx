@@ -68,6 +68,12 @@ function useShowChecklistItem(
   const { filter: filterRanniQuestline } = useFilter("ranni-questline");
   const { filter: filterVarreQuestline } = useFilter("varre-questline");
   const { filter: filterNepheliQuestline } = useFilter("nepheli-questline");
+  const { filter: filterSmithingStoneBell } = useFilter("smithing-stone-bell");
+  const { filter: filterSomberStoneBell } = useFilter("somber-stone-bell");
+  const { filter: filterGlovewortBell } = useFilter("glovewort-bell");
+  const { filter: filterGhostGlovewortBell } = useFilter(
+    "ghost-glovewort-bell"
+  );
 
   // NOTE: Using an effect instead of a derived state to avoid hydration errors
   useEffect(() => {
@@ -92,6 +98,22 @@ function useShowChecklistItem(
         tag: "nepheli-questline",
         filter: filterNepheliQuestline,
       },
+      {
+        tag: "smithing-stone-bell",
+        filter: filterSmithingStoneBell,
+      },
+      {
+        tag: "somber-stone-bell",
+        filter: filterSomberStoneBell,
+      },
+      {
+        tag: "glovewort-bell",
+        filter: filterGlovewortBell,
+      },
+      {
+        tag: "ghost-glovewort-bell",
+        filter: filterGhostGlovewortBell,
+      },
     ];
     const shouldHide =
       Array.isArray(item?.tags) && item?.tags?.length > 0
@@ -113,6 +135,10 @@ function useShowChecklistItem(
     item.id,
     filterVarreQuestline,
     filterNepheliQuestline,
+    filterSmithingStoneBell,
+    filterSomberStoneBell,
+    filterGlovewortBell,
+    filterGhostGlovewortBell,
   ]);
 
   return show;

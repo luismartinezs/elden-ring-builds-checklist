@@ -6,7 +6,6 @@ import { LuSettings2 } from "react-icons/lu";
 import { AiOutlineClose } from "react-icons/ai";
 import { GoAlertFill } from "react-icons/go";
 
-import { useFilter } from "~/hooks/useFilter";
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
 import { Button } from "~/components/Button";
 import { FilterButton } from "~/components/FilterButton";
@@ -14,8 +13,6 @@ import { FilterButton } from "~/components/FilterButton";
 function Settings() {
   const isClient = useIsClient();
   const { items, setItems } = useCheckItem();
-  const { filter: filterCompleted, setFilter: setFilterCompleted } =
-    useFilter("completed");
 
   return (
     <div className="flex h-full flex-col items-center justify-start px-6">
@@ -48,6 +45,26 @@ function Settings() {
                 filterTag="nepheli-questline"
                 label="Nepheli"
                 className="border-orange-300 text-orange-300 hover:bg-orange-300 hover:text-black focus:ring-orange-300"
+              />
+              <FilterButton
+                filterTag="smithing-stone-bell"
+                label="Smithing Stone Bell"
+                className="border-orange-200 text-orange-200 hover:bg-orange-200 hover:text-black focus:ring-orange-200"
+              />
+              <FilterButton
+                filterTag="somber-stone-bell"
+                label="Somber Stone Bell"
+                className="border-gray-100 text-gray-100 hover:bg-gray-100 hover:text-black focus:ring-gray-100"
+              />
+              <FilterButton
+                filterTag="glovewort-bell"
+                label="Glovewort Bell"
+                className="border-zinc-300 text-zinc-300 hover:bg-zinc-300 hover:text-black focus:ring-zinc-300"
+              />
+              <FilterButton
+                filterTag="ghost-glovewort-bell"
+                label="Ghost Glovewort Bell"
+                className="border-blue-200 text-blue-200 hover:bg-blue-200 hover:text-black focus:ring-blue-200"
               />
             </>
           )}

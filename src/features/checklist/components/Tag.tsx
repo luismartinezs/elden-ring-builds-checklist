@@ -5,7 +5,11 @@ type TagKeys =
   | "volcano-manor-assassination"
   | "ranni-questline"
   | "varre-questline"
-  | "nepheli-questline";
+  | "nepheli-questline"
+  | "somber-stone-bell"
+  | "smithing-stone-bell"
+  | "glovewort-bell"
+  | "ghost-glovewort-bell";
 
 const tagMap: Record<TagKeys, { classes: string; label: string }> = {
   OPTIONAL: {
@@ -27,6 +31,22 @@ const tagMap: Record<TagKeys, { classes: string; label: string }> = {
   "nepheli-questline": {
     classes: "bg-orange-300 text-black",
     label: "Nepheli",
+  },
+  "smithing-stone-bell": {
+    classes: "bg-orange-200 text-black",
+    label: "Smithing Stone Bell",
+  },
+  "somber-stone-bell": {
+    classes: "bg-gray-100 text-black",
+    label: "Somber Stone Bell",
+  },
+  "glovewort-bell": {
+    classes: "bg-zinc-300 text-black",
+    label: "Glovewort Bell",
+  },
+  "ghost-glovewort-bell": {
+    classes: "bg-blue-200 text-black",
+    label: "Ghost Glovewort Bell",
   },
 };
 

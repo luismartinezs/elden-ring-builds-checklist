@@ -20,3 +20,14 @@ This is to make it easier to play the game without having to look up guides cons
 - [x] Button filter completed
 - [x] Filter by tag (optional)
 - [ ] Feedback widget
+
+
+## How to dev
+
+### Add new filter by key
+
+- Use new tag in the checklists
+- Add new tag to src/features/checklist/components/Tag.tsx
+- Add new key to src/hooks/useFilter.ts
+- Add new button to src/components/SettingsMenu/SettingsMenu.tsx
+- Extend useShowChecklistItem hook in src/features/checklist/components/Checklist.tsx

@@ -7,6 +7,10 @@ export const filterKeys = {
   ranniQuestline: 'ranni-questline',
   varreQuestline: 'varre-questline',
   nepheliQuestline: 'nepheli-questline',
+  smithingStoneBell: 'smithing-stone-bell',
+  somberStoneBell: 'somber-stone-bell',
+  glovewortBell: 'glovewort-bell',
+  ghostGlovewortBell: 'ghost-glovewort-bell'
 } as const
 
 export function useFilter(tag: typeof filterKeys[keyof typeof filterKeys]) {

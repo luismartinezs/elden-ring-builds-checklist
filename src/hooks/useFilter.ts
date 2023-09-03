@@ -4,6 +4,7 @@ export const filterKeys = {
   optional: 'optional',
   completed: 'completed',
   volcanoManorAssassination: 'volcano-manor-assassination',
+  ranniQuestline: 'ranni-questline',
 } as const
 
 export function useFilter(tag: typeof filterKeys[keyof typeof filterKeys]) {

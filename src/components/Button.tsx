@@ -1,10 +1,10 @@
 import classNames from "classnames";
 
-export function Button(
-  props: React.ComponentPropsWithoutRef<"button"> & {
-    variant?: "primary" | "outline";
-  }
-) {
+export type ButtonProps = React.ComponentPropsWithoutRef<"button"> & {
+  variant?: "primary" | "outline";
+};
+
+export function Button(props: ButtonProps) {
   const {
     children,
     className,

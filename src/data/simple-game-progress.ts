@@ -5,6 +5,7 @@ const list = {
   notes: [
     `Recommended for playthroughs after the first one (not NG+, starting new save). All non-required bosses marked as optional. Easily reachable ancient smithing stones not marked as optional, others are optional. Weapon upgrades are written as "normal (somber)". Kill any merchants (except for maybe Kale) and give their bells to the twin maidens to be able to easily buy smithing stones when you need them. If you're missing stones, explore caves or check Fextralife for locations.\nSimple rule of thumb for leveling: 1) Meet weapon requirement first, 2) Every two levels, add one point to VGR and one to your main stat(s), 3) If unsure about your main stat, just boost VGR until you figure it out`
   ],
+  // START / LIMGRAVE
   items: [
     {
       id: '684b6a6d-5025-4839-9615-aea8c9b64b36',
@@ -53,7 +54,7 @@ const list = {
     },
     {
       id: '1a279fba-f36b-4524-98f9-b4957e7bbbaa',
-      description: 'Dectus Medallion (Right) from Fort Faroth in Dragonbarrow (Caelid)',
+      description: 'Dectus Medallion (Right) from Fort Faroth in Dragonbarrow (Caelid). Easiest way to reach there is from waygate portal behind Third Church of Marika and going south from Bestial Sanctum, or you can just ride all the way there from Limgrave',
       tags: []
     },
     {
@@ -205,6 +206,16 @@ const list = {
       tags: []
     },
     {
+      id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
+      description: 'Beat Loretta in Caria Manor',
+      tags: ['ranni-questline']
+    },
+    {
+      id: '983e4f51-15f7-4b5a-a927-5eee5c12f5c1',
+      description: 'Talk to Ranni and her servants',
+      tags: ['ranni-questline']
+    },
+    {
       id: '2d87bde3-61d2-4991-896f-d53d17123d86',
       description: 'Beat Ancestor Spirit in Siofra river, which you can access through the Siofra Well in Mistwood',
       tags: ['OPTIONAL']
@@ -240,9 +251,44 @@ const list = {
       tags: ['OPTIONAL']
     },
     {
+      id: '2c83a29b-616a-4da8-8fd7-450d7f40d313',
+      description: 'Kill Radahn',
+      tags: ['ranni-questline']
+    },
+    {
       id: '40a23af2-c9a0-405b-bbf2-3ffbd67bda6f',
       description: 'If you beat Radahn, you can now get the Mimic Tear spirit summon from Nokron',
       tags: ['OPTIONAL']
+    },
+    {
+      id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
+      description: 'Get Fingerslayer Blade from Nokron',
+      tags: ['ranni-questline']
+    },
+    {
+      id: '588cc80e-1d8e-4853-85bf-7ade0c31fdff',
+      description: 'Talk to Ranni again to receive Carian Inverted Statue',
+      tags: ['ranni-questline']
+    },
+    {
+      id: 'b74b0892-6ec4-42f7-86a5-9abb664deb48',
+      description: 'Talk to Iji',
+      tags: ['ranni-questline']
+    },
+    {
+      id: '8419e6fc-6209-42cd-ad18-d5f972d7a9f5',
+      description: "Go through Renna's Rise waygate and get Ranni's doll",
+      tags: ['ranni-questline']
+    },
+    {
+      id: '6f0f64d0-961a-4fd6-b4f9-dbfc2aecc30c',
+      description: 'Progress through Ainsel and Nokstella to get the Palace Key',
+      tags: ['ranni-questline']
+    },
+    {
+      id: '053b4389-4d66-4ae6-b78e-92f7d2946b60',
+      description: "Get the Dark Moon Ring from Rennala's room",
+      tags: ['ranni-questline']
     },
     {
       id: '4b183117-666d-4d64-9f51-2484e0f1d764',
@@ -255,82 +301,29 @@ const list = {
       tags: ['OPTIONAL']
     },
     {
-      id: '12787077-f61f-411e-b883-99d3c8f17750',
-      description: "Progress Ranni's questline",
-      tags: ['OPTIONAL'],
-      items: [
-        {
-          id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
-          description: 'Beat Loretta in Caria Manor',
-          tags: []
-        },
-        {
-          id: '983e4f51-15f7-4b5a-a927-5eee5c12f5c1',
-          description: 'Talk to Ranni and her servants',
-          tags: []
-        },
-        {
-          id: '2c83a29b-616a-4da8-8fd7-450d7f40d313',
-          description: 'Kill Radahn',
-          tags: []
-        },
-        {
-          id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
-          description: 'Get Fingerslayer Blade from Nokron',
-          tags: []
-        },
-        {
-          id: '588cc80e-1d8e-4853-85bf-7ade0c31fdff',
-          description: 'Talk to Ranni again to receive Carian Inverted Statue',
-          tags: []
-        },
-        {
-          id: 'b74b0892-6ec4-42f7-86a5-9abb664deb48',
-          description: 'Talk to Iji',
-          tags: []
-        },
-        {
-          id: '8419e6fc-6209-42cd-ad18-d5f972d7a9f5',
-          description: "Go through Renna's Rise waygate and get Ranni's doll",
-          tags: []
-        },
-        {
-          id: '6f0f64d0-961a-4fd6-b4f9-dbfc2aecc30c',
-          description: 'Progress through Ainsel and Nokstella to get the Palace Key',
-          tags: []
-        },
-        {
-          id: '053b4389-4d66-4ae6-b78e-92f7d2946b60',
-          description: "Get the Dark Moon Ring from Rennala's room",
-          tags: []
-        },
-        {
-          id: '72415649-ec6d-4fd5-845c-950088a6403b',
-          description: 'Go through the Lake of Rot (Flame, Cleanse Me incantation or lots of HP flasks recommended)',
-          tags: []
-        },
-        {
-          id: '76b7e4a0-77f3-4f48-a55e-ba59bce9cb2d',
-          description: 'Kill Astel',
-          tags: []
-        },
-        {
-          id: '12e9a4f4-a78c-482c-aa68-c3656058b92c',
-          description: 'Reach the Moonlight Altar',
-          tags: []
-        },
-        {
-          id: '3e04c2f6-9d9c-4508-ad27-442a2b144222',
-          description: 'Reach the Cathedral of Manus Celes',
-          tags: []
-        },
-        {
-          id: 'e294f45d-34ec-4f01-a121-4a26cd8b7b11',
-          description: 'Give Ranni the Dark Moon Ring and Get the Dark Moon Greatsword',
-          tags: []
-        }
-      ]
-
+      id: '72415649-ec6d-4fd5-845c-950088a6403b',
+      description: 'Go through the Lake of Rot (Flame, Cleanse Me incantation, lots of HP flasks, Immunizing Horn Charm talisman and Immunizing Cured Meat help)',
+      tags: ['ranni-questline']
+    },
+    {
+      id: '76b7e4a0-77f3-4f48-a55e-ba59bce9cb2d',
+      description: 'Defeat Astel, Naturalborn of the Void',
+      tags: ['ranni-questline']
+    },
+    {
+      id: '12e9a4f4-a78c-482c-aa68-c3656058b92c',
+      description: "Reach the Moonlight Altar (this place is end-game level but you don't need to kill anything to progress Ranni's quest.",
+      tags: ['ranni-questline']
+    },
+    {
+      id: '3e04c2f6-9d9c-4508-ad27-442a2b144222',
+      description: 'Reach the Cathedral of Manus Celes.',
+      tags: ['ranni-questline']
+    },
+    {
+      id: 'e294f45d-34ec-4f01-a121-4a26cd8b7b11',
+      description: 'Place the Dark Moon Ring on Ranni\'s doll finger and Get the Dark Moon Greatsword',
+      tags: ['ranni-questline']
     },
     {
       id: '35ea6a80-fe78-419d-b817-002882705950',
@@ -589,6 +582,11 @@ const list = {
       id: '80046f4a-f025-428e-9381-b08df9088402',
       description: 'Beat Radagon and Elden Beast',
       tags: []
+    },
+    {
+      id: "f2cfa6be-dde8-467e-a7cf-f86814b8f6d7",
+      description: "Interact with the blue summon sign near Marika's remains for the \"Age of the Stars\" ending",
+      tags: ['ranni-questline']
     },
     {
       id: '9d441ec1-1981-4333-8433-8f0391e3873c',

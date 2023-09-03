@@ -8,6 +8,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useFilter } from "~/hooks/useFilter";
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
 import { Button } from "~/components/Button";
+import { FilterButton } from "~/components/FilterButton";
 
 function Settings() {
   const isClient = useIsClient();
@@ -20,6 +21,8 @@ function Settings() {
     filter: filterVolcanoManorAssassination,
     setFilter: setFilterVolcanoManorAssassination,
   } = useFilter("volcano-manor-assassination");
+  const { filter: filterRanniQuestline, setFilter: setFilterRanniQuestline } =
+    useFilter("ranni-questline");
 
   return (
     <div className="flex flex-col items-center justify-center px-4">
@@ -36,28 +39,22 @@ function Settings() {
             <>
               <Button
                 variant="outline"
-                onClick={() => setFilterOptional(!filterOptional)}
-              >
-                {filterOptional ? "Show" : "Hide"} optional
-              </Button>
-              <Button
-                variant="outline"
                 onClick={() => setFilterCompleted(!filterCompleted)}
               >
                 {filterCompleted ? "Show" : "Hide"} completed
               </Button>
-              <Button
+              <FilterButton filterTag="optional" label="Optional" />
+              <FilterButton
+                filterTag="ranni-questline"
+                label="Ranni Questline"
+                className="border-sky-200 text-sky-200 hover:bg-sky-200 hover:text-black focus:ring-sky-200"
+              />
+              <FilterButton
+                filterTag="volcano-manor-assassination"
+                label="Volcano
+                Manor Assassination"
                 className="border-red-500 text-red-500 hover:bg-red-500 hover:text-black focus:ring-red-500"
-                variant="outline"
-                onClick={() =>
-                  setFilterVolcanoManorAssassination(
-                    !filterVolcanoManorAssassination
-                  )
-                }
-              >
-                {filterVolcanoManorAssassination ? "Show" : "Hide"} Volcano
-                Manor Assassination
-              </Button>
+              />
             </>
           )}
         </div>

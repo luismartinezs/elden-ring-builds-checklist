@@ -63,6 +63,7 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
   const { filter: filterVolcanoManorAssassination } = useFilter(
     "volcano-manor-assassination"
   );
+  const { filter: filterRanniQuestline } = useFilter("ranni-questline");
 
   function onCheckboxChange(event: React.ChangeEvent<HTMLInputElement>) {
     if (hasItems(item)) {
@@ -84,6 +85,10 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
     filterVolcanoManorAssassination &&
     item.tags?.includes("volcano-manor-assassination")
   ) {
+    return null;
+  }
+
+  if (filterRanniQuestline && item.tags?.includes("ranni-questline")) {
     return null;
   }
 

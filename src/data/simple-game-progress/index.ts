@@ -223,7 +223,12 @@ const list = {
       tags: []
     },
     // LIURNIA EAST 50-60 +4-6
-    // AINSEL RIBER L50-60 +4-6
+    {
+      id: '958046df-4b2e-41dd-9692-d6e74f5d4d1b',
+      description: 'Dropped by the Crystalian Boss at the end of Raya Lucaria Crystal Tunnel (northeastern Liurnia, east from the walking mausoleum in the lake)',
+      tags: ['smithing-stone-bell']
+    },
+    // AINSEL RIVER L50-60 +4-6
     // LIURNIA WEST, CARIA MANOR L50-60 +4-6
     {
       id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
@@ -271,7 +276,27 @@ const list = {
       description: 'By this point your weapon can be +10-14 (3-5)',
       tags: []
     },
+    {
+      id: 'be83ba65-f7f1-4aa5-bf25-116dbbed9c9d',
+      description: 'Dropped by Erdtree Burial Watchdog in Wyndham Catacombs, in Altus Plateau. At the top of the Wyndham Ruins, reachable north of Erdtree-Gazing Hill grace',
+      tags: ['glovewort-bell']
+    },
+    {
+      id: '28473d9d-19f7-468f-b25f-5739ec5511ec',
+      description: 'Defeat Crystalian Spear and Ringblade boss in Altus Tunnel, directly south from the Minor Erdtree in Altus Plateau',
+      tags: ['somber-stone-bell']
+    },
+    {
+      id: '0852f8c6-a18d-418c-a4ce-76fa413d7194',
+      description: 'In a chest at the first secret area inside the Sealed Tunnel (Down at south of the lake right next to the west gate to Leyndell Royal Capital from the outside)',
+      tags: ['smithing-stone-bell']
+    },
     // CAELID, RADAHN 60-70 +10-14
+    {
+      id: 'fbca363b-8c3c-4c24-812f-60b2700116a6',
+      description: 'Dropped by the Fallingstar Beast in Sellia Crystal Tunnel (Caelid). Reachable by opening the chest in Dragon-Burnt Ruins in Limgrave',
+      tags: ['somber-stone-bell']
+    },
     {
       id: '7d2912a9-f6d1-45a1-bdb6-36ba9a63f0c6',
       description: 'Radahn Festival should be active now, and you can beat Radahn',
@@ -283,11 +308,21 @@ const list = {
       tags: ['ranni-questline']
     },
     {
-      id: '40a23af2-c9a0-405b-bbf2-3ffbd67bda6f',
-      description: 'If you beat Radahn, you can now get the Mimic Tear spirit summon from Nokron',
+      id: '609c347c-c2b5-488b-80e5-1db0d9417a41',
+      description: 'If you beat Radahn, you can now access Nokron',
       tags: ['OPTIONAL']
     },
     // NOKRON CITY AND AQUEDUCT 70-80 +10-14
+    {
+      id: '4630abf5-f6ce-4f48-a82a-091c04117844',
+      description: 'On a corpse lying at the base of a gazebo near the Nokron, Eternal City grace',
+      tags: ['ghost-glovewort-bell']
+    },
+    {
+      id: "40a23af2-c9a0-405b-bbf2-3ffbd67bda6f",
+      description: "get the Mimic Tear spirit summon from Nokron",
+      tags: ['OPTIONAL']
+    },
     {
       id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
       description: 'Get Fingerslayer Blade from Nokron',
@@ -310,8 +345,13 @@ const list = {
     },
     {
       id: '6f0f64d0-961a-4fd6-b4f9-dbfc2aecc30c',
-      description: 'Progress through Ainsel and Nokstella to get the Palace Key',
+      description: 'Progress through Ainsel and Nokstella to get the Discarded Palace Key from the Baleful Shadow.',
       tags: ['ranni-questline']
+    },
+    {
+      id: '3ccc2aba-7d0a-486e-ba62-8cbeae20f7cf',
+      description: 'In a chest guarded by several Silver Tears with shields in the corner of a small room near the Nokstella, Eternal City grace',
+      tags: ['ghost-glovewort-bell']
     },
     {
       id: '053b4389-4d66-4ae6-b78e-92f7d2946b60',
@@ -462,8 +502,28 @@ const list = {
     },
     {
       id: '5c50d5ff-4ee2-4b1f-8e59-132e44ce59c9',
-      description: 'Run all the way through the Forbidden lands and Mountaintops of the Giants',
+      description: 'Run all the way through the Forbidden lands to Mountaintops of the Giants',
       tags: []
+    },
+    {
+      id: '8a60d188-2029-4e20-a80e-ebbb3b50d7e0',
+      description: 'In Zamor Ruins, near the Zamor Ruins grace in the Mountaintop of the Giants area, at the bottom of the stairs in a chest',
+      tags: ['smithing-stone-bell']
+    },
+    {
+      id: '188a8fc3-17f2-42ab-adc9-bf67d97241c9',
+      description: "Dropped by Ulcerated Tree Spirit in Giants' Mountaintop Catacombs, near the fire monks at the start of Mountaintops of the Giants",
+      tags: ['glovewort-bell']
+    },
+    {
+      id: '5c50d5ff-4ee2-4b1f-8e59-132e44ce59c9',
+      description: 'Run through to Mountaintops of the Giants until right before Fire Giant',
+      tags: []
+    },
+    {
+      id: '223a264a-6e74-4942-9c6f-f4c0d9229ac8',
+      description: 'Found on a body outside the First Church of Marika in Mountaintops of the Giants, from the Freezing Lake site of grace, cross the frozen lake to the south',
+      tags: ['somber-stone-bell']
     },
     {
       id: '30bf91af-7114-4564-a226-6acb5e9f08ea',
@@ -555,6 +615,11 @@ const list = {
       tags: ['OPTIONAL']
     },
     {
+      id: 'fe060cba-bcbd-4b3d-bcaf-81e9a0ad07d8',
+      description: 'In a graveyard in Elphael, Brace of the Haligtree. From the Haligtree Roots Grace, go back up the elevator, go straight to exit the church and then take a left down the slope filled with Lesser Kindred of Rot. The item will be next to a grave surrounded by more enemies',
+      tags: ['ghost-glovewort-bell']
+    },
+    {
       id: '81fc1668-21af-4a10-acfb-34ed93c8a115',
       description: 'Beat Malenia',
       tags: ['OPTIONAL']
@@ -567,13 +632,28 @@ const list = {
     },
     {
       id: 'fe1b4d05-4399-4a9f-9790-af424afba182',
-      description: 'Kill dragon in curved platform at the beginnig of Farum Azula to get an Ancient Dragon Smithing Stone',
+      description: 'Kill dragon in curved platform at the beginning of Farum Azula to get an Ancient Dragon Smithing Stone',
       tags: ['OPTIONAL']
+    },
+    {
+      id: '6f0b9178-98ff-4ba2-bfd5-fe706e97fd7f',
+      description: 'Found on corpse next to Tempest-Facing Balcony Site of Grace located in Crumbling Farum Azula',
+      tags: ['somber-stone-bell']
+    },
+    {
+      id: 'b351dd0f-b22f-421d-9642-76b83cdea1c7',
+      description: 'In the middle of a lake in Crumbling Farum Azula. From the Crumbling Beast Grave Depths Grace, go the big church to the northwest and exit outside to the southwest. Take the elevator going down and you should see a lake in the distance to your left. The Item is in a gazebo in front of the lake',
+      tags: ['glovewort-bell']
     },
     {
       id: '24a9bc62-996a-4efe-9cfd-f37760e1e658',
       description: 'Beat Godskin Duo',
       tags: []
+    },
+    {
+      id: 'ba96e3f5-654c-4467-b259-1af9c7667be6',
+      description: 'Obtained from defeating The Godskin Duo in Crumbling Farum Azula',
+      tags: ['smithing-stone-bell']
     },
     {
       id: 'f6d85cdf-3cb9-49d3-9912-5116e4ecf771',
@@ -594,6 +674,11 @@ const list = {
       id: '9cde9e8c-7a17-480b-8278-7e7feb1304fd',
       description: 'By this point your somber weapon can be fully upgraded',
       tags: []
+    },
+    {
+      id: 'df4104e5-dc8d-4a41-bcb0-41f9706fc83e',
+      description: 'Found on a body in the abandoned temple on the North side of Crumbling Farum Azula. Next to an alter at the bottom of the elevator next to Beside the Great Bridge Site of Grace',
+      tags: ['somber-stone-bell']
     },
     {
       id: '9d441ec1-1981-4333-8433-8f0391e3873c',

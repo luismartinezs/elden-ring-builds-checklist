@@ -196,11 +196,6 @@ const list = {
       description: "Use the Pureblood Knight's Medal to reach Mohgwyn's Palace (it's also possible to reach Mohgwyn's Palace from Consecrated Snowfield much later in the game though a waygate portal)",
       tags: ['varre-questline']
     },
-    {
-      id: '758a4f11-7626-4b58-bd3b-b8ba1cf2b607',
-      description: "You can also access Mogh's palace from Consecrated Snowfield much later in the game though a waygate portal",
-      tags: ['OPTIONAL']
-    },
     // RAYA LUCARIA L50-60 +4-6
     {
       id: '054a08f7-70ba-4ede-a188-b3a286808cb5',

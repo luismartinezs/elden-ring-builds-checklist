@@ -4,6 +4,7 @@ import { useIsClient, useOnClickOutside } from "usehooks-ts";
 import classnames from "classnames";
 import { LuSettings2 } from "react-icons/lu";
 import { AiOutlineClose } from "react-icons/ai";
+import { GoAlertFill } from "react-icons/go";
 
 import { useFilter } from "~/hooks/useFilter";
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
@@ -13,28 +14,16 @@ import { FilterButton } from "~/components/FilterButton";
 function Settings() {
   const isClient = useIsClient();
   const { items, setItems } = useCheckItem();
-  const { filter: filterOptional, setFilter: setFilterOptional } =
-    useFilter("optional");
   const { filter: filterCompleted, setFilter: setFilterCompleted } =
     useFilter("completed");
-  const {
-    filter: filterVolcanoManorAssassination,
-    setFilter: setFilterVolcanoManorAssassination,
-  } = useFilter("volcano-manor-assassination");
-  const { filter: filterRanniQuestline, setFilter: setFilterRanniQuestline } =
-    useFilter("ranni-questline");
 
   return (
-    <div className="flex flex-col items-center justify-center px-4">
+    <div className="flex h-full flex-col items-center justify-start px-6">
+      <p className="w-full text-left text-stone-300">
+        Filters apply to all checklists
+      </p>
       <div className="flex items-center gap-2">
-        <div className="my-4 flex flex-wrap items-center gap-2">
-          <Button
-            onClick={() => setItems([])}
-            variant="outline"
-            disabled={items.length === 0}
-          >
-            Uncheck all
-          </Button>
+        <div className="my-4 flex flex-wrap items-center  gap-2">
           {isClient && (
             <>
               <Button
@@ -59,6 +48,23 @@ function Settings() {
           )}
         </div>
       </div>
+      {isClient && (
+        <div className="mb-4 mt-auto self-start">
+          <p>
+            Caution: If you &ldquo;uncheck all&ldquo;, everything that you have
+            checked will be reset.
+          </p>
+          <Button
+            onClick={() => setItems([])}
+            variant="outline"
+            disabled={items.length === 0}
+            className="my-4 flex items-center gap-2 whitespace-nowrap"
+          >
+            <GoAlertFill size={18} />
+            Uncheck everything
+          </Button>
+        </div>
+      )}
     </div>
   );
 }
@@ -92,7 +98,7 @@ function Menu({
         <div className="flex h-full flex-col items-center">
           <div className="flex w-full items-start justify-between px-6 pt-4">
             <div className="flex items-center gap-2">
-              <span>Global Checklist Settings</span>
+              <h2>Global Checklist Settings</h2>
             </div>
             <button
               onClick={toggle}

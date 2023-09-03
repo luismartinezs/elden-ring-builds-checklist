@@ -212,7 +212,7 @@ const list = {
     },
     {
       id: '983e4f51-15f7-4b5a-a927-5eee5c12f5c1',
-      description: 'Talk to Ranni and her servants',
+      description: 'Talk to Ranni, then her servants, then Ranni again. If you don\'t find Ranni, it\'s possible that you have started the Radahn festival, so you will have to kill Radahn before progressing',
       tags: ['ranni-questline']
     },
     {
@@ -267,7 +267,7 @@ const list = {
     },
     {
       id: '588cc80e-1d8e-4853-85bf-7ade0c31fdff',
-      description: 'Talk to Ranni again to receive Carian Inverted Statue',
+      description: 'Talk to Ranni again and give her the Fingerslayer Blade to receive Carian Inverted Statue. Gving the Fingerslayer Blade to Ranni will turn Seluvis into a puppet, so if you want to do Seluvis quest, you must do it before this point.',
       tags: ['ranni-questline']
     },
     {
@@ -317,7 +317,7 @@ const list = {
     },
     {
       id: '3e04c2f6-9d9c-4508-ad27-442a2b144222',
-      description: 'Reach the Cathedral of Manus Celes.',
+      description: 'Reach the Cathedral of Manus Celes and active the grace inside',
       tags: ['ranni-questline']
     },
     {

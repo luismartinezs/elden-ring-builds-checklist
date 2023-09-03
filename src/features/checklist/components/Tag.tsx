@@ -1,6 +1,11 @@
 import classnames from "classnames";
 
-type TagKeys = "OPTIONAL" | "volcano-manor-assassination" | "ranni-questline";
+type TagKeys =
+  | "OPTIONAL"
+  | "volcano-manor-assassination"
+  | "ranni-questline"
+  | "varre-questline"
+  | "nepheli-questline";
 
 const tagMap: Record<TagKeys, { classes: string; label: string }> = {
   OPTIONAL: {
@@ -13,7 +18,15 @@ const tagMap: Record<TagKeys, { classes: string; label: string }> = {
   },
   "ranni-questline": {
     classes: "bg-sky-200 text-black",
-    label: "Ranni Questline",
+    label: "Ranni",
+  },
+  "varre-questline": {
+    classes: "bg-red-700 text-black",
+    label: "Varré",
+  },
+  "nepheli-questline": {
+    classes: "bg-orange-300 text-black",
+    label: "Nepheli",
   },
 };
 

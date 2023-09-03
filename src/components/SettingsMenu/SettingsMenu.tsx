@@ -26,23 +26,28 @@ function Settings() {
         <div className="my-4 flex flex-wrap items-center  gap-2">
           {isClient && (
             <>
-              <Button
-                variant="outline"
-                onClick={() => setFilterCompleted(!filterCompleted)}
-              >
-                {filterCompleted ? "Show" : "Hide"} completed
-              </Button>
+              <FilterButton filterTag="completed" label="Completed" />
               <FilterButton filterTag="optional" label="Optional" />
               <FilterButton
                 filterTag="ranni-questline"
-                label="Ranni Questline"
+                label="Ranni"
                 className="border-sky-200 text-sky-200 hover:bg-sky-200 hover:text-black focus:ring-sky-200"
               />
               <FilterButton
                 filterTag="volcano-manor-assassination"
                 label="Volcano
-                Manor Assassination"
-                className="border-red-500 text-red-500 hover:bg-red-500 hover:text-black focus:ring-red-500"
+                Manor"
+                className="border-red-400 text-red-400 hover:bg-red-400 hover:text-black focus:ring-red-400"
+              />
+              <FilterButton
+                filterTag="varre-questline"
+                label="Varré"
+                className="border-red-700 text-red-700 hover:bg-red-700 hover:text-black focus:ring-red-700"
+              />
+              <FilterButton
+                filterTag="nepheli-questline"
+                label="Nepheli"
+                className="border-orange-300 text-orange-300 hover:bg-orange-300 hover:text-black focus:ring-orange-300"
               />
             </>
           )}
@@ -50,9 +55,9 @@ function Settings() {
       </div>
       {isClient && (
         <div className="mb-4 mt-auto self-start">
-          <p>
-            Caution: If you &ldquo;uncheck all&ldquo;, everything that you have
-            checked will be reset.
+          <p className="text-sm">
+            Caution: If you &ldquo;uncheck everything&ldquo;, everything that
+            you have checked will be reset.
           </p>
           <Button
             onClick={() => setItems([])}

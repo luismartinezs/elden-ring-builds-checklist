@@ -8,14 +8,14 @@ import { useFilter } from "~/hooks/useFilter";
 
 const ChecklistLabel = ({
   description,
-  tags,
+  tags = [],
 }: {
   description: string;
   tags?: string[];
 }) => (
   <div>
-    <span className="inline-flex items-center" aria-hidden="true">
-      {tags?.map((tag) => (
+    <span className="inline-flex items-center gap-1" aria-hidden="true">
+      {[...tags].sort().map((tag) => (
         <span key={tag} className="!inline">
           <Tag tag={tag} />
         </span>
@@ -66,6 +66,8 @@ function useShowChecklistItem(
     "volcano-manor-assassination"
   );
   const { filter: filterRanniQuestline } = useFilter("ranni-questline");
+  const { filter: filterVarreQuestline } = useFilter("varre-questline");
+  const { filter: filterNepheliQuestline } = useFilter("nepheli-questline");
 
   // NOTE: Using an effect instead of a derived state to avoid hydration errors
   useEffect(() => {
@@ -82,10 +84,24 @@ function useShowChecklistItem(
         tag: "ranni-questline",
         filter: filterRanniQuestline,
       },
+      {
+        tag: "varre-questline",
+        filter: filterVarreQuestline,
+      },
+      {
+        tag: "nepheli-questline",
+        filter: filterNepheliQuestline,
+      },
     ];
-    const shouldHide = filters.some(
-      ({ tag, filter }) => item.tags?.includes(tag) && filter
-    );
+    const shouldHide =
+      Array.isArray(item?.tags) && item?.tags?.length > 0
+        ? item.tags.every((tag) =>
+            filters.some(
+              ({ tag: filterTag, filter }) => tag === filterTag && filter
+            )
+          )
+        : false;
+
     setShow(!shouldHide && !(isChecked(item.id) && filterCompleted));
   }, [
     filterOptional,
@@ -95,6 +111,8 @@ function useShowChecklistItem(
     filterCompleted,
     isChecked,
     item.id,
+    filterVarreQuestline,
+    filterNepheliQuestline,
   ]);
 
   return show;

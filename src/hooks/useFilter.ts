@@ -5,6 +5,8 @@ export const filterKeys = {
   completed: 'completed',
   volcanoManorAssassination: 'volcano-manor-assassination',
   ranniQuestline: 'ranni-questline',
+  varreQuestline: 'varre-questline',
+  nepheliQuestline: 'nepheli-questline',
 } as const
 
 export function useFilter(tag: typeof filterKeys[keyof typeof filterKeys]) {

@@ -60,6 +60,9 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const { filter: filterOptional } = useFilter("optional");
   const { filter: filterCompleted } = useFilter("completed");
+  const { filter: filterVolcanoManorAssassination } = useFilter(
+    "volcano-manor-assassination"
+  );
 
   function onCheckboxChange(event: React.ChangeEvent<HTMLInputElement>) {
     if (hasItems(item)) {
@@ -74,6 +77,13 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
   }
 
   if (filterOptional && item.tags?.includes("OPTIONAL")) {
+    return null;
+  }
+
+  if (
+    filterVolcanoManorAssassination &&
+    item.tags?.includes("volcano-manor-assassination")
+  ) {
     return null;
   }
 

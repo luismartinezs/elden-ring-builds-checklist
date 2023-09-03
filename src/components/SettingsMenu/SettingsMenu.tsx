@@ -16,6 +16,10 @@ function Settings() {
     useFilter("optional");
   const { filter: filterCompleted, setFilter: setFilterCompleted } =
     useFilter("completed");
+  const {
+    filter: filterVolcanoManorAssassination,
+    setFilter: setFilterVolcanoManorAssassination,
+  } = useFilter("volcano-manor-assassination");
 
   return (
     <div className="flex flex-col items-center justify-center px-4">
@@ -34,13 +38,25 @@ function Settings() {
                 variant="outline"
                 onClick={() => setFilterOptional(!filterOptional)}
               >
-                {filterOptional ? "show" : "hide"} optional
+                {filterOptional ? "Show" : "Hide"} optional
               </Button>
               <Button
                 variant="outline"
                 onClick={() => setFilterCompleted(!filterCompleted)}
               >
-                {filterCompleted ? "show" : "hide"} completed
+                {filterCompleted ? "Show" : "Hide"} completed
+              </Button>
+              <Button
+                className="border-red-500 text-red-500 hover:bg-red-500 hover:text-black focus:ring-red-500"
+                variant="outline"
+                onClick={() =>
+                  setFilterVolcanoManorAssassination(
+                    !filterVolcanoManorAssassination
+                  )
+                }
+              >
+                {filterVolcanoManorAssassination ? "Show" : "Hide"} Volcano
+                Manor Assassination
               </Button>
             </>
           )}

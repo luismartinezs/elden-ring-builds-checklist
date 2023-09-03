@@ -510,6 +510,17 @@ const list = {
       description: 'Expore Leyndell and grab any missing items you might need for your build',
       tags: ['OPTIONAL']
     },
+
+    {
+      id: 'a8262bb7-aa69-4e4c-b6ff-db98f03943ea',
+      description: 'Activate cutscene to Burn the Erdtree and access Farum Azula by talking to Melina in Forge of Giants grace',
+      tags: []
+    },
+    {
+      id: 'ecb37b68-e9ab-4d8f-bbe0-1dd4b13c8e7e',
+      description: "Fia will relocate to Deeproot depths even if you didn't complete her questline so you can beat Fia's champions",
+      tags: ['OPTIONAL']
+    },
     // CONSECRATED SNOWFIELD 100-120 +20-24
     // MOHGWYN PALACE 110-140 +20-24
     {
@@ -522,18 +533,33 @@ const list = {
       description: "Go back to the corridor where you found Varré invasion sign and talk to him to get 6 Festering Bloody Fingers and Varré's Bouquet",
       tags: ['varre-questline']
     },
-    // MIQUELLA'S HALIGTREE 120-150 +25
-    // FARUM AZULA 120-150 +25
     {
-      id: 'a8262bb7-aa69-4e4c-b6ff-db98f03943ea',
-      description: 'Activate cutscene to Burn the Erdtree and access Farum Azula by talking to Melina in Forge of Giants grace',
-      tags: []
-    },
-    {
-      id: 'ecb37b68-e9ab-4d8f-bbe0-1dd4b13c8e7e',
-      description: "Fia will relocate to Deeproot depths even if you didn't complete her questline so you can beat Fia's champions",
+      id: 'a38284d6-48d6-46f8-a9b3-5ddc7394ec72',
+      description: "Reach Mohgwyn Palace either from Varre's quest or from Consecrated Snowfield and beat Mohg. Beforehand, it would be useful to get the Purifying Crystal Tear first from killing Eleonora, Violet Bloody Finger at the Second Church of Marika in Altus Plateau",
       tags: ['OPTIONAL']
     },
+    // MIQUELLA'S HALIGTREE 120-150 +25
+    {
+      id: 'd01f819f-3b97-4551-9b08-1e6282f76552',
+      description: 'Get Haligtree Secret Medallion (Right) from Castle Sol',
+      tags: ['OPTIONAL']
+    },
+    {
+      id: '57379897-ef76-4246-af6b-b1db1c957349',
+      description: 'With both halves of Haligtree medallion, access Consecrated Snowfield through the Lift of Rold',
+      tags: ['OPTIONAL']
+    },
+    {
+      id: '52bfb466-e488-4a1b-8eab-7a84dc19ab14',
+      description: "beat Ordina's puzzle in Consecrated Snowfield to access Miquella's Haligtree. You can make the assassins visible holding Sentry's Rorch in your off hand",
+      tags: ['OPTIONAL']
+    },
+    {
+      id: '81fc1668-21af-4a10-acfb-34ed93c8a115',
+      description: 'Beat Malenia',
+      tags: ['OPTIONAL']
+    },
+    // FARUM AZULA 120-150 +25
     {
       id: 'b7edec68-9875-4eb4-b4cc-e967333caebd',
       description: "To fight Fortissax, progress Ranni's quest until receiving the Carian Inverted Statue. Use the statue in the Divine Tower of Liurnia, reach the top, get the Cursemark of Death and give it to Fia. Reload the area and inspect her dream",
@@ -570,19 +596,14 @@ const list = {
       tags: []
     },
     {
+      id: '9d441ec1-1981-4333-8433-8f0391e3873c',
+      description: 'Beat Placidusax',
+      tags: ['OPTIONAL']
+    },
+    {
       id: '4b29d14f-ec7a-4729-a457-5af706963d61',
       description: 'Beat Maliketh',
       tags: []
-    },
-    {
-      id: 'd01f819f-3b97-4551-9b08-1e6282f76552',
-      description: 'Get Haligtree Secret Medallion (Right) from Castle Sol',
-      tags: ['OPTIONAL']
-    },
-    {
-      id: '57379897-ef76-4246-af6b-b1db1c957349',
-      description: 'With both halves of Haligtree medallion, access Consecrated Snowfield through the Lift of Rold',
-      tags: ['OPTIONAL']
     },
     {
       id: '047b1d46-f0c4-427c-afc6-e6463722cb97',
@@ -620,11 +641,10 @@ const list = {
           tags: []
         }
       ]
-
     },
     {
-      id: '52bfb466-e488-4a1b-8eab-7a84dc19ab14',
-      description: "beat Ordina's puzzle in Consecrated Snowfield to access Miquella's Haligtree. You can make the assassins visible holding Sentry's Rorch in your off hand",
+      id: 'd08950f3-2199-484d-8272-a30804e38ee9',
+      description: 'Go through the Subterranean Shunning-grounds under Leyndell',
       tags: ['OPTIONAL']
     },
     // LEYNDELL, CAPITAL OF ASH 120-180 +25
@@ -648,27 +668,6 @@ const list = {
       description: "Interact with the blue summon sign near Marika's remains for the \"Age of the Stars\" ending",
       tags: ['ranni-questline']
     },
-    // OPTIONAL END GAME BOSSES
-    {
-      id: '9d441ec1-1981-4333-8433-8f0391e3873c',
-      description: 'Beat Placidusax',
-      tags: ['OPTIONAL']
-    },
-    {
-      id: '81fc1668-21af-4a10-acfb-34ed93c8a115',
-      description: 'Beat Malenia',
-      tags: ['OPTIONAL']
-    },
-    {
-      id: 'a38284d6-48d6-46f8-a9b3-5ddc7394ec72',
-      description: "Reach Mohgwyn Palace either from Varre's quest or from Consecrated Snowfield and beat Mohg. Beforehand, it would be useful to get the Purifying Crystal Tear first from killing Eleonora, Violet Bloody Finger at the Second Church of Marika in Altus Plateau",
-      tags: ['OPTIONAL']
-    },
-    {
-      id: 'd08950f3-2199-484d-8272-a30804e38ee9',
-      description: 'Go through the Subterranean Shunning-grounds under Leyndell',
-      tags: ['OPTIONAL']
-    }
   ]
 }
 

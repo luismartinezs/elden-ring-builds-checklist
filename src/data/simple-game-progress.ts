@@ -338,13 +338,58 @@ const list = {
       tags: ['OPTIONAL']
     },
     {
-      id: '48a216e3-249c-4720-928a-e8faa7e34806',
-      description: 'Beat Rykard',
-      tags: ['OPTIONAL']
+      id: '4eebbb14-632b-4c83-9251-65998c861e3f',
+      description: "Speak with Tanith in the manor's lobby and get the Drawing-Room Key",
+      tags: ['volcano-manor-assassination']
+    },
+    {
+      id: 'eb8f700c-f37c-48f3-abcc-6956c50d3ce1',
+      description: 'Upstairs from Tanith, Defeat Inquisitor Ghiza',
+      tags: ['volcano-manor-assassination']
+    },
+    {
+      id: 'b049db63-dee0-4a43-8c28-f116b0134880',
+      description: 'Collect the Recusant Finger and Letter from Volcano Manor from the nearby room with Rya and Bernahl',
+      tags: ['volcano-manor-assassination']
+    },
+    {
+      id: '2eef1716-8768-475d-ab54-e45eea352c8e',
+      description: "Defeat Old Knight Istvan using the summon sign north from the Warmaster's Shack (Limgrave). There's a red sign on your map.",
+      tags: ['volcano-manor-assassination']
+    },
+    {
+      id: '778461c2-d725-4a4b-9598-cfd4406928fa',
+      description: 'Report back to Tanith and receive Magma Shot Sorcery',
+      tags: ['volcano-manor-assassination']
+    },
+    {
+      id: 'a10d43ab-da7b-4898-9b11-509d3fd02ea9',
+      description: 'Speak with NPC Patches at the entrance of Volcano Manor',
+      tags: ['volcano-manor-assassination']
+    },
+    {
+      id: '77738365-a822-4500-85e2-14af16746280',
+      description: "Invade and defeat Great Horned Tragoth at Ruin-Strewn Precipice Overlook inside Magma Wyrm Makar's boss room after resting at the grace inside the boss room",
+      tags: ['volcano-manor-assassination']
+    },
+    {
+      id: '3a21455b-efd1-4b48-8bc9-3c435ddd4dff',
+      description: 'Collect the next Letter from the room nearby Tanith',
+      tags: ['volcano-manor-assassination']
+    },
+    {
+      id: '95d2715c-35c8-4468-b939-925ad6c8416b',
+      description: 'Defeat Rileigh using the summon sign midway through the path south of Shaded Castle (Altus)',
+      tags: ['volcano-manor-assassination']
+    },
+    {
+      id: 'b30a881e-6c3b-4c28-84c6-88f942f4686d',
+      description: 'Report back to Tanith for the Serpentbone Blade reward',
+      tags: ['volcano-manor-assassination']
     },
     {
       id: '2beaab01-b227-4b7a-abf7-1ff6861ea4b0',
-      description: "Get Sentry's torch from merchant in Hermit Merchant's Shack, northeast of the Outer Wall Battleground site of grace (Altus), useful if you want to reach Malenia",
+      description: "Get Sentry's torch from merchant in Hermit Merchant's Shack, northeast of the Outer Wall Battleground site of grace (Altus), useful if you want to reach Malenia (buy it from him before you kill him)",
       tags: ['OPTIONAL']
     },
     {
@@ -396,6 +441,26 @@ const list = {
       id: '9363b337-a53f-4f44-9c24-2a18a52c7673',
       description: 'By this point your regular weapon can be fully upgraded +25',
       tags: []
+    },
+    {
+      id: '51111493-cf2d-4ec7-b540-e212e670aa00',
+      description: 'Pick up the Red Letter from the room nearby Tanith',
+      tags: ['volcano-manor-assassination']
+    },
+    {
+      id: '5c1982d8-ef09-4295-850e-8b6e54e61fe8',
+      description: 'Defeat Juno using the summon sign east of the Shack of the Lofty, going west from Freezing Lake grace (Mountain Tops of the Giants)',
+      tags: ['volcano-manor-assassination']
+    },
+    {
+      id: '1276d548-365e-40d6-8b6c-e044336b64ff',
+      description: "Report back to Tanith for the Talisman Taker's Cameo",
+      tags: ['volcano-manor-assassination']
+    },
+    {
+      id: '48a216e3-249c-4720-928a-e8faa7e34806',
+      description: 'Beat Rykard',
+      tags: ['OPTIONAL']
     },
     {
       id: '1c79f7d4-5078-4503-8587-0c8190959121',

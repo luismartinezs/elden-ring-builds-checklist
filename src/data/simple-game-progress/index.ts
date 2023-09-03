@@ -43,6 +43,16 @@ const list = {
       description: 'Get the Dectus Medallion (Left) from Fort Haight (recommended, kill Godrick Knight at the top level to get Bloody slash ash of war)',
       tags: []
     },
+    {
+      id: 'a7d48287-d886-42c1-aa6c-c728b0014419',
+      description: 'Clear Fort Haight (east Limgrave, south of Mistwood) from enemies',
+      tags: ['nepheli-questline']
+    },
+    {
+      id: '5dc416a2-5fec-4a37-a2a4-e5b5e9d57983',
+      description: 'Speak to Kenneth Height atop the battlements southwest of Third Church of Marika',
+      tags: ['nepheli-questline']
+    },
     // WEEPING PENINSULA L20-30 +3
     {
       id: '63ce03c8-ce26-4dcb-a37e-07ab46bd08f4',
@@ -69,17 +79,38 @@ const list = {
       description: 'By this point, your weapon can be upgraded to +3-4 (1-2)',
       tags: []
     },
+    // STORMVEIL CASTLE L30-40 +3-4
     {
       id: '7aba047b-6da2-46ab-9f3a-0c5acf36e752',
       description: 'Beat Magrit',
       tags: []
     },
     {
+      id: '44674406-7a68-4cd5-af01-d2b7713d363b',
+      description: 'Talk to Nepheli in the north room of Stormveil Castle courtyard',
+      tags: ['nepheli-questline']
+    },
+    {
       id: 'b9690395-5806-49d1-85fb-89411478266b',
       description: 'Beat Godrick in Stormhill Castle',
       tags: []
     },
-    // LIURNIA
+    {
+      id: '062f0984-ff7b-4da1-ba5f-b05e12ac7eae',
+      description: 'After defeating Godrick and resting at his grace, talk to Nepheli in Roundtable Hold (you might need talk first to Gideon and rest in a grace for Nepheli to appear)',
+      tags: ['nepheli-questline']
+    },
+    {
+      id: 'a316a47a-313e-4e83-81cc-23bfaca40eec',
+      description: "Obtain any of the Great Runes (a good choice is to get Godrick's Great Rune as it's useful and easy to get, or beating Rennala will also get you her Great Rune)",
+      tags: ['varre-questline']
+    },
+    {
+      id: '7e6a03fc-5f33-4cd8-bb14-a0bf30791888',
+      description: 'Talk to Enia in Roundtable Hold',
+      tags: ['varre-questline']
+    },
+    // LIURNIA SOUTH L40-50 +3-4
     {
       id: 'a8b99a0d-6dab-4328-8ef6-9aa1f0c85b8c',
       description: 'Buy lantern from Nomadic Merchant in Liurnia of the Lakes in LIURNIA LAKE SHORE grace',
@@ -91,9 +122,29 @@ const list = {
       tags: []
     },
     {
+      id: 'f892cb40-deaa-4852-88d2-2121f978749b',
+      description: 'Talk to Varré in Rose Church (west from Fallen Ruins of the Lake grace in Liurnia) and get Festering Bloody Finger',
+      tags: ['varre-questline']
+    },
+    {
+      id: '90857748-9645-4423-8937-1c5bd67158c7',
+      description: 'Use Festering Bloody Finger to invade players three times (you can exit their world immediately',
+      tags: ['varre-questline']
+    },
+    {
+      id: '98f9ae6e-2b36-42c0-94eb-17c92aecbd29',
+      description: "Talk to Varré in Rose Church, accept the dialog and get Lord of Blood's Favor",
+      tags: ['varre-questline']
+    },
+    {
       id: '5d177901-90f6-449b-b13f-f8df8eef3ee4',
       description: 'Get Academy Glintstone Key from Liurnia of the Lakes, south from Crystalline Woods site of grace, behind Glintstone Dragon Smarag',
       tags: []
+    },
+    {
+      id: '83eb9516-23c0-4f13-b05f-4a8b006fb5c3',
+      description: 'Talk to Nepheli at Village Of The Albinaurics and defeat Omenkiller',
+      tags: ['nepheli-questline']
     },
     {
       id: 'de7fc925-2ad3-441b-a0f3-8cff17922c2e',
@@ -101,93 +152,56 @@ const list = {
       tags: ['OPTIONAL']
     },
     {
-      id: 'a42f9524-240e-4d60-8a7c-af6c109f5fff',
-      description: `Progress Varre questline to access Mohgwyn Palace`,
-      tags: ['OPTIONAL'],
-      items: [
-        {
-          id: '47350604-1d3b-44f9-91ec-308bb46f59a8',
-          description: 'Beat Godrick and acquire his Great Rune.',
-          tags: []
-        },
-        {
-          id: '67896d0e-7fb5-4c8d-a368-4c65da98882b',
-          description: 'Talk to Enia in Roundtable Hold.',
-          tags: []
-        },
-        {
-          id: '0480105e-ee66-4786-88b3-d07bcafbe4d6',
-          description: 'Locate Varre in Rose Church (south east of TEMPLE QUARTER grace, Liurnia).',
-          tags: []
-        },
-        {
-          id: 'e104923a-32ba-488b-bb94-4c20b32c263a',
-          description: 'Obtain festering bloody finger from Varre.',
-          tags: []
-        },
-        {
-          id: 'fa2d45e0-ed58-4e1a-aa64-90e577ad386e',
-          description: 'Invade players 3 times (quick exits are allowed).',
-          tags: []
-        },
-        {
-          id: '4dc6eda1-baa7-4a38-b192-818e5199a3ed',
-          description: "Talk to Varre again to obtain Lord of Blood's Favor.",
-          tags: []
-        },
-        {
-          id: '76493b9d-9bcf-45b9-aef1-c61a3661de06',
-          description: 'Travel to the Four Belfries.',
-          tags: []
-        },
-        {
-          id: '29f20517-d0d3-4120-956b-ef670e368ecf',
-          description: 'Obtain the Imbued Sword Key from the top (fourth) belfry.',
-          tags: []
-        },
-        {
-          id: 'e569f1eb-bc95-4523-a168-f1dba784101a',
-          description: 'Enter the waygate in the Second Belfry (look for the message "Precipice of Anticipation").',
-          tags: []
-        },
-        {
-          id: '2c8b31a9-0f80-4118-b121-fc1c02dd692d',
-          description: 'Defeat the Grafted Scion.',
-          tags: []
-        },
-        {
-          id: 'e68bea6a-e1c9-48d0-a212-05baf275c9e5',
-          description: 'Reach the Chapel of Anticipation.',
-          tags: []
-        },
-        {
-          id: 'abfe6273-0a13-4842-8eef-93cec89de707',
-          description: "Soak Lord of Blood's Favor in the maiden inside the chapel.",
-          tags: []
-        },
-        {
-          id: '765ebc6c-fd56-4d73-b4e4-7f1edf38989c',
-          description: 'Return to Rose Church.',
-          tags: []
-        },
-        {
-          id: '0bd8f8ed-f721-4650-84f4-4cb752b9a119',
-          description: 'Talk to Varre twice.',
-          tags: []
-        },
-        {
-          id: 'fbb6c819-ecda-4180-98a1-880e6d342b55',
-          description: "Use the Pureblood Knight's Medal he provides.",
-          tags: []
-        }
-      ]
-
+      id: '1ff4c70a-d0d0-48a1-80a3-ade3b0bfe625',
+      description: 'Talk to Nepheli in Roundtable Hold',
+      tags: ['nepheli-questline']
+    },
+    {
+      id: 'c8b74d84-e7f3-486b-b6c3-faff626150c1',
+      description: 'Talk to Gideon Ofnir about Nepheli',
+      tags: ['nepheli-questline']
+    },
+    {
+      id: '5a0652e2-9114-4ea8-912a-6bc10cb93723',
+      description: "Progress Roderika's questline if you didn't, by talking to Roderika and Hewg multiple times in Roundtable Hold (and resting at the grace) until Roderika moves nearby Hewg",
+      tags: ['nepheli-questline']
+    },
+    {
+      id: 'b0aae07c-ebd4-4f3c-b9d5-897faaf90710',
+      description: 'From the Four Belfries (Liurnia), seek the waygate that has the message "Precipice of Anticipation" and use the Imbued Sword Key you find at the top (fourth) belfry to activate the waygate. You will reach the Chapel of Anticipation',
+      tags: ['nepheli-questline', 'varre-questline']
+    },
+    {
+      id: '0f198bb6-04cf-4f22-be36-15cb2e10fd95',
+      description: 'Defeat the Grafted Scion',
+      tags: ['nepheli-questline', 'varre-questline']
+    },
+    {
+      id: '88ccfcfa-b338-40cb-be66-604611b1cca7',
+      description: 'Get the Stormhawk King found in the Chapel of Anticipation and give it to Nepheli',
+      tags: ['nepheli-questline']
+    },
+    {
+      id: '00a5650b-1f3d-49dc-b0d2-48a485f80008',
+      description: "Soak Lord of Blood's Favor in the corpse at Chapel of Anticipation (you can also do this by killing Irina in Weeping Peninsula or in the Church of Inhibition in north Liurnia)",
+      tags: ['varre-questline']
+    },
+    {
+      id: 'e1c9c66f-2c56-4772-a8a5-e3cd29a54641',
+      description: "Talk to Varré in Rose Church multiple times until he gives you the Pureblood Knight's Medal",
+      tags: ['varre-questline']
+    },
+    {
+      id: '5b1e909e-ac7c-4f46-a620-cf8d0b06bda0',
+      description: "Use the Pureblood Knight's Medal to reach Mohgwyn's Palace (it's also possible to reach Mohgwyn's Palace from Consecrated Snowfield much later in the game though a waygate portal)",
+      tags: ['varre-questline']
     },
     {
       id: '758a4f11-7626-4b58-bd3b-b8ba1cf2b607',
       description: "You can also access Mogh's palace from Consecrated Snowfield much later in the game though a waygate portal",
       tags: ['OPTIONAL']
     },
+    // RAYA LUCARIA L50-60 +4-6
     {
       id: '054a08f7-70ba-4ede-a188-b3a286808cb5',
       description: 'Enter Raya Lucaria and beat Wolf of Radagon',
@@ -208,7 +222,9 @@ const list = {
       description: "Beat Rennala (or if you beat Radahn or Rykard you don't need to beat Rennala)",
       tags: []
     },
-    // CARIA MANOR
+    // LIURNIA EAST 50-60 +4-6
+    // AINSEL RIBER L50-60 +4-6
+    // LIURNIA WEST, CARIA MANOR L50-60 +4-6
     {
       id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
       description: 'Beat Loretta in Caria Manor',
@@ -219,7 +235,12 @@ const list = {
       description: 'Talk to Ranni, then her servants, then Ranni again. If you don\'t find Ranni, it\'s possible that you have started the Radahn festival, so you will have to kill Radahn before progressing',
       tags: ['ranni-questline']
     },
-    // SIOFRA
+    {
+      id: '403d44e8-e01d-44d2-a71f-92141edf49da',
+      description: "Warning: completing this step will lock you out of Nepheli's quest, do NOT do this if you want to progress Nepheli's questline. If you get Seluvis's Potion from Seluvis and you give it to Nepheli, she will become unresponsive and leave. She can then be found in Seluvis's secret room, turned into a puppet",
+      tags: ['nepheli-questline']
+    },
+    // SIOFRA 50-60 +8-12
     {
       id: '2d87bde3-61d2-4991-896f-d53d17123d86',
       description: 'Beat Ancestor Spirit in Siofra river, which you can access through the Siofra Well in Mistwood',
@@ -250,7 +271,7 @@ const list = {
       description: 'By this point your weapon can be +10-14 (3-5)',
       tags: []
     },
-    // RADAHN
+    // CAELID, RADAHN 60-70 +10-14
     {
       id: '7d2912a9-f6d1-45a1-bdb6-36ba9a63f0c6',
       description: 'Radahn Festival should be active now, and you can beat Radahn',
@@ -266,7 +287,7 @@ const list = {
       description: 'If you beat Radahn, you can now get the Mimic Tear spirit summon from Nokron',
       tags: ['OPTIONAL']
     },
-    // NOKRON
+    // NOKRON CITY AND AQUEDUCT 70-80 +10-14
     {
       id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
       description: 'Get Fingerslayer Blade from Nokron',
@@ -307,7 +328,8 @@ const list = {
       description: 'Beat Valiant Gargoyles in Siofra Aqueduct, and access Deeproot Depths through the coffin in their arena',
       tags: ['OPTIONAL']
     },
-    // LAKE OF ROT
+    // DEEPROOT DEPTHS 80-90 +15-20
+    // LAKE OF ROT 80-100 +15-20
     {
       id: '72415649-ec6d-4fd5-845c-950088a6403b',
       description: 'Go through the Lake of Rot (Flame, Cleanse Me incantation, lots of HP flasks, Immunizing Horn Charm talisman and Immunizing Cured Meat help)',
@@ -333,7 +355,7 @@ const list = {
       description: 'Place the Dark Moon Ring on Ranni\'s doll finger and Get the Dark Moon Greatsword',
       tags: ['ranni-questline']
     },
-    // MT GELMIR
+    // MT GELMIR 80-100 +15-20
     {
       id: '35ea6a80-fe78-419d-b817-002882705950',
       description: 'You can reach Mt. Gelmir and Volcano Manor by going north east from Altus Plateau site of grace until  FOREST-SPANNING GREATBRIDGE grace, crossing the bridge with the magic portal, then heading south west through the only path available',
@@ -394,13 +416,13 @@ const list = {
       description: "Get Sentry's torch from merchant in Hermit Merchant's Shack, northeast of the Outer Wall Battleground site of grace (Altus), useful if you want to reach Malenia (buy it from him before you kill him)",
       tags: ['OPTIONAL']
     },
-    // ALTUS
+    // ALTUS 60-80 +10-14
     {
       id: 'c399c03e-adbf-4d14-b993-d207677089a8',
       description: 'Beat Draconic Tree Sentinel to access Leyndell',
       tags: []
     },
-    // LEYNDELL
+    // LEYNDELL 90-110 +15-20
     {
       id: '5824fd47-d0bb-43ec-b552-dfe59fc62bc0',
       description: 'By this point your weapon can be +15-20 (6-7)',
@@ -408,15 +430,26 @@ const list = {
     },
     {
       id: 'ca3d9a16-b81b-4be1-bb69-b7a3a704e862',
-      description: 'Beat Godfrey shade and Morgott',
+      description: 'Beat Godfrey shade',
       tags: []
     },
     {
-      id: '77bd9e6d-e729-435a-ad71-995d8575a72d',
-      description: "After defeating Morgott, if you progressed Nepheli's and Gostoc questlines, now you can get 2 Ancient Dragon Smithing Stones from the Stormveil Castle throne room",
-      tags: ['OPTIONAL']
+      id: 'aed334cf-8397-453c-87d5-16922af7c955',
+      description: 'Beat Morgott',
+      tags: []
     },
-    // MOUNTAIN TOPS OF GIANTS
+    {
+      id: 'b9a44d4b-7a7e-47b8-9dd9-3e76b4f7f71f',
+      description: 'After defeating Morgott (but before killing Gideon), find Nepheli, Kenneth, and Gostoc in the Stormveil Castle throne room near the Godrick the Grafted site of grace (you might have to spawn from the Godrick the Grafted site of grace and rest at the Secluded Cell site of grace)',
+      tags: ['nepheli-questline']
+    },
+    {
+      id: '707d665a-e586-40ad-bbed-2362a270f4d4',
+      description: 'Get an Ancient Dragon Smithing Stone from Nepheli and buy another one from Gostoc',
+      tags: ['nepheli-questline']
+    },
+    // FORBIDDEN LANDS 110-120 +20-24
+    // MOUNTAIN TOPS OF GIANTS 110-120 +20-24
     {
       id: '7690a174-fa2b-42a3-a85d-844c90e55116',
       description: 'Talk to Melina in ELDEN THRONE grace to get the Rold medallion',
@@ -477,7 +510,20 @@ const list = {
       description: 'Expore Leyndell and grab any missing items you might need for your build',
       tags: ['OPTIONAL']
     },
-    // FARUM AZULA
+    // CONSECRATED SNOWFIELD 100-120 +20-24
+    // MOHGWYN PALACE 110-140 +20-24
+    {
+      id: 'd34d72c6-0545-4010-bca7-73d8280ede4c',
+      description: 'Use invasion sign near the Mausoleum Dynasty Midpoint Site of Grace and defeat Varré',
+      tags: ['varre-questline']
+    },
+    {
+      id: 'a44dea7f-3186-41df-98af-02907dc45f81',
+      description: "Go back to the corridor where you found Varré invasion sign and talk to him to get 6 Festering Bloody Fingers and Varré's Bouquet",
+      tags: ['varre-questline']
+    },
+    // MIQUELLA'S HALIGTREE 120-150 +25
+    // FARUM AZULA 120-150 +25
     {
       id: 'a8262bb7-aa69-4e4c-b6ff-db98f03943ea',
       description: 'Activate cutscene to Burn the Erdtree and access Farum Azula by talking to Melina in Forge of Giants grace',
@@ -581,7 +627,7 @@ const list = {
       description: "beat Ordina's puzzle in Consecrated Snowfield to access Miquella's Haligtree. You can make the assassins visible holding Sentry's Rorch in your off hand",
       tags: ['OPTIONAL']
     },
-    // END GAME
+    // LEYNDELL, CAPITAL OF ASH 120-180 +25
     {
       id: '065851a5-2baf-4466-8c3c-1125d38d09f4',
       description: 'Beat Gideon',

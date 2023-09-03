@@ -6,7 +6,7 @@ const checklistItems = splitLines.map(([id, description, tagString]) => {
   let tags = [];
 
   if (tagString) {
-    tags = tagString.split(',');
+    tags = tagString.split(',').map(tag => tag.trim());
   }
 
   // if (description && description.startsWith('[OPTIONAL]')) {

@@ -364,7 +364,7 @@ const list = {
     },
     {
       id: 'a10d43ab-da7b-4898-9b11-509d3fd02ea9',
-      description: 'Speak with NPC Patches at the entrance of Volcano Manor',
+      description: "Speak with NPC Patches at the entrance of Volcano Manor (it's possible that you have to meet him first at Murkwater Cave for him to show up at Volcano Manor, the wiki is not clear about that)",
       tags: ['volcano-manor-assassination']
     },
     {

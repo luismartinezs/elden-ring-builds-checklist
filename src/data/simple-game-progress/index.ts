@@ -5,7 +5,7 @@ const list = {
   notes: [
     `Recommended for playthroughs after the first one (not NG+, starting new save). All non-required bosses marked as optional. Easily reachable ancient smithing stones not marked as optional, others are optional. Weapon upgrades are written as "normal (somber)". Kill any merchants (except for maybe Kale) and give their bells to the twin maidens to be able to easily buy smithing stones when you need them. If you're missing stones, explore caves or check Fextralife for locations.\nSimple rule of thumb for leveling: 1) Meet weapon requirement first, 2) Every two levels, add one point to VGR and one to your main stat(s), 3) If unsure about your main stat, just boost VGR until you figure it out`
   ],
-  // START / LIMGRAVE
+  // WEST LIMGRAVE L1-15 +0-1
   items: [
     {
       id: '684b6a6d-5025-4839-9615-aea8c9b64b36',
@@ -32,6 +32,7 @@ const list = {
       description: 'Let Magrit kill you to access Roundtable Hold',
       tags: []
     },
+    // EAST LIMGRAVE & MISTWOOD L10-20 +2
     {
       id: 'cd0ca78a-4fb2-4147-9167-f7a56520017e',
       description: 'Get Flask of Wondrous Physick and Sacred Tear from the Third Church of Marika',
@@ -42,6 +43,7 @@ const list = {
       description: 'Get the Dectus Medallion (Left) from Fort Haight (recommended, kill Godrick Knight at the top level to get Bloody slash ash of war)',
       tags: []
     },
+    // WEEPING PENINSULA L20-30 +3
     {
       id: '63ce03c8-ce26-4dcb-a37e-07ab46bd08f4',
       description: 'Go to Weeping peninsula and get the Sacred tears from all 3 churches (Callu Baptismal Church, Church of Pilgrimage, Fourth Church of Marika)',
@@ -77,6 +79,7 @@ const list = {
       description: 'Beat Godrick in Stormhill Castle',
       tags: []
     },
+    // LIURNIA
     {
       id: 'a8b99a0d-6dab-4328-8ef6-9aa1f0c85b8c',
       description: 'Buy lantern from Nomadic Merchant in Liurnia of the Lakes in LIURNIA LAKE SHORE grace',
@@ -205,6 +208,7 @@ const list = {
       description: "Beat Rennala (or if you beat Radahn or Rykard you don't need to beat Rennala)",
       tags: []
     },
+    // CARIA MANOR
     {
       id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
       description: 'Beat Loretta in Caria Manor',
@@ -215,6 +219,7 @@ const list = {
       description: 'Talk to Ranni, then her servants, then Ranni again. If you don\'t find Ranni, it\'s possible that you have started the Radahn festival, so you will have to kill Radahn before progressing',
       tags: ['ranni-questline']
     },
+    // SIOFRA
     {
       id: '2d87bde3-61d2-4991-896f-d53d17123d86',
       description: 'Beat Ancestor Spirit in Siofra river, which you can access through the Siofra Well in Mistwood',
@@ -245,6 +250,7 @@ const list = {
       description: 'By this point your weapon can be +10-14 (3-5)',
       tags: []
     },
+    // RADAHN
     {
       id: '7d2912a9-f6d1-45a1-bdb6-36ba9a63f0c6',
       description: 'Radahn Festival should be active now, and you can beat Radahn',
@@ -260,6 +266,7 @@ const list = {
       description: 'If you beat Radahn, you can now get the Mimic Tear spirit summon from Nokron',
       tags: ['OPTIONAL']
     },
+    // NOKRON
     {
       id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
       description: 'Get Fingerslayer Blade from Nokron',
@@ -300,6 +307,7 @@ const list = {
       description: 'Beat Valiant Gargoyles in Siofra Aqueduct, and access Deeproot Depths through the coffin in their arena',
       tags: ['OPTIONAL']
     },
+    // LAKE OF ROT
     {
       id: '72415649-ec6d-4fd5-845c-950088a6403b',
       description: 'Go through the Lake of Rot (Flame, Cleanse Me incantation, lots of HP flasks, Immunizing Horn Charm talisman and Immunizing Cured Meat help)',
@@ -325,6 +333,7 @@ const list = {
       description: 'Place the Dark Moon Ring on Ranni\'s doll finger and Get the Dark Moon Greatsword',
       tags: ['ranni-questline']
     },
+    // MT GELMIR
     {
       id: '35ea6a80-fe78-419d-b817-002882705950',
       description: 'You can reach Mt. Gelmir and Volcano Manor by going north east from Altus Plateau site of grace until  FOREST-SPANNING GREATBRIDGE grace, crossing the bridge with the magic portal, then heading south west through the only path available',
@@ -385,11 +394,13 @@ const list = {
       description: "Get Sentry's torch from merchant in Hermit Merchant's Shack, northeast of the Outer Wall Battleground site of grace (Altus), useful if you want to reach Malenia (buy it from him before you kill him)",
       tags: ['OPTIONAL']
     },
+    // ALTUS
     {
       id: 'c399c03e-adbf-4d14-b993-d207677089a8',
       description: 'Beat Draconic Tree Sentinel to access Leyndell',
       tags: []
     },
+    // LEYNDELL
     {
       id: '5824fd47-d0bb-43ec-b552-dfe59fc62bc0',
       description: 'By this point your weapon can be +15-20 (6-7)',
@@ -405,6 +416,7 @@ const list = {
       description: "After defeating Morgott, if you progressed Nepheli's and Gostoc questlines, now you can get 2 Ancient Dragon Smithing Stones from the Stormveil Castle throne room",
       tags: ['OPTIONAL']
     },
+    // MOUNTAIN TOPS OF GIANTS
     {
       id: '7690a174-fa2b-42a3-a85d-844c90e55116',
       description: 'Talk to Melina in ELDEN THRONE grace to get the Rold medallion',
@@ -465,6 +477,7 @@ const list = {
       description: 'Expore Leyndell and grab any missing items you might need for your build',
       tags: ['OPTIONAL']
     },
+    // FARUM AZULA
     {
       id: 'a8262bb7-aa69-4e4c-b6ff-db98f03943ea',
       description: 'Activate cutscene to Burn the Erdtree and access Farum Azula by talking to Melina in Forge of Giants grace',
@@ -568,6 +581,7 @@ const list = {
       description: "beat Ordina's puzzle in Consecrated Snowfield to access Miquella's Haligtree. You can make the assassins visible holding Sentry's Rorch in your off hand",
       tags: ['OPTIONAL']
     },
+    // END GAME
     {
       id: '065851a5-2baf-4466-8c3c-1125d38d09f4',
       description: 'Beat Gideon',
@@ -588,6 +602,7 @@ const list = {
       description: "Interact with the blue summon sign near Marika's remains for the \"Age of the Stars\" ending",
       tags: ['ranni-questline']
     },
+    // OPTIONAL END GAME BOSSES
     {
       id: '9d441ec1-1981-4333-8433-8f0391e3873c',
       description: 'Beat Placidusax',
@@ -600,7 +615,7 @@ const list = {
     },
     {
       id: 'a38284d6-48d6-46f8-a9b3-5ddc7394ec72',
-      description: "Reach Mohgwyn Palace either from Varre's quest or from Consecrated Snowfield and beat Mohg. It would be useful to get the Purifying Crystal Tear first from killing Eleonora, Violet Bloody Finger at the Second Church of Marika in Altus Plateau",
+      description: "Reach Mohgwyn Palace either from Varre's quest or from Consecrated Snowfield and beat Mohg. Beforehand, it would be useful to get the Purifying Crystal Tear first from killing Eleonora, Violet Bloody Finger at the Second Church of Marika in Altus Plateau",
       tags: ['OPTIONAL']
     },
     {

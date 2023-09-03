@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { type TChecklistItem } from "~/features/checklist/types";
 import { Tag } from "~/features/checklist/components/Tag";
@@ -49,15 +49,17 @@ const Checkbox = ({
   />
 );
 
-function hasItems(
+function hasNestedItems(
   item: TChecklistItem
 ): item is TChecklistItem & { items: TChecklistItem[] } {
   return "items" in item && Array.isArray(item.items);
 }
 
-const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
-  const { isChecked, checkItem, checkItems } = useCheckItem();
-  const [isExpanded, setIsExpanded] = useState(false);
+function useShowChecklistItem(
+  item: TChecklistItem,
+  isChecked: (id: string) => boolean
+) {
+  const [show, setShow] = useState(true);
   const { filter: filterOptional } = useFilter("optional");
   const { filter: filterCompleted } = useFilter("completed");
   const { filter: filterVolcanoManorAssassination } = useFilter(
@@ -65,30 +67,53 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
   );
   const { filter: filterRanniQuestline } = useFilter("ranni-questline");
 
+  // NOTE: Using an effect instead of a derived state to avoid hydration errors
+  useEffect(() => {
+    const filters = [
+      {
+        tag: "OPTIONAL",
+        filter: filterOptional,
+      },
+      {
+        tag: "volcano-manor-assassination",
+        filter: filterVolcanoManorAssassination,
+      },
+      {
+        tag: "ranni-questline",
+        filter: filterRanniQuestline,
+      },
+    ];
+    const shouldHide = filters.some(
+      ({ tag, filter }) => item.tags?.includes(tag) && filter
+    );
+    setShow(!shouldHide && !(isChecked(item.id) && filterCompleted));
+  }, [
+    filterOptional,
+    filterVolcanoManorAssassination,
+    filterRanniQuestline,
+    item.tags,
+    filterCompleted,
+    isChecked,
+    item.id,
+  ]);
+
+  return show;
+}
+
+const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const { isChecked, checkItem, checkItems } = useCheckItem();
+  const show = useShowChecklistItem(item, isChecked);
+
   function onCheckboxChange(event: React.ChangeEvent<HTMLInputElement>) {
-    if (hasItems(item)) {
+    if (hasNestedItems(item)) {
       checkItems(item.items.map((el) => el.id));
     } else {
       checkItem(event.target.name);
     }
   }
 
-  if (isChecked(item.id) && filterCompleted) {
-    return null;
-  }
-
-  if (filterOptional && item.tags?.includes("OPTIONAL")) {
-    return null;
-  }
-
-  if (
-    filterVolcanoManorAssassination &&
-    item.tags?.includes("volcano-manor-assassination")
-  ) {
-    return null;
-  }
-
-  if (filterRanniQuestline && item.tags?.includes("ranni-questline")) {
+  if (!show) {
     return null;
   }
 
@@ -98,7 +123,7 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
         <Checkbox
           itemId={item.id}
           isChecked={
-            hasItems(item)
+            hasNestedItems(item)
               ? item.items.every((nested) => isChecked(nested.id))
               : isChecked(item.id)
           }

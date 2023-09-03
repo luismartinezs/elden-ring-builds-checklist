@@ -6,7 +6,7 @@ import Head from "next/head";
 import { SettingsMenu } from "~/components/SettingsMenu";
 
 export const getStaticPaths: GetStaticPaths = () => {
-  const paths = Object.values(lists).map((list) => ({
+  const paths = Object.values<TChecklist>(lists).map((list) => ({
     params: { checklistId: list.slug },
   }));
 
@@ -21,7 +21,7 @@ export const getStaticProps: GetStaticProps = ({ params }) => {
 
   return {
     props: {
-      checklist: Object.values(lists).find(
+      checklist: Object.values<TChecklist>(lists).find(
         (list) => list.slug === params.checklistId
       ),
     },

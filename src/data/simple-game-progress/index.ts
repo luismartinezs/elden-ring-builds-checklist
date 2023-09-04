@@ -642,6 +642,11 @@ const list = {
       description: "Fia will relocate to Deeproot depths even if you didn't complete her questline so you can beat Fia's champions",
       tags: ['OPTIONAL']
     },
+    {
+      id: 'b7edec68-9875-4eb4-b4cc-e967333caebd',
+      description: "To fight Fortissax, progress Ranni's quest until receiving the Carian Inverted Statue. Use the statue in the Divine Tower of Liurnia, reach the top, get the Cursemark of Death and give it to Fia. Reload the area and inspect her dream",
+      tags: ['OPTIONAL']
+    },
     // CONSECRATED SNOWFIELD 100-120 +20-24
     // MOHGWYN PALACE 110-140 +20-24
     {
@@ -686,11 +691,6 @@ const list = {
       tags: ['OPTIONAL']
     },
     // FARUM AZULA 120-150 +25
-    {
-      id: 'b7edec68-9875-4eb4-b4cc-e967333caebd',
-      description: "To fight Fortissax, progress Ranni's quest until receiving the Carian Inverted Statue. Use the statue in the Divine Tower of Liurnia, reach the top, get the Cursemark of Death and give it to Fia. Reload the area and inspect her dream",
-      tags: ['OPTIONAL']
-    },
     {
       id: 'fe1b4d05-4399-4a9f-9790-af424afba182',
       description: 'Kill dragon in curved platform at the beginning of Farum Azula to get an Ancient Dragon Smithing Stone',

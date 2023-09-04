@@ -15,7 +15,7 @@ function Settings() {
   const { items, setItems } = useCheckItem();
 
   return (
-    <div className="flex h-full flex-col items-center justify-start px-6">
+    <div className="flex h-full flex-col items-center justify-start px-3 sm:px-6">
       <p className="w-full text-left text-stone-300">
         Filters apply to all checklists
       </p>
@@ -106,7 +106,7 @@ function Menu({
   return (
     <div
       className={classnames(
-        "fixed inset-4 top-[80px] z-10 grid grid-cols-1 text-white transition-opacity duration-500 ease-out md:grid-cols-2",
+        "fixed inset-1 top-[72px] z-10 grid grid-cols-1 text-white transition-opacity duration-500 ease-out sm:inset-4 sm:top-[80px] md:grid-cols-2",
         open ? "opacity-100" : "pointer-events-none opacity-0"
       )}
     >
@@ -114,17 +114,17 @@ function Menu({
       <div
         ref={ref}
         className={classnames(
-          "col-span-1 max-w-3xl rounded-xl border border-stone-500 bg-stone-900 text-white shadow-xl transition-opacity duration-300 ease-out"
+          "col-span-1 max-w-3xl overflow-y-auto rounded-xl border border-stone-500 bg-stone-900 text-white shadow-xl transition-opacity duration-300 ease-out"
         )}
       >
         <div className="flex h-full flex-col items-center">
-          <div className="flex w-full items-start justify-between px-6 pt-4">
+          <div className="flex w-full items-center justify-between px-3 pt-3 sm:items-start sm:px-6 sm:pt-4">
             <div className="flex items-center gap-2">
               <h2>Global Checklist Settings</h2>
             </div>
             <button
               onClick={toggle}
-              className="max-h-[50px] self-end rounded-xl p-2 text-white hover:bg-stone-800"
+              className="max-h-[50px] self-end rounded-xl p-1 text-white hover:bg-stone-800 sm:p-2"
             >
               <AiOutlineClose color="#ffffff" size={30} />
             </button>

@@ -31,6 +31,11 @@ function Settings() {
                 className="border-sky-200 text-sky-200 hover:bg-sky-200 hover:text-black focus:ring-sky-200"
               />
               <FilterButton
+                filterTag="seluvis-questline"
+                label="Seluvis"
+                className="border-sky-300 text-sky-300 hover:bg-sky-300 hover:text-black focus:ring-sky-300"
+              />
+              <FilterButton
                 filterTag="volcano-manor-assassination"
                 label="Volcano
                 Manor"

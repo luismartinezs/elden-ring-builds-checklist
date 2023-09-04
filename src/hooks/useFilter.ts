@@ -10,7 +10,8 @@ export const filterKeys = {
   smithingStoneBell: 'smithing-stone-bell',
   somberStoneBell: 'somber-stone-bell',
   glovewortBell: 'glovewort-bell',
-  ghostGlovewortBell: 'ghost-glovewort-bell'
+  ghostGlovewortBell: 'ghost-glovewort-bell',
+  seluvisQuestline: 'seluvis-questline',
 } as const
 
 export function useFilter(tag: typeof filterKeys[keyof typeof filterKeys]) {

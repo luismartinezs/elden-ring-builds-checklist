@@ -235,12 +235,18 @@ const list = {
       description: 'Talk to Ranni, then her servants, then Ranni again. If you don\'t find Ranni, it\'s possible that you have started the Radahn festival, so you will have to kill Radahn before progressing',
       tags: ['ranni-questline']
     },
+    {
+      id: 'b7931f96-7e09-40bb-87dc-468c1c01ccbb',
+      description: "Talk to Seluvis in Seluvis's Rise to get Seluvis's Potion (beware that giving this item to certain NPCs can lock you out of their quests)",
+      tags: ['seluvis-questline']
+    },
     // SIOFRA 50-60 +8-12
     {
       id: '2d87bde3-61d2-4991-896f-d53d17123d86',
       description: 'Beat Ancestor Spirit in Siofra river, which you can access through the Siofra Well in Mistwood',
       tags: ['OPTIONAL']
     },
+    // ACCESS ALTUS
     {
       id: '2a053162-bab5-4ca2-a419-959625dd2d6a',
       description: 'You can also ignore the Dectus medallions and access Altus through the Ruin-Strewn Precipice, accessible going north past the Bellum church, north of the path toward the Dectus Lift',
@@ -255,11 +261,6 @@ const list = {
       id: 'bd19aee2-3a7b-419e-9950-c5d2462483d8',
       description: 'Rest in any site of grace in Altus',
       tags: []
-    },
-    {
-      id: 'b7931f96-7e09-40bb-87dc-468c1c01ccbb',
-      description: "Talk to Seluvis in Seluvis's Rise to get Seluvis's Potion",
-      tags: ['seluvis-questline']
     },
     {
       id: '49478ab3-ba86-45ff-b333-94de240f8c6c',

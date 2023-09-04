@@ -68,6 +68,7 @@ function useShowChecklistItem(
   const { filter: filterRanniQuestline } = useFilter("ranni-questline");
   const { filter: filterVarreQuestline } = useFilter("varre-questline");
   const { filter: filterNepheliQuestline } = useFilter("nepheli-questline");
+  const { filter: filterSeluvisQuestline } = useFilter("seluvis-questline");
   const { filter: filterSmithingStoneBell } = useFilter("smithing-stone-bell");
   const { filter: filterSomberStoneBell } = useFilter("somber-stone-bell");
   const { filter: filterGlovewortBell } = useFilter("glovewort-bell");
@@ -89,6 +90,10 @@ function useShowChecklistItem(
       {
         tag: "ranni-questline",
         filter: filterRanniQuestline,
+      },
+      {
+        tag: "seluvis-questline",
+        filter: filterSeluvisQuestline,
       },
       {
         tag: "varre-questline",
@@ -139,6 +144,7 @@ function useShowChecklistItem(
     filterSomberStoneBell,
     filterGlovewortBell,
     filterGhostGlovewortBell,
+    filterSeluvisQuestline,
   ]);
 
   return show;

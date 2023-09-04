@@ -511,7 +511,7 @@ const list = {
       tags: ['glovewort-bell']
     },
     {
-      id: '5c50d5ff-4ee2-4b1f-8e59-132e44ce59c9',
+      id: 'c4d24087-e65d-4376-bdbd-c9356a062610',
       description: 'Run through to Mountaintops of the Giants until right before Fire Giant',
       tags: []
     },

@@ -235,11 +235,6 @@ const list = {
       description: 'Talk to Ranni, then her servants, then Ranni again. If you don\'t find Ranni, it\'s possible that you have started the Radahn festival, so you will have to kill Radahn before progressing',
       tags: ['ranni-questline']
     },
-    {
-      id: '403d44e8-e01d-44d2-a71f-92141edf49da',
-      description: "Warning: completing this step will lock you out of Nepheli's quest, do NOT do this if you want to progress Nepheli's questline. If you get Seluvis's Potion from Seluvis and you give it to Nepheli, she will become unresponsive and leave. She can then be found in Seluvis's secret room, turned into a puppet",
-      tags: ['nepheli-questline']
-    },
     // SIOFRA 50-60 +8-12
     {
       id: '2d87bde3-61d2-4991-896f-d53d17123d86',
@@ -262,6 +257,46 @@ const list = {
       tags: []
     },
     {
+      id: 'b7931f96-7e09-40bb-87dc-468c1c01ccbb',
+      description: "Talk to Seluvis in Seluvis's Rise to get Seluvis's Potion",
+      tags: ['seluvis-questline']
+    },
+    {
+      id: '49478ab3-ba86-45ff-b333-94de240f8c6c',
+      description: "Give potion to (A) Nepheli if you want to get Dolores's spirit ashes (it will lock you out of Nepheli's quest), (B) to Dung Eater if you want to get Dung Eater's spirit ashes (will lock you out of Dung Eater quest), (C) or to Gideon (will not lock you out of any quest). You need to do this step to progress Seluvis questline",
+      tags: ['seluvis-questline']
+    },
+    {
+      id: '1da2c590-e82e-48c7-934a-0b8cc6f158f1',
+      description: "Visit Seluvis's lab behind an illusory floor in between Ranni's Rise and Renna's Rise to find the body of Nepheli or Dung Eater, depending on who you gave Seluvis's Potion to, and interact with the message within",
+      tags: ['seluvis-questline']
+    },
+    {
+      id: 'db09772b-34cf-45a2-9876-75d25ac402e1',
+      description: 'Talk to Seluvis and ask him about his chambers to receive a free Spirit Ashes from him',
+      tags: ['seluvis-questline']
+    },
+    {
+      id: '28f992d1-d515-4fb8-aea2-f53bf23117f5',
+      description: 'Get one Starlight Shard at a stone astrolabe near a cliff in Weeping Peninsula, directly east from Castle Morne Rampart grace',
+      tags: ['seluvis-questline']
+    },
+    {
+      id: '809bd867-bc55-4470-ab0f-b2f7ac3cd5f1',
+      description: "Get one Starlight Shard from a stone astrolabe southeast of the Map Fragment in Limgrave. Head southeast from the Agheel Lake South Site of Grace toward the top of a cliff and you'll see the astrolabe",
+      tags: ['seluvis-questline']
+    },
+    {
+      id: '6f95d2bd-eb10-4c3c-b9c7-8ff38dfc5538',
+      description: 'Get one Starllght Sard in Stormhill, south from the Stormhill Shack grace, next to a cliff above the beach',
+      tags: ['seluvis-questline']
+    },
+    {
+      id: 'fe4de4f6-dddf-41d4-8af0-2aeda317966f',
+      description: "Buy one spirit ashes from Seluvis. If you can't, talk to Seluvis after reloading the area multiple times until you can",
+      tags: ['seluvis-questline']
+    },
+    {
       id: 'f1e13540-ebde-451c-928a-252aac611f41',
       description: "It should be possible to progress Fia's quest now, but Fia's quest can be also skipped as she will be in Deeproot Depths regardless after you burn the Erdtree later",
       tags: ['OPTIONAL']
@@ -270,6 +305,31 @@ const list = {
       id: 'ea5372e9-62af-4277-9050-c2b3a0c8a07e',
       description: 'By this point your weapon can be +10-14 (3-5)',
       tags: []
+    },
+    {
+      id: '31f833b1-3be1-4829-a710-626a34d4a2ca',
+      description: 'Get Amber Starlight from Altus Plateau: Directly east from the Altus Highway Junction Site of Grace, the road will break off north into an open cave, in the cave the Amber Starlight will be sitting below a statue surrounded by several Land Octopuses',
+      tags: ['seluvis-questline']
+    },
+    {
+      id: '36c3c4cd-6ba4-4b6f-8345-52df9451c3a8',
+      description: 'Give Amber Starlight to Seluvis to get the Magic Scorpion Charm',
+      tags: ['seluvis-questline']
+    },
+    {
+      id: 'b1c27e5c-e4c4-430d-85e0-9f0cd778f094',
+      description: 'Get Amber Draught from Seluvis (you might need to reload the area)',
+      tags: ['seluvis-questline']
+    },
+    {
+      id: '9af7685b-205d-47d1-a21e-48e2d170f660',
+      description: "Choose the option Amber Draught with Ranni. Ranni will kill you and Seluvis. Ranni will disappear from the area. Note that you can absolve yourself with Celestial Dew at the Church of Vows and continue Ranni's questline without consequence",
+      tags: ['seluvis-questline']
+    },
+    {
+      id: '9f455ff1-7b16-4d9b-96b1-3914c26eb439',
+      description: "You can get Pidia's Bell Bearing and a puppet from dropping from a ledge from the Three Sisters into Caria Manor",
+      tags: ['seluvis-questline']
     },
     {
       id: 'be83ba65-f7f1-4aa5-bf25-116dbbed9c9d',
@@ -382,8 +442,13 @@ const list = {
     },
     {
       id: '3e04c2f6-9d9c-4508-ad27-442a2b144222',
-      description: 'Reach the Cathedral of Manus Celes and active the grace inside',
+      description: 'Reach the Cathedral of Manus Celes and activate the grace inside',
       tags: ['ranni-questline']
+    },
+    {
+      id: 'a423d64a-9e3b-4d16-8cad-7e683eaeaf5a',
+      description: "If you have access to the Cathedral of Manus Celes, grab the 10 Starlight Shards lying around and purchase the remaining Spirit Ashes from Seluvis or his corpse (even if you can't access Manus Celes, there are a total of 11 shards in other parts of the map, near stone astrolabes)",
+      tags: ['seluvis-questline']
     },
     {
       id: 'e294f45d-34ec-4f01-a121-4a26cd8b7b11',

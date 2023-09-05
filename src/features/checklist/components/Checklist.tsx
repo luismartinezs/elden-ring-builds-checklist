@@ -75,6 +75,7 @@ function useShowChecklistItem(
   const { filter: filterGhostGlovewortBell } = useFilter(
     "ghost-glovewort-bell"
   );
+  const { filter: filterWhetblades } = useFilter("whetblades");
 
   // NOTE: Using an effect instead of a derived state to avoid hydration errors
   useEffect(() => {
@@ -119,6 +120,10 @@ function useShowChecklistItem(
         tag: "ghost-glovewort-bell",
         filter: filterGhostGlovewortBell,
       },
+      {
+        tag: "whetblades",
+        filter: filterWhetblades,
+      },
     ];
     const shouldHide =
       Array.isArray(item?.tags) && item?.tags?.length > 0
@@ -145,6 +150,7 @@ function useShowChecklistItem(
     filterGlovewortBell,
     filterGhostGlovewortBell,
     filterSeluvisQuestline,
+    filterWhetblades,
   ]);
 
   return show;

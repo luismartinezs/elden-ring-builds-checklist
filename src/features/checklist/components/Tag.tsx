@@ -10,7 +10,8 @@ type TagKeys =
   | "smithing-stone-bell"
   | "glovewort-bell"
   | "ghost-glovewort-bell"
-  | "seluvis-questline";
+  | "seluvis-questline"
+  | "whetblades";
 
 const tagMap: Record<TagKeys, { classes: string; label: string }> = {
   OPTIONAL: {
@@ -52,6 +53,10 @@ const tagMap: Record<TagKeys, { classes: string; label: string }> = {
   "seluvis-questline": {
     classes: "border border-sky-500 bg-sky-900 text-sky-100 -m-px",
     label: "Seluvis",
+  },
+  whetblades: {
+    classes: "bg-green-300 text-black",
+    label: "Whetblades",
   },
 };
 

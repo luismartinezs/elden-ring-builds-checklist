@@ -71,6 +71,11 @@ function Settings() {
                 label="Ghost Glovewort Bell"
                 className="border-blue-200 text-blue-200 hover:bg-blue-200 hover:text-black focus:ring-blue-200"
               />
+              <FilterButton
+                filterTag="whetblades"
+                label="Whetblades"
+                className="border-green-300 text-green-300 hover:bg-green-300 hover:text-black focus:ring-green-300"
+              />
             </>
           )}
         </div>

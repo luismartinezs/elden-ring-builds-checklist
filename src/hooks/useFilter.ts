@@ -12,6 +12,7 @@ export const filterKeys = {
   glovewortBell: 'glovewort-bell',
   ghostGlovewortBell: 'ghost-glovewort-bell',
   seluvisQuestline: 'seluvis-questline',
+  whetblades: 'whetblades',
 } as const
 
 export function useFilter(tag: typeof filterKeys[keyof typeof filterKeys]) {

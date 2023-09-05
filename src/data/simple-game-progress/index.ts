@@ -40,7 +40,7 @@ const list = {
     },
     {
       id: 'd9792932-bdf7-4d3f-8011-d2c2c45acbc9',
-      description: 'Get the Dectus Medallion (Left) from Fort Haight (recommended, kill Godrick Knight at the top level to get Bloody slash ash of war)',
+      description: 'Get the Dectus Medallion (Left) from Fort Haight (recommended to kill Godrick Knight at the top level to get Bloody slash ash of war)',
       tags: []
     },
     {
@@ -65,6 +65,10 @@ const list = {
       tags: ['OPTIONAL']
     },
     {
+      id: "0a31a7cb-b53f-4bc7-9387-d298da1d9bf8",
+      description: "Decide how you want to reach Altus Plateau later in the game: A) With the two halves of the Dectus medallion, B) Through the Ruin-Strewn Precipice, accessible going north past the Bellum church, north of the path toward the Dectus Lift, C) By letting the Abductor Virgin at the bottom of Raya Lucaria telport you to Volcano Manor, and defeating the Abductor Virgin duo. (option A is the easiest one, option C is possibly the fastest one)",
+    },
+    {
       id: '1a279fba-f36b-4524-98f9-b4957e7bbbaa',
       description: 'Dectus Medallion (Right) from Fort Faroth in Dragonbarrow (Caelid). Easiest way to reach there is from waygate portal behind Third Church of Marika and going south from Bestial Sanctum, or you can just ride all the way there from Limgrave',
       tags: []
@@ -84,6 +88,11 @@ const list = {
       id: '7aba047b-6da2-46ab-9f3a-0c5acf36e752',
       description: 'Beat Magrit',
       tags: []
+    },
+    {
+      id: 'd8af39dd-4f24-4cfb-863d-cadb55a57cf0',
+      description: 'Iron Whetblade (Heavy, Keen, and Quality). Stormveil Castle Can be looted off a corpse found in the armory room, through the north-western door in the hall with the Grafted Scion. You will need to use the Stonesword Key on the imp statue to dispel fog gate blocking the doorway',
+      tags: ['whetblades']
     },
     {
       id: '44674406-7a68-4cd5-af01-d2b7713d363b',
@@ -203,6 +212,11 @@ const list = {
       tags: []
     },
     {
+      id: '1837cb85-1a8e-42a2-9694-9f9fe5975ecd',
+      description: 'Glintstone Whetblade (Magic and Cold). Raya Lucaria Academy Looted from a corpse hanging off the window ledge of an office balcony. From the Debate Parlor site of grace, head west of the courtyard fountain, up the collapsed stairs, past the kneeling Commoners, and into the room with the Twinsage Sorcerer',
+      tags: ['whetblades']
+    },
+    {
       id: 'b3ac9d19-2b5b-4667-96bd-4af37febd329',
       description: 'By this point your weapon could be +4-6 (2)',
       tags: []
@@ -246,15 +260,15 @@ const list = {
       description: 'Beat Ancestor Spirit in Siofra river, which you can access through the Siofra Well in Mistwood',
       tags: ['OPTIONAL']
     },
+    {
+      id: '8d9fb6dd-c390-42ff-ae5e-24df91cdda04',
+      description: 'Red-Hot Whetblade (Fire and Flame Art). Redmane Castle (south Caelid) From the Chamber Outside The Plaza site of grace, head out the south-side door, west past the flamethrower enemies, and then to the door past the Abductor Virgin and hanging bodies. Note: if you reach Altus before this step, you will need to defeat Radahn to access the rest of Redmane Castle',
+      tags: ['whetblades']
+    },
     // ACCESS ALTUS
     {
-      id: '2a053162-bab5-4ca2-a419-959625dd2d6a',
-      description: 'You can also ignore the Dectus medallions and access Altus through the Ruin-Strewn Precipice, accessible going north past the Bellum church, north of the path toward the Dectus Lift',
-      tags: ['OPTIONAL']
-    },
-    {
       id: '124edfc5-0bb8-49fd-b3ba-030bd037a279',
-      description: 'From the Main Academy Gate site of grace, cross the sealed gate to reach the other side of the bridge, then head straight to the Grand Lift of Dectus and reach Altus Plateau',
+      description: 'Reach Altus Plateau in one of 3 ways: A) From the Main Academy Gate site of grace, cross the sealed gate to reach the other side of the bridge, then head straight to the Grand Lift of Dectus and use the Dectus Medallion to reach Altus Plateau, B) Through the Ruin-Strewn Precipice, accessible going north past the Bellum church, north of the path toward the Dectus Lift, C) By letting the Abductor Virgin at the bottom of Raya Lucaria telport you to Volcano Manor',
       tags: []
     },
     {
@@ -378,6 +392,11 @@ const list = {
       id: "40a23af2-c9a0-405b-bbf2-3ffbd67bda6f",
       description: "get the Mimic Tear spirit summon from Nokron",
       tags: ['OPTIONAL']
+    },
+    {
+      id: 'c5b0dfbf-2e28-450c-b87b-6a30a5ec5a17',
+      description: "Black Whetblade (Poison, Blood, and Occult). Nokron, Eternal City Found on a corpse slumped in front of an altar in Night's Sacred Ground grace",
+      tags: ['whetblades']
     },
     {
       id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
@@ -524,6 +543,11 @@ const list = {
       tags: []
     },
     // LEYNDELL 90-110 +15-20
+    {
+      id: '7a68718f-b0e7-4006-b8b9-16d40e64d39e',
+      description: 'Sanctified Whetblade (Lightning and Sacred). Fortified Manor, Leyndell From the West Capital Rampart site of grace, head to the south-west side of the manor and enter from the roof near the Erdtree root. Once inside, it can found on a corpse laying next to an anvil',
+      tags: ['whetblades']
+    },
     {
       id: '5824fd47-d0bb-43ec-b552-dfe59fc62bc0',
       description: 'By this point your weapon can be +15-20 (6-7)',

@@ -15,3 +15,19 @@ export interface TChecklist {
   notes?: string[];
   items: TChecklistItem[];
 }
+
+
+// localStorage data structure
+export type UUID = string;
+export type Checklist = Record<string, UUID[]>;
+export type Filters = Record<string, boolean>;
+
+export type Profile = {
+  checklists: Checklist;
+  filters: Filters;
+}
+
+export type AppData = {
+  profiles: Record<string, Profile>;
+  currentProfile: string;
+}

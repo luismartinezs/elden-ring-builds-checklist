@@ -1,9 +1,8 @@
 import { useLocalStorage } from "usehooks-ts";
 import { type AppData } from "~/features/checklist/types";
 import { produce } from "immer"
-import { flushSync } from "react-dom";
 
-export const initAppData = {
+export const initAppData: AppData = {
   profiles: {
     "Default": {
       checklists: {},

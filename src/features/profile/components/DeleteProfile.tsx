@@ -24,7 +24,7 @@ export function DeleteProfile() {
   return (
     <>
       <Button onClick={handleDelete} variant="danger">
-        Delete Current Profile
+        Delete {currentProfile} Profile
       </Button>
       {error && <p className="mt-2 text-red-500">{error}</p>}
     </>

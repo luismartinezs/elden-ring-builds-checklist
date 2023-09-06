@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useManageProfiles } from "~/features/checklist/hooks/useManageProfiles";
 
-export function ProfileSelect() {
+function Select() {
   const { getAllProfiles, switchProfile, currentProfile } = useManageProfiles();
   const [value, setValue] = useState<string>(currentProfile);
 
@@ -10,6 +10,23 @@ export function ProfileSelect() {
   }
 
   return (
+    <select
+      value={value}
+      onChange={(e) => switchProfile(e.target.value)}
+      id="profile-select"
+      className="rounded border border-stone-500 bg-stone-100/20 px-4 py-2 outline-2 outline-offset-2 outline-amber-400 focus:outline"
+    >
+      {getAllProfiles().map((profile) => (
+        <option value={profile} key={profile} className="bg-stone-700">
+          {profile}
+        </option>
+      ))}
+    </select>
+  );
+}
+
+export function ProfileSelect() {
+  return (
     <div className="flex items-center gap-2">
       <label
         htmlFor="profile-select"
@@ -17,18 +34,9 @@ export function ProfileSelect() {
       >
         Selected profile:
       </label>
-      <select
-        value={value}
-        onChange={(e) => switchProfile(e.target.value)}
-        id="profile-select"
-        className="rounded border border-stone-500 bg-stone-100/20 px-4 py-2 outline-2 outline-offset-2 outline-amber-400 focus:outline dark:text-stone-50 dark:placeholder-stone-300"
-      >
-        {getAllProfiles().map((profile) => (
-          <option value={profile} key={profile}>
-            {profile}
-          </option>
-        ))}
-      </select>
+      <Select />
     </div>
   );
 }
+
+ProfileSelect.Select = Select;

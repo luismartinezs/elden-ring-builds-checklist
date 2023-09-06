@@ -10,6 +10,67 @@ import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
 import { Button } from "~/components/Button";
 import { FilterButton } from "~/components/FilterButton";
 import { Divider } from "~/components/Divider";
+import { ProfileSelect } from "~/features/profile/components/ProfileSelect";
+
+function FilterButtons() {
+  return (
+    <>
+      <FilterButton filterTag="completed" label="Completed" />
+      <FilterButton filterTag="optional" label="Optional" />
+      <FilterButton
+        filterTag="ranni-questline"
+        label="Ranni"
+        className="border-sky-200 text-sky-200 hover:bg-sky-200 hover:text-black focus:ring-sky-200"
+      />
+      <FilterButton
+        filterTag="seluvis-questline"
+        label="Seluvis"
+        className="border-sky-300 text-sky-300 hover:bg-sky-300 hover:text-black focus:ring-sky-300"
+      />
+      <FilterButton
+        filterTag="volcano-manor-assassination"
+        label="Volcano
+    Manor"
+        className="border-red-400 text-red-400 hover:bg-red-400 hover:text-black focus:ring-red-400"
+      />
+      <FilterButton
+        filterTag="varre-questline"
+        label="Varré"
+        className="border-red-700 text-red-700 hover:bg-red-700 hover:text-black focus:ring-red-700"
+      />
+      <FilterButton
+        filterTag="nepheli-questline"
+        label="Nepheli"
+        className="border-orange-300 text-orange-300 hover:bg-orange-300 hover:text-black focus:ring-orange-300"
+      />
+      <FilterButton
+        filterTag="smithing-stone-bell"
+        label="Smithing Stone Bell"
+        className="border-orange-200 text-orange-200 hover:bg-orange-200 hover:text-black focus:ring-orange-200"
+      />
+      <FilterButton
+        filterTag="somber-stone-bell"
+        label="Somber Stone Bell"
+        className="border-gray-100 text-gray-100 hover:bg-gray-100 hover:text-black focus:ring-gray-100"
+      />
+      <FilterButton
+        filterTag="glovewort-bell"
+        label="Glovewort Bell"
+        className="border-zinc-300 text-zinc-300 hover:bg-zinc-300 hover:text-black focus:ring-zinc-300"
+      />
+      <FilterButton
+        filterTag="ghost-glovewort-bell"
+        label="Ghost Glovewort Bell"
+        className="border-blue-200 text-blue-200 hover:bg-blue-200 hover:text-black focus:ring-blue-200"
+      />
+      <FilterButton
+        filterTag="whetblades"
+        label="Whetblades"
+        className="border-green-300 text-green-300 hover:bg-green-300 hover:text-black focus:ring-green-300"
+      />
+    </>
+  );
+}
 
 function Settings() {
   const isClient = useIsClient();
@@ -20,65 +81,12 @@ function Settings() {
       <p className="w-full text-left text-stone-300">
         Filters apply to all checklists of the current profile
       </p>
+      <div className="mb-1 mt-2 self-end">
+        <ProfileSelect />
+      </div>
       <div className="flex items-center gap-2">
         <div className="my-4 flex flex-wrap items-center gap-2">
-          {isClient && (
-            <>
-              <FilterButton filterTag="completed" label="Completed" />
-              <FilterButton filterTag="optional" label="Optional" />
-              <FilterButton
-                filterTag="ranni-questline"
-                label="Ranni"
-                className="border-sky-200 text-sky-200 hover:bg-sky-200 hover:text-black focus:ring-sky-200"
-              />
-              <FilterButton
-                filterTag="seluvis-questline"
-                label="Seluvis"
-                className="border-sky-300 text-sky-300 hover:bg-sky-300 hover:text-black focus:ring-sky-300"
-              />
-              <FilterButton
-                filterTag="volcano-manor-assassination"
-                label="Volcano
-                Manor"
-                className="border-red-400 text-red-400 hover:bg-red-400 hover:text-black focus:ring-red-400"
-              />
-              <FilterButton
-                filterTag="varre-questline"
-                label="Varré"
-                className="border-red-700 text-red-700 hover:bg-red-700 hover:text-black focus:ring-red-700"
-              />
-              <FilterButton
-                filterTag="nepheli-questline"
-                label="Nepheli"
-                className="border-orange-300 text-orange-300 hover:bg-orange-300 hover:text-black focus:ring-orange-300"
-              />
-              <FilterButton
-                filterTag="smithing-stone-bell"
-                label="Smithing Stone Bell"
-                className="border-orange-200 text-orange-200 hover:bg-orange-200 hover:text-black focus:ring-orange-200"
-              />
-              <FilterButton
-                filterTag="somber-stone-bell"
-                label="Somber Stone Bell"
-                className="border-gray-100 text-gray-100 hover:bg-gray-100 hover:text-black focus:ring-gray-100"
-              />
-              <FilterButton
-                filterTag="glovewort-bell"
-                label="Glovewort Bell"
-                className="border-zinc-300 text-zinc-300 hover:bg-zinc-300 hover:text-black focus:ring-zinc-300"
-              />
-              <FilterButton
-                filterTag="ghost-glovewort-bell"
-                label="Ghost Glovewort Bell"
-                className="border-blue-200 text-blue-200 hover:bg-blue-200 hover:text-black focus:ring-blue-200"
-              />
-              <FilterButton
-                filterTag="whetblades"
-                label="Whetblades"
-                className="border-green-300 text-green-300 hover:bg-green-300 hover:text-black focus:ring-green-300"
-              />
-            </>
-          )}
+          {isClient && <FilterButtons />}
         </div>
       </div>
       <Divider />

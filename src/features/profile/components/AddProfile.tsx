@@ -52,14 +52,20 @@ export function AddProfile() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <FormGroup className="mt-4">
-        <label>Add new Profile</label>
-        <Input onChange={updateForm("profileName")} value={form.profileName} />
+      <FormGroup>
+        <label htmlFor="add-profile">Add new Profile</label>
+        <div className="flex gap-2">
+          <Input
+            onChange={updateForm("profileName")}
+            value={form.profileName}
+            id="add-profile"
+          />
+          <Button type="submit" className="!mb-0">
+            Add Profile
+          </Button>
+        </div>
       </FormGroup>
       {error && <p className="mt-2 text-red-500">{error}</p>}
-      <Button type="submit" className="mt-2">
-        Add Profile
-      </Button>
     </form>
   );
 }

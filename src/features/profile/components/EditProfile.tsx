@@ -64,7 +64,7 @@ export function EditProfile() {
 
   return (
     <>
-      <Button type="button" onClick={() => setShowModal(true)}>
+      <Button type="button" onClick={() => setShowModal(true)} className="!m-0">
         Edit Profile
       </Button>
       {showModal && (

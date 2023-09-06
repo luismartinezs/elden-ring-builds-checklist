@@ -10,10 +10,10 @@ export function ProfileSelect() {
   }
 
   return (
-    <div>
+    <div className="flex items-center gap-2">
       <label
         htmlFor="profile-select"
-        className="mr-2 font-medium text-stone-900 dark:text-white"
+        className="mr-2 font-medium text-stone-400"
       >
         Selected profile:
       </label>
@@ -21,7 +21,7 @@ export function ProfileSelect() {
         value={value}
         onChange={(e) => switchProfile(e.target.value)}
         id="profile-select"
-        className="w-full rounded-lg border border-stone-300 bg-stone-50 p-2.5 text-sm text-stone-900 focus:border-amber-500 focus:ring-amber-500 dark:border-stone-600 dark:bg-stone-700 dark:text-white dark:placeholder-stone-400 dark:focus:border-amber-500 dark:focus:ring-amber-500"
+        className="rounded border border-stone-500 bg-stone-100/20 px-4 py-2 outline-2 outline-offset-2 outline-amber-400 focus:outline dark:text-stone-50 dark:placeholder-stone-300"
       >
         {getAllProfiles().map((profile) => (
           <option value={profile} key={profile}>

@@ -7,7 +7,6 @@ import { DeleteProfile } from "~/features/profile/components/DeleteProfile";
 import { Divider } from "~/components/Divider";
 import { GoAlertFill } from "react-icons/go";
 import { EditProfile } from "~/features/profile/components/EditProfile";
-import { useManageProfiles } from "~/features/checklist/hooks/useManageProfiles";
 
 export default function ProfilePage() {
   const isClient = useIsClient();
@@ -25,10 +24,14 @@ export default function ProfilePage() {
         Manage your profiles. Each profile has its own checklist progress.
       </p>
       {isClient && (
-        <div className="my-4 flex flex-col items-start gap-4 ">
-          <ProfileSelect />
-          <AddProfile />
-          <EditProfile />
+        <div className="my-4 flex flex-col items-start gap-4">
+          <div className="flex items-center gap-4">
+            <ProfileSelect />
+            <EditProfile />
+          </div>
+          <div className="mt-4">
+            <AddProfile />
+          </div>
           <Divider />
           <div className="text-red-500">
             <div>Danger zone</div>

@@ -1,7 +1,7 @@
 import classNames from "classnames";
 
 export type ButtonProps = React.ComponentPropsWithoutRef<"button"> & {
-  variant?: "primary" | "outline";
+  variant?: "primary" | "outline" | "danger";
 };
 
 export function Button(props: ButtonProps) {
@@ -21,6 +21,8 @@ export function Button(props: ButtonProps) {
         variant === "primary",
       "bg-transparent text-amber-500 border sm:border-2 border-amber-500 hover:bg-amber-500 hover:text-black focus:ring-offset-1 sm:focus:ring-offset-2 focus:ring-amber-500 focus:ring-1 sm:focus:ring-2 focus:ring-offset-stone-900":
         variant === "outline",
+      "bg-transparent text-red-500 border sm:border-2 border-red-500 hover:bg-red-500 hover:text-black focus:ring-offset-1 sm:focus:ring-offset-2 focus:ring-red-500 focus:ring-1 sm:focus:ring-2 focus:ring-offset-stone-900":
+        variant === "danger",
     },
     disabled && "opacity-50 cursor-not-allowed"
   );

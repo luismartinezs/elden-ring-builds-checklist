@@ -9,6 +9,7 @@ import { GoAlertFill } from "react-icons/go";
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
 import { Button } from "~/components/Button";
 import { FilterButton } from "~/components/FilterButton";
+import { Divider } from "~/components/Divider";
 
 function Settings() {
   const isClient = useIsClient();
@@ -17,10 +18,10 @@ function Settings() {
   return (
     <div className="flex h-full flex-col items-center justify-start px-3 sm:px-6">
       <p className="w-full text-left text-stone-300">
-        Filters apply to all checklists
+        Filters apply to all checklists of the current profile
       </p>
       <div className="flex items-center gap-2">
-        <div className="my-4 flex flex-wrap items-center  gap-2">
+        <div className="my-4 flex flex-wrap items-center gap-2">
           {isClient && (
             <>
               <FilterButton filterTag="completed" label="Completed" />
@@ -80,17 +81,18 @@ function Settings() {
           )}
         </div>
       </div>
+      <Divider />
       {isClient && (
-        <div className="mb-4 mt-auto self-start">
-          <p className="text-sm">
+        <div className="my-4 self-end">
+          {/* <p className="text-sm">
             Caution: If you &ldquo;uncheck everything&ldquo;, everything that
             you have checked will be reset.
-          </p>
+          </p> */}
           <Button
             onClick={() => setItems([])}
             variant="outline"
             disabled={items.length === 0}
-            className="my-4 flex items-center gap-2 whitespace-nowrap"
+            className="flex items-center gap-2 whitespace-nowrap"
           >
             <GoAlertFill size={18} />
             Uncheck everything
@@ -130,7 +132,7 @@ function Menu({
         <div className="flex h-full flex-col items-center">
           <div className="flex w-full items-center justify-between px-3 pt-3 sm:items-start sm:px-6 sm:pt-4">
             <div className="flex items-center gap-2">
-              <h2>Global Checklist Settings</h2>
+              <h2>Filters and Settings</h2>
             </div>
             <button
               onClick={toggle}

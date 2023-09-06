@@ -63,7 +63,7 @@ export function useCheckItem() {
     checkItem,
     checkItems,
     isChecked,
-    setItems: updateChecklist,
+    setItems: (itemIds: string[]) => updateChecklist(checklistId, itemIds),
     items: checklist,
   };
 }

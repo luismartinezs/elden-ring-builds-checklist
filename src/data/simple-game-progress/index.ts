@@ -83,6 +83,11 @@ const list = {
       description: 'By this point, your weapon can be upgraded to +3-4 (1-2)',
       tags: []
     },
+    {
+      id: '384fc0f5-c356-4d8a-a31e-351494896d8a',
+      description: 'Find Alexander in Northern Stormhill, West to the river and North of the Agheel Lake North Site of Grace. Him a few times on the back with any weapon until you free him. He will reward you with some items',
+      tags: ['alexander-questline']
+    },
     // STORMVEIL CASTLE L30-40 +3-4
     {
       id: '7aba047b-6da2-46ab-9f3a-0c5acf36e752',
@@ -369,6 +374,11 @@ const list = {
     },
     // CAELID, RADAHN 60-70 +10-14
     {
+      id: 'ee0a544b-eeca-4add-b94f-59fbd9505236',
+      description: "Alexander's next location is in Gael Tunnel, found from the rear entrance that borders Limgrave and Caelid. You can skip this step as it is not necessary",
+      tags: ['alexander-questline']
+    },
+    {
       id: 'fbca363b-8c3c-4c24-812f-60b2700116a6',
       description: 'Dropped by the Fallingstar Beast in Sellia Crystal Tunnel (Caelid). Reachable by opening the chest in Dragon-Burnt Ruins in Limgrave',
       tags: ['somber-stone-bell']
@@ -376,12 +386,17 @@ const list = {
     {
       id: '7d2912a9-f6d1-45a1-bdb6-36ba9a63f0c6',
       description: 'Radahn Festival should be active now, and you can beat Radahn',
-      tags: ['OPTIONAL']
+      tags: ['OPTIONAL', 'ranni-questline', 'alexander-questline']
     },
     {
-      id: '2c83a29b-616a-4da8-8fd7-450d7f40d313',
-      description: 'Kill Radahn',
-      tags: ['ranni-questline']
+      id: '214e0b27-c6c2-41a8-8acf-cba7f5ab0b6b',
+      description: 'Find Alexander next to the Radahn grace and talk to him',
+      tags: ['alexander-questline']
+    },
+    {
+      id: '710569d9-691d-4a88-8e02-63fc3c559370',
+      description: "Follow the path south from the Artist's Shack Site of Grace. Alexander will call out for help. Use an Oil Pot or Roped Oil Pot to free him (this step can be skipped by going to Mt. Gelmir after the Radahn festival)",
+      tags: ['alexander-questline']
     },
     {
       id: '609c347c-c2b5-488b-80e5-1db0d9417a41',
@@ -483,8 +498,13 @@ const list = {
     },
     // MT GELMIR 80-100 +15-20
     {
+      id: 'b9da8bb8-6125-41bc-bb4c-6143ffdd2a59',
+      description: 'Talk to Alexander near the Seethewater Terminus Site of Grace at a lava lake behind a Magma Wyrm, south of Fort Laiedd in Mt. Gelmir. To reach Seethewater Terminus Grace, head north through the ravine west of Wyndham Ruins',
+      tags: ['alexander-questline']
+    },
+    {
       id: '35ea6a80-fe78-419d-b817-002882705950',
-      description: 'You can reach Mt. Gelmir and Volcano Manor by going north east from Altus Plateau site of grace until  FOREST-SPANNING GREATBRIDGE grace, crossing the bridge with the magic portal, then heading south west through the only path available',
+      description: 'You can reach Mt. Gelmir and Volcano Manor by going north east from Altus Plateau site of grace until FOREST-SPANNING GREATBRIDGE grace, crossing the bridge with the magic portal, then heading south west through the only path available',
       tags: ['OPTIONAL']
     },
     {
@@ -652,6 +672,11 @@ const list = {
       tags: ['OPTIONAL']
     },
     {
+      id: 'a7a70a4b-9f8b-4a6a-bda0-83d9b21a0235',
+      description: "Alexander can be summoned for the fight against Fire Giant (you don't need to summon him to complete his questline)",
+      tags: ['alexander-questline']
+    },
+    {
       id: '1c79f7d4-5078-4503-8587-0c8190959121',
       description: 'Beat Fire Giant',
       tags: []
@@ -750,6 +775,11 @@ const list = {
       id: 'ba96e3f5-654c-4467-b259-1af9c7667be6',
       description: 'Obtained from defeating The Godskin Duo in Crumbling Farum Azula',
       tags: ['smithing-stone-bell']
+    },
+    {
+      id: 'b6a6c4ba-a0b7-4e7f-b0fe-9b0c93c765b1',
+      description: "Find Alexander in Farum Azula and beat him in a duel. He will reward you with with Alexander's Innards and Shard of Alexander. To reach him: from the Dragon Temple Lift grace (can be accessed by using two Stonesword Keys), go past the plaza full of undead up the flight of stairs, turn right and you'll see two square bracket shaped archways. Jump on the archway on the left (closest to the sleeping dragon) to get over to the other side. Alexander can be found directly on the flat arena after crossing the crumbling tower",
+      tags: ['alexander-questline']
     },
     {
       id: 'f6d85cdf-3cb9-49d3-9912-5116e4ecf771',

@@ -69,6 +69,9 @@ function useShowChecklistItem(
   const { filter: filterVarreQuestline } = useFilter("varre-questline");
   const { filter: filterNepheliQuestline } = useFilter("nepheli-questline");
   const { filter: filterSeluvisQuestline } = useFilter("seluvis-questline");
+  const { filter: filterLatennaQuestline } = useFilter("latenna-questline");
+  const { filter: filterAlexanderQuestline } = useFilter("alexander-questline");
+  const { filter: filterMillicentQuestline } = useFilter("millicent-questline");
   const { filter: filterSmithingStoneBell } = useFilter("smithing-stone-bell");
   const { filter: filterSomberStoneBell } = useFilter("somber-stone-bell");
   const { filter: filterGlovewortBell } = useFilter("glovewort-bell");
@@ -123,6 +126,18 @@ function useShowChecklistItem(
       {
         tag: "whetblades",
         filter: filterWhetblades,
+      },
+      {
+        tag: "latenna-questline",
+        filter: filterLatennaQuestline,
+      },
+      {
+        tag: "alexander-questline",
+        filter: filterAlexanderQuestline,
+      },
+      {
+        tag: "millicent-questline",
+        filter: filterMillicentQuestline,
       },
     ];
     const shouldHide =

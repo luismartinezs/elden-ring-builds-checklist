@@ -11,7 +11,10 @@ type TagKeys =
   | "glovewort-bell"
   | "ghost-glovewort-bell"
   | "seluvis-questline"
-  | "whetblades";
+  | "whetblades"
+  | "latenna-questline"
+  | "alexander-questline"
+  | "millicent-questline";
 
 const tagMap: Record<TagKeys, { classes: string; label: string }> = {
   OPTIONAL: {
@@ -57,6 +60,18 @@ const tagMap: Record<TagKeys, { classes: string; label: string }> = {
   whetblades: {
     classes: "bg-green-300 text-black",
     label: "Whetblades",
+  },
+  "latenna-questline": {
+    classes: "bg-cyan-200 text-black",
+    label: "Latenna",
+  },
+  "alexander-questline": {
+    classes: "bg-orange-400 text-black",
+    label: "Alexander",
+  },
+  "millicent-questline": {
+    classes: "bg-rose-400 text-black",
+    label: "Millicent",
   },
 };
 

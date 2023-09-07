@@ -44,6 +44,21 @@ function FilterButtons() {
         className="border-orange-300 text-orange-300 hover:bg-orange-300 hover:text-black focus:ring-orange-300"
       />
       <FilterButton
+        filterTag="alexander-questline"
+        label="Alexander"
+        className="border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-black focus:ring-orange-400"
+      />
+      <FilterButton
+        filterTag="latenna-questline"
+        label="Latenna"
+        className="border-cyan-200 text-cyan-200 hover:bg-cyan-200 hover:text-black focus:ring-cyan-200"
+      />
+      <FilterButton
+        filterTag="millicent-questline"
+        label="Millicent"
+        className="border-rose-400 text-rose-400 hover:bg-rose-400 hover:text-black focus:ring-rose-400"
+      />
+      <FilterButton
         filterTag="smithing-stone-bell"
         label="Smithing Stone Bell"
         className="border-orange-200 text-orange-200 hover:bg-orange-200 hover:text-black focus:ring-orange-200"

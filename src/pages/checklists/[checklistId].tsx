@@ -36,6 +36,28 @@ export default function ChecklistPage({
   if (!checklist) {
     return null;
   }
+  let checklistItems = checklist.items;
+
+  // NOTE this is a bit of a hack to reuse the same steps for two checklists. the NG+ checklist shares most steps with NG checklist, but a few don't make sense for NG+
+  // If a step has no tags or only "OPTIONAL" tag, it is filtered out from from the NG+ checklist
+  if (checklist.slug === "new-game-plus-progress") {
+    checklistItems = checklistItems.filter(({ tags }) => {
+      if (!tags || tags.length === 0) {
+        // if there are no tags, filter out step
+        return false;
+      }
+
+      const isOptional = tags?.includes("OPTIONAL");
+
+      if (isOptional && tags.length === 1) {
+        // if the only tag is "OPTIONAL", filter out step
+        return false;
+      }
+
+      return true;
+    });
+  }
+
   return (
     <PageLayout>
       <Head>
@@ -54,7 +76,7 @@ export default function ChecklistPage({
           dangerouslySetInnerHTML={{ __html: note }}
         ></p>
       ))}
-      <Checklist items={checklist.items} />
+      <Checklist items={checklistItems} />
     </PageLayout>
   );
 }

@@ -797,7 +797,7 @@ const list = {
     },
     {
       id: '52bfb466-e488-4a1b-8eab-7a84dc19ab14',
-      description: "beat Ordina's puzzle in Consecrated Snowfield to access Miquella's Haligtree. You can make the assassins visible holding Sentry's Rorch in your off hand",
+      description: "beat Ordina's puzzle in Consecrated Snowfield to access Miquella's Haligtree. You can make the assassins visible holding Sentry's Torch in your off hand. You can knock off the snipers from the roofs with a greatbow, the Jar Cannon or long range spells",
       tags: ['OPTIONAL', 'millicent-questline']
     },
     {

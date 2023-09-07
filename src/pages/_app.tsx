@@ -14,7 +14,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
   pageProps: { session, ...pageProps },
 }) => {
   useInitAppData();
-  useMigrateLegacyData();
+  useMigrateLegacyData(); // This can be removed after some days / weeks. See also src/scripts/mockLegacyData.js
 
   return (
     <>

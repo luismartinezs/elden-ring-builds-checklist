@@ -78,12 +78,13 @@ function Settings() {
 
   return (
     <div className="flex h-full flex-col items-center justify-start px-3 sm:px-6">
-      <p className="w-full text-left text-stone-300">
-        Filters apply to all checklists of the current profile
-      </p>
       <div className="mb-1 mt-2 self-end">
         <ProfileSelect />
       </div>
+      <p className="w-full text-left text-stone-300">
+        Filters apply to <em>all</em> checklists of the <em>selected</em>{" "}
+        profile
+      </p>
       <div className="flex items-center gap-2">
         <div className="my-4 flex flex-wrap items-center gap-2">
           {isClient && <FilterButtons />}

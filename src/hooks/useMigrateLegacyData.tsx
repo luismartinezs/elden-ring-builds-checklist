@@ -11,7 +11,7 @@ export function useMigrateLegacyData() {
     const newData = rawData ? (JSON.parse(rawData) as AppData) : initAppData;
 
     const legacyKeys = [
-      ...Object.keys(filterKeys).map((key) => `filter-${key}`),
+      ...Object.values(filterKeys).map((key) => `filter-${key}`),
       ...lists.map((list) => list.slug),
     ];
 

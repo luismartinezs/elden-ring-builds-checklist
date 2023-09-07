@@ -122,7 +122,7 @@ const list = {
     // LIURNIA SOUTH L40-50 +3-4
     {
       id: 'a8b99a0d-6dab-4328-8ef6-9aa1f0c85b8c',
-      description: 'Buy lantern from Nomadic Merchant in Liurnia of the Lakes in LIURNIA LAKE SHORE grace',
+      description: 'Buy lantern from Nomadic Merchant in Liurnia of the Lakes in Liurnia Lake Shore grace',
       tags: []
     },
     {
@@ -130,6 +130,7 @@ const list = {
       description: 'Get the South Raya Lucaria Gate site of grace in south side of Raya Lucaria',
       tags: []
     },
+
     {
       id: 'f892cb40-deaa-4852-88d2-2121f978749b',
       description: 'Talk to Varré in Rose Church (west from Fallen Ruins of the Lake grace in Liurnia) and get Festering Bloody Finger',
@@ -157,8 +158,13 @@ const list = {
     },
     {
       id: 'de7fc925-2ad3-441b-a0f3-8cff17922c2e',
-      description: 'Get Haligtree Secret Medallion (Right) from Village of the Albinaurics',
-      tags: ['OPTIONAL']
+      description: 'Get Haligtree Secret Medallion (Right) by speaking to Albus in Village of the Albinaurics (Albus is hidden inside a jar, roll into the jar and talk to Albus)',
+      tags: ['OPTIONAL', 'latenna-questline']
+    },
+    {
+      id: "82983c08-5a06-4d1e-a6a8-dfea29452f1b",
+      description: "From Liurnia Lake Shore grace, looking north hug the left wall until finding the entrance to Lakeside Crystal Cave. Progress through the dungeon to find Latenna at the end and grab the grace",
+      tags: ['latenna-questline']
     },
     {
       id: '1ff4c70a-d0d0-48a1-80a3-ade3b0bfe625',
@@ -691,13 +697,18 @@ const list = {
     // MIQUELLA'S HALIGTREE 120-150 +25
     {
       id: 'd01f819f-3b97-4551-9b08-1e6282f76552',
-      description: 'Get Haligtree Secret Medallion (Right) from Castle Sol',
-      tags: ['OPTIONAL']
+      description: 'Get Haligtree Secret Medallion (Right) from Castle Sol in Mountaintops of the Giants',
+      tags: ['OPTIONAL', 'latenna-questline']
     },
     {
       id: '57379897-ef76-4246-af6b-b1db1c957349',
       description: 'With both halves of Haligtree medallion, access Consecrated Snowfield through the Lift of Rold',
-      tags: ['OPTIONAL']
+      tags: ['OPTIONAL', 'latenna-questline']
+    },
+    {
+      id: '6081caa3-6d2b-4b95-b20c-88daae796559',
+      description: 'Reach the Apostate Derelict grace, in the northermost part of Consecrated Snowfield, and interact with the giant Albinauric woman. Latenna will reward you with a Somber Ancient Dragon Smithing Stone',
+      tags: ['latenna-questline']
     },
     {
       id: '52bfb466-e488-4a1b-8eab-7a84dc19ab14',

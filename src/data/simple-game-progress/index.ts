@@ -164,7 +164,7 @@ const list = {
     {
       id: 'de7fc925-2ad3-441b-a0f3-8cff17922c2e',
       description: 'Get Haligtree Secret Medallion (Right) by speaking to Albus in Village of the Albinaurics (Albus is hidden inside a jar, roll into the jar and talk to Albus)',
-      tags: ['OPTIONAL', 'latenna-questline']
+      tags: ['OPTIONAL', 'latenna-questline', 'millicent-questline']
     },
     {
       id: "82983c08-5a06-4d1e-a6a8-dfea29452f1b",
@@ -369,7 +369,7 @@ const list = {
     },
     {
       id: '0852f8c6-a18d-418c-a4ce-76fa413d7194',
-      description: 'In a chest at the first secret area inside the Sealed Tunnel (Down at south of the lake right next to the west gate to Leyndell Royal Capital from the outside)',
+      description: 'In a chest at the first secret area inside the Sealed Tunnel (Down at south of the lake right next to the west gate to Leyndell Royal Capital from the outside, Altus Plateau)',
       tags: ['smithing-stone-bell']
     },
     // CAELID, RADAHN 60-70 +10-14
@@ -382,6 +382,36 @@ const list = {
       id: 'fbca363b-8c3c-4c24-812f-60b2700116a6',
       description: 'Dropped by the Fallingstar Beast in Sellia Crystal Tunnel (Caelid). Reachable by opening the chest in Dragon-Burnt Ruins in Limgrave',
       tags: ['somber-stone-bell']
+    },
+    {
+      id: 'cf37795e-81dc-407c-8186-cf7fce297c06',
+      description: "Speak with Gowry in Gowry's Shack within Caelid. The Gowry's Shack is found in eastern Caelid, just before Sellia, Town of Sorcery. Players can reach this location by following the Caelid Highway to the east and the north. Or from Sellia Under-Stair grace going south. You can skip this step, but it will enable you to summon Polyanna for O'Neil's fight",
+      tags: ['millicent-questline']
+    },
+    {
+      id: 'be885107-017a-44a5-a6c0-3c911e0c15de',
+      description: "Defeat Commander O'Neil, located in the Swamp of Aeonia (central Caelid). He will drop the Unalloyed Gold Needle. You can cheese O'Neil by sneaking behind him and repeatedly casting Posion Mist",
+      tags: ['millicent-questline']
+    },
+    {
+      id: '57743956-81fa-4eaa-b062-9577779f31ce',
+      description: 'Give the Unalloyed Gold Needle to Gowry, reload the game and get the repaired needle from him',
+      tags: ['millicent-questline']
+    },
+    {
+      id: '4c0725a1-f7d3-4aea-9f75-d55efcfbc105',
+      description: "Reach the Church of the Plague and give the needle to Millicent. It's reached by heading southwest from the Fort Faroth grace site and taking the Spiritspring down or from the backstreets of Sellia, Town of Sorcery. Or, coming from Dragonbarrow, jump down a Spirit Spring to the north of the Church",
+      tags: ['millicent-questline']
+    },
+    {
+      id: '9a982aa4-aad0-45cb-b890-9e5729bd8fc4',
+      description: 'Rest at a grace, then talk to Millicent again and exhaust her dialog. She will gift you the Prosthesis-Wearer Heirloom',
+      tags: ['millicent-questline']
+    },
+    {
+      id: 'ca41c5c4-06bd-462d-98d7-3b7da6e8cba9',
+      description: "Find Millicent in Gowry's shack. Exhaust her dialogue. Reload the game and Millicent will be gone and you can purchase spells from Gowry",
+      tags: ['millicent-questline']
     },
     {
       id: '7d2912a9-f6d1-45a1-bdb6-36ba9a63f0c6',
@@ -564,6 +594,31 @@ const list = {
     },
     // ALTUS 60-80 +10-14
     {
+      id: '3e908ded-2825-48c2-b96b-93068276438d',
+      description: 'Reach the Shaded Castle, heading north through the valley between the Mt. Gelmir and Altus Plateau regions, heading north from the Altus Tunnel to find your way to the Castle',
+      tags: ['millicent-questline']
+    },
+    {
+      id: '622dccd0-0982-401e-9ab3-58122db1e93a',
+      description: "Retrieve the Valkyrie's Prosthesis from the Shaded Castle, in a chest in a room guarded by a single Cleanrot Knight, on the northwestern edge of the castle",
+      tags: ['millicent-questline']
+    },
+    {
+      id: '1e9eeb4a-6634-4a97-988c-08338bd47e4a',
+      description: "Find Millicent just north-northeast of the Erdtree-Gazing Hill site of grace in Altus Plateau and give her the Valkyrie's Prosthesis",
+      tags: ['millicent-questline']
+    },
+    {
+      id: '5e0dd977-dfcc-4a9f-8604-b6d7b303a6b2',
+      description: 'Go to Dominula, Windmill Village (East of the "Road of Iniquity Side Path" Site of Grace. Follow the main path southeast, then bend east), and defeat the Godskin Apostle. You can summon Millicent for this battle',
+      tags: ['millicent-questline']
+    },
+    {
+      id: '85ae981b-9770-4262-848d-abc3ab1caa3b',
+      description: 'Rest at the Windmill Heights site of grace, and find Millicent and exhaust her dialoge',
+      tags: ['millicent-questline']
+    },
+    {
       id: 'c399c03e-adbf-4d14-b993-d207677089a8',
       description: 'Beat Draconic Tree Sentinel to access Leyndell',
       tags: []
@@ -625,6 +680,11 @@ const list = {
       id: '188a8fc3-17f2-42ab-adc9-bf67d97241c9',
       description: "Dropped by Ulcerated Tree Spirit in Giants' Mountaintop Catacombs, near the fire monks at the start of Mountaintops of the Giants",
       tags: ['glovewort-bell']
+    },
+    {
+      id: '72213235-afbe-47cc-8159-23e4aae3a775',
+      description: "Talk to Millicent in the Ancient Snow Valley Ruins site of grace in Mountaintops of the Giants. If Millicent does not appear at the site of grace, try returning to the Windmill Heights again and see if she's there, and if so, exhaust her dialogue there",
+      tags: ['millicent-questline']
     },
     {
       id: 'c4d24087-e65d-4376-bdbd-c9356a062610',
@@ -723,12 +783,12 @@ const list = {
     {
       id: 'd01f819f-3b97-4551-9b08-1e6282f76552',
       description: 'Get Haligtree Secret Medallion (Right) from Castle Sol in Mountaintops of the Giants',
-      tags: ['OPTIONAL', 'latenna-questline']
+      tags: ['OPTIONAL', 'latenna-questline', 'millicent-questline']
     },
     {
       id: '57379897-ef76-4246-af6b-b1db1c957349',
       description: 'With both halves of Haligtree medallion, access Consecrated Snowfield through the Lift of Rold',
-      tags: ['OPTIONAL', 'latenna-questline']
+      tags: ['OPTIONAL', 'latenna-questline', 'millicent-questline']
     },
     {
       id: '6081caa3-6d2b-4b95-b20c-88daae796559',
@@ -738,7 +798,7 @@ const list = {
     {
       id: '52bfb466-e488-4a1b-8eab-7a84dc19ab14',
       description: "beat Ordina's puzzle in Consecrated Snowfield to access Miquella's Haligtree. You can make the assassins visible holding Sentry's Rorch in your off hand",
-      tags: ['OPTIONAL']
+      tags: ['OPTIONAL', 'millicent-questline']
     },
     {
       id: 'fe060cba-bcbd-4b3d-bcaf-81e9a0ad07d8',
@@ -746,9 +806,39 @@ const list = {
       tags: ['ghost-glovewort-bell']
     },
     {
+      id: '92cba555-80a2-4c16-9a68-57f3d45edf71',
+      description: 'Defeat the Lesser Ulcerated Tree Spirit in Elphael. To reach the mini-boss, go to the Drainage Channel site of grace, go west through the doorway, climb up the ladder at the end of the corridor, and go out the doorway on your right at the top. The mini-boss is at the landmass across the gap to the left. To reach it, go up the slope on the right and walk across the tree branch, heading southwest across the gap. You can cheese the mini-boss with ranged attacks from the top of the nearby trunk',
+      tags: ['millicent-questline']
+    },
+    {
+      id: '3804c9ae-0a46-4c21-858c-7da2bfcbb9c7',
+      description: 'Find the two summon signs near where the Lesser Ulcerated Tree Spirit was, one to help Millicent and the other to fight her',
+      tags: ['millicent-questline']
+    },
+    {
+      id: '73c3f472-74b8-4768-9f5e-855580326d49',
+      description: "Choose one: A) Help Millicent to get the Rotten Winged Sword Insignia, B) Fight Millicent to get the Millicent's Prosthesis. If you fight Millicent, you get locked out of a Somber Ancient Dragon Smithing Stone and the Unalloyed Gold Needle",
+      tags: ['millicent-questline']
+    },
+    {
+      id: 'b8381c1f-d842-46e7-9fbc-5dfe104a2176',
+      description: 'If you helped Millicent, find her near where her summoning sign was, exhaust her dialogue and reload the area. Grab the Unalloyed Gold Needle',
+      tags: ['millicent-questline']
+    },
+    {
+      id: '0d3d7ba1-a092-40fd-80dd-980bca710bdf',
+      description: "Return to Gowry in Gowry's Shack. If he is alive, talk to him and kill him to get the Flock's Canvas Talisman and Gowry's Bell Bearing (might need to do defeat Malenia before, I'm not sure)",
+      tags: ['millicent-questline']
+    },
+    {
       id: '81fc1668-21af-4a10-acfb-34ed93c8a115',
       description: 'Beat Malenia',
-      tags: ['OPTIONAL']
+      tags: ['OPTIONAL', 'millicent-questline']
+    },
+    {
+      id: 'af05491b-d9d0-4fcc-a72b-b34b054e8f47',
+      description: "If you have the Unalloyed Gold Needle, it can be used at the flower in Malenia's arena, after defeating her, in order to receive Miquella's Needle, as well as a Somber Ancient Dragon Smithing Stone",
+      tags: ['millicent-questline']
     },
     // FARUM AZULA 120-150 +25
     {

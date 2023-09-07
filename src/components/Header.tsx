@@ -14,6 +14,10 @@ const links = [
     href: "/checklists",
   },
   {
+    label: "Profile",
+    href: "/profile",
+  },
+  {
     label: "FAQ",
     href: "/faq",
   },

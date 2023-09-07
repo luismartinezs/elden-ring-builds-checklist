@@ -1,4 +1,4 @@
-import { useLocalStorage } from 'usehooks-ts'
+import { useManageFilters } from '~/features/checklist/hooks/useManageFilters';
 
 export const filterKeys = {
   optional: 'optional',
@@ -16,13 +16,15 @@ export const filterKeys = {
 } as const
 
 export function useFilter(tag: typeof filterKeys[keyof typeof filterKeys]) {
-  const [filter, setFilter] = useLocalStorage(
-    `filter-${tag}`,
-    false
-  );
+  const {
+    getCurrentFilters,
+    updateFilter
+  } = useManageFilters()
 
   return {
-    filter,
-    setFilter,
+    filter: getCurrentFilters()[tag] ?? false,
+    setFilter: (value: boolean) => {
+      updateFilter(tag, value)
+    },
   };
 }

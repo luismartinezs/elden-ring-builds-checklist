@@ -64,6 +64,18 @@ const faq = [
       </p>
     ),
   },
+  {
+    question: "Where do the different profiles get saved?",
+    answer: (
+      <p>
+        They get saved to the local storage in your browser. So if you are
+        clearing your browser cache make sure not to delete the site data or
+        your profiles will get reset. That also means that if you use a
+        different browser or device any profiles that you created in a different
+        device or browser will not be there.
+      </p>
+    ),
+  },
 ];
 
 function FaqPage() {

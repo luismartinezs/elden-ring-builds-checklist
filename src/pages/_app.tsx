@@ -6,11 +6,16 @@ import { Analytics } from "@vercel/analytics/react";
 
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
+import { useInitAppData } from "~/hooks/useInitAppData";
+import { useMigrateLegacyData } from "~/hooks/useMigrateLegacyData";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
   pageProps: { session, ...pageProps },
 }) => {
+  useInitAppData();
+  useMigrateLegacyData(); // This can be removed after some days / weeks. See also scripts/mockLegacyData.js
+
   return (
     <>
       <SessionProvider session={session}>

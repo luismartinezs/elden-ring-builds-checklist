@@ -166,6 +166,9 @@ function useShowChecklistItem(
     filterGhostGlovewortBell,
     filterSeluvisQuestline,
     filterWhetblades,
+    filterLatennaQuestline,
+    filterAlexanderQuestline,
+    filterMillicentQuestline,
   ]);
 
   return show;

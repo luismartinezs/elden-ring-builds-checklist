@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { type TChecklistItem } from "~/features/checklist/types";
-import { Tag } from "~/features/tags";
+import { TAGS, Tag } from "~/features/tags";
 import Toggler from "~/features/checklist/components/Toggler";
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
 import { useFilter } from "~/hooks/useFilter";
@@ -55,89 +55,97 @@ function hasNestedItems(
   return "items" in item && Array.isArray(item.items);
 }
 
+// I know this hook sucks but It's Friday evening
 function useShowChecklistItem(
   item: TChecklistItem,
   isChecked: (id: string) => boolean
 ) {
   const [show, setShow] = useState(true);
-  const { filter: filterOptional } = useFilter("optional");
+  const { filter: filterOptional } = useFilter(TAGS.OPTIONAL);
   const { filter: filterCompleted } = useFilter("completed");
   const { filter: filterVolcanoManorAssassination } = useFilter(
-    "volcano-manor-assassination"
+    TAGS.VOLCANO_MANOR_ASSASSINATION
   );
-  const { filter: filterRanniQuestline } = useFilter("ranni-questline");
-  const { filter: filterVarreQuestline } = useFilter("varre-questline");
-  const { filter: filterNepheliQuestline } = useFilter("nepheli-questline");
-  const { filter: filterSeluvisQuestline } = useFilter("seluvis-questline");
-  const { filter: filterLatennaQuestline } = useFilter("latenna-questline");
-  const { filter: filterAlexanderQuestline } = useFilter("alexander-questline");
-  const { filter: filterMillicentQuestline } = useFilter("millicent-questline");
-  const { filter: filterSmithingStoneBell } = useFilter("smithing-stone-bell");
-  const { filter: filterSomberStoneBell } = useFilter("somber-stone-bell");
-  const { filter: filterGlovewortBell } = useFilter("glovewort-bell");
+  const { filter: filterRanniQuestline } = useFilter(TAGS.RANNI_QUESTLINE);
+  const { filter: filterVarreQuestline } = useFilter(TAGS.VARRE_QUESTLINE);
+  const { filter: filterNepheliQuestline } = useFilter(TAGS.NEPHELI_QUESTLINE);
+  const { filter: filterSeluvisQuestline } = useFilter(TAGS.SELUVIS_QUESTLINE);
+  const { filter: filterLatennaQuestline } = useFilter(TAGS.LATENNA_QUESTLINE);
+  const { filter: filterAlexanderQuestline } = useFilter(
+    TAGS.ALEXANDER_QUESTLINE
+  );
+  const { filter: filterMillicentQuestline } = useFilter(
+    TAGS.MILLICENT_QUESTLINE
+  );
+  const { filter: filterSmithingStoneBell } = useFilter(
+    TAGS.SMITHING_STONE_BELL
+  );
+  const { filter: filterSomberStoneBell } = useFilter(TAGS.SOMBER_STONE_BELL);
+  const { filter: filterGlovewortBell } = useFilter(TAGS.GLOVEWORT_BELL);
   const { filter: filterGhostGlovewortBell } = useFilter(
-    "ghost-glovewort-bell"
+    TAGS.GHOST_GLOVEWORT_BELL
   );
-  const { filter: filterWhetblades } = useFilter("whetblades");
-  const _tags = item.tags?.filter((tag) => tag !== "ng+") ?? [];
+  const { filter: filterWhetblades } = useFilter(TAGS.WHETBLADES);
 
   // NOTE: Using an effect instead of a derived state to avoid hydration errors
   useEffect(() => {
+    const _tags = item.tags?.filter((tag) => tag !== "ng+") ?? [];
+
     const filters = [
       {
-        tag: "OPTIONAL",
+        tag: TAGS.OPTIONAL,
         filter: filterOptional,
       },
       {
-        tag: "volcano-manor-assassination",
+        tag: TAGS.VOLCANO_MANOR_ASSASSINATION,
         filter: filterVolcanoManorAssassination,
       },
       {
-        tag: "ranni-questline",
+        tag: TAGS.RANNI_QUESTLINE,
         filter: filterRanniQuestline,
       },
       {
-        tag: "seluvis-questline",
+        tag: TAGS.SELUVIS_QUESTLINE,
         filter: filterSeluvisQuestline,
       },
       {
-        tag: "varre-questline",
+        tag: TAGS.VARRE_QUESTLINE,
         filter: filterVarreQuestline,
       },
       {
-        tag: "nepheli-questline",
+        tag: TAGS.NEPHELI_QUESTLINE,
         filter: filterNepheliQuestline,
       },
       {
-        tag: "smithing-stone-bell",
+        tag: TAGS.SMITHING_STONE_BELL,
         filter: filterSmithingStoneBell,
       },
       {
-        tag: "somber-stone-bell",
+        tag: TAGS.SOMBER_STONE_BELL,
         filter: filterSomberStoneBell,
       },
       {
-        tag: "glovewort-bell",
+        tag: TAGS.GLOVEWORT_BELL,
         filter: filterGlovewortBell,
       },
       {
-        tag: "ghost-glovewort-bell",
+        tag: TAGS.GHOST_GLOVEWORT_BELL,
         filter: filterGhostGlovewortBell,
       },
       {
-        tag: "whetblades",
+        tag: TAGS.WHETBLADES,
         filter: filterWhetblades,
       },
       {
-        tag: "latenna-questline",
+        tag: TAGS.LATENNA_QUESTLINE,
         filter: filterLatennaQuestline,
       },
       {
-        tag: "alexander-questline",
+        tag: TAGS.ALEXANDER_QUESTLINE,
         filter: filterAlexanderQuestline,
       },
       {
-        tag: "millicent-questline",
+        tag: TAGS.MILLICENT_QUESTLINE,
         filter: filterMillicentQuestline,
       },
     ];
@@ -155,7 +163,6 @@ function useShowChecklistItem(
     filterOptional,
     filterVolcanoManorAssassination,
     filterRanniQuestline,
-    _tags,
     filterCompleted,
     isChecked,
     item.id,
@@ -170,6 +177,7 @@ function useShowChecklistItem(
     filterLatennaQuestline,
     filterAlexanderQuestline,
     filterMillicentQuestline,
+    item.tags,
   ]);
 
   return show;

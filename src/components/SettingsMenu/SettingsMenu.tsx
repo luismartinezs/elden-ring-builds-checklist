@@ -16,7 +16,7 @@ function FilterButtons() {
   return (
     <>
       <FilterButton filterTag="completed" label="Completed" />
-      <FilterButton filterTag="optional" label="Optional" />
+      <FilterButton filterTag="OPTIONAL" label="Optional" />
       <FilterButton
         filterTag="ranni-questline"
         label="Ranni"

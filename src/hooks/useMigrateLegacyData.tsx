@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { lists } from "~/data";
 import { initAppData } from "~/features/checklist/hooks/useManageProfiles";
 import { type AppData } from "~/features/checklist/types";
-import { filterKeys } from "~/hooks/useFilter";
+import { TAGS } from "~/features/tags";
 
 export function useMigrateLegacyData() {
   useEffect(() => {
@@ -11,7 +11,7 @@ export function useMigrateLegacyData() {
     const newData = rawData ? (JSON.parse(rawData) as AppData) : initAppData;
 
     const legacyKeys = [
-      ...Object.values(filterKeys).map((key) => `filter-${key}`),
+      ...Object.values(TAGS).map((key) => `filter-${key}`),
       ...lists.map((list) => list.slug),
     ];
 

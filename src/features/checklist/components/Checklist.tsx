@@ -86,6 +86,7 @@ function useShowChecklistItem(
     TAGS.GHOST_GLOVEWORT_BELL
   );
   const { filter: filterWhetblades } = useFilter(TAGS.WHETBLADES);
+  const { filter: filterAllRememberances } = useFilter(TAGS.ALL_REMEMBERANCES);
 
   // NOTE: Using an effect instead of a derived state to avoid hydration errors
   useEffect(() => {
@@ -147,6 +148,10 @@ function useShowChecklistItem(
       {
         tag: TAGS.MILLICENT_QUESTLINE,
         filter: filterMillicentQuestline,
+      },
+      {
+        tag: TAGS.ALL_REMEMBERANCES,
+        filter: filterAllRememberances,
       },
     ];
     const shouldHide =

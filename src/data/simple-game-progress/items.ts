@@ -507,7 +507,7 @@ export const items = [
   {
     id: '76b7e4a0-77f3-4f48-a55e-ba59bce9cb2d',
     description: 'Defeat Astel, Naturalborn of the Void',
-    tags: ['ranni-questline']
+    tags: ['ranni-questline', ALL_REMEMBERANCES]
   },
   {
     id: '12e9a4f4-a78c-482c-aa68-c3656058b92c',

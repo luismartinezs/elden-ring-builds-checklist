@@ -31,6 +31,7 @@ function FilterButtons() {
       <FilterButton filterTag={TAGS.GLOVEWORT_BELL} />
       <FilterButton filterTag={TAGS.GHOST_GLOVEWORT_BELL} />
       <FilterButton filterTag={TAGS.WHETBLADES} />
+      <FilterButton filterTag={TAGS.ALL_REMEMBERANCES} />
     </>
   );
 }

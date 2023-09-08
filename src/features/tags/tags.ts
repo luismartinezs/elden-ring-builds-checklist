@@ -23,7 +23,7 @@ export const tags: Record<TTagKeys, {
     label: 'Ranni',
     key: TAGS.RANNI_QUESTLINE,
     buttonClasses: 'border-sky-200 text-sky-200 hover:bg-sky-200 hover:text-black focus:ring-sky-200',
-    tagClasses: '',
+    tagClasses: 'bg-sky-200 text-black',
   },
   [TAGS.VARRE_QUESTLINE]: {
     label: 'Varré',
@@ -94,7 +94,7 @@ export const tags: Record<TTagKeys, {
   [TAGS.ALL_REMEMBERANCES]: {
     label: 'All Remembrances',
     key: TAGS.ALL_REMEMBERANCES,
-    buttonClasses: 'border-rose-300 text-rose-300 hover:bg-rose-300 hover:text-black focus:ring-rose-300',
-    tagClasses: 'bg-rose-300 text-black',
+    buttonClasses: 'border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black focus:ring-amber-400',
+    tagClasses: 'bg-amber-400 text-black',
   }
 }

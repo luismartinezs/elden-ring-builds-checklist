@@ -1,3 +1,12 @@
+import { TAGS } from '~/features/tags';
+
+const { ALL_REMEMBERANCES } = TAGS
+/**
+ * 'ng+' tag is only to indicate what items are shown both in ng and ng+
+ * use it when the tags are empty or the only tag is OPTIONAL, if there is any other tag, by default that one will be shown always but only when that filter tag is active
+ * The reason this is like that is that all NG+ are already repeated in NG and in the same order so we can reuse both lists
+ */
+
 export const items = [
   // WEST LIMGRAVE L1-15 +0-1
   {
@@ -158,7 +167,7 @@ export const items = [
   {
     id: 'de7fc925-2ad3-441b-a0f3-8cff17922c2e',
     description: 'Get Haligtree Secret Medallion (Right) by speaking to Albus in Village of the Albinaurics (Albus is hidden inside a jar, roll into the jar and talk to Albus)',
-    tags: ['OPTIONAL', 'latenna-questline', 'millicent-questline', 'ng+']
+    tags: ['OPTIONAL', 'latenna-questline', 'millicent-questline', 'ng+', ALL_REMEMBERANCES]
   },
   {
     id: "82983c08-5a06-4d1e-a6a8-dfea29452f1b",
@@ -410,7 +419,7 @@ export const items = [
   {
     id: '7d2912a9-f6d1-45a1-bdb6-36ba9a63f0c6',
     description: 'Radahn Festival should be active now, and you can beat Radahn',
-    tags: ['OPTIONAL', 'ranni-questline', 'alexander-questline', 'ng+']
+    tags: ['OPTIONAL', 'ranni-questline', 'alexander-questline', 'ng+', ALL_REMEMBERANCES]
   },
   {
     id: '214e0b27-c6c2-41a8-8acf-cba7f5ab0b6b',
@@ -425,7 +434,7 @@ export const items = [
   {
     id: '609c347c-c2b5-488b-80e5-1db0d9417a41',
     description: 'If you beat Radahn, you can now access Nokron',
-    tags: ['OPTIONAL', 'ng+']
+    tags: ['OPTIONAL', 'ng+', ALL_REMEMBERANCES]
   },
   // NOKRON CITY AND AQUEDUCT 70-80 +10-14
   {
@@ -480,13 +489,13 @@ export const items = [
   },
   {
     id: '4b183117-666d-4d64-9f51-2484e0f1d764',
-    description: 'Beat Regal Ancestor Spirit in Siofra river, the part reachable after beating Mimic Tear',
-    tags: ['OPTIONAL', 'ng+']
+    description: 'Beat Regal Ancestor Spirit in Siofra river, the part reachable after beating Mimic Tear (Nokron)',
+    tags: ['OPTIONAL', 'ng+', ALL_REMEMBERANCES]
   },
   {
     id: '03c2239f-0006-40d2-ac76-4fa27340b5a7',
     description: 'Beat Valiant Gargoyles in Siofra Aqueduct, and access Deeproot Depths through the coffin in their arena',
-    tags: ['OPTIONAL', 'ng+']
+    tags: ['OPTIONAL', 'ng+', ALL_REMEMBERANCES]
   },
   // DEEPROOT DEPTHS 80-90 +15-20
   // LAKE OF ROT 80-100 +15-20
@@ -529,7 +538,7 @@ export const items = [
   {
     id: '35ea6a80-fe78-419d-b817-002882705950',
     description: 'You can reach Mt. Gelmir and Volcano Manor by going north east from Altus Plateau site of grace until FOREST-SPANNING GREATBRIDGE grace, crossing the bridge with the magic portal, then heading south west through the only path available',
-    tags: ['OPTIONAL', 'ng+']
+    tags: ['OPTIONAL', 'ng+', ALL_REMEMBERANCES]
   },
   {
     id: '4eebbb14-632b-4c83-9251-65998c861e3f',
@@ -583,8 +592,8 @@ export const items = [
   },
   {
     id: '2beaab01-b227-4b7a-abf7-1ff6861ea4b0',
-    description: "Get Sentry's torch from merchant in Hermit Merchant's Shack, northeast of the Outer Wall Battleground site of grace (Altus), useful if you want to reach Malenia (buy it from him before you kill him)",
-    tags: ['OPTIONAL']
+    description: "Get Sentry's torch from merchant in Hermit Merchant's Shack, northeast of the Outer Wall Battleground site of grace (Altus), useful if you want to reach Malenia (buy it from the merchant before killing him)",
+    tags: ['OPTIONAL', ALL_REMEMBERANCES]
   },
   // ALTUS 60-80 +10-14
   {
@@ -723,7 +732,7 @@ export const items = [
   {
     id: '48a216e3-249c-4720-928a-e8faa7e34806',
     description: 'Beat Rykard',
-    tags: ['OPTIONAL', 'ng+']
+    tags: ['OPTIONAL', 'ng+', ALL_REMEMBERANCES]
   },
   {
     id: 'a7a70a4b-9f8b-4a6a-bda0-83d9b21a0235',
@@ -749,12 +758,12 @@ export const items = [
   {
     id: 'ecb37b68-e9ab-4d8f-bbe0-1dd4b13c8e7e',
     description: "Fia will relocate to Deeproot depths even if you didn't complete her questline so you can beat Fia's champions",
-    tags: ['OPTIONAL', 'ng+']
+    tags: ['OPTIONAL', 'ng+', ALL_REMEMBERANCES]
   },
   {
     id: 'b7edec68-9875-4eb4-b4cc-e967333caebd',
     description: "To fight Fortissax, progress Ranni's quest until receiving the Carian Inverted Statue. Use the statue in the Divine Tower of Liurnia, reach the top, get the Cursemark of Death and give it to Fia. Reload the area and inspect her dream",
-    tags: ['OPTIONAL', 'ng+']
+    tags: ['OPTIONAL', 'ng+', ALL_REMEMBERANCES]
   },
   // CONSECRATED SNOWFIELD 100-120 +20-24
   // MOHGWYN PALACE 110-140 +20-24
@@ -772,12 +781,12 @@ export const items = [
   {
     id: 'd01f819f-3b97-4551-9b08-1e6282f76552',
     description: 'Get Haligtree Secret Medallion (Right) from Castle Sol in Mountaintops of the Giants',
-    tags: ['OPTIONAL', 'latenna-questline', 'millicent-questline', 'ng+']
+    tags: ['OPTIONAL', 'latenna-questline', 'millicent-questline', 'ng+', ALL_REMEMBERANCES]
   },
   {
     id: '57379897-ef76-4246-af6b-b1db1c957349',
     description: 'With both halves of Haligtree medallion, access Consecrated Snowfield through the Lift of Rold',
-    tags: ['OPTIONAL', 'latenna-questline', 'millicent-questline', 'ng+']
+    tags: ['OPTIONAL', 'latenna-questline', 'millicent-questline', 'ng+', ALL_REMEMBERANCES]
   },
   {
     id: '6081caa3-6d2b-4b95-b20c-88daae796559',
@@ -787,12 +796,12 @@ export const items = [
   {
     id: '52bfb466-e488-4a1b-8eab-7a84dc19ab14',
     description: "beat Ordina's puzzle in Consecrated Snowfield to access Miquella's Haligtree. You can make the assassins visible holding Sentry's Torch in your off hand. You can knock off the snipers from the roofs with a greatbow, the Jar Cannon or long range spells",
-    tags: ['OPTIONAL', 'millicent-questline']
+    tags: ['OPTIONAL', 'millicent-questline', ALL_REMEMBERANCES]
   },
   {
     id: 'a38284d6-48d6-46f8-a9b3-5ddc7394ec72',
     description: "Reach Mohgwyn Palace either from Varre's quest or from Consecrated Snowfield and beat Mohg. Beforehand, it would be useful to get the Purifying Crystal Tear first from killing Eleonora, Violet Bloody Finger at the Second Church of Marika in Altus Plateau",
-    tags: ['OPTIONAL', 'ng+']
+    tags: ['OPTIONAL', 'ng+', ALL_REMEMBERANCES]
   },
   {
     id: 'fe060cba-bcbd-4b3d-bcaf-81e9a0ad07d8',
@@ -827,7 +836,7 @@ export const items = [
   {
     id: '81fc1668-21af-4a10-acfb-34ed93c8a115',
     description: 'Beat Malenia',
-    tags: ['OPTIONAL', 'millicent-questline', 'ng+']
+    tags: ['OPTIONAL', 'millicent-questline', 'ng+', ALL_REMEMBERANCES]
   },
   {
     id: 'af05491b-d9d0-4fcc-a72b-b34b054e8f47',
@@ -893,7 +902,7 @@ export const items = [
   {
     id: '9d441ec1-1981-4333-8433-8f0391e3873c',
     description: 'Beat Placidusax',
-    tags: ['OPTIONAL', 'ng+']
+    tags: ['OPTIONAL', 'ng+', ALL_REMEMBERANCES]
   },
   {
     id: '4b29d14f-ec7a-4729-a457-5af706963d61',

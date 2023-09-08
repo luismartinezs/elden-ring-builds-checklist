@@ -26,7 +26,7 @@ export const tags: Record<TTagKeys, {
     tagClasses: '',
   },
   [TAGS.VARRE_QUESTLINE]: {
-    label: 'Varre',
+    label: 'Varré',
     key: TAGS.VARRE_QUESTLINE,
     buttonClasses: 'border-red-700 text-red-700 hover:bg-red-700 hover:text-black focus:ring-red-700',
     tagClasses: 'bg-red-700 text-black',

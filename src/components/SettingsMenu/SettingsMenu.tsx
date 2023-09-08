@@ -11,78 +11,26 @@ import { Button } from "~/components/Button";
 import { FilterButton } from "~/components/FilterButton";
 import { Divider } from "~/components/Divider";
 import { ProfileSelect } from "~/features/profile/components/ProfileSelect";
+import { TAGS } from "~/features/tags";
 
 function FilterButtons() {
   return (
     <>
       <FilterButton filterTag="completed" label="Completed" />
-      <FilterButton filterTag="OPTIONAL" label="Optional" />
-      <FilterButton
-        filterTag="ranni-questline"
-        label="Ranni"
-        className="border-sky-200 text-sky-200 hover:bg-sky-200 hover:text-black focus:ring-sky-200"
-      />
-      <FilterButton
-        filterTag="seluvis-questline"
-        label="Seluvis"
-        className="border-sky-300 text-sky-300 hover:bg-sky-300 hover:text-black focus:ring-sky-300"
-      />
-      <FilterButton
-        filterTag="volcano-manor-assassination"
-        label="Volcano
-    Manor"
-        className="border-red-400 text-red-400 hover:bg-red-400 hover:text-black focus:ring-red-400"
-      />
-      <FilterButton
-        filterTag="varre-questline"
-        label="Varré"
-        className="border-red-700 text-red-700 hover:bg-red-700 hover:text-black focus:ring-red-700"
-      />
-      <FilterButton
-        filterTag="nepheli-questline"
-        label="Nepheli"
-        className="border-orange-300 text-orange-300 hover:bg-orange-300 hover:text-black focus:ring-orange-300"
-      />
-      <FilterButton
-        filterTag="alexander-questline"
-        label="Alexander"
-        className="border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-black focus:ring-orange-400"
-      />
-      <FilterButton
-        filterTag="latenna-questline"
-        label="Latenna"
-        className="border-cyan-200 text-cyan-200 hover:bg-cyan-200 hover:text-black focus:ring-cyan-200"
-      />
-      <FilterButton
-        filterTag="millicent-questline"
-        label="Millicent"
-        className="border-rose-400 text-rose-400 hover:bg-rose-400 hover:text-black focus:ring-rose-400"
-      />
-      <FilterButton
-        filterTag="smithing-stone-bell"
-        label="Smithing Stone Bell"
-        className="border-orange-200 text-orange-200 hover:bg-orange-200 hover:text-black focus:ring-orange-200"
-      />
-      <FilterButton
-        filterTag="somber-stone-bell"
-        label="Somber Stone Bell"
-        className="border-gray-100 text-gray-100 hover:bg-gray-100 hover:text-black focus:ring-gray-100"
-      />
-      <FilterButton
-        filterTag="glovewort-bell"
-        label="Glovewort Bell"
-        className="border-zinc-300 text-zinc-300 hover:bg-zinc-300 hover:text-black focus:ring-zinc-300"
-      />
-      <FilterButton
-        filterTag="ghost-glovewort-bell"
-        label="Ghost Glovewort Bell"
-        className="border-blue-200 text-blue-200 hover:bg-blue-200 hover:text-black focus:ring-blue-200"
-      />
-      <FilterButton
-        filterTag="whetblades"
-        label="Whetblades"
-        className="border-green-300 text-green-300 hover:bg-green-300 hover:text-black focus:ring-green-300"
-      />
+      <FilterButton filterTag={TAGS.OPTIONAL} />
+      <FilterButton filterTag={TAGS.RANNI_QUESTLINE} />
+      <FilterButton filterTag={TAGS.SELUVIS_QUESTLINE} />
+      <FilterButton filterTag={TAGS.VOLCANO_MANOR_ASSASSINATION} />
+      <FilterButton filterTag={TAGS.VARRE_QUESTLINE} />
+      <FilterButton filterTag={TAGS.NEPHELI_QUESTLINE} />
+      <FilterButton filterTag={TAGS.ALEXANDER_QUESTLINE} />
+      <FilterButton filterTag={TAGS.LATENNA_QUESTLINE} />
+      <FilterButton filterTag={TAGS.MILLICENT_QUESTLINE} />
+      <FilterButton filterTag={TAGS.SMITHING_STONE_BELL} />
+      <FilterButton filterTag={TAGS.SOMBER_STONE_BELL} />
+      <FilterButton filterTag={TAGS.GLOVEWORT_BELL} />
+      <FilterButton filterTag={TAGS.GHOST_GLOVEWORT_BELL} />
+      <FilterButton filterTag={TAGS.WHETBLADES} />
     </>
   );
 }

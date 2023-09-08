@@ -2,12 +2,12 @@ import classnames from "classnames";
 import type { TTagKeys } from "./types";
 import { tags } from "./tags";
 
-export function Tag({ tag }: { tag: TTagKeys }) {
+export function Tag({ tag }: { tag: string }) {
   if (!(tag in tags)) {
     return null;
   }
 
-  const { tagClasses, label } = tags[tag];
+  const { tagClasses, label } = tags[tag as TTagKeys];
 
   return (
     <span

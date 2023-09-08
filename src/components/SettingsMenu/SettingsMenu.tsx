@@ -87,8 +87,11 @@ function Menu({
   const ref = useRef(null);
   useOnClickOutside(ref, close);
 
+  if (!open) return null;
+
   return (
     <div
+      aria-hidden={!open}
       className={classnames(
         "fixed inset-1 top-[72px] z-10 grid grid-cols-1 text-white transition-opacity duration-500 ease-out sm:inset-4 sm:top-[80px] md:grid-cols-2",
         open ? "opacity-100" : "pointer-events-none opacity-0"

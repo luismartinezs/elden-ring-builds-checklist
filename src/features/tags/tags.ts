@@ -91,4 +91,10 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-rose-400 text-rose-400 hover:bg-rose-400 hover:text-black focus:ring-rose-400',
     tagClasses: 'bg-rose-400 text-black',
   },
+  [TAGS.ALL_REMEMBERANCES]: {
+    label: 'All Remembrances',
+    key: TAGS.ALL_REMEMBERANCES,
+    buttonClasses: 'border-rose-300 text-rose-300 hover:bg-rose-300 hover:text-black focus:ring-rose-300',
+    tagClasses: 'bg-rose-300 text-black',
+  }
 }

@@ -14,4 +14,5 @@ export const TAGS = {
   LATENNA_QUESTLINE: 'latenna-questline',
   ALEXANDER_QUESTLINE: 'alexander-questline',
   MILLICENT_QUESTLINE: 'millicent-questline',
+  ALL_REMEMBERANCES: 'all-remembrances',
 } as const;

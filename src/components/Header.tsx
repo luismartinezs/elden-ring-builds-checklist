@@ -79,51 +79,53 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
           </div>
 
           {/* MOBILE NAV BAR */}
-          <div
-            className={classnames(
-              "fixed inset-4 z-10 grid grid-cols-1 text-white transition-opacity duration-500 ease-out md:grid-cols-2 lg:hidden",
-              open ? "opacity-100" : "pointer-events-none opacity-0"
-            )}
-            id="mobile-menu"
-          >
-            <div className="col-span-1 hidden md:block"></div>
+          {open && (
             <div
               className={classnames(
-                "col-span-1 rounded-xl bg-black text-white shadow-xl transition-opacity duration-300 ease-out lg:hidden"
+                "fixed inset-4 z-10 grid grid-cols-1 text-white transition-opacity duration-500 ease-out md:grid-cols-2 lg:hidden",
+                open ? "opacity-100" : "pointer-events-none opacity-0"
               )}
+              id="mobile-menu"
             >
-              <div className="flex h-full flex-col items-center">
-                <div className="flex w-full items-start justify-between px-6 pt-4">
-                  <div className="flex items-center gap-2">
-                    <LogoLink className="scale-50" />
-                    <span>Elden Ring Checklists</span>
-                  </div>
-                  <button
-                    onClick={toggleMenu}
-                    className="max-h-[50px] self-end rounded-xl p-2 text-white hover:bg-stone-800"
-                  >
-                    <AiOutlineClose color="#ffffff" size={30} />
-                  </button>
-                </div>
-                <ul className="mt-4 flex w-full flex-col items-center text-xl text-white">
-                  {links.map((link) => (
-                    <li
-                      key={link.label}
-                      className="w-full border-b border-stone-500 last:border-0"
+              <div className="col-span-1 hidden md:block"></div>
+              <div
+                className={classnames(
+                  "col-span-1 rounded-xl bg-black text-white shadow-xl transition-opacity duration-300 ease-out lg:hidden"
+                )}
+              >
+                <div className="flex h-full flex-col items-center">
+                  <div className="flex w-full items-start justify-between px-6 pt-4">
+                    <div className="flex items-center gap-2">
+                      <LogoLink className="scale-50" />
+                      <span>Elden Ring Checklists</span>
+                    </div>
+                    <button
+                      onClick={toggleMenu}
+                      className="max-h-[50px] self-end rounded-xl p-2 text-white hover:bg-stone-800"
                     >
-                      <PrimaryLink
-                        href={link.href}
-                        className="flex w-full items-center justify-between px-6 py-5 hover:text-stone-300"
+                      <AiOutlineClose color="#ffffff" size={30} />
+                    </button>
+                  </div>
+                  <ul className="mt-4 flex w-full flex-col items-center text-xl text-white">
+                    {links.map((link) => (
+                      <li
+                        key={link.label}
+                        className="w-full border-b border-stone-500 last:border-0"
                       >
-                        <span className="font-semibold">{link.label}</span>
-                        <BsChevronRight size={20} strokeWidth={1} />
-                      </PrimaryLink>
-                    </li>
-                  ))}
-                </ul>
+                        <PrimaryLink
+                          href={link.href}
+                          className="flex w-full items-center justify-between px-6 py-5 hover:text-stone-300"
+                        >
+                          <span className="font-semibold">{link.label}</span>
+                          <BsChevronRight size={20} strokeWidth={1} />
+                        </PrimaryLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </nav>
     </header>

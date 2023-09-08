@@ -79,6 +79,7 @@ function useShowChecklistItem(
     "ghost-glovewort-bell"
   );
   const { filter: filterWhetblades } = useFilter("whetblades");
+  const _tags = item.tags?.filter((tag) => tag !== "ng+") ?? [];
 
   // NOTE: Using an effect instead of a derived state to avoid hydration errors
   useEffect(() => {
@@ -141,8 +142,8 @@ function useShowChecklistItem(
       },
     ];
     const shouldHide =
-      Array.isArray(item?.tags) && item?.tags?.length > 0
-        ? item.tags.every((tag) =>
+      _tags.length > 0
+        ? _tags.every((tag) =>
             filters.some(
               ({ tag: filterTag, filter }) => tag === filterTag && filter
             )
@@ -154,7 +155,7 @@ function useShowChecklistItem(
     filterOptional,
     filterVolcanoManorAssassination,
     filterRanniQuestline,
-    item.tags,
+    _tags,
     filterCompleted,
     isChecked,
     item.id,

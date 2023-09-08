@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { type TChecklistItem } from "~/features/checklist/types";
-import { Tag } from "~/features/checklist/components/Tag";
+import { Tag } from "~/features/tags";
 import Toggler from "~/features/checklist/components/Toggler";
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
 import { useFilter } from "~/hooks/useFilter";

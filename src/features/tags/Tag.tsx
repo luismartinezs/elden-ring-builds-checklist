@@ -1,22 +1,7 @@
 import classnames from "classnames";
+import type { TTagKeys } from "./types";
 
-type TagKeys =
-  | "OPTIONAL"
-  | "volcano-manor-assassination"
-  | "ranni-questline"
-  | "varre-questline"
-  | "nepheli-questline"
-  | "somber-stone-bell"
-  | "smithing-stone-bell"
-  | "glovewort-bell"
-  | "ghost-glovewort-bell"
-  | "seluvis-questline"
-  | "whetblades"
-  | "latenna-questline"
-  | "alexander-questline"
-  | "millicent-questline";
-
-const tagMap: Record<TagKeys, { classes: string; label: string }> = {
+const tagMap: Record<TTagKeys, { classes: string; label: string }> = {
   OPTIONAL: {
     classes: "border border-amber-500 text-amber-500",
     label: "Optional",

@@ -11,9 +11,9 @@ const Toggler = ({
   return (
     <button
       onClick={onClick}
-      className="rounded bg-stone-800 p-1 hover:bg-stone-700"
+      className="rounded bg-amber-500 p-1 text-stone-900 hover:bg-amber-600"
     >
-      {isExpanded ? <FaCaretUp /> : <FaCaretDown />}
+      {isExpanded ? <FaCaretUp size={25} /> : <FaCaretDown size={25} />}
     </button>
   );
 };

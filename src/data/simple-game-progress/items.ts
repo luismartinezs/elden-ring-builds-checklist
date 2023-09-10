@@ -715,37 +715,6 @@ export const items = [
     description: "Get the Dark Moon Ring from Rennala's room",
     tags: [RANNI_QUESTLINE]
   },
-
-  {
-    id: '72415649-ec6d-4fd5-845c-950088a6403b',
-    description: 'Go through the Lake of Rot (Flame, Cleanse Me incantation, lots of HP flasks, Immunizing Horn Charm talisman and Immunizing Cured Meat help)',
-    tags: [RANNI_QUESTLINE]
-  },
-  {
-    id: '76b7e4a0-77f3-4f48-a55e-ba59bce9cb2d',
-    description: 'Defeat Astel, Naturalborn of the Void',
-    tags: [RANNI_QUESTLINE, ALL_REMEMBERANCES]
-  },
-  {
-    id: '12e9a4f4-a78c-482c-aa68-c3656058b92c',
-    description: "Reach the Moonlight Altar (this place is end-game level but you don't need to kill anything to progress Ranni's quest.",
-    tags: [RANNI_QUESTLINE]
-  },
-  {
-    id: '3e04c2f6-9d9c-4508-ad27-442a2b144222',
-    description: 'Reach the Cathedral of Manus Celes and activate the grace inside',
-    tags: [RANNI_QUESTLINE]
-  },
-  {
-    id: 'a423d64a-9e3b-4d16-8cad-7e683eaeaf5a',
-    description: "If you have access to the Cathedral of Manus Celes, grab the 10 Starlight Shards lying around and purchase the remaining Spirit Ashes from Seluvis or his corpse (even if you can't access Manus Celes, there are a total of 11 shards in other parts of the map, near stone astrolabes)",
-    tags: [SELUVIS_QUESTLINE]
-  },
-  {
-    id: 'e294f45d-34ec-4f01-a121-4a26cd8b7b11',
-    description: 'Place the Dark Moon Ring on Ranni\'s doll finger and Get the Dark Moon Greatsword',
-    tags: [RANNI_QUESTLINE]
-  },
   {
     id: '72415649-ec6d-4fd5-845c-950088a6403b',
     description: 'Go through the Lake of Rot (Flame, Cleanse Me incantation, lots of HP flasks, Immunizing Horn Charm talisman and Immunizing Cured Meat help)',

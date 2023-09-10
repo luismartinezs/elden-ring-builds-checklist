@@ -746,12 +746,7 @@ export const items = [
     description: 'Beat Fire Giant',
     tags: [NGPLUS]
   },
-  {
-    id: '2a519808-24ee-41e7-9db9-c04ee98dfa2d',
-    description: 'Expore Leyndell and grab any missing items you might need for your build',
-    tags: [OPTIONAL, NGPLUS]
-  },
-
+  // BURN ERDTREE
   {
     id: 'a8262bb7-aa69-4e4c-b6ff-db98f03943ea',
     description: 'Activate cutscene to Burn the Erdtree and access Farum Azula by talking to Melina in Forge of Giants grace',
@@ -907,50 +902,18 @@ export const items = [
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   {
+    id: '2a519808-24ee-41e7-9db9-c04ee98dfa2d',
+    description: 'Expore Leyndell Royal Capital and grab any missing items you might need for your current or NG+ build BEFORE defeating Maliketh, as you will lose access to that area',
+    tags: [OPTIONAL, NGPLUS]
+  },
+  {
     id: '4b29d14f-ec7a-4729-a457-5af706963d61',
     description: 'Beat Maliketh',
     tags: [NGPLUS]
   },
   {
-    id: '047b1d46-f0c4-427c-afc6-e6463722cb97',
-    description: "Get remaining Somber Ancient Dragon Smithing Stones",
-    tags: [OPTIONAL, NGPLUS],
-    items: [
-      {
-        id: 'c74bcc2a-f8ae-4c7e-81cc-18ba4dd5112a',
-        description: 'Get Somber Ancient Dragon Smithing Stone killing Anastasia, Tarnished-Eater southwest of Ordina, Liturgical Town',
-        tags: [NGPLUS]
-      },
-      {
-        id: '32d60d71-9174-4fe0-bb58-ebaa945fa6a9',
-        description: "Get Somber Ancient Dragon Smithing Stone by completing Latenna's questline",
-        tags: [NGPLUS]
-      },
-      {
-        id: 'ea3a7740-c1d5-4f97-aceb-c4f7434ec0b8',
-        description: 'Get Somber Ancient Dragon Smithing Stone from a chest at the feet of the massive statue by the Dynasty Mausoleum Midpoint in Mohgwyn Palace',
-        tags: [NGPLUS]
-      },
-      {
-        id: '145bd056-e157-4e9c-826c-ca53345451ad',
-        description: 'Get 3 Somber Ancient Dragon Smithing Stones in Elphael',
-        tags: [NGPLUS]
-      },
-      {
-        id: '7f879ef9-a71c-4689-bb33-61ca6789fb87',
-        description: 'Get 1 Somber Ancient Dragon Smithing Stone in Leyndell Ashen Capital',
-        tags: [NGPLUS]
-      },
-      {
-        id: 'efaa8891-1bf7-4fa8-b519-2b207aa5dd4c',
-        description: 'Get 1 more Somber Ancient Dragon Smithing Stone in Farum Azula',
-        tags: [NGPLUS]
-      }
-    ]
-  },
-  {
     id: 'd08950f3-2199-484d-8272-a30804e38ee9',
-    description: 'Go through the Subterranean Shunning-grounds under Leyndell',
+    description: 'Explore the Subterranean Shunning-grounds optional area under Leyndell',
     tags: [OPTIONAL, NGPLUS]
   },
   // LEYNDELL, CAPITAL OF ASH 120-180 +25

@@ -76,6 +76,19 @@ const faq = [
       </p>
     ),
   },
+  {
+    question:
+      "The checklist I was following looks different today, what happened?",
+    answer: (
+      <p>
+        You&apos;re probably talking about the game progress checklist. This is
+        a work in progress and I&apos;m adding things. I try to change what is
+        already there as little as possible, but sometimes I have no alternative
+        but to change existing steps. This should stop happening very soon as
+        there isn&apos;t much more I plan to add.
+      </p>
+    ),
+  },
 ];
 
 function FaqPage() {

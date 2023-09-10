@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTILINE } = TAGS
 const { NGPLUS } = EXTRA_TAGS
 
 /**
@@ -343,41 +343,7 @@ export const items = [
     description: 'Rest in any site of grace in Altus',
     tags: [NGPLUS]
   },
-  {
-    id: '49478ab3-ba86-45ff-b333-94de240f8c6c',
-    description: "Give potion to (A) Nepheli if you want to get Dolores's spirit ashes (it will lock you out of Nepheli's quest), (B) to Dung Eater if you want to get Dung Eater's spirit ashes (will lock you out of Dung Eater quest), (C) or to Gideon (will not lock you out of any quest). You need to do this step to progress Seluvis questline",
-    tags: [SELUVIS_QUESTLINE]
-  },
-  {
-    id: '1da2c590-e82e-48c7-934a-0b8cc6f158f1',
-    description: "Visit Seluvis's lab behind an illusory floor in between Ranni's Rise and Renna's Rise to find the body of Nepheli or Dung Eater, depending on who you gave Seluvis's Potion to, and interact with the message within",
-    tags: [SELUVIS_QUESTLINE]
-  },
-  {
-    id: 'db09772b-34cf-45a2-9876-75d25ac402e1',
-    description: 'Talk to Seluvis and ask him about his chambers to receive a free Spirit Ashes from him',
-    tags: [SELUVIS_QUESTLINE]
-  },
-  {
-    id: '28f992d1-d515-4fb8-aea2-f53bf23117f5',
-    description: 'Get one Starlight Shard at a stone astrolabe near a cliff in Weeping Peninsula, directly east from Castle Morne Rampart grace',
-    tags: [SELUVIS_QUESTLINE]
-  },
-  {
-    id: '809bd867-bc55-4470-ab0f-b2f7ac3cd5f1',
-    description: "Get one Starlight Shard from a stone astrolabe southeast of the Map Fragment in Limgrave. Head southeast from the Agheel Lake South Site of Grace toward the top of a cliff and you'll see the astrolabe",
-    tags: [SELUVIS_QUESTLINE]
-  },
-  {
-    id: '6f95d2bd-eb10-4c3c-b9c7-8ff38dfc5538',
-    description: 'Get one Starllght Sard in Stormhill, south from the Stormhill Shack grace, next to a cliff above the beach',
-    tags: [SELUVIS_QUESTLINE]
-  },
-  {
-    id: 'fe4de4f6-dddf-41d4-8af0-2aeda317966f',
-    description: "Buy one spirit ashes from Seluvis. If you can't, talk to Seluvis after reloading the area multiple times until you can",
-    tags: [SELUVIS_QUESTLINE]
-  },
+
   {
     id: 'f1e13540-ebde-451c-928a-252aac611f41',
     description: "It should be possible to progress Fia's quest now, but Fia's quest can be also skipped as she will be in Deeproot Depths regardless after you burn the Erdtree later",
@@ -388,31 +354,7 @@ export const items = [
     description: 'By this point your weapon can be +10-14 (3-5)',
     tags: []
   },
-  {
-    id: '31f833b1-3be1-4829-a710-626a34d4a2ca',
-    description: 'Get Amber Starlight from Altus Plateau: Directly east from the Altus Highway Junction Site of Grace, the road will break off north into an open cave, in the cave the Amber Starlight will be sitting below a statue surrounded by several Land Octopuses',
-    tags: [SELUVIS_QUESTLINE]
-  },
-  {
-    id: '36c3c4cd-6ba4-4b6f-8345-52df9451c3a8',
-    description: 'Give Amber Starlight to Seluvis to get the Magic Scorpion Charm',
-    tags: [SELUVIS_QUESTLINE]
-  },
-  {
-    id: 'b1c27e5c-e4c4-430d-85e0-9f0cd778f094',
-    description: 'Get Amber Draught from Seluvis (you might need to reload the area)',
-    tags: [SELUVIS_QUESTLINE]
-  },
-  {
-    id: '9af7685b-205d-47d1-a21e-48e2d170f660',
-    description: "Choose the option Amber Draught with Ranni. Ranni will kill you and Seluvis. Ranni will disappear from the area. Note that you can absolve yourself with Celestial Dew at the Church of Vows and continue Ranni's questline without consequence",
-    tags: [SELUVIS_QUESTLINE]
-  },
-  {
-    id: '9f455ff1-7b16-4d9b-96b1-3914c26eb439',
-    description: "You can get Pidia's Bell Bearing and a puppet from dropping from a ledge from the Three Sisters into Caria Manor",
-    tags: [SELUVIS_QUESTLINE]
-  },
+
   {
     id: 'be83ba65-f7f1-4aa5-bf25-116dbbed9c9d',
     description: 'Dropped by Erdtree Burial Watchdog in Wyndham Catacombs, in Altus Plateau. At the top of the Wyndham Ruins, reachable north of Erdtree-Gazing Hill grace',
@@ -506,38 +448,8 @@ export const items = [
     tags: [WHETBLADES]
   },
   {
-    id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
-    description: 'Get Fingerslayer Blade from Nokron',
-    tags: [RANNI_QUESTLINE]
-  },
-  {
-    id: '588cc80e-1d8e-4853-85bf-7ade0c31fdff',
-    description: 'Talk to Ranni again and give her the Fingerslayer Blade to receive Carian Inverted Statue. Gving the Fingerslayer Blade to Ranni will turn Seluvis into a puppet, so if you want to do Seluvis quest, you must do it before this point.',
-    tags: [RANNI_QUESTLINE]
-  },
-  {
-    id: 'b74b0892-6ec4-42f7-86a5-9abb664deb48',
-    description: 'Talk to Iji',
-    tags: [RANNI_QUESTLINE]
-  },
-  {
-    id: '8419e6fc-6209-42cd-ad18-d5f972d7a9f5',
-    description: "Go through Renna's Rise waygate and get Ranni's doll",
-    tags: [RANNI_QUESTLINE]
-  },
-  {
-    id: '6f0f64d0-961a-4fd6-b4f9-dbfc2aecc30c',
-    description: 'Progress through Ainsel and Nokstella to get the Discarded Palace Key from the Baleful Shadow.',
-    tags: [RANNI_QUESTLINE]
-  },
-  {
-    id: '3ccc2aba-7d0a-486e-ba62-8cbeae20f7cf',
-    description: 'In a chest guarded by several Silver Tears with shields in the corner of a small room near the Nokstella, Eternal City grace',
-    tags: [GHOST_GLOVEWORT_BELL]
-  },
-  {
-    id: '053b4389-4d66-4ae6-b78e-92f7d2946b60',
-    description: "Get the Dark Moon Ring from Rennala's room",
+    id: '4eba6264-6c8a-47b3-8a1f-7136eb6108c8',
+    description: "If you don't plan to follow Seluvis' questline, you could complete most of Ranni's questline by this point",
     tags: [RANNI_QUESTLINE]
   },
   {
@@ -552,36 +464,7 @@ export const items = [
   },
   // DEEPROOT DEPTHS 80-90 +15-20
   // LAKE OF ROT 80-100 +15-20
-  {
-    id: '72415649-ec6d-4fd5-845c-950088a6403b',
-    description: 'Go through the Lake of Rot (Flame, Cleanse Me incantation, lots of HP flasks, Immunizing Horn Charm talisman and Immunizing Cured Meat help)',
-    tags: [RANNI_QUESTLINE]
-  },
-  {
-    id: '76b7e4a0-77f3-4f48-a55e-ba59bce9cb2d',
-    description: 'Defeat Astel, Naturalborn of the Void',
-    tags: [RANNI_QUESTLINE, ALL_REMEMBERANCES]
-  },
-  {
-    id: '12e9a4f4-a78c-482c-aa68-c3656058b92c',
-    description: "Reach the Moonlight Altar (this place is end-game level but you don't need to kill anything to progress Ranni's quest.",
-    tags: [RANNI_QUESTLINE]
-  },
-  {
-    id: '3e04c2f6-9d9c-4508-ad27-442a2b144222',
-    description: 'Reach the Cathedral of Manus Celes and activate the grace inside',
-    tags: [RANNI_QUESTLINE]
-  },
-  {
-    id: 'a423d64a-9e3b-4d16-8cad-7e683eaeaf5a',
-    description: "If you have access to the Cathedral of Manus Celes, grab the 10 Starlight Shards lying around and purchase the remaining Spirit Ashes from Seluvis or his corpse (even if you can't access Manus Celes, there are a total of 11 shards in other parts of the map, near stone astrolabes)",
-    tags: [SELUVIS_QUESTLINE]
-  },
-  {
-    id: 'e294f45d-34ec-4f01-a121-4a26cd8b7b11',
-    description: 'Place the Dark Moon Ring on Ranni\'s doll finger and Get the Dark Moon Greatsword',
-    tags: [RANNI_QUESTLINE]
-  },
+
   // MT GELMIR 80-100 +15-20
   {
     id: 'b9da8bb8-6125-41bc-bb4c-6143ffdd2a59',
@@ -681,9 +564,227 @@ export const items = [
   },
   // LEYNDELL 90-110 +15-20
   {
+    id: '554ccd9a-9b26-40d9-b6b9-d2d12bf7ac2c',
+    description: 'Talk to Dung Eater in Roundtable Hold (after reaching Leyndell)',
+    tags: [DUNG_EATER_QUESTILINE, SELUVIS_QUESTLINE]
+  },
+  {
     id: '7a68718f-b0e7-4006-b8b9-16d40e64d39e',
     description: 'Sanctified Whetblade (Lightning and Sacred). Fortified Manor, Leyndell From the West Capital Rampart site of grace, head to the south-west side of the manor and enter from the roof near the Erdtree root. Once inside, it can found on a corpse laying next to an anvil',
     tags: [WHETBLADES]
+  },
+  {
+    id: '0542d506-1888-4aaa-a2a5-5d890913ad6f',
+    description: "Get one Seedbed Curse from Leyndell Royal Capital: After you exit the room with East Capital Rampart grace, continue south past the Oracle Envoys and into the building. Inside, head down the stairs and face west to take the elevator. After the elevator continue west into the next building. Climb up the ladder to your right and go up the stairs. On the highest floor you will find the Seedbed Curse on a corpse sitting in a chair",
+    tags: [DUNG_EATER_QUESTILINE]
+  },
+  {
+    id: '465c8c07-c1dc-4ca1-ab9f-b4ce1254bb9c',
+    description: 'Talk to Dung Eater with one Seedbed Curse in your inventory, to get the Sewer-Gaol Key',
+    tags: [DUNG_EATER_QUESTILINE]
+  },
+  {
+    id: '2f7c8f64-dd73-4414-8c00-31b88c7335e7',
+    description: 'Reach the Underground Roadside grace in Leyndell underground sewer',
+    tags: [DUNG_EATER_QUESTILINE]
+  },
+  {
+    id: 'f1446309-6a7c-4f93-b9e7-346d9f509dbc',
+    description: 'From the Underground Roadside grace, find Dung Eater: take a left from the grace, jump down the open grate, run northwest past the rats and the giant poison plants, go up the ladder and use the key on the locked door (be wary of the giant hand)',
+    tags: [DUNG_EATER_QUESTILINE]
+  },
+  {
+    id: 'dcae831e-4f7a-4d02-95d1-4df23f50b7c7',
+    description: 'Talk to Dung Eater in the sewer and tell him to leave his cell',
+    tags: [DUNG_EATER_QUESTILINE]
+  },
+  {
+    id: '8fa43f43-bd91-4ec3-a106-e9f4f40904b0',
+    description: 'Find a message in place of Dung Eater in Roundtable Hold',
+    tags: [DUNG_EATER_QUESTILINE]
+  },
+  {
+    id: 'ac59b169-2f2e-44c4-97b5-aefe39638a50',
+    description: 'Go to the outer moat (from Outer Wall Battleground grace, same path to the Draconic Tree Sentinel but hugging the right side down the moat) and defeat Dung Eater to get the Sword of Milos',
+    tags: [DUNG_EATER_QUESTILINE]
+  },
+  {
+    id: '5f55ac6e-6810-4799-a1cf-298b9b973a0b',
+    description: 'Talk to Dung Eater in Roundtable Hold',
+    tags: [DUNG_EATER_QUESTILINE]
+  },
+  {
+    id: '49478ab3-ba86-45ff-b333-94de240f8c6c',
+    description: "Give potion to (A) Nepheli if you want to get Dolores's spirit ashes (it will lock you out of Nepheli's quest), (B) to Dung Eater if you want to get Dung Eater's spirit ashes (will lock you out of Dung Eater quest), (C) or to Gideon (will not lock you out of any quest). You need to do this step to progress Seluvis questline",
+    tags: [SELUVIS_QUESTLINE],
+    items: [
+      {
+        id: '67fbbbc8-2742-4732-a6f5-bf6440de7840',
+        description: "If you choose to give the potion to Dung Eater, go to Dung Eater's cell in Leydell sewers and give him Seluvis' Potion (this will lock you out of the rest of Dung Eater's questline). If you do this, wait for a few seconds, and then kill Dung Eater without leaving the area or reloading the game, you will get the Omen Set. Note that for this you have to have progressed Dung Eater's questline until after you beat him in the outer moat",
+        tags: [SELUVIS_QUESTLINE]
+      },
+    ]
+  },
+  {
+    id: '1da2c590-e82e-48c7-934a-0b8cc6f158f1',
+    description: "Visit Seluvis's lab behind an illusory floor in between Ranni's Rise and Renna's Rise to find the body of Nepheli or Dung Eater, depending on who you gave Seluvis's Potion to, and interact with the message within",
+    tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: 'db09772b-34cf-45a2-9876-75d25ac402e1',
+    description: 'Talk to Seluvis and ask him about his chambers to receive a free Spirit Ashes from him',
+    tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: '28f992d1-d515-4fb8-aea2-f53bf23117f5',
+    description: 'Get one Starlight Shard at a stone astrolabe near a cliff in Weeping Peninsula, directly east from Castle Morne Rampart grace',
+    tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: '809bd867-bc55-4470-ab0f-b2f7ac3cd5f1',
+    description: "Get one Starlight Shard from a stone astrolabe southeast of the Map Fragment in Limgrave. Head southeast from the Agheel Lake South Site of Grace toward the top of a cliff and you'll see the astrolabe",
+    tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: '6f95d2bd-eb10-4c3c-b9c7-8ff38dfc5538',
+    description: 'Get one Starllght Sard in Stormhill, south from the Stormhill Shack grace, next to a cliff above the beach',
+    tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: 'fe4de4f6-dddf-41d4-8af0-2aeda317966f',
+    description: "Buy one spirit ashes from Seluvis. If you can't, talk to Seluvis after reloading the area multiple times until you can",
+    tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: '31f833b1-3be1-4829-a710-626a34d4a2ca',
+    description: 'Get Amber Starlight from Altus Plateau: Directly east from the Altus Highway Junction Site of Grace, the road will break off north into an open cave, in the cave the Amber Starlight will be sitting below a statue surrounded by several Land Octopuses',
+    tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: '36c3c4cd-6ba4-4b6f-8345-52df9451c3a8',
+    description: 'Give Amber Starlight to Seluvis to get the Magic Scorpion Charm',
+    tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: 'b1c27e5c-e4c4-430d-85e0-9f0cd778f094',
+    description: 'Get Amber Draught from Seluvis (you might need to reload the area)',
+    tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: '9af7685b-205d-47d1-a21e-48e2d170f660',
+    description: "Choose the option Amber Draught with Ranni. Ranni will kill you and Seluvis. Ranni will disappear from the area. Note that you can absolve yourself with Celestial Dew at the Church of Vows and continue Ranni's questline without consequence",
+    tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: '9f455ff1-7b16-4d9b-96b1-3914c26eb439',
+    description: "You can get Pidia's Bell Bearing and a puppet from dropping from a ledge from the Three Sisters into Caria Manor",
+    tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
+    description: 'Get Fingerslayer Blade from Nokron',
+    tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: '588cc80e-1d8e-4853-85bf-7ade0c31fdff',
+    description: 'Talk to Ranni again and give her the Fingerslayer Blade to receive Carian Inverted Statue. Gving the Fingerslayer Blade to Ranni will turn Seluvis into a puppet, so if you want to do Seluvis quest, you must do it before this point.',
+    tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: 'b74b0892-6ec4-42f7-86a5-9abb664deb48',
+    description: 'Talk to Iji',
+    tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: '8419e6fc-6209-42cd-ad18-d5f972d7a9f5',
+    description: "Go through Renna's Rise waygate and get Ranni's doll",
+    tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: '6f0f64d0-961a-4fd6-b4f9-dbfc2aecc30c',
+    description: 'Progress through Ainsel and Nokstella to get the Discarded Palace Key from the Baleful Shadow.',
+    tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: '3ccc2aba-7d0a-486e-ba62-8cbeae20f7cf',
+    description: 'In a chest guarded by several Silver Tears with shields in the corner of a small room near the Nokstella, Eternal City grace',
+    tags: [GHOST_GLOVEWORT_BELL]
+  },
+  {
+    id: '053b4389-4d66-4ae6-b78e-92f7d2946b60',
+    description: "Get the Dark Moon Ring from Rennala's room",
+    tags: [RANNI_QUESTLINE]
+  },
+
+  {
+    id: '72415649-ec6d-4fd5-845c-950088a6403b',
+    description: 'Go through the Lake of Rot (Flame, Cleanse Me incantation, lots of HP flasks, Immunizing Horn Charm talisman and Immunizing Cured Meat help)',
+    tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: '76b7e4a0-77f3-4f48-a55e-ba59bce9cb2d',
+    description: 'Defeat Astel, Naturalborn of the Void',
+    tags: [RANNI_QUESTLINE, ALL_REMEMBERANCES]
+  },
+  {
+    id: '12e9a4f4-a78c-482c-aa68-c3656058b92c',
+    description: "Reach the Moonlight Altar (this place is end-game level but you don't need to kill anything to progress Ranni's quest.",
+    tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: '3e04c2f6-9d9c-4508-ad27-442a2b144222',
+    description: 'Reach the Cathedral of Manus Celes and activate the grace inside',
+    tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: 'a423d64a-9e3b-4d16-8cad-7e683eaeaf5a',
+    description: "If you have access to the Cathedral of Manus Celes, grab the 10 Starlight Shards lying around and purchase the remaining Spirit Ashes from Seluvis or his corpse (even if you can't access Manus Celes, there are a total of 11 shards in other parts of the map, near stone astrolabes)",
+    tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: 'e294f45d-34ec-4f01-a121-4a26cd8b7b11',
+    description: 'Place the Dark Moon Ring on Ranni\'s doll finger and Get the Dark Moon Greatsword',
+    tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: '72415649-ec6d-4fd5-845c-950088a6403b',
+    description: 'Go through the Lake of Rot (Flame, Cleanse Me incantation, lots of HP flasks, Immunizing Horn Charm talisman and Immunizing Cured Meat help)',
+    tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: '76b7e4a0-77f3-4f48-a55e-ba59bce9cb2d',
+    description: 'Defeat Astel, Naturalborn of the Void',
+    tags: [RANNI_QUESTLINE, ALL_REMEMBERANCES]
+  },
+  {
+    id: '12e9a4f4-a78c-482c-aa68-c3656058b92c',
+    description: "Reach the Moonlight Altar (this place is end-game level but you don't need to kill anything to progress Ranni's quest.",
+    tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: '3e04c2f6-9d9c-4508-ad27-442a2b144222',
+    description: 'Reach the Cathedral of Manus Celes and activate the grace inside',
+    tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: 'a423d64a-9e3b-4d16-8cad-7e683eaeaf5a',
+    description: "If you have access to the Cathedral of Manus Celes, grab the 10 Starlight Shards lying around and purchase the remaining Spirit Ashes from Seluvis or his corpse (even if you can't access Manus Celes, there are a total of 11 shards in other parts of the map, near stone astrolabes)",
+    tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: 'e294f45d-34ec-4f01-a121-4a26cd8b7b11',
+    description: 'Place the Dark Moon Ring on Ranni\'s doll finger and Get the Dark Moon Greatsword',
+    tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: '8a776cf3-1d98-41c8-bf25-629fd277e248',
+    description: "Get Seedbed Curse (until you get 5) from Leyndell Royal Capital: On the body of the Blackguard at the end of his questline, in the outer moat near the Capital Ramparts grace, where the Dung Eater invades. If you did not do Blackguard's quest before Dung Eater's invasion, you will not be able to receive this particular Curse and you will need to provide the other five to Dung Eater instead",
+    tags: [DUNG_EATER_QUESTILINE]
+  },
+  {
+    id: '36a9fd33-72e1-4091-9158-c1aa01d442cf',
+    description: "Get Seedbed Curse (until you get 5) from Leyndell Royal Capital: In the alternate version of Roundtable Hold located near the Fortified Manor grace, inside the equivalent of the Dung Eater's room. You will find it on a body that is strapped to a chair (if you follow this guide, you already got this one)",
+    tags: [DUNG_EATER_QUESTILINE]
   },
   {
     id: '5824fd47-d0bb-43ec-b552-dfe59fc62bc0',
@@ -783,6 +884,11 @@ export const items = [
     tags: [VOLCANO_MANOR_ASSASSINATION]
   },
   {
+    id: 'a701452c-e039-4068-af9d-d848ec71d858',
+    description: "Get Seedbed Curse (until you get 5) from Volcano Manor: From Temple of Eiglay, proceed until you reach the teleporter to Rykard, Lord of Blasphemy, then go back into the building and up the stairs to find a fog door that requires a Stonesword Key. Carefully drop down in the dark room using the hanging cages. The item will be on a body that is sitting on a chair guarded by enemies. To the opposite side of the room there's a path leading back to the door in the Volcano Manor lobby that can now be opened",
+    tags: [DUNG_EATER_QUESTILINE]
+  },
+  {
     id: '48a216e3-249c-4720-928a-e8faa7e34806',
     description: 'Beat Rykard',
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
@@ -850,6 +956,21 @@ export const items = [
     id: 'a38284d6-48d6-46f8-a9b3-5ddc7394ec72',
     description: "Reach Mohgwyn Palace either from Varre's quest or from Consecrated Snowfield and beat Mohg. Beforehand, it would be useful to get the Purifying Crystal Tear first from killing Eleonora, Violet Bloody Finger at the Second Church of Marika in Altus Plateau",
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
+  },
+  {
+    id: '37fd75e6-f278-457b-8f48-7983d33d39d2',
+    description: 'Get Seedbed Curse (until you get 5) from Elphael, Brace of the Haligtree: From the Prayer Room Grace, head forwards until the end of stairs with two crossbowman above you. Jump on to the arch to the right and hop on to the platform to the left with the Crimson Teardrop Scarab. To the left should be a room with a Cleanrot Knight and a chest containing Cleanrot Knight Finlay Ashes. Hop onto the arch to the north-west and follow it up to a balcony. Follow the balcony to its end and the item will be found on a body sitting in a chair above the ballistae and the Putrid Avatar',
+    tags: [DUNG_EATER_QUESTILINE]
+  },
+  {
+    id: '924f09a5-c8eb-4eb5-a96a-1f8e8c8f4419',
+    description: 'Get Seedbed Curse (until you get 5) from Elphael, Brace of the Haligtree: From the Prayer Room grace, keep heading forwards, going down every staircase you come across. Drop down and head towards the room with two Cleanrot Knights inside but instead of entering, jump over the railing to the right and drop down one level. Turn around, enter the dark room right under the railing and you will find it on a body that is sitting in a chair',
+    tags: [DUNG_EATER_QUESTILINE]
+  },
+  {
+    id: 'a23fc98b-86a6-476b-8437-f27cd7cfcc1c',
+    description: 'Give all 5 Seedbed Curses to Dung Eater and get the Mending Rune of the Fell Curse, then reload the area to find the Omen Set',
+    tags: [DUNG_EATER_QUESTILINE]
   },
   {
     id: 'fe060cba-bcbd-4b3d-bcaf-81e9a0ad07d8',
@@ -998,4 +1119,9 @@ export const items = [
     description: "Interact with the blue summon sign near Marika's remains for the \"Age of the Stars\" ending",
     tags: [RANNI_QUESTLINE]
   },
+  {
+    id: '68cafc87-0e90-4f00-a806-9643a6254da5',
+    description: 'Use the Mending Rune of the Fell Curse to get the Blessing of Despair Ending',
+    tags: [DUNG_EATER_QUESTILINE]
+  }
 ]

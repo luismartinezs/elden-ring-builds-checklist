@@ -103,4 +103,10 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black focus:ring-yellow-400',
     tagClasses: 'bg-yellow-400 text-black',
   },
+  [TAGS.DUNG_EATER_QUESTILINE]: {
+    label: 'Dung Eater',
+    key: TAGS.DUNG_EATER_QUESTILINE,
+    buttonClasses: 'border-pink-600 text-pink-600 hover:bg-pink-600 hover:text-black focus:ring-pink-600',
+    tagClasses: 'bg-pink-600 text-black',
+  },
 }

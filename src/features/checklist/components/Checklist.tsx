@@ -81,6 +81,9 @@ function useShowChecklistItem(
     TAGS.MILLICENT_QUESTLINE
   );
   const { filter: filterHyettaQuestline } = useFilter(TAGS.HYETTA_QUESTLINE);
+  const { filter: filterDungEaterQuestline } = useFilter(
+    TAGS.DUNG_EATER_QUESTILINE
+  );
   const { filter: filterSmithingStoneBell } = useFilter(
     TAGS.SMITHING_STONE_BELL
   );
@@ -161,6 +164,10 @@ function useShowChecklistItem(
         tag: TAGS.HYETTA_QUESTLINE,
         filter: filterHyettaQuestline,
       },
+      {
+        tag: TAGS.DUNG_EATER_QUESTILINE,
+        filter: filterDungEaterQuestline,
+      },
     ];
     const shouldHide =
       _tags.length > 0
@@ -193,6 +200,7 @@ function useShowChecklistItem(
     filterMillicentQuestline,
     filterAllRememberances,
     filterHyettaQuestline,
+    filterDungEaterQuestline,
   ]);
 
   return show;

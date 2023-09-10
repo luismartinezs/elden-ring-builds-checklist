@@ -1,8 +1,10 @@
-import { TAGS } from '~/features/tags';
+import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
 const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION } = TAGS
+const { NGPLUS } = EXTRA_TAGS
+
 /**
- * 'ng+' tag is only to indicate what items are shown both in ng and ng+
+ * NGPLUS tag is only to indicate what items are shown both in ng and ng+
  * use it when the tags are empty or the only tag is OPTIONAL, if there is any other tag, by default that one will be shown always but only when that filter tag is active
  * The reason this is like that is that all NG+ are already repeated in NG and in the same order so we can reuse both lists
  */
@@ -43,12 +45,12 @@ export const items = [
   {
     id: "0a31a7cb-b53f-4bc7-9387-d298da1d9bf8",
     description: "Decide how you want to reach Altus Plateau later in the game: A) With the two halves of the Dectus medallion, B) Through the Ruin-Strewn Precipice, accessible going north past the Bellum church, north of the path toward the Dectus Lift, C) By letting the Abductor Virgin at the bottom of Raya Lucaria telport you to Volcano Manor, and defeating the Abductor Virgin duo. (option A is the easiest one, option C is possibly the fastest one)",
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: 'd9792932-bdf7-4d3f-8011-d2c2c45acbc9',
     description: 'Get the Dectus Medallion (Left) from Fort Haight (recommended to kill Godrick Knight at the top level to get Bloody slash ash of war)',
-    tags: ['ng+'],
+    tags: [NGPLUS],
   },
   {
     id: 'a7d48287-d886-42c1-aa6c-c728b0014419',
@@ -74,7 +76,7 @@ export const items = [
   {
     id: '1a279fba-f36b-4524-98f9-b4957e7bbbaa',
     description: 'Dectus Medallion (Right) from Fort Faroth in Dragonbarrow (Caelid). Easiest way to reach there is from waygate portal behind Third Church of Marika and going south from Bestial Sanctum, or you can just ride all the way there from Limgrave',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '3ebfbeb9-f5f8-42fc-957b-2a83ecf15d88',
@@ -95,7 +97,7 @@ export const items = [
   {
     id: '7aba047b-6da2-46ab-9f3a-0c5acf36e752',
     description: 'Beat Magrit',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: 'd8af39dd-4f24-4cfb-863d-cadb55a57cf0',
@@ -110,7 +112,7 @@ export const items = [
   {
     id: 'b9690395-5806-49d1-85fb-89411478266b',
     description: 'Beat Godrick in Stormhill Castle',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '062f0984-ff7b-4da1-ba5f-b05e12ac7eae',
@@ -136,7 +138,7 @@ export const items = [
   {
     id: '37e42814-4ccc-4113-9104-48f2c3d92be2',
     description: 'Get the South Raya Lucaria Gate site of grace in south side of Raya Lucaria',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
 
   {
@@ -157,7 +159,7 @@ export const items = [
   {
     id: '5d177901-90f6-449b-b13f-f8df8eef3ee4',
     description: 'Get Academy Glintstone Key from Liurnia of the Lakes, south from Crystalline Woods site of grace, behind Glintstone Dragon Smarag',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '83eb9516-23c0-4f13-b05f-4a8b006fb5c3',
@@ -167,7 +169,7 @@ export const items = [
   {
     id: 'de7fc925-2ad3-441b-a0f3-8cff17922c2e',
     description: 'Get Haligtree Secret Medallion (Right) by speaking to Albus in Village of the Albinaurics (Albus is hidden inside a jar, roll into the jar and talk to Albus)',
-    tags: [OPTIONAL, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, NGPLUS, ALL_REMEMBERANCES]
   },
   {
     id: "82983c08-5a06-4d1e-a6a8-dfea29452f1b",
@@ -223,7 +225,7 @@ export const items = [
   {
     id: '054a08f7-70ba-4ede-a188-b3a286808cb5',
     description: 'Enter Raya Lucaria and beat Wolf of Radagon',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '1837cb85-1a8e-42a2-9694-9f9fe5975ecd',
@@ -243,7 +245,7 @@ export const items = [
   {
     id: 'd7a3f9a6-f5d8-4c2e-85fc-102a3bdeb792',
     description: "Beat Rennala (or if you beat Radahn or Rykard you don't need to beat Rennala)",
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   // LIURNIA EAST 50-60 +4-6
   {
@@ -272,7 +274,7 @@ export const items = [
   {
     id: '2d87bde3-61d2-4991-896f-d53d17123d86',
     description: 'Beat Ancestor Spirit in Siofra river, which you can access through the Siofra Well in Mistwood',
-    tags: [OPTIONAL, 'ng+']
+    tags: [OPTIONAL, NGPLUS]
   },
   {
     id: '8d9fb6dd-c390-42ff-ae5e-24df91cdda04',
@@ -283,12 +285,12 @@ export const items = [
   {
     id: '124edfc5-0bb8-49fd-b3ba-030bd037a279',
     description: 'Reach Altus Plateau in one of 3 ways: A) From the Main Academy Gate site of grace, cross the sealed gate to reach the other side of the bridge, then head straight to the Grand Lift of Dectus and use the Dectus Medallion to reach Altus Plateau, B) Through the Ruin-Strewn Precipice, accessible going north past the Bellum church, north of the path toward the Dectus Lift, C) By letting the Abductor Virgin at the bottom of Raya Lucaria telport you to Volcano Manor',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: 'bd19aee2-3a7b-419e-9950-c5d2462483d8',
     description: 'Rest in any site of grace in Altus',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '49478ab3-ba86-45ff-b333-94de240f8c6c',
@@ -328,7 +330,7 @@ export const items = [
   {
     id: 'f1e13540-ebde-451c-928a-252aac611f41',
     description: "It should be possible to progress Fia's quest now, but Fia's quest can be also skipped as she will be in Deeproot Depths regardless after you burn the Erdtree later",
-    tags: [OPTIONAL, 'ng+']
+    tags: [OPTIONAL, NGPLUS]
   },
   {
     id: 'ea5372e9-62af-4277-9050-c2b3a0c8a07e',
@@ -419,7 +421,7 @@ export const items = [
   {
     id: '7d2912a9-f6d1-45a1-bdb6-36ba9a63f0c6',
     description: 'Radahn Festival should be active now, and you can beat Radahn',
-    tags: [OPTIONAL, RANNI_QUESTLINE, ALEXANDER_QUESTLINE, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, RANNI_QUESTLINE, ALEXANDER_QUESTLINE, NGPLUS, ALL_REMEMBERANCES]
   },
   {
     id: '214e0b27-c6c2-41a8-8acf-cba7f5ab0b6b',
@@ -434,7 +436,7 @@ export const items = [
   {
     id: '609c347c-c2b5-488b-80e5-1db0d9417a41',
     description: 'If you beat Radahn, you can now access Nokron',
-    tags: [OPTIONAL, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   // NOKRON CITY AND AQUEDUCT 70-80 +10-14
   {
@@ -490,12 +492,12 @@ export const items = [
   {
     id: '4b183117-666d-4d64-9f51-2484e0f1d764',
     description: 'Beat Regal Ancestor Spirit in Siofra river, the part reachable after beating Mimic Tear (Nokron)',
-    tags: [OPTIONAL, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   {
     id: '03c2239f-0006-40d2-ac76-4fa27340b5a7',
     description: 'Beat Valiant Gargoyles in Siofra Aqueduct, and access Deeproot Depths through the coffin in their arena',
-    tags: [OPTIONAL, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   // DEEPROOT DEPTHS 80-90 +15-20
   // LAKE OF ROT 80-100 +15-20
@@ -538,7 +540,7 @@ export const items = [
   {
     id: '35ea6a80-fe78-419d-b817-002882705950',
     description: 'You can reach Mt. Gelmir and Volcano Manor by going north east from Altus Plateau site of grace until FOREST-SPANNING GREATBRIDGE grace, crossing the bridge with the magic portal, then heading south west through the only path available',
-    tags: [OPTIONAL, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   {
     id: '4eebbb14-632b-4c83-9251-65998c861e3f',
@@ -624,7 +626,7 @@ export const items = [
   {
     id: 'c399c03e-adbf-4d14-b993-d207677089a8',
     description: 'Beat Draconic Tree Sentinel to access Leyndell',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   // LEYNDELL 90-110 +15-20
   {
@@ -640,12 +642,12 @@ export const items = [
   {
     id: 'ca3d9a16-b81b-4be1-bb69-b7a3a704e862',
     description: 'Beat Godfrey shade',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: 'aed334cf-8397-453c-87d5-16922af7c955',
     description: 'Beat Morgott',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: 'b9a44d4b-7a7e-47b8-9dd9-3e76b4f7f71f',
@@ -662,17 +664,17 @@ export const items = [
   {
     id: '7690a174-fa2b-42a3-a85d-844c90e55116',
     description: 'Talk to Melina in Elden Throne grace to get the Rold medallion',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '7437d4a6-25da-4ac3-9c68-cc1e489bba68',
     description: 'From the AVENUE BALCONY grace reach the Rold lift',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '5c50d5ff-4ee2-4b1f-8e59-132e44ce59c9',
     description: 'Run all the way through the Forbidden lands to Mountaintops of the Giants',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '8a60d188-2029-4e20-a80e-ebbb3b50d7e0',
@@ -692,7 +694,7 @@ export const items = [
   {
     id: 'c4d24087-e65d-4376-bdbd-c9356a062610',
     description: 'Run through to Mountaintops of the Giants until right before Fire Giant',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '223a264a-6e74-4942-9c6f-f4c0d9229ac8',
@@ -707,7 +709,7 @@ export const items = [
   {
     id: '7c510998-cb9f-4a89-a3f4-1be7189a672e',
     description: 'you can get an Ancient Dragon Smithing Stone from a corpse inside the mouth of a big skull south-east of Church of Repose',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '9363b337-a53f-4f44-9c24-2a18a52c7673',
@@ -732,7 +734,7 @@ export const items = [
   {
     id: '48a216e3-249c-4720-928a-e8faa7e34806',
     description: 'Beat Rykard',
-    tags: [OPTIONAL, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   {
     id: 'a7a70a4b-9f8b-4a6a-bda0-83d9b21a0235',
@@ -742,28 +744,28 @@ export const items = [
   {
     id: '1c79f7d4-5078-4503-8587-0c8190959121',
     description: 'Beat Fire Giant',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '2a519808-24ee-41e7-9db9-c04ee98dfa2d',
     description: 'Expore Leyndell and grab any missing items you might need for your build',
-    tags: [OPTIONAL, 'ng+']
+    tags: [OPTIONAL, NGPLUS]
   },
 
   {
     id: 'a8262bb7-aa69-4e4c-b6ff-db98f03943ea',
     description: 'Activate cutscene to Burn the Erdtree and access Farum Azula by talking to Melina in Forge of Giants grace',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: 'ecb37b68-e9ab-4d8f-bbe0-1dd4b13c8e7e',
     description: "Fia will relocate to Deeproot depths even if you didn't complete her questline so you can beat Fia's champions",
-    tags: [OPTIONAL, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   {
     id: 'b7edec68-9875-4eb4-b4cc-e967333caebd',
     description: "To fight Fortissax, progress Ranni's quest until receiving the Carian Inverted Statue. Use the statue in the Divine Tower of Liurnia, reach the top, get the Cursemark of Death and give it to Fia. Reload the area and inspect her dream",
-    tags: [OPTIONAL, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   // CONSECRATED SNOWFIELD 100-120 +20-24
   // MOHGWYN PALACE 110-140 +20-24
@@ -781,12 +783,12 @@ export const items = [
   {
     id: 'd01f819f-3b97-4551-9b08-1e6282f76552',
     description: 'Get Haligtree Secret Medallion (Right) from Castle Sol in Mountaintops of the Giants',
-    tags: [OPTIONAL, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, NGPLUS, ALL_REMEMBERANCES]
   },
   {
     id: '57379897-ef76-4246-af6b-b1db1c957349',
     description: 'With both halves of Haligtree medallion, access Consecrated Snowfield through the Lift of Rold',
-    tags: [OPTIONAL, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, NGPLUS, ALL_REMEMBERANCES]
   },
   {
     id: '6081caa3-6d2b-4b95-b20c-88daae796559',
@@ -801,7 +803,7 @@ export const items = [
   {
     id: 'a38284d6-48d6-46f8-a9b3-5ddc7394ec72',
     description: "Reach Mohgwyn Palace either from Varre's quest or from Consecrated Snowfield and beat Mohg. Beforehand, it would be useful to get the Purifying Crystal Tear first from killing Eleonora, Violet Bloody Finger at the Second Church of Marika in Altus Plateau",
-    tags: [OPTIONAL, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   {
     id: 'fe060cba-bcbd-4b3d-bcaf-81e9a0ad07d8',
@@ -836,7 +838,7 @@ export const items = [
   {
     id: '81fc1668-21af-4a10-acfb-34ed93c8a115',
     description: 'Beat Malenia',
-    tags: [OPTIONAL, MILLICENT_QUESTLINE, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, MILLICENT_QUESTLINE, NGPLUS, ALL_REMEMBERANCES]
   },
   {
     id: 'af05491b-d9d0-4fcc-a72b-b34b054e8f47',
@@ -847,7 +849,7 @@ export const items = [
   {
     id: 'fe1b4d05-4399-4a9f-9790-af424afba182',
     description: 'Kill dragon in curved platform at the beginning of Farum Azula to get an Ancient Dragon Smithing Stone',
-    tags: [OPTIONAL, 'ng+']
+    tags: [OPTIONAL, NGPLUS]
   },
   {
     id: '6f0b9178-98ff-4ba2-bfd5-fe706e97fd7f',
@@ -862,7 +864,7 @@ export const items = [
   {
     id: '24a9bc62-996a-4efe-9cfd-f37760e1e658',
     description: 'Beat Godskin Duo',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: 'ba96e3f5-654c-4467-b259-1af9c7667be6',
@@ -877,17 +879,17 @@ export const items = [
   {
     id: 'f6d85cdf-3cb9-49d3-9912-5116e4ecf771',
     description: 'Get Ancient Dragon Smithing Stone from a corpse on a floating platform north of the Dragon Temple (Farum Azula), guarded by a Beastman. Parkour throught he floating debris to reach a narrow path and a spiral staircase at the end,. Up the staircase, then south though a floating pillar',
-    tags: [OPTIONAL, 'ng+']
+    tags: [OPTIONAL, NGPLUS]
   },
   {
     id: '6b0328ea-74c9-4042-ae2a-4b6531053420',
     description: 'From Godskin Duo grace go through the left gate (looking at the closest wall, in the left side) and progress until reaching an area where you have to parkour down some floating platforms. Go straight through the path. In the area with the Crucible Knight, stick to the right side and jump to the grace.',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '01a2faf5-a555-4d89-8ddb-cb4e89463367',
     description: 'Get Somber Ancient Dragon Smithing Stone from a gazebo behind the stationary Farum Azula Dragon sitting at the back of the plaza southeast of the Dragon Temple Rooftop site of grace',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '9cde9e8c-7a17-480b-8278-7e7feb1304fd',
@@ -902,70 +904,70 @@ export const items = [
   {
     id: '9d441ec1-1981-4333-8433-8f0391e3873c',
     description: 'Beat Placidusax',
-    tags: [OPTIONAL, 'ng+', ALL_REMEMBERANCES]
+    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   {
     id: '4b29d14f-ec7a-4729-a457-5af706963d61',
     description: 'Beat Maliketh',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '047b1d46-f0c4-427c-afc6-e6463722cb97',
     description: "Get remaining Somber Ancient Dragon Smithing Stones",
-    tags: [OPTIONAL, 'ng+'],
+    tags: [OPTIONAL, NGPLUS],
     items: [
       {
         id: 'c74bcc2a-f8ae-4c7e-81cc-18ba4dd5112a',
         description: 'Get Somber Ancient Dragon Smithing Stone killing Anastasia, Tarnished-Eater southwest of Ordina, Liturgical Town',
-        tags: ['ng+']
+        tags: [NGPLUS]
       },
       {
         id: '32d60d71-9174-4fe0-bb58-ebaa945fa6a9',
         description: "Get Somber Ancient Dragon Smithing Stone by completing Latenna's questline",
-        tags: ['ng+']
+        tags: [NGPLUS]
       },
       {
         id: 'ea3a7740-c1d5-4f97-aceb-c4f7434ec0b8',
         description: 'Get Somber Ancient Dragon Smithing Stone from a chest at the feet of the massive statue by the Dynasty Mausoleum Midpoint in Mohgwyn Palace',
-        tags: ['ng+']
+        tags: [NGPLUS]
       },
       {
         id: '145bd056-e157-4e9c-826c-ca53345451ad',
         description: 'Get 3 Somber Ancient Dragon Smithing Stones in Elphael',
-        tags: ['ng+']
+        tags: [NGPLUS]
       },
       {
         id: '7f879ef9-a71c-4689-bb33-61ca6789fb87',
         description: 'Get 1 Somber Ancient Dragon Smithing Stone in Leyndell Ashen Capital',
-        tags: ['ng+']
+        tags: [NGPLUS]
       },
       {
         id: 'efaa8891-1bf7-4fa8-b519-2b207aa5dd4c',
         description: 'Get 1 more Somber Ancient Dragon Smithing Stone in Farum Azula',
-        tags: ['ng+']
+        tags: [NGPLUS]
       }
     ]
   },
   {
     id: 'd08950f3-2199-484d-8272-a30804e38ee9',
     description: 'Go through the Subterranean Shunning-grounds under Leyndell',
-    tags: [OPTIONAL, 'ng+']
+    tags: [OPTIONAL, NGPLUS]
   },
   // LEYNDELL, CAPITAL OF ASH 120-180 +25
   {
     id: '065851a5-2baf-4466-8c3c-1125d38d09f4',
     description: 'Beat Gideon',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '48d7b453-e4da-4266-a59c-44836c771598',
     description: 'Beat Godfrey',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: '80046f4a-f025-428e-9381-b08df9088402',
     description: 'Beat Radagon and Elden Beast',
-    tags: ['ng+']
+    tags: [NGPLUS]
   },
   {
     id: "f2cfa6be-dde8-467e-a7cf-f86814b8f6d7",

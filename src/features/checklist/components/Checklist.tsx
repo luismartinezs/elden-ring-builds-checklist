@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { type TChecklistItem } from "~/features/checklist/types";
-import { TAGS, Tag } from "~/features/tags";
+import { EXTRA_TAGS, TAGS, Tag } from "~/features/tags";
 import Toggler from "~/features/checklist/components/Toggler";
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
 import { useFilter } from "~/hooks/useFilter";
@@ -93,7 +93,7 @@ function useShowChecklistItem(
 
   // NOTE: Using an effect instead of a derived state to avoid hydration errors
   useEffect(() => {
-    const _tags = item.tags?.filter((tag) => tag !== "ng+") ?? [];
+    const _tags = item.tags?.filter((tag) => tag !== EXTRA_TAGS.NGPLUS) ?? [];
 
     const filters = [
       {

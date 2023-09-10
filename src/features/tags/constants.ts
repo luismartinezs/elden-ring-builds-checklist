@@ -16,3 +16,7 @@ export const TAGS = {
   MILLICENT_QUESTLINE: 'millicent-questline',
   ALL_REMEMBERANCES: 'all-remembrances',
 } as const;
+
+export const EXTRA_TAGS = {
+  NGPLUS: 'ng+'
+}

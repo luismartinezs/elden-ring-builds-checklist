@@ -80,6 +80,7 @@ function useShowChecklistItem(
   const { filter: filterMillicentQuestline } = useFilter(
     TAGS.MILLICENT_QUESTLINE
   );
+  const { filter: filterHyettaQuestline } = useFilter(TAGS.HYETTA_QUESTLINE);
   const { filter: filterSmithingStoneBell } = useFilter(
     TAGS.SMITHING_STONE_BELL
   );
@@ -156,6 +157,10 @@ function useShowChecklistItem(
         tag: TAGS.ALL_REMEMBERANCES,
         filter: filterAllRememberances,
       },
+      {
+        tag: TAGS.HYETTA_QUESTLINE,
+        filter: filterHyettaQuestline,
+      },
     ];
     const shouldHide =
       _tags.length > 0
@@ -187,6 +192,7 @@ function useShowChecklistItem(
     filterAlexanderQuestline,
     filterMillicentQuestline,
     filterAllRememberances,
+    filterHyettaQuestline,
   ]);
 
   return show;

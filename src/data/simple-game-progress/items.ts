@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE } = TAGS
 const { NGPLUS } = EXTRA_TAGS
 
 /**
@@ -62,10 +62,20 @@ export const items = [
     description: 'Speak to Kenneth Height atop the battlements southwest of Third Church of Marika',
     tags: [NEPHELI_QUESTLINE]
   },
+  {
+    id: '384fc0f5-c356-4d8a-a31e-351494896d8a',
+    description: 'Find Alexander in Northern Stormhill, West to the river and North of the Agheel Lake North Site of Grace. Him a few times on the back with any weapon until you free him. He will reward you with some items',
+    tags: [ALEXANDER_QUESTLINE]
+  },
   // WEEPING PENINSULA L20-30 +3
   {
+    id: '0b151bb2-2176-4a5a-a68d-effc8018e4cc',
+    description: 'Talk to Irina at the entrance to Weeping Peninsula',
+    tags: [HYETTA_QUESTLINE]
+  },
+  {
     id: '63ce03c8-ce26-4dcb-a37e-07ab46bd08f4',
-    description: 'Go to Weeping peninsula and get the Sacred tears from all 3 churches (Callu Baptismal Church, Church of Pilgrimage, Fourth Church of Marika)',
+    description: 'In Weeping peninsula, get the Sacred tears from all 3 churches (Callu Baptismal Church, Church of Pilgrimage, Fourth Church of Marika)',
     tags: [OPTIONAL]
   },
   {
@@ -73,6 +83,7 @@ export const items = [
     description: "If you don't plan to get Mimic Tear, you can get Lhutel the Headless spirit summon from Tombsward Catacombs south of Weeping Peninsula Erdtree avatar (requires 104 FP)",
     tags: [OPTIONAL]
   },
+  // CAELID EARLY
   {
     id: '1a279fba-f36b-4524-98f9-b4957e7bbbaa',
     description: 'Dectus Medallion (Right) from Fort Faroth in Dragonbarrow (Caelid). Easiest way to reach there is from waygate portal behind Third Church of Marika and going south from Bestial Sanctum, or you can just ride all the way there from Limgrave',
@@ -88,11 +99,7 @@ export const items = [
     description: 'By this point, your weapon can be upgraded to +3-4 (1-2)',
     tags: []
   },
-  {
-    id: '384fc0f5-c356-4d8a-a31e-351494896d8a',
-    description: 'Find Alexander in Northern Stormhill, West to the river and North of the Agheel Lake North Site of Grace. Him a few times on the back with any weapon until you free him. He will reward you with some items',
-    tags: [ALEXANDER_QUESTLINE]
-  },
+
   // STORMVEIL CASTLE L30-40 +3-4
   {
     id: '7aba047b-6da2-46ab-9f3a-0c5acf36e752',
@@ -113,6 +120,21 @@ export const items = [
     id: 'b9690395-5806-49d1-85fb-89411478266b',
     description: 'Beat Godrick in Stormhill Castle',
     tags: [NGPLUS]
+  },
+  {
+    id: '4b32da9d-db54-4496-b07c-c1236d8c71ad',
+    description: "Get Shabriri Grape from Godrick's throne room at Stormveil Castle",
+    tags: [HYETTA_QUESTLINE]
+  },
+  {
+    id: '9f2e43fc-e06f-4c47-ab9b-a1ec32abcac3',
+    description: 'Get the Lake-Facing Cliffs grace near Godrick\'s throne, in Liurnia',
+    tags: [NGPLUS]
+  },
+  {
+    id: 'd1d73580-25f5-46b3-92c9-9c8d68a943e5',
+    description: 'Give Shabriri Grape to Hyetta in the Lake-Facing Cliffs site of grace in Liurnia',
+    tags: [HYETTA_QUESTLINE]
   },
   {
     id: '062f0984-ff7b-4da1-ba5f-b05e12ac7eae',
@@ -140,7 +162,16 @@ export const items = [
     description: 'Get the South Raya Lucaria Gate site of grace in south side of Raya Lucaria',
     tags: [NGPLUS]
   },
-
+  {
+    id: '8bc9716d-bb20-4011-9778-29d0d30b5e67',
+    description: 'Get Shabriri Grape from Purified Ruins, found along the lake shore on the eastern landmass of Liurnia (stick to the east side of the lake from the Liurnia Lake Shore grace). The Grape is at the lower level, behind a breakable wooden plank',
+    tags: [HYETTA_QUESTLINE]
+  },
+  {
+    id: '609a2db8-67fb-42d7-b5d4-40e6ff2303a0',
+    description: 'Find Hyetta west from the Purified Ruins and give her a Shabriri Grape',
+    tags: [HYETTA_QUESTLINE]
+  },
   {
     id: 'f892cb40-deaa-4852-88d2-2121f978749b',
     description: 'Talk to Varré in Rose Church (west from Fallen Ruins of the Lake grace in Liurnia) and get Festering Bloody Finger',
@@ -155,6 +186,11 @@ export const items = [
     id: '98f9ae6e-2b36-42c0-94eb-17c92aecbd29',
     description: "Talk to Varré in Rose Church, accept the dialog and get Lord of Blood's Favor",
     tags: [VARRE_QUESTLINE]
+  },
+  {
+    id: '772d7a3e-503e-437f-822b-cfac4f7528b9',
+    description: "Get Shabriri grape by killing Edgar, either in Revenger's Shack in south-western Liurnia (directly north from the minor Erdtree) OR in Castle Morne",
+    tags: [HYETTA_QUESTLINE]
   },
   {
     id: '5d177901-90f6-449b-b13f-f8df8eef3ee4',
@@ -175,6 +211,11 @@ export const items = [
     id: "82983c08-5a06-4d1e-a6a8-dfea29452f1b",
     description: "From Liurnia Lake Shore grace, looking north hug the left wall until finding the entrance to Lakeside Crystal Cave. Progress through the dungeon to find Latenna at the end and grab the grace",
     tags: [LATENNA_QUESTLINE]
+  },
+  {
+    id: '20c9774e-370d-4629-8d21-28c36d60deb2',
+    description: 'Find Hyetta north of the Gate Town Bridge, easter Liurnia of the Lakes (in front of the southern broken bridge in the east side of the lake, above the cliffs) and give her a Shabriri Grape. Exhaust her dialogue. Reload the area, and exhaust her dialogue again',
+    tags: [HYETTA_QUESTLINE]
   },
   {
     id: '1ff4c70a-d0d0-48a1-80a3-ade3b0bfe625',
@@ -280,6 +321,16 @@ export const items = [
     id: '8d9fb6dd-c390-42ff-ae5e-24df91cdda04',
     description: 'Red-Hot Whetblade (Fire and Flame Art). Redmane Castle (south Caelid) From the Chamber Outside The Plaza site of grace, head out the south-side door, west past the flamethrower enemies, and then to the door past the Abductor Virgin and hanging bodies. Note: if you reach Altus before this step, you will need to defeat Radahn to access the rest of Redmane Castle',
     tags: [WHETBLADES]
+  },
+  {
+    id: '7353be03-4279-4710-a59a-bfc3290b1b80',
+    description: 'Kill Festering Fingerprint Vyke near the Church of Inhibition (the pathway south from Dectus Lift in the Liurnia side) as he drops a Fingerprint Grape',
+    tags: [HYETTA_QUESTLINE]
+  },
+  {
+    id: '143197cd-8e4b-4934-ba17-4e35eb28214d',
+    description: 'Find Hyetta in Bellum Church in Liurnia of the Lakes (the path toward the Dectus Lift from the East Raya Lucaria Gate grace, hugging the left side) and give her the Fingerprint Grape',
+    tags: [HYETTA_QUESTLINE]
   },
   // ACCESS ALTUS
   {
@@ -915,6 +966,16 @@ export const items = [
     id: 'd08950f3-2199-484d-8272-a30804e38ee9',
     description: 'Explore the Subterranean Shunning-grounds optional area under Leyndell',
     tags: [OPTIONAL, NGPLUS]
+  },
+  {
+    id: 'd8938df1-e27e-4a6b-b342-18319ca5e7a0',
+    description: 'Reach the bottom of Leyndell Sewers, get naked and enter the door with the Three Fingers',
+    tags: [HYETTA_QUESTLINE]
+  },
+  {
+    id: '886ca92c-0bb6-44de-b7d2-49827c9fd4ac',
+    description: 'Talk to Hyetta at Frenzied Flame Proscription and get the Frenzied Flame Seal and five Frenzyflame Stones',
+    tags: [HYETTA_QUESTLINE]
   },
   // LEYNDELL, CAPITAL OF ASH 120-180 +25
   {

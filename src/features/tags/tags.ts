@@ -96,5 +96,11 @@ export const tags: Record<TTagKeys, {
     key: TAGS.ALL_REMEMBERANCES,
     buttonClasses: 'border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black focus:ring-amber-400',
     tagClasses: 'bg-amber-400 text-black',
-  }
+  },
+  [TAGS.HYETTA_QUESTLINE]: {
+    label: 'Hyetta',
+    key: TAGS.HYETTA_QUESTLINE,
+    buttonClasses: 'border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black focus:ring-yellow-400',
+    tagClasses: 'bg-yellow-400 text-black',
+  },
 }

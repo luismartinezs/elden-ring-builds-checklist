@@ -15,6 +15,7 @@ export const TAGS = {
   ALEXANDER_QUESTLINE: 'alexander-questline',
   MILLICENT_QUESTLINE: 'millicent-questline',
   ALL_REMEMBERANCES: 'all-remembrances',
+  HYETTA_QUESTLINE: 'hyetta-questline',
 } as const;
 
 export const EXTRA_TAGS = {

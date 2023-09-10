@@ -14,7 +14,10 @@ const ChecklistLabel = ({
   tags?: string[];
 }) => (
   <div>
-    <span className="inline-flex items-center gap-1" aria-hidden="true">
+    <span
+      className="inline-flex flex-wrap items-center gap-1"
+      aria-hidden="true"
+    >
       {[...tags].sort().map((tag) => (
         <span key={tag} className="!inline">
           <Tag tag={tag} />

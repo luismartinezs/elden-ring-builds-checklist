@@ -12,7 +12,7 @@ export function Tag({ tag }: { tag: string }) {
   return (
     <span
       className={classnames(
-        "rounded px-1 py-0.5 text-sm font-bold ",
+        "whitespace-nowrap rounded px-1 py-0.5 text-sm font-bold",
         tagClasses
       )}
     >

@@ -566,7 +566,7 @@ export const items = [
   {
     id: '554ccd9a-9b26-40d9-b6b9-d2d12bf7ac2c',
     description: 'Talk to Dung Eater in Roundtable Hold (after reaching Leyndell)',
-    tags: [DUNG_EATER_QUESTILINE, SELUVIS_QUESTLINE]
+    tags: [DUNG_EATER_QUESTILINE]
   },
   {
     id: '7a68718f-b0e7-4006-b8b9-16d40e64d39e',
@@ -627,12 +627,12 @@ export const items = [
   },
   {
     id: '1da2c590-e82e-48c7-934a-0b8cc6f158f1',
-    description: "Visit Seluvis's lab behind an illusory floor in between Ranni's Rise and Renna's Rise to find the body of Nepheli or Dung Eater, depending on who you gave Seluvis's Potion to, and interact with the message within",
+    description: "Visit Seluvis's lab behind an illusory floor in between Ranni's Rise and Renna's Rise to find the body of Nepheli or Dung Eater, depending on who you gave Seluvis's Potion to, and interact with the message within (if you killed Dung Eater after giving him the potion, you will not find his puppet, but you can progress with Seluvis' questline regardless)",
     tags: [SELUVIS_QUESTLINE]
   },
   {
     id: 'db09772b-34cf-45a2-9876-75d25ac402e1',
-    description: 'Talk to Seluvis and ask him about his chambers to receive a free Spirit Ashes from him',
+    description: 'Talk to Seluvis and ask him about his chambers to receive a free Spirit Ashes from him (you might need to reload the area and talk to Seluvis several times)',
     tags: [SELUVIS_QUESTLINE]
   },
   {

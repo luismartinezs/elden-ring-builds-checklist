@@ -1123,5 +1123,11 @@ export const items = [
     id: '68cafc87-0e90-4f00-a806-9643a6254da5',
     description: 'Use the Mending Rune of the Fell Curse to get the Blessing of Despair Ending',
     tags: [DUNG_EATER_QUESTILINE]
+  },
+  // BEFORE NG+
+  {
+    id: "48e9bfbf-7187-4fdd-9608-a43db1879fe3",
+    description: "If you plan to use a different build into NG+, respec with Rennala and make sure you have the equipment you need before going to New Game +",
+    tags: [OPTIONAL, NGPLUS]
   }
 ]

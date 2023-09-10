@@ -165,12 +165,13 @@ function useShowChecklistItem(
 
     setShow(!shouldHide && !(isChecked(item.id) && filterCompleted));
   }, [
+    isChecked,
+    item.id,
+    item.tags,
     filterOptional,
     filterVolcanoManorAssassination,
     filterRanniQuestline,
     filterCompleted,
-    isChecked,
-    item.id,
     filterVarreQuestline,
     filterNepheliQuestline,
     filterSmithingStoneBell,
@@ -182,7 +183,7 @@ function useShowChecklistItem(
     filterLatennaQuestline,
     filterAlexanderQuestline,
     filterMillicentQuestline,
-    item.tags,
+    filterAllRememberances,
   ]);
 
   return show;

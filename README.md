@@ -24,9 +24,23 @@ This is to make it easier to play the game without having to look up guides cons
 
 ## How to dev
 
+## Contribute
+
+- Fork this project, do your changes in your fork, and then create a PR
+
+### Add new checklist
+
+- Add new file under `/src/data`
+- The file has a default export. Take `src/data/lightning-lancer-50-100.ts` as an example. The list types are in `src/features/checklist/types.ts` (`TChecklist`)
+  - id: all of them must be unique, use a uuid generator, e.g. https://www.uuidgenerator.net/version4, or this VSCODE extensions comes in very handy: https://marketplace.visualstudio.com/items?itemName=netcorext.uuid-generator
+  - slug: must be kebab-case
+  - items are the actual list of steps
+    - Tags: in practice, build checklists will not need tags or will only need OPTIONAL tag. You can import it as: `import { TAGS } from '~/features/tags'` and then access it as `TAGS.OPTIONAL`
+- In `src/data/index.ts`, import the new list and append it to the `lists` array
+
 ### Add new filter by key
 
-- Add key to src/features/tags/constants.ts
-- Add tag to src/features/tags/tags.ts
-- Add button to src/components/SettingsMenu/SettingsMenu.tsx
-- Extend useShowChecklistItem hook in src/features/checklist/components/Checklist.tsx
+- Add key to `src/features/tags/constants.ts`
+- Add tag to `src/features/tags/tags.ts`
+- Add button to `src/components/SettingsMenu/SettingsMenu.tsx`
+- Extend `useShowChecklistItem` hook in `src/features/checklist/components/Checklist.tsx`

@@ -1237,6 +1237,112 @@ export const items = [
     ]
   },
   {
+    id: '7a92c920-3d9d-4b72-a98d-dea9e8b191db',
+    description: "Before NG+, grab any remaining Somber Ancient Dragon Smithing Stones that you might have missed",
+    tags: [OPTIONAL, NGPLUS],
+    items: [
+      {
+        id: '6081caa3-6d2b-4b95-b20c-88daae796559',
+        description: "Received from completing Latenna's quest line upon delivering her to Apostate Derelict",
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '7a41fc78-27bb-4474-b3f3-755ab0dd38d2',
+        description: 'Dropped by Anastasia, Tarnished-Eater after her third invasion, on the frozen river southwest of Ordina, Liturgical Town',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '082303ca-0c35-430a-ba02-87bfd6c6b772',
+        description: 'Found in a chest at the feet of the massive statue by the Dynasty Mausoleum Midpoint',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: 'f8eec561-b286-4873-94dc-2cd6f42efc49',
+        description: 'Found in a chest hidden between columns near a roof with a corpse carrying an item, after the Prayer Room site of grace in the Haligtree. To reach it, go to the end of the first walkway and jump down to the gazebo with the red scarab, then run up the diagonal support on the other side.  The chest is in a small room',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: 'f2a0d3a8-7d42-49e3-9953-c2abc01f5ad5',
+        description: 'Found on a corpse in the southern end of the ring walkway in the east, near the patrolling Putrid Avatar. To reach this walkway, head out of the Prayer Room site of grace and jump onto the second concrete beam connecting to a tower. Jump from the tower down to the Putrid Avatar and proceed south to the end of the walkway',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: 'af05491b-d9d0-4fcc-a72b-b34b054e8f47',
+        description: "After completing the Millicent questline and defeating Malenia, it can be obtained by inserting the gold needle into Malenia's scarlet flower to receive Miquella's Needle",
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: 'e1dee2c7-6ae2-4d67-897a-fc48a0a57d9d',
+        description: "From the main Leyndell, Ashen Capital site of grace, go west, along and up the dragon. Enter the building past it (the same one that you needed to enter to get up to the Erdtree before it was burnt) and climb the ladder. Over the railing to the right is a gargoyle next to a corpse with the stone. (Note: This will only be available once you've progressed far enough that the city is filled with ash)",
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '01a2faf5-a555-4d89-8ddb-cb4e89463367',
+        description: 'Found in a gazebo behind the stationary Farum Azula Dragon sitting at the back of the plaza southeast of the Dragon Temple Rooftop site of grace',
+        tags: [OPTIONAL, NGPLUS]
+      }
+    ]
+  },
+  {
+    id: '2ef7bb61-b131-4ff5-8603-75feb70077ca',
+    description: "Before NG+, grab any remaining Great Grave Gloveworts that you might have missed",
+    tags: [OPTIONAL, NGPLUS],
+    items: [
+      {
+        id: 'fd49412b-0c2b-4245-ac80-c6a0f4d450af',
+        description: 'Consecrated Snowfield: Two (2) dropped by the boss of Consecrated Snowfield Catacombs, Putrid Grave Warden Duelist (from Inner Consecrated Snowfield grace, go east until reaching the wall and then hug the wall south until finding the entrance)',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '7bed6eb7-480a-462c-8068-c56abb535ebc',
+        description: "Mountaintops of the Giants: One found in the Giant-Conquering Hero's Grave: In the large hall with the Troll, drop down from either side of the platform into a room with a Fire Prelate. Defeat it and check the very back of the room for the glovewort. Alternatively, you can reach this room by descending the lift and sending it back up. Pull the lever in the alcove to the right and then enter the small space in the raised lift to descend further down. In the next hall, sprint past the Lesser Burial Watchdog and turn left. Climb the ladder at the end of this path. Giant-Conquering Hero's Grave is right north of the Zamor ruins but you need to traverse Mountaintops of the Giants until almost its end. From the Church of Repose grace, go north west and jump the gap to reach the platform with the entrance to the grave.",
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '0118db70-2baa-4a66-ba65-c47ea399fe53',
+        description: 'Farum Azula: Found in a recess in the northeastern-most wall of the upper level of the large building next to the Crumbling Beast Grave Depths site of grace. To reach this upper area, head out of the balcony of the room next to the site of grace and jump up onto the red roof right next to it',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '663d2430-d0f0-42fe-b9c6-c523f8edf982',
+        description: 'Farum Azula: In the heavily-ruined section in the northwest leading to the Dragon Temple site of grace, there is a pit you can drop down into to reach a narrow hallway below. From here, head into the first archway on the left and up the stairs heading northwest to a ruined balcony where you can navigate across a series of floating debris to reach a second balcony with a ladder. Head up the ladder to reach a hidden tomb with the glovewort sitting on the main sarcophagus in the back',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '40b248a3-a0e0-48d6-9f55-c3dada723295',
+        description: 'Elphael, Brace of the Haligtree: Found in the center of the second lake of rot, past a second set of branches within the inner walls. Beware the Ulcerated Tree Spirit lurking beneath',
+        tags: [OPTIONAL, NGPLUS]
+      }
+    ]
+  },
+  {
+    id: '6475aced-655e-4f48-a56e-a2b4df45a5c5',
+    description: "Before NG+, grab any remaining Great Ghost Gloveworts that you might have missed",
+    tags: [OPTIONAL, NGPLUS],
+    items: [
+      {
+        id: 'fc400bd0-00f0-4e1b-873e-eac45d4528b2',
+        description: 'Can be obtained from a chest in a room underneath the massive skeleton and throne at Ainsel River, near the Dragonkin Soldier of Nokstella site of grace',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
+        description: "Found in a chest under the massive skeleton statue in Night's Sacred Ground, after reaching the bottom level of Nokron. You receive this alongside the Fingerslayer Blade",
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '91ac06fa-115b-4b67-8084-6e00efaa3dc7',
+        description: 'Found in a chest at the back of a narrow room in Nokstella, Eternal City. Starting from Nokstella, Eternal City grace, progress up the stairs to Nokstella, until the building after the first bridge. Beware the Silver Tear disguised as a large iron ball hanging off of the ceiling waiting to ambush you',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '5d63cfe4-b671-4d91-9b00-825b03dccd48',
+        description: 'Mohgwyn Dynasty Mausoleum: In the cave-like section in between the Dynasty Mausoleum Entrance grace and the Dynasty Mausoleum Midpoint grace, in a lower area guarded by many Rotten Ghouls',
+        tags: [OPTIONAL, NGPLUS]
+      },
+    ]
+  },
+  {
     id: "48e9bfbf-7187-4fdd-9608-a43db1879fe3",
     description: "If you plan to use a different build into NG+, respec with Rennala and make sure you have the equipment you need before going to New Game +",
     tags: [OPTIONAL, NGPLUS]

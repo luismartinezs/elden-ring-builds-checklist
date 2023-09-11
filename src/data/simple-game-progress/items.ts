@@ -70,7 +70,7 @@ export const items = [
   // WEEPING PENINSULA L20-30 +3
   {
     id: '0b151bb2-2176-4a5a-a68d-effc8018e4cc',
-    description: 'Talk to Irina at the entrance to Weeping Peninsula',
+    description: 'Talk to Irina south of the Bridge of Sacrifice grace (Weeping Peninsula)',
     tags: [HYETTA_QUESTLINE]
   },
   {
@@ -82,6 +82,26 @@ export const items = [
     id: '2a0af444-beab-45a0-9400-560c9114a9bc',
     description: "If you don't plan to get Mimic Tear, you can get Lhutel the Headless spirit summon from Tombsward Catacombs south of Weeping Peninsula Erdtree avatar (requires 104 FP)",
     tags: [OPTIONAL]
+  },
+  {
+    id: '8a19443f-919d-4ba9-891f-b88ad22ae163',
+    description: "Give Irina's letter to Edgar in Castle Morne (Weeping Peninsula)",
+    tags: [HYETTA_QUESTLINE]
+  },
+  {
+    id: '1e158447-b964-481d-a85f-ced438fb45a5',
+    description: 'Defeat Leonine Misbegotten, the boss of Castle Morne (Weeping Peninsula)',
+    tags: [HYETTA_QUESTLINE]
+  },
+  {
+    id: 'b7a283cd-fa50-4362-b374-4fe865705df8',
+    description: 'Talk with Edgar in Castle Morne (Weeping Peninsula)',
+    tags: [HYETTA_QUESTLINE]
+  },
+  {
+    id: '3d8d139a-1376-4720-9466-02fadf977d74',
+    description: 'Go to where Irina was, next to Bridge of Sacrifice grace, and talk with Edgar.',
+    tags: [HYETTA_QUESTLINE]
   },
   // CAELID EARLY
   {
@@ -189,7 +209,7 @@ export const items = [
   },
   {
     id: '772d7a3e-503e-437f-822b-cfac4f7528b9',
-    description: "Get Shabriri grape by killing Edgar, either in Revenger's Shack in south-western Liurnia (directly north from the minor Erdtree) OR in Castle Morne",
+    description: "Get Shabriri grape by killing Edgar, either in Revenger's Shack in south-western Liurnia (directly north from the minor Erdtree) OR in Castle Morne if you didn't progress Irina and Edgar's questline",
     tags: [HYETTA_QUESTLINE]
   },
   {
@@ -1058,6 +1078,11 @@ export const items = [
     tags: [OPTIONAL, NGPLUS]
   },
   {
+    id: 'cf171be4-c5f4-4149-b71f-a4c6c6d9efef',
+    description: 'Defeat Mohg, the Omen down the Leyndell Sewers and attack the alter behind the chest to reveal a secret area',
+    tags: [HYETTA_QUESTLINE]
+  },
+  {
     id: 'd8938df1-e27e-4a6b-b342-18319ca5e7a0',
     description: 'Reach the bottom of Leyndell Sewers, get naked and enter the door with the Three Fingers',
     tags: [HYETTA_QUESTLINE]
@@ -1092,6 +1117,11 @@ export const items = [
     id: '68cafc87-0e90-4f00-a806-9643a6254da5',
     description: 'Use the Mending Rune of the Fell Curse to get the Blessing of Despair Ending',
     tags: [DUNG_EATER_QUESTILINE]
+  },
+  {
+    id: '7c524889-f8a9-40bd-83ed-cec150a09764',
+    description: 'Become the Lord of Frenzied Flame.',
+    tags: [HYETTA_QUESTLINE]
   },
   // BEFORE NG+
   {

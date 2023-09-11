@@ -14,7 +14,7 @@ export const tags: Record<TTagKeys, {
     tagClasses: 'border border-amber-500 text-amber-500',
   },
   [TAGS.VOLCANO_MANOR_ASSASSINATION]: {
-    label: 'Volcano Manor Assassination',
+    label: 'Tanith',
     key: TAGS.VOLCANO_MANOR_ASSASSINATION,
     buttonClasses: 'border-red-400 text-red-400 hover:bg-red-400 hover:text-black focus:ring-red-400',
     tagClasses: 'bg-red-400 text-black',

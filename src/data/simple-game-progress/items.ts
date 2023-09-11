@@ -873,14 +873,49 @@ export const items = [
     tags: [VOLCANO_MANOR_ASSASSINATION]
   },
   {
+    id: '56be7e1e-a5cc-4b95-9ba6-fc5b49aa64aa',
+    description: 'Tanith will now offer to take you to the lord of the manor. Ensure all other Volcano Manor quests are done before continuing. Accept Tanith\'s offer to reach Rykard (or alternatively reach the end of the Volcano Manor dungeon)',
+    tags: [VOLCANO_MANOR_ASSASSINATION]
+  },
+  {
     id: 'a701452c-e039-4068-af9d-d848ec71d858',
     description: "Get Seedbed Curse (until you get 5) from Volcano Manor: From Temple of Eiglay, proceed until you reach the teleporter to Rykard, Lord of Blasphemy, then go back into the building and up the stairs to find a fog door that requires a Stonesword Key. Carefully drop down in the dark room using the hanging cages. The item will be on a body that is sitting on a chair guarded by enemies. To the opposite side of the room there's a path leading back to the door in the Volcano Manor lobby that can now be opened",
     tags: [DUNG_EATER_QUESTILINE]
   },
   {
     id: '48a216e3-249c-4720-928a-e8faa7e34806',
-    description: 'Beat Rykard',
-    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
+    description: 'Defeat Rykard, Lord of Blasphemy',
+    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES, VOLCANO_MANOR_ASSASSINATION]
+  },
+  {
+    id: 'ce4f0777-e5a5-4b25-a260-49b06e941ee3',
+    description: 'Speak to Tanith one more time.',
+    tags: [VOLCANO_MANOR_ASSASSINATION]
+  },
+  {
+    id: '20afac13-e621-42ec-87ca-34440757c768',
+    description: "(Optional) Progress Patches quest line and receive the Dancer's Castanets.",
+    tags: [VOLCANO_MANOR_ASSASSINATION]
+  },
+  {
+    id: '66cae8a8-8e92-49eb-b4a8-b07428eee16b',
+    description: 'Return to Rykard, Lord of Blasphemy Site of Grace.',
+    tags: [VOLCANO_MANOR_ASSASSINATION]
+  },
+  {
+    id: '41c642d3-b6d5-4a39-92ee-1ce9f2612554',
+    description: "(Optional) Offer the Dancer's Castanets to Tanith. She'll refuse.",
+    tags: [VOLCANO_MANOR_ASSASSINATION]
+  },
+  {
+    id: 'a0175a65-8678-476a-b3a3-cc47d78a13d7',
+    description: "Kill Tanith and loot the Consort's Set.",
+    tags: [VOLCANO_MANOR_ASSASSINATION]
+  },
+  {
+    id: 'b51482f0-d82f-4ed4-ad03-7ef3e6b0a3a8',
+    description: "Tanith's Knight will invade. Kill and loot the Knight for Aspect of the Crucible: Breath.",
+    tags: [VOLCANO_MANOR_ASSASSINATION]
   },
   {
     id: 'a7a70a4b-9f8b-4a6a-bda0-83d9b21a0235',

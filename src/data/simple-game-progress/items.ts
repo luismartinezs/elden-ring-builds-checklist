@@ -702,7 +702,7 @@ export const items = [
   },
   {
     id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
-    description: 'Get Fingerslayer Blade from Nokron',
+    description: 'Loot Fingerslayer Blade from Nokron (along with a Great Ghost Glovewort)',
     tags: [RANNI_QUESTLINE]
   },
   {
@@ -1332,7 +1332,7 @@ export const items = [
       },
       {
         id: '91ac06fa-115b-4b67-8084-6e00efaa3dc7',
-        description: 'Found in a chest at the back of a narrow room in Nokstella, Eternal City. Starting from Nokstella, Eternal City grace, progress up the stairs to Nokstella, until the building after the first bridge. Beware the Silver Tear disguised as a large iron ball hanging off of the ceiling waiting to ambush you',
+        description: 'Found in a chest at the back of a narrow room in Nokstella, Eternal City. Starting from Nokstella, Eternal City grace, progress up the stairs to teh city, and get inside the building after the first bridge. Beware the Silver Tear disguised as a large iron ball hanging off of the ceiling waiting to ambush you',
         tags: [OPTIONAL, NGPLUS]
       },
       {

@@ -1160,7 +1160,7 @@ export const items = [
   },
   {
     id: '7c524889-f8a9-40bd-83ed-cec150a09764',
-    description: 'Become the Lord of Frenzied Flame.',
+    description: 'Interact with Marika\'s corpse to become the Lord of Frenzied Flame.',
     tags: [HYETTA_QUESTLINE]
   },
   // BEFORE NG+

@@ -1191,7 +1191,7 @@ export const items = [
       },
       {
         id: '7c510998-cb9f-4a89-a3f4-1be7189a672e',
-        description: 'Found in Mountaintops of the Giants. On a corpse inside the mouth of a big skull south-east of Church of Repose. Once you spawn in, turn to the south-east and you will see a large skull. [Map Link]',
+        description: 'Found in Mountaintops of the Giants. On a corpse inside the mouth of a big skull south-east of Church of Repose. Once you spawn in, turn to the south-east and you will see a large skull.',
         tags: [OPTIONAL, NGPLUS]
       },
       {
@@ -1253,7 +1253,7 @@ export const items = [
       },
       {
         id: '082303ca-0c35-430a-ba02-87bfd6c6b772',
-        description: 'Found in a chest at the feet of the massive statue by the Dynasty Mausoleum Midpoint',
+        description: 'Found in a chest at the feet of the massive statue by the Dynasty Mausoleum Midpoint (Mohgwyn Palace)',
         tags: [OPTIONAL, NGPLUS]
       },
       {

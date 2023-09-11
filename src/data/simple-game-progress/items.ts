@@ -796,8 +796,13 @@ export const items = [
     tags: [NEPHELI_QUESTLINE]
   },
   {
-    id: '707d665a-e586-40ad-bbed-2362a270f4d4',
-    description: 'Get an Ancient Dragon Smithing Stone from Nepheli and buy another one from Gostoc',
+    id: 'acf9e786-ce5a-47b6-addd-510ecc7a2ea1',
+    description: 'Get an Ancient Dragon Smithing Stone from Nepheli',
+    tags: [NEPHELI_QUESTLINE]
+  },
+  {
+    id: '508d9a63-1bfe-4883-b774-2a0e9052a1c4',
+    description: 'Buy and Ancient Dragon Smithing Stone from Gostoc',
     tags: [NEPHELI_QUESTLINE]
   },
   // FORBIDDEN LANDS 110-120 +20-24
@@ -1069,7 +1074,7 @@ export const items = [
   },
   {
     id: 'f6d85cdf-3cb9-49d3-9912-5116e4ecf771',
-    description: 'Get Ancient Dragon Smithing Stone from a corpse on a floating platform north of the Dragon Temple (Farum Azula), guarded by a Beastman. Parkour throught he floating debris to reach a narrow path and a spiral staircase at the end,. Up the staircase, then south though a floating pillar',
+    description: 'From Dragon Temple Altar grace, exit to the left looking at the nearest wall. Progress down the debris to a narrow path laden with dragon statues. At the end of the path there is a spiral staircase on the right. Head up these stairs and then find a floating pillar adjoining the aforementioned floating platform. Use the pillar to get up to the platform and collect the stone',
     tags: [OPTIONAL, NGPLUS]
   },
   {
@@ -1159,6 +1164,78 @@ export const items = [
     tags: [HYETTA_QUESTLINE]
   },
   // BEFORE NG+
+  {
+    id: '0999f583-8d54-4696-87cf-792249b6177a',
+    description: "Before NG+, grab any remaining Ancient Dragon Smithing Stones that you might have missed",
+    tags: [OPTIONAL, NGPLUS],
+    items: [
+      {
+        id: 'acf9e786-ce5a-47b6-addd-510ecc7a2ea1',
+        description: "Obtained as a reward for completing Nepheli Loux's questline in Godrick's Throneroom",
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '508d9a63-1bfe-4883-b774-2a0e9052a1c4',
+        description: "One can be purchased for 20,000 Runes from Gatekeeper Gostoc if he is alive as a merchant in Godrick's Throneroom after Nepheli's questline",
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '8849e0e2-9c77-4bc8-804d-eebcde630aa5',
+        description: 'Obtained as a reward for siding with Witch-Hunter Jerren during the Sorceress Sellen questline.',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '7486d68c-dc53-4bd5-a208-7dd8c7f97652',
+        description: 'Given by Gurranq, Beast Clergyman after feeding him 9 Deathroot. (Alternatively, you can kill Gurranq to get the Ancient Dragon Smithing Stone without the 9 Deathroot.)',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '7c510998-cb9f-4a89-a3f4-1be7189a672e',
+        description: 'Found in Mountaintops of the Giants. On a corpse inside the mouth of a big skull south-east of Church of Repose. Once you spawn in, turn to the south-east and you will see a large skull. [Map Link]',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '30325d33-b5d4-48bf-8faf-76fd764108cb',
+        description: "Dropped along with the Night's Cavalry Set, by killing the two mini-boss Night's Cavalry guarding a caravan at night, in Consecrated Snowfield, nearby Inner Consecrated Snowfield grace",
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: 'e46c2798-4e50-40f7-81b7-26340a06a603',
+        description: 'Looted from within the Yelough Anix Tunnel located in Consecrated Snowfield. Head south west from Inner Consecrated Snowfield grace',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '5878151d-9afb-4464-b519-713400eb211d',
+        description: 'On a corpse in the frozen waterfall just above Great Wyrm Theodorix. From Cave of the Forlorn site of grace, go outside, turn left and hug the right side then jump up the ledges to get to the other side (from Inner Consecrated Snowfield grace follow the frozen river east)',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: 'fe1b4d05-4399-4a9f-9790-af424afba182',
+        description: 'Dropped by the Farum Azula Dragon that swoops in to attack as you make your way along the curved platform directly after the Crumbling Beast Grave grace',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '658a2bdc-310b-4fd1-a250-1954ddea947f',
+        description: 'From Dragon Temple Altar grace, exit to the left looking at the nearest wall. Progress down the debris to a narrow path laden with dragon statues. At the end of the path there is a spiral staircase on the right. Head up these stairs and then find a floating pillar adjoining the aforementioned floating platform. Use the pillar to get up to the platform and collect the stone',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: 'eaf93063-9f0f-4b3d-b2ea-c38e272d14c4',
+        description: 'Dropped by the stationary Farum Azula Dragon sitting at the back of the plaza southeast of the Dragon Temple Rooftop site of grace. The dragon is constantly raining red lightning around the area',
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: 'd64739ab-d1af-4f9a-a5e5-d83c55064ef4',
+        description: "Can be looted on a corpse below a hugging statue in Miquella's Haligtree, in a round platform with two Misbegottens and one Leonine Misbegotten, right before reaching Haligtree Town Plaza grace",
+        tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '559ca9da-af44-4b10-9a1b-600e2bcad198',
+        description: "After Loretta's grace, going down the stairs and then to the top of the round staircase, inside a chest",
+        tags: [OPTIONAL, NGPLUS]
+      }
+    ]
+  },
   {
     id: "48e9bfbf-7187-4fdd-9608-a43db1879fe3",
     description: "If you plan to use a different build into NG+, respec with Rennala and make sure you have the equipment you need before going to New Game +",

@@ -89,6 +89,18 @@ const faq = [
       </p>
     ),
   },
+  {
+    question:
+      "Why is step X before step Y if they can also be done in the opposite order?",
+    answer: (
+      <p>
+        I had to pick one order. I tried to pick an order such that even if you
+        wanted to do all questlines, it still makes sense. If you want to ignore
+        some questlines, you have lots more freedom in the order you do things,
+        as Elden Ring is very open ended.
+      </p>
+    ),
+  },
 ];
 
 function FaqPage() {

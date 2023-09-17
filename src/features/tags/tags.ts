@@ -6,6 +6,7 @@ export const tags: Record<TTagKeys, {
   key: TTagKeys;
   buttonClasses: string;
   tagClasses: string;
+  questlineRewards?: string[];
 }> = {
   [TAGS.OPTIONAL]: {
     label: 'Optional',
@@ -18,24 +19,51 @@ export const tags: Record<TTagKeys, {
     key: TAGS.VOLCANO_MANOR_ASSASSINATION,
     buttonClasses: 'border-red-400 text-red-400 hover:bg-red-400 hover:text-black focus:ring-red-400',
     tagClasses: 'bg-red-400 text-black',
+    questlineRewards: [
+      "Magma Shot",
+      "Serpentbone Blade",
+      "Taker's Cameo",
+      "Consort's Set",
+      "Aspect of the Crucible: Breath",
+      "Hoslow's Set",
+      "Hoslow's Petal Whip",
+      "Crepus's Vial",
+      "Scaled Set",
+    ]
   },
   [TAGS.RANNI_QUESTLINE]: {
     label: 'Ranni',
     key: TAGS.RANNI_QUESTLINE,
     buttonClasses: 'border-sky-200 text-sky-200 hover:bg-sky-200 hover:text-black focus:ring-sky-200',
     tagClasses: 'bg-sky-200 text-black',
+    questlineRewards: [
+      "Dark Moon Greatsword",
+      "Age of the Stars Ending",
+      "Miniature Ranni",
+      "Carian Inverted Statue",
+    ]
   },
   [TAGS.VARRE_QUESTLINE]: {
     label: 'Varré',
     key: TAGS.VARRE_QUESTLINE,
     buttonClasses: 'border-red-700 text-red-700 hover:bg-red-700 hover:text-black focus:ring-red-700',
     tagClasses: 'bg-red-700 text-black',
+    questlineRewards: [
+      "Varre's Bouquet",
+      "War Surgeon Set",
+      "Bloody Finger",
+      "Pureblood Knight's Medal",
+    ]
   },
   [TAGS.NEPHELI_QUESTLINE]: {
     label: 'Nepheli',
     key: TAGS.NEPHELI_QUESTLINE,
     buttonClasses: 'border-orange-300 text-orange-300 hover:bg-orange-300 hover:text-black focus:ring-orange-300',
     tagClasses: 'bg-orange-300 text-black',
+    questlineRewards: [
+      'Arsenal Charm',
+      'Ancient Dragon Smithing Stone'
+    ]
   },
   [TAGS.SMITHING_STONE_BELL]: {
     label: 'Smithing Stone Bell',
@@ -66,6 +94,12 @@ export const tags: Record<TTagKeys, {
     key: TAGS.SELUVIS_QUESTLINE,
     buttonClasses: 'border-sky-300 text-sky-300 hover:bg-sky-300 hover:text-black focus:ring-sky-300',
     tagClasses: 'border border-sky-500 bg-sky-900 text-sky-100 -m-px',
+    questlineRewards: [
+      "Magic Scorpion Charm",
+      "Preceptor's Set",
+      "Nepheli Loux Puppet",
+      "Dung Eater Puppet",
+    ]
   },
   [TAGS.WHETBLADES]: {
     label: 'Whetblades',
@@ -78,18 +112,36 @@ export const tags: Record<TTagKeys, {
     key: TAGS.LATENNA_QUESTLINE,
     buttonClasses: 'border-cyan-200 text-cyan-200 hover:bg-cyan-200 hover:text-black focus:ring-cyan-200',
     tagClasses: 'bg-cyan-200 text-black',
+    questlineRewards: [
+      "Latenna the Albinauric",
+      "Somber Ancient Dragon Smithing Stone",
+    ]
   },
   [TAGS.ALEXANDER_QUESTLINE]: {
     label: 'Alexander',
     key: TAGS.ALEXANDER_QUESTLINE,
     buttonClasses: 'border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-black focus:ring-orange-400',
     tagClasses: 'bg-orange-400 text-black',
+    questlineRewards: [
+      "Gesture: Triumphant Delight",
+      "Jar Helmet",
+      "Warrior Jar Shard (Killed before Farum Azula)",
+      "Shard of Alexander (Killed in Farum Azula)",
+      "Alexander's Innards",
+    ]
   },
   [TAGS.MILLICENT_QUESTLINE]: {
     label: 'Millicent',
     key: TAGS.MILLICENT_QUESTLINE,
     buttonClasses: 'border-rose-400 text-rose-400 hover:bg-rose-400 hover:text-black focus:ring-rose-400',
     tagClasses: 'bg-rose-400 text-black',
+    questlineRewards: [
+      "Prosthesis-Wearer Heirloom",
+      "Miquella's Needle",
+      "Somber Ancient Dragon Smithing Stone",
+      "Rotten Winged Sword Insignia",
+      "Millicent's Prosthesis",
+    ]
   },
   [TAGS.ALL_REMEMBERANCES]: {
     label: 'All Remembrances',
@@ -102,17 +154,34 @@ export const tags: Record<TTagKeys, {
     key: TAGS.HYETTA_QUESTLINE,
     buttonClasses: 'border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black focus:ring-yellow-400',
     tagClasses: 'bg-yellow-400 text-black',
+    questlineRewards: [
+      "Gesture: As You Wish",
+      "Frenzied Flame Seal",
+      "The Lord of the Frenzied Flame Ending",
+    ]
   },
   [TAGS.DUNG_EATER_QUESTILINE]: {
     label: 'Dung Eater',
     key: TAGS.DUNG_EATER_QUESTILINE,
     buttonClasses: 'border-pink-600 text-pink-600 hover:bg-pink-600 hover:text-black focus:ring-pink-600',
     tagClasses: 'bg-pink-600 text-black',
+    questlineRewards: [
+      "Sword of Milos",
+      "Mending Rune of the Fell Curse",
+      "Omen Set",
+    ]
   },
   [TAGS.SELLEN_QUESTLINE]: {
     label: 'Sellen',
     key: TAGS.SELLEN_QUESTLINE,
     buttonClasses: 'border-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:text-black focus:ring-cyan-500',
     tagClasses: 'bg-cyan-500 text-black',
+    questlineRewards: [
+      "Jerren's Armor",
+      "Glintstone Kris",
+      "Shard Spiral",
+      "Witch's Glintstone Crown",
+      "Ancient Dragon Smithing Stone",
+    ]
   },
 }

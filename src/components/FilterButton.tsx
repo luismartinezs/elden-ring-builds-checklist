@@ -8,9 +8,10 @@ export function FilterButton(
   props: ButtonProps & {
     filterTag: Parameters<typeof useFilter>[0];
     label?: string;
+    hideLabel?: boolean;
   }
 ) {
-  const { filterTag, label, className } = props;
+  const { filterTag, label, className, hideLabel } = props;
   const { filter, setFilter } = useFilter(filterTag);
 
   if (filterTag in tags) {
@@ -23,7 +24,7 @@ export function FilterButton(
         className={classnames("flex items-center gap-1", buttonClasses)}
       >
         {filter ? <AiFillEyeInvisible size={20} /> : <AiFillEye size={20} />}
-        {tagLabel}
+        {hideLabel ?? tagLabel}
       </Button>
     );
   }
@@ -35,7 +36,7 @@ export function FilterButton(
       className={classnames("flex items-center gap-1", className)}
     >
       {filter ? <AiFillEyeInvisible size={20} /> : <AiFillEye size={20} />}
-      {label}
+      {hideLabel ?? label}
     </Button>
   );
 }

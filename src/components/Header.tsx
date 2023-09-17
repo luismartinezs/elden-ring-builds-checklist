@@ -14,6 +14,10 @@ const links = [
     href: "/checklists",
   },
   {
+    label: "NPC rewards",
+    href: "/npc-questline-rewards",
+  },
+  {
     label: "Profile",
     href: "/profile",
   },

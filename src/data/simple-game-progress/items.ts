@@ -48,10 +48,23 @@ export const items = [
     tags: [NGPLUS]
   },
   {
-    id: 'd9792932-bdf7-4d3f-8011-d2c2c45acbc9',
-    description: 'Get the Dectus Medallion (Left) from Fort Haight (recommended to kill Godrick Knight at the top level to get Bloody slash ash of war)',
+    id: "4b4279e9-8aac-4618-90d5-1c1086df3449",
+    description: "If you choose to access Altus Plateau with the Dectus Medallion, you need to grab both halves of the Dectus Medallion",
     tags: [NGPLUS],
+    items: [
+      {
+        id: 'd9792932-bdf7-4d3f-8011-d2c2c45acbc9',
+        description: 'Get the Dectus Medallion (Left) from Fort Haight in Limgrave (east Limgrave, south of Mistwood)',
+        tags: [NGPLUS],
+      },
+      {
+        id: '1a279fba-f36b-4524-98f9-b4957e7bbbaa',
+        description: 'Dectus Medallion (Right) from Fort Faroth in Dragonbarrow (Caelid). Easiest way to reach there is from waygate portal behind Third Church of Marika and going south from Bestial Sanctum, or you can just ride all the way there from Limgrave. To get the item you can just run through all the enemies up the stairs, you don\'t need to fight anything',
+        tags: [NGPLUS]
+      },
+    ]
   },
+
   {
     id: 'a7d48287-d886-42c1-aa6c-c728b0014419',
     description: 'Clear Fort Haight (east Limgrave, south of Mistwood) from enemies',
@@ -68,6 +81,11 @@ export const items = [
     tags: [ALEXANDER_QUESTLINE]
   },
   // WEEPING PENINSULA L20-30 +3
+  {
+    id: '2fa6873f-d44c-4b9c-adda-596b6e7fa74b',
+    description: 'Talk to Sellen at the Waypoint Ruins Cellar grace and select the "I want to learn sorcery" dialogue option. Located Western Limgrave, right east to Agheel Lake, downstairs Waypoint Ruins.',
+    tags: ['sellen-questline']
+  },
   {
     id: '0b151bb2-2176-4a5a-a68d-effc8018e4cc',
     description: 'Talk to Irina south of the Bridge of Sacrifice grace (Weeping Peninsula)',
@@ -104,11 +122,7 @@ export const items = [
     tags: [HYETTA_QUESTLINE]
   },
   // CAELID EARLY
-  {
-    id: '1a279fba-f36b-4524-98f9-b4957e7bbbaa',
-    description: 'Dectus Medallion (Right) from Fort Faroth in Dragonbarrow (Caelid). Easiest way to reach there is from waygate portal behind Third Church of Marika and going south from Bestial Sanctum, or you can just ride all the way there from Limgrave',
-    tags: [NGPLUS]
-  },
+
   {
     id: '3ebfbeb9-f5f8-42fc-957b-2a83ecf15d88',
     description: 'Get 50,000 runes from killing the sleeping dragon Greyoll in Dragonbarrow with bleed (Reduvia, Uchigatana or Bloody slash ash of war)',
@@ -123,7 +137,7 @@ export const items = [
   // STORMVEIL CASTLE L30-40 +3-4
   {
     id: '7aba047b-6da2-46ab-9f3a-0c5acf36e752',
-    description: 'Beat Magrit',
+    description: 'Defeat Magrit',
     tags: [NGPLUS]
   },
   {
@@ -138,7 +152,7 @@ export const items = [
   },
   {
     id: 'b9690395-5806-49d1-85fb-89411478266b',
-    description: 'Beat Godrick in Stormhill Castle',
+    description: 'Beat Godrick in Stormhill Castle (or alternatively beat any one of the other Shardbearers: Radahn, Rykard, or Rennala)',
     tags: [NGPLUS]
   },
   {
@@ -305,8 +319,8 @@ export const items = [
   },
   {
     id: 'd7a3f9a6-f5d8-4c2e-85fc-102a3bdeb792',
-    description: "Beat Rennala (or if you beat Radahn or Rykard you don't need to beat Rennala)",
-    tags: [NGPLUS]
+    description: "Beat Rennala. Or, just for game progression (excluding quests), beat any one of the other remaining Shardbearers that you didn't defeat yet: Godrick, Radahn, or Rykard.",
+    tags: [NGPLUS, 'sellen-questline']
   },
   // LIURNIA EAST 50-60 +4-6
   {
@@ -319,7 +333,7 @@ export const items = [
   {
     id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
     description: 'Beat Loretta in Caria Manor',
-    tags: [RANNI_QUESTLINE]
+    tags: [RANNI_QUESTLINE, 'sellen-questline']
   },
   {
     id: '983e4f51-15f7-4b5a-a927-5eee5c12f5c1',
@@ -355,8 +369,25 @@ export const items = [
   // ACCESS ALTUS
   {
     id: '124edfc5-0bb8-49fd-b3ba-030bd037a279',
-    description: 'Reach Altus Plateau in one of 3 ways: A) From the Main Academy Gate site of grace, cross the sealed gate to reach the other side of the bridge, then head straight to the Grand Lift of Dectus and use the Dectus Medallion to reach Altus Plateau, B) Through the Ruin-Strewn Precipice, accessible going north past the Bellum church, north of the path toward the Dectus Lift, C) By letting the Abductor Virgin at the bottom of Raya Lucaria telport you to Volcano Manor',
-    tags: [NGPLUS]
+    description: 'Reach Altus Plateau in one of 3 ways',
+    tags: [NGPLUS],
+    items: [
+      {
+        id: 'ac864e1c-4124-4e90-aec9-16934b811d37',
+        description: 'A) With the Dectus Lift. From the Main Academy Gate site of grace, cross the sealed gate to reach the other side of the bridge, then head straight to the Grand Lift of Dectus and use the Dectus Medallion to reach Altus Plateau',
+        tags: [NGPLUS]
+      },
+      {
+        id: 'feed873b-be6b-4af0-a653-cc0947166ac4',
+        description: 'B) Through the Ruin-Strewn Precipice after defeating Magma Wyrm Makar. Accessible going north past the Bellum church, north of the path toward the Dectus Lift from the Main Academy Gate site of grace',
+        tags: [NGPLUS],
+      },
+      {
+        id: '360f46c8-e567-4d99-8ad6-98ae74f27032',
+        description: 'C) By letting the Abductor Virgin at the bottom of Raya Lucaria telport you to Volcano Manor (let her do the grab attack when you have HP low enough for it to kill you) and defeating the Abductor Virgins boss',
+        tags: [NGPLUS]
+      }
+    ]
   },
   {
     id: 'bd19aee2-3a7b-419e-9950-c5d2462483d8',
@@ -434,7 +465,7 @@ export const items = [
   {
     id: '7d2912a9-f6d1-45a1-bdb6-36ba9a63f0c6',
     description: 'Radahn Festival should be active now, and you can beat Radahn',
-    tags: [OPTIONAL, RANNI_QUESTLINE, ALEXANDER_QUESTLINE, NGPLUS, ALL_REMEMBERANCES]
+    tags: [OPTIONAL, RANNI_QUESTLINE, ALEXANDER_QUESTLINE, NGPLUS, ALL_REMEMBERANCES, 'sellen-questline']
   },
   {
     id: '214e0b27-c6c2-41a8-8acf-cba7f5ab0b6b',
@@ -490,6 +521,76 @@ export const items = [
     id: 'b9da8bb8-6125-41bc-bb4c-6143ffdd2a59',
     description: 'Talk to Alexander near the Seethewater Terminus Site of Grace at a lava lake behind a Magma Wyrm, south of Fort Laiedd in Mt. Gelmir. To reach Seethewater Terminus Grace, head north through the ravine west of Wyndham Ruins',
     tags: [ALEXANDER_QUESTLINE]
+  },
+  {
+    id: 'de07597b-b541-4932-8378-226d7fa57d58',
+    description: "Get the Comet Azur spell at the Primeval Sorcerer Azur grace. Reachable from Altus Plateau: start at Altus Plateau or Erdtree-Gazing Hill grace, go north through Wyndham Ruins and find Seethewater River grace. From that grace it's a long straight path around Mt. Gelmir. At the very end you will find Primeval Sorcerer Azur",
+    tags: ['sellen-questline']
+  },
+  {
+    id: '5ff38f33-2edd-43d5-bf3c-db0bbf61215d',
+    description: 'Talk to Sellen at the Waypoint Ruins Cellar grace and select the "Let us journey together" dialogue option. You will receive the Sellian Sealbreaker key.',
+    tags: ['sellen-questline']
+  },
+  {
+    id: 'cb018c4a-8717-4bf2-908a-f6ef4067dca0',
+    description: "Find Lusat in the Sellia Hideaway and get the Stars of Ruin spell. He is behind a secret cave behind an illusory wall. To reach the entrance, start at the Church of the Plague site of grace and head north up the hill and straight under the wooden arch. Look to the North-East for a small graveyard with a single sorcerer enemy wielding a staff and a club. Behind the main headstone, along the cliffside, there's a secret door you can reveal by rolling or attacking it",
+    tags: ['sellen-questline']
+  },
+  {
+    id: 'f1ab993b-65d3-41f1-bc29-df9dfc65d386',
+    description: "Talk to Sellen at the Waypoint Ruins Cellar grace about her request and about Lusat's location.",
+    tags: ['sellen-questline']
+  },
+  {
+    id: 'b25f8720-6454-443f-b5bf-57fa6c3c68fb',
+    description: "Talk to Sellen in the Witchbane Ruins where she is shackled. You will receive Sellen's Primal Glintstone. Witchbane Ruins are located directly south of the Fourth Church of Marika, in the west region of Weeping Peninsula",
+    tags: ['sellen-questline']
+  },
+  {
+    id: '59161dac-f393-45ba-be0d-386df975a173',
+    description: 'Talk to Witch-Hunter Jerren in the chapel near the Chamber Outside the Plaza grace. If you rest at a grace, Redmane Castle will reset to its version filled with enemies',
+    tags: ['sellen-questline']
+  },
+  {
+    id: 'c213d7dd-1685-4687-8be3-fb75848a7e15',
+    description: "Talk to Witch-Hunter Jerren at the Witchbane Ruins where Sellen's dead body is shackled.",
+    tags: ['sellen-questline']
+  },
+  {
+    id: 'cdbdb960-3205-413b-ba73-cc24df0f6a16',
+    description: "Find Seluvis's Secret Puppet Room in the Three Sister, in an illusory floor in between Ranni's Rise and Renna's Rise, and transplant Sellen's primal glintstone in Sellen's puppet. Sellen's puppet is behind an illusory wall next to a glowing message",
+    tags: ['sellen-questline']
+  },
+  {
+    id: 'ec182c35-b4ed-4b61-b788-c107b42b1296',
+    description: 'Assuming you have defeated Rennala, assist or challenge Sellen near the Raya Lucaria Grand Library grace. Depending on what you choose you will get different rewards',
+    tags: ['sellen-questline']
+  },
+  {
+    id: '8b9d2c89-e48e-45a5-98c1-b43aee1e8526',
+    description: 'If you assisted Sellen, you are rewarded with the Eccentric Set',
+    tags: ['sellen-questline']
+  },
+  {
+    id: '6cb8e868-f22b-40a6-872c-b20b1fd47912',
+    description: 'If you assisted Sellen, you can get Master Azur and Master Lusat armor sets from their respective locations',
+    tags: ['sellen-questline']
+  },
+  {
+    id: '8e6b59eb-087a-4b71-92ca-e31e17d60b48',
+    description: 'If you assisted Sellen, you can speak to her to get the Glintstone Kris and buy Shard Spiral. She might have become a School of Graven Mages, depending on questline progression',
+    tags: ['sellen-questline']
+  },
+  {
+    id: '98b5448e-d133-4a15-9c13-fa421b8b32a2',
+    description: "If you challenged Sellen, you get the Witch's Glintstone Crown and Sellen's Bell Bearing",
+    tags: ['sellen-questline']
+  },
+  {
+    id: 'a95ac16f-4011-4dda-bbac-1edea22c64dd',
+    description: 'If you challenged Sellen, you can speak to Jerren just outside the entrance to the Grand Library to get an Ancient Dragon Smithing Stone. If then you kill him, you can get the Eccentric Set',
+    tags: ['sellen-questline']
   },
   {
     id: '35ea6a80-fe78-419d-b817-002882705950',

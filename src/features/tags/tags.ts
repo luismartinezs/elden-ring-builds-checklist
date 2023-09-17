@@ -109,4 +109,10 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-pink-600 text-pink-600 hover:bg-pink-600 hover:text-black focus:ring-pink-600',
     tagClasses: 'bg-pink-600 text-black',
   },
+  [TAGS.SELLEN_QUESTLINE]: {
+    label: 'Sellen',
+    key: TAGS.SELLEN_QUESTLINE,
+    buttonClasses: 'border-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:text-black focus:ring-cyan-500',
+    tagClasses: 'bg-cyan-500 text-black',
+  },
 }

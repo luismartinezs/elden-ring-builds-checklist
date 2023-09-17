@@ -81,6 +81,7 @@ function useShowChecklistItem(
     TAGS.MILLICENT_QUESTLINE
   );
   const { filter: filterHyettaQuestline } = useFilter(TAGS.HYETTA_QUESTLINE);
+  const { filter: filterSellenQuestline } = useFilter(TAGS.SELLEN_QUESTLINE);
   const { filter: filterDungEaterQuestline } = useFilter(
     TAGS.DUNG_EATER_QUESTILINE
   );
@@ -168,6 +169,10 @@ function useShowChecklistItem(
         tag: TAGS.DUNG_EATER_QUESTILINE,
         filter: filterDungEaterQuestline,
       },
+      {
+        tag: TAGS.SELLEN_QUESTLINE,
+        filter: filterSellenQuestline,
+      },
     ];
     const shouldHide =
       _tags.length > 0
@@ -201,6 +206,7 @@ function useShowChecklistItem(
     filterAllRememberances,
     filterHyettaQuestline,
     filterDungEaterQuestline,
+    filterSellenQuestline,
   ]);
 
   return show;

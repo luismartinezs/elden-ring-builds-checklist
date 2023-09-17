@@ -17,6 +17,7 @@ export const TAGS = {
   ALL_REMEMBERANCES: 'all-remembrances',
   HYETTA_QUESTLINE: 'hyetta-questline',
   DUNG_EATER_QUESTILINE: 'dung-eater-questline',
+  SELLEN_QUESTLINE: 'sellen-questline',
 } as const;
 
 export const EXTRA_TAGS = {

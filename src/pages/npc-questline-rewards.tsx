@@ -6,6 +6,7 @@ import { Heading } from "~/components/Heading";
 import { FilterButton } from "~/components/FilterButton";
 import { Paragraph } from "~/components/Paragraph";
 import Link from "next/link";
+import { useIsClient } from "usehooks-ts";
 
 function Reward({ reward }: { reward: string }) {
   return <span>{reward}</span>;
@@ -20,13 +21,17 @@ function QuestlineItem({
   label: string;
   questlineRewards: string[];
 }) {
+  const isClient = useIsClient();
+
   if (!questlineRewards?.length) {
     return null;
   }
   return (
     <div className="flex flex-col items-start gap-2 md:flex-row md:gap-4">
       <div className="flex items-start gap-2">
-        <FilterButton filterTag={filterTag} label={label} hideLabel />
+        {isClient && (
+          <FilterButton filterTag={filterTag} label={label} hideLabel />
+        )}
         <h2 className="mb-2 text-xl">{label}</h2>
       </div>
       <div className="flex flex-wrap gap-x-2 whitespace-nowrap">

@@ -1243,42 +1243,42 @@ export const items = [
     items: [
       {
         id: '6081caa3-6d2b-4b95-b20c-88daae796559',
-        description: "Received from completing Latenna's quest line upon delivering her to Apostate Derelict",
+        description: "Consecrated Snowfield: Received from completing Latenna's questline upon delivering her to Apostate Derelict",
         tags: [OPTIONAL, NGPLUS]
       },
       {
         id: '7a41fc78-27bb-4474-b3f3-755ab0dd38d2',
-        description: 'Dropped by Anastasia, Tarnished-Eater after her third invasion, on the frozen river southwest of Ordina, Liturgical Town',
+        description: 'Consecrated Snowfield: Dropped by Anastasia, Tarnished-Eater after her third invasion, on the frozen river southwest of Ordina, Liturgical Town',
         tags: [OPTIONAL, NGPLUS]
       },
       {
         id: '082303ca-0c35-430a-ba02-87bfd6c6b772',
-        description: 'Found in a chest at the feet of the massive statue by the Dynasty Mausoleum Midpoint (Mohgwyn Palace)',
+        description: 'Mohgwyn Palace: Found in a chest at the feet of the massive statue by the Dynasty Mausoleum Midpoint',
         tags: [OPTIONAL, NGPLUS]
       },
       {
         id: 'f8eec561-b286-4873-94dc-2cd6f42efc49',
-        description: 'Found in a chest hidden between columns near a roof with a corpse carrying an item, after the Prayer Room site of grace in the Haligtree. To reach it, go to the end of the first walkway and jump down to the gazebo with the red scarab, then run up the diagonal support on the other side.  The chest is in a small room',
+        description: 'Elphael, Brace of the Haligtree: Found in a chest hidden between columns near a roof with a corpse carrying an item, after the Prayer Room site of grace in the Haligtree. To reach it, go to the end of the first walkway and jump down to the gazebo with the red scarab, then run up the diagonal support on the other side.  The chest is in a small room',
         tags: [OPTIONAL, NGPLUS]
       },
       {
         id: 'f2a0d3a8-7d42-49e3-9953-c2abc01f5ad5',
-        description: 'Found on a corpse in the southern end of the ring walkway in the east, near the patrolling Putrid Avatar. To reach this walkway, head out of the Prayer Room site of grace and jump onto the second concrete beam connecting to a tower. Jump from the tower down to the Putrid Avatar and proceed south to the end of the walkway',
+        description: 'Elphael, Brace of the Haligtree: Found on a corpse in the southern end of the ring walkway in the east, near the patrolling Putrid Avatar. To reach this walkway, head out of the Prayer Room site of grace and jump onto the second concrete beam connecting to a tower. Jump from the tower down to the Putrid Avatar and proceed south to the end of the walkway',
         tags: [OPTIONAL, NGPLUS]
       },
       {
         id: 'af05491b-d9d0-4fcc-a72b-b34b054e8f47',
-        description: "After completing the Millicent questline and defeating Malenia, it can be obtained by inserting the gold needle into Malenia's scarlet flower to receive Miquella's Needle",
+        description: "After completing the Millicent questline and defeating Malenia, it can be obtained by inserting the gold needle into Malenia's scarlet flower that appears in Malenia's boss room",
         tags: [OPTIONAL, NGPLUS]
       },
       {
         id: 'e1dee2c7-6ae2-4d67-897a-fc48a0a57d9d',
-        description: "From the main Leyndell, Ashen Capital site of grace, go west, along and up the dragon. Enter the building past it (the same one that you needed to enter to get up to the Erdtree before it was burnt) and climb the ladder. Over the railing to the right is a gargoyle next to a corpse with the stone. (Note: This will only be available once you've progressed far enough that the city is filled with ash)",
+        description: "From the main Leyndell, Ashen Capital site of grace (reachable after defeating Maliketh), go west, along and up the dragon. Enter the building past it (the same one that you needed to enter to get up to the Erdtree before it was burnt) and climb the ladder. Over the railing to the right is a gargoyle next to a corpse with the stone. (Note: This will only be available once you've progressed far enough that the city is filled with ash)",
         tags: [OPTIONAL, NGPLUS]
       },
       {
         id: '01a2faf5-a555-4d89-8ddb-cb4e89463367',
-        description: 'Found in a gazebo behind the stationary Farum Azula Dragon sitting at the back of the plaza southeast of the Dragon Temple Rooftop site of grace',
+        description: 'Farum Azula: Found in a gazebo behind the stationary dragon sitting at the back of the plaza southeast of the Dragon Temple Rooftop site of grace',
         tags: [OPTIONAL, NGPLUS]
       }
     ]
@@ -1322,17 +1322,17 @@ export const items = [
     items: [
       {
         id: 'fc400bd0-00f0-4e1b-873e-eac45d4528b2',
-        description: 'Can be obtained from a chest in a room underneath the massive skeleton and throne at Ainsel River, near the Dragonkin Soldier of Nokstella site of grace',
+        description: 'Can be obtained from a chest in a room underneath the massive skeleton and throne at Ainsel River, near the Dragonkin Soldier of Nokstella site of grace. This area is reachable by taking the lift down, located north of the Divine Tower of Liurnia',
         tags: [OPTIONAL, NGPLUS]
       },
       {
         id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
-        description: "Found in a chest under the massive skeleton statue in Night's Sacred Ground, after reaching the bottom level of Nokron. You receive this alongside the Fingerslayer Blade",
+        description: "Found in a chest under the massive skeleton statue in Night's Sacred Ground, Nokron, after reaching the bottom level of Nokron. You receive this alongside the Fingerslayer Blade. To reach this area you need to defeat Radahn and then go through the crater in Limgrave.",
         tags: [OPTIONAL, NGPLUS]
       },
       {
         id: '91ac06fa-115b-4b67-8084-6e00efaa3dc7',
-        description: 'Found in a chest at the back of a narrow room in Nokstella, Eternal City. Starting from Nokstella, Eternal City grace, progress up the stairs to teh city, and get inside the building after the first bridge. Beware the Silver Tear disguised as a large iron ball hanging off of the ceiling waiting to ambush you',
+        description: 'Found in a chest at the back of a narrow room in Nokstella, Eternal City. Starting from Nokstella, Eternal City grace, progress up the stairs to the city, and get inside the building after the first bridge. Beware the Silver Tear disguised as a large iron ball hanging off of the ceiling waiting to ambush you. To reach this area you need to progress Ranni\'s questline until after giving her the Fingerslayer Blade and then use the waygate in Renna\'s Rise',
         tags: [OPTIONAL, NGPLUS]
       },
       {

@@ -59,11 +59,10 @@ function Settings() {
       </div>
       <Divider />
       {isClient && (
-        <div className="my-4 self-end">
-          {/* <p className="text-sm">
-            Caution: If you &ldquo;uncheck everything&ldquo;, everything that
-            you have checked will be reset.
-          </p> */}
+        <div className="my-4 flex flex-col items-end gap-3 self-end">
+          <p className="text-sm text-stone-300">
+            Caution: All items from the current checklist will be reset
+          </p>
           <Button
             onClick={() => setItems([])}
             variant="outline"

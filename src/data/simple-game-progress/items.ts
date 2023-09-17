@@ -932,6 +932,22 @@ export const items = [
     description: 'Beat Fire Giant',
     tags: [NGPLUS]
   },
+  // BEFORE BURNING ERDTREE
+  {
+    id: 'cf171be4-c5f4-4149-b71f-a4c6c6d9efef',
+    description: 'Defeat Mohg, the Omen down the Leyndell Sewers, then attack the alter behind the chest to reveal a secret area',
+    tags: [HYETTA_QUESTLINE]
+  },
+  {
+    id: 'd8938df1-e27e-4a6b-b342-18319ca5e7a0',
+    description: '<span>Reach all the way to the bottom of Leyndell Sewers by jumping down the platforms until reaching the Frenzied Flame Proscription grace, get naked and enter the door with the Three Fingers. This is the easiest way to parkour to the bottom: <a href="https://www.youtube.com/watch?v=3nH0aqlYX10" target="_blank">https://www.youtube.com/watch?v=3nH0aqlYX10</a></span>',
+    tags: [HYETTA_QUESTLINE]
+  },
+  {
+    id: '886ca92c-0bb6-44de-b7d2-49827c9fd4ac',
+    description: 'Talk to Hyetta at Frenzied Flame Proscription and get the Frenzied Flame Seal and five Frenzyflame Stones',
+    tags: [HYETTA_QUESTLINE]
+  },
   // BURN ERDTREE
   {
     id: 'a8262bb7-aa69-4e4c-b6ff-db98f03943ea',
@@ -1114,23 +1130,8 @@ export const items = [
   },
   {
     id: 'd08950f3-2199-484d-8272-a30804e38ee9',
-    description: 'Explore the Subterranean Shunning-grounds optional area under Leyndell',
+    description: 'Explore the Subterranean Shunning-grounds optional area under Leyndell, if you didn\'t do it yet',
     tags: [OPTIONAL, NGPLUS]
-  },
-  {
-    id: 'cf171be4-c5f4-4149-b71f-a4c6c6d9efef',
-    description: 'Defeat Mohg, the Omen down the Leyndell Sewers and attack the alter behind the chest to reveal a secret area',
-    tags: [HYETTA_QUESTLINE]
-  },
-  {
-    id: 'd8938df1-e27e-4a6b-b342-18319ca5e7a0',
-    description: 'Reach the bottom of Leyndell Sewers, get naked and enter the door with the Three Fingers',
-    tags: [HYETTA_QUESTLINE]
-  },
-  {
-    id: '886ca92c-0bb6-44de-b7d2-49827c9fd4ac',
-    description: 'Talk to Hyetta at Frenzied Flame Proscription and get the Frenzied Flame Seal and five Frenzyflame Stones',
-    tags: [HYETTA_QUESTLINE]
   },
   // LEYNDELL, CAPITAL OF ASH 120-180 +25
   {

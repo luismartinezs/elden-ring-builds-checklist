@@ -19,9 +19,9 @@ export function Button(props: ButtonProps) {
     {
       "bg-amber-500 text-black hover:bg-amber-600 focus:ring-amber-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-stone-500 disabled:text-black":
         variant === "primary",
-      "bg-transparent text-amber-500 border sm:border-2 border-amber-500 hover:bg-amber-500 hover:text-black focus:ring-offset-1 sm:focus:ring-offset-2 focus:ring-amber-500 focus:ring-1 sm:focus:ring-2 focus:ring-offset-stone-900":
+      "text-amber-500 border sm:border-2 border-amber-500 hover:bg-amber-500 hover:text-black focus:ring-offset-1 sm:focus:ring-offset-2 focus:ring-amber-500 focus:ring-1 sm:focus:ring-2 focus:ring-offset-stone-900":
         variant === "outline",
-      "bg-transparent text-red-500 border sm:border-2 border-red-500 hover:bg-red-500 hover:text-black focus:ring-offset-1 sm:focus:ring-offset-2 focus:ring-red-500 focus:ring-1 sm:focus:ring-2 focus:ring-offset-stone-900":
+      "text-red-500 border sm:border-2 border-red-500 hover:bg-red-500 hover:text-black focus:ring-offset-1 sm:focus:ring-offset-2 focus:ring-red-500 focus:ring-1 sm:focus:ring-2 focus:ring-offset-stone-900":
         variant === "danger",
     },
     disabled && "opacity-50 cursor-not-allowed"

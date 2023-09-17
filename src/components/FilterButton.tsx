@@ -13,6 +13,7 @@ export function FilterButton(
 ) {
   const { filterTag, label, className, hideLabel } = props;
   const { filter, setFilter } = useFilter(filterTag);
+  const filterClasses = filter ? "bg-stone-700" : "bg-black";
 
   if (filterTag in tags) {
     const { buttonClasses, label: tagLabel } = tags[filterTag as TTagKeys];
@@ -21,7 +22,11 @@ export function FilterButton(
       <Button
         variant="outline"
         onClick={() => setFilter(!filter)}
-        className={classnames("flex items-center gap-1", buttonClasses)}
+        className={classnames(
+          "flex items-center gap-1",
+          buttonClasses,
+          filterClasses
+        )}
       >
         {filter ? <AiFillEyeInvisible size={20} /> : <AiFillEye size={20} />}
         {hideLabel ?? tagLabel}
@@ -33,7 +38,11 @@ export function FilterButton(
     <Button
       variant="outline"
       onClick={() => setFilter(!filter)}
-      className={classnames("flex items-center gap-1", className)}
+      className={classnames(
+        "flex items-center gap-1",
+        className,
+        filterClasses
+      )}
     >
       {filter ? <AiFillEyeInvisible size={20} /> : <AiFillEye size={20} />}
       {hideLabel ?? label}

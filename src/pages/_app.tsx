@@ -21,6 +21,41 @@ const MyApp: AppType<{ session: Session | null }> = ({
       <SessionProvider session={session}>
         <Head>
           <link rel="icon" href="/elden-ring.png" />
+          {/* HTML Meta Tags */}
+          <title>Elden Ring Checklist</title>
+          <meta
+            name="description"
+            content="Elden Ring Checklist for NG and NG+"
+          />
+          {/* Facebook Meta Tags */}
+          <meta
+            property="og:url"
+            content="https://eldenringbuilds.vercel.app"
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Elden Ring Checklist" />
+          <meta
+            property="og:description"
+            content="Elden Ring Checklist for NG and NG+"
+          />
+          <meta property="og:image" content="elden-ring.png" />
+          {/* Twitter Meta Tags */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            property="twitter:domain"
+            content="eldenringbuilds.vercel.app"
+          />
+          <meta
+            property="twitter:url"
+            content="https://eldenringbuilds.vercel.app"
+          />
+          <meta name="twitter:title" content="Elden Ring Checklist" />
+          <meta
+            name="twitter:description"
+            content="Elden Ring Checklist for NG and NG+"
+          />
+          <meta name="twitter:image" content="elden-ring.png" />
+          {/* Meta Tags Generated via https://www.opengraph.xyz */}
         </Head>
         <Component {...pageProps} />
       </SessionProvider>

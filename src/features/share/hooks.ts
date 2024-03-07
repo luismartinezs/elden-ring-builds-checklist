@@ -11,7 +11,7 @@ export function useShareModal() {
 
     const daysSinceLastPrompt = lastPrompt ? (new Date().getTime() - new Date(lastPrompt).getTime()) / (1000 * 3600 * 24) : Infinity;
 
-    if (daysSinceLastPrompt >= 5) {
+    if (daysSinceLastPrompt >= 30) {
       setShowModal(true);
     }
   }, []);

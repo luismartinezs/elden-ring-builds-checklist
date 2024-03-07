@@ -5,7 +5,7 @@ const { OPTIONAL } = TAGS
 const list = {
   id: "f367901a-99ef-4615-8257-9488a53a1e6a",
   slug: "ranni",
-  title: "Ranni",
+  title: "Ranni Build",
   notes: [
     `Build based on <a href='https://www.reddit.com/r/EldenRingBuilds/comments/12ntwuf/simp_for_me_ranni_elden_ring_build/' target='_blank'>Simp For Me, Ranni - Elden Ring Build</a> and <a href='https://www.youtube.com/watch?v=0a1T_-LZjEo' target='_blank'>Elden Ring Ranni Build Guide</a>`,
     `You might want to use the New Game Progress checklist as a companion to this one, and activate the questlines for Ranni, Seluvis, Alexander and Sellen`,

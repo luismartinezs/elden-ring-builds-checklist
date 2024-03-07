@@ -219,7 +219,7 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
   const show = useShowChecklistItem(item, isChecked);
   const { getCurrentFilters } = useManageFilters();
   const hiddenFilterKeys = Object.entries(getCurrentFilters())
-    .filter(([key, val]) => val)
+    .filter(([_, val]) => val)
     .map(([key]) => key);
 
   function onCheckboxChange(event: React.ChangeEvent<HTMLInputElement>) {

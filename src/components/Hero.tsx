@@ -12,11 +12,12 @@ const Hero = () => {
           fill
           alt="Ranni the Witch"
           className="object-cover"
+          loading="lazy"
         />
         <div className="absolute inset-0 object-cover bg-stone-900 opacity-10"></div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-center justify-center text-center">
-        <p className="text-xl text-gray-200">Don't simp for Ranni, be Ranni</p>
+        <p className="text-xl text-gray-200">Don&apos;t simp for Ranni, be Ranni</p>
         <Heading.H2 className="mt-4">Ranni Build</Heading.H2>
         <Link
           href="/checklists/ranni"

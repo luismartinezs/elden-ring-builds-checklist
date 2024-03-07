@@ -5,6 +5,7 @@ import { EXTRA_TAGS, TAGS, Tag } from "~/features/tags";
 import Toggler from "~/features/checklist/components/Toggler";
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
 import { useFilter } from "~/hooks/useFilter";
+import { useManageFilters } from "../hooks/useManageFilters";
 
 const ChecklistLabel = ({
   description,
@@ -216,6 +217,10 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const { isChecked, checkItem, checkItems } = useCheckItem();
   const show = useShowChecklistItem(item, isChecked);
+  const { getCurrentFilters } = useManageFilters();
+  const hiddenFilterKeys = Object.entries(getCurrentFilters())
+    .filter(([key, val]) => val)
+    .map(([key]) => key);
 
   function onCheckboxChange(event: React.ChangeEvent<HTMLInputElement>) {
     if (hasNestedItems(item)) {
@@ -228,6 +233,14 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
   if (!show) {
     return null;
   }
+
+  const visibleTags =
+    item.tags?.filter(
+      (tag) =>
+        ![EXTRA_TAGS.NGPLUS, TAGS.ALWAYS_SHOW, ...hiddenFilterKeys].includes(
+          tag
+        )
+    ) ?? [];
 
   return (
     <li>
@@ -242,7 +255,7 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
           onChange={onCheckboxChange}
           label={item.description + " " + item?.tags?.join(", ")}
         />
-        <ChecklistLabel description={item.description} tags={item.tags} />
+        <ChecklistLabel description={item.description} tags={visibleTags} />
         {item.items && (
           <Toggler
             onClick={(evt) => {

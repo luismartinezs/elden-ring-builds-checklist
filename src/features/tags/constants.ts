@@ -1,5 +1,6 @@
 // src/constants/tags.ts
 export const TAGS = {
+  ALWAYS_SHOW: 'always-show',
   OPTIONAL: 'OPTIONAL',
   VOLCANO_MANOR_ASSASSINATION: 'volcano-manor-assassination',
   RANNI_QUESTLINE: 'ranni-questline',

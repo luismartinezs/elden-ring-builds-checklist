@@ -30,8 +30,6 @@ export function useMigrateLegacyData() {
       legacyKeys.forEach((key) => {
         const value = localStorage.getItem(key);
 
-        console.log(key, typeof value);
-
         if (key.startsWith("filter-")) {
           defaultProfile.filters[key.replace("filter-", "")] = value === "true";
         } else {

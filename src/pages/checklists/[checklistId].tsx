@@ -14,7 +14,6 @@ export const getStaticPaths: GetStaticPaths = () => {
 };
 
 export const getStaticProps: GetStaticProps = ({ params }) => {
-  console.log(params);
   if (!params?.checklistId) {
     return { props: { checklist: null } };
   }

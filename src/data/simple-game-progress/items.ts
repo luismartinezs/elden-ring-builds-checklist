@@ -439,7 +439,7 @@ export const items = [
   },
   {
     id: 'be885107-017a-44a5-a6c0-3c911e0c15de',
-    description: "Defeat Commander O'Neil, located in the Swamp of Aeonia (central Caelid). He will drop the Unalloyed Gold Needle. You can cheese O'Neil by sneaking behind him and repeatedly casting Posion Mist",
+    description: "Defeat Commander O'Neil, located in the Swamp of Aeonia (central Caelid). He will drop the Unalloyed Gold Needle. You can cheese O'Neil by sneaking behind him and repeatedly casting Posion Mist (FAI 12)",
     tags: [MILLICENT_QUESTLINE]
   },
   {
@@ -474,7 +474,7 @@ export const items = [
   },
   {
     id: '710569d9-691d-4a88-8e02-63fc3c559370',
-    description: "Follow the path south from the Artist's Shack Site of Grace. Alexander will call out for help. Use an Oil Pot or Roped Oil Pot to free him (this step can be skipped by going to Mt. Gelmir after the Radahn festival)",
+    description: "Follow the path south from the Artist's Shack Site of Grace (east Liurnia, west of the Divine Tower). Alexander will call out for help. Use an Oil Pot or Roped Oil Pot to free him (this step can be skipped by going to Mt. Gelmir after the Radahn festival)",
     tags: [ALEXANDER_QUESTLINE]
   },
   {

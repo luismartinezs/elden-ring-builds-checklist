@@ -5,6 +5,7 @@ import { lists } from "~/data";
 import Head from "next/head";
 import { Heading } from "~/components/Heading";
 import { Paragraph } from "~/components/Paragraph";
+import Hero from "~/components/Hero";
 
 export const getStaticProps: GetStaticProps = () => {
   return {
@@ -30,6 +31,8 @@ export default function ChecklistsPage({
         Checklists for character builds for Elden Ring, so you don&apos;t have
         to look at a guide for every step
       </Paragraph>
+      <Hero />
+      <Heading.H2>Checklists</Heading.H2>
       <ul className="mt-4 flex flex-col gap-2 text-2xl">
         {Object.values(checklists).map(({ slug, title }) => (
           <li key={slug}>

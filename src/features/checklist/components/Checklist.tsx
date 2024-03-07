@@ -237,7 +237,7 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
   const visibleTags =
     item.tags?.filter(
       (tag) =>
-        ![EXTRA_TAGS.NGPLUS, TAGS.ALWAYS_SHOW, ...hiddenFilterKeys].includes(
+        ![EXTRA_TAGS.NGPLUS, EXTRA_TAGS.ALWAYS_SHOW, ...hiddenFilterKeys].includes(
           tag
         )
     ) ?? [];

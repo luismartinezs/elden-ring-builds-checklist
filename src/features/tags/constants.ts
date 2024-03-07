@@ -1,6 +1,5 @@
 // src/constants/tags.ts
 export const TAGS = {
-  ALWAYS_SHOW: 'always-show',
   OPTIONAL: 'OPTIONAL',
   VOLCANO_MANOR_ASSASSINATION: 'volcano-manor-assassination',
   RANNI_QUESTLINE: 'ranni-questline',
@@ -22,5 +21,6 @@ export const TAGS = {
 } as const;
 
 export const EXTRA_TAGS = {
-  NGPLUS: 'ng+'
+  NGPLUS: 'ng+',
+  ALWAYS_SHOW: 'always-show', // I suspect this tag and NGPLUS might be doing the same thing
 }

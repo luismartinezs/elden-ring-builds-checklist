@@ -2,7 +2,7 @@ import classNames from "classnames";
 import { forwardRef } from "react";
 
 export type ButtonProps = React.ComponentPropsWithoutRef<"button"> & {
-  variant?: "primary" | "outline" | "danger" | "magic" | "muted";
+  variant?: "primary" | "outline" | "danger" | "magic" | "muted" | "ranni";
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -30,6 +30,9 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           variant === "magic",
         // variant muted (no border, no bg, no hover effect)
         "text-white": variant === "muted",
+        // ranni
+        "bg-gradient-to-r from-sky-500 to-blue-500 text-white hover:from-sky-600 hover:to-blue-600 focus:ring-offset-1 sm:focus:ring-offset-2 focus:ring-sky-500 focus:ring-1 sm:focus:ring-2 focus:ring-offset-stone-900 text-black":
+          variant === "ranni",
       },
       disabled && "opacity-50 cursor-not-allowed"
     );

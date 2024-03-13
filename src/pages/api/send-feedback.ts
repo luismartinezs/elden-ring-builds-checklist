@@ -1,11 +1,11 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+import type { NextApiRequest, NextApiResponse } from 'next';
 import { env } from '~/env.mjs';
 import nodemailer from 'nodemailer';
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
     // Destructure the message from the request body
-    const { message } = req.body;
+    const { message } = req.body as { message: string };
 
     // Replace these with your actual email service and credentials
     const transporter = nodemailer.createTransport({

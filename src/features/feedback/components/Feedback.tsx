@@ -2,11 +2,13 @@ import React, { useRef, useState } from "react";
 import { Modal } from "~/components/Modal";
 import { FaRegLightbulb } from "react-icons/fa";
 import { Button } from "~/components/Button";
+import Spinner from "~/components/Spinner";
 
 export const Feedback = () => {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
-  const textarea = useRef<HTMLTextAreaElement>(null)
+  const [loading, setLoading] = useState(false);
+  const textarea = useRef<HTMLTextAreaElement>(null);
 
   const validateMessage = (message: string): string | null => {
     if (message.trim().length < 10) {
@@ -25,6 +27,8 @@ export const Feedback = () => {
       return false;
     }
 
+    setLoading(true);
+
     const response = await fetch("/api/send-feedback", {
       method: "POST",
       headers: {
@@ -37,10 +41,12 @@ export const Feedback = () => {
       // Handle success
       console.log("Feedback sent successfully.");
       setMessage(""); // Reset message
+      setLoading(false);
       return true;
     } else {
       // Handle error
       console.error("Failed to send feedback.");
+      setLoading(false);
       return false;
     }
   };
@@ -69,14 +75,16 @@ export const Feedback = () => {
           variant="primary"
           type="button"
           ref={lastFocusableElementRef}
-          onClick={async () => {
-            const success = await handleSubmit();
-            if (success) {
-              closeModal();
-            }
+          onClick={() => {
+            void (async () => {
+              const success = await handleSubmit();
+              if (success) {
+                closeModal();
+              }
+            })();
           }}
         >
-          Submit
+          {loading ? <Spinner  /> : 'Submit'}
         </Button>
       )}
     >

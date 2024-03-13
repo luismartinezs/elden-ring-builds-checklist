@@ -12,7 +12,7 @@ export const Modal = ({
   renderToggleButton?: (props: { openModal: () => void }) => React.ReactNode;
   renderFooter?: (props: {
     closeModal: () => void;
-    lastFocusableElementRef: React.RefObject<any>;
+    lastFocusableElementRef: React.RefObject<HTMLButtonElement>;
   }) => React.ReactNode;
   header?: React.ReactNode;
   children: React.ReactNode;
@@ -49,7 +49,7 @@ export const Modal = ({
             <div className="relative rounded-lg bg-white shadow dark:bg-stone-700">
               {/* Modal header */}
               <div className="flex items-center justify-between rounded-t border-b p-4 dark:border-stone-600 md:py-4 md:px-6">
-                {header || <div></div>}
+                {header ?? <div></div>}
                 <Button
                   type="button"
                   className="m-0 !px-2"

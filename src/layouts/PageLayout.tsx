@@ -1,3 +1,5 @@
+import ClientOnly from "~/components/ClientOnly";
+import { Feedback } from "~/components/Feedback";
 import { Footer } from "~/components/Footer";
 import { Header } from "~/components/Header";
 import { ShareModal, useShareModal } from "~/features/share";
@@ -19,6 +21,9 @@ export function PageLayout({ children }: { children: React.ReactNode }) {
         onShare={() => handleShare()}
       />
       <Footer />
+      <ClientOnly>
+        <Feedback />
+      </ClientOnly>
     </div>
   );
 }

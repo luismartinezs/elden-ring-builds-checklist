@@ -6,6 +6,7 @@ import Toggler from "~/features/checklist/components/Toggler";
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
 import { useFilter } from "~/hooks/useFilter";
 import { useManageFilters } from "../hooks/useManageFilters";
+import ClientOnly from "~/components/ClientOnly";
 
 const ChecklistLabel = ({
   description,
@@ -237,9 +238,11 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
   const visibleTags =
     item.tags?.filter(
       (tag) =>
-        ![EXTRA_TAGS.NGPLUS, EXTRA_TAGS.ALWAYS_SHOW, ...hiddenFilterKeys].includes(
-          tag
-        )
+        ![
+          EXTRA_TAGS.NGPLUS,
+          EXTRA_TAGS.ALWAYS_SHOW,
+          ...hiddenFilterKeys,
+        ].includes(tag)
     ) ?? [];
 
   return (
@@ -255,7 +258,10 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
           onChange={onCheckboxChange}
           label={item.description + " " + item?.tags?.join(", ")}
         />
-        <ChecklistLabel description={item.description} tags={visibleTags} />
+        {/* prevent hydration error */}
+        <ClientOnly>
+          <ChecklistLabel description={item.description} tags={visibleTags} />
+        </ClientOnly>
         {item.items && (
           <Toggler
             onClick={(evt) => {

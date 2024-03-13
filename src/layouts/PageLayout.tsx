@@ -1,5 +1,5 @@
 import ClientOnly from "~/components/ClientOnly";
-import { Feedback } from "~/components/Feedback";
+import { Feedback } from "~/features/feedback";
 import { Footer } from "~/components/Footer";
 import { Header } from "~/components/Header";
 import { ShareModal, useShareModal } from "~/features/share";

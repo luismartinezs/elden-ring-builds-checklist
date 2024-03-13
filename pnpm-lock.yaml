@@ -29,6 +29,9 @@ dependencies:
   '@trpc/server':
     specifier: ^10.34.0
     version: 10.34.0
+  '@types/nodemailer':
+    specifier: ^6.4.14
+    version: 6.4.14
   '@vercel/analytics':
     specifier: ^1.0.2
     version: 1.0.2
@@ -46,7 +49,10 @@ dependencies:
     version: 13.4.2(react-dom@18.2.0)(react@18.2.0)
   next-auth:
     specifier: ^4.22.4
-    version: 4.22.4(next@13.4.2)(react-dom@18.2.0)(react@18.2.0)
+    version: 4.22.4(next@13.4.2)(nodemailer@6.9.12)(react-dom@18.2.0)(react@18.2.0)
+  nodemailer:
+    specifier: ^6.9.12
+    version: 6.9.12
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -238,7 +244,7 @@ packages:
       next-auth: ^4
     dependencies:
       '@prisma/client': 5.1.1(prisma@5.1.1)
-      next-auth: 4.22.4(next@13.4.2)(react-dom@18.2.0)(react@18.2.0)
+      next-auth: 4.22.4(next@13.4.2)(nodemailer@6.9.12)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /@next/env@13.4.2:
@@ -502,7 +508,12 @@ packages:
 
   /@types/node@18.16.0:
     resolution: {integrity: sha512-BsAaKhB+7X+H4GnSjGhJG9Qi8Tw+inU9nJDwmD5CgOmBLEI6ArdhikpLX7DjbjDRDTbqZzU2LSQNZg8WGPiSZQ==}
-    dev: true
+
+  /@types/nodemailer@6.4.14:
+    resolution: {integrity: sha512-fUWthHO9k9DSdPCSPRqcu6TWhYyxTBg382vlNIttSe9M7XfsT06y0f24KHXtbnijPGGRIcVvdKHTNikOI6qiHA==}
+    dependencies:
+      '@types/node': 18.16.0
+    dev: false
 
   /@types/prettier@2.7.2:
     resolution: {integrity: sha512-KufADq8uQqo1pYKVIYzfKbJfBAc0sOeXqGbFaSpv8MRmC/zXgowNZmFcbngndGk922QDmOASEXUZCaY48gs4cg==}
@@ -2199,7 +2210,7 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /next-auth@4.22.4(next@13.4.2)(react-dom@18.2.0)(react@18.2.0):
+  /next-auth@4.22.4(next@13.4.2)(nodemailer@6.9.12)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-VMI6pq3z4BfvFeCZHBkYtRYa0qqGTYAi2yy3hWCB78KkN1YsSAsOLSssd4oGrQBj0z/0zg2VLzn9tSJ14AtmWw==}
     peerDependencies:
       next: ^12.2.5 || ^13
@@ -2215,6 +2226,7 @@ packages:
       cookie: 0.5.0
       jose: 4.14.4
       next: 13.4.2(react-dom@18.2.0)(react@18.2.0)
+      nodemailer: 6.9.12
       oauth: 0.9.15
       openid-client: 5.4.3
       preact: 10.17.1
@@ -2272,6 +2284,11 @@ packages:
   /node-releases@2.0.13:
     resolution: {integrity: sha512-uYr7J37ae/ORWdZeQ1xxMJe3NtdmqMC/JZK+geofDrkLUApKRHPd18/TxtBOJ4A0/+uUIliorNrfYV6s1b02eQ==}
     dev: true
+
+  /nodemailer@6.9.12:
+    resolution: {integrity: sha512-pnLo7g37Br3jXbF0bl5DekBJihm2q+3bB3l2o/B060sWmb5l+VqeScAQCBqaQ+5ezRZFzW5SciZNGdRDEbq89w==}
+    engines: {node: '>=6.0.0'}
+    dev: false
 
   /normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}

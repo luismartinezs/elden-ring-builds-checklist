@@ -42,13 +42,13 @@ export const Modal = ({
           id="default-modal"
           tabIndex={-1}
           aria-hidden="true"
-          className="fixed left-0 right-0 top-0 z-50 h-[calc(100%-1rem)] max-h-full w-full items-center justify-center overflow-y-auto overflow-x-hidden md:inset-0"
+          className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden"
         >
           <div className="relative max-h-full w-full max-w-2xl p-4">
             {/* Modal content */}
             <div className="relative rounded-lg bg-white shadow dark:bg-stone-700">
               {/* Modal header */}
-              <div className="flex items-center justify-between rounded-t border-b p-4 dark:border-stone-600 md:p-5">
+              <div className="flex items-center justify-between rounded-t border-b p-4 dark:border-stone-600 md:py-4 md:px-6">
                 {header || <div></div>}
                 <Button
                   type="button"
@@ -61,9 +61,9 @@ export const Modal = ({
                 </Button>
               </div>
               {/* Modal body */}
-              <div className="space-y-4 p-4 md:p-5">{children}</div>
+              <div className="space-y-4 p-4 md:px-6 md:py-4">{children}</div>
               {/* Modal footer */}
-              <div className="flex items-center rounded-b border-t border-stone-200 p-4 dark:border-stone-600 md:p-5">
+              <div className="flex items-center rounded-b border-t border-stone-200 p-4 dark:border-stone-600 md:py-4 md:px-6">
                 {renderFooter ? (
                   renderFooter({
                     closeModal: () => setIsOpen(false),

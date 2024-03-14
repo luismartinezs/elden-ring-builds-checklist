@@ -14,7 +14,7 @@ const checklistItems = splitLines.map(([id, description, tagString]) => {
   //   description = description.replace('[OPTIONAL]', '').trim();
   // }
 
-  if (!description || !id || !tagString) {
+  if (!description || !id) {
     return null
   }
 

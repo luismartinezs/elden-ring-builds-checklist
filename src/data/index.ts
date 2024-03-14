@@ -2,6 +2,7 @@ import templar from './templar-lvl1-50'
 import simpleGameProgress from './simple-game-progress'
 import lightningLancer from './lightning-lancer-50-100'
 import ranni from './ranni'
+import afflictioner from './afflictioner'
 import newGamePlusProgress from './new-game-plus-progress'
 import beforeNgPlus from './before-ngplus'
 import { type TChecklist } from '~/features/checklist'
@@ -14,7 +15,8 @@ const lists: TChecklist[] = [
   beforeNgPlus,
   templar,
   lightningLancer,
-  ranni
+  ranni,
+  afflictioner
 ]
 
 export { lists }

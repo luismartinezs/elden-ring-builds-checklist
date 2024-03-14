@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import { useIsClient, useOnClickOutside } from "usehooks-ts";
 import classnames from "classnames";
 import { LuSettings2 } from "react-icons/lu";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiFillEye, AiFillEyeInvisible, AiOutlineClose } from "react-icons/ai";
 import { GoAlertFill } from "react-icons/go";
 
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
@@ -12,6 +12,7 @@ import { FilterButton } from "~/components/FilterButton";
 import { Divider } from "~/components/Divider";
 import { ProfileSelect } from "~/features/profile/components/ProfileSelect";
 import { TAGS } from "~/features/tags";
+import { useToggleFilters } from "~/hooks/useToggleFilters";
 
 function FilterButtons() {
   return (
@@ -43,6 +44,7 @@ function FilterButtons() {
 function Settings() {
   const isClient = useIsClient();
   const { items, setItems } = useCheckItem();
+  const { toggleFilters, allFiltersChecked } = useToggleFilters();
 
   return (
     <div className="flex h-full flex-col items-center justify-start px-3 sm:px-6">
@@ -57,6 +59,16 @@ function Settings() {
         <div className="my-4 flex flex-wrap items-center gap-2">
           {isClient && <FilterButtons />}
         </div>
+      </div>
+      <div className="my-4 flex flex-col items-end gap-3 self-end">
+        <Button
+          onClick={() => toggleFilters()}
+          variant="outline"
+          className="flex items-center gap-2 whitespace-nowrap"
+        >
+          {allFiltersChecked ? <AiFillEyeInvisible size={20} /> : <AiFillEye size={20} />}
+          Toggle all filters
+        </Button>
       </div>
       <Divider />
       {isClient && (

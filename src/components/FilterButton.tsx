@@ -3,6 +3,7 @@ import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { Button, type ButtonProps } from "~/components/Button";
 import { type TTagKeys, tags } from "~/features/tags";
 import { useFilter } from "~/hooks/useFilter";
+import { cn } from "~/utils/cn";
 
 export function FilterButton(
   props: ButtonProps & {
@@ -22,7 +23,7 @@ export function FilterButton(
       <Button
         variant="outline"
         onClick={() => setFilter(!filter)}
-        className={classnames(
+        className={cn(
           "flex items-center gap-1",
           buttonClasses,
           filterClasses
@@ -38,7 +39,7 @@ export function FilterButton(
     <Button
       variant="outline"
       onClick={() => setFilter(!filter)}
-      className={classnames(
+      className={cn(
         "flex items-center gap-1",
         className,
         filterClasses

@@ -615,7 +615,7 @@ export const items = [
   },
   {
     id: '35ea6a80-fe78-419d-b817-002882705950',
-    description: 'You can reach Mt. Gelmir and Volcano Manor by going north east from Altus Plateau site of grace until FOREST-SPANNING GREATBRIDGE grace, crossing the bridge with the magic portal, then heading south west through the only path available',
+    description: 'You can reach Mt. Gelmir and Volcano Manor by going north east from Altus Plateau site of grace until Forest-Spanning Greatbridge grace, crossing the bridge with the magic portal, then heading south west through the only path available',
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   {

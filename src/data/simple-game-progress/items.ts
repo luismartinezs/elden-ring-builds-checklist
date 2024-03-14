@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTILINE, SELLEN_QUESTLINE } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTILINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -121,6 +121,22 @@ export const items = [
     description: 'Go to where Irina was, next to Bridge of Sacrifice grace, and talk with Edgar.',
     tags: [HYETTA_QUESTLINE]
   },
+
+  {
+    id: '3f7cc832-d965-4dd2-91bc-8288e505c113',
+    description: 'Meet Patches at Murkwater Cave as a boss, and accept his surrender (in Limgrave. halfway through the Murkwater River)',
+    tags: [PATCHES_QUESTLINE]
+  },
+  {
+    id: 'a755ce58-3d0d-4866-823e-d764ab55d3ec',
+    description: 'Optionally, attack Patches 3 times, then allow him to reduce your HP to 1/4, then use the Grovel for Mercy gesture',
+    tags: [PATCHES_QUESTLINE]
+  },
+  {
+    id: '0b78d8fe-7e46-4505-8918-9313a3ad59cd',
+    description: "Talk to Patches, reload the game and talk to him again to enable his shop. Optionally buy Margit's Shackle",
+    tags: [PATCHES_QUESTLINE]
+  },
   // CAELID EARLY
 
   {
@@ -195,6 +211,11 @@ export const items = [
     id: '37e42814-4ccc-4113-9104-48f2c3d92be2',
     description: 'Get the South Raya Lucaria Gate site of grace in south side of Raya Lucaria',
     tags: [NGPLUS]
+  },
+  {
+    id: 'e5a95bc9-4780-48f0-93f0-aa8c5a626d7f',
+    description: 'Optionally, talk to Patches at Scenic Isle grace, north west of the Laskyar Ruins, in Liurnia',
+    tags: [PATCHES_QUESTLINE]
   },
   {
     id: '8bc9716d-bb20-4011-9778-29d0d30b5e67',
@@ -598,8 +619,13 @@ export const items = [
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   {
+    id: '39a80317-b0b4-4274-9690-2898095e16d3',
+    description: 'Optionally, find Patches close to the cliff west of the First Mt. Gelmir Campsite grace. There is a message on a nearby stone bridge. Follow the trail of glowing stones.',
+    tags: [PATCHES_QUESTLINE]
+  },
+  {
     id: '4eebbb14-632b-4c83-9251-65998c861e3f',
-    description: "Speak with Tanith in the manor's lobby and get the Drawing-Room Key",
+    description: "Speak with Tanith in the manor's lobby to join Volcano Manor and get the Drawing-Room Key",
     tags: [VOLCANO_MANOR_ASSASSINATION]
   },
   {
@@ -613,9 +639,14 @@ export const items = [
     tags: [VOLCANO_MANOR_ASSASSINATION]
   },
   {
+    id: '176d4a46-ea03-436a-9a57-54d6473396c9',
+    description: 'Talk to Patches in the entrance of Volcano Manor',
+    tags: [PATCHES_QUESTLINE]
+  },
+  {
     id: '2eef1716-8768-475d-ab54-e45eea352c8e',
     description: "Defeat Old Knight Istvan using the summon sign north from the Warmaster's Shack (Limgrave). There's a red sign on your map.",
-    tags: [VOLCANO_MANOR_ASSASSINATION]
+    tags: [VOLCANO_MANOR_ASSASSINATION, PATCHES_QUESTLINE]
   },
   {
     id: '778461c2-d725-4a4b-9598-cfd4406928fa',
@@ -623,19 +654,24 @@ export const items = [
     tags: [VOLCANO_MANOR_ASSASSINATION]
   },
   {
-    id: 'a10d43ab-da7b-4898-9b11-509d3fd02ea9',
-    description: "Speak with NPC Patches at the entrance of Volcano Manor (it's possible that you have to meet him first at Murkwater Cave for him to show up at Volcano Manor, the wiki is not clear about that)",
-    tags: [VOLCANO_MANOR_ASSASSINATION]
+    id: '0b51b4b9-6134-434a-8f85-3fbc1b583fb9',
+    description: "Receive Letter to Patches from Patches in Volcano Manor (if Patches is not in Volcano Manor, it's possible that you have to meet him first at Murkwater Cave for him to show up at Volcano Manor, the wiki is not clear about that) ",
+    tags: [PATCHES_QUESTLINE, VOLCANO_MANOR_ASSASSINATION]
   },
   {
     id: '77738365-a822-4500-85e2-14af16746280',
     description: "Invade and defeat Great Horned Tragoth at Ruin-Strewn Precipice Overlook inside Magma Wyrm Makar's boss room after resting at the grace inside the boss room",
-    tags: [VOLCANO_MANOR_ASSASSINATION]
+    tags: [VOLCANO_MANOR_ASSASSINATION, PATCHES_QUESTLINE]
   },
   {
     id: '3a21455b-efd1-4b48-8bc9-3c435ddd4dff',
     description: 'Collect the next Letter from the room nearby Tanith',
     tags: [VOLCANO_MANOR_ASSASSINATION]
+  },
+  {
+    id: '7fa43dbd-7a2b-4978-ac9c-15c9609cc128',
+    description: 'Talk to Patches in Volcano Manor, reload the game and talk to him again to get the Magma Whip Candlestick (must be done before defeating Rykard)',
+    tags: [PATCHES_QUESTLINE]
   },
   {
     id: '95d2715c-35c8-4468-b939-925ad6c8416b',
@@ -991,7 +1027,7 @@ export const items = [
   {
     id: '48a216e3-249c-4720-928a-e8faa7e34806',
     description: 'Defeat Rykard, Lord of Blasphemy',
-    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES, VOLCANO_MANOR_ASSASSINATION]
+    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES, VOLCANO_MANOR_ASSASSINATION, PATCHES_QUESTLINE]
   },
   {
     id: 'ce4f0777-e5a5-4b25-a260-49b06e941ee3',
@@ -1000,8 +1036,8 @@ export const items = [
   },
   {
     id: '20afac13-e621-42ec-87ca-34440757c768',
-    description: "(Optional) Progress Patches quest line and receive the Dancer's Castanets.",
-    tags: [VOLCANO_MANOR_ASSASSINATION]
+    description: "Talk to Patches in front of the boss room in Shaded Castle to get the Dancer's Castanets",
+    tags: [VOLCANO_MANOR_ASSASSINATION, PATCHES_QUESTLINE]
   },
   {
     id: '66cae8a8-8e92-49eb-b4a8-b07428eee16b',
@@ -1022,6 +1058,16 @@ export const items = [
     id: 'b51482f0-d82f-4ed4-ad03-7ef3e6b0a3a8',
     description: "Tanith's Knight will invade. Kill and loot the Knight for Aspect of the Crucible: Breath.",
     tags: [VOLCANO_MANOR_ASSASSINATION]
+  },
+  {
+    id: '522eac3f-53ae-4a00-b02d-e8166592baa6',
+    description: 'Meet Patches again at Murkwater Cave as a boss, and accept his surrender (in Limgrave. halfway through the Murkwater River). If Patches does not show up, try: Reload the area. Make sure he has left the Shaded Castle. Move to the Rykard, Lord of Blasphemy grace.',
+    tags: [PATCHES_QUESTLINE]
+  },
+  {
+    id: 'd78bacf7-b06c-4603-80e8-56ed3272f973',
+    description: "Reload the game to reopen Patches's shop",
+    tags: [PATCHES_QUESTLINE]
   },
   {
     id: 'a7a70a4b-9f8b-4a6a-bda0-83d9b21a0235',

@@ -87,6 +87,9 @@ function useShowChecklistItem(
   const { filter: filterDungEaterQuestline } = useFilter(
     TAGS.DUNG_EATER_QUESTILINE
   );
+  const { filter: filterPatchesQuestine } = useFilter(
+    TAGS.PATCHES_QUESTLINE
+  );
   const { filter: filterSmithingStoneBell } = useFilter(
     TAGS.SMITHING_STONE_BELL
   );
@@ -158,6 +161,10 @@ function useShowChecklistItem(
       {
         tag: TAGS.MILLICENT_QUESTLINE,
         filter: filterMillicentQuestline,
+      },
+      {
+        tag: TAGS.PATCHES_QUESTLINE,
+        filter: filterPatchesQuestine,
       },
       {
         tag: TAGS.ALL_REMEMBERANCES,

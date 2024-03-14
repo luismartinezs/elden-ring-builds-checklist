@@ -18,6 +18,7 @@ export const TAGS = {
   HYETTA_QUESTLINE: 'hyetta-questline',
   DUNG_EATER_QUESTILINE: 'dung-eater-questline',
   SELLEN_QUESTLINE: 'sellen-questline',
+  PATCHES_QUESTLINE: 'patches-questline',
 } as const;
 
 export const EXTRA_TAGS = {

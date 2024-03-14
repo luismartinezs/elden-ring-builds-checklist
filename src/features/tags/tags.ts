@@ -184,4 +184,17 @@ export const tags: Record<TTagKeys, {
       "Ancient Dragon Smithing Stone",
     ]
   },
+  [TAGS.PATCHES_QUESTLINE]: {
+    label: 'Patches',
+    key: TAGS.PATCHES_QUESTLINE,
+    buttonClasses: 'border-orange-300 text-orange-300 hover:bg-orange-300 hover:text-black focus:ring-orange-300',
+    tagClasses: 'border border-orange-500 bg-orange-900 text-orange-100 -m-px',
+    questlineRewards: [
+      "Margit's Shackle",
+      "Calm Down gesture",
+      "Grovel for Mercy gesture",
+      "Crouch gesture",
+      "Magma Whip Candlestick",
+    ]
+  },
 }

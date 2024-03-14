@@ -14,11 +14,15 @@ const checklistItems = splitLines.map(([id, description, tagString]) => {
   //   description = description.replace('[OPTIONAL]', '').trim();
   // }
 
+  if (!description || !id || !tagString) {
+    return null
+  }
+
   return {
     id,
     description,
     tags
   };
-});
+}).filter(Boolean);
 
 console.log(checklistItems);

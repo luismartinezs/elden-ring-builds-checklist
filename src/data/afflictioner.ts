@@ -152,7 +152,7 @@ const list = {
     },
     {
       id: '8686994e-2792-481b-b69b-4fe0db8fcfb2',
-      description: 'Infuse the Estoc with Cold',
+      description: 'Infuse the Estoc with Cold if you equipped Glintblade Phalanx',
       tags: []
     },
     {

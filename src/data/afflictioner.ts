@@ -76,11 +76,6 @@ const list = {
       tags: []
     },
     {
-      id: 'ebbd18a8-a1a8-4594-afdd-0619dbb3b579',
-      description: 'Mushroom Crown. Found on a corpse hanging off the top of a column in the southeastern corner of the Lake of Rot. Climb the fallen pillar leading to a rocky outcropping, south of the ruin, to reach it',
-      tags: []
-    },
-    {
       id: 'ddcaa108-e2af-4b38-ba5f-6d94894d1f81',
       description: 'Ash of War: Poisonous Mist. Dropped by a teardrop scarab at the southwest section of the Aeonia Swamp in Caelid',
       tags: []
@@ -211,8 +206,43 @@ const list = {
       tags: []
     },
     {
+      id: '70cedd55-2129-44de-ba5b-f5969bba26cc',
+      description: 'Access Nokron through the hole in Limgrave',
+      tags: []
+    },
+    {
       id: 'ad3b0d38-7201-4a87-a48d-9412c994d230',
       description: "Black Whetblade. Nokron, Eternal City: Found on a corpse slumped in front of an altar in Night's Sacred Ground grace",
+      tags: []
+    },
+    {
+      id: '1edeeb78-06d7-40ad-86f7-93e304c13ac4',
+      description: 'Get the Fingerslayer Blade from Nokron',
+      tags: []
+    },
+    {
+      id: '1b6eda38-2bc9-424b-8df4-35bae7e0dd05',
+      description: 'Give the Fingerslayer Blade to Ranni and exhaust her dialog',
+      tags: []
+    },
+    {
+      id: '7e9ad398-9bf8-4e7c-9f84-1f558aa55ed2',
+      description: 'Rest at a site of grace (and you might need to talk to Iji too)',
+      tags: []
+    },
+    {
+      id: 'f8bef9cd-fce5-41b4-a334-f55c67550992',
+      description: "Access the Ainsel River Main through Renna's Rise waygate",
+      tags: []
+    },
+    {
+      id: '9c303990-ff48-4567-965a-b95975f4872c',
+      description: 'Progress through Ainsel and Nokstella to reach the Lake of Rot',
+      tags: []
+    },
+    {
+      id: 'ebbd18a8-a1a8-4594-afdd-0619dbb3b579',
+      description: 'Get the Mushroom Crown. Found on a corpse hanging off the top of a column in the southeastern corner of the Lake of Rot. Climb the fallen pillar leading to a rocky outcropping, south of the ruin, to reach it. To explore the Lake of Rot Flame, Cleanse Me incantation, lots of HP flasks, Immunizing Horn Charm talisman and Immunizing Cured Meat help',
       tags: []
     },
     {

@@ -3,6 +3,7 @@ import { Feedback } from "~/features/feedback";
 import { Footer } from "~/components/Footer";
 import { Header } from "~/components/Header";
 import { ShareModal, useShareModal } from "~/features/share";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export function PageLayout({ children }: { children: React.ReactNode }) {
   const { showModal, handleClose, handleShare } = useShareModal();
@@ -24,6 +25,7 @@ export function PageLayout({ children }: { children: React.ReactNode }) {
       <ClientOnly>
         <Feedback />
       </ClientOnly>
+      <SpeedInsights />
     </div>
   );
 }

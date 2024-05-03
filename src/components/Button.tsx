@@ -17,7 +17,6 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 
     const classes = cn(
       "sm:mb-2 sm:mr-2 rounded-lg px-2 py-2 sm:px-5 sm:py-2.5 text-sm font-medium focus:outline-none sm:focus:ring-4 focus:ring-2",
-      className,
       {
         "bg-amber-500 text-black hover:bg-amber-600 focus:ring-amber-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-stone-500 disabled:text-black focus:ring-offset-1 sm:focus:ring-offset-2 focus:ring-offset-stone-900":
           variant === "primary",
@@ -34,6 +33,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         "bg-gradient-to-r from-sky-500 to-blue-500 text-white hover:from-sky-600 hover:to-blue-600 focus:ring-offset-1 sm:focus:ring-offset-2 focus:ring-sky-500 focus:ring-1 sm:focus:ring-2 focus:ring-offset-stone-900 text-black":
           variant === "ranni",
       },
+      className,
       disabled && "opacity-50 cursor-not-allowed"
     );
 

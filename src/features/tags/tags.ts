@@ -197,4 +197,16 @@ export const tags: Record<TTagKeys, {
       "Magma Whip Candlestick",
     ]
   },
+  [TAGS.YURA_QUESTLINE]: {
+    label: 'Yura',
+    key: TAGS.YURA_QUESTLINE,
+    buttonClasses: 'border-zinc-300 text-zinc-300 hover:bg-zinc-300 hover:text-black focus:ring-zinc-300',
+    tagClasses: 'border border-zinc-400 bg-zinc-600 text-white -m-px',
+    questlineRewards: [
+      "Purifying Crystal Tear",
+      "Eleonora's Poleblade",
+      "Nagakiba",
+      "Ronin's Set",
+    ]
+  },
 }

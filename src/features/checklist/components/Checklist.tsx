@@ -90,6 +90,9 @@ function useShowChecklistItem(
   const { filter: filterPatchesQuestine } = useFilter(
     TAGS.PATCHES_QUESTLINE
   );
+  const { filter: filterYuraQuestine } = useFilter(
+    TAGS.YURA_QUESTLINE
+  );
   const { filter: filterSmithingStoneBell } = useFilter(
     TAGS.SMITHING_STONE_BELL
   );
@@ -165,6 +168,10 @@ function useShowChecklistItem(
       {
         tag: TAGS.PATCHES_QUESTLINE,
         filter: filterPatchesQuestine,
+      },
+      {
+        tag: TAGS.YURA_QUESTLINE,
+        filter: filterYuraQuestine,
       },
       {
         tag: TAGS.ALL_REMEMBERANCES,

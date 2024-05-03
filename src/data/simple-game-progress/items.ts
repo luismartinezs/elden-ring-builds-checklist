@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTILINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTILINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -123,6 +123,27 @@ export const items = [
   },
 
   {
+    id: '0ea07403-34ab-4707-b6f6-68d1e11449e2',
+    description: "Note: Yura's questline can be skipped and the player can still get the Purifying Crystal Tear, Eleonora's Poleblade and the Nagakiba",
+    tags: [YURA_QUESTLINE]
+  },
+  {
+    id: '0346c139-2ad7-45e3-8fb6-91c99c97cd94',
+    description: '(optional) Find Yura under a ruin directly northeast of "Seaside Ruins" Grace in southern Limgrave and talk to him',
+    tags: [YURA_QUESTLINE]
+  },
+  {
+    id: 'd5d366d3-ba31-4e74-8777-8f1bdf514c21',
+    description: 'Approach Murkwater Cave, to be invaded by Bloody Finger Nerijus. Murkwater Cave is found north of Agheel Lake, up the river',
+    tags: [YURA_QUESTLINE]
+  },
+  {
+    id: '59a8441b-4f9f-4fbf-be31-a0790a0db161',
+    description: 'After defeating Bloody Finger Nerijus, talk to Yura right north from where Nerijus invaded',
+    tags: [YURA_QUESTLINE]
+  },
+
+  {
     id: '3f7cc832-d965-4dd2-91bc-8288e505c113',
     description: 'Meet Patches at Murkwater Cave as a boss, and accept his surrender (in Limgrave. halfway through the Murkwater River)',
     tags: [PATCHES_QUESTLINE]
@@ -204,7 +225,7 @@ export const items = [
   // LIURNIA SOUTH L40-50 +3-4
   {
     id: 'a8b99a0d-6dab-4328-8ef6-9aa1f0c85b8c',
-    description: 'Buy lantern from Nomadic Merchant in Liurnia of the Lakes in Liurnia Lake Shore grace',
+    description: 'If you don\'t have a lantern, buy one from Nomadic Merchant in Liurnia of the Lakes in Liurnia Lake Shore grace',
     tags: []
   },
   {
@@ -316,6 +337,16 @@ export const items = [
     id: '5b1e909e-ac7c-4f46-a620-cf8d0b06bda0',
     description: "Use the Pureblood Knight's Medal to reach Mohgwyn's Palace (it's also possible to reach Mohgwyn's Palace from Consecrated Snowfield much later in the game though a waygate portal)",
     tags: [VARRE_QUESTLINE]
+  },
+  {
+    id: '9b5f5777-df9a-4874-a85a-f0ee064dcefb',
+    description: 'Use the Red Summon Sign at the Main Academy gate site of Grace in Raya Lucaria and defeat Ravenmount Assassin. It is found through the bridge beyond the magic gate. You will get Ash of war: Raptor of the mist',
+    tags: [YURA_QUESTLINE]
+  },
+  {
+    id: 'f287ded0-1d43-4455-8b81-136fd5a7102b',
+    description: 'Talk to Yura near to where the red summon sign was',
+    tags: [YURA_QUESTLINE]
   },
   // RAYA LUCARIA L50-60 +4-6
   {
@@ -690,6 +721,16 @@ export const items = [
   },
   // ALTUS 60-80 +10-14
   {
+    id: 'efee0480-6110-4c57-af6e-9ea5d5c31635',
+    description: 'Talk to Yura in the Second Church of Marika to get the Nagakiba. To reach this location, go directly north from the Altus Highway Junction grace in Altus Plateau',
+    tags: [ YURA_QUESTLINE ]
+  },
+  {
+    id: '6f7dcb3a-0fb3-440f-aa04-40e60a4fe921',
+    description: "Defeat the invader Eleonora, Violet Bloody Finger to get the Purifying Crystal Tear and Eleonora's Poleblade",
+    tags: [ YURA_QUESTLINE ]
+  },
+  {
     id: '3e908ded-2825-48c2-b96b-93068276438d',
     description: 'Reach the Shaded Castle, heading north through the valley between the Mt. Gelmir and Altus Plateau regions, heading north from the Altus Tunnel to find your way to the Castle',
     tags: [MILLICENT_QUESTLINE]
@@ -958,6 +999,11 @@ export const items = [
     id: '5c50d5ff-4ee2-4b1f-8e59-132e44ce59c9',
     description: 'Run all the way through the Forbidden lands to Mountaintops of the Giants',
     tags: [NGPLUS]
+  },
+  {
+    id: '57791558-3866-42c0-8701-432350a3ecc7',
+    description: "Talk to Yura (Shabriri) in the Zamor Ruins Grace in Mountaintops of the Giants, and kill him to get the Ronin's Set or alternatively progress Hyetta's questline and accept the frenzied flame from the Three Fingers to find the set in Yura's location",
+    tags: [ YURA_QUESTLINE ]
   },
   {
     id: '8a60d188-2029-4e20-a80e-ebbb3b50d7e0',

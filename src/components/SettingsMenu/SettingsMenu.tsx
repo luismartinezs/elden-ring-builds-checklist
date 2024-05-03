@@ -31,6 +31,7 @@ function FilterButtons() {
       <FilterButton filterTag={TAGS.DUNG_EATER_QUESTILINE} />
       <FilterButton filterTag={TAGS.SELLEN_QUESTLINE} />
       <FilterButton filterTag={TAGS.PATCHES_QUESTLINE} />
+      <FilterButton filterTag={TAGS.YURA_QUESTLINE} />
       <FilterButton filterTag={TAGS.SMITHING_STONE_BELL} />
       <FilterButton filterTag={TAGS.SOMBER_STONE_BELL} />
       <FilterButton filterTag={TAGS.GLOVEWORT_BELL} />

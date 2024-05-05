@@ -4,6 +4,10 @@ import { PageLayout } from "~/layouts/PageLayout";
 
 const faq = [
   {
+    question: "The app is slow / broken. By Marika's tits, what's going on??",
+    answer: "Currently because of the amount of filters and the messy code I wrote, the lists perform slow on mobile. On desktop it works much better. I'll work on fixing it. If you can detect more bugs, use the button at the bottom right to let me know."
+  },
+  {
     question: "What is this site?",
     answer:
       "This site is a collection of builds and checklists for Elden Ring.",
@@ -11,7 +15,7 @@ const faq = [
   {
     question: "Why are there so few checklists?",
     answer:
-      "I created this recently. I work full time so I don't have that much time to add things. I hope to add more over time.",
+      "It takes some time to actually put one checklist together and this is just a side project and I'm the only one updating it. I might create a UI so that you can add checklists some day, but that would mean a significant revamp of the project.",
   },
   {
     question: "I want to provide a suggestion / feedback / report a bug",

@@ -13,6 +13,7 @@ const list = {
     `Variant 1: Mushroom Crown, Raptor's Black Feathers, Royal Remains gauntlets and legs. Talismans: Lord of Blood's Exultation, Rotten Winged Sword Insignia, Kindred of Rot's Exultation and Millicent's Prosthesis`,
     `Variant 2: Same as Variant 1 but with equipment Lionel's Armor and Bull Goat's Greaves, and for talismans Godskin Swaddling Cloth and Bull-Goat's Talisman instead of Lord of Blood's Exultation and Rotten Winged Sword Insignia, for extra poise and HP restoration`,
     `This build is somewhat involved as it requires two near complete NG cycles to get all the items needed. The second cycle is mainly to get a second Antspur Rapier and the Rotten Winged Sword Insignia. A slightly shorter alternative would be to get the Rotten Winged Sword Insignia in the first NG cycle and Millicent's Prosthesis in the second one, but at the expense of missing the 5 DEX from Millicent's Prosthesis for longer`,
+    `Added utility: Some enemies are resistant to thurst attacks, most notably the miners in the caves, and this build uses only thrusting weapons, which is really annoying. So I added the Nightrider Flail for strike damage which you can get early. Added also the Black Bow for a ranged option.`
   ],
   items: [
     {
@@ -92,7 +93,7 @@ const list = {
     },
     {
       id: '1ea33dc5-d356-4526-bb2d-52204eb4fc00',
-      description: "Bull-Goat's Talisman (variant 2, replace Rotten Winged Sword Insignia). In the back of Dragonbarrow Cave. From the entrance, take a left into the Giant Bear's patrol route. Search that side of the cave to find the talisman at the end, on a corpse. The Dragonbarrow Cave is found in Dragonbarrow. Reach this location by following the northernmost road in Dragonbarrow towards the east and looking for the entrance along the cliff face underneath the Minor Erdtree",
+      description: "Bull-Goat's Talisman (variant 2, replace Rotten Winged Sword Insignia). In the back of Dragonbarrow Cave. From the entrance, take a left into the Giant Bear's patrol route. Search that side of the cave to find the talisman at the end, on a corpse. The Dragonbarrow Cave is found in Dragonbarrow. Reach this location by following the northernmost road in Dragonbarrow towards the east and looking for the entrance along the cliff face underneath the Minor Erdtree (<a target='_blank' href='https://eldenring.wiki.fextralife.com/Dragonbarrow+Cave'>Location</a>)",
       tags: []
     },
     {
@@ -104,6 +105,11 @@ const list = {
       id: '39f2512c-08de-426b-aa2d-45ae678c7110',
       description: 'Optionally, farm smithing stones in Limgrave / Liurnia / Caelid and level up the Estoc',
       tags: []
+    },
+    {
+      id: "c1c5bc6d-f9db-453d-a150-30a0c2af4cb5",
+      description: 'Get the Nightrider Flail (STR 10, DEX 24) from the Nightrider in the Weeping Peninsula, nearby the Castle Morne Rampart grace. This is a strike weapon useful against enemies resistant to thrust attacks (e.g. miners)',
+      tags: [OPTIONAL]
     },
     {
       id: 'e02555d5-b1a6-44c4-902d-b0f5e8371aa0',
@@ -216,6 +222,11 @@ const list = {
       tags: []
     },
     {
+      id: '01561640-18df-4ddf-a813-44177ff16a05',
+      description: 'Infuse Antspur Rapier with bleed',
+      tags: []
+    },
+    {
       id: '1edeeb78-06d7-40ad-86f7-93e304c13ac4',
       description: 'Get the Fingerslayer Blade from Nokron',
       tags: []
@@ -242,12 +253,7 @@ const list = {
     },
     {
       id: 'ebbd18a8-a1a8-4594-afdd-0619dbb3b579',
-      description: 'Get the Mushroom Crown. Found on a corpse hanging off the top of a column in the southeastern corner of the Lake of Rot. Climb the fallen pillar leading to a rocky outcropping, south of the ruin, to reach it. To explore the Lake of Rot Flame, Cleanse Me incantation, lots of HP flasks, Immunizing Horn Charm talisman and Immunizing Cured Meat help',
-      tags: []
-    },
-    {
-      id: '01561640-18df-4ddf-a813-44177ff16a05',
-      description: 'Infuse Antspur Rapier with bleed',
+      description: 'Get the Mushroom Crown. Found on a corpse hanging off the top of a column in the southeastern corner of the Lake of Rot. Climb the fallen pillar leading to a rocky outcropping, south of the ruin, to reach it. To explore the Lake of Rot, Flame, Cleanse Me incantation, lots of HP flasks, Immunizing Horn Charm talisman and Immunizing Cured Meat help',
       tags: []
     },
     {
@@ -349,6 +355,11 @@ const list = {
       id: 'b303d6bd-1bdc-4db5-851e-655de5d34eef',
       description: 'Defeat Draconic Tree Sentinel and access Leyndell',
       tags: []
+    },
+    {
+      id: '7429dece-a18c-40a4-bbc5-9d39e35e9844',
+      description: 'Get the Black Bow, found on a corpse on a rooftop in Leyndell, to the right of the elevator that descends to the lower level of the city. This provides a ranged option. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=3843&lat=-101.054687&lng=115.876041&code=mapA" target="_blank">Location</a>',
+      tags: [OPTIONAL]
     },
     {
       id: 'b851d1fb-c816-4cb8-97e1-1d812af984ea',

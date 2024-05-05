@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 
 import { type TChecklistItem } from "~/features/checklist/types";
 import { EXTRA_TAGS, TAGS, Tag } from "~/features/tags";
@@ -228,7 +228,7 @@ function useShowChecklistItem(
   return show;
 }
 
-const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
+const ChecklistItem = memo(({ item }: { item: TChecklistItem }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const { isChecked, checkItem, checkItems } = useCheckItem();
   const show = useShowChecklistItem(item, isChecked);
@@ -295,7 +295,7 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
       )}
     </li>
   );
-};
+});
 
 export function Checklist({ items }: { items: TChecklistItem[] }) {
   return (

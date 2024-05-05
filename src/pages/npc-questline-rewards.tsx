@@ -9,7 +9,7 @@ import Link from "next/link";
 import { useIsClient } from "usehooks-ts";
 
 function Reward({ reward }: { reward: string }) {
-  return <span>{reward}</span>;
+  return <span className="whitespace-normal">{reward}</span>;
 }
 
 function QuestlineItem({

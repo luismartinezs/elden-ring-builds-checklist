@@ -223,6 +223,8 @@ function useShowChecklistItem(
     filterHyettaQuestline,
     filterDungEaterQuestline,
     filterSellenQuestline,
+    filterPatchesQuestine,
+    filterYuraQuestine
   ]);
 
   return show;
@@ -296,6 +298,8 @@ const ChecklistItem = memo(({ item }: { item: TChecklistItem }) => {
     </li>
   );
 });
+
+ChecklistItem.displayName = "ChecklistItem";
 
 export function Checklist({ items }: { items: TChecklistItem[] }) {
   return (

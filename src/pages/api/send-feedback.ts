@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { env } from '~/env.mjs';
 import nodemailer from 'nodemailer';
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
+const sendFeedback = (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
     // Destructure the message from the request body
     const { message } = req.body as { message: string };
@@ -25,7 +25,7 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
     };
 
     // Send the email
-    transporter.sendMail(mailOptions, (error, info) => {
+    transporter.sendMail(mailOptions, (error) => {
       if (error) {
         console.log(error);
         res.status(500).json({ status: 'error', message: 'Error sending email' });
@@ -39,3 +39,5 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
     res.status(405).end(`Method ${req.method} Not Allowed`);
   }
 };
+
+export default sendFeedback;

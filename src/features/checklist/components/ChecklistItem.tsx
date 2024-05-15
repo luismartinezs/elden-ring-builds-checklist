@@ -15,36 +15,14 @@ function hasNestedItems(
   return "items" in item && Array.isArray(item.items);
 }
 
-const ChecklistItem = memo(({ item }: { item: TChecklistItem }) => {
+const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const { isChecked, checkItem, checkItems } = useCheckItem();
-  const show = useShowChecklistItem(item, isChecked);
-  const { getCurrentFilters } = useManageFilters();
-  const hiddenFilterKeys = Object.entries(getCurrentFilters())
-    .filter(([_, val]) => val)
-    .map(([key]) => key);
 
-  function onCheckboxChange(event: React.ChangeEvent<HTMLInputElement>) {
-    if (hasNestedItems(item)) {
-      checkItems(item.items.map((el) => el.id));
-    } else {
-      checkItem(event.target.name);
-    }
-  }
-
-  if (!show) {
+  function onCheckboxChange()  {
     return null;
   }
 
-  const visibleTags =
-    item.tags?.filter(
-      (tag) =>
-        ![
-          EXTRA_TAGS.NGPLUS,
-          EXTRA_TAGS.ALWAYS_SHOW,
-          ...hiddenFilterKeys,
-        ].includes(tag)
-    ) ?? [];
+  const visibleTags = ['OPTIONAL']
 
   return (
     <li>
@@ -52,9 +30,7 @@ const ChecklistItem = memo(({ item }: { item: TChecklistItem }) => {
         <Checkbox
           itemId={item.id}
           isChecked={
-            hasNestedItems(item)
-              ? item.items.every((nested) => isChecked(nested.id))
-              : isChecked(item.id)
+            false
           }
           onChange={onCheckboxChange}
           label={item.description + " " + item?.tags?.join(", ")}
@@ -82,7 +58,7 @@ const ChecklistItem = memo(({ item }: { item: TChecklistItem }) => {
       )}
     </li>
   );
-});
+}
 
 ChecklistItem.displayName = "ChecklistItem";
 

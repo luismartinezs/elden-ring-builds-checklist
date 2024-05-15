@@ -11,6 +11,7 @@ import { SettingsMenu } from "~/components/SettingsMenu";
 import { useFilters } from "~/features/filters";
 import { TAGS, isValidTag } from "~/features/tags";
 import ClientOnly from "~/components/ClientOnly";
+import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
 
 export const getStaticPaths: GetStaticPaths = () => {
   const paths = Object.values<TChecklist>(lists).map((list) => ({
@@ -34,7 +35,7 @@ export const getStaticProps: GetStaticProps = ({ params }) => {
   };
 };
 
-function filterItems(
+function filterItemsByTag(
   checklistItems: TChecklistItem[],
   activeFilters: string[],
   isNgPlus?: boolean
@@ -70,6 +71,8 @@ export default function ChecklistPage({
   checklist: TChecklist | null;
 }) {
   const { activeFilters } = useFilters();
+  console.log("activeFilters", activeFilters);
+  const { isChecked } = useCheckItem();
 
   if (!checklist) {
     return null;
@@ -78,11 +81,15 @@ export default function ChecklistPage({
   let checklistItems = checklist.items;
 
   // filtering by tag at the page level
-  checklistItems = filterItems(
+  checklistItems = filterItemsByTag(
     checklistItems,
     activeFilters,
     checklist.slug === "new-game-plus-progress"
   )
+    // handle completed items with a special tag
+    .filter(
+      (item) => !isChecked(item.id) || (isChecked(item.id) && activeFilters.includes("completed"))
+    )
     // removing tags not used for filtering because they are not needed beyond this point
     .map((item) => ({
       ...item,

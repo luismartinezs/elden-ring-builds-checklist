@@ -1,6 +1,6 @@
 import {
   Checklist,
-  TChecklistItem,
+  type TChecklistItem,
   type TChecklist,
 } from "~/features/checklist";
 import { PageLayout } from "~/layouts/PageLayout";

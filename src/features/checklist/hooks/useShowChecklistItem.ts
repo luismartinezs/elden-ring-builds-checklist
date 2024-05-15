@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { TChecklistItem } from "../types";
+import type { TChecklistItem } from "../types";
 import { useFilter } from "~/hooks/useFilter";
 import { EXTRA_TAGS, TAGS } from "~/features/tags";
 

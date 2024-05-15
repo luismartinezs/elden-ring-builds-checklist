@@ -1,7 +1,6 @@
 import { produce } from "immer";
 import { useRouter } from "next/router";
 import { useManageChecklists } from "~/features/checklist/hooks/useManageChecklists";
-import { checkId, uncheckId } from "../utils";
 
 export function useCheckItem() {
   const {
@@ -68,7 +67,7 @@ export function useCheckItem() {
         }
 
         // if has parent and all siblings checked, check parent
-        if (parentId && siblingIds && siblingIds.length && siblingIds.every((id) => draft.includes(id))) {
+        if (parentId && siblingIds?.length && siblingIds.every((id) => draft.includes(id))) {
           if (!draft.includes(parentId)) {
             draft.push(parentId)
           }

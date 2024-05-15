@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TChecklistItem } from "../types";
+import type { TChecklistItem } from "../types";
 import { Checkbox } from "./Checkbox";
 import { ChecklistLabel } from "./ChecklistLabel";
 import Toggler from "./Toggler";

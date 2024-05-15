@@ -25,7 +25,7 @@ const faq = [
     question: "I want to provide a suggestion / feedback / report a bug",
     answer: (
       <p>
-        You can do so by opening an issue on{" "}
+        You can do so with the bottom right button (it will send me an email) or by opening an issue on{" "}
         <Link
           href="https://github.com/luismartinezs/elden-ring-builds-checklist/issues"
           target="_blank"
@@ -56,7 +56,7 @@ const faq = [
         </p>
         <p>
           Or you can of course always fork the repo, add your changes and create
-          a pull request.
+          a pull request. In the README.md file there are some instructions about how to do that.
         </p>
       </>
     ),

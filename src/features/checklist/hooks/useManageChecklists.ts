@@ -16,6 +16,8 @@ export function useManageChecklists() {
     }
     setData(produce(data, draft => {
       draft.profiles[draft.currentProfile]!.checklists[checklistId] = uuids;
+      // console.log(draft.profiles[draft.currentProfile]!.checklists[checklistId]);
+
       return draft;
     }))
   };

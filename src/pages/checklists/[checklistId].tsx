@@ -1,9 +1,16 @@
-import { Checklist, type TChecklist } from "~/features/checklist";
+import {
+  Checklist,
+  TChecklistItem,
+  type TChecklist,
+} from "~/features/checklist";
 import { PageLayout } from "~/layouts/PageLayout";
 import { lists } from "~/data";
 import { type GetStaticProps, type GetStaticPaths } from "next";
 import Head from "next/head";
 import { SettingsMenu } from "~/components/SettingsMenu";
+import { useFilters } from "~/features/filters";
+import { TAGS, isValidTag } from "~/features/tags";
+import ClientOnly from "~/components/ClientOnly";
 
 export const getStaticPaths: GetStaticPaths = () => {
   const paths = Object.values<TChecklist>(lists).map((list) => ({
@@ -27,35 +34,60 @@ export const getStaticProps: GetStaticProps = ({ params }) => {
   };
 };
 
+function filterItems(
+  checklistItems: TChecklistItem[],
+  activeFilters: string[],
+  isNgPlus?: boolean
+) {
+  return checklistItems.filter(({ tags }) => {
+    if (!tags) {
+      console.error("Item with undefined, maybe bug in datasource?");
+      return false;
+    }
+
+    const isOptional = tags?.includes(TAGS.OPTIONAL);
+
+    // NOTE this is a bit of a hack to reuse the same steps for two checklists. the NG+ checklist shares most steps with NG checklist, but a few don't make sense for NG+
+    // If a step has no tags or only "OPTIONAL" tag, it is filtered out from from the NG+ checklist
+    // some items have the NG+ tag specifically to prevent this filtering
+    if (isNgPlus && (tags.length === 0 || (isOptional && tags.length === 1))) {
+      return false;
+    }
+
+    const validTags = tags?.filter(isValidTag);
+
+    if (!validTags || validTags.length === 0) {
+      return true;
+    }
+
+    return validTags?.some((tag) => activeFilters.includes(tag));
+  });
+}
+
 export default function ChecklistPage({
   checklist,
 }: {
   checklist: TChecklist | null;
 }) {
+  const { activeFilters } = useFilters();
+
   if (!checklist) {
     return null;
   }
+
   let checklistItems = checklist.items;
 
-  // NOTE this is a bit of a hack to reuse the same steps for two checklists. the NG+ checklist shares most steps with NG checklist, but a few don't make sense for NG+
-  // If a step has no tags or only "OPTIONAL" tag, it is filtered out from from the NG+ checklist
-  if (checklist.slug === "new-game-plus-progress") {
-    checklistItems = checklistItems.filter(({ tags }) => {
-      if (!tags || tags.length === 0) {
-        // if there are no tags, filter out step
-        return false;
-      }
-
-      const isOptional = tags?.includes("OPTIONAL");
-
-      if (isOptional && tags.length === 1) {
-        // if the only tag is "OPTIONAL", filter out step
-        return false;
-      }
-
-      return true;
-    });
-  }
+  // filtering by tag at the page level
+  checklistItems = filterItems(
+    checklistItems,
+    activeFilters,
+    checklist.slug === "new-game-plus-progress"
+  )
+    // removing tags not used for filtering because they are not needed beyond this point
+    .map((item) => ({
+      ...item,
+      tags: item.tags?.filter(isValidTag),
+    }));
 
   return (
     <PageLayout>
@@ -75,7 +107,9 @@ export default function ChecklistPage({
           dangerouslySetInnerHTML={{ __html: note }}
         ></p>
       ))}
-      <Checklist items={checklistItems} />
+      <ClientOnly>
+        <Checklist items={checklistItems} />
+      </ClientOnly>
     </PageLayout>
   );
 }

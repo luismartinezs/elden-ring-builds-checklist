@@ -22,6 +22,7 @@ export const TAGS = {
   YURA_QUESTLINE: 'yura-questline',
 } as const;
 
+// these tags are "hidden" tags that are not displayed as filters
 export const EXTRA_TAGS = {
   NGPLUS: 'ng+',
   ALWAYS_SHOW: 'always-show', // I suspect this tag and NGPLUS might be doing the same thing

@@ -1,11 +1,7 @@
-import { memo, useState } from "react";
+import { useState } from "react";
 import { TChecklistItem } from "../types";
 import { useCheckItem } from "../hooks/useCheckItem";
-import { useShowChecklistItem } from "../hooks/useShowChecklistItem";
-import { useManageFilters } from "../hooks/useManageFilters";
-import { EXTRA_TAGS } from "~/features/tags";
 import { Checkbox } from "./Checkbox";
-import ClientOnly from "~/components/ClientOnly";
 import { ChecklistLabel } from "./ChecklistLabel";
 import Toggler from "./Toggler";
 
@@ -17,28 +13,22 @@ function hasNestedItems(
 
 const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const { isChecked, checkItem } = useCheckItem();
 
-  function onCheckboxChange()  {
-    return null;
+  function onCheckboxChange() {
+    return checkItem(item.id);
   }
-
-  const visibleTags = ['OPTIONAL']
 
   return (
     <li>
       <div className="flex items-start justify-start gap-3">
         <Checkbox
           itemId={item.id}
-          isChecked={
-            false
-          }
+          isChecked={isChecked(item.id)}
           onChange={onCheckboxChange}
           label={item.description + " " + item?.tags?.join(", ")}
         />
-        {/* prevent hydration error */}
-        <ClientOnly>
-          <ChecklistLabel description={item.description} tags={visibleTags} />
-        </ClientOnly>
+        <ChecklistLabel description={item.description} tags={item.tags} />
         {item.items && (
           <Toggler
             onClick={(evt) => {
@@ -58,10 +48,8 @@ const ChecklistItem = ({ item }: { item: TChecklistItem }) => {
       )}
     </li>
   );
-}
+};
 
 ChecklistItem.displayName = "ChecklistItem";
 
-export {
-  ChecklistItem,
-}
+export { ChecklistItem };

@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTILINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTILINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -69,7 +69,6 @@ export const items = [
       },
     ]
   },
-
   {
     id: 'a7d48287-d886-42c1-aa6c-c728b0014419',
     description: 'Clear Fort Haight (east Limgrave, south of Mistwood) from enemies',
@@ -84,6 +83,11 @@ export const items = [
     id: '384fc0f5-c356-4d8a-a31e-351494896d8a',
     description: 'Find Alexander in Northern Stormhill, West to the river and North of the Agheel Lake North Site of Grace. Him a few times on the back with any weapon until you free him. He will reward you with some items',
     tags: [ALEXANDER_QUESTLINE]
+  },
+  {
+    id: '4bf628bc-957c-4dbf-bd29-b8f85870f488',
+    description: 'Limgrave Tunnels, on the northern area of the Agheel Lake, just south from "Agheel Lake North" grace',
+    tags: [ TUNNELS ]
   },
   // WEEPING PENINSULA L20-30 +3
   {
@@ -105,6 +109,11 @@ export const items = [
     id: '2a0af444-beab-45a0-9400-560c9114a9bc',
     description: "If you don't plan to get Mimic Tear, you can get Lhutel the Headless spirit summon from Tombsward Catacombs south of Weeping Peninsula Erdtree avatar (requires 104 FP)",
     tags: [OPTIONAL]
+  },
+  {
+    id: '73fcc602-563d-4ae9-bdc9-d363dd2ecaf0',
+    description: 'Morne Tunnel, in Weeping Peninsula. From the South of the Tower grace then head West and then South around the mountain. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=2318&lat=-214.054&lng=108.91&code=mapA" target="_blank">Location</a>',
+    tags: [ TUNNELS ]
   },
   {
     id: '8a19443f-919d-4ba9-891f-b88ad22ae163',
@@ -396,6 +405,11 @@ export const items = [
   },
   // LIURNIA EAST 50-60 +4-6
   {
+    id: '91ae81a1-8d30-428c-95c6-c0fd35612f0b',
+    description: 'Raya Lucaria Crystal Tunnel, northeastern Liurnia of the Lakes, near the walking mausoleum in the lake. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=5905&code=mapA" target="_blank">Location</a>',
+    tags: [ TUNNELS ]
+  },
+  {
     id: '958046df-4b2e-41dd-9692-d6e74f5d4d1b',
     description: 'Dropped by the Crystalian Boss at the end of Raya Lucaria Crystal Tunnel (northeastern Liurnia, east from the walking mausoleum in the lake)',
     tags: [SMITHING_STONE_BELL]
@@ -437,6 +451,11 @@ export const items = [
     id: '143197cd-8e4b-4934-ba17-4e35eb28214d',
     description: 'Find Hyetta in Bellum Church in Liurnia of the Lakes (the path toward the Dectus Lift from the East Raya Lucaria Gate grace, hugging the left side) and give her the Fingerprint Grape',
     tags: [HYETTA_QUESTLINE]
+  },
+  {
+    id: 'fbb653b6-f068-427c-8cca-9f5d8b0554cf',
+    description: "Ruin-Strewn Precipice and miner's caves. Accessed from the Ravine-Vailed Village grace, going all the way north through the ravine in between Caria Manor and the path to the LIft of Dectus, in Liurnia. <a href='https://eldenring.wiki.fextralife.com/Interactive+Map?id=1651&code=mapA' target='_blank'>Location</a>",
+    tags: [ TUNNELS ]
   },
   // ACCESS ALTUS
   {
@@ -513,9 +532,24 @@ export const items = [
     tags: [GLOVEWORT_BELL]
   },
   {
+    id: 'e373c6f2-0fb9-479a-a7c6-6de82814771c',
+    description: 'Old Altus Tunnel, in central-west Altus Plateau, accessible with two Stonesword Keys. From the Erdtree-Gazing Hill Grace go down into the vallye north, and hug the left side. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=1196&lat=-91.171875&lng=78.604109&code=mapA" target="_blank">Location</a>',
+    tags: [ TUNNELS ]
+  },
+  {
+    id: 'bbd31431-ecf6-441f-b07d-6e0b7044c43f',
+    description: 'Altus Tunnel, in Altus. Directly south from the Minor Erdtree in Altus Plateau. <a href="" target="_blank"></a>Location: https://eldenring.wiki.fextralife.com/Interactive+Map?id=5837&lat=-93.49&lng=93.82&code=mapA',
+    tags: [ TUNNELS ]
+  },
+  {
     id: '28473d9d-19f7-468f-b25f-5739ec5511ec',
     description: 'Defeat Crystalian Spear and Ringblade boss in Altus Tunnel, directly south from the Minor Erdtree in Altus Plateau',
     tags: [SOMBER_STONE_BELL]
+  },
+  {
+    id: '8b040470-0f63-4521-a3ef-1c00f3dd78ac',
+    description: 'Sealed Tunnel, found in Capital Outskirts, in Altus. Down at south of the lake right next to the west gate to Leyndell Royal Capital from the outside. <a href="" target="_blank"></a>Location: https://eldenring.wiki.fextralife.com/Interactive+Map?id=2858&lat=-105.75&lng=105.660584&code=mapA',
+    tags: [ TUNNELS ]
   },
   {
     id: '0852f8c6-a18d-418c-a4ce-76fa413d7194',
@@ -524,9 +558,19 @@ export const items = [
   },
   // CAELID, RADAHN 60-70 +10-14
   {
+    id: '3e6c55bc-c6ae-43bd-ace8-ef333487397d',
+    description: 'Gael Tunnel, in the border between Limgrave and Caelid. Found along the western cliffs of Caelid heading south from the Rotview Balcony grace',
+    tags: [ TUNNELS ]
+  },
+  {
     id: 'ee0a544b-eeca-4add-b94f-59fbd9505236',
     description: "Alexander's next location is in Gael Tunnel, found from the rear entrance that borders Limgrave and Caelid. You can skip this step as it is not necessary",
     tags: [ALEXANDER_QUESTLINE]
+  },
+  {
+    id: 'e60b8967-d589-44b4-ae29-dbc1abdb4041',
+    description: 'Sellia Crystal Tunnel, in Caelid. Can be reached early by opening a chest in Dragon-Burnt Ruins in Limgrave. It can also be reached by going north from Sellia. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=1177&lat=-172.515625&lng=144.836114&code=mapA" target="_blank">Location</a>',
+    tags: [ TUNNELS ]
   },
   {
     id: 'fbca363b-8c3c-4c24-812f-60b2700116a6',
@@ -1568,6 +1612,11 @@ export const items = [
         id: '30325d33-b5d4-48bf-8faf-76fd764108cb',
         description: "Dropped along with the Night's Cavalry Set, by killing the two mini-boss Night's Cavalry guarding a caravan at night, in Consecrated Snowfield, nearby Inner Consecrated Snowfield grace",
         tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: '2acc2df0-4d5c-46e7-a1b5-b7e1f565fe2c',
+        description: 'Yelough Anix Tunnel, in the west of the Consecrated Snowfield, near the Yelough Anix Ruins. <a href="" target="_blank"></a>Location: https://eldenring.wiki.fextralife.com/Interactive+Map?id=4491&lat=-77.59375&lng=133.02805&code=mapA',
+        tags: [ TUNNELS ]
       },
       {
         id: 'e46c2798-4e50-40f7-81b7-26340a06a603',

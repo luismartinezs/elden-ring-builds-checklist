@@ -22,6 +22,7 @@ export const TAGS = {
   YURA_QUESTLINE: 'yura-questline',
   CORHYN_QUESTLINE: 'corhyn-questline',
   RYA_QUESTLINE: 'rya-questline',
+  TUNNELS: 'tunnels',
 } as const;
 
 // these tags are "hidden" tags that are not displayed as filters

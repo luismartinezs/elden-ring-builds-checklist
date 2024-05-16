@@ -50,6 +50,7 @@ export function useShowChecklistItem(
   );
   const { filter: filterWhetblades } = useFilter(TAGS.WHETBLADES);
   const { filter: filterAllRememberances } = useFilter(TAGS.ALL_REMEMBERANCES);
+  const {filter: filterTunnels} = useFilter(TAGS.TUNNELS);
 
   // NOTE: Using an effect instead of a derived state to avoid hydration errors
   useEffect(() => {
@@ -143,7 +144,11 @@ export function useShowChecklistItem(
       {
         tag: TAGS.RYA_QUESTLINE,
         filter: filterRyaQuestline,
-      }
+      },
+      {
+        tag: TAGS.TUNNELS,
+        filter: filterTunnels,
+      },
     ];
     const shouldHide =
       _tags.length > 0
@@ -181,6 +186,8 @@ export function useShowChecklistItem(
     filterPatchesQuestine,
     filterYuraQuestine,
     filterCorhynQuestline,
+    filterRyaQuestline,
+    filterTunnels,
   ]);
 
   return show;

@@ -14,6 +14,12 @@ export const tags: Record<TTagKeys, {
     buttonClasses: '',
     tagClasses: 'border border-amber-500 text-amber-500',
   },
+  [TAGS.TUNNELS]: {
+    label: 'Tunnels',
+    key: TAGS.TUNNELS,
+    buttonClasses: 'border-stone-400 text-stone-400 hover:bg-stone-400 hover:text-black focus:ring-stone-400',
+    tagClasses: 'bg-stone-400 text-black',
+  },
   [TAGS.VOLCANO_MANOR_ASSASSINATION]: {
     label: 'Tanith',
     key: TAGS.VOLCANO_MANOR_ASSASSINATION,

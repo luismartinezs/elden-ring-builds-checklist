@@ -15,6 +15,6 @@ export const Checkbox = ({
     name={itemId}
     checked={isChecked}
     onChange={onChange}
-    className="min-h-6 min-w-6 h-6 w-6 flex-shrink-0 rounded border-stone-300 bg-stone-100 text-amber-600 accent-amber-500 focus:ring-2 focus:ring-amber-500"
+    className="min-h-6 min-w-6 h-6 w-6 mt-1 flex-shrink-0 rounded border-stone-300 bg-stone-100 text-amber-600 accent-amber-500 focus:ring-2 focus:ring-amber-500"
   />
 );

@@ -13,6 +13,7 @@ export function useManageFilters() {
 
   const updateFilter = (filterName: string, value: boolean) => {
     setData(produce(data, draft => {
+      console.log(`Updating filter ${filterName} to ${value}`);
       draft.profiles[draft.currentProfile]!.filters[filterName] = value;
       return draft;
     }))
@@ -20,9 +21,11 @@ export function useManageFilters() {
 
   const updateAllFilters = (value: boolean) => {
     setData(produce(data, draft => {
+      console.log(`Updating all filters to ${value}`);
       draft.profiles[draft.currentProfile]!.filters.completed = value;
       Object.values(TAGS).forEach(tag => {
         draft.profiles[draft.currentProfile]!.filters[tag] = value;
+        console.log(`Setting filter ${tag} to ${value}`);
 
         return draft
       })

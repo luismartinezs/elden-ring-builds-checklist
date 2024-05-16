@@ -10,7 +10,7 @@ const faq = [
   },
   {
     question: 'The Toggle All button does not work on mobile',
-    answer: 'I know. I still have no idea why it doesn\'t work 😢, I will fix it. I\'m sorry.'
+    answer: "I see this happen on Android Chrome. I'm debugging it. In the meantime, on Android Firefox it works (just keep in mind your progress is not shared)."
   },
   {
     question: "The app is slow / broken. By Marika's tits, what's going on??",

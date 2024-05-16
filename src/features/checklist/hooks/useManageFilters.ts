@@ -9,7 +9,7 @@ export function useManageFilters() {
 
   const getCurrentFilters = () => {
     const filters = data.profiles[data.currentProfile]?.filters ?? {};
-    console.log('getCurrentFilters:', filters);
+    console.log('getCurrentFilters:', JSON.stringify(filters));
     return filters;
   };
 

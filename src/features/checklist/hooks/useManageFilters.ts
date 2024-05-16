@@ -8,7 +8,9 @@ export function useManageFilters() {
   const [data, setData] = useLocalStorage<AppData>("appData", initAppData);
 
   const getCurrentFilters = () => {
-    return data.profiles[data.currentProfile]?.filters ?? {};
+    const filters = data.profiles[data.currentProfile]?.filters ?? {};
+    console.log('getCurrentFilters:', filters);
+    return filters;
   };
 
   const updateFilter = (filterName: string, value: boolean) => {

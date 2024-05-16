@@ -10,6 +10,8 @@ export function useToggleFilters() {
 
   return {
     toggleFilters: () => {
+      console.log('allTrue when calling toggleFilters:', allTrue);
+
       updateAllFilters(!allTrue)
     },
     allFiltersChecked: allTrue

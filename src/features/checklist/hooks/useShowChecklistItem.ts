@@ -39,6 +39,7 @@ export function useShowChecklistItem(
   const { filter: filterCorhynQuestline } = useFilter(
     TAGS.CORHYN_QUESTLINE
   );
+  const { filter: filterRyaQuestline } = useFilter(TAGS.RYA_QUESTLINE);
   const { filter: filterSmithingStoneBell } = useFilter(
     TAGS.SMITHING_STONE_BELL
   );
@@ -138,6 +139,10 @@ export function useShowChecklistItem(
       {
         tag: TAGS.CORHYN_QUESTLINE,
         filter: filterCorhynQuestline,
+      },
+      {
+        tag: TAGS.RYA_QUESTLINE,
+        filter: filterRyaQuestline,
       }
     ];
     const shouldHide =

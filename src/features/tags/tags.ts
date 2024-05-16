@@ -225,5 +225,16 @@ export const tags: Record<TTagKeys, {
       "Goldmask's Set",
       "Mending Rune of Perfect Order"
     ]
+  },
+  [TAGS.RYA_QUESTLINE]: {
+    label: 'Rya',
+    key: TAGS.RYA_QUESTLINE,
+    buttonClasses: 'border-rose-600 text-rose-600 hover:bg-rose-600 hover:text-black focus:ring-rose-600',
+    tagClasses: 'bg-rose-600 text-black',
+    questlineRewards: [
+      "Easy access to Volcano Manor",
+      "Daedicar's woe",
+      "Zorayas' Letter"
+    ]
   }
 }

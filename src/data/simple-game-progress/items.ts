@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTILINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTILINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -254,6 +254,21 @@ export const items = [
     tags: [HYETTA_QUESTLINE]
   },
   {
+    id: '66b31c30-f5ac-4d8e-b8dd-9f8cdad31ae6',
+    description: 'Meet Rya in Liurnia of the Lakes under the under the pavilion next to the Birdseye Telescope north of Laskyar ruins',
+    tags: [ RYA_QUESTLINE ]
+  },
+  {
+    id: '6fe533c0-09e4-4fa8-8a30-d000b927fc44',
+    description: 'Head north west from the pavilion where Rya is located to reach the Boilprawn Shack, speak to Boggart and buy the necklace from him for 1000 runes (or kill him)',
+    tags: [ RYA_QUESTLINE ]
+  },
+  {
+    id: '34ec7a0c-0adc-41f9-9ebf-3d3f243214f8',
+    description: 'Give the necklace to Rya to get the Volcano Manor Invitation',
+    tags: [ RYA_QUESTLINE ]
+  },
+  {
     id: 'f892cb40-deaa-4852-88d2-2121f978749b',
     description: 'Talk to Varré in Rose Church (west from Fallen Ruins of the Lake grace in Liurnia) and get Festering Bloody Finger',
     tags: [VARRE_QUESTLINE]
@@ -450,6 +465,11 @@ export const items = [
     id: 'bd19aee2-3a7b-419e-9950-c5d2462483d8',
     description: 'Rest in any site of grace in Altus',
     tags: [NGPLUS]
+  },
+  {
+    id: '7b8da92c-f70a-4908-b5c9-e27275c853d8',
+    description: 'After reaching Altus, talk to Rya either in the lower part of Lux ruins, near the Erdtree-Gazing Hill site of grace (if you reached Altus via the Ruin-Strewn Precipice) or at the top of the Grand Lift of Dectus, to the left (if you used the lift to reach Altus), and she will teleport you inside Volcano Manor',
+    tags: [ RYA_QUESTLINE ]
   },
   {
     id: 'f1e13540-ebde-451c-928a-252aac611f41',
@@ -686,17 +706,17 @@ export const items = [
   {
     id: '4eebbb14-632b-4c83-9251-65998c861e3f',
     description: "Speak with Tanith in the manor's lobby to join Volcano Manor and get the Drawing-Room Key",
-    tags: [VOLCANO_MANOR_ASSASSINATION]
+    tags: [VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE]
   },
   {
     id: 'eb8f700c-f37c-48f3-abcc-6956c50d3ce1',
     description: 'Upstairs from Tanith, Defeat Inquisitor Ghiza',
-    tags: [VOLCANO_MANOR_ASSASSINATION]
+    tags: [VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE]
   },
   {
     id: 'b049db63-dee0-4a43-8c28-f116b0134880',
     description: 'Collect the Recusant Finger and Letter from Volcano Manor from the nearby room with Rya and Bernahl',
-    tags: [VOLCANO_MANOR_ASSASSINATION]
+    tags: [VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE]
   },
   {
     id: '176d4a46-ea03-436a-9a57-54d6473396c9',
@@ -706,27 +726,32 @@ export const items = [
   {
     id: '2eef1716-8768-475d-ab54-e45eea352c8e',
     description: "Defeat Old Knight Istvan using the summon sign north from the Warmaster's Shack (Limgrave). There's a red sign on your map.",
-    tags: [VOLCANO_MANOR_ASSASSINATION, PATCHES_QUESTLINE]
+    tags: [VOLCANO_MANOR_ASSASSINATION, PATCHES_QUESTLINE, RYA_QUESTLINE]
   },
   {
     id: '778461c2-d725-4a4b-9598-cfd4406928fa',
     description: 'Report back to Tanith and receive Magma Shot Sorcery',
-    tags: [VOLCANO_MANOR_ASSASSINATION]
+    tags: [VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE]
+  },
+  {
+    id: '8af9f542-12a7-4a39-8522-1e3d9d8dd383',
+    description: 'Talk to Rya in Volcano Manor, in her snake form',
+    tags: [ RYA_QUESTLINE ]
   },
   {
     id: '0b51b4b9-6134-434a-8f85-3fbc1b583fb9',
     description: "Receive Letter to Patches from Patches in Volcano Manor (if Patches is not in Volcano Manor, it's possible that you have to meet him first at Murkwater Cave for him to show up at Volcano Manor, the wiki is not clear about that) ",
-    tags: [PATCHES_QUESTLINE, VOLCANO_MANOR_ASSASSINATION]
+    tags: [PATCHES_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE]
   },
   {
     id: '77738365-a822-4500-85e2-14af16746280',
     description: "Invade and defeat Great Horned Tragoth at Ruin-Strewn Precipice Overlook inside Magma Wyrm Makar's boss room after resting at the grace inside the boss room",
-    tags: [VOLCANO_MANOR_ASSASSINATION, PATCHES_QUESTLINE]
+    tags: [VOLCANO_MANOR_ASSASSINATION, PATCHES_QUESTLINE, RYA_QUESTLINE]
   },
   {
     id: '3a21455b-efd1-4b48-8bc9-3c435ddd4dff',
     description: 'Collect the next Letter from the room nearby Tanith',
-    tags: [VOLCANO_MANOR_ASSASSINATION]
+    tags: [VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE]
   },
   {
     id: '7fa43dbd-7a2b-4978-ac9c-15c9609cc128',
@@ -736,12 +761,66 @@ export const items = [
   {
     id: '95d2715c-35c8-4468-b939-925ad6c8416b',
     description: 'Defeat Rileigh using the summon sign midway through the path south of Shaded Castle (Altus)',
-    tags: [VOLCANO_MANOR_ASSASSINATION]
+    tags: [VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE]
   },
   {
     id: 'b30a881e-6c3b-4c28-84c6-88f942f4686d',
     description: 'Report back to Tanith for the Serpentbone Blade reward',
-    tags: [VOLCANO_MANOR_ASSASSINATION]
+    tags: [VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE]
+  },
+  {
+    id: '48ac2b74-5082-4b41-8ac3-28b059c69d20',
+    description: 'Talk to Rya in her human form in Volcano Manor',
+    tags: [ RYA_QUESTLINE ]
+  },
+  {
+    id: 'dbd20cf0-6029-49d5-b14d-bc66ca8a0d69',
+    description: 'go through the illusory wall in Volcano Manor, if you didn\'t, to reach the Prison Town Church grace and open the doors that lead to the Volcano Manor legacy dungeon',
+    tags: [ RYA_QUESTLINE ]
+  },
+  {
+    id: '8a6406cb-ddfa-4e79-bf25-e35e699d6c61',
+    description: 'Talk to Tanith about Rya',
+    tags: [ RYA_QUESTLINE, OPTIONAL ]
+  },
+  {
+    id: 'a5318288-6ea7-49dd-bd82-1b59456cfc4b',
+    description: "Defeat Godskin Noble in the Temple of Eiglay (Volcano Manor) to get the Serpent's Amnion",
+    tags: [ RYA_QUESTLINE ]
+  },
+  {
+    id: 'a45c34d8-6219-4fdd-abe0-1d1787076d4e',
+    description: "Give the Serpent's Amnion to Rya and rest at any site of grace",
+    tags: [ RYA_QUESTLINE ]
+  },
+  {
+    id: 'f962ad09-a015-425f-bd40-c825d1b27ef0',
+    description: 'Talk to Tanith and get the Tonic of Forgetfulness',
+    tags: [ RYA_QUESTLINE, OPTIONAL ]
+  },
+  {
+    id: "c68a1902-1696-49cb-91e4-836825f23057",
+    description:
+      "Find Rya inside the Volcano Manor dungeon (https://www.youtube.com/watch?v=rbfEiQu5Ft4&t=544s)",
+    tags: [RYA_QUESTLINE],
+    items: [
+      {
+        id: "4a1bdfa6-ed19-42d5-b9b3-ae1d03198a32",
+        description: "Kill Rya to get Daedicar's Woe",
+        tags: [RYA_QUESTLINE, OPTIONAL],
+      },
+      {
+        id: "8b664cda-0e97-4600-abc1-7f3dfe2996f5",
+        description: "Leave Rya alone",
+        tags: [RYA_QUESTLINE],
+      },
+      {
+        id: "9ea5e5b0-2822-48fd-bb0f-523eca597235",
+        description:
+          "Give Rya the Tonic of Forgetfulness. After Rykard is killed find her back in the Manor, exhaust her dialogue and reload the area to get Daedicar's Woe",
+        tags: [RYA_QUESTLINE, OPTIONAL],
+      },
+    ],
   },
   {
     id: '2beaab01-b227-4b7a-abf7-1ff6861ea4b0',
@@ -1175,6 +1254,12 @@ export const items = [
     id: 'b51482f0-d82f-4ed4-ad03-7ef3e6b0a3a8',
     description: "Tanith's Knight will invade. Kill and loot the Knight for Aspect of the Crucible: Breath.",
     tags: [VOLCANO_MANOR_ASSASSINATION]
+  },
+  {
+    id: "a8337720-4336-4219-88a7-9903e7178dad",
+    description:
+      "After defeating Rykard, talk to Rya in her previous location and reset the area to get Daedicar's Woe and Zorayas' Letter. If you gave Rya the Tonic of Forgetfulness, find her back in the Manor, exhaust her dialogue and reload the area to get Daedicar's Woe",
+    tags: [RYA_QUESTLINE],
   },
   {
     id: '522eac3f-53ae-4a00-b02d-e8166592baa6',

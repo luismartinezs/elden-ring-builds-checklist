@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTILINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTILINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -35,6 +35,11 @@ export const items = [
     id: '2ffa52b8-8b74-4111-a975-4da2c97d3c4c',
     description: 'Let Magrit kill you to access Roundtable Hold',
     tags: []
+  },
+  {
+    id: 'fd2775db-5c31-41af-b4e2-b32a05d2a6f5',
+    description: 'Talk to Corhyn in Rountable Hold',
+    tags: [CORHYN_QUESTLINE]
   },
   // EAST LIMGRAVE & MISTWOOD L10-20 +2
   {
@@ -446,11 +451,35 @@ export const items = [
     description: 'Rest in any site of grace in Altus',
     tags: [NGPLUS]
   },
-
   {
     id: 'f1e13540-ebde-451c-928a-252aac611f41',
     description: "It should be possible to progress Fia's quest now, but Fia's quest can be also skipped as she will be in Deeproot Depths regardless after you burn the Erdtree later",
     tags: [OPTIONAL, NGPLUS]
+  },
+  {
+    id: 'f5033fcc-bfe8-401c-8336-6dca652cb63b',
+    description: 'Talk to Corhyn in Roundtable Hold (after reaching Altus)',
+    tags: [CORHYN_QUESTLINE]
+  },
+  {
+    id: '2866b2b2-d058-4999-9078-cb1833a47275',
+    description: 'Talk to Corhyn north of the Altus Highway Junction grace, nearby the monument with the map',
+    tags: [CORHYN_QUESTLINE]
+  },
+  {
+    id: 'f2c7bed2-e302-4f98-aef5-8987532420f1',
+    description: 'Talk to Goldmask across the broken bridge in Altus. Reach him by using the teleporter next to the Forest-Spanning Greatbridge grace',
+    tags: [CORHYN_QUESTLINE]
+  },
+  {
+    id: '27b2577e-3ecc-4727-bc8e-98e1fafbfee4',
+    description: 'Talk to Corhyn north of the Altus Highway Junction grace',
+    tags: [CORHYN_QUESTLINE]
+  },
+  {
+    id: '77b9a027-bc96-4ded-9370-cfe155b6a7d4',
+    description: 'Talk to Corhyn across the broken bridge in Altus, next to Goldmask',
+    tags: [CORHYN_QUESTLINE]
   },
   {
     id: 'ea5372e9-62af-4277-9050-c2b3a0c8a07e',
@@ -723,12 +752,12 @@ export const items = [
   {
     id: 'efee0480-6110-4c57-af6e-9ea5d5c31635',
     description: 'Talk to Yura in the Second Church of Marika to get the Nagakiba. To reach this location, go directly north from the Altus Highway Junction grace in Altus Plateau',
-    tags: [ YURA_QUESTLINE ]
+    tags: [YURA_QUESTLINE]
   },
   {
     id: '6f7dcb3a-0fb3-440f-aa04-40e60a4fe921',
     description: "Defeat the invader Eleonora, Violet Bloody Finger to get the Purifying Crystal Tear and Eleonora's Poleblade",
-    tags: [ YURA_QUESTLINE ]
+    tags: [YURA_QUESTLINE]
   },
   {
     id: '3e908ded-2825-48c2-b96b-93068276438d',
@@ -954,6 +983,11 @@ export const items = [
     tags: [DUNG_EATER_QUESTILINE]
   },
   {
+    id: '86a63cbf-5afa-4d60-bad0-6879f8cebb94',
+    description: "Find Corhyn and Goldmask in Leyndell. From the West Capital Ramparts Site of Grace, head south. Follow the path upwards to the colosseum and then head left. Exhaust Corhyn's dialogue",
+    tags: [CORHYN_QUESTLINE]
+  },
+  {
     id: '5824fd47-d0bb-43ec-b552-dfe59fc62bc0',
     description: 'By this point your weapon can be +15-20 (6-7)',
     tags: []
@@ -962,6 +996,43 @@ export const items = [
     id: 'ca3d9a16-b81b-4be1-bb69-b7a3a704e862',
     description: 'Beat Godfrey shade',
     tags: [NGPLUS]
+  },
+  {
+    id: '6d61ad64-1a91-4e38-b316-ce48cc131368',
+    description: 'Get the Golden Order Principia, directly above the Erdtree Sanctuary grace, up the tree branches',
+    tags: [CORHYN_QUESTLINE]
+  },
+  {
+    id: '88f59a3c-a8e1-4f10-88f0-54872de1e0bc',
+    description: 'Give the Golden Order Principia to Corhyn in Leyndell or to Miriel in the Church of Vows, Liurnia, and buy the Law of Regression incantation (37 INT)',
+    tags: [CORHYN_QUESTLINE]
+  },
+  {
+    id: 'd81cc2d4-3dd6-4be5-a2e5-1f2625d11798',
+    description: "To be able to use Law of Regression you need 37 INT, if you don't have it, you have two options ",
+    tags: [CORHYN_QUESTLINE],
+    items: [
+      {
+        id: '450356c1-614e-42b7-9046-7d58d97eadaf',
+        description: 'A) Use two larval tears to respec to a high INT build and then respec back to your build (need to have defeated Rennala)',
+        tags: [CORHYN_QUESTLINE]
+      },
+      {
+        id: '517f2a48-9607-4636-9dfe-d231b5d76c60',
+        description: 'B) Use items that raise INT: Marika\'s soreseal (+5), Godrick\'s Great Rune (+5), Grafted Blade Greatsword (+5), Intelligence-knot Crystal Tear (+10), Stargazer Heirloom (+5), Twinsage Glintstone Crown (+6), etc, see more in <a href="https://eldenring.wiki.fextralife.com/Intelligence" target="_blank">Fextralife</a>',
+        tags: [CORHYN_QUESTLINE]
+      },
+    ]
+  },
+  {
+    id: '343d86e7-1b46-4fb3-b548-f7b5c9b4e75c',
+    description: 'Use the Law of Regression next to a message that says "regression", facing the statue, west of the Erdtree Sanctuary grace, down the elevator',
+    tags: [CORHYN_QUESTLINE]
+  },
+  {
+    id: '36970664-f1ad-456a-9e97-154b32765c5c',
+    description: 'Talk to Goldmask and Corhyn in Leyndell',
+    tags: [CORHYN_QUESTLINE]
   },
   {
     id: 'aed334cf-8397-453c-87d5-16922af7c955',
@@ -1003,7 +1074,7 @@ export const items = [
   {
     id: '57791558-3866-42c0-8701-432350a3ecc7',
     description: "Talk to Yura (Shabriri) in the Zamor Ruins Grace in Mountaintops of the Giants, and kill him to get the Ronin's Set or alternatively progress Hyetta's questline and accept the frenzied flame from the Three Fingers to find the set in Yura's location",
-    tags: [ YURA_QUESTLINE ]
+    tags: [YURA_QUESTLINE]
   },
   {
     id: '8a60d188-2029-4e20-a80e-ebbb3b50d7e0',
@@ -1021,9 +1092,9 @@ export const items = [
     tags: [MILLICENT_QUESTLINE]
   },
   {
-    id: 'c4d24087-e65d-4376-bdbd-c9356a062610',
-    description: 'Run through to Mountaintops of the Giants until right before Fire Giant',
-    tags: [NGPLUS]
+    id: '96d6b2fa-aebd-4c07-b608-486102d7afeb',
+    description: "Talk to Corhyn in the bridge south of Stargazers' Ruins right above the Ancient Snow Valley Ruins grace, in Mountaintops of the Giants. If you have the Tonic of Forgetfulness you can optionally offer it to him, but you don't need to",
+    tags: [CORHYN_QUESTLINE]
   },
   {
     id: '223a264a-6e74-4942-9c6f-f4c0d9229ac8',
@@ -1318,8 +1389,18 @@ export const items = [
   },
   {
     id: '4b29d14f-ec7a-4729-a457-5af706963d61',
-    description: 'Beat Maliketh',
+    description: 'Defeat Maliketh, The Black Blade',
     tags: [NGPLUS]
+  },
+  {
+    id: 'e8009e5d-0964-416b-bf30-f2f9a6b0ba38',
+    description: "Talk to Goldmask near the base of the giant spiral spear, in Leyndell, Ashen Capital, to get the Mending Rune of Perfect Order. Reload the game to find the Goldmask's Set ",
+    tags: [CORHYN_QUESTLINE]
+  },
+  {
+    id: '58bb2ab4-ea8f-45f6-9422-3d3052a32dc3',
+    description: "Talk to Corhyn near the base of the giant spiral spear, exhaust his dialogue and reload the area to get a Flail, Corhyn's Bell Bearing, and Corhyn's Robe. If Corhyn is not there, he might be in his previous location in Mountaintops of the Giants",
+    tags: [CORHYN_QUESTLINE]
   },
   {
     id: 'd08950f3-2199-484d-8272-a30804e38ee9',
@@ -1343,9 +1424,19 @@ export const items = [
     tags: [NGPLUS]
   },
   {
+    id: "073f039e-4bf9-4ec5-8cbb-029c1978a72b",
+    description: "Touch Marika's corpse to get the Age of Fracture ending",
+    tags: [NGPLUS]
+  },
+  {
     id: "f2cfa6be-dde8-467e-a7cf-f86814b8f6d7",
     description: "Interact with the blue summon sign near Marika's remains for the \"Age of the Stars\" ending",
     tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: 'd6ae84b7-734b-4f9d-9d12-fba3a1a2b2fd',
+    description: 'Use the Mending Rune of Perfect Order to get the Age of Order ending',
+    tags: [CORHYN_QUESTLINE]
   },
   {
     id: '68cafc87-0e90-4f00-a806-9643a6254da5',

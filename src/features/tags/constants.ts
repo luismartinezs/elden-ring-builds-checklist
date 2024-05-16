@@ -20,6 +20,7 @@ export const TAGS = {
   SELLEN_QUESTLINE: 'sellen-questline',
   PATCHES_QUESTLINE: 'patches-questline',
   YURA_QUESTLINE: 'yura-questline',
+  CORHYN_QUESTLINE: 'corhyn-questline',
 } as const;
 
 // these tags are "hidden" tags that are not displayed as filters

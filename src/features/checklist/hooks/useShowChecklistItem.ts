@@ -36,6 +36,9 @@ export function useShowChecklistItem(
   const { filter: filterYuraQuestine } = useFilter(
     TAGS.YURA_QUESTLINE
   );
+  const { filter: filterCorhynQuestline } = useFilter(
+    TAGS.CORHYN_QUESTLINE
+  );
   const { filter: filterSmithingStoneBell } = useFilter(
     TAGS.SMITHING_STONE_BELL
   );
@@ -132,6 +135,10 @@ export function useShowChecklistItem(
         tag: TAGS.SELLEN_QUESTLINE,
         filter: filterSellenQuestline,
       },
+      {
+        tag: TAGS.CORHYN_QUESTLINE,
+        filter: filterCorhynQuestline,
+      }
     ];
     const shouldHide =
       _tags.length > 0
@@ -167,7 +174,8 @@ export function useShowChecklistItem(
     filterDungEaterQuestline,
     filterSellenQuestline,
     filterPatchesQuestine,
-    filterYuraQuestine
+    filterYuraQuestine,
+    filterCorhynQuestline,
   ]);
 
   return show;

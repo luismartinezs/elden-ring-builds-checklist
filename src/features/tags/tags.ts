@@ -209,4 +209,21 @@ export const tags: Record<TTagKeys, {
       "Ronin's Set",
     ]
   },
+  [TAGS.CORHYN_QUESTLINE]: {
+    label: 'Corhyn',
+    key: TAGS.CORHYN_QUESTLINE,
+    buttonClasses: 'border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-black focus:ring-yellow-300',
+    tagClasses: 'border border-yellow-400 bg-yellow-600 text-white -m-px',
+    questlineRewards: [
+      "Great Heal",
+      "Lightning Fortification",
+      "Discus of Light",
+      "Immutable Shield",
+      "Corhyn's Bell Bearing",
+      "Flail",
+      "Corhyn's Robe",
+      "Goldmask's Set",
+      "Mending Rune of Perfect Order"
+    ]
+  }
 }

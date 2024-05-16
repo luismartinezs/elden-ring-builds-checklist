@@ -538,7 +538,7 @@ export const items = [
   },
   {
     id: 'bbd31431-ecf6-441f-b07d-6e0b7044c43f',
-    description: 'Altus Tunnel, in Altus. Directly south from the Minor Erdtree in Altus Plateau. <a href="" target="_blank"></a>Location: https://eldenring.wiki.fextralife.com/Interactive+Map?id=5837&lat=-93.49&lng=93.82&code=mapA',
+    description: 'Altus Tunnel, in Altus. Directly south from the Minor Erdtree in Altus Plateau. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=5837&lat=-93.49&lng=93.82&code=mapA" target="_blank">Location</a>',
     tags: [ TUNNELS ]
   },
   {
@@ -548,7 +548,7 @@ export const items = [
   },
   {
     id: '8b040470-0f63-4521-a3ef-1c00f3dd78ac',
-    description: 'Sealed Tunnel, found in Capital Outskirts, in Altus. Down at south of the lake right next to the west gate to Leyndell Royal Capital from the outside. <a href="" target="_blank"></a>Location: https://eldenring.wiki.fextralife.com/Interactive+Map?id=2858&lat=-105.75&lng=105.660584&code=mapA',
+    description: 'Sealed Tunnel, found in Capital Outskirts, in Altus. Down at south of the lake right next to the west gate to Leyndell Royal Capital from the outside. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=2858&lat=-105.75&lng=105.660584&code=mapA" target="_blank">Location</a>',
     tags: [ TUNNELS ]
   },
   {
@@ -1615,7 +1615,7 @@ export const items = [
       },
       {
         id: '2acc2df0-4d5c-46e7-a1b5-b7e1f565fe2c',
-        description: 'Yelough Anix Tunnel, in the west of the Consecrated Snowfield, near the Yelough Anix Ruins. <a href="" target="_blank"></a>Location: https://eldenring.wiki.fextralife.com/Interactive+Map?id=4491&lat=-77.59375&lng=133.02805&code=mapA',
+        description: 'Yelough Anix Tunnel, in the west of the Consecrated Snowfield, near the Yelough Anix Ruins. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=4491&lat=-77.59375&lng=133.02805&code=mapA" target="_blank">Location</a>',
         tags: [ TUNNELS ]
       },
       {

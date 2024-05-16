@@ -41,21 +41,22 @@ function filterItemsByTag(
   isNgPlus?: boolean
 ) {
   return checklistItems.filter(({ tags }) => {
-    if (!tags) {
-      console.error("Item with undefined, maybe bug in datasource?");
-      return false;
+    let _tags: string[] = []
+
+    if (tags) {
+      _tags = [...tags]
     }
 
-    const isOptional = tags?.includes(TAGS.OPTIONAL);
+    const isOptional = _tags?.includes(TAGS.OPTIONAL);
 
     // NOTE this is a bit of a hack to reuse the same steps for two checklists. the NG+ checklist shares most steps with NG checklist, but a few don't make sense for NG+
     // If a step has no tags or only "OPTIONAL" tag, it is filtered out from from the NG+ checklist
     // some items have the NG+ tag specifically to prevent this filtering
-    if (isNgPlus && (tags.length === 0 || (isOptional && tags.length === 1))) {
+    if (isNgPlus && (_tags.length === 0 || (isOptional && _tags.length === 1))) {
       return false;
     }
 
-    const validTags = tags?.filter(isValidTag);
+    const validTags = _tags?.filter(isValidTag);
 
     if (!validTags || validTags.length === 0) {
       return true;

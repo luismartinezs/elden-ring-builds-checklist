@@ -8,14 +8,14 @@ const faq = [
     answer:
       "This site is a collection of builds and checklists for Elden Ring.",
   },
-  {
-    question: 'The Toggle All button does not work on mobile',
-    answer: "I see this happen on Android Chrome. I'm debugging it. In the meantime, on Android Firefox it works (just keep in mind your progress is not shared)."
-  },
-  {
-    question: "The app is slow / broken. By Marika's tits, what's going on??",
-    answer: "Currently because of the amount of filters and the messy code I wrote, the lists perform slow on mobile (or at least I believe that is the reason). On desktop it works much better. I'll work on fixing it. If you can detect more bugs, use the button at the bottom right to let me know."
-  },
+  // {
+  //   question: 'The Toggle All button does not work on mobile',
+  //   answer: "I see this happen on Android Chrome. I'm debugging it. In the meantime, on Android Firefox it works (just keep in mind your progress is not shared)."
+  // },
+  // {
+  //   question: "The app is slow / broken. By Marika's tits, what's going on??",
+  //   answer: "Currently because of the amount of filters and the messy code I wrote, the lists perform slow on mobile (or at least I believe that is the reason). On desktop it works much better. I'll work on fixing it. If you can detect more bugs, use the button at the bottom right to let me know."
+  // },
   {
     question: "Why are there so few checklists?",
     answer:

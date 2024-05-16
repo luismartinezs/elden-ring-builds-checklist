@@ -63,7 +63,7 @@ function Settings() {
       </div>
       <div className="my-4 flex flex-col items-end gap-3 self-end">
         <Button
-          onClick={() => toggleFilters()}
+          onClick={() => toggleFilters(!allFiltersChecked)}
           variant="outline"
           className="flex items-center gap-2 whitespace-nowrap"
         >

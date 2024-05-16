@@ -13,11 +13,8 @@ export function useToggleFilters() {
   };
 
   return {
-    toggleFilters: () => {
-      const allTrue = getAllTrue();
-      console.log('allTrue when calling toggleFilters:', allTrue);
-
-      updateAllFilters(!allTrue);
+    toggleFilters: (value:boolean) => {
+      updateAllFilters(value);
     },
     allFiltersChecked: getAllTrue()
   };

@@ -6,14 +6,19 @@ export function useToggleFilters() {
     getCurrentFilters
   } = useManageFilters()
 
-  const allTrue = Object.values(getCurrentFilters()).every(Boolean)
+  const getAllTrue = () => {
+    const currentFilters = getCurrentFilters();
+    console.log('Current Filters in getAllTrue:', currentFilters);
+    return Object.values(currentFilters).every(Boolean);
+  };
 
   return {
     toggleFilters: () => {
+      const allTrue = getAllTrue();
       console.log('allTrue when calling toggleFilters:', allTrue);
 
-      updateAllFilters(!allTrue)
+      updateAllFilters(!allTrue);
     },
-    allFiltersChecked: allTrue
+    allFiltersChecked: getAllTrue()
   };
 }

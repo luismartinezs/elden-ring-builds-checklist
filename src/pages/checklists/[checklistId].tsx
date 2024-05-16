@@ -72,7 +72,7 @@ export default function ChecklistPage({
   checklist: TChecklist | null;
 }) {
   const { activeFilters } = useFilters();
-  console.log("activeFilters", activeFilters);
+  // console.log("activeFilters", activeFilters);
   const { isChecked } = useCheckItem();
 
   if (!checklist) {

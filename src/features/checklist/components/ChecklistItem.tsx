@@ -20,7 +20,7 @@ const ChecklistItem = ({
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <li>
+    <div>
       <div className="flex items-start justify-start gap-3">
         <Checkbox
           itemId={item.id}
@@ -40,7 +40,7 @@ const ChecklistItem = ({
         )}
       </div>
       {hasNested && isExpanded ? children : null}
-    </li>
+    </div>
   );
 };
 

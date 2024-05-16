@@ -213,7 +213,7 @@ export const tags: Record<TTagKeys, {
     label: 'Corhyn',
     key: TAGS.CORHYN_QUESTLINE,
     buttonClasses: 'border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-black focus:ring-yellow-300',
-    tagClasses: 'border border-yellow-400 bg-yellow-600 text-white -m-px',
+    tagClasses: 'bg-yellow-300 text-black',
     questlineRewards: [
       "Great Heal",
       "Lightning Fortification",

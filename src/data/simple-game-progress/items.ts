@@ -801,13 +801,13 @@ export const items = [
   {
     id: "c68a1902-1696-49cb-91e4-836825f23057",
     description:
-      "Find Rya inside the Volcano Manor dungeon (https://www.youtube.com/watch?v=rbfEiQu5Ft4&t=544s)",
+      "Find Rya inside the Volcano Manor dungeon and pick one of the following options. <a href='https://www.youtube.com/watch?v=rbfEiQu5Ft4&t=544s)' target='_blank'>Where to find her</a>",
     tags: [RYA_QUESTLINE],
     items: [
       {
         id: "4a1bdfa6-ed19-42d5-b9b3-ae1d03198a32",
-        description: "Kill Rya to get Daedicar's Woe",
-        tags: [RYA_QUESTLINE, OPTIONAL],
+        description: "Kill Rya to get Daedicar's Woe (ends Rya's questline)",
+        tags: [RYA_QUESTLINE],
       },
       {
         id: "8b664cda-0e97-4600-abc1-7f3dfe2996f5",
@@ -818,7 +818,7 @@ export const items = [
         id: "9ea5e5b0-2822-48fd-bb0f-523eca597235",
         description:
           "Give Rya the Tonic of Forgetfulness. After Rykard is killed find her back in the Manor, exhaust her dialogue and reload the area to get Daedicar's Woe",
-        tags: [RYA_QUESTLINE, OPTIONAL],
+        tags: [RYA_QUESTLINE],
       },
     ],
   },

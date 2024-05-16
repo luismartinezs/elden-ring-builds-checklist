@@ -1,3 +1,4 @@
+import { stringify } from 'querystring';
 import { useManageFilters } from '~/features/checklist/hooks/useManageFilters';
 
 export function useToggleFilters() {
@@ -8,7 +9,7 @@ export function useToggleFilters() {
 
   const getAllTrue = () => {
     const currentFilters = getCurrentFilters();
-    console.log('Current Filters in getAllTrue:', currentFilters);
+    console.log('Current Filters in getAllTrue:', JSON.stringify(currentFilters));
     return Object.values(currentFilters).every(Boolean);
   };
 

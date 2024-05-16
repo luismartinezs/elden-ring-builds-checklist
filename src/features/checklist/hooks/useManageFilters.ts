@@ -24,13 +24,13 @@ export function useManageFilters() {
   const updateAllFilters = (value: boolean) => {
     setData(produce(data, draft => {
       console.log(`Updating all filters to ${value}`);
-      draft.profiles[draft.currentProfile]!.filters.completed = value;
-      Object.values(TAGS).forEach(tag => {
-        draft.profiles[draft.currentProfile]!.filters[tag] = value;
-        console.log(`Setting filter ${tag} to ${value}`);
+      const currentFilters = draft.profiles[draft.currentProfile]?.filters ?? {};
 
-        return draft
+      Object.keys(currentFilters).forEach(filterName => {
+        currentFilters[filterName] = value;
       })
+
+      draft.profiles[draft.currentProfile]!.filters = currentFilters
     }))
   }
 

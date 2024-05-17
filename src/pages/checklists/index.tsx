@@ -1,11 +1,10 @@
 import { type GetStaticProps } from "next";
-import Link from "next/link";
-import { PageLayout } from "~/layouts/PageLayout";
 import { lists } from "~/data";
 import Head from "next/head";
-import { Heading } from "~/components/Heading";
-import { Paragraph } from "~/components/Paragraph";
+import FeatureSection from "~/components/FeatureSection";
 import Hero from "~/components/Hero";
+import { HeroSection } from "~/components/HeroSection";
+import { PageLayout } from "~/layouts/PageLayout";
 import { Checklists } from "~/components/Checklists";
 
 export const getStaticProps: GetStaticProps = () => {
@@ -16,7 +15,7 @@ export const getStaticProps: GetStaticProps = () => {
   };
 };
 
-export default function ChecklistsPage({
+export default function Landing({
   checklists,
 }: {
   checklists: {
@@ -25,18 +24,19 @@ export default function ChecklistsPage({
   }[];
 }) {
   return (
-    <PageLayout>
+    <>
       <Head>
-        <title>Checklists | Elden Ring Builds</title>
-        <meta name="description" content="Elden Ring Builds" />
+        <title>Elden Ring Checklists</title>
+        <meta name="description" content="Elden Ring Checklists" />
       </Head>
-      <Heading.H1>Elden Ring Checklists</Heading.H1>
-      <Paragraph>
-        Checklists for character builds for Elden Ring, so you don&apos;t have
-        to look at a guide for every step
-      </Paragraph>
-      <Hero />
-      <Checklists checklists={checklists} />
-    </PageLayout>
+      <PageLayout>
+        <div className="flex flex-col">
+          <HeroSection />
+          <FeatureSection />
+          <Hero />
+          <Checklists checklists={checklists} />
+        </div>
+      </PageLayout>
+    </>
   );
 }

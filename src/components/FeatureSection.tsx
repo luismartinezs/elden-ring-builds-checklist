@@ -20,7 +20,7 @@ const steps = [
 const FeatureSection = () => {
   return (
     <SectionWrapper
-      className="bg-stone-800 px-0 text-center text-white"
+      className="bg-stone-800 px-0 text-center text-white !mb-0"
       fullBleed
     >
      <div className="max-w-3xl mx-auto px-4 md:px-0">

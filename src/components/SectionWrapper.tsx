@@ -11,7 +11,7 @@ export function SectionWrapper(
     <section
       className={cn(
         "py-12 xl:my-12",
-        props.fullBleed ? "" : "container mx-auto max-w-6xl",
+        props.fullBleed ? "" : "container mx-auto max-w-6xl px-4 lg:px-0",
         className
       )}
       {...otherProps}

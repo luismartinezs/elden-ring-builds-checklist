@@ -6,7 +6,7 @@ import { SectionWrapper } from "./SectionWrapper";
 
 const Hero = () => {
   return (
-    <SectionWrapper className="relative py-0">
+    <SectionWrapper className="relative py-0 !my-0" fullBleed>
       <div className="rounded-lg overflow-hidden w-full h-[500px] relative">
         <Image
           src="/ranni.jpg"

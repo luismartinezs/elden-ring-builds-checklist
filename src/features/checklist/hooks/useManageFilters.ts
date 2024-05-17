@@ -2,14 +2,13 @@ import { useLocalStorage } from "usehooks-ts";
 import { initAppData } from "~/features/checklist/hooks/useManageProfiles";
 import { type AppData } from "~/features/checklist/types";
 import { produce } from 'immer'
-import { TAGS } from "~/features/tags"
 
 export function useManageFilters() {
   const [data, setData] = useLocalStorage<AppData>("appData", initAppData);
 
   const getCurrentFilters = () => {
     const filters = data.profiles[data.currentProfile]?.filters ?? {};
-    console.log('getCurrentFilters:', JSON.stringify(filters));
+    // console.log('getCurrentFilters:', JSON.stringify(filters));
     return filters;
   };
 

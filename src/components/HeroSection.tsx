@@ -6,7 +6,7 @@ import Link from "next/link";
 export function HeroSection() {
   return (
     <SectionWrapper className="flex flex-col items-center justify-center gap-4 py-[150px] md:gap-5 xl:gap-8">
-      <div className="flex items-center justify-center gap-3">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
         <div
           className="h-[30px] w-[30px] md:h-[40px] md:w-[40px]
           lg:h-[60px] lg:w-[60px]

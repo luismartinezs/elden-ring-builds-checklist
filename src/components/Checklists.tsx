@@ -12,7 +12,7 @@ export function Checklists({
 }) {
   return (
     <SectionWrapper>
-      <Heading.H2>Checklists</Heading.H2>
+      <Heading.H2 id="checklists">Checklists</Heading.H2>
       <ul className="mt-4 flex flex-col gap-2 text-2xl">
         {Object.values(checklists).map(({ slug, title }) => (
           <li key={slug}>

@@ -8,7 +8,7 @@ const faq = [
   {
     question: "What is this site?",
     answer:
-      "This site is a collection of builds and checklists for Elden Ring.",
+      "This site is a collection of builds and checklists for Elden Ring to make it simple to progress through the game.",
   },
   // {
   //   question: 'The Toggle All button does not work on mobile',

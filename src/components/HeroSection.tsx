@@ -1,6 +1,7 @@
 import { PrimaryLinkButton } from "~/components/PrimaryLinkButton";
 import { SectionWrapper } from "~/components/SectionWrapper";
 import { FaListCheck } from "react-icons/fa6";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -23,12 +24,17 @@ export function HeroSection() {
       <p className="text-center text-xl text-stone-300 md:text-2xl xl:text-3xl">
         Replay the game without looking at guides every 5 minutes
       </p>
-      <PrimaryLinkButton
-        href="/checklists/simple-game-progress"
-        className="fancy-gradient min-w-[200px] bg-gradient-to-br px-5 py-3 text-center font-semibold tracking-wide text-black xl:text-2xl"
-      >
-        START NEW PLAYTHROUGH
-      </PrimaryLinkButton>
+      <div className="flex flex-col items-center justify-center">
+        <PrimaryLinkButton
+          href="/checklists/simple-game-progress"
+          className="fancy-gradient min-w-[200px] bg-gradient-to-br px-5 py-3 text-center font-semibold tracking-wide text-black xl:text-2xl"
+        >
+          START NEW PLAYTHROUGH
+        </PrimaryLinkButton>
+        <Link href="/checklists#checklists" className="text-stone-300 text-sm md:text-md mt-4">
+          See all checklists
+        </Link>
+      </div>
     </SectionWrapper>
   );
 }

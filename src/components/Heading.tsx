@@ -1,9 +1,12 @@
 import { cn } from "~/utils/cn";
 
+type HeadingProps = React.ComponentPropsWithoutRef<"h1">;
+
 function HeadingH1({
   className,
   children,
-}: {
+  ...rest
+}: HeadingProps & {
   children: React.ReactNode;
   className?: string;
 }) {
@@ -13,6 +16,7 @@ function HeadingH1({
         className,
         "mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl"
       )}
+      {...rest}
     >
       {children}
     </h1>
@@ -22,7 +26,8 @@ function HeadingH1({
 function HeadingH2({
   className,
   children,
-}: {
+  ...rest
+}: HeadingProps & {
   children: React.ReactNode;
   className?: string;
 }) {
@@ -32,6 +37,7 @@ function HeadingH2({
         className,
         "mb-4 text-2xl font-extrabold leading-none tracking-tight text-white md:text-3xl lg:text-4xl"
       )}
+      {...rest}
     >
       {children}
     </h2>

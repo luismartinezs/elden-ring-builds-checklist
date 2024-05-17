@@ -78,8 +78,6 @@ export function Checklists({
     tags: string[];
   }[];
 }) {
-  console.log(checklists.map(({ tags }) => tags));
-
   return (
     <SectionWrapper>
       <Heading.H2 id="checklists">Checklists</Heading.H2>

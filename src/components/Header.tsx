@@ -59,7 +59,7 @@ function LogoLink(props: React.ComponentPropsWithoutRef<"a">) {
 export function Header(props: React.ComponentPropsWithoutRef<"header">) {
   const { className, ...otherProps } = props;
   const router = useRouter();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const closeMenu = () => {
     setOpen(false);

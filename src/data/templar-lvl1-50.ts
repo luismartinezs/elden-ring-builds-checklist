@@ -2,6 +2,7 @@ const list = {
   id: "545c07ad-a695-4422-8861-bab9c49a0a54",
   slug: "templar-lvl-1-50",
   title: "Templar Level 1-50",
+  tags: ['fai', 'early'],
   notes: [
     `Build based on this <a href='https://www.youtube.com/watch?v=HfzZaFaeet4' target='_blank'>Elden Ring Faith Build Guide</a>`,
   ],

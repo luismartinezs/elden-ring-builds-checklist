@@ -9,6 +9,7 @@ import { BurgerButton } from "~/components/BurgerButton";
 import { EldenRingLogo } from "~/components/EldenRingLogo";
 import { AiOutlineClose } from "react-icons/ai";
 import { cn } from "~/utils/cn";
+import Link from "next/link";
 
 const links = [
   {
@@ -79,14 +80,14 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
       <nav className="px-4 text-white lg:px-6">
         <div className="relative mx-auto flex max-w-screen-xl flex-wrap items-center justify-between py-2">
           <LogoLink className="lg:hidden" />
-          <div className="lg:hidden">Elden Ring Checklists</div>
+          <Link className="lg:hidden font-bold text-xl" href="/">Elden Ring Checklists</Link>
           <div className="flex items-center lg:order-2 lg:hidden">
             <BurgerButton onClick={toggleMenu} />
           </div>
           <div className="hidden w-full items-center justify-between gap-12 lg:order-1 lg:flex">
             <div className="flex items-center gap-4">
               <LogoLink />
-              <div className="hidden lg:block">Elden Ring Checklists</div>
+              <Link href="/" className="hidden lg:block font-bold text-xl">Elden Ring Checklists</Link>
             </div>
             <ul className="mt-4 flex flex-col font-medium lg:mt-0 lg:flex-row lg:space-x-8">
               {links.map((link) => (

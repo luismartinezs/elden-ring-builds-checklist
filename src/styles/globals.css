@@ -9,3 +9,11 @@ body {
 a {
   @apply text-amber-400 hover:text-amber-500;
 }
+
+.fancy-gradient {
+  @apply from-primary-300 via-primary-500 to-primary-700;
+}
+
+.fancy-gradient:hover {
+  @apply from-primary-500 via-primary-700 to-primary-900;
+}

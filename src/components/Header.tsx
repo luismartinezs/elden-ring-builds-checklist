@@ -143,12 +143,12 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
                     ))}
                   </ul>
                   {/* social links */}
-                  <ul className="flex items-center justify-center pt-4 border-t border-gray-700 w-full">
+                  <ul className="flex items-center justify-center pt-4 border-t border-stone-700 w-full">
                     {socialLinks.map((link) => (
                       <li key={link.label}>
                         <a
                           href={link.href}
-                          className="flex items-center justify-center gap-2 p-4 text-xl text-gray-300 hover:text-white"
+                          className="flex items-center justify-center gap-2 p-4 text-xl text-stone-300 hover:text-white"
                           target="_blank"
                         >
                           <link.icon size={20} />

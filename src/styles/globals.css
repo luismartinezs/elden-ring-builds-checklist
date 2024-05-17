@@ -17,3 +17,11 @@ a {
 .fancy-gradient:hover {
   @apply from-primary-500 via-primary-700 to-primary-900;
 }
+
+.fancy-gradient-secondary {
+  @apply from-secondary-300 via-secondary-500 to-secondary-700 text-black;
+}
+
+.fancy-gradient-secondary:hover {
+  @apply from-secondary-500 via-secondary-700 to-secondary-900 text-white;
+}

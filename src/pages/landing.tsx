@@ -1,4 +1,6 @@
 import Head from "next/head";
+import FeatureSection from "~/components/FeatureSection";
+import Hero from "~/components/Hero";
 import { HeroSection } from "~/components/HeroSection";
 import { PageLayout } from "~/layouts/PageLayout";
 
@@ -10,10 +12,10 @@ export default function Home() {
         <meta name="description" content="Elden Ring Checklists" />
       </Head>
       <PageLayout>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col">
           <HeroSection />
-          <div>3 Steps: open checklist - toggle filters - follow steps</div>
-          <div>Ranni build thing</div>
+          <FeatureSection />
+          <Hero />
           <div>List of builds and checklists</div>
         </div>
       </PageLayout>

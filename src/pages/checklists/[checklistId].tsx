@@ -12,6 +12,7 @@ import { useFilters } from "~/features/filters";
 import { TAGS, isValidTag } from "~/features/tags";
 import ClientOnly from "~/components/ClientOnly";
 import { useCheckItem } from "~/features/checklist/hooks/useCheckItem";
+import { SectionWrapper } from "~/components/SectionWrapper";
 
 export const getStaticPaths: GetStaticPaths = () => {
   const paths = Object.values<TChecklist>(lists).map((list) => ({
@@ -41,10 +42,10 @@ function filterItemsByTag(
   isNgPlus?: boolean
 ) {
   return checklistItems.filter(({ tags }) => {
-    let _tags: string[] = []
+    let _tags: string[] = [];
 
     if (tags) {
-      _tags = [...tags]
+      _tags = [...tags];
     }
 
     const isOptional = _tags?.includes(TAGS.OPTIONAL);
@@ -52,7 +53,10 @@ function filterItemsByTag(
     // NOTE this is a bit of a hack to reuse the same steps for two checklists. the NG+ checklist shares most steps with NG checklist, but a few don't make sense for NG+
     // If a step has no tags or only "OPTIONAL" tag, it is filtered out from from the NG+ checklist
     // some items have the NG+ tag specifically to prevent this filtering
-    if (isNgPlus && (_tags.length === 0 || (isOptional && _tags.length === 1))) {
+    if (
+      isNgPlus &&
+      (_tags.length === 0 || (isOptional && _tags.length === 1))
+    ) {
       return false;
     }
 
@@ -89,7 +93,9 @@ export default function ChecklistPage({
   )
     // handle completed items with a special tag
     .filter(
-      (item) => !isChecked(item.id) || (isChecked(item.id) && activeFilters.includes("completed"))
+      (item) =>
+        !isChecked(item.id) ||
+        (isChecked(item.id) && activeFilters.includes("completed"))
     )
     // removing tags not used for filtering because they are not needed beyond this point
     .map((item) => ({
@@ -103,21 +109,23 @@ export default function ChecklistPage({
         <title>{checklist.title} | Elden Ring Builds</title>
         <meta name="description" content={checklist.title} />
       </Head>
-      <div className="sticky top-[66px] z-10 -mx-4 mb-4 flex justify-between bg-stone-900 px-4 py-4">
-        <h1 className="text-2xl">{checklist.title}</h1>
-        <SettingsMenu />
-      </div>
+      <SectionWrapper className="py-0 relative isolate !my-0">
+        <div className="sticky top-[66px] z-10 -mx-4 mb-4 flex justify-between bg-stone-900 px-4 py-4">
+          <h1 className="text-2xl">{checklist.title}</h1>
+          <SettingsMenu />
+        </div>
 
-      {checklist.notes?.map((note, index) => (
-        <p
-          key={`${checklist.id}-note-${index}`}
-          className="mb-4"
-          dangerouslySetInnerHTML={{ __html: note }}
-        ></p>
-      ))}
-      <ClientOnly>
-        <Checklist items={checklistItems} />
-      </ClientOnly>
+        {checklist.notes?.map((note, index) => (
+          <p
+            key={`${checklist.id}-note-${index}`}
+            className="mb-4"
+            dangerouslySetInnerHTML={{ __html: note }}
+          ></p>
+        ))}
+        <ClientOnly>
+          <Checklist items={checklistItems} />
+        </ClientOnly>
+      </SectionWrapper>
     </PageLayout>
   );
 }

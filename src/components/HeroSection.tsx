@@ -20,8 +20,8 @@ export function HeroSection() {
           Checklists for <span className="text-primary-500">Elden Ring</span>
         </h1>
       </div>
-      <p className="text-center text-xl text-gray-300 md:text-2xl xl:text-3xl">
-        Replay the game without looking at guides every 5 minutes and without missing stuff
+      <p className="text-center text-xl text-stone-300 md:text-2xl xl:text-3xl">
+        Replay the game without looking at guides every 5 minutes
       </p>
       <PrimaryLinkButton
         href="/checklists/simple-game-progress"

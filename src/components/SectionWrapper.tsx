@@ -5,13 +5,13 @@ export function SectionWrapper(
     fullBleed?: boolean;
   }
 ) {
-  const { className, children, ...otherProps } = props;
+  const { className, children, fullBleed, ...otherProps } = props;
 
   return (
     <section
       className={cn(
         "py-12 xl:my-12",
-        props.fullBleed ? "" : "container mx-auto max-w-6xl px-4 xl:px-0",
+        fullBleed ? "" : "container mx-auto max-w-6xl px-4 xl:px-0",
         className
       )}
       {...otherProps}

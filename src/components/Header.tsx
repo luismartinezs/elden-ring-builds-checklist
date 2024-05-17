@@ -48,10 +48,7 @@ function LogoLink(props: React.ComponentPropsWithoutRef<"a">) {
   return (
     <PrimaryLink
       href="/"
-      className={cn(
-        "flex items-center gap-3 hover:opacity-70",
-        className
-      )}
+      className={cn("flex items-center gap-3 hover:opacity-70", className)}
       {...otherProps}
     >
       <EldenRingLogo />
@@ -64,30 +61,35 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
   const router = useRouter();
   const [open, setOpen] = useState(true);
 
-  const toggleMenu = () => {
-    setOpen(!open);
+  const closeMenu = () => {
+    setOpen(false);
+  };
+
+  const openMenu = () => {
+    setOpen(true);
   };
 
   useEffect(() => {
-    setOpen(false);
+    closeMenu();
   }, [router.pathname]);
 
   return (
-    <header
-      className={cn(className, "bg-stone-800 px-2 py-2")}
-      {...otherProps}
-    >
+    <header className={cn(className, "bg-stone-800 px-2 py-2")} {...otherProps}>
       <nav className="px-4 text-white lg:px-6">
         <div className="relative mx-auto flex max-w-screen-xl flex-wrap items-center justify-between py-2">
           <LogoLink className="lg:hidden" />
-          <Link className="lg:hidden font-bold text-xl" href="/">Elden Ring Checklists</Link>
+          <Link className="text-xl font-bold lg:hidden" href="/">
+            Elden Ring Checklists
+          </Link>
           <div className="flex items-center lg:order-2 lg:hidden">
-            <BurgerButton onClick={toggleMenu} />
+            <BurgerButton onClick={openMenu} />
           </div>
           <div className="hidden w-full items-center justify-between gap-12 lg:order-1 lg:flex">
             <div className="flex items-center gap-4">
               <LogoLink />
-              <Link href="/" className="hidden lg:block font-bold text-xl">Elden Ring Checklists</Link>
+              <Link href="/" className="hidden text-xl font-bold lg:block">
+                Elden Ring Checklists
+              </Link>
             </div>
             <ul className="mt-4 flex flex-col font-medium lg:mt-0 lg:flex-row lg:space-x-8">
               {links.map((link) => (
@@ -120,7 +122,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
                       <span>Elden Ring Checklists</span>
                     </div>
                     <button
-                      onClick={toggleMenu}
+                      onClick={closeMenu}
                       className="max-h-[50px] self-end rounded-xl p-2 text-white hover:bg-stone-800"
                     >
                       <AiOutlineClose color="#ffffff" size={30} />
@@ -133,6 +135,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
                         className="w-full border-b border-stone-500 last:border-0"
                       >
                         <PrimaryLink
+                          onClick={closeMenu}
                           href={link.href}
                           className="flex w-full items-center justify-between px-6 py-5 hover:text-stone-300"
                         >
@@ -143,7 +146,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
                     ))}
                   </ul>
                   {/* social links */}
-                  <ul className="flex items-center justify-center pt-4 border-t border-stone-700 w-full">
+                  <ul className="flex w-full items-center justify-center border-t border-stone-700 pt-4">
                     {socialLinks.map((link) => (
                       <li key={link.label}>
                         <a

@@ -10,7 +10,7 @@ import Hero from "~/components/Hero";
 export const getStaticProps: GetStaticProps = () => {
   return {
     props: {
-      checklists: lists,
+      checklists: lists.map(({slug, title}) => ({slug, title})),
     },
   };
 };

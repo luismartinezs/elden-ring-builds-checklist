@@ -31,7 +31,7 @@ export function HeroSection() {
         >
           START NEW PLAYTHROUGH
         </PrimaryLinkButton>
-        <Link href="/checklists#checklists" className="text-stone-300 text-sm md:text-md mt-4">
+        <Link href="/checklists#checklists" className="text-stone-300 text-sm md:text-base xl:text-lg mt-4">
           See all checklists
         </Link>
       </div>

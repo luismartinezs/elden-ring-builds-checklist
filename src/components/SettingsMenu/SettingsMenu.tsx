@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
 import { useIsClient, useOnClickOutside } from "usehooks-ts";
-import classnames from "classnames";
+import { cn } from "~/utils/cn";
 import { LuSettings2 } from "react-icons/lu";
 import { AiFillEye, AiFillEyeInvisible, AiOutlineClose } from "react-icons/ai";
 import { GoAlertFill } from "react-icons/go";
@@ -112,7 +112,7 @@ function Menu({
   return (
     <div
       aria-hidden={!open}
-      className={classnames(
+      className={cn(
         "fixed inset-1 top-[72px] z-10 grid grid-cols-1 text-white transition-opacity duration-500 ease-out sm:inset-4 sm:top-[80px] md:grid-cols-2",
         open ? "opacity-100" : "pointer-events-none opacity-0"
       )}
@@ -120,7 +120,7 @@ function Menu({
       <div className="col-span-1 hidden md:block"></div>
       <div
         ref={ref}
-        className={classnames(
+        className={cn(
           "col-span-1 max-w-3xl overflow-y-auto rounded-xl border border-stone-500 bg-stone-900 text-white shadow-xl transition-opacity duration-300 ease-out"
         )}
       >

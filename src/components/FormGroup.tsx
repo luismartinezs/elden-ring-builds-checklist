@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import { cn } from "~/utils/cn";
 
 export function FormGroup(
   props: React.ComponentPropsWithoutRef<"div"> & {
@@ -10,7 +10,7 @@ export function FormGroup(
   return (
     <div
       {...propsWithoutClassname}
-      className={classnames(className, "flex flex-col gap-2")}
+      className={cn(className, "flex flex-col gap-2")}
     >
       {props.children}
     </div>

@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import { cn } from "~/utils/cn";
 import type { TTagKeys } from "./types";
 import { tags } from "./tags";
 
@@ -11,7 +11,7 @@ export function Tag({ tag }: { tag: string }) {
 
   return (
     <span
-      className={classnames(
+      className={cn(
         "whitespace-nowrap rounded px-1 py-0.5 text-sm font-bold",
         tagClasses
       )}

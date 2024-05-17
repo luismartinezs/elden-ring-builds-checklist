@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import { cn } from "~/utils/cn";
 import Link, { type LinkProps } from "next/link";
 import React from "react";
 
@@ -8,7 +8,7 @@ export function PrimaryLink(
   return (
     <Link
       {...props}
-      className={classnames("hover:opacity-70", props.className)}
+      className={cn("hover:opacity-70", props.className)}
     >
       {props.children}
     </Link>

@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import { cn } from "~/utils/cn";
 
 function calcTransform(
   size: number,
@@ -29,7 +29,7 @@ function Ring({
 }) {
   return (
     <div
-      className={classnames("rounded-full border-amber-500", className)}
+      className={cn("rounded-full border-amber-500", className)}
       style={{
         borderWidth: Math.min(size / 10, 2),
         width: size,

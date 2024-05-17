@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { BsChevronRight } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 import { PrimaryLink } from "~/components/PrimaryLink";
 import { BurgerButton } from "~/components/BurgerButton";
-import classnames from "classnames";
 import { EldenRingLogo } from "~/components/EldenRingLogo";
 import { AiOutlineClose } from "react-icons/ai";
+import { cn } from "~/utils/cn";
 
 const links = [
   {
@@ -27,12 +29,25 @@ const links = [
   },
 ];
 
+const socialLinks = [
+  {
+    label: "X",
+    icon: FaXTwitter,
+    href: "https://twitter.com/LuisMartinezSu2",
+  },
+  {
+    label: "Github",
+    icon: FaGithub,
+    href: "https://github.com/luismartinezs/elden-ring-builds-checklist",
+  },
+];
+
 function LogoLink(props: React.ComponentPropsWithoutRef<"a">) {
   const { className, ...otherProps } = props;
   return (
     <PrimaryLink
       href="/"
-      className={classnames(
+      className={cn(
         "flex items-center gap-3 hover:opacity-70",
         className
       )}
@@ -46,7 +61,7 @@ function LogoLink(props: React.ComponentPropsWithoutRef<"a">) {
 export function Header(props: React.ComponentPropsWithoutRef<"header">) {
   const { className, ...otherProps } = props;
   const router = useRouter();
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const toggleMenu = () => {
     setOpen(!open);
@@ -58,7 +73,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
 
   return (
     <header
-      className={classnames(className, "bg-stone-800 px-2 py-2")}
+      className={cn(className, "bg-stone-800 px-2 py-2")}
       {...otherProps}
     >
       <nav className="px-4 text-white lg:px-6">
@@ -85,7 +100,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
           {/* MOBILE NAV BAR */}
           {open && (
             <div
-              className={classnames(
+              className={cn(
                 "fixed inset-4 z-10 grid grid-cols-1 text-white transition-opacity duration-500 ease-out md:grid-cols-2 lg:hidden",
                 open ? "opacity-100" : "pointer-events-none opacity-0"
               )}
@@ -93,7 +108,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
             >
               <div className="col-span-1 hidden md:block"></div>
               <div
-                className={classnames(
+                className={cn(
                   "col-span-1 rounded-xl bg-black text-white shadow-xl transition-opacity duration-300 ease-out lg:hidden"
                 )}
               >
@@ -123,6 +138,20 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
                           <span className="font-semibold">{link.label}</span>
                           <BsChevronRight size={20} strokeWidth={1} />
                         </PrimaryLink>
+                      </li>
+                    ))}
+                  </ul>
+                  {/* social links */}
+                  <ul className="flex items-center justify-center pt-4 border-t border-gray-700 w-full">
+                    {socialLinks.map((link) => (
+                      <li key={link.label}>
+                        <a
+                          href={link.href}
+                          className="flex items-center justify-center gap-2 p-4 text-xl text-gray-300 hover:text-white"
+                          target="_blank"
+                        >
+                          <link.icon size={20} />
+                        </a>
                       </li>
                     ))}
                   </ul>

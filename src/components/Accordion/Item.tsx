@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import { cn } from "~/utils/cn";
 import { useId } from "react";
 import { PiCaretUpBold, PiCaretDownBold } from "react-icons/pi";
 import { useAccordionContext } from "~/components/Accordion/Accordion.context";
@@ -41,7 +41,7 @@ export function Item({
       </h2>
       <div
         id={bodyId}
-        className={classnames(
+        className={cn(
           isActive ? "block" : "hidden",
           "border border-t-0 border-stone-700"
         )}

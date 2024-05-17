@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Button } from "~/components/Button";
 import { useManageProfiles } from "~/features/checklist/hooks/useManageProfiles";
 import { useOnClickOutside } from "usehooks-ts";
-import classnames from "classnames";
+import { cn } from "~/utils/cn";
 import { FormGroup } from "~/components/FormGroup";
 import { Input } from "~/components/Input";
 
@@ -72,7 +72,7 @@ export function EditProfile() {
           id="authentication-modal"
           tabIndex={-1}
           aria-hidden="true"
-          className={classnames(
+          className={cn(
             "fixed left-0 right-0 top-0 z-50 flex h-[calc(100%-1rem)] max-h-full w-full items-center justify-center overflow-y-auto overflow-x-hidden bg-stone-900/50 p-4 md:inset-0"
           )}
         >

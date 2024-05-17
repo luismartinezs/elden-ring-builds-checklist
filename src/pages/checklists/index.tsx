@@ -18,7 +18,10 @@ export const getStaticProps: GetStaticProps = () => {
 export default function ChecklistsPage({
   checklists,
 }: {
-  checklists: typeof lists;
+  checklists: {
+    slug: string;
+    title: string
+  }[];
 }) {
   return (
     <PageLayout>

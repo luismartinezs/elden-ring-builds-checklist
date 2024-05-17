@@ -25,9 +25,9 @@ export function HeroSection() {
       </p>
       <PrimaryLinkButton
         href="/checklists/simple-game-progress"
-        className="fancy-gradient min-w-[200px] bg-gradient-to-br px-5 py-3 text-center font-semibold tracking-wide text-black xl:text-2xl hover:text-white"
+        className="fancy-gradient min-w-[200px] bg-gradient-to-br px-5 py-3 text-center font-semibold tracking-wide text-black xl:text-2xl"
       >
-        START HERE
+        START NEW PLAYTHROUGH
       </PrimaryLinkButton>
     </SectionWrapper>
   );

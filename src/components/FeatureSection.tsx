@@ -28,7 +28,7 @@ const FeatureSection = () => {
          Do not miss <span className="text-primary-500">NPC questlines</span>, do not get lost in the <span className="text-secondary-500">Lands Between</span>
        </h2>
        <p className="mb-6">
-         Open the checklist, select what you want to track, do not worry about missing stuff
+         Open the checklist, select what you want to track, do not worry about dying NPCs or missing stuff
        </p>
        <div className="mx-auto flex max-w-3xl items-center justify-center space-x-6">
          {steps.map((step, index) => (

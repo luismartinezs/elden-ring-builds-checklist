@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Accordion } from "~/components/Accordion";
+import { Heading } from "~/components/Heading";
+import { SectionWrapper } from "~/components/SectionWrapper";
 import { PageLayout } from "~/layouts/PageLayout";
 
 const faq = [
@@ -17,6 +19,11 @@ const faq = [
   //   answer: "Currently because of the amount of filters and the messy code I wrote, the lists perform slow on mobile (or at least I believe that is the reason). On desktop it works much better. I'll work on fixing it. If you can detect more bugs, use the button at the bottom right to let me know."
   // },
   {
+    question: "Is the main checklist for game playthrough complete?",
+    answer:
+      'It would be nice if it was, but it isn\'t :) This game is huge, and this site is maintained by only me. That said, the checklist is pretty much usable and it has everything "important".',
+  },
+  {
     question: "Why are there so few checklists?",
     answer:
       "It takes some time to actually put one checklist together and this is just a side project and I'm the only one updating it. I might create a UI so that you can add checklists some day, but that would mean a significant revamp of the project.",
@@ -25,14 +32,19 @@ const faq = [
     question: "I want to provide a suggestion / feedback / report a bug",
     answer: (
       <p>
-        You can do so with the bottom right button (it will send me an email) or by opening an issue on{" "}
-        <Link
+        You can do so with the bottom right button (it will send me an email),
+        by opening an issue on{" "}
+        <a
           href="https://github.com/luismartinezs/elden-ring-builds-checklist/issues"
           target="_blank"
           rel="noopener noreferrer"
         >
           GitHub
-        </Link>
+        </a>
+        , or by{" "}
+        <a href="https://twitter.com/LuisMartinezSu2" target="_blank">
+          sending me a message on X
+        </a>
         .
       </p>
     ),
@@ -56,7 +68,8 @@ const faq = [
         </p>
         <p>
           Or you can of course always fork the repo, add your changes and create
-          a pull request. In the README.md file there are some instructions about how to do that.
+          a pull request. In the README.md file there are some instructions
+          about how to do that.
         </p>
       </>
     ),
@@ -83,6 +96,12 @@ const faq = [
         device or browser will not be there.
       </p>
     ),
+  },
+  {
+    question:
+      "Will you add user login to be able to save progress and access it from different browsers or devices?",
+    answer:
+      "I would love to add that :) But that's a non trivial amount of work, and this is just a hobby side project. If this project gets traction and more users, the chances I add that increase. The best you can do is share this site online and provide feedback so that I know what to improve.",
   },
   {
     question:
@@ -114,7 +133,12 @@ const faq = [
 function FaqPage() {
   return (
     <PageLayout>
-      <Accordion items={faq} initialActiveId={0} />
+      <SectionWrapper>
+        <Heading.H1 className="mb-3">Frequently Asked Questions</Heading.H1>
+        <div>
+          <Accordion items={faq} initialActiveId={0} />
+        </div>
+      </SectionWrapper>
     </PageLayout>
   );
 }

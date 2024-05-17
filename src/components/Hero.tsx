@@ -32,7 +32,7 @@ const Hero = () => {
           href="/checklists/ranni"
           className="mt-2 inline-block rounded-lg px-4 py-4 font-medium bg-gradient-to-br text-black focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-1 focus:ring-offset-stone-900 sm:mb-2 sm:mr-2 sm:px-5 sm:py-2.5 sm:focus:ring-4 sm:focus:ring-offset-2 fancy-gradient-secondary"
         >
-          Start Ranni playthrough
+          Start Ranni Playthrough
         </Link>
       </div>
     </SectionWrapper>

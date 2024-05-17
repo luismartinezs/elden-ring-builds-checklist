@@ -11,11 +11,11 @@ a {
 }
 
 .fancy-gradient {
-  @apply from-primary-300 via-primary-500 to-primary-700;
+  @apply from-primary-300 via-primary-500 to-primary-700 text-black;
 }
 
 .fancy-gradient:hover {
-  @apply from-primary-500 via-primary-700 to-primary-900;
+  @apply from-primary-500 via-primary-700 to-primary-900 text-white;
 }
 
 .fancy-gradient-secondary {

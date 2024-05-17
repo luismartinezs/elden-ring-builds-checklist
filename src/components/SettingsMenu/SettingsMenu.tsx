@@ -16,32 +16,40 @@ import { useToggleFilters } from "~/hooks/useToggleFilters";
 
 function FilterButtons() {
   return (
-    <>
-      <FilterButton filterTag="completed" label="Completed" />
-      <FilterButton filterTag={TAGS.OPTIONAL} />
-      <FilterButton filterTag={TAGS.RANNI_QUESTLINE} />
-      <FilterButton filterTag={TAGS.SELUVIS_QUESTLINE} />
-      <FilterButton filterTag={TAGS.VOLCANO_MANOR_ASSASSINATION} />
-      <FilterButton filterTag={TAGS.VARRE_QUESTLINE} />
-      <FilterButton filterTag={TAGS.NEPHELI_QUESTLINE} />
-      <FilterButton filterTag={TAGS.ALEXANDER_QUESTLINE} />
-      <FilterButton filterTag={TAGS.LATENNA_QUESTLINE} />
-      <FilterButton filterTag={TAGS.MILLICENT_QUESTLINE} />
-      <FilterButton filterTag={TAGS.HYETTA_QUESTLINE} />
-      <FilterButton filterTag={TAGS.DUNG_EATER_QUESTILINE} />
-      <FilterButton filterTag={TAGS.SELLEN_QUESTLINE} />
-      <FilterButton filterTag={TAGS.PATCHES_QUESTLINE} />
-      <FilterButton filterTag={TAGS.YURA_QUESTLINE} />
-      <FilterButton filterTag={TAGS.CORHYN_QUESTLINE} />
-      <FilterButton filterTag={TAGS.RYA_QUESTLINE} />
-      <FilterButton filterTag={TAGS.SMITHING_STONE_BELL} />
-      <FilterButton filterTag={TAGS.SOMBER_STONE_BELL} />
-      <FilterButton filterTag={TAGS.GLOVEWORT_BELL} />
-      <FilterButton filterTag={TAGS.GHOST_GLOVEWORT_BELL} />
-      <FilterButton filterTag={TAGS.WHETBLADES} />
-      <FilterButton filterTag={TAGS.TUNNELS} />
-      <FilterButton filterTag={TAGS.ALL_REMEMBERANCES} />
-    </>
+    <div>
+      <div className="my-3 flex flex-wrap items-center gap-2 md:gap-1">
+        <FilterButton filterTag="completed" label="Completed" />
+        <FilterButton filterTag={TAGS.OPTIONAL} />
+        <FilterButton filterTag={TAGS.ALL_REMEMBERANCES} />
+      </div>
+      <Divider />
+      <div className="my-3 flex flex-wrap items-center gap-2 md:gap-1">
+        <FilterButton filterTag={TAGS.RANNI_QUESTLINE} />
+        <FilterButton filterTag={TAGS.SELUVIS_QUESTLINE} />
+        <FilterButton filterTag={TAGS.VOLCANO_MANOR_ASSASSINATION} />
+        <FilterButton filterTag={TAGS.VARRE_QUESTLINE} />
+        <FilterButton filterTag={TAGS.NEPHELI_QUESTLINE} />
+        <FilterButton filterTag={TAGS.ALEXANDER_QUESTLINE} />
+        <FilterButton filterTag={TAGS.LATENNA_QUESTLINE} />
+        <FilterButton filterTag={TAGS.MILLICENT_QUESTLINE} />
+        <FilterButton filterTag={TAGS.HYETTA_QUESTLINE} />
+        <FilterButton filterTag={TAGS.DUNG_EATER_QUESTILINE} />
+        <FilterButton filterTag={TAGS.SELLEN_QUESTLINE} />
+        <FilterButton filterTag={TAGS.PATCHES_QUESTLINE} />
+        <FilterButton filterTag={TAGS.YURA_QUESTLINE} />
+        <FilterButton filterTag={TAGS.CORHYN_QUESTLINE} />
+        <FilterButton filterTag={TAGS.RYA_QUESTLINE} />
+      </div>
+      <Divider />
+      <div className="my-3 flex flex-wrap items-center gap-2 md:gap-1">
+        <FilterButton filterTag={TAGS.SMITHING_STONE_BELL} />
+        <FilterButton filterTag={TAGS.SOMBER_STONE_BELL} />
+        <FilterButton filterTag={TAGS.GLOVEWORT_BELL} />
+        <FilterButton filterTag={TAGS.GHOST_GLOVEWORT_BELL} />
+        <FilterButton filterTag={TAGS.WHETBLADES} />
+        <FilterButton filterTag={TAGS.TUNNELS} />
+      </div>
+    </div>
   );
 }
 
@@ -60,7 +68,7 @@ function Settings() {
         profile
       </p>
       <div className="flex items-center gap-2">
-        <div className="my-4 flex flex-wrap items-center gap-2">
+        <div className="my-4 flex flex-wrap items-center gap-1">
           {isClient && <FilterButtons />}
         </div>
       </div>
@@ -70,7 +78,11 @@ function Settings() {
           variant="outline"
           className="flex items-center gap-2 whitespace-nowrap"
         >
-          {allFiltersChecked ? <AiFillEyeInvisible size={20} /> : <AiFillEye size={20} />}
+          {allFiltersChecked ? (
+            <AiFillEyeInvisible size={20} />
+          ) : (
+            <AiFillEye size={20} />
+          )}
           Toggle all filters
         </Button>
       </div>
@@ -84,7 +96,7 @@ function Settings() {
             onClick={() => setItems([])}
             variant="outline"
             disabled={items.length === 0}
-            className="flex items-center gap-2 whitespace-nowrap"
+            className="flex items-center gap-2 whitespace-nowrap mb-3"
           >
             <GoAlertFill size={18} />
             Uncheck everything

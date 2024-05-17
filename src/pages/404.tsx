@@ -13,7 +13,7 @@ export default function Custom404() {
           <Heading.H1 className="!text-xl !text-stone-400">404</Heading.H1>
           <Paragraph className="mb-8 !text-6xl uppercase text-red-800 font-bold">You Died</Paragraph>
           <Paragraph className="mb-8">
-            It seems you've ventured into unknown territory, <span className="text-primary-500">Tarnished</span>. This
+            It seems you&apos;ve ventured into unknown territory, <span className="text-primary-500">Tarnished</span>. This
             page is lost to the <span className="text-primary-500">Lands Between</span>.
           </Paragraph>
           <Image

@@ -2,7 +2,7 @@ const list = {
   id: "5c0e0436-e1de-44f2-b2f4-09c79cbe95d2",
   slug: "lightning-lancer",
   title: "Lightning Lancer 50-100",
-  tags: ['mid', 'fai', 'str', 'dex'],
+  tags: ['fai', 'str', 'dex', 'mid'],
   notes: [
     `Based on the <a href="https://www.youtube.com/watch?v=B4cJ3hj9aBw" target="_blank">Lightning Lancer</a> Fextralife guide. Start with Templar build up to level 50. Flask Spread: Mostly FP, some HP`,
   ],

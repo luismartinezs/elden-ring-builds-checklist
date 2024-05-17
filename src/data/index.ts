@@ -6,6 +6,7 @@ import afflictioner from './afflictioner'
 import newGamePlusProgress from './new-game-plus-progress'
 import beforeNgPlus from './before-ngplus'
 import { type TChecklist } from '~/features/checklist'
+import moonveilSamurai from './moonveil-samurai'
 
 
 const lists: TChecklist[] = [
@@ -13,10 +14,11 @@ const lists: TChecklist[] = [
   simpleGameProgress as TChecklist,
   newGamePlusProgress as TChecklist,
   beforeNgPlus,
+  moonveilSamurai,
+  ranni,
   templar,
   lightningLancer,
-  ranni,
-  afflictioner
+  afflictioner,
 ]
 
 export { lists }

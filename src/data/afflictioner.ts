@@ -6,7 +6,7 @@ const list = {
   id: "30ac9362-be87-408d-8028-18b7e4f04535",
   slug: "afflictioner",
   title: "Status Effect Build",
-  tag: ['ng+', 'dex'],
+  tags: ['dex', 'ngplus'],
   notes: [
     `This build is based mostly on the awesome <a href="https://www.youtube.com/watch?v=gX40WDCUqks">Elden Ring Best Status Effect Build! Patch 1.09</a>, with a few additions from <a href="https://www.reddit.com/r/Eldenring/comments/wgcsbr/help_with_a_status_effect_build/">Help with a status effect build reddit post</a>`,
     `This guide covers the two versions of this build`,

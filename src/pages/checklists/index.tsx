@@ -10,7 +10,7 @@ import { Checklists } from "~/components/Checklists";
 export const getStaticProps: GetStaticProps = () => {
   return {
     props: {
-      checklists: lists.map(({slug, title}) => ({slug, title})),
+      checklists: lists.map(({slug, title, tags}) => ({slug, title, tags: tags? tags : []})),
     },
   };
 };
@@ -20,7 +20,8 @@ export default function Landing({
 }: {
   checklists: {
     slug: string;
-    title: string
+    title: string;
+    tags: string[];
   }[];
 }) {
   return (

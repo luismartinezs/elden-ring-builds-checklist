@@ -6,6 +6,7 @@ import Head from "next/head";
 import { Heading } from "~/components/Heading";
 import { Paragraph } from "~/components/Paragraph";
 import Hero from "~/components/Hero";
+import { Checklists } from "~/components/Checklists";
 
 export const getStaticProps: GetStaticProps = () => {
   return {
@@ -35,14 +36,7 @@ export default function ChecklistsPage({
         to look at a guide for every step
       </Paragraph>
       <Hero />
-      <Heading.H2>Checklists</Heading.H2>
-      <ul className="mt-4 flex flex-col gap-2 text-2xl">
-        {Object.values(checklists).map(({ slug, title }) => (
-          <li key={slug}>
-            <Link href={`/checklists/${slug}`}>{title}</Link>
-          </li>
-        ))}
-      </ul>
+      <Checklists checklists={checklists} />
     </PageLayout>
   );
 }

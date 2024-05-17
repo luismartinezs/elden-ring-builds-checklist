@@ -1,10 +1,28 @@
+import { type GetStaticProps } from "next";
+import { lists } from "~/data";
 import Head from "next/head";
 import FeatureSection from "~/components/FeatureSection";
 import Hero from "~/components/Hero";
 import { HeroSection } from "~/components/HeroSection";
 import { PageLayout } from "~/layouts/PageLayout";
+import { Checklists } from "~/components/Checklists";
 
-export default function Home() {
+export const getStaticProps: GetStaticProps = () => {
+  return {
+    props: {
+      checklists: lists.map(({slug, title}) => ({slug, title})),
+    },
+  };
+};
+
+export default function Landing({
+  checklists,
+}: {
+  checklists: {
+    slug: string;
+    title: string
+  }[];
+}) {
   return (
     <>
       <Head>
@@ -16,7 +34,7 @@ export default function Home() {
           <HeroSection />
           <FeatureSection />
           <Hero />
-          <div>List of builds and checklists</div>
+          <Checklists checklists={checklists} />
         </div>
       </PageLayout>
     </>

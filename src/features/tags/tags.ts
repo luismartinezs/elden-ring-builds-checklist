@@ -260,4 +260,10 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-yellow-200 text-yellow-200 hover:bg-yellow-200 hover:text-black focus:ring-yellow-200',
     tagClasses: 'bg-yellow-200 text-black',
   },
+  [TAGS.SACRED_TEAR]: {
+    label: 'Sacred Tear',
+    key: TAGS.SACRED_TEAR,
+    buttonClasses: 'border-rose-300 text-rose-300 hover:bg-rose-300 hover:text-black focus:ring-rose-300',
+    tagClasses: 'bg-rose-300 text-black',
+  },
 }

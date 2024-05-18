@@ -25,6 +25,7 @@ export const TAGS = {
   RYA_QUESTLINE: 'rya-questline',
   TUNNELS: 'tunnels',
   GOLDEN_SEED: 'golden-seed',
+  SACRED_TEAR: 'sacred-tear',
 } as const;
 
 // these tags are "hidden" tags that are not displayed as filters

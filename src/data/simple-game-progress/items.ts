@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -13,7 +13,7 @@ export const items = [
   // WEST LIMGRAVE L1-15 +0-1
   {
     id: '684b6a6d-5025-4839-9615-aea8c9b64b36',
-    description: 'Buy crafting kit from Kale',
+    description: 'Buy crafting kit from Kale in the Church of Elleh',
     tags: []
   },
   {
@@ -50,8 +50,13 @@ export const items = [
   // EAST LIMGRAVE & MISTWOOD L10-20 +2
   {
     id: 'cd0ca78a-4fb2-4147-9167-f7a56520017e',
-    description: 'Get Flask of Wondrous Physick and Sacred Tear from the Third Church of Marika',
+    description: 'Get Flask of Wondrous Physick from the Third Church of Marika in north east Limgrave.',
     tags: []
+  },
+  {
+    id: '4ebcae06-9fe8-4ea4-a3f0-40de655cd20f',
+    description: 'Get Sacred Tear from the Third Church of Marika in north east Limgrave.',
+    tags: [SACRED_TEAR]
   },
   {
     id: "0a31a7cb-b53f-4bc7-9387-d298da1d9bf8",
@@ -124,9 +129,19 @@ export const items = [
     tags: [HYETTA_QUESTLINE]
   },
   {
-    id: '63ce03c8-ce26-4dcb-a37e-07ab46bd08f4',
-    description: 'In Weeping peninsula, get the Sacred tears from all 3 churches (Callu Baptismal Church, Church of Pilgrimage, Fourth Church of Marika)',
-    tags: [OPTIONAL]
+    id: '3f73105e-8ed4-4398-9f01-0f5552d2d969',
+    description: 'Callu Baptismal Church, directly south of Ailing Village. Limgrave. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164844" target="_blank">Location</a>',
+    tags: [ SACRED_TEAR ]
+  },
+  {
+    id: '6e07f73c-8943-4370-8181-f175a9b29fc4',
+    description: 'Fourth Church of Marika, to the northwest of Weeping Peninsula.',
+    tags: [ SACRED_TEAR ]
+  },
+  {
+    id: 'c6b74a2f-22e3-46d7-8fa5-b5660760bdc3',
+    description: 'Church of Pilgrimage in the northern peak of Weeping Peninsula',
+    tags: [ SACRED_TEAR ]
   },
   {
     id: '2a0af444-beab-45a0-9400-560c9114a9bc',
@@ -258,6 +273,11 @@ export const items = [
     tags: [NGPLUS]
   },
   {
+    id: '9e08c5b1-b098-476b-be81-224c8a58a9bd',
+    description: 'Church of Irith, once you enter Liurnia, located behind Stormveil Castle',
+    tags: [ SACRED_TEAR ]
+  },
+  {
     id: "f56fdffc-dcd7-4c99-af99-27426b91ad84",
     description:
       "Given as a reward for completing Roderika's Task at Stormhill Shack. Limgrave. If you rest in any grace in Liurnia you will get the Golden Seed from her regardless.",
@@ -322,7 +342,7 @@ export const items = [
   {
     id: '93cb87ca-1cae-4436-9117-56490613b6a4',
     description: 'Buy prawns from Boggart and talk to him. If you plan to follow Dung Eater\'s questline, but you want Boggart to survive, you can postpone this step until you have completed Dung Eater\'s questline, to prevent Boggart from moving to Altus. Note that this will prevent you from getting one Seedbed Curse',
-    tags: [ BOGGART_QUESTLINE ]
+    tags: [BOGGART_QUESTLINE]
   },
   {
     id: '34ec7a0c-0adc-41f9-9ebf-3d3f243214f8',
@@ -544,6 +564,16 @@ export const items = [
     tags: [HYETTA_QUESTLINE]
   },
   {
+    id: '2b785494-8a3c-49c8-870c-030496f23aa6',
+    description: 'Church of Inhibition in Liurnia. To reach it the pathway south from Dectus Lift in the Liurnia side. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167186" target="_blank">Location</a>',
+    tags: [ SACRED_TEAR ]
+  },
+  {
+    id: '3a89fd95-2ab2-4e02-a80d-c785b09d52ba',
+    description: 'Bellum Church in Liurnia, to reach it follow the path toward the Dectus Lift from the East Raya Lucaria Gate grace, hugging the left side',
+    tags: [ SACRED_TEAR ]
+  },
+  {
     id: '143197cd-8e4b-4934-ba17-4e35eb28214d',
     description: 'Find Hyetta in Bellum Church in Liurnia of the Lakes (the path toward the Dectus Lift from the East Raya Lucaria Gate grace, hugging the left side) and give her the Fingerprint Grape',
     tags: [HYETTA_QUESTLINE]
@@ -712,6 +742,11 @@ export const items = [
     id: '57743956-81fa-4eaa-b062-9577779f31ce',
     description: 'Give the Unalloyed Gold Needle to Gowry, reload the game and get the repaired needle from him',
     tags: [MILLICENT_QUESTLINE]
+  },
+  {
+    id: '6d94d45e-94e0-4bb9-a570-66ccc5c2f1ec',
+    description: 'Church of Plague in Caelid. Reached by heading southwest from the Fort Faroth grace site and taking the Spiritspring down or from the backstreets of Sellia, Town of Sorcery. Or, coming from Dragonbarrow, jump down a Spirit Spring to the north of the Church',
+    tags: [ SACRED_TEAR ]
   },
   {
     id: '4c0725a1-f7d3-4aea-9f75-d55efcfbc105',
@@ -1036,6 +1071,11 @@ export const items = [
     tags: [GOLDEN_SEED],
   },
   {
+    id: '50700a00-1045-492d-b94d-9abba5c2e17c',
+    description: 'Second Church of Marika, in Altus. Go directly north from the Altus Highway Junction grace in Altus Plateau',
+    tags: [ SACRED_TEAR ]
+  },
+  {
     id: 'efee0480-6110-4c57-af6e-9ea5d5c31635',
     description: 'Talk to Yura in the Second Church of Marika to get the Nagakiba. To reach this location, go directly north from the Altus Highway Junction grace in Altus Plateau',
     tags: [YURA_QUESTLINE]
@@ -1073,13 +1113,18 @@ export const items = [
   {
     id: "b149dd94-865e-4ae3-b8df-1a73ddee810f",
     description:
-      "At the base of a golden tree guarded by multiple trebuchets near the northern entrance to the Capital Outskirts. Start from the Windmill Village grace or backtrack from the Outer Wall Battleground grace. Altus Plateau",
+      "At the base of a golden tree guarded by multiple trebuchets near the northern entrance to the Capital Outskirts. Start from the Windmill Village grace or backtrack from the Outer Wall Battleground grace. Altus Plateau.",
     tags: [GOLDEN_SEED],
+  },
+  {
+    id: 'edad12e7-a1c7-4b5b-bfdd-387df1a0c653',
+    description: 'At the base of the statue in Stormcaller Church. Reached from Rampartside Path site of grace by following the road west towards the lightning strikes. Altus Plateau. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167659" target="_blank">Location</a>',
+    tags: [ SACRED_TEAR ]
   },
   {
     id: '0424036f-7a94-41f0-9144-ee960ec59493',
     description: 'Talk to Boggart at the outer moat located under the Capital Rampart grace (from Outer Wall Battleground grace, same path to the Draconic Tree Sentinel but hugging the right side down the moat). If all you care is to buy Boiled Crab, you can stop Boggart\'s questline here.',
-    tags: [ BOGGART_QUESTLINE ]
+    tags: [BOGGART_QUESTLINE]
   },
   {
     id: 'c399c03e-adbf-4d14-b993-d207677089a8',
@@ -1090,7 +1135,7 @@ export const items = [
   {
     id: '554ccd9a-9b26-40d9-b6b9-d2d12bf7ac2c',
     description: 'Talk to Dung Eater in Roundtable Hold (after reaching Leyndell)',
-    tags: [DUNG_EATER_QUESTLINE,BOGGART_QUESTLINE]
+    tags: [DUNG_EATER_QUESTLINE, BOGGART_QUESTLINE]
   },
   {
     id: '7a68718f-b0e7-4006-b8b9-16d40e64d39e',
@@ -1100,7 +1145,7 @@ export const items = [
   {
     id: '0542d506-1888-4aaa-a2a5-5d890913ad6f',
     description: "Get one Seedbed Curse from Leyndell Royal Capital: After you exit the room with East Capital Rampart grace, continue south past the Oracle Envoys and into the building. Inside, head down the stairs and face west to take the elevator. After the elevator continue west into the next building. Climb up the ladder to your right and go up the stairs. On the highest floor you will find the Seedbed Curse on a corpse sitting in a chair",
-    tags: [DUNG_EATER_QUESTLINE,BOGGART_QUESTLINE]
+    tags: [DUNG_EATER_QUESTLINE, BOGGART_QUESTLINE]
   },
   {
     id: "58dad865-0f98-4d19-8f8a-3800e4442dc7",
@@ -1126,12 +1171,12 @@ export const items = [
   {
     id: 'dcae831e-4f7a-4d02-95d1-4df23f50b7c7',
     description: 'Talk to Dung Eater in the sewer and tell him to leave his cell',
-    tags: [DUNG_EATER_QUESTLINE,BOGGART_QUESTLINE]
+    tags: [DUNG_EATER_QUESTLINE, BOGGART_QUESTLINE]
   },
   {
     id: '359c9388-35ab-4e4e-8e92-edb62955b055',
     description: 'Talk to Boggart at the outer moat located under the Capital Rampart grace.',
-    tags: [ BOGGART_QUESTLINE ]
+    tags: [BOGGART_QUESTLINE]
   },
   {
     id: '8fa43f43-bd91-4ec3-a106-e9f4f40904b0',
@@ -1141,7 +1186,7 @@ export const items = [
   {
     id: '66517971-be5c-44ae-b9a8-cc98257bbf2c',
     description: 'Talk to the dying Boggart at the outer moat located under the Capital Rampart grace. Note that after this, Boggart will die and you won\'t be able to buy more items from him.',
-    tags: [ BOGGART_QUESTLINE ]
+    tags: [BOGGART_QUESTLINE]
   },
   {
     id: 'ac59b169-2f2e-44c4-97b5-aefe39638a50',
@@ -1445,9 +1490,19 @@ export const items = [
     tags: [SOMBER_STONE_BELL]
   },
   {
+    id: '4f82a3dc-b165-4e21-afea-d3c3197ca6e0',
+    description: 'First Church of Marika in Mountaintops of the Giants, south of the large freezing lake.',
+    tags: [ SACRED_TEAR ]
+  },
+  {
     id: '30bf91af-7114-4564-a226-6acb5e9f08ea',
     description: 'By this point your weapon can be +24 (9)',
     tags: []
+  },
+  {
+    id: '21e3ee7a-9c14-4de5-84d7-a5a8c1f46288',
+    description: 'Church of Repose in Mountaintops of the Giants. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165748" target="_blank">Location</a>',
+    tags: [ SACRED_TEAR ]
   },
   {
     id: '7c510998-cb9f-4a89-a3f4-1be7189a672e',

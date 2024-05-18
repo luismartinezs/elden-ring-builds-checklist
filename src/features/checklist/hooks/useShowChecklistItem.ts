@@ -52,6 +52,7 @@ export function useShowChecklistItem(
   const { filter: filterWhetblades } = useFilter(TAGS.WHETBLADES);
   const { filter: filterAllRememberances } = useFilter(TAGS.ALL_REMEMBERANCES);
   const {filter: filterTunnels} = useFilter(TAGS.TUNNELS);
+  const { filter: filterGoldenSeed } = useFilter(TAGS.GOLDEN_SEED);
 
   // NOTE: Using an effect instead of a derived state to avoid hydration errors
   useEffect(() => {
@@ -153,6 +154,10 @@ export function useShowChecklistItem(
       {
         tag: TAGS.BOGGART_QUESTLINE,
         filter: filterBoggartQuestline,
+      },
+      {
+        tag: TAGS.GOLDEN_SEED,
+        filter: filterGoldenSeed,
       }
     ];
     const shouldHide =
@@ -193,6 +198,8 @@ export function useShowChecklistItem(
     filterCorhynQuestline,
     filterRyaQuestline,
     filterTunnels,
+    filterBoggartQuestline,
+    filterGoldenSeed,
   ]);
 
   return show;

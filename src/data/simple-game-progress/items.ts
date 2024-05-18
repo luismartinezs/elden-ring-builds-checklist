@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -30,6 +30,12 @@ export const items = [
     id: 'eae88862-a416-413b-9730-e269e7263cb1',
     description: 'Teleport to the Church of Elleh Site of Grace and talk to Ranni to get Spirit Calling Bell and Wolves spirit summon. Feel free to upgrade the wolves before you get whatever spirit summon you will use in the end game',
     tags: []
+  },
+  {
+    id: "ae6663f5-a9a3-4f29-80eb-9d6fc348227f",
+    description:
+      "By the golden tree in West Limgrave beside the path from the Storm Gate to the Stormhill Shack.",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '2ffa52b8-8b74-4111-a975-4da2c97d3c4c',
@@ -70,6 +76,18 @@ export const items = [
     ]
   },
   {
+    id: "4bc4e028-c645-431c-ae1b-00157a0462f6",
+    description:
+      "At the base of the golden tree along the path just outside of the Bestial Sanctum where Gurranq resides. Easily reachable from the waygate north of Third Church of Marika in Limgrave. Caelid",
+    tags: [GOLDEN_SEED],
+  },
+  {
+    id: "b621c491-da19-4817-bfb5-bc0e4f596ff5",
+    description:
+      "Under a glowing tree in the open near Fort Haight in East Limgrave.",
+    tags: [GOLDEN_SEED],
+  },
+  {
     id: 'a7d48287-d886-42c1-aa6c-c728b0014419',
     description: 'Clear Fort Haight (east Limgrave, south of Mistwood) from enemies',
     tags: [NEPHELI_QUESTLINE]
@@ -78,6 +96,11 @@ export const items = [
     id: '5dc416a2-5fec-4a37-a2a4-e5b5e9d57983',
     description: 'Speak to Kenneth Height atop the battlements southwest of Third Church of Marika',
     tags: [NEPHELI_QUESTLINE]
+  },
+  {
+    id: "e4d35217-bd47-44ce-b9f9-712f8711f40c",
+    description: "Dropped by Kenneth Haight if you kill him. Limgrave",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '384fc0f5-c356-4d8a-a31e-351494896d8a',
@@ -119,6 +142,12 @@ export const items = [
     id: '8a19443f-919d-4ba9-891f-b88ad22ae163',
     description: "Give Irina's letter to Edgar in Castle Morne (Weeping Peninsula)",
     tags: [HYETTA_QUESTLINE]
+  },
+  {
+    id: "fee1c271-cca1-4de5-bff5-76c58614c0b6",
+    description:
+      "At the foot of the golden tree on the ledge overlooking Castle Morne in the Weeping Peninsula. Limgrave",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '1e158447-b964-481d-a85f-ced438fb45a5',
@@ -202,6 +231,18 @@ export const items = [
     tags: [NEPHELI_QUESTLINE]
   },
   {
+    id: "69d2b9c9-6317-4c85-b2e6-4676f0bc4f86",
+    description:
+      "At the foot of a golden tree on the path to Godrick the Grafted near the end of Stormveil Castle. Limgrave",
+    tags: [GOLDEN_SEED],
+  },
+  {
+    id: "2d5b9870-3717-48fd-aa52-9b645378a641",
+    description:
+      "Dropped by Ulcerated Tree Spirit under Stormveil Castle. Limgrave",
+    tags: [GOLDEN_SEED],
+  },
+  {
     id: 'b9690395-5806-49d1-85fb-89411478266b',
     description: 'Beat Godrick in Stormhill Castle (or alternatively beat any one of the other Shardbearers: Radahn, Rykard, or Rennala)',
     tags: [NGPLUS]
@@ -215,6 +256,12 @@ export const items = [
     id: '9f2e43fc-e06f-4c47-ab9b-a1ec32abcac3',
     description: 'Get the Lake-Facing Cliffs grace near Godrick\'s throne, in Liurnia',
     tags: [NGPLUS]
+  },
+  {
+    id: "f56fdffc-dcd7-4c99-af99-27426b91ad84",
+    description:
+      "Given as a reward for completing Roderika's Task at Stormhill Shack. Limgrave. If you rest in any grace in Liurnia you will get the Golden Seed from her regardless.",
+    tags: [GOLDEN_SEED],
   },
   {
     id: 'd1d73580-25f5-46b3-92c9-9c8d68a943e5',
@@ -373,6 +420,12 @@ export const items = [
     tags: [VARRE_QUESTLINE]
   },
   {
+    id: "6a9eef7f-4afd-4cdf-aa59-0ccde4fbf010",
+    description:
+      "At the foot of a golden tree, at the end of the broken bridge just outside the lift up to the Academy of Raya Lucaria.",
+    tags: [GOLDEN_SEED],
+  },
+  {
     id: '9b5f5777-df9a-4874-a85a-f0ee064dcefb',
     description: 'Use the Red Summon Sign at the Main Academy gate site of Grace in Raya Lucaria and defeat Ravenmount Assassin. It is found through the bridge beyond the magic gate. You will get Ash of war: Raptor of the mist',
     tags: [YURA_QUESTLINE]
@@ -384,9 +437,21 @@ export const items = [
   },
   // RAYA LUCARIA L50-60 +4-6
   {
+    id: "96bf5675-a5b6-4b9b-9ef4-7023a8c64aa9",
+    description:
+      "At the foot of the golden tree in the middle of Liurna's sunken town below Raya Lucaria.",
+    tags: [GOLDEN_SEED],
+  },
+  {
     id: '054a08f7-70ba-4ede-a188-b3a286808cb5',
-    description: 'Enter Raya Lucaria and beat Wolf of Radagon',
+    description: 'Beat Wolf of Radagon in Raya Lucaria',
     tags: [NGPLUS]
+  },
+  {
+    id: "8872b89b-082f-440e-bc9a-d3409e847acc",
+    description:
+      "At the foot of a golden tree. In the north-western part of the courtyard, past the Debate Parlor site of grace in Raya Lucaria.",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '1837cb85-1a8e-42a2-9694-9f9fe5975ecd',
@@ -422,6 +487,12 @@ export const items = [
   // AINSEL RIVER L50-60 +4-6
   // LIURNIA WEST, CARIA MANOR L50-60 +4-6
   {
+    id: "0ba1c797-4998-4834-a990-758e6f6a5768",
+    description:
+      "Near a golden tree after going down the steps from the Caria Manor Upper Level Site of Grace. Liurnia",
+    tags: [GOLDEN_SEED],
+  },
+  {
     id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
     description: 'Beat Loretta in Caria Manor',
     tags: [RANNI_QUESTLINE, SELLEN_QUESTLINE]
@@ -436,11 +507,31 @@ export const items = [
     description: "Talk to Seluvis in Seluvis's Rise to get Seluvis's Potion (beware that giving this item to certain NPCs can lock you out of their quests)",
     tags: [SELUVIS_QUESTLINE]
   },
+  // high level Limgrave
+  {
+    id: "e80a68b7-f557-434f-a969-ab03b206215a",
+    description:
+      "Dropped by the Ulcerated Tree Spirit in Fringefolk Hero's Grave. Limgrave",
+    tags: [GOLDEN_SEED],
+  },
   // SIOFRA 50-60 +8-12
+  {
+    id: "66af425c-8b81-44f9-b79d-87edc5e3b0e3",
+    description:
+      "Near the massive castle-like structure protruding from the rocks along the northern side of the underground Siofra River, below the lift leading up to Caelid. Siofra River",
+    tags: [GOLDEN_SEED],
+  },
   {
     id: '2d87bde3-61d2-4991-896f-d53d17123d86',
     description: 'Beat Ancestor Spirit in Siofra river, which you can access through the Siofra Well in Mistwood',
     tags: [OPTIONAL, NGPLUS]
+  },
+
+  {
+    id: "b4518ea7-237c-4cc1-95d7-ae53964e36d3",
+    description:
+      "At the base of a golden tree along the path that leads south to Castle Redmane. Caelid",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '8d9fb6dd-c390-42ff-ae5e-24df91cdda04',
@@ -458,8 +549,14 @@ export const items = [
     tags: [HYETTA_QUESTLINE]
   },
   {
+    id: "36fc0ad2-a169-43da-9845-cc36de22133b",
+    description:
+      "At the foot of a Golden Tree deep in the northern ravine of Liurnia, surrounded by giant Land Squirts",
+    tags: [GOLDEN_SEED],
+  },
+  {
     id: 'fbb653b6-f068-427c-8cca-9f5d8b0554cf',
-    description: "Ruin-Strewn Precipice and miner's caves. Accessed from the Ravine-Vailed Village grace, going all the way north through the ravine in between Caria Manor and the path to the LIft of Dectus, in Liurnia. <a href='https://eldenring.wiki.fextralife.com/Interactive+Map?id=1651&code=mapA' target='_blank'>Location</a>",
+    description: "Ruin-Strewn Precipice and miner's caves. Accessed from the Ravine-Vailed Village grace, going all the way north through the ravine in between Caria Manor and the path to the Lift of Dectus, in Liurnia. <a href='https://eldenring.wiki.fextralife.com/Interactive+Map?id=1651&code=mapA' target='_blank'>Location</a>",
     tags: [TUNNELS]
   },
   // ACCESS ALTUS
@@ -485,10 +582,17 @@ export const items = [
       }
     ]
   },
+
   {
     id: 'bd19aee2-3a7b-419e-9950-c5d2462483d8',
     description: 'Rest in any site of grace in Altus',
     tags: [NGPLUS]
+  },
+  {
+    id: "80944ed0-683f-4044-b440-aa051bc7f65a",
+    description:
+      "At the foot of a Golden Tree on the western side of the Altus Plateau, leading toward the Abandoned Coffins and exit to the Ruin-Strewn Precipice dungeon that connects Altus and Liurnia. Altus Plateau",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '7b8da92c-f70a-4908-b5c9-e27275c853d8',
@@ -542,6 +646,12 @@ export const items = [
     tags: [TUNNELS]
   },
   {
+    id: "6fee411a-b7a6-416c-867f-cbb6b8874f66",
+    description:
+      "At the base of a golden tree in the foggy woods where a Minor Erdtree is located, east of a broken great bridge. Altus Plateau",
+    tags: [GOLDEN_SEED],
+  },
+  {
     id: 'bbd31431-ecf6-441f-b07d-6e0b7044c43f',
     description: 'Altus Tunnel, in Altus. Directly south from the Minor Erdtree in Altus Plateau. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=5837&lat=-93.49&lng=93.82&code=mapA" target="_blank">Location</a>',
     tags: [TUNNELS]
@@ -562,6 +672,12 @@ export const items = [
     tags: [SMITHING_STONE_BELL]
   },
   // CAELID, RADAHN 60-70 +10-14
+  {
+    id: "ebb20350-a610-4f97-b30a-6aecde04779b",
+    description:
+      "Up the stairs, at the golden tree near the large door in Sellia. Caelid",
+    tags: [GOLDEN_SEED],
+  },
   {
     id: '3e6c55bc-c6ae-43bd-ace8-ef333487397d',
     description: 'Gael Tunnel, in the border between Limgrave and Caelid. Found along the western cliffs of Caelid heading south from the Rotview Balcony grace',
@@ -618,6 +734,12 @@ export const items = [
     tags: [OPTIONAL, RANNI_QUESTLINE, ALEXANDER_QUESTLINE, NGPLUS, ALL_REMEMBERANCES, SELLEN_QUESTLINE]
   },
   {
+    id: "56421d70-5f43-43ef-9484-a8e26c78f9f2",
+    description:
+      "Dropped by Putrid Tree Spirit in the War Dead Catacombs. From Starscourge Radahn grace, head directly north and hug the cliff until you find the entrance. Caelid. You need to defeat Radahn first.",
+    tags: [GOLDEN_SEED],
+  },
+  {
     id: '214e0b27-c6c2-41a8-8acf-cba7f5ab0b6b',
     description: 'Find Alexander next to the Radahn grace and talk to him',
     tags: [ALEXANDER_QUESTLINE]
@@ -667,6 +789,12 @@ export const items = [
   // LAKE OF ROT 80-100 +15-20
 
   // MT GELMIR 80-100 +15-20
+  {
+    id: "22436ce7-c4a3-4612-aa32-6aaf689cb517",
+    description:
+      "At the base of the Golden Tree in the ravine to the south of a burnt up Minor Erdtree. Mt. Gelmir. Head north through the ravine west of Wyndham Ruins to find it.",
+    tags: [GOLDEN_SEED],
+  },
   {
     id: 'b9da8bb8-6125-41bc-bb4c-6143ffdd2a59',
     description: 'Talk to Alexander near the Seethewater Terminus Site of Grace at a lava lake behind a Magma Wyrm, south of Fort Laiedd in Mt. Gelmir. To reach Seethewater Terminus Grace, head north through the ravine west of Wyndham Ruins',
@@ -746,6 +874,12 @@ export const items = [
     id: '35ea6a80-fe78-419d-b817-002882705950',
     description: 'You can reach Mt. Gelmir and Volcano Manor by going north east from Altus Plateau site of grace until Forest-Spanning Greatbridge grace, crossing the bridge with the magic portal, then heading south west through the only path available',
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
+  },
+  {
+    id: "e47e9dad-f9b7-4e44-9360-192bfc7d9436",
+    description:
+      "At the foot of a Golden Tree in the far north of the mountain past a summit with a Fallingstar Beast, on the road down towards the Volcano Manor. Mt. Gelmir",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '39a80317-b0b4-4274-9690-2898095e16d3',
@@ -878,6 +1012,30 @@ export const items = [
   },
   // ALTUS 60-80 +10-14
   {
+    id: "01d30b40-f04b-4df2-a7dc-46a0c4c95a95",
+    description:
+      'At the base of the golden tree on the side of the road when headed North from "Altus Highway Junction" Site of Grace. Altus Plateau',
+    tags: [GOLDEN_SEED],
+  },
+  {
+    id: "565b41cd-d27e-4470-bab4-a68add733dbf",
+    description:
+      "2 at the base of the golden tree on the southwestern edge of the Capital Outskirts. Altus Plateau. <a href=\"https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166423\" target=\"_blank\">Location</a>",
+    tags: [GOLDEN_SEED],
+  },
+  {
+    id: "81506999-d1fd-478d-8b13-452c25c5ce14",
+    description:
+      "Directly South of Outer Wall Phantom Tree site of grace. It drops from the Ulcerated Tree Spirit. Altus Plateau",
+    tags: [GOLDEN_SEED],
+  },
+  {
+    id: "4198b455-5418-467c-a8fb-f1346590c259",
+    description:
+      '2 under the larger Golden Tree in the center of the courtyard. Altus Plateau. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166522" target="_blank">Location</a>',
+    tags: [GOLDEN_SEED],
+  },
+  {
     id: 'efee0480-6110-4c57-af6e-9ea5d5c31635',
     description: 'Talk to Yura in the Second Church of Marika to get the Nagakiba. To reach this location, go directly north from the Altus Highway Junction grace in Altus Plateau',
     tags: [YURA_QUESTLINE]
@@ -913,6 +1071,12 @@ export const items = [
     tags: [MILLICENT_QUESTLINE]
   },
   {
+    id: "b149dd94-865e-4ae3-b8df-1a73ddee810f",
+    description:
+      "At the base of a golden tree guarded by multiple trebuchets near the northern entrance to the Capital Outskirts. Start from the Windmill Village grace or backtrack from the Outer Wall Battleground grace. Altus Plateau",
+    tags: [GOLDEN_SEED],
+  },
+  {
     id: '0424036f-7a94-41f0-9144-ee960ec59493',
     description: 'Talk to Boggart at the outer moat located under the Capital Rampart grace (from Outer Wall Battleground grace, same path to the Draconic Tree Sentinel but hugging the right side down the moat). If all you care is to buy Boiled Crab, you can stop Boggart\'s questline here.',
     tags: [ BOGGART_QUESTLINE ]
@@ -937,6 +1101,12 @@ export const items = [
     id: '0542d506-1888-4aaa-a2a5-5d890913ad6f',
     description: "Get one Seedbed Curse from Leyndell Royal Capital: After you exit the room with East Capital Rampart grace, continue south past the Oracle Envoys and into the building. Inside, head down the stairs and face west to take the elevator. After the elevator continue west into the next building. Climb up the ladder to your right and go up the stairs. On the highest floor you will find the Seedbed Curse on a corpse sitting in a chair",
     tags: [DUNG_EATER_QUESTLINE,BOGGART_QUESTLINE]
+  },
+  {
+    id: "58dad865-0f98-4d19-8f8a-3800e4442dc7",
+    description:
+      "Dropped by Ulcerated Tree Spirit in the lower part of Leyndell, the Royal Capital. Altus Plateau",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '465c8c07-c1dc-4ca1-ab9f-b4ce1254bb9c',
@@ -1076,8 +1246,14 @@ export const items = [
     tags: [RANNI_QUESTLINE]
   },
   {
+    id: "d9201005-91e1-4dec-bb62-2435f52443ef",
+    description:
+      "Found by progressing Ranni's questline or from the coffin in Deeproot Depths. Access from the north part of Nokstella. Found along the upper river through the city near a lift to the Lake of Rot. Ainsel River",
+    tags: [GOLDEN_SEED],
+  },
+  {
     id: '3ccc2aba-7d0a-486e-ba62-8cbeae20f7cf',
-    description: 'In a chest guarded by several Silver Tears with shields in the corner of a small room near the Nokstella, Eternal City grace',
+    description: 'Found by progressing Ranni\'s questline or from the coffin in Deeproot Depths. In a chest guarded by several Silver Tears with shields in the corner of a small room near the Nokstella, Eternal City grace',
     tags: [GHOST_GLOVEWORT_BELL]
   },
   {
@@ -1089,6 +1265,12 @@ export const items = [
     id: '72415649-ec6d-4fd5-845c-950088a6403b',
     description: 'Go through the Lake of Rot (Flame, Cleanse Me incantation, lots of HP flasks, Immunizing Horn Charm talisman and Immunizing Cured Meat help)',
     tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: "ad9db21d-3fc5-4de0-bf5d-d011d2ab3783",
+    description:
+      "Drops from Ulcerated Tree Spirit found in the Lake of Rot's temple, down from the Grand Cloister grace.",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '76b7e4a0-77f3-4f48-a55e-ba59bce9cb2d',
@@ -1124,6 +1306,12 @@ export const items = [
     id: '36a9fd33-72e1-4091-9158-c1aa01d442cf',
     description: "Get Seedbed Curse (until you get 5) from Leyndell Royal Capital: In the alternate version of Roundtable Hold located near the Fortified Manor grace, inside the equivalent of the Dung Eater's room. You will find it on a body that is strapped to a chair (if you follow this guide, you already got this one)",
     tags: [DUNG_EATER_QUESTLINE]
+  },
+  {
+    id: "0cef779d-c8ab-47ab-9a6d-d43ffab309eb",
+    description:
+      "At the Gargoyle Boss location under the tree along the ramparts of Leyndell, the Royal Capital, near the West Capital Rampart grace. Altus Plateau",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '86a63cbf-5afa-4d60-bad0-6879f8cebb94',
@@ -1198,7 +1386,6 @@ export const items = [
     tags: [NEPHELI_QUESTLINE]
   },
   // FORBIDDEN LANDS 110-120 +20-24
-  // MOUNTAIN TOPS OF GIANTS 110-120 +20-24
   {
     id: '7690a174-fa2b-42a3-a85d-844c90e55116',
     description: 'Talk to Melina in Elden Throne grace to get the Rold medallion',
@@ -1215,6 +1402,13 @@ export const items = [
     tags: [NGPLUS]
   },
   {
+    id: "f196e61f-22bb-4290-bf12-ab23f12d0b7f",
+    description:
+      "At the foot of a Golden Tree in Forbidden Lands, on the path through to the Mountaintops of the Giants, just past a Black Blade Kindred. Mountaintops of the Giants",
+    tags: [GOLDEN_SEED],
+  },
+  // MOUNTAINTOPS OF THE GIANTS 110-120 +20-24
+  {
     id: '57791558-3866-42c0-8701-432350a3ecc7',
     description: "Talk to Yura (Shabriri) in the Zamor Ruins Grace in Mountaintops of the Giants, and kill him to get the Ronin's Set or alternatively progress Hyetta's questline and accept the frenzied flame from the Three Fingers to find the set in Yura's location",
     tags: [YURA_QUESTLINE]
@@ -1226,13 +1420,19 @@ export const items = [
   },
   {
     id: '188a8fc3-17f2-42ab-adc9-bf67d97241c9',
-    description: "Dropped by Ulcerated Tree Spirit in Giants' Mountaintop Catacombs, near the fire monks at the start of Mountaintops of the Giants",
-    tags: [GLOVEWORT_BELL]
+    description: "Dropped by Ulcerated Tree Spirit in Giants' Mountaintop Catacombs, near the fire monks at the start of Mountaintops of the Giants. <a href='https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167665' target='_blank'>Location</a>",
+    tags: [GLOVEWORT_BELL, GOLDEN_SEED]
   },
   {
     id: '72213235-afbe-47cc-8159-23e4aae3a775',
-    description: "Talk to Millicent in the Ancient Snow Valley Ruins site of grace in Mountaintops of the Giants. If Millicent does not appear at the site of grace, try returning to the Windmill Heights again and see if she's there, and if so, exhaust her dialogue there",
+    description: "Talk to Millicent in the Ancient Snow Valley Ruins site of grace in Mountaintops of the Giants. If Millicent does not appear at the site of grace, try returning to the Windmill Heights again and see if she's there, and if so, exhaust her dialogue there.",
     tags: [MILLICENT_QUESTLINE]
+  },
+  {
+    id: "73f1ba00-ed51-4392-8721-580fb10c43a1",
+    description:
+      "Under a golden tree - guarded by a giant Golem by a frozen river in the Mountaintops of the Giants. <a href='https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168605' target='_blank'>Location</a>",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '96d6b2fa-aebd-4c07-b608-486102d7afeb',
@@ -1258,6 +1458,12 @@ export const items = [
     id: '9363b337-a53f-4f44-9c24-2a18a52c7673',
     description: 'By this point your regular weapon can be fully upgraded +25',
     tags: []
+  },
+  {
+    id: "8fe6d280-9880-4dca-9c81-08456d345fc5",
+    description:
+      "Base of a Golden Tree across the large chain leading to the southeast portion of the Mountaintops of the Giants, among large frozen corpses. From the Foot of the Forge grace go north east.",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '51111493-cf2d-4ec7-b540-e212e670aa00',
@@ -1342,7 +1548,7 @@ export const items = [
   },
   {
     id: '1c79f7d4-5078-4503-8587-0c8190959121',
-    description: 'Beat Fire Giant',
+    description: 'Defeat Fire Giant',
     tags: [NGPLUS]
   },
   // BEFORE BURNING ERDTREE
@@ -1377,8 +1583,19 @@ export const items = [
     description: "To fight Fortissax, progress Ranni's quest until receiving the Carian Inverted Statue. Use the statue in the Divine Tower of Liurnia, reach the top, get the Cursemark of Death and give it to Fia. Reload the area and inspect her dream",
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
-  // CONSECRATED SNOWFIELD 100-120 +20-24
   // MOHGWYN PALACE 110-140 +20-24
+  {
+    id: "76a75f82-738d-4c1e-91ce-cbab5f32122f",
+    description:
+      "Next to the huge birds in the middle of the red lake, reachable from Palace Approach Ledge-Road or from Dynasty Mausoleum Entrance graces. Mohgwyn Palace. Note: if you grab this seed and rest in a grace, you cannot collect the other seed in this area.",
+    tags: [GOLDEN_SEED],
+  },
+  {
+    id: "b7a53140-c96f-4250-b4bd-44e19c37734a",
+    description:
+      "Behind the structure with the Somber Ancient Dragon Smithing Stone inside a chest, drop below on some rocks. A corpse is hanging on one of them. Note: the Golden Seed doesn't appear if the other one in the middle of the blood lake has already been collected and the area has been reset, but can be claimed if the area has not been reloaded. Mohgwyn Palace.",
+    tags: [GOLDEN_SEED],
+  },
   {
     id: 'd34d72c6-0545-4010-bca7-73d8280ede4c',
     description: 'Use invasion sign near the Mausoleum Dynasty Midpoint Site of Grace and defeat Varré',
@@ -1389,16 +1606,28 @@ export const items = [
     description: "Go back to the corridor where you found Varré invasion sign and talk to him to get 6 Festering Bloody Fingers and Varré's Bouquet",
     tags: [VARRE_QUESTLINE]
   },
-  // MIQUELLA'S HALIGTREE 120-150 +25
   {
     id: 'd01f819f-3b97-4551-9b08-1e6282f76552',
     description: 'Get Haligtree Secret Medallion (Right) from Castle Sol in Mountaintops of the Giants',
     tags: [OPTIONAL, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, NGPLUS, ALL_REMEMBERANCES]
   },
+  // CONSECRATED SNOWFIELD 100-120 +20-24
   {
     id: '57379897-ef76-4246-af6b-b1db1c957349',
     description: 'With both halves of Haligtree medallion, access Consecrated Snowfield through the Lift of Rold',
     tags: [OPTIONAL, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, NGPLUS, ALL_REMEMBERANCES]
+  },
+  {
+    id: "fdaf0398-fd5e-469b-9bb4-8fb547c7b80d",
+    description:
+      "In the secret Consecrated Snowfield region, Though hard to see due to the snow, ride north from the dungeon that exits into the snowfield to find a large tree with the seed at the base. Mountaintops of the Giants. <a href='https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168092' target='_blank'>Location</a>",
+    tags: [GOLDEN_SEED],
+  },
+  {
+    id: "f88a55b3-907a-4940-911e-0f568d1dd4f5",
+    description:
+      "At the foot of a Golden Tree by a frozen river to the west of Ordina, the Liturgical Town leading to Miquella's Haligtree. Mountaintops of the Giants",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '6081caa3-6d2b-4b95-b20c-88daae796559',
@@ -1412,9 +1641,10 @@ export const items = [
   },
   {
     id: 'a38284d6-48d6-46f8-a9b3-5ddc7394ec72',
-    description: "Reach Mohgwyn Palace either from Varre's quest or from Consecrated Snowfield and beat Mohg. Beforehand, it would be useful to get the Purifying Crystal Tear first from killing Eleonora, Violet Bloody Finger at the Second Church of Marika in Altus Plateau",
+    description: "Reach Mohgwyn Palace either from Varre's quest or from Consecrated Snowfield and beat Mohg. Beforehand, it would be useful to get the Purifying Crystal Tear first from killing Eleonora, Violet Bloody Finger at the Second Church of Marika in Altus Plateau. If Eleonora does not invade, follow Yura's questline",
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
+  // MIQUELLA'S HALIGTREE 120-150 +25
   {
     id: '37fd75e6-f278-457b-8f48-7983d33d39d2',
     description: 'Get Seedbed Curse (until you get 5) from Elphael, Brace of the Haligtree: From the Prayer Room Grace, head forwards until the end of stairs with two crossbowman above you. Jump on to the arch to the right and hop on to the platform to the left with the Crimson Teardrop Scarab. To the left should be a room with a Cleanrot Knight and a chest containing Cleanrot Knight Finlay Ashes. Hop onto the arch to the north-west and follow it up to a balcony. Follow the balcony to its end and the item will be found on a body sitting in a chair above the ballistae and the Putrid Avatar',
@@ -1438,7 +1668,7 @@ export const items = [
   {
     id: '92cba555-80a2-4c16-9a68-57f3d45edf71',
     description: 'Defeat the Lesser Ulcerated Tree Spirit in Elphael. To reach the mini-boss, go to the Drainage Channel site of grace, go west through the doorway, climb up the ladder at the end of the corridor, and go out the doorway on your right at the top. The mini-boss is at the landmass across the gap to the left. To reach it, go up the slope on the right and walk across the tree branch, heading southwest across the gap. You can cheese the mini-boss with ranged attacks from the top of the nearby trunk',
-    tags: [MILLICENT_QUESTLINE]
+    tags: [MILLICENT_QUESTLINE, GOLDEN_SEED]
   },
   {
     id: '3804c9ae-0a46-4c21-858c-7da2bfcbb9c7',
@@ -1497,6 +1727,12 @@ export const items = [
     tags: [SMITHING_STONE_BELL]
   },
   {
+    id: "53abd97f-5270-4c16-8bc7-d66a1ef0c495",
+    description:
+      "Under the Golden Tree on a roof near the Dragon Temple grace, accessed by an Imp Seal barrier. The tree is guarded by several skeletal beastmen. Crumbling Farum Azula",
+    tags: [GOLDEN_SEED],
+  },
+  {
     id: 'b6a6c4ba-a0b7-4e7f-b0fe-9b0c93c765b1',
     description: "Find Alexander in Farum Azula and beat him in a duel. He will reward you with with Alexander's Innards and Shard of Alexander. To reach him: from the Dragon Temple Lift grace (can be accessed by using two Stonesword Keys), go past the plaza full of undead up the flight of stairs, turn right and you'll see two square bracket shaped archways. Jump on the archway on the left (closest to the sleeping dragon) to get over to the other side. Alexander can be found directly on the flat arena after crossing the crumbling tower",
     tags: [ALEXANDER_QUESTLINE]
@@ -1510,6 +1746,12 @@ export const items = [
     id: '6b0328ea-74c9-4042-ae2a-4b6531053420',
     description: 'From Godskin Duo grace go through the left gate (looking at the closest wall, in the left side) and progress until reaching an area where you have to parkour down some floating platforms. Go straight through the path. In the area with the Crucible Knight, stick to the right side and jump to the grace.',
     tags: [NGPLUS]
+  },
+  {
+    id: "84362bd2-0996-43ee-b90a-670cdd25cc9a",
+    description:
+      "Golden Seed found after defeating a Farum dragon guarding the entrance to the greatbridge. It is located in some nearby ruins where Stormhawks have gathered. Reachable from the Dragon Temple Rooftop grace. Crumbling Farum Azula",
+    tags: [GOLDEN_SEED],
   },
   {
     id: '01a2faf5-a555-4d89-8ddb-cb4e89463367',

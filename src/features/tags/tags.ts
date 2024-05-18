@@ -253,5 +253,11 @@ export const tags: Record<TTagKeys, {
       "Boiled Crab",
       "Seedbed Curse",
     ]
-  }
+  },
+  [TAGS.GOLDEN_SEED]: {
+    label: 'Golden Seed',
+    key: TAGS.GOLDEN_SEED,
+    buttonClasses: 'border-yellow-200 text-yellow-200 hover:bg-yellow-200 hover:text-black focus:ring-yellow-200',
+    tagClasses: 'bg-yellow-200 text-black',
+  },
 }

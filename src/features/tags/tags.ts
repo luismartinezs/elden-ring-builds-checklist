@@ -166,9 +166,9 @@ export const tags: Record<TTagKeys, {
       "The Lord of the Frenzied Flame Ending",
     ]
   },
-  [TAGS.DUNG_EATER_QUESTILINE]: {
+  [TAGS.DUNG_EATER_QUESTLINE]: {
     label: 'Dung Eater',
-    key: TAGS.DUNG_EATER_QUESTILINE,
+    key: TAGS.DUNG_EATER_QUESTLINE,
     buttonClasses: 'border-pink-600 text-pink-600 hover:bg-pink-600 hover:text-black focus:ring-pink-600',
     tagClasses: 'bg-pink-600 text-black',
     questlineRewards: [
@@ -241,6 +241,17 @@ export const tags: Record<TTagKeys, {
       "Easy access to Volcano Manor",
       "Daedicar's woe",
       "Zorayas' Letter"
+    ]
+  },
+  [TAGS.BOGGART_QUESTLINE]: {
+    label: 'Boggart',
+    key: TAGS.BOGGART_QUESTLINE,
+    buttonClasses: 'border-lime-500 text-lime-500 hover:bg-lime-500 hover:text-black focus:ring-lime-500',
+    tagClasses: 'bg-lime-500 text-black',
+    questlineRewards: [
+      "Boiled Prawn",
+      "Boiled Crab",
+      "Seedbed Curse",
     ]
   }
 }

@@ -33,12 +33,13 @@ function FilterButtons() {
         <FilterButton filterTag={TAGS.LATENNA_QUESTLINE} />
         <FilterButton filterTag={TAGS.MILLICENT_QUESTLINE} />
         <FilterButton filterTag={TAGS.HYETTA_QUESTLINE} />
-        <FilterButton filterTag={TAGS.DUNG_EATER_QUESTILINE} />
         <FilterButton filterTag={TAGS.SELLEN_QUESTLINE} />
         <FilterButton filterTag={TAGS.PATCHES_QUESTLINE} />
         <FilterButton filterTag={TAGS.YURA_QUESTLINE} />
         <FilterButton filterTag={TAGS.CORHYN_QUESTLINE} />
+        <FilterButton filterTag={TAGS.DUNG_EATER_QUESTLINE} />
         <FilterButton filterTag={TAGS.RYA_QUESTLINE} />
+        <FilterButton filterTag={TAGS.BOGGART_QUESTLINE} />
       </div>
       <Divider />
       <div className="my-3 flex flex-wrap items-center gap-2 md:gap-1">

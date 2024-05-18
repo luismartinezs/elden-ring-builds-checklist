@@ -28,7 +28,7 @@ export function useShowChecklistItem(
   const { filter: filterHyettaQuestline } = useFilter(TAGS.HYETTA_QUESTLINE);
   const { filter: filterSellenQuestline } = useFilter(TAGS.SELLEN_QUESTLINE);
   const { filter: filterDungEaterQuestline } = useFilter(
-    TAGS.DUNG_EATER_QUESTILINE
+    TAGS.DUNG_EATER_QUESTLINE
   );
   const { filter: filterPatchesQuestine } = useFilter(
     TAGS.PATCHES_QUESTLINE
@@ -40,6 +40,7 @@ export function useShowChecklistItem(
     TAGS.CORHYN_QUESTLINE
   );
   const { filter: filterRyaQuestline } = useFilter(TAGS.RYA_QUESTLINE);
+  const { filter: filterBoggartQuestline } = useFilter(TAGS.BOGGART_QUESTLINE);
   const { filter: filterSmithingStoneBell } = useFilter(
     TAGS.SMITHING_STONE_BELL
   );
@@ -130,7 +131,7 @@ export function useShowChecklistItem(
         filter: filterHyettaQuestline,
       },
       {
-        tag: TAGS.DUNG_EATER_QUESTILINE,
+        tag: TAGS.DUNG_EATER_QUESTLINE,
         filter: filterDungEaterQuestline,
       },
       {
@@ -149,6 +150,10 @@ export function useShowChecklistItem(
         tag: TAGS.TUNNELS,
         filter: filterTunnels,
       },
+      {
+        tag: TAGS.BOGGART_QUESTLINE,
+        filter: filterBoggartQuestline,
+      }
     ];
     const shouldHide =
       _tags.length > 0

@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTILINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -87,7 +87,7 @@ export const items = [
   {
     id: '4bf628bc-957c-4dbf-bd29-b8f85870f488',
     description: 'Limgrave Tunnels, on the northern area of the Agheel Lake, just south from "Agheel Lake North" grace',
-    tags: [ TUNNELS ]
+    tags: [TUNNELS]
   },
   // WEEPING PENINSULA L20-30 +3
   {
@@ -113,7 +113,7 @@ export const items = [
   {
     id: '73fcc602-563d-4ae9-bdc9-d363dd2ecaf0',
     description: 'Morne Tunnel, in Weeping Peninsula. From the South of the Tower grace then head West and then South around the mountain. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=2318&lat=-214.054&lng=108.91&code=mapA" target="_blank">Location</a>',
-    tags: [ TUNNELS ]
+    tags: [TUNNELS]
   },
   {
     id: '8a19443f-919d-4ba9-891f-b88ad22ae163',
@@ -265,17 +265,22 @@ export const items = [
   {
     id: '66b31c30-f5ac-4d8e-b8dd-9f8cdad31ae6',
     description: 'Meet Rya in Liurnia of the Lakes under the under the pavilion next to the Birdseye Telescope north of Laskyar ruins',
-    tags: [ RYA_QUESTLINE ]
+    tags: [RYA_QUESTLINE, BOGGART_QUESTLINE]
   },
   {
     id: '6fe533c0-09e4-4fa8-8a30-d000b927fc44',
-    description: 'Head north west from the pavilion where Rya is located to reach the Boilprawn Shack, speak to Boggart and buy the necklace from him for 1000 runes (or kill him)',
-    tags: [ RYA_QUESTLINE ]
+    description: 'Head north west from the pavilion where Rya is located to reach the Boilprawn Shack, speak to Boggart and buy the necklace from him for 1000 runes (or kill him, if you don\'t care about his questline)',
+    tags: [RYA_QUESTLINE, BOGGART_QUESTLINE]
+  },
+  {
+    id: '93cb87ca-1cae-4436-9117-56490613b6a4',
+    description: 'Buy prawns from Boggart and talk to him. If you plan to follow Dung Eater\'s questline, but you want Boggart to survive, you can postpone this step until you have completed Dung Eater\'s questline, to prevent Boggart from moving to Altus. Note that this will prevent you from getting one Seedbed Curse',
+    tags: [ BOGGART_QUESTLINE ]
   },
   {
     id: '34ec7a0c-0adc-41f9-9ebf-3d3f243214f8',
     description: 'Give the necklace to Rya to get the Volcano Manor Invitation',
-    tags: [ RYA_QUESTLINE ]
+    tags: [RYA_QUESTLINE]
   },
   {
     id: 'f892cb40-deaa-4852-88d2-2121f978749b',
@@ -407,7 +412,7 @@ export const items = [
   {
     id: '91ae81a1-8d30-428c-95c6-c0fd35612f0b',
     description: 'Raya Lucaria Crystal Tunnel, northeastern Liurnia of the Lakes, near the walking mausoleum in the lake. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=5905&code=mapA" target="_blank">Location</a>',
-    tags: [ TUNNELS ]
+    tags: [TUNNELS]
   },
   {
     id: '958046df-4b2e-41dd-9692-d6e74f5d4d1b',
@@ -455,7 +460,7 @@ export const items = [
   {
     id: 'fbb653b6-f068-427c-8cca-9f5d8b0554cf',
     description: "Ruin-Strewn Precipice and miner's caves. Accessed from the Ravine-Vailed Village grace, going all the way north through the ravine in between Caria Manor and the path to the LIft of Dectus, in Liurnia. <a href='https://eldenring.wiki.fextralife.com/Interactive+Map?id=1651&code=mapA' target='_blank'>Location</a>",
-    tags: [ TUNNELS ]
+    tags: [TUNNELS]
   },
   // ACCESS ALTUS
   {
@@ -488,7 +493,7 @@ export const items = [
   {
     id: '7b8da92c-f70a-4908-b5c9-e27275c853d8',
     description: 'After reaching Altus, talk to Rya either in the lower part of Lux ruins, near the Erdtree-Gazing Hill site of grace (if you reached Altus via the Ruin-Strewn Precipice) or at the top of the Grand Lift of Dectus, to the left (if you used the lift to reach Altus), and she will teleport you inside Volcano Manor',
-    tags: [ RYA_QUESTLINE ]
+    tags: [RYA_QUESTLINE]
   },
   {
     id: 'f1e13540-ebde-451c-928a-252aac611f41',
@@ -534,12 +539,12 @@ export const items = [
   {
     id: 'e373c6f2-0fb9-479a-a7c6-6de82814771c',
     description: 'Old Altus Tunnel, in central-west Altus Plateau, accessible with two Stonesword Keys. From the Erdtree-Gazing Hill Grace go down into the vallye north, and hug the left side. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=1196&lat=-91.171875&lng=78.604109&code=mapA" target="_blank">Location</a>',
-    tags: [ TUNNELS ]
+    tags: [TUNNELS]
   },
   {
     id: 'bbd31431-ecf6-441f-b07d-6e0b7044c43f',
     description: 'Altus Tunnel, in Altus. Directly south from the Minor Erdtree in Altus Plateau. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=5837&lat=-93.49&lng=93.82&code=mapA" target="_blank">Location</a>',
-    tags: [ TUNNELS ]
+    tags: [TUNNELS]
   },
   {
     id: '28473d9d-19f7-468f-b25f-5739ec5511ec',
@@ -549,7 +554,7 @@ export const items = [
   {
     id: '8b040470-0f63-4521-a3ef-1c00f3dd78ac',
     description: 'Sealed Tunnel, found in Capital Outskirts, in Altus. Down at south of the lake right next to the west gate to Leyndell Royal Capital from the outside. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=2858&lat=-105.75&lng=105.660584&code=mapA" target="_blank">Location</a>',
-    tags: [ TUNNELS ]
+    tags: [TUNNELS]
   },
   {
     id: '0852f8c6-a18d-418c-a4ce-76fa413d7194',
@@ -560,7 +565,7 @@ export const items = [
   {
     id: '3e6c55bc-c6ae-43bd-ace8-ef333487397d',
     description: 'Gael Tunnel, in the border between Limgrave and Caelid. Found along the western cliffs of Caelid heading south from the Rotview Balcony grace',
-    tags: [ TUNNELS ]
+    tags: [TUNNELS]
   },
   {
     id: 'ee0a544b-eeca-4add-b94f-59fbd9505236',
@@ -570,7 +575,7 @@ export const items = [
   {
     id: 'e60b8967-d589-44b4-ae29-dbc1abdb4041',
     description: 'Sellia Crystal Tunnel, in Caelid. Can be reached early by opening a chest in Dragon-Burnt Ruins in Limgrave. It can also be reached by going north from Sellia. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=1177&lat=-172.515625&lng=144.836114&code=mapA" target="_blank">Location</a>',
-    tags: [ TUNNELS ]
+    tags: [TUNNELS]
   },
   {
     id: 'fbca363b-8c3c-4c24-812f-60b2700116a6',
@@ -780,7 +785,7 @@ export const items = [
   {
     id: '8af9f542-12a7-4a39-8522-1e3d9d8dd383',
     description: 'Talk to Rya in Volcano Manor, in her snake form',
-    tags: [ RYA_QUESTLINE ]
+    tags: [RYA_QUESTLINE]
   },
   {
     id: '0b51b4b9-6134-434a-8f85-3fbc1b583fb9',
@@ -815,32 +820,32 @@ export const items = [
   {
     id: '48ac2b74-5082-4b41-8ac3-28b059c69d20',
     description: 'Talk to Rya in her human form in Volcano Manor',
-    tags: [ RYA_QUESTLINE ]
+    tags: [RYA_QUESTLINE]
   },
   {
     id: 'dbd20cf0-6029-49d5-b14d-bc66ca8a0d69',
     description: 'go through the illusory wall in Volcano Manor, if you didn\'t, to reach the Prison Town Church grace and open the doors that lead to the Volcano Manor legacy dungeon',
-    tags: [ RYA_QUESTLINE ]
+    tags: [RYA_QUESTLINE]
   },
   {
     id: '8a6406cb-ddfa-4e79-bf25-e35e699d6c61',
     description: 'Talk to Tanith about Rya',
-    tags: [ RYA_QUESTLINE, OPTIONAL ]
+    tags: [RYA_QUESTLINE, OPTIONAL]
   },
   {
     id: 'a5318288-6ea7-49dd-bd82-1b59456cfc4b',
     description: "Defeat Godskin Noble in the Temple of Eiglay (Volcano Manor) to get the Serpent's Amnion",
-    tags: [ RYA_QUESTLINE ]
+    tags: [RYA_QUESTLINE]
   },
   {
     id: 'a45c34d8-6219-4fdd-abe0-1d1787076d4e',
     description: "Give the Serpent's Amnion to Rya and rest at any site of grace",
-    tags: [ RYA_QUESTLINE ]
+    tags: [RYA_QUESTLINE]
   },
   {
     id: 'f962ad09-a015-425f-bd40-c825d1b27ef0',
     description: 'Talk to Tanith and get the Tonic of Forgetfulness',
-    tags: [ RYA_QUESTLINE, OPTIONAL ]
+    tags: [RYA_QUESTLINE, OPTIONAL]
   },
   {
     id: "c68a1902-1696-49cb-91e4-836825f23057",
@@ -908,6 +913,11 @@ export const items = [
     tags: [MILLICENT_QUESTLINE]
   },
   {
+    id: '0424036f-7a94-41f0-9144-ee960ec59493',
+    description: 'Talk to Boggart at the outer moat located under the Capital Rampart grace (from Outer Wall Battleground grace, same path to the Draconic Tree Sentinel but hugging the right side down the moat). If all you care is to buy Boiled Crab, you can stop Boggart\'s questline here.',
+    tags: [ BOGGART_QUESTLINE ]
+  },
+  {
     id: 'c399c03e-adbf-4d14-b993-d207677089a8',
     description: 'Beat Draconic Tree Sentinel to access Leyndell',
     tags: [NGPLUS]
@@ -916,7 +926,7 @@ export const items = [
   {
     id: '554ccd9a-9b26-40d9-b6b9-d2d12bf7ac2c',
     description: 'Talk to Dung Eater in Roundtable Hold (after reaching Leyndell)',
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE,BOGGART_QUESTLINE]
   },
   {
     id: '7a68718f-b0e7-4006-b8b9-16d40e64d39e',
@@ -926,42 +936,52 @@ export const items = [
   {
     id: '0542d506-1888-4aaa-a2a5-5d890913ad6f',
     description: "Get one Seedbed Curse from Leyndell Royal Capital: After you exit the room with East Capital Rampart grace, continue south past the Oracle Envoys and into the building. Inside, head down the stairs and face west to take the elevator. After the elevator continue west into the next building. Climb up the ladder to your right and go up the stairs. On the highest floor you will find the Seedbed Curse on a corpse sitting in a chair",
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE,BOGGART_QUESTLINE]
   },
   {
     id: '465c8c07-c1dc-4ca1-ab9f-b4ce1254bb9c',
     description: 'Talk to Dung Eater with one Seedbed Curse in your inventory, to get the Sewer-Gaol Key',
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE, BOGGART_QUESTLINE]
   },
   {
     id: '2f7c8f64-dd73-4414-8c00-31b88c7335e7',
     description: 'Reach the Underground Roadside grace in Leyndell underground sewer',
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE, BOGGART_QUESTLINE]
   },
   {
     id: 'f1446309-6a7c-4f93-b9e7-346d9f509dbc',
     description: 'From the Underground Roadside grace, find Dung Eater: take a left from the grace, jump down the open grate, run northwest past the rats and the giant poison plants, go up the ladder and use the key on the locked door (be wary of the giant hand)',
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE, BOGGART_QUESTLINE]
   },
   {
     id: 'dcae831e-4f7a-4d02-95d1-4df23f50b7c7',
     description: 'Talk to Dung Eater in the sewer and tell him to leave his cell',
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE,BOGGART_QUESTLINE]
+  },
+  {
+    id: '359c9388-35ab-4e4e-8e92-edb62955b055',
+    description: 'Talk to Boggart at the outer moat located under the Capital Rampart grace.',
+    tags: [ BOGGART_QUESTLINE ]
   },
   {
     id: '8fa43f43-bd91-4ec3-a106-e9f4f40904b0',
     description: 'Find a message in place of Dung Eater in Roundtable Hold',
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE, BOGGART_QUESTLINE]
+  },
+  {
+    id: '66517971-be5c-44ae-b9a8-cc98257bbf2c',
+    description: 'Talk to the dying Boggart at the outer moat located under the Capital Rampart grace. Note that after this, Boggart will die and you won\'t be able to buy more items from him.',
+    tags: [ BOGGART_QUESTLINE ]
   },
   {
     id: 'ac59b169-2f2e-44c4-97b5-aefe39638a50',
     description: 'Go to the outer moat (from Outer Wall Battleground grace, same path to the Draconic Tree Sentinel but hugging the right side down the moat) and defeat Dung Eater to get the Sword of Milos',
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE, BOGGART_QUESTLINE]
   },
   {
     id: '5f55ac6e-6810-4799-a1cf-298b9b973a0b',
     description: 'Talk to Dung Eater in Roundtable Hold',
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE]
   },
   {
     id: '49478ab3-ba86-45ff-b333-94de240f8c6c',
@@ -1097,13 +1117,13 @@ export const items = [
   },
   {
     id: '8a776cf3-1d98-41c8-bf25-629fd277e248',
-    description: "Get Seedbed Curse (until you get 5) from Leyndell Royal Capital: On the body of the Blackguard at the end of his questline, in the outer moat near the Capital Ramparts grace, where the Dung Eater invades. If you did not do Blackguard's quest before Dung Eater's invasion, you will not be able to receive this particular Curse and you will need to provide the other five to Dung Eater instead",
-    tags: [DUNG_EATER_QUESTILINE]
+    description: "Get Seedbed Curse (until you get 5) from Leyndell Royal Capital: On the body of Boggart at the end of his questline, in the outer moat near the Capital Ramparts grace, where the Dung Eater invades. If you did not do Blackguard's quest before Dung Eater's invasion, you will not be able to receive this particular Curse and you will need to provide the other five to Dung Eater instead",
+    tags: [DUNG_EATER_QUESTLINE, BOGGART_QUESTLINE]
   },
   {
     id: '36a9fd33-72e1-4091-9158-c1aa01d442cf',
     description: "Get Seedbed Curse (until you get 5) from Leyndell Royal Capital: In the alternate version of Roundtable Hold located near the Fortified Manor grace, inside the equivalent of the Dung Eater's room. You will find it on a body that is strapped to a chair (if you follow this guide, you already got this one)",
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE]
   },
   {
     id: '86a63cbf-5afa-4d60-bad0-6879f8cebb94',
@@ -1262,7 +1282,7 @@ export const items = [
   {
     id: 'a701452c-e039-4068-af9d-d848ec71d858',
     description: "Get Seedbed Curse (until you get 5) from Volcano Manor: From Temple of Eiglay, proceed until you reach the teleporter to Rykard, Lord of Blasphemy, then go back into the building and up the stairs to find a fog door that requires a Stonesword Key. Carefully drop down in the dark room using the hanging cages. The item will be on a body that is sitting on a chair guarded by enemies. To the opposite side of the room there's a path leading back to the door in the Volcano Manor lobby that can now be opened",
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE]
   },
   {
     id: '48a216e3-249c-4720-928a-e8faa7e34806',
@@ -1398,17 +1418,17 @@ export const items = [
   {
     id: '37fd75e6-f278-457b-8f48-7983d33d39d2',
     description: 'Get Seedbed Curse (until you get 5) from Elphael, Brace of the Haligtree: From the Prayer Room Grace, head forwards until the end of stairs with two crossbowman above you. Jump on to the arch to the right and hop on to the platform to the left with the Crimson Teardrop Scarab. To the left should be a room with a Cleanrot Knight and a chest containing Cleanrot Knight Finlay Ashes. Hop onto the arch to the north-west and follow it up to a balcony. Follow the balcony to its end and the item will be found on a body sitting in a chair above the ballistae and the Putrid Avatar',
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE]
   },
   {
     id: '924f09a5-c8eb-4eb5-a96a-1f8e8c8f4419',
     description: 'Get Seedbed Curse (until you get 5) from Elphael, Brace of the Haligtree: From the Prayer Room grace, keep heading forwards, going down every staircase you come across. Drop down and head towards the room with two Cleanrot Knights inside but instead of entering, jump over the railing to the right and drop down one level. Turn around, enter the dark room right under the railing and you will find it on a body that is sitting in a chair',
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE]
   },
   {
     id: 'a23fc98b-86a6-476b-8437-f27cd7cfcc1c',
     description: 'Give all 5 Seedbed Curses to Dung Eater and get the Mending Rune of the Fell Curse, then reload the area to find the Omen Set',
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE]
   },
   {
     id: 'fe060cba-bcbd-4b3d-bcaf-81e9a0ad07d8',
@@ -1570,7 +1590,7 @@ export const items = [
   {
     id: '68cafc87-0e90-4f00-a806-9643a6254da5',
     description: 'Use the Mending Rune of the Fell Curse to get the Blessing of Despair Ending',
-    tags: [DUNG_EATER_QUESTILINE]
+    tags: [DUNG_EATER_QUESTLINE]
   },
   {
     id: '7c524889-f8a9-40bd-83ed-cec150a09764',
@@ -1616,7 +1636,7 @@ export const items = [
       {
         id: '2acc2df0-4d5c-46e7-a1b5-b7e1f565fe2c',
         description: 'Yelough Anix Tunnel, in the west of the Consecrated Snowfield, near the Yelough Anix Ruins. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=4491&lat=-77.59375&lng=133.02805&code=mapA" target="_blank">Location</a>',
-        tags: [ TUNNELS ]
+        tags: [TUNNELS]
       },
       {
         id: 'e46c2798-4e50-40f7-81b7-26340a06a603',

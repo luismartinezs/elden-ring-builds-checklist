@@ -16,11 +16,12 @@ export const TAGS = {
   MILLICENT_QUESTLINE: 'millicent-questline',
   ALL_REMEMBERANCES: 'all-remembrances',
   HYETTA_QUESTLINE: 'hyetta-questline',
-  DUNG_EATER_QUESTILINE: 'dung-eater-questline',
+  DUNG_EATER_QUESTLINE: 'dung-eater-questline',
   SELLEN_QUESTLINE: 'sellen-questline',
   PATCHES_QUESTLINE: 'patches-questline',
   YURA_QUESTLINE: 'yura-questline',
   CORHYN_QUESTLINE: 'corhyn-questline',
+  BOGGART_QUESTLINE: 'boggart-questline',
   RYA_QUESTLINE: 'rya-questline',
   TUNNELS: 'tunnels',
 } as const;

@@ -272,4 +272,10 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-black focus:ring-gray-400',
     tagClasses: 'bg-gray-400 text-black',
   },
+  [TAGS.RITUAL_POT]: {
+    label: 'Ritual Pot',
+    key: TAGS.RITUAL_POT,
+    buttonClasses: 'border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-black focus:ring-orange-600',
+    tagClasses: 'bg-orange-600 text-black',
+  },
 }

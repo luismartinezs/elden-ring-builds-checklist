@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -126,7 +126,7 @@ export const items = [
   {
     id: 'c2b353c2-e317-4414-b978-ae17257c33a0',
     description: 'Just east of the Agheel Lake South Site of Grace is a raised ledge. On the ledge are a few Wandering Nobles digging in the grass at the base of large tombstones, and to the left is one noble standing by himself. Kill him. Limgrave.',
-    tags: [ LARVAL_TEAR ]
+    tags: [LARVAL_TEAR]
   },
   {
     id: '0b151bb2-2176-4a5a-a68d-effc8018e4cc',
@@ -136,17 +136,17 @@ export const items = [
   {
     id: '3f73105e-8ed4-4398-9f01-0f5552d2d969',
     description: 'Callu Baptismal Church, directly south of Ailing Village. Limgrave. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164844" target="_blank">Location</a>',
-    tags: [ SACRED_TEAR ]
+    tags: [SACRED_TEAR]
   },
   {
     id: '6e07f73c-8943-4370-8181-f175a9b29fc4',
     description: 'Fourth Church of Marika, to the northwest of Weeping Peninsula.',
-    tags: [ SACRED_TEAR ]
+    tags: [SACRED_TEAR]
   },
   {
     id: 'c6b74a2f-22e3-46d7-8fa5-b5660760bdc3',
     description: 'Church of Pilgrimage in the northern peak of Weeping Peninsula',
-    tags: [ SACRED_TEAR ]
+    tags: [SACRED_TEAR]
   },
   {
     id: '2a0af444-beab-45a0-9400-560c9114a9bc',
@@ -280,7 +280,7 @@ export const items = [
   {
     id: '9e08c5b1-b098-476b-be81-224c8a58a9bd',
     description: 'Church of Irith, once you enter Liurnia, located behind Stormveil Castle',
-    tags: [ SACRED_TEAR ]
+    tags: [SACRED_TEAR]
   },
   {
     id: "f56fdffc-dcd7-4c99-af99-27426b91ad84",
@@ -316,8 +316,13 @@ export const items = [
   },
   {
     id: '37e42814-4ccc-4113-9104-48f2c3d92be2',
-    description: 'Get the South Raya Lucaria Gate site of grace in south side of Raya Lucaria',
+    description: 'Reach the Laskyar Ruins right north from the Liurnia Lake Shore grace and travel through the waygate portal to reach the South Raya Lucaria Gate grace.',
     tags: [NGPLUS]
+  },
+  {
+    id: 'ac63dd7a-986c-41dc-923c-99afb13ae417',
+    description: 'Laskyar Ruins, North-West of Liurnia Lake Shore Grace: near columns on the northern side',
+    tags: [RITUAL_POT]
   },
   {
     id: 'e5a95bc9-4780-48f0-93f0-aa8c5a626d7f',
@@ -357,7 +362,7 @@ export const items = [
   {
     id: 'b817d286-a7b9-4b67-9e6c-3345d8f6deee',
     description: 'Just southeast of the Fallen Ruins of the Lake Site of Grace is a Giant Crayfish in the water, separate from the three Giant Crayfish surrounding the small building nearby. Kill the lone one. Liurnia. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165606" target="_blank">Location</a>',
-    tags: [ LARVAL_TEAR ]
+    tags: [LARVAL_TEAR]
   },
   {
     id: 'f892cb40-deaa-4852-88d2-2121f978749b',
@@ -392,7 +397,7 @@ export const items = [
   {
     id: '4066e81e-82ad-40d6-96db-c3145242e576',
     description: 'In Village of the Albinaurics, find one in a graveyard near the Site of Grace surrounded by first-generation Albinauric enemies. Liurnia',
-    tags: [ LARVAL_TEAR ]
+    tags: [LARVAL_TEAR]
   },
   {
     id: 'de7fc925-2ad3-441b-a0f3-8cff17922c2e',
@@ -470,12 +475,22 @@ export const items = [
     description: 'Talk to Yura near to where the red summon sign was',
     tags: [YURA_QUESTLINE]
   },
+  {
+    id: 'fd0bafb4-5adc-4add-a0da-4beca2f6c711',
+    description: "2 in Jarburg, located in East Liurnia, down the cliffs just South of Carian Study Hall.",
+    tags: [ RITUAL_POT ]
+  },
   // RAYA LUCARIA L50-60 +4-6
   {
     id: "96bf5675-a5b6-4b9b-9ef4-7023a8c64aa9",
     description:
       "At the foot of the golden tree in the middle of Liurna's sunken town below Raya Lucaria.",
     tags: [GOLDEN_SEED],
+  },
+  {
+    id: 'd802f8f5-b9d0-4631-ab80-2a51f8d21935',
+    description: 'Near the Schoolhouse Classroom Site of Grace, in a chest guarded by mages and a giant Living Jar, in Raya Lucaria',
+    tags: [ RITUAL_POT ]
   },
   {
     id: '054a08f7-70ba-4ede-a188-b3a286808cb5',
@@ -530,7 +545,7 @@ export const items = [
   {
     id: '90813e2a-75de-4167-8603-af4bab0bd2ca',
     description: 'Among the rewards of the Resurrection painting. The painting is in the Artist\'s Shack in North-East Liurnia of The Lakes, heading north in the path up from the Liurnia Highway North. To find the painting rewards, start at the Behind Caria Manor Site of Grace and head slightly southeast until you arrive at a graveyard, behind a big rock you should see the spirit of the artist sitting in a chair',
-    tags: [ LARVAL_TEAR ]
+    tags: [LARVAL_TEAR]
   },
   {
     id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
@@ -548,9 +563,14 @@ export const items = [
     tags: [SELUVIS_QUESTLINE]
   },
   {
+    id: 'c962fdce-6197-4bfa-b2d2-bf986444c117',
+    description: 'After Caria Manor, go West of the Manor then head South. Along the cliffs on the East side, you can jump down, back into Caria manor. Sold by Pidia for 1500 runes. Liurnia',
+    tags: [ RITUAL_POT ]
+  },
+  {
     id: '8ff56795-72a5-4753-9299-f4413d23bbb1',
     description: 'Sold for 3000 runes by Pidia, Carian Servant, in Caria Manor (accessed by dropping down from Three Sisters). Liurnia.',
-    tags: [ LARVAL_TEAR ]
+    tags: [LARVAL_TEAR]
   },
   // high level Limgrave
   {
@@ -563,7 +583,7 @@ export const items = [
   {
     id: '6952e240-11ed-48d8-b937-b8bf01661540',
     description: "Sold by the Abandoned Merchant for 3000 runes. (To find him, from the Worshippers' Woods Site of Grace, climb the scaffolding you can see directly west - climb the ladders, drop down around the corner, cross the wooden bridge, and follow the cave-like path until you can drop down into his room.). Siofra River",
-    tags: [ LARVAL_TEAR ]
+    tags: [LARVAL_TEAR]
   },
   {
     id: "66af425c-8b81-44f9-b79d-87edc5e3b0e3",
@@ -596,12 +616,12 @@ export const items = [
   {
     id: '2b785494-8a3c-49c8-870c-030496f23aa6',
     description: 'Church of Inhibition in Liurnia. To reach it the pathway south from Dectus Lift in the Liurnia side. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167186" target="_blank">Location</a>',
-    tags: [ SACRED_TEAR ]
+    tags: [SACRED_TEAR]
   },
   {
     id: '3a89fd95-2ab2-4e02-a80d-c785b09d52ba',
     description: 'Bellum Church in Liurnia, to reach it follow the path toward the Dectus Lift from the East Raya Lucaria Gate grace, hugging the left side',
-    tags: [ SACRED_TEAR ]
+    tags: [SACRED_TEAR]
   },
   {
     id: '143197cd-8e4b-4934-ba17-4e35eb28214d',
@@ -739,6 +759,11 @@ export const items = [
     tags: [GOLDEN_SEED],
   },
   {
+    id: 'ee715878-7bf1-4165-a0b0-9dc024d63d68',
+    description: "Isolated Merchant's Shack in North Caelid. Sold by the Isolated Merchant for 3000 runes. Go north and then west from the Dragonbarrow West grace",
+    tags: [ RITUAL_POT ]
+  },
+  {
     id: '3e6c55bc-c6ae-43bd-ace8-ef333487397d',
     description: 'Gael Tunnel, in the border between Limgrave and Caelid. Found along the western cliffs of Caelid heading south from the Rotview Balcony grace',
     tags: [TUNNELS]
@@ -751,7 +776,7 @@ export const items = [
   {
     id: '64c35e10-0644-4208-bb4f-de808b0a0bfb',
     description: 'In the southwestern corner of Caelid, south of the Caelid Highway South Site of Grace, is a crowd of Wandering Nobles milling about amongst sarcophagi. Kill the noble in the back.',
-    tags: [ LARVAL_TEAR ]
+    tags: [LARVAL_TEAR]
   },
   {
     id: 'e60b8967-d589-44b4-ae29-dbc1abdb4041',
@@ -781,7 +806,7 @@ export const items = [
   {
     id: '6d94d45e-94e0-4bb9-a570-66ccc5c2f1ec',
     description: 'Church of Plague in Caelid. Reached by heading southwest from the Fort Faroth grace site and taking the Spiritspring down or from the backstreets of Sellia, Town of Sorcery. Or, coming from Dragonbarrow, jump down a Spirit Spring to the north of the Church',
-    tags: [ SACRED_TEAR ]
+    tags: [SACRED_TEAR]
   },
   {
     id: '4c0725a1-f7d3-4aea-9f75-d55efcfbc105',
@@ -828,7 +853,7 @@ export const items = [
   {
     id: 'ac4fd9cb-ed95-4e3f-b977-2b85e70a9f5b',
     description: "From the Nokron, Eternal City Site of Grace, head out the eastern door. It's sitting on a body in the building on your right.",
-    tags: [ LARVAL_TEAR ]
+    tags: [LARVAL_TEAR]
   },
   {
     id: '4630abf5-f6ce-4f48-a82a-091c04117844',
@@ -838,12 +863,12 @@ export const items = [
   {
     id: '32fcaa13-b71f-4b0b-b469-85679271249b',
     description: 'In Nokron. Before the Mimic Tear boss room is a large gazebo with the Larval Tear on a body in its center, guarded by Silver Tears.',
-    tags: [ LARVAL_TEAR ]
+    tags: [LARVAL_TEAR]
   },
   {
     id: 'f4000e4f-9974-48f8-9ea1-9f7566eb565d',
     description: '2 dropped by Mimic Tear in Nokron.',
-    tags: [ LARVAL_TEAR ]
+    tags: [LARVAL_TEAR]
   },
   {
     id: "40a23af2-c9a0-405b-bbf2-3ffbd67bda6f",
@@ -963,7 +988,7 @@ export const items = [
   {
     id: 'a4a5a59d-380d-44a5-82c5-382cea68aec3',
     description: 'From the Road of Iniquity Site of Grace, face east and head to the burning fire you can see. Right in front of it is a flaming enemy. Kill it. Altus',
-    tags: [ LARVAL_TEAR ]
+    tags: [LARVAL_TEAR]
   },
   {
     id: "e47e9dad-f9b7-4e44-9360-192bfc7d9436",
@@ -1128,7 +1153,7 @@ export const items = [
   {
     id: '50700a00-1045-492d-b94d-9abba5c2e17c',
     description: 'Second Church of Marika, in Altus. Go directly north from the Altus Highway Junction grace in Altus Plateau',
-    tags: [ SACRED_TEAR ]
+    tags: [SACRED_TEAR]
   },
   {
     id: 'efee0480-6110-4c57-af6e-9ea5d5c31635',
@@ -1174,17 +1199,22 @@ export const items = [
   {
     id: 'c5efe597-3022-4472-8ec9-8320b812bf7d',
     description: 'From the Rampartside Path Site of Grace (just west of the vertical center of the rampart wall surrounding Capital Outskirts), follow the road north until you come to a building. As soon as you go through the door, look over your left shoulder to see a noble cowering in the corner. Kill him. Altus Plateau',
-    tags: [ LARVAL_TEAR ]
+    tags: [LARVAL_TEAR]
   },
   {
     id: 'edad12e7-a1c7-4b5b-bfdd-387df1a0c653',
     description: 'At the base of the statue in Stormcaller Church. Reached from Rampartside Path site of grace by following the road west towards the lightning strikes. Altus Plateau. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167659" target="_blank">Location</a>',
-    tags: [ SACRED_TEAR ]
+    tags: [SACRED_TEAR]
   },
   {
     id: '0424036f-7a94-41f0-9144-ee960ec59493',
     description: 'Talk to Boggart at the outer moat located under the Capital Rampart grace (from Outer Wall Battleground grace, same path to the Draconic Tree Sentinel but hugging the right side down the moat). If all you care is to buy Boiled Crab, you can stop Boggart\'s questline here.',
     tags: [BOGGART_QUESTLINE]
+  },
+  {
+    id: 'd65e33d5-3f25-4ded-b5cb-a2fa41928539',
+    description: '2 in Auriza Side Tomb, just North-East of Leyndell: In a room with a giant Living Jar. To reach Auriza Side Tomb go down the moat and then north',
+    tags: [ RITUAL_POT ]
   },
   {
     id: 'c399c03e-adbf-4d14-b993-d207677089a8',
@@ -1230,8 +1260,13 @@ export const items = [
   },
   {
     id: 'dcae831e-4f7a-4d02-95d1-4df23f50b7c7',
-    description: 'Talk to Dung Eater in the sewer and tell him to leave his cell',
+    description: 'Talk to Dung Eater in the sewers and tell him to leave his cell',
     tags: [DUNG_EATER_QUESTLINE, BOGGART_QUESTLINE]
+  },
+  {
+    id: '71dfa82a-f8fe-4df1-a428-5a65cdd9937b',
+    description: 'In the Leyndell Sewers at the end of the maze of tunnels, just before the elevator to the Forsaken Depths Grace',
+    tags: [ RITUAL_POT ]
   },
   {
     id: '359c9388-35ab-4e4e-8e92-edb62955b055',
@@ -1524,6 +1559,11 @@ export const items = [
     tags: [SMITHING_STONE_BELL]
   },
   {
+    id: '30c309f9-57f5-49fb-8286-c01d2c338ae7',
+    description: "Giants' Mountaintop Catacombs. Follow the path North from Zamor Ruins and when you reach the fire enemies, turn around to the right to enter. In a room with a giant Living Jar.",
+    tags: [ RITUAL_POT ]
+  },
+  {
     id: '188a8fc3-17f2-42ab-adc9-bf67d97241c9',
     description: "Dropped by Ulcerated Tree Spirit in Giants' Mountaintop Catacombs, near the fire monks at the start of Mountaintops of the Giants. <a href='https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167665' target='_blank'>Location</a>",
     tags: [GLOVEWORT_BELL, GOLDEN_SEED]
@@ -1552,7 +1592,7 @@ export const items = [
   {
     id: '4f82a3dc-b165-4e21-afea-d3c3197ca6e0',
     description: 'First Church of Marika in Mountaintops of the Giants, south of the large freezing lake.',
-    tags: [ SACRED_TEAR ]
+    tags: [SACRED_TEAR]
   },
   {
     id: '30bf91af-7114-4564-a226-6acb5e9f08ea',
@@ -1562,7 +1602,7 @@ export const items = [
   {
     id: '21e3ee7a-9c14-4de5-84d7-a5a8c1f46288',
     description: 'Church of Repose in Mountaintops of the Giants. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165748" target="_blank">Location</a>',
-    tags: [ SACRED_TEAR ]
+    tags: [SACRED_TEAR]
   },
   {
     id: '7c510998-cb9f-4a89-a3f4-1be7189a672e',
@@ -1741,7 +1781,7 @@ export const items = [
   {
     id: '343e6c7d-7b37-4c27-943d-a40511f311ba',
     description: 'From the Inner Consecrated Snowfield Site of Grace, head southeast to shortly find three Wandering Pilgrims stranded in the snow. One of them is stuck, buried almost up to his armpits. Kill him. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167120">Location</a>',
-    tags: [ LARVAL_TEAR ]
+    tags: [LARVAL_TEAR]
   },
   {
     id: "f88a55b3-907a-4940-911e-0f568d1dd4f5",
@@ -2134,12 +2174,12 @@ export const items = [
       {
         id: '05b86aba-43ef-4b34-947c-961d488e5d62',
         description: "From the Night's Sacred Ground Site of Grace at the end of Nokron, head up the stairs on the right into the building, and kill the large ball.",
-        tags: [ LARVAL_TEAR ]
+        tags: [LARVAL_TEAR]
       },
       {
         id: 'aeefc242-efe0-4de6-a527-9d7435c246a9',
         description: 'From the Nokstella, Eternal City Site of Grace, follow up the stairs and progress through the area until you should see a large ball rolling down a far staircase toward you in the distance. Kill it. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
-        tags: [ LARVAL_TEAR ]
+        tags: [LARVAL_TEAR]
       },
       {
         id: '91ac06fa-115b-4b67-8084-6e00efaa3dc7',
@@ -2149,12 +2189,12 @@ export const items = [
       {
         id: 'b9be1195-7d21-4768-8881-de1cb921334f',
         description: 'In Nokstella upper buildings, inside a building next to a staircase with a rolling ball and with a chest in the back. Kill the ball inside. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
-        tags: [ LARVAL_TEAR ]
+        tags: [LARVAL_TEAR]
       },
       {
         id: '2a396ffd-78b7-479c-9313-12ccd4626814',
         description: 'In Nokstella upper buildings, inside a building with many silver tears and a rolling ball, by killing the ball. You can let the ball and the tears aggro and kill each other. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
-        tags: [ LARVAL_TEAR ]
+        tags: [LARVAL_TEAR]
       },
       {
         id: '5d63cfe4-b671-4d91-9b00-825b03dccd48',

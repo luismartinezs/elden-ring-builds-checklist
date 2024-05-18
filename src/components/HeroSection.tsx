@@ -26,10 +26,10 @@ export function HeroSection() {
       </p>
       <div className="flex flex-col items-center justify-center">
         <PrimaryLinkButton
-          href="/checklists/simple-game-progress"
-          className="fancy-gradient min-w-[200px] bg-gradient-to-br px-5 py-3 text-center font-semibold tracking-wide text-black xl:text-2xl"
+          href="/checklists/prep-dlc"
+          className="fancy-gradient min-w-[200px] bg-gradient-to-br px-8 py-4 text-center font-semibold tracking-wide text-black lg:text-2xl xl:text-3xl uppercase rounded-lg"
         >
-          START NEW PLAYTHROUGH
+          Prepare for DLC
         </PrimaryLinkButton>
         <Link href="/checklists#checklists" className="text-stone-300 text-sm md:text-base xl:text-lg mt-4">
           See all checklists

@@ -25,3 +25,7 @@ a {
 .fancy-gradient-secondary:hover {
   @apply from-secondary-500 via-secondary-700 to-secondary-900 text-white;
 }
+
+.text-shadow {
+  text-shadow: 1px 1px 4px black;
+}

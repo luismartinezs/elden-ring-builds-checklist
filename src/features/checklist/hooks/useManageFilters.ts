@@ -1,5 +1,5 @@
 import { useLocalStorage } from "usehooks-ts";
-import { initAppData } from "~/features/checklist/hooks/useManageProfiles";
+import { initAppData, initFilters } from "~/features/checklist";
 import { type AppData } from "~/features/checklist/types";
 import { produce } from 'immer'
 
@@ -8,7 +8,6 @@ export function useManageFilters() {
 
   const getCurrentFilters = () => {
     const filters = data.profiles[data.currentProfile]?.filters ?? {};
-    // console.log('getCurrentFilters:', JSON.stringify(filters));
     return filters;
   };
 
@@ -23,7 +22,7 @@ export function useManageFilters() {
   const updateAllFilters = (value: boolean) => {
     setData(produce(data, draft => {
       // console.log(`Updating all filters to ${value}`);
-      const currentFilters = draft.profiles[draft.currentProfile]?.filters ?? {};
+      const currentFilters = draft.profiles[draft.currentProfile]?.filters ?? initFilters;
 
       Object.keys(currentFilters).forEach(filterName => {
         currentFilters[filterName] = value;

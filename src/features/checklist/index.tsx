@@ -8,3 +8,4 @@ export type {
   Profile,
   AppData,
 } from "./types";
+export { initAppData, initFilters } from "./hooks/useManageProfiles";

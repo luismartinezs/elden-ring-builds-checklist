@@ -576,7 +576,7 @@ export const items = [
   {
     id: "e80a68b7-f557-434f-a969-ab03b206215a",
     description:
-      "Dropped by the Ulcerated Tree Spirit in Fringefolk Hero's Grave. Limgrave",
+      "Dropped by the Ulcerated Tree Spirit in Fringefolk Hero's Grave next to Stranded Graveyard grace. You will need 2 stonesword keys to access this area. Limgrave",
     tags: [GOLDEN_SEED],
   },
   // SIOFRA 50-60 +8-12

@@ -50,6 +50,7 @@ function FilterButtons() {
         <FilterButton filterTag={TAGS.GLOVEWORT_BELL} />
         <FilterButton filterTag={TAGS.GHOST_GLOVEWORT_BELL} />
         <FilterButton filterTag={TAGS.WHETBLADES} />
+        <FilterButton filterTag={TAGS.LARVAL_TEAR} />
         <FilterButton filterTag={TAGS.TUNNELS} />
       </div>
     </div>

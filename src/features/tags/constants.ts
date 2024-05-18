@@ -26,6 +26,7 @@ export const TAGS = {
   TUNNELS: 'tunnels',
   GOLDEN_SEED: 'golden-seed',
   SACRED_TEAR: 'sacred-tear',
+  LARVAL_TEAR: 'larval-tear',
 } as const;
 
 // these tags are "hidden" tags that are not displayed as filters

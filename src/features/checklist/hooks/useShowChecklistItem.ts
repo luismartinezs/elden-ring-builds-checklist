@@ -54,6 +54,7 @@ export function useShowChecklistItem(
   const {filter: filterTunnels} = useFilter(TAGS.TUNNELS);
   const { filter: filterGoldenSeed } = useFilter(TAGS.GOLDEN_SEED);
   const { filter: filterSacredTear } = useFilter(TAGS.SACRED_TEAR);
+  const { filter: filterLarvalTear } = useFilter(TAGS.LARVAL_TEAR);
 
   // NOTE: Using an effect instead of a derived state to avoid hydration errors
   useEffect(() => {
@@ -164,6 +165,10 @@ export function useShowChecklistItem(
         tag: TAGS.SACRED_TEAR,
         filter: filterSacredTear,
       },
+      {
+        tag: TAGS.LARVAL_TEAR,
+        filter: filterLarvalTear,
+      }
     ];
     const shouldHide =
       _tags.length > 0
@@ -206,6 +211,7 @@ export function useShowChecklistItem(
     filterBoggartQuestline,
     filterGoldenSeed,
     filterSacredTear,
+    filterLarvalTear,
   ]);
 
   return show;

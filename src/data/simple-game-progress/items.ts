@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -122,6 +122,11 @@ export const items = [
     id: '2fa6873f-d44c-4b9c-adda-596b6e7fa74b',
     description: 'Talk to Sellen at the Waypoint Ruins Cellar grace and select the "I want to learn sorcery" dialogue option. Located Western Limgrave, right east to Agheel Lake, downstairs Waypoint Ruins.',
     tags: [SELLEN_QUESTLINE]
+  },
+  {
+    id: 'c2b353c2-e317-4414-b978-ae17257c33a0',
+    description: 'Just east of the Agheel Lake South Site of Grace is a raised ledge. On the ledge are a few Wandering Nobles digging in the grass at the base of large tombstones, and to the left is one noble standing by himself. Kill him. Limgrave.',
+    tags: [ LARVAL_TEAR ]
   },
   {
     id: '0b151bb2-2176-4a5a-a68d-effc8018e4cc',
@@ -350,6 +355,11 @@ export const items = [
     tags: [RYA_QUESTLINE]
   },
   {
+    id: 'b817d286-a7b9-4b67-9e6c-3345d8f6deee',
+    description: 'Just southeast of the Fallen Ruins of the Lake Site of Grace is a Giant Crayfish in the water, separate from the three Giant Crayfish surrounding the small building nearby. Kill the lone one. Liurnia. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165606" target="_blank">Location</a>',
+    tags: [ LARVAL_TEAR ]
+  },
+  {
     id: 'f892cb40-deaa-4852-88d2-2121f978749b',
     description: 'Talk to Varré in Rose Church (west from Fallen Ruins of the Lake grace in Liurnia) and get Festering Bloody Finger',
     tags: [VARRE_QUESTLINE]
@@ -378,6 +388,11 @@ export const items = [
     id: '83eb9516-23c0-4f13-b05f-4a8b006fb5c3',
     description: 'Talk to Nepheli at Village Of The Albinaurics and defeat Omenkiller',
     tags: [NEPHELI_QUESTLINE]
+  },
+  {
+    id: '4066e81e-82ad-40d6-96db-c3145242e576',
+    description: 'In Village of the Albinaurics, find one in a graveyard near the Site of Grace surrounded by first-generation Albinauric enemies. Liurnia',
+    tags: [ LARVAL_TEAR ]
   },
   {
     id: 'de7fc925-2ad3-441b-a0f3-8cff17922c2e',
@@ -513,6 +528,11 @@ export const items = [
     tags: [GOLDEN_SEED],
   },
   {
+    id: '90813e2a-75de-4167-8603-af4bab0bd2ca',
+    description: 'Among the rewards of the Resurrection painting. The painting is in the Artist\'s Shack in North-East Liurnia of The Lakes, heading north in the path up from the Liurnia Highway North. To find the painting rewards, start at the Behind Caria Manor Site of Grace and head slightly southeast until you arrive at a graveyard, behind a big rock you should see the spirit of the artist sitting in a chair',
+    tags: [ LARVAL_TEAR ]
+  },
+  {
     id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
     description: 'Beat Loretta in Caria Manor',
     tags: [RANNI_QUESTLINE, SELLEN_QUESTLINE]
@@ -527,6 +547,11 @@ export const items = [
     description: "Talk to Seluvis in Seluvis's Rise to get Seluvis's Potion (beware that giving this item to certain NPCs can lock you out of their quests)",
     tags: [SELUVIS_QUESTLINE]
   },
+  {
+    id: '8ff56795-72a5-4753-9299-f4413d23bbb1',
+    description: 'Sold for 3000 runes by Pidia, Carian Servant, in Caria Manor (accessed by dropping down from Three Sisters). Liurnia.',
+    tags: [ LARVAL_TEAR ]
+  },
   // high level Limgrave
   {
     id: "e80a68b7-f557-434f-a969-ab03b206215a",
@@ -535,6 +560,11 @@ export const items = [
     tags: [GOLDEN_SEED],
   },
   // SIOFRA 50-60 +8-12
+  {
+    id: '6952e240-11ed-48d8-b937-b8bf01661540',
+    description: "Sold by the Abandoned Merchant for 3000 runes. (To find him, from the Worshippers' Woods Site of Grace, climb the scaffolding you can see directly west - climb the ladders, drop down around the corner, cross the wooden bridge, and follow the cave-like path until you can drop down into his room.). Siofra River",
+    tags: [ LARVAL_TEAR ]
+  },
   {
     id: "66af425c-8b81-44f9-b79d-87edc5e3b0e3",
     description:
@@ -719,6 +749,11 @@ export const items = [
     tags: [ALEXANDER_QUESTLINE]
   },
   {
+    id: '64c35e10-0644-4208-bb4f-de808b0a0bfb',
+    description: 'In the southwestern corner of Caelid, south of the Caelid Highway South Site of Grace, is a crowd of Wandering Nobles milling about amongst sarcophagi. Kill the noble in the back.',
+    tags: [ LARVAL_TEAR ]
+  },
+  {
     id: 'e60b8967-d589-44b4-ae29-dbc1abdb4041',
     description: 'Sellia Crystal Tunnel, in Caelid. Can be reached early by opening a chest in Dragon-Burnt Ruins in Limgrave. It can also be reached by going north from Sellia. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=1177&lat=-172.515625&lng=144.836114&code=mapA" target="_blank">Location</a>',
     tags: [TUNNELS]
@@ -791,9 +826,24 @@ export const items = [
   },
   // NOKRON CITY AND AQUEDUCT 70-80 +10-14
   {
+    id: 'ac4fd9cb-ed95-4e3f-b977-2b85e70a9f5b',
+    description: "From the Nokron, Eternal City Site of Grace, head out the eastern door. It's sitting on a body in the building on your right.",
+    tags: [ LARVAL_TEAR ]
+  },
+  {
     id: '4630abf5-f6ce-4f48-a82a-091c04117844',
     description: 'On a corpse lying at the base of a gazebo near the Nokron, Eternal City grace',
     tags: [GHOST_GLOVEWORT_BELL]
+  },
+  {
+    id: '32fcaa13-b71f-4b0b-b469-85679271249b',
+    description: 'In Nokron. Before the Mimic Tear boss room is a large gazebo with the Larval Tear on a body in its center, guarded by Silver Tears.',
+    tags: [ LARVAL_TEAR ]
+  },
+  {
+    id: 'f4000e4f-9974-48f8-9ea1-9f7566eb565d',
+    description: '2 dropped by Mimic Tear in Nokron.',
+    tags: [ LARVAL_TEAR ]
   },
   {
     id: "40a23af2-c9a0-405b-bbf2-3ffbd67bda6f",
@@ -909,6 +959,11 @@ export const items = [
     id: '35ea6a80-fe78-419d-b817-002882705950',
     description: 'You can reach Mt. Gelmir and Volcano Manor by going north east from Altus Plateau site of grace until Forest-Spanning Greatbridge grace, crossing the bridge with the magic portal, then heading south west through the only path available',
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
+  },
+  {
+    id: 'a4a5a59d-380d-44a5-82c5-382cea68aec3',
+    description: 'From the Road of Iniquity Site of Grace, face east and head to the burning fire you can see. Right in front of it is a flaming enemy. Kill it. Altus',
+    tags: [ LARVAL_TEAR ]
   },
   {
     id: "e47e9dad-f9b7-4e44-9360-192bfc7d9436",
@@ -1115,6 +1170,11 @@ export const items = [
     description:
       "At the base of a golden tree guarded by multiple trebuchets near the northern entrance to the Capital Outskirts. Start from the Windmill Village grace or backtrack from the Outer Wall Battleground grace. Altus Plateau.",
     tags: [GOLDEN_SEED],
+  },
+  {
+    id: 'c5efe597-3022-4472-8ec9-8320b812bf7d',
+    description: 'From the Rampartside Path Site of Grace (just west of the vertical center of the rampart wall surrounding Capital Outskirts), follow the road north until you come to a building. As soon as you go through the door, look over your left shoulder to see a noble cowering in the corner. Kill him. Altus Plateau',
+    tags: [ LARVAL_TEAR ]
   },
   {
     id: 'edad12e7-a1c7-4b5b-bfdd-387df1a0c653',
@@ -1679,6 +1739,11 @@ export const items = [
     tags: [GOLDEN_SEED],
   },
   {
+    id: '343e6c7d-7b37-4c27-943d-a40511f311ba',
+    description: 'From the Inner Consecrated Snowfield Site of Grace, head southeast to shortly find three Wandering Pilgrims stranded in the snow. One of them is stuck, buried almost up to his armpits. Kill him. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167120">Location</a>',
+    tags: [ LARVAL_TEAR ]
+  },
+  {
     id: "f88a55b3-907a-4940-911e-0f568d1dd4f5",
     description:
       "At the foot of a Golden Tree by a frozen river to the west of Ordina, the Liturgical Town leading to Miquella's Haligtree. Mountaintops of the Giants",
@@ -2067,9 +2132,29 @@ export const items = [
         tags: [OPTIONAL, NGPLUS]
       },
       {
+        id: '05b86aba-43ef-4b34-947c-961d488e5d62',
+        description: "From the Night's Sacred Ground Site of Grace at the end of Nokron, head up the stairs on the right into the building, and kill the large ball.",
+        tags: [ LARVAL_TEAR ]
+      },
+      {
+        id: 'aeefc242-efe0-4de6-a527-9d7435c246a9',
+        description: 'From the Nokstella, Eternal City Site of Grace, follow up the stairs and progress through the area until you should see a large ball rolling down a far staircase toward you in the distance. Kill it. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
+        tags: [ LARVAL_TEAR ]
+      },
+      {
         id: '91ac06fa-115b-4b67-8084-6e00efaa3dc7',
-        description: 'Found in a chest at the back of a narrow room in Nokstella, Eternal City. Starting from Nokstella, Eternal City grace, progress up the stairs to the city, and get inside the building after the first bridge. Beware the Silver Tear disguised as a large iron ball hanging off of the ceiling waiting to ambush you. To reach this area you need to progress Ranni\'s questline until after giving her the Fingerslayer Blade and then use the waygate in Renna\'s Rise',
+        description: 'Found in a chest at the back of a narrow room in Nokstella, Eternal City. Starting from Nokstella, Eternal City grace, progress up the stairs to the city, and get inside the building after the first bridge. Beware the Silver Tear disguised as a large iron ball hanging off of the ceiling waiting to ambush you. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
         tags: [OPTIONAL, NGPLUS]
+      },
+      {
+        id: 'b9be1195-7d21-4768-8881-de1cb921334f',
+        description: 'In Nokstella upper buildings, inside a building next to a staircase with a rolling ball and with a chest in the back. Kill the ball inside. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
+        tags: [ LARVAL_TEAR ]
+      },
+      {
+        id: '2a396ffd-78b7-479c-9313-12ccd4626814',
+        description: 'In Nokstella upper buildings, inside a building with many silver tears and a rolling ball, by killing the ball. You can let the ball and the tears aggro and kill each other. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
+        tags: [ LARVAL_TEAR ]
       },
       {
         id: '5d63cfe4-b671-4d91-9b00-825b03dccd48',

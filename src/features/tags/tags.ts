@@ -266,4 +266,10 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-rose-300 text-rose-300 hover:bg-rose-300 hover:text-black focus:ring-rose-300',
     tagClasses: 'bg-rose-300 text-black',
   },
+  [TAGS.LARVAL_TEAR]: {
+    label: 'Larval Tear',
+    key: TAGS.LARVAL_TEAR,
+    buttonClasses: 'border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-black focus:ring-gray-400',
+    tagClasses: 'bg-gray-400 text-black',
+  },
 }

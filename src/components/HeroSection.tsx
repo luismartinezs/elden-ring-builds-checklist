@@ -9,7 +9,7 @@ export function HeroSection() {
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
         <div
           className="h-[30px] w-[30px] md:h-[40px] md:w-[40px]
-          lg:h-[60px] lg:w-[60px]
+          lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px]
         "
         >
           <FaListCheck

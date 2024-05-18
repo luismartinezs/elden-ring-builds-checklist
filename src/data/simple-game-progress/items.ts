@@ -104,7 +104,7 @@ export const items = [
   },
   {
     id: "e4d35217-bd47-44ce-b9f9-712f8711f40c",
-    description: "Dropped by Kenneth Haight if you kill him. Limgrave",
+    description: "Dropped by Kenneth Haight if you kill him. Limgrave. This might lock you out of Nepheli's questline, so it's not recommended.",
     tags: [GOLDEN_SEED],
   },
   {
@@ -135,7 +135,7 @@ export const items = [
   },
   {
     id: '3f73105e-8ed4-4398-9f01-0f5552d2d969',
-    description: 'Callu Baptismal Church, directly south of Ailing Village. Limgrave. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164844" target="_blank">Location</a>',
+    description: 'Callu Baptismal Church, directly south of Ailing Village in Weeping Peninsula. Limgrave. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164844" target="_blank">Location</a>',
     tags: [SACRED_TEAR]
   },
   {
@@ -478,7 +478,7 @@ export const items = [
   {
     id: 'fd0bafb4-5adc-4add-a0da-4beca2f6c711',
     description: "2 in Jarburg, located in East Liurnia, down the cliffs just South of Carian Study Hall.",
-    tags: [ RITUAL_POT ]
+    tags: [RITUAL_POT]
   },
   // RAYA LUCARIA L50-60 +4-6
   {
@@ -490,11 +490,11 @@ export const items = [
   {
     id: 'd802f8f5-b9d0-4631-ab80-2a51f8d21935',
     description: 'Near the Schoolhouse Classroom Site of Grace, in a chest guarded by mages and a giant Living Jar, in Raya Lucaria',
-    tags: [ RITUAL_POT ]
+    tags: [RITUAL_POT]
   },
   {
     id: '054a08f7-70ba-4ede-a188-b3a286808cb5',
-    description: 'Beat Wolf of Radagon in Raya Lucaria',
+    description: 'Beat Red Wolf of Radagon in Raya Lucaria',
     tags: [NGPLUS]
   },
   {
@@ -565,7 +565,7 @@ export const items = [
   {
     id: 'c962fdce-6197-4bfa-b2d2-bf986444c117',
     description: 'After Caria Manor, go West of the Manor then head South. Along the cliffs on the East side, you can jump down, back into Caria manor. Sold by Pidia for 1500 runes. Liurnia',
-    tags: [ RITUAL_POT ]
+    tags: [RITUAL_POT]
   },
   {
     id: '8ff56795-72a5-4753-9299-f4413d23bbb1',
@@ -761,7 +761,7 @@ export const items = [
   {
     id: 'ee715878-7bf1-4165-a0b0-9dc024d63d68',
     description: "Isolated Merchant's Shack in North Caelid. Sold by the Isolated Merchant for 3000 runes. Go north and then west from the Dragonbarrow West grace",
-    tags: [ RITUAL_POT ]
+    tags: [RITUAL_POT]
   },
   {
     id: '3e6c55bc-c6ae-43bd-ace8-ef333487397d',
@@ -829,15 +829,15 @@ export const items = [
     tags: [OPTIONAL, RANNI_QUESTLINE, ALEXANDER_QUESTLINE, NGPLUS, ALL_REMEMBERANCES, SELLEN_QUESTLINE]
   },
   {
+    id: '214e0b27-c6c2-41a8-8acf-cba7f5ab0b6b',
+    description: 'Find Alexander next to the Radahn grace and talk to him',
+    tags: [ALEXANDER_QUESTLINE]
+  },
+  {
     id: "56421d70-5f43-43ef-9484-a8e26c78f9f2",
     description:
       "Dropped by Putrid Tree Spirit in the War Dead Catacombs. From Starscourge Radahn grace, head directly north and hug the cliff until you find the entrance. Caelid. You need to defeat Radahn first.",
     tags: [GOLDEN_SEED],
-  },
-  {
-    id: '214e0b27-c6c2-41a8-8acf-cba7f5ab0b6b',
-    description: 'Find Alexander next to the Radahn grace and talk to him',
-    tags: [ALEXANDER_QUESTLINE]
   },
   {
     id: '710569d9-691d-4a88-8e02-63fc3c559370',
@@ -1004,7 +1004,7 @@ export const items = [
   {
     id: '4eebbb14-632b-4c83-9251-65998c861e3f',
     description: "Speak with Tanith in the manor's lobby to join Volcano Manor and get the Drawing-Room Key",
-    tags: [VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE]
+    tags: [VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE, PATCHES_QUESTLINE]
   },
   {
     id: 'eb8f700c-f37c-48f3-abcc-6956c50d3ce1',
@@ -1014,7 +1014,7 @@ export const items = [
   {
     id: 'b049db63-dee0-4a43-8c28-f116b0134880',
     description: 'Collect the Recusant Finger and Letter from Volcano Manor from the nearby room with Rya and Bernahl',
-    tags: [VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE]
+    tags: [VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE, PATCHES_QUESTLINE]
   },
   {
     id: '176d4a46-ea03-436a-9a57-54d6473396c9',
@@ -1029,7 +1029,7 @@ export const items = [
   {
     id: '778461c2-d725-4a4b-9598-cfd4406928fa',
     description: 'Report back to Tanith and receive Magma Shot Sorcery',
-    tags: [VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE]
+    tags: [VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE, PATCHES_QUESTLINE]
   },
   {
     id: '8af9f542-12a7-4a39-8522-1e3d9d8dd383',
@@ -1039,12 +1039,12 @@ export const items = [
   {
     id: '0b51b4b9-6134-434a-8f85-3fbc1b583fb9',
     description: "Receive Letter to Patches from Patches in Volcano Manor (if Patches is not in Volcano Manor, it's possible that you have to meet him first at Murkwater Cave for him to show up at Volcano Manor, the wiki is not clear about that) ",
-    tags: [PATCHES_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, RYA_QUESTLINE]
+    tags: [PATCHES_QUESTLINE, RYA_QUESTLINE]
   },
   {
     id: '77738365-a822-4500-85e2-14af16746280',
-    description: "Invade and defeat Great Horned Tragoth at Ruin-Strewn Precipice Overlook inside Magma Wyrm Makar's boss room after resting at the grace inside the boss room",
-    tags: [VOLCANO_MANOR_ASSASSINATION, PATCHES_QUESTLINE, RYA_QUESTLINE]
+    description: "Invade and defeat Great Horned Tragoth at Ruin-Strewn Precipice Overlook inside Magma Wyrm Makar's boss room after resting at the grace inside the boss room. You will get the Bull-Goat Set",
+    tags: [PATCHES_QUESTLINE, RYA_QUESTLINE]
   },
   {
     id: '3a21455b-efd1-4b48-8bc9-3c435ddd4dff',
@@ -1162,7 +1162,7 @@ export const items = [
   },
   {
     id: '6f7dcb3a-0fb3-440f-aa04-40e60a4fe921',
-    description: "Defeat the invader Eleonora, Violet Bloody Finger to get the Purifying Crystal Tear and Eleonora's Poleblade",
+    description: "Defeat the invader Eleonora, Violet Bloody Finger in the Second Church of Marika to get the Purifying Crystal Tear and Eleonora's Poleblade (if you did not follow Yura's questline, Eleonora should still invade after you reach Mountaintops of the Giants and possibly talk to Yura next to Zamor Ruins grace)",
     tags: [YURA_QUESTLINE]
   },
   {
@@ -1214,7 +1214,7 @@ export const items = [
   {
     id: 'd65e33d5-3f25-4ded-b5cb-a2fa41928539',
     description: '2 in Auriza Side Tomb, just North-East of Leyndell: In a room with a giant Living Jar. To reach Auriza Side Tomb go down the moat and then north',
-    tags: [ RITUAL_POT ]
+    tags: [RITUAL_POT]
   },
   {
     id: 'c399c03e-adbf-4d14-b993-d207677089a8',
@@ -1266,7 +1266,7 @@ export const items = [
   {
     id: '71dfa82a-f8fe-4df1-a428-5a65cdd9937b',
     description: 'In the Leyndell Sewers at the end of the maze of tunnels, just before the elevator to the Forsaken Depths Grace',
-    tags: [ RITUAL_POT ]
+    tags: [RITUAL_POT]
   },
   {
     id: '359c9388-35ab-4e4e-8e92-edb62955b055',
@@ -1366,6 +1366,11 @@ export const items = [
     tags: [RANNI_QUESTLINE]
   },
   {
+    id: '05b86aba-43ef-4b34-947c-961d488e5d62',
+    description: "From the Night's Sacred Ground Site of Grace at the end of Nokron, head up the stairs on the right into the building, and kill the large ball.",
+    tags: [LARVAL_TEAR]
+  },
+  {
     id: '588cc80e-1d8e-4853-85bf-7ade0c31fdff',
     description: 'Talk to Ranni again and give her the Fingerslayer Blade to receive Carian Inverted Statue. Gving the Fingerslayer Blade to Ranni will turn Seluvis into a puppet, so if you want to do Seluvis quest, you must do it before this point.',
     tags: [RANNI_QUESTLINE]
@@ -1384,6 +1389,22 @@ export const items = [
     id: '6f0f64d0-961a-4fd6-b4f9-dbfc2aecc30c',
     description: 'Progress through Ainsel and Nokstella to get the Discarded Palace Key from the Baleful Shadow.',
     tags: [RANNI_QUESTLINE]
+  },
+  {
+    id: 'aeefc242-efe0-4de6-a527-9d7435c246a9',
+    description: 'From the Nokstella, Eternal City Site of Grace, follow up the stairs and progress through the area until you should see a large ball rolling down a far staircase toward you in the distance. Kill it. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
+    tags: [LARVAL_TEAR]
+  },
+
+  {
+    id: 'b9be1195-7d21-4768-8881-de1cb921334f',
+    description: 'In Nokstella upper buildings, inside a building next to a staircase with a rolling ball and with a chest in the back. Kill the ball inside. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
+    tags: [LARVAL_TEAR]
+  },
+  {
+    id: '2a396ffd-78b7-479c-9313-12ccd4626814',
+    description: 'In Nokstella upper buildings, inside a building with many silver tears and a rolling ball, by killing the ball. You can let the ball and the tears aggro and kill each other. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
+    tags: [LARVAL_TEAR]
   },
   {
     id: "d9201005-91e1-4dec-bb62-2435f52443ef",
@@ -1512,7 +1533,7 @@ export const items = [
   },
   {
     id: 'b9a44d4b-7a7e-47b8-9dd9-3e76b4f7f71f',
-    description: 'After defeating Morgott (but before killing Gideon), find Nepheli, Kenneth, and Gostoc in the Stormveil Castle throne room near the Godrick the Grafted site of grace (you might have to spawn from the Godrick the Grafted site of grace and rest at the Secluded Cell site of grace)',
+    description: 'After defeating Morgott (but before killing Gideon), find Nepheli, Kenneth, and Gostoc in the Stormveil Castle throne room near the Godrick the Grafted site of grace (you might have to spawn from the Godrick the Grafted site of grace and rest at the Secluded Cell site of grace). If they are still not there, you might have to talk to Kenneth atop Fort Haight',
     tags: [NEPHELI_QUESTLINE]
   },
   {
@@ -1561,7 +1582,7 @@ export const items = [
   {
     id: '30c309f9-57f5-49fb-8286-c01d2c338ae7',
     description: "Giants' Mountaintop Catacombs. Follow the path North from Zamor Ruins and when you reach the fire enemies, turn around to the right to enter. In a room with a giant Living Jar.",
-    tags: [ RITUAL_POT ]
+    tags: [RITUAL_POT]
   },
   {
     id: '188a8fc3-17f2-42ab-adc9-bf67d97241c9',
@@ -1795,6 +1816,11 @@ export const items = [
     tags: [LATENNA_QUESTLINE]
   },
   {
+    id: '26a53cd6-7fbb-41be-b39c-98a863f88d78',
+    description: 'Yelough Anix Tunnel, in the west of the Consecrated Snowfield, near the Yelough Anix Ruins. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=4491&lat=-77.59375&lng=133.02805&code=mapA" target="_blank">Location</a>',
+    tags: [TUNNELS]
+  },
+  {
     id: '52bfb466-e488-4a1b-8eab-7a84dc19ab14',
     description: "beat Ordina's puzzle in Consecrated Snowfield to access Miquella's Haligtree. You can make the assassins visible holding Sentry's Torch in your off hand. You can knock off the snipers from the roofs with a greatbow, the Jar Cannon or long range spells",
     tags: [OPTIONAL, MILLICENT_QUESTLINE, ALL_REMEMBERANCES]
@@ -1899,7 +1925,7 @@ export const items = [
   },
   {
     id: 'f6d85cdf-3cb9-49d3-9912-5116e4ecf771',
-    description: 'From Dragon Temple Altar grace, exit to the left looking at the nearest wall. Progress down the debris to a narrow path laden with dragon statues. At the end of the path there is a spiral staircase on the right. Head up these stairs and then find a floating pillar adjoining the aforementioned floating platform. Use the pillar to get up to the platform and collect the stone',
+    description: 'From Dragon Temple Altar grace, exit to the left looking at the nearest wall. Progress down the debris to a narrow path laden with dragon statues. At the end of the path there is a spiral staircase on the right. Head up these stairs and then find a floating pillar adjoining the aforementioned floating platform. Use the pillar to get up to the platform and collect an Ancient Dragon Smithing Stone. <a href="https://youtu.be/SM11swgGzw0?t=1921" target="_blank">Video location</a>',
     tags: [OPTIONAL, NGPLUS]
   },
   {
@@ -2037,12 +2063,7 @@ export const items = [
       },
       {
         id: '2acc2df0-4d5c-46e7-a1b5-b7e1f565fe2c',
-        description: 'Yelough Anix Tunnel, in the west of the Consecrated Snowfield, near the Yelough Anix Ruins. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=4491&lat=-77.59375&lng=133.02805&code=mapA" target="_blank">Location</a>',
-        tags: [TUNNELS]
-      },
-      {
-        id: 'e46c2798-4e50-40f7-81b7-26340a06a603',
-        description: 'Looted from within the Yelough Anix Tunnel located in Consecrated Snowfield. Head south west from Inner Consecrated Snowfield grace',
+        description: 'Looted from within Yelough Anix Tunnel, in the west of the Consecrated Snowfield, near the Yelough Anix Ruins. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=4491&lat=-77.59375&lng=133.02805&code=mapA" target="_blank">Location</a>',
         tags: [OPTIONAL, NGPLUS]
       },
       {
@@ -2057,7 +2078,7 @@ export const items = [
       },
       {
         id: '658a2bdc-310b-4fd1-a250-1954ddea947f',
-        description: 'From Dragon Temple Altar grace, exit to the left looking at the nearest wall. Progress down the debris to a narrow path laden with dragon statues. At the end of the path there is a spiral staircase on the right. Head up these stairs and then find a floating pillar adjoining the aforementioned floating platform. Use the pillar to get up to the platform and collect the stone',
+        description: 'From Dragon Temple Altar grace, exit to the left looking at the nearest wall. Progress down the debris to a narrow path laden with dragon statues. At the end of the path there is a spiral staircase on the right. Head up these stairs and then find a floating pillar adjoining the aforementioned floating platform. Use the pillar to get up to the platform and collect an Ancient Dragon Smithing Stone. <a href="https://youtu.be/SM11swgGzw0?t=1921" target="_blank">Video location</a>',
         tags: [OPTIONAL, NGPLUS]
       },
       {
@@ -2171,30 +2192,11 @@ export const items = [
         description: "Found in a chest under the massive skeleton statue in Night's Sacred Ground, Nokron, after reaching the bottom level of Nokron. You receive this alongside the Fingerslayer Blade. To reach this area you need to defeat Radahn and then go through the crater in Limgrave.",
         tags: [OPTIONAL, NGPLUS]
       },
-      {
-        id: '05b86aba-43ef-4b34-947c-961d488e5d62',
-        description: "From the Night's Sacred Ground Site of Grace at the end of Nokron, head up the stairs on the right into the building, and kill the large ball.",
-        tags: [LARVAL_TEAR]
-      },
-      {
-        id: 'aeefc242-efe0-4de6-a527-9d7435c246a9',
-        description: 'From the Nokstella, Eternal City Site of Grace, follow up the stairs and progress through the area until you should see a large ball rolling down a far staircase toward you in the distance. Kill it. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
-        tags: [LARVAL_TEAR]
-      },
+
       {
         id: '91ac06fa-115b-4b67-8084-6e00efaa3dc7',
         description: 'Found in a chest at the back of a narrow room in Nokstella, Eternal City. Starting from Nokstella, Eternal City grace, progress up the stairs to the city, and get inside the building after the first bridge. Beware the Silver Tear disguised as a large iron ball hanging off of the ceiling waiting to ambush you. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
         tags: [OPTIONAL, NGPLUS]
-      },
-      {
-        id: 'b9be1195-7d21-4768-8881-de1cb921334f',
-        description: 'In Nokstella upper buildings, inside a building next to a staircase with a rolling ball and with a chest in the back. Kill the ball inside. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
-        tags: [LARVAL_TEAR]
-      },
-      {
-        id: '2a396ffd-78b7-479c-9313-12ccd4626814',
-        description: 'In Nokstella upper buildings, inside a building with many silver tears and a rolling ball, by killing the ball. You can let the ball and the tears aggro and kill each other. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
-        tags: [LARVAL_TEAR]
       },
       {
         id: '5d63cfe4-b671-4d91-9b00-825b03dccd48',

@@ -1,6 +1,6 @@
 import { EXTRA_TAGS, TAGS } from '~/features/tags';
 
-const { OPTIONAL, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, NEPHELI_QUESTLINE, SELLEN_QUESTLINE, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, BOGGART_QUESTLINE, ALEXANDER_QUESTLINE, VARRE_QUESTLINE, WHETBLADES, RANNI_QUESTLINE, PATCHES_QUESTLINE } = TAGS
+const { OPTIONAL, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, NEPHELI_QUESTLINE, SELLEN_QUESTLINE, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, BOGGART_QUESTLINE, ALEXANDER_QUESTLINE, VARRE_QUESTLINE, WHETBLADES, PATCHES_QUESTLINE } = TAGS
 const { ALWAYS_SHOW } = EXTRA_TAGS
 
 const list = {
@@ -535,12 +535,12 @@ const list = {
     {
       id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
       description: 'Beat Loretta in Caria Manor',
-      tags: [RANNI_QUESTLINE, SELLEN_QUESTLINE]
+      tags: [SELLEN_QUESTLINE]
     },
     {
       id: '983e4f51-15f7-4b5a-a927-5eee5c12f5c1',
       description: 'Talk to Ranni, then her servants, then Ranni again. If you don\'t find Ranni, it\'s possible that you have started the Radahn festival, so you will have to kill Radahn before progressing',
-      tags: [RANNI_QUESTLINE]
+      tags: []
     },
     {
       id: 'c962fdce-6197-4bfa-b2d2-bf986444c117',
@@ -731,7 +731,7 @@ const list = {
     {
       id: '7d2912a9-f6d1-45a1-bdb6-36ba9a63f0c6',
       description: 'Radahn Festival should be active now, and you can beat Radahn. You can cheese him by staying away and keep on summoning warriors, while you inflict rot with the Crepus\'s black-key Crossbow (if you have it)',
-      tags: [RANNI_QUESTLINE, ALEXANDER_QUESTLINE, SELLEN_QUESTLINE]
+      tags: [ALEXANDER_QUESTLINE, SELLEN_QUESTLINE]
     },
     {
       id: '214e0b27-c6c2-41a8-8acf-cba7f5ab0b6b',
@@ -788,7 +788,7 @@ const list = {
     {
       id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
       description: 'Loot Fingerslayer Blade from Nokron along with a Great Ghost Glovewort',
-      tags: [RANNI_QUESTLINE]
+      tags: []
     },
     {
       id: '05b86aba-43ef-4b34-947c-961d488e5d62',
@@ -798,24 +798,24 @@ const list = {
     {
       id: '588cc80e-1d8e-4853-85bf-7ade0c31fdff',
       description: 'Talk to Ranni again and give her the Fingerslayer Blade to receive Carian Inverted Statue.',
-      tags: [RANNI_QUESTLINE]
+      tags: []
     },
 
     {
       id: 'b74b0892-6ec4-42f7-86a5-9abb664deb48',
       description: 'Talk to Iji',
-      tags: [RANNI_QUESTLINE]
+      tags: []
     },
     {
       id: '8419e6fc-6209-42cd-ad18-d5f972d7a9f5',
       description: "Go through Renna's Rise waygate, get Ranni's doll and activate the grace. In the grace you can then talk to Ranni's doll repeatedly",
-      tags: [RANNI_QUESTLINE]
+      tags: []
     },
 
     {
       id: '6f0f64d0-961a-4fd6-b4f9-dbfc2aecc30c',
       description: 'Progress through Ainsel and Nokstella to get the Discarded Palace Key from the Baleful Shadow.',
-      tags: [RANNI_QUESTLINE]
+      tags: []
     },
     {
       id: "d9201005-91e1-4dec-bb62-2435f52443ef",
@@ -850,15 +850,10 @@ const list = {
       description: 'In a chest guarded by several Silver Tears with shields in the corner of a small room near the Nokstella, Eternal City grace',
       tags: [GHOST_GLOVEWORT_BELL]
     },
-    // {
-    //   id: '053b4389-4d66-4ae6-b78e-92f7d2946b60',
-    //   description: "Get the Dark Moon Ring from Rennala's room",
-    //   tags: [RANNI_QUESTLINE]
-    // },
     {
       id: '72415649-ec6d-4fd5-845c-950088a6403b',
       description: 'Go through the Lake of Rot (Flame, Cleanse Me incantation, lots of HP flasks, Immunizing Horn Charm talisman and Immunizing Cured Meat help)',
-      tags: [RANNI_QUESTLINE]
+      tags: []
     },
     {
       id: "ad9db21d-3fc5-4de0-bf5d-d011d2ab3783",

@@ -55,7 +55,7 @@ export default function Landing({
             subtitle="Hold L2. R2. Roll. Repeat."
             link={
               <Link
-                href="/checklists/ranni"
+                href="/checklists/moonveil-samurai"
                 className="fancy-gradient-secondary mt-2 inline-block rounded-lg bg-gradient-to-br px-4 py-4 font-bold uppercase text-black focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-1 focus:ring-offset-stone-900 sm:mb-2 sm:mr-2 sm:px-5 sm:py-2.5 sm:focus:ring-4 sm:focus:ring-offset-2"
               >
                 Start Moonveil Playthrough

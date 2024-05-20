@@ -543,14 +543,14 @@ export const items = [
     tags: [GOLDEN_SEED],
   },
   {
-    id: '90813e2a-75de-4167-8603-af4bab0bd2ca',
-    description: 'Among the rewards of the Resurrection painting. The painting is in the Artist\'s Shack in North-East Liurnia of The Lakes, heading north in the path up from the Liurnia Highway North. To find the painting rewards, start at the Behind Caria Manor Site of Grace and head slightly southeast until you arrive at a graveyard, behind a big rock you should see the spirit of the artist sitting in a chair',
-    tags: [LARVAL_TEAR]
-  },
-  {
     id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
     description: 'Beat Loretta in Caria Manor',
     tags: [RANNI_QUESTLINE, SELLEN_QUESTLINE]
+  },
+  {
+    id: '90813e2a-75de-4167-8603-af4bab0bd2ca',
+    description: 'Among the rewards of the Resurrection painting. The painting is in the Artist\'s Shack in North-East Liurnia of The Lakes, heading north in the path up from the Liurnia Highway North. To find the painting rewards, start at the Behind Caria Manor Site of Grace (<a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165492" target="_blank">Location</a>) and head slightly southeast until you arrive at a graveyard, behind a big rock you should see the spirit of the artist sitting in a chair',
+    tags: [LARVAL_TEAR]
   },
   {
     id: '983e4f51-15f7-4b5a-a927-5eee5c12f5c1',

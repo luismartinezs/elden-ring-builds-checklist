@@ -71,7 +71,7 @@ const list = {
       id: "21565225-1584-4978-95ed-31073a644f89", /// HERE
       description:
         "Pick the Stonesword Key next to the Stormhill Shack grace.",
-      tags: [GOLDEN_SEED],
+      tags: [],
     },
     {
       id: '2ffa52b8-8b74-4111-a975-4da2c97d3c4c',
@@ -523,11 +523,6 @@ const list = {
       tags: [GOLDEN_SEED],
     },
     {
-      id: '90813e2a-75de-4167-8603-af4bab0bd2ca',
-      description: 'Among the rewards of the Resurrection painting. The painting is in the Artist\'s Shack in North-East Liurnia of The Lakes, heading north in the path up from the Liurnia Highway North. To find the painting rewards, start at the Behind Caria Manor Site of Grace and head slightly southeast until you arrive at a graveyard, behind a big rock you should see the spirit of the artist sitting in a chair',
-      tags: [LARVAL_TEAR]
-    },
-    {
       id: 'e41ac24c-5c7b-4340-839c-b0c0b048b0e1',
       description: "Get Glintstone Craftsman's Cookbook [6] in Caria Manor in a small room southeast of the gardens. From the Main Caria Manor Gate Grace, enter the gardens and immediately turn right. The room will be straight ahead",
       tags: []
@@ -536,6 +531,11 @@ const list = {
       id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
       description: 'Beat Loretta in Caria Manor',
       tags: [SELLEN_QUESTLINE]
+    },
+    {
+      id: '90813e2a-75de-4167-8603-af4bab0bd2ca',
+      description: 'Among the rewards of the Resurrection painting. The painting is in the Artist\'s Shack in North-East Liurnia of The Lakes, heading north in the path up from the Liurnia Highway North. To find the painting rewards, start at the Behind Caria Manor Site of Grace (<a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165492" target="_blank">Location</a>) and head slightly southeast until you arrive at a graveyard, behind a big rock you should see the spirit of the artist sitting in a chair',
+      tags: [LARVAL_TEAR]
     },
     {
       id: '983e4f51-15f7-4b5a-a927-5eee5c12f5c1',

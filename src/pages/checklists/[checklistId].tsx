@@ -106,7 +106,7 @@ export default function ChecklistPage({
   return (
     <PageLayout>
       <Head>
-        <title>{checklist.title} | Elden Ring Builds</title>
+        <title>{checklist.title} | Elden Ring Checklists - Elden Hub</title>
         <meta name="description" content={checklist.title} />
       </Head>
       <SectionWrapper className="py-0 relative isolate !my-0">

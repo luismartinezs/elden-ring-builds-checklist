@@ -22,7 +22,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
         <Head>
           <link rel="icon" href="/elden-ring.png" />
           {/* HTML Meta Tags */}
-          <title>Elden Ring Checklist</title>
+          <title>Elden Ring Checklists - Elden Hub</title>
           <meta
             name="description"
             content="Elden Ring Checklist for NG and NG+"

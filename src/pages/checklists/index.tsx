@@ -33,7 +33,7 @@ export default function Landing({
   return (
     <>
       <Head>
-        <title>Elden Ring Checklists</title>
+        <title>Elden Ring Checklists - Elden Hub</title>
         <meta name="description" content="Elden Ring Checklists" />
       </Head>
       <PageLayout>

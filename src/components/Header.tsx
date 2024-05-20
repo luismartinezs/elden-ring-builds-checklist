@@ -79,7 +79,8 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
         <div className="relative mx-auto flex max-w-screen-xl flex-wrap items-center justify-between py-2">
           <LogoLink className="lg:hidden" />
           <Link className="text-xl font-bold lg:hidden" href="/">
-            Elden Ring Checklists
+            <span className="text-primary-500">Elden</span>
+            <span className="text-secondary-500">Hub</span>
           </Link>
           <div className="flex items-center lg:order-2 lg:hidden">
             <BurgerButton onClick={openMenu} />
@@ -88,7 +89,8 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
             <div className="flex items-center gap-4">
               <LogoLink />
               <Link href="/" className="hidden text-xl font-bold lg:block">
-                Elden Ring Checklists
+                <span className="text-primary-500">Elden</span>
+                <span className="text-secondary-500">Hub</span>
               </Link>
             </div>
             <ul className="mt-4 flex flex-col font-medium lg:mt-0 lg:flex-row lg:space-x-8">

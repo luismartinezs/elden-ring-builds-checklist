@@ -11,7 +11,7 @@ export function PrimaryLinkButton(
     <Link
       {...otherProps}
       className={cn(
-        "rounded bg-primary-500 px-4 py-2 text-white outline-offset-2 outline-primary-400 hover:translate-y-px hover:bg-primary-600 focus:outline",
+        "rounded bg-primary-500 px-4 py-2 text-white outline-offset-2 outline-2 sm:outline-4 outline-primary-400 hover:translate-y-px hover:bg-primary-600 focus:outline",
         className
       )}
     >

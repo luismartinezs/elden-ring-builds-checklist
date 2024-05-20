@@ -235,7 +235,7 @@ const list = {
     {
       id: "f56fdffc-dcd7-4c99-af99-27426b91ad84",
       description:
-        "Given as a reward for completing Roderika's Task at Stormhill Shack. Limgrave. If you rest in any grace in Liurnia you will get the Golden Seed from her in Roundtable Hold regardless.",
+        "Given as a reward for completing Roderika's Task at Stormhill Shack. Limgrave. If you skipped her quest, rest in any grace in Liurnia and you can get the Golden Seed from where she was in Stormhill Shack regardless.",
       tags: [GOLDEN_SEED],
     },
     {

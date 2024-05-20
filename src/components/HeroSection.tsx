@@ -18,7 +18,8 @@ export function HeroSection() {
           />
         </div>
         <h1 className="text-center text-3xl font-bold md:text-5xl xl:text-7xl">
-          Checklists for <span className="text-primary-500">Elden Ring</span>
+          {/* <span className="text-primary-500">Elden</span><span className="text-secondary-500">Hub</span> */}
+          <span className="text-secondary-500">Checklists</span> for <span className="text-primary-500 whitespace-nowrap">Elden Ring</span>
         </h1>
       </div>
       <p className="text-center text-xl text-stone-300 md:text-2xl xl:text-3xl">

@@ -11,7 +11,7 @@ const list = {
   notes: [
     `Build based on this excellent guide by Vaatividya: <a href='https://www.youtube.com/watch?v=0E7R0spaeQw' target='_blank'>How to Fully Prepare for Elden Ring's DLC</a>.`,
     `<b>I highly recommend you create a new profile for this run and make sure to toggle off all the filters so everything is displayed</b>`,
-    `These steps will get you all the items mentioned in the guide, including all sacred tears, all (most) golden seeds, all larval tears, all miner's and picker's bell bearings, all ritual pots and all ancient dragon stones.`,
+    `These steps will get you all the items mentioned in the guide, including all sacred tears, all golden seeds, all larval tears, all miner's and picker's bell bearings, all ritual pots and all ancient dragon stones.`,
     `Whetblades also included although not mentioned in Vaati's guide.`,
   ],
   items: [

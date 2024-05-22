@@ -2,6 +2,7 @@ import { PrimaryLinkButton } from "~/components/PrimaryLinkButton";
 import { SectionWrapper } from "~/components/SectionWrapper";
 import { FaListCheck } from "react-icons/fa6";
 import Link from "next/link";
+// import Image from 'next/image';
 
 export function HeroSection() {
   return (
@@ -12,6 +13,11 @@ export function HeroSection() {
           lg:h-[50px] lg:w-[50px] xl:h-[60px] xl:w-[60px]
         "
         >
+          {/* <Image src='/images/icons/greatsword_colossal_swords_elden_ring_wiki_guide_200px.png'
+          width={200}
+          height={200}
+          alt="Greatsword"
+          /> */}
           <FaListCheck
             size={70}
             className="max-h-[100%] max-w-[100%] text-primary-500"

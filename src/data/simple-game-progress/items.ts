@@ -605,7 +605,7 @@ export const items = [
   },
   {
     id: '8d9fb6dd-c390-42ff-ae5e-24df91cdda04',
-    description: 'Red-Hot Whetblade (Fire and Flame Art). Redmane Castle (south Caelid) From the Chamber Outside The Plaza site of grace, head out the south-side door, west past the flamethrower enemies, and then to the door past the Abductor Virgin and hanging bodies. Note: if you reach Altus before this step, you will need to defeat Radahn to access the rest of Redmane Castle',
+    description: 'Red-Hot Whetblade (Fire and Flame Art). Redmane Castle (south Caelid) From the Chamber Outside The Plaza site of grace, head out the south-side door, west past the flamethrower enemies, and then to the door past the Abductor Virgin and hanging bodies. Note: if you reach Altus before this step, you will need to defeat Radahn to access the rest of Redmane Castle and then talk to Jerren inside Redmane castle near the elevator to Radahn to reset the area.',
     tags: [WHETBLADES]
   },
   {
@@ -937,7 +937,7 @@ export const items = [
   },
   {
     id: '59161dac-f393-45ba-be0d-386df975a173',
-    description: 'Talk to Witch-Hunter Jerren in the chapel near the Chamber Outside the Plaza grace. If you rest at a grace, Redmane Castle will reset to its version filled with enemies',
+    description: 'Talk to Witch-Hunter Jerren in the chapel near the Chamber Outside the Plaza grace. If you rest at a grace, Redmane Castle will reset to its version filled with enemies. If Jerren is not there it could be that you already talked to him, in which case you can skip this step',
     tags: [SELLEN_QUESTLINE]
   },
   {
@@ -1198,7 +1198,7 @@ export const items = [
   },
   {
     id: 'c5efe597-3022-4472-8ec9-8320b812bf7d',
-    description: 'From the Rampartside Path Site of Grace (just west of the vertical center of the rampart wall surrounding Capital Outskirts), follow the road north until you come to a building. As soon as you go through the door, look over your left shoulder to see a noble cowering in the corner. Kill him. Altus Plateau',
+    description: 'From the Rampartside Path Site of Grace (just west of the vertical center of the rampart wall surrounding Capital Outskirts), follow the road north until you come to a building. As soon as you go through the door, look over your left shoulder to see a noble cowering in the corner. Kill him. Altus Plateau. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167594" target="_blank">Location</a>',
     tags: [LARVAL_TEAR]
   },
   {
@@ -1312,7 +1312,7 @@ export const items = [
   },
   {
     id: 'db09772b-34cf-45a2-9876-75d25ac402e1',
-    description: 'Talk to Seluvis and ask him about his chambers to receive a free Spirit Ashes from him (you might need to reload the area and talk to Seluvis several times)',
+    description: 'Talk to Seluvis and ask him about his chambers to receive a free Spirit Ashes from him (you might need to reload the area and talk to Seluvis several times). It is recommended you get Jarwight Puppet, because it will cost 3 Starlgiht Shards later and so if you get the other puppet you will need to find one additional Starlight Shard later',
     tags: [SELUVIS_QUESTLINE]
   },
   {

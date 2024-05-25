@@ -27,7 +27,7 @@ const list = {
     },
     {
       id: 'b0223f0f-a26b-4698-ad9e-8d0ec8cf703c',
-      description: 'Whatever your build is, aim to have around 60 VGR (although if your build is heavily ranged, that might justify having less VGR)',
+      description: 'Aim to get around 40 VGR (soft cap), although this is heavily dependent on your build',
       tags: []
     },
     // WEST LIMGRAVE L1-15 +0-1

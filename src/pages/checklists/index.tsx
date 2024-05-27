@@ -34,7 +34,7 @@ export default function Landing({
     <>
       <Head>
         <title>Elden Ring Checklists - Elden Hub</title>
-        <meta name="description" content="Elden Ring Checklists" />
+        <meta name="description" content="Checklists for the video game Elden Ring" />
       </Head>
       <PageLayout>
         <div className="flex flex-col mb-16">

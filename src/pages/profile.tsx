@@ -16,7 +16,7 @@ export default function ProfilePage() {
     <PageLayout>
       <Head>
         <title>Profile | Elden Ring Checklists - Elden Hub</title>
-        <meta name="description" content="Elden Ring Builds" />
+        <meta name="description" content="Create or update your profiles for EldenHub" />
       </Head>
       <SectionWrapper>
         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">

@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Head>
         <title>Elden Ring Checklists - Elden Hub</title>
-        <meta name="description" content="Elden Ring Builds" />
+        <meta name="description" content="Checklists for the video game Elden Ring" />
       </Head>
       <PageLayout>
         <h1>Home</h1>

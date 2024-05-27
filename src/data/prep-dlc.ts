@@ -1240,7 +1240,7 @@ const list = {
     },
     {
       id: '7c510998-cb9f-4a89-a3f4-1be7189a672e',
-      description: 'Found in Mountaintops of the Giants. On a corpse inside the mouth of a big skull south-east of Church of Repose. Once you spawn in, turn to the south-east and you will see a large skull.',
+      description: 'Somber Ancient Dragon Smithing Stone found in Mountaintops of the Giants. On a corpse inside the mouth of a big skull south-east of Church of Repose. Once you spawn in, turn to the south-east and you will see a large skull.',
       tags: []
     },
     {

@@ -21,7 +21,7 @@ const App: AppType<{ session: Session | null }> = ({
       <SessionProvider session={session}>
         <Head>
           <meta charSet="UTF-8" />
-          <link rel="icon" href="/elden-ring.png" />
+          <link rel="icon" href="/elden-ring.png?v=1" />
           {/* HTML Meta Tags */}
           <title>Elden Ring Checklists - Elden Hub</title>
           <meta
@@ -74,7 +74,7 @@ const App: AppType<{ session: Session | null }> = ({
 
           {/* PWA */}
           <meta name="generator" content="Next.js" />
-          <link rel="manifest" href="/manifest.json" />
+          <link rel="manifest" href="/site.webmanifest" />
           <meta
             name="keywords"
             content="Elden Ring Checklists, EldenHub Guides, Elden Ring NPC Rewards, Elden Ring Profile Management, Elden Ring FAQ, Elden Ring DLC Preparation, Elden Ring Questline Guides, Elden Ring Checklist App, Elden Ring New Game+ Progress, Elden Ring Moonveil Samurai Build, Elden Ring Ranni the Witch Build, Elden Ring Templar Build Guide, Elden Ring Lightning Lancer Build, Elden Ring Status Effect Build, Elden Ring Replay Guide, Elden Ring Filters and Steps, Elden Ring New Game Progress Tracker, Elden Ring INT DEX Builds, Elden Ring FAI STR DEX Builds, Elden Ring No Guide Playthrough"
@@ -82,21 +82,20 @@ const App: AppType<{ session: Session | null }> = ({
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href="/apple-touch-icon.png"
+            href="/apple-touch-icon.png?v=1"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/favicon-32x32.png"
+            href="/favicon-32x32.png?v=1"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/favicon-16x16.png"
+            href="/favicon-16x16.png?v=1"
           />
-          <link rel="manifest" href="/site.webmanifest" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f59e0b" />
           <meta name="msapplication-TileColor" content="#000000" />
           <meta name="theme-color" content="#000000" />

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://eldenringbuilds.vercel.app
+
+# Sitemaps
+Sitemap: https://eldenringbuilds.vercel.app/sitemap.xml

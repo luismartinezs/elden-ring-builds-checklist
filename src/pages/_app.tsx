@@ -14,7 +14,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
   pageProps: { session, ...pageProps },
 }) => {
   useInitAppData();
-  useMigrateLegacyData(); // This can be removed after some days / weeks. See also scripts/mockLegacyData.js
+  useMigrateLegacyData(); // This can be removed after some days / weeks. See also scripts/mockLegacyData.jst
 
   return (
     <>
@@ -25,7 +25,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
           <title>Elden Ring Checklists - Elden Hub</title>
           <meta
             name="description"
-            content="Elden Ring Checklist for NG and NG+"
+            content="Replay Elden Ring without looking at guides every 5 minutes"
           />
           {/* Facebook Meta Tags */}
           <meta
@@ -33,14 +33,18 @@ const MyApp: AppType<{ session: Session | null }> = ({
             content="https://eldenringbuilds.vercel.app"
           />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Elden Ring Checklist" />
+          <meta property="og:title" content="Elden Ring Checklists - Elden Hub" />
           <meta
             property="og:description"
-            content="Elden Ring Checklist for NG and NG+"
+            content="Replay Elden Ring without looking at guides every 5 minutes"
           />
-          <meta property="og:image" content="elden-ring.png" />
+          <meta
+            property="og:image"
+            content="https://res.cloudinary.com/dicyllvry/image/upload/v1717389292/elden-ring/hero_bjdcbb.png"
+          />
           {/* Twitter Meta Tags */}
           <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:creator" content="@LuisMartinezSu2" />
           <meta
             property="twitter:domain"
             content="eldenringbuilds.vercel.app"
@@ -49,12 +53,16 @@ const MyApp: AppType<{ session: Session | null }> = ({
             property="twitter:url"
             content="https://eldenringbuilds.vercel.app"
           />
-          <meta name="twitter:title" content="Elden Ring Checklist" />
+          <meta name="twitter:title" content="Elden Ring Checklists - Elden Hub" />
           <meta
             name="twitter:description"
-            content="Elden Ring Checklist for NG and NG+"
+            content="Replay Elden Ring without looking at guides every 5 minutes"
           />
-          <meta name="twitter:image" content="elden-ring.png" />
+          <meta
+            name="twitter:image"
+            content="https://res.cloudinary.com/dicyllvry/image/upload/v1717389292/elden-ring/hero_bjdcbb.png"
+          />
+
           {/* Meta Tags Generated via https://www.opengraph.xyz */}
         </Head>
         <Component {...pageProps} />

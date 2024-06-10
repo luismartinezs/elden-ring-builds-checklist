@@ -825,7 +825,7 @@ export const items = [
   },
   {
     id: '7d2912a9-f6d1-45a1-bdb6-36ba9a63f0c6',
-    description: 'Radahn Festival should be active now, and you can beat Radahn',
+    description: 'Radahn Festival should be active now, and you can defeat Starscourge Radahn',
     tags: [OPTIONAL, RANNI_QUESTLINE, ALEXANDER_QUESTLINE, NGPLUS, ALL_REMEMBERANCES, SELLEN_QUESTLINE]
   },
   {
@@ -846,7 +846,7 @@ export const items = [
   },
   {
     id: '609c347c-c2b5-488b-80e5-1db0d9417a41',
-    description: 'If you beat Radahn, you can now access Nokron',
+    description: 'If you defeated Starscourge Radahn, you can now access Nokron',
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   // NOKRON CITY AND AQUEDUCT 70-80 +10-14
@@ -1079,7 +1079,7 @@ export const items = [
   {
     id: '8a6406cb-ddfa-4e79-bf25-e35e699d6c61',
     description: 'Talk to Tanith about Rya',
-    tags: [RYA_QUESTLINE, OPTIONAL]
+    tags: [RYA_QUESTLINE]
   },
   {
     id: 'a5318288-6ea7-49dd-bd82-1b59456cfc4b',
@@ -1094,7 +1094,7 @@ export const items = [
   {
     id: 'f962ad09-a015-425f-bd40-c825d1b27ef0',
     description: 'Talk to Tanith and get the Tonic of Forgetfulness',
-    tags: [RYA_QUESTLINE, OPTIONAL]
+    tags: [RYA_QUESTLINE]
   },
   {
     id: "c68a1902-1696-49cb-91e4-836825f23057",
@@ -1528,7 +1528,12 @@ export const items = [
   },
   {
     id: 'aed334cf-8397-453c-87d5-16922af7c955',
-    description: 'Beat Morgott',
+    description: 'Defeat Morgott, The Omen King, the interact with with the Erdtree to activate the Grace',
+    tags: [NGPLUS]
+  },
+  {
+    id: '7690a174-fa2b-42a3-a85d-844c90e55116',
+    description: 'Talk to Melina in Elden Throne grace to get the Rold medallion',
     tags: [NGPLUS]
   },
   {
@@ -1547,11 +1552,6 @@ export const items = [
     tags: [NEPHELI_QUESTLINE]
   },
   // FORBIDDEN LANDS 110-120 +20-24
-  {
-    id: '7690a174-fa2b-42a3-a85d-844c90e55116',
-    description: 'Talk to Melina in Elden Throne grace to get the Rold medallion',
-    tags: [NGPLUS]
-  },
   {
     id: '7437d4a6-25da-4ac3-9c68-cc1e489bba68',
     description: 'From the Avenue Balcony grace reach the Rold lift',

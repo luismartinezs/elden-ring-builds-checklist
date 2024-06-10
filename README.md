@@ -44,3 +44,10 @@ This is to make it easier to play the game without having to look up guides cons
 - Add tag to `src/features/tags/tags.ts`
 - Add button to `src/components/SettingsMenu/SettingsMenu.tsx`
 - Extend `useShowChecklistItem` hook in `src/features/checklist/hooks/useShowChecklistItem.ts`
+
+## Notes
+
+- When to add the `OPTIONAL` tag to a step?
+  - YES: When the step is an optional part of the playthrough that is not required to reach the final boss. Example: Defeating the Regal Ancestor Spirit boss, defeating Radahn, etc.
+  - NO: When a questline has an optional step. Example: Meeting Alexander in Limgrave.
+- I'm considering removing the OPTIONAL tag as I realize it's a bit ambiguous

@@ -513,7 +513,7 @@ const list = {
     {
       id: 'fc400bd0-00f0-4e1b-873e-eac45d4528b2',
       description: 'Great Ghost Glovewort. Can be obtained from a chest in a room underneath the massive skeleton and throne at Ainsel River, near the Dragonkin Soldier of Nokstella site of grace. This area is reachable by taking the lift down, located north of the Divine Tower of Liurnia',
-      tags: [OPTIONAL,]
+      tags: [OPTIONAL]
     },
     // LIURNIA WEST, CARIA MANOR L50-60 +4-6
     {

@@ -14,7 +14,7 @@ import Link from "next/link";
 const links = [
   {
     label: "Checklists",
-    href: "/checklists#checklists",
+    href: "/checklists",
   },
   {
     label: "NPC rewards",

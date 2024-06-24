@@ -310,7 +310,7 @@ export const items = [
   },
   {
     id: '36b4789b-0dcf-41ca-ad9a-48955ede3b30',
-    description: '(optional) In the The First Step, interact with the message beneath where White Mask Varre was originally to obtain the "Bravo!" gesture',
+    description: '(optional) In the The First Step grace, interact with the message beneath where White Mask Varre was originally to obtain the "Bravo!" gesture',
     tags: [VARRE_QUESTLINE]
   },
   // LIURNIA SOUTH L40-50 +3-4

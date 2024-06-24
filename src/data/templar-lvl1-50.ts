@@ -73,7 +73,7 @@ const list = {
     },
     {
       "id": "556e60ef-caa6-4da7-9c2f-3fabcdc42eef",
-      "description": "Beat Magrit"
+      "description": "Beat Margit, the Fell Omen"
     },
     {
       "id": "23fd1a49-8932-4b03-813c-b588ea7ed611",

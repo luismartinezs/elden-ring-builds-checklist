@@ -237,7 +237,7 @@ export const items = [
   // STORMVEIL CASTLE L30-40 +3-4
   {
     id: '7aba047b-6da2-46ab-9f3a-0c5acf36e752',
-    description: 'Defeat Magrit',
+    description: 'Defeat Margit, the Fell Omen',
     tags: [NGPLUS]
   },
   {

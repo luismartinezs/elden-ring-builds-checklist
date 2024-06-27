@@ -79,7 +79,7 @@ const list = {
     {
       id: 'e16f6de8-4ebc-4773-a37c-2973c270071c',
       description: "Go through the Dragon Pit and head south to speak to the Dragon Communion Priestess at the Grand Altar of Dragon Communion. Choose whether to give her the potion from Thiollier (must be given at night). At the end of her questline, if you don't give her the potion, you receive a consumable and a weapon; if you do, you'll receive an incantation and spirit ashes.",
-      tags: [THIOLLIER]
+      tags: [DRAGON_PRIESTESS]
     },
     {
       id: '0a683160-a101-4810-b197-ec074f2b29d1',
@@ -165,7 +165,7 @@ const list = {
     },
     {
       id: '32f7f51b-5a51-4fe3-8859-77b43740730d',
-      description: 'Speak to Thiollier after defeating the Putrescent Knight. Imbibe the nectar four times. Then speak to Thiollier and exhaust his dialogue. Imbibe the nectar again. This time Thiollier will invade. Defeat him . Then imbibe the nectar again and speak to Thiollier again. She should repeat herself if you continue imbibing.',
+      description: 'Speak to Thiollier after defeating the Putrescent Knight. Imbibe the nectar from St. Trina four times. Then speak to Thiollier and exhaust her dialogue. Imbibe the nectar again. This time Thiollier will invade. Defeat her. Then imbibe the nectar again and speak to Thiollier again. St. Trina should repeat herself if you continue imbibing.',
       tags: [THIOLLIER]
     },
     {
@@ -316,7 +316,7 @@ const list = {
     },
     {
       id: '30773b77-d479-4384-b447-a75d4bfabc0f',
-      description: 'Thiollier can be summoned to help you if you told him all that St. Trina said',
+      description: 'Thiollier can be summoned to help you if you told her all that St. Trina said',
       tags: [THIOLLIER]
     },
     {

@@ -362,8 +362,8 @@ export const tags: Record<TTagKeys, {
   [TAGS.YMIR]: {
     label: 'Ymir',
     key: TAGS.YMIR,
-    buttonClasses: 'border-violet-500 text-violet-500 hover:bg-violet-500 hover:text-black focus:ring-violet-500',
-    tagClasses: 'border border-violet-500 bg-violet-900 text-violet-100 -m-px',
+    buttonClasses: 'border-violet-700 text-violet-700 hover:bg-violet-700 hover:text-black focus:ring-violet-700',
+    tagClasses: 'border border-violet-700 bg-violet-900 text-violet-100 -m-px',
     questlineRewards: [
     ]
   },

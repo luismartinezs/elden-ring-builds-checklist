@@ -7,7 +7,6 @@ const list = {
   id: "0ead2b98-4393-4091-9745-82af2ef1cb0a",
   slug: "prep-dlc",
   title: "Prepare for DLC (Vaati guide)",
-  tags: ['new'],
   notes: [
     `Build based on this excellent guide by Vaatividya: <a href='https://www.youtube.com/watch?v=0E7R0spaeQw' target='_blank'>How to Fully Prepare for Elden Ring's DLC</a>.`,
     `<b>I highly recommend you create a new profile for this run and make sure to toggle off all the filters so everything is displayed</b>`,

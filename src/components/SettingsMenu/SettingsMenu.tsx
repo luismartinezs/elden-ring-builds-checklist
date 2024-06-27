@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 
 import { useIsClient, useOnClickOutside } from "usehooks-ts";
 import { cn } from "~/utils/cn";
@@ -15,6 +16,9 @@ import { TAGS } from "~/features/tags";
 import { useToggleFilters } from "~/hooks/useToggleFilters";
 
 function FilterButtons() {
+  const pathname = usePathname();
+  const isSote = pathname.includes("shadow-of-the-erdtree");
+
   return (
     <div>
       <div className="my-3 flex flex-wrap items-center gap-2 md:gap-1">
@@ -24,36 +28,56 @@ function FilterButtons() {
       </div>
       <Divider />
       <div className="my-3 flex flex-wrap items-center gap-2 md:gap-1">
-        <FilterButton filterTag={TAGS.RANNI_QUESTLINE} />
-        <FilterButton filterTag={TAGS.SELUVIS_QUESTLINE} />
-        <FilterButton filterTag={TAGS.VOLCANO_MANOR_ASSASSINATION} />
-        <FilterButton filterTag={TAGS.VARRE_QUESTLINE} />
-        <FilterButton filterTag={TAGS.NEPHELI_QUESTLINE} />
-        <FilterButton filterTag={TAGS.ALEXANDER_QUESTLINE} />
-        <FilterButton filterTag={TAGS.LATENNA_QUESTLINE} />
-        <FilterButton filterTag={TAGS.MILLICENT_QUESTLINE} />
-        <FilterButton filterTag={TAGS.HYETTA_QUESTLINE} />
-        <FilterButton filterTag={TAGS.SELLEN_QUESTLINE} />
-        <FilterButton filterTag={TAGS.PATCHES_QUESTLINE} />
-        <FilterButton filterTag={TAGS.YURA_QUESTLINE} />
-        <FilterButton filterTag={TAGS.CORHYN_QUESTLINE} />
-        <FilterButton filterTag={TAGS.DUNG_EATER_QUESTLINE} />
-        <FilterButton filterTag={TAGS.RYA_QUESTLINE} />
-        <FilterButton filterTag={TAGS.BOGGART_QUESTLINE} />
+        {isSote ? (
+          <>
+            <FilterButton filterTag={TAGS.LEDA} />
+            <FilterButton filterTag={TAGS.FREYJA} />
+            <FilterButton filterTag={TAGS.MOORE} />
+            <FilterButton filterTag={TAGS.THIOLLIER} />
+            <FilterButton filterTag={TAGS.HORNSENT} />
+            <FilterButton filterTag={TAGS.ANSBACH} />
+            <FilterButton filterTag={TAGS.QUEELIGN} />
+            <FilterButton filterTag={TAGS.IGON} />
+            <FilterButton filterTag={TAGS.DANE} />
+          </>
+        ) : (
+          <>
+            <FilterButton filterTag={TAGS.RANNI_QUESTLINE} />
+            <FilterButton filterTag={TAGS.SELUVIS_QUESTLINE} />
+            <FilterButton filterTag={TAGS.VOLCANO_MANOR_ASSASSINATION} />
+            <FilterButton filterTag={TAGS.VARRE_QUESTLINE} />
+            <FilterButton filterTag={TAGS.NEPHELI_QUESTLINE} />
+            <FilterButton filterTag={TAGS.ALEXANDER_QUESTLINE} />
+            <FilterButton filterTag={TAGS.LATENNA_QUESTLINE} />
+            <FilterButton filterTag={TAGS.MILLICENT_QUESTLINE} />
+            <FilterButton filterTag={TAGS.HYETTA_QUESTLINE} />
+            <FilterButton filterTag={TAGS.SELLEN_QUESTLINE} />
+            <FilterButton filterTag={TAGS.PATCHES_QUESTLINE} />
+            <FilterButton filterTag={TAGS.YURA_QUESTLINE} />
+            <FilterButton filterTag={TAGS.CORHYN_QUESTLINE} />
+            <FilterButton filterTag={TAGS.DUNG_EATER_QUESTLINE} />
+            <FilterButton filterTag={TAGS.RYA_QUESTLINE} />
+            <FilterButton filterTag={TAGS.BOGGART_QUESTLINE} />
+          </>
+        )}
       </div>
-      <Divider />
-      <div className="my-3 flex flex-wrap items-center gap-2 md:gap-1">
-        <FilterButton filterTag={TAGS.GOLDEN_SEED} />
-        <FilterButton filterTag={TAGS.SACRED_TEAR} />
-        <FilterButton filterTag={TAGS.SMITHING_STONE_BELL} />
-        <FilterButton filterTag={TAGS.SOMBER_STONE_BELL} />
-        <FilterButton filterTag={TAGS.GLOVEWORT_BELL} />
-        <FilterButton filterTag={TAGS.GHOST_GLOVEWORT_BELL} />
-        <FilterButton filterTag={TAGS.WHETBLADES} />
-        <FilterButton filterTag={TAGS.LARVAL_TEAR} />
-        <FilterButton filterTag={TAGS.RITUAL_POT} />
-        <FilterButton filterTag={TAGS.TUNNELS} />
-      </div>
+      {!isSote && (
+        <>
+          <Divider />
+          <div className="my-3 flex flex-wrap items-center gap-2 md:gap-1">
+            <FilterButton filterTag={TAGS.GOLDEN_SEED} />
+            <FilterButton filterTag={TAGS.SACRED_TEAR} />
+            <FilterButton filterTag={TAGS.SMITHING_STONE_BELL} />
+            <FilterButton filterTag={TAGS.SOMBER_STONE_BELL} />
+            <FilterButton filterTag={TAGS.GLOVEWORT_BELL} />
+            <FilterButton filterTag={TAGS.GHOST_GLOVEWORT_BELL} />
+            <FilterButton filterTag={TAGS.WHETBLADES} />
+            <FilterButton filterTag={TAGS.LARVAL_TEAR} />
+            <FilterButton filterTag={TAGS.RITUAL_POT} />
+            <FilterButton filterTag={TAGS.TUNNELS} />
+          </div>
+        </>
+      )}
     </div>
   );
 }
@@ -101,7 +125,7 @@ function Settings() {
             onClick={() => setItems([])}
             variant="outline"
             disabled={items.length === 0}
-            className="flex items-center gap-2 whitespace-nowrap mb-3"
+            className="mb-3 flex items-center gap-2 whitespace-nowrap"
           >
             <GoAlertFill size={18} />
             Uncheck everything

@@ -278,4 +278,77 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-black focus:ring-orange-600',
     tagClasses: 'bg-orange-600 text-black',
   },
+  // DLC
+  [TAGS.LEDA]: {
+    label: 'Leda',
+    key: TAGS.LEDA,
+    buttonClasses: 'border-yellow-100 text-yellow-100 hover:bg-yellow-100 hover:text-black focus:ring-yellow-100',
+    tagClasses: 'bg-yellow-100 text-yellow-900 -m-px',
+    questlineRewards: [
+    ]
+  },
+  [TAGS.FREYJA]: {
+    label: 'Freyja',
+    key: TAGS.FREYJA,
+    buttonClasses: 'border-amber-200 text-amber-200 hover:bg-amber-200 hover:text-black focus:ring-amber-200',
+    tagClasses: 'bg-amber-200 text-amber-900 -m-px',
+    questlineRewards: [
+    ]
+  },
+  [TAGS.DANE]: {
+    label: 'Dane',
+    key: TAGS.DANE,
+    buttonClasses: 'border-red-300 text-red-300 hover:bg-red-300 hover:text-black focus:ring-red-300',
+    tagClasses: 'border border-red-500 bg-red-900 text-red-100 -m-px',
+    questlineRewards: [
+    ]
+  },
+  [TAGS.MOORE]: {
+    label: 'Moore',
+    key: TAGS.MOORE,
+    buttonClasses: 'border-teal-300 text-teal-300 hover:bg-teal-300 hover:text-black focus:ring-teal-300',
+    tagClasses: 'border border-teal-500 bg-teal-900 text-teal-100 -m-px',
+    questlineRewards: [
+    ]
+  },
+  [TAGS.ANSBACH]: {
+    label: 'Ansbach',
+    key: TAGS.ANSBACH,
+    buttonClasses: 'border-orange-200 text-orange-200 hover:bg-orange-200 hover:text-black focus:ring-orange-200',
+    tagClasses: 'bg-orange-200 text-orange-900 -m-px',
+    questlineRewards: [
+    ]
+  },
+  [TAGS.THIOLLIER]: {
+    label: 'Thiollier',
+    key: TAGS.THIOLLIER,
+    buttonClasses: 'border-purple-300 text-purple-300 hover:bg-purple-300 hover:text-black focus:ring-purple-300',
+    tagClasses: 'border border-purple-500 bg-purple-900 text-purple-100 -m-px',
+    questlineRewards: [
+    ]
+  },
+  [TAGS.QUEELIGN]: {
+    label: 'Queelign',
+    key: TAGS.QUEELIGN,
+    buttonClasses: 'border-red-300 text-red-300 hover:bg-red-300 hover:text-black focus:ring-red-300',
+    tagClasses: 'bg-red-300 text-red-900 -m-px',
+    questlineRewards: [
+    ]
+  },
+  [TAGS.HORNSENT]: {
+    label: 'Hornsent',
+    key: TAGS.HORNSENT,
+    buttonClasses: 'border-cyan-300 text-cyan-300 hover:bg-cyan-300 hover:text-black focus:ring-cyan-300',
+    tagClasses: 'border border-cyan-500 bg-cyan-900 text-cyan-100 -m-px',
+    questlineRewards: [
+    ]
+  },
+  [TAGS.IGON]: {
+    label: 'Igon',
+    key: TAGS.IGON,
+    buttonClasses: 'border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-black focus:ring-orange-500',
+    tagClasses: 'border border-orange-500 bg-orange-900 text-orange-100 -m-px',
+    questlineRewards: [
+    ]
+  },
 }

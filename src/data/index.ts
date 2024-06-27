@@ -8,11 +8,13 @@ import beforeNgPlus from './before-ngplus'
 import { type TChecklist } from '~/features/checklist'
 import moonveilSamurai from './moonveil-samurai'
 import prepDlc from './prep-dlc'
+import sote from './sote-game-progress'
 
 
 const lists: TChecklist[] = [
   // NOTE not sure why but TS gets confused without this type assertion
   simpleGameProgress as TChecklist,
+  sote,
   prepDlc,
   newGamePlusProgress as TChecklist,
   beforeNgPlus,

@@ -1,6 +1,8 @@
 // src/constants/tags.ts
 export const TAGS = {
   OPTIONAL: 'OPTIONAL',
+  ALL_REMEMBERANCES: 'all-remembrances',
+  // BASE GAME
   VOLCANO_MANOR_ASSASSINATION: 'volcano-manor-assassination',
   RANNI_QUESTLINE: 'ranni-questline',
   VARRE_QUESTLINE: 'varre-questline',
@@ -14,7 +16,6 @@ export const TAGS = {
   LATENNA_QUESTLINE: 'latenna-questline',
   ALEXANDER_QUESTLINE: 'alexander-questline',
   MILLICENT_QUESTLINE: 'millicent-questline',
-  ALL_REMEMBERANCES: 'all-remembrances',
   HYETTA_QUESTLINE: 'hyetta-questline',
   DUNG_EATER_QUESTLINE: 'dung-eater-questline',
   SELLEN_QUESTLINE: 'sellen-questline',
@@ -28,6 +29,16 @@ export const TAGS = {
   SACRED_TEAR: 'sacred-tear',
   LARVAL_TEAR: 'larval-tear',
   RITUAL_POT: 'ritual-pot',
+  // SOTE
+  LEDA: 'leda-questline',
+  FREYJA: 'freyja-questline',
+  DANE: 'dane-questline',
+  MOORE: 'moore-questline',
+  ANSBACH: 'ansbach-questline',
+  THIOLLIER: 'thiollier-questline',
+  QUEELIGN: 'queelign-questline',
+  HORNSENT: 'hornsent-questline',
+  IGON: 'igon-questline',
 } as const;
 
 // these tags are "hidden" tags that are not displayed as filters

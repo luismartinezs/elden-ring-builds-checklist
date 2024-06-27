@@ -43,7 +43,6 @@ This is to make it easier to play the game without having to look up guides cons
 - Add key to `src/features/tags/constants.ts`
 - Add tag to `src/features/tags/tags.ts`
 - Add button to `src/components/SettingsMenu/SettingsMenu.tsx`
-- Extend `useShowChecklistItem` hook in `src/features/checklist/hooks/useShowChecklistItem.ts`
 
 ## Notes
 

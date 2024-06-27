@@ -6,7 +6,7 @@ const list = {
   id: "8ea63098-c6a4-4a7b-beb4-bbf639f1eefa",
   slug: "moonveil-samurai",
   title: "Moonveil Samurai 50",
-  tags: ['new', 'int', 'dex', 'mid'],
+  tags: ['int', 'dex', 'mid'],
   notes: [
     `Combination of the <a href="https://www.youtube.com/watch?v=ngnKoSkUuTY" target="_blank">Samurai beginner</a> and the <a href="https://www.youtube.com/watch?v=fi8PiBPfJ0w">Moonveil Samurai</a> Fextralife guides`,
   ],

@@ -39,6 +39,10 @@ export const TAGS = {
   QUEELIGN: 'queelign-questline',
   HORNSENT: 'hornsent-questline',
   IGON: 'igon-questline',
+  FORAGER: 'forager',
+  YMIR: 'ymir-questline',
+  JOLAN: 'jolan-questline',
+  DRAGON_PRIESTESS: 'dragon-priestess',
 } as const;
 
 // these tags are "hidden" tags that are not displayed as filters

@@ -283,7 +283,7 @@ export const tags: Record<TTagKeys, {
     label: 'Leda',
     key: TAGS.LEDA,
     buttonClasses: 'border-yellow-100 text-yellow-100 hover:bg-yellow-100 hover:text-black focus:ring-yellow-100',
-    tagClasses: 'bg-yellow-100 text-yellow-900 -m-px',
+    tagClasses: 'bg-yellow-100 text-yellow-900',
     questlineRewards: [
     ]
   },
@@ -291,15 +291,15 @@ export const tags: Record<TTagKeys, {
     label: 'Freyja',
     key: TAGS.FREYJA,
     buttonClasses: 'border-amber-200 text-amber-200 hover:bg-amber-200 hover:text-black focus:ring-amber-200',
-    tagClasses: 'bg-amber-200 text-amber-900 -m-px',
+    tagClasses: 'bg-amber-200 text-amber-900',
     questlineRewards: [
     ]
   },
   [TAGS.DANE]: {
     label: 'Dane',
     key: TAGS.DANE,
-    buttonClasses: 'border-red-300 text-red-300 hover:bg-red-300 hover:text-black focus:ring-red-300',
-    tagClasses: 'border border-red-500 bg-red-900 text-red-100 -m-px',
+    buttonClasses: 'border-orange-300 text-orange-300 hover:bg-orange-300 hover:text-black focus:ring-orange-300',
+    tagClasses: 'border border-orange-500 bg-orange-900 text-orange-100 -m-px',
     questlineRewards: [
     ]
   },
@@ -315,7 +315,7 @@ export const tags: Record<TTagKeys, {
     label: 'Ansbach',
     key: TAGS.ANSBACH,
     buttonClasses: 'border-orange-200 text-orange-200 hover:bg-orange-200 hover:text-black focus:ring-orange-200',
-    tagClasses: 'bg-orange-200 text-orange-900 -m-px',
+    tagClasses: 'bg-orange-200 text-orange-900',
     questlineRewards: [
     ]
   },
@@ -331,7 +331,7 @@ export const tags: Record<TTagKeys, {
     label: 'Queelign',
     key: TAGS.QUEELIGN,
     buttonClasses: 'border-red-300 text-red-300 hover:bg-red-300 hover:text-black focus:ring-red-300',
-    tagClasses: 'bg-red-300 text-red-900 -m-px',
+    tagClasses: 'bg-red-300 text-red-900',
     questlineRewards: [
     ]
   },
@@ -351,4 +351,37 @@ export const tags: Record<TTagKeys, {
     questlineRewards: [
     ]
   },
+  [TAGS.FORAGER]: {
+    label: 'Foragers',
+    key: TAGS.FORAGER,
+    buttonClasses: 'border-red-600 text-red-600 hover:bg-red-600 hover:text-black focus:ring-red-600',
+    tagClasses: 'border border-red-200 bg-red-600 text-white -m-px',
+    questlineRewards: [
+    ]
+  },
+  [TAGS.YMIR]: {
+    label: 'Ymir',
+    key: TAGS.YMIR,
+    buttonClasses: 'border-violet-500 text-violet-500 hover:bg-violet-500 hover:text-black focus:ring-violet-500',
+    tagClasses: 'border border-violet-500 bg-violet-900 text-violet-100 -m-px',
+    questlineRewards: [
+    ]
+  },
+  [TAGS.JOLAN]: {
+    label: 'Jolan',
+    key: TAGS.JOLAN,
+    buttonClasses: 'border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-black focus:ring-gray-400',
+    tagClasses: 'border border-gray-400 bg-gray-900 text-gray-100 -m-px',
+    questlineRewards: [
+    ]
+  },
+  [TAGS.DRAGON_PRIESTESS]: {
+    label: 'Dragon Priestess',
+    key: TAGS.DRAGON_PRIESTESS,
+    buttonClasses: 'border-rose-300 text-rose-300 hover:bg-rose-300 hover:text-black focus:ring-rose-300',
+    tagClasses: 'bg-rose-300 text-rose-900',
+    questlineRewards: [
+    ]
+  },
+
 }

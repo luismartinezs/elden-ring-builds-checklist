@@ -39,6 +39,10 @@ function FilterButtons() {
             <FilterButton filterTag={TAGS.QUEELIGN} />
             <FilterButton filterTag={TAGS.IGON} />
             <FilterButton filterTag={TAGS.DANE} />
+            <FilterButton filterTag={TAGS.YMIR} />
+            <FilterButton filterTag={TAGS.JOLAN} />
+            <FilterButton filterTag={TAGS.DRAGON_PRIESTESS} />
+            <FilterButton filterTag={TAGS.FORAGER} />
           </>
         ) : (
           <>

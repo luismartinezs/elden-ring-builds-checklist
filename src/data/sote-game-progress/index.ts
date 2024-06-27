@@ -333,6 +333,11 @@ const list = {
       id: 'a2dbac0f-ba00-4758-aac1-00f4cc3c4801',
       description: 'Summon Ansbach and Thiollier for the final boss (Need to verify if this is required for Anbach questline)',
       tags: [ANSBACH, THIOLLIER]
+    },
+    {
+      id: '3254032c-e71c-4750-b44c-36814d5ce133',
+      description: 'After defeating Radahn and Miquella, rest in a grace or reload the area to find the bodies of Ansbach and Thiollier in the area',
+      tags: [ANSBACH, THIOLLIER]
     }
   ]
 }

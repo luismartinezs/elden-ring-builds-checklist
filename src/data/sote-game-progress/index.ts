@@ -38,7 +38,7 @@ const list = {
     },
     {
       id: 'dcfdc773-d6a4-4b4c-8f95-8adbbf753b65',
-      description: "Head south to find a Forager Brood for an item, located SE of the Cliffside Terminus grace. These NPC's look like the Kindred of Rot enemy, but they are unaggressive, and killing them will result in Moore invading you and then permanently dying. If Moore dies for any reason, the forager brood will disappear. .",
+      description: "Head south to find a Forager Brood for an item, located SE of the Cliffside Terminus grace. These NPCs look like the Kindred of Rot enemy, but they are unaggressive, and killing them will result in Moore invading you and then permanently dying. If Moore dies for any reason, the forager brood will disappear",
       tags: [MOORE, FORAGER]
     },
     {
@@ -48,7 +48,7 @@ const list = {
     },
     {
       id: 'c70c3255-5bb4-4795-9346-8095e7e7e8f0',
-      description: 'After finding the cross in Belurat, speak to Ansbach at the Main Gate Cross. Location: starting at Small Private Altar, continue until you reach a path going left and right. Head left, then climb over the broken walls to the right of the path',
+      description: 'After finding the cross in Belurat, speak to Ansbach at the Main Gate Cross. Location: starting at Small Private Altar, continue until you reach a path going left and right. Head left, then climb over the broken walls to the right of the path.',
       tags: [ANSBACH]
     },
     {
@@ -78,7 +78,7 @@ const list = {
     },
     {
       id: 'e16f6de8-4ebc-4773-a37c-2973c270071c',
-      description: "Go through the Dragon Pit and head South to speak to the Dragon Communion Priestess at the Grand Altar of Dragon Communion. Choose whether to give her the potion from Thiolier (must be given at night). At the end of her questline, if you don't give her the potion, you receive a consumable and a weapon and if you do, you'll receive an incantation and spirit ashes",
+      description: "Go through the Dragon Pit and head south to speak to the Dragon Communion Priestess at the Grand Altar of Dragon Communion. Choose whether to give her the potion from Thiollier (must be given at night). At the end of her questline, if you don't give her the potion, you receive a consumable and a weapon; if you do, you'll receive an incantation and spirit ashes.",
       tags: [THIOLLIER]
     },
     {
@@ -227,7 +227,7 @@ const list = {
     },
     {
       id: '7a75af68-3002-4505-8af5-bc342b64e429',
-      description: "Past the Main Gate Plaza, you will reach an area with 6 burning boats and a ramp leading down. To the left of the ramp, there are a pair of summon signs for a fight between Leda and Hornsent. Choosing Leda will provide you with a unique talisman . Choosing Hornsent will provide you with a unique Ash of war. It will also lock you out of the Leda/Anbach storeroom fight below . If you do not choose either, the fight doesn't happen. See Enir Ilim section below for engame consequences.",
+      description: "Past the Main Gate Plaza, you will reach an area with 6 burning boats and a ramp leading down. To the left of the ramp, there are a pair of summon signs for a fight between Leda and Hornsent. Choosing Leda will provide you with a unique talisman . Choosing Hornsent will provide you with a unique Ash of war. It will also lock you out of the Leda/Anbach storeroom fight below . If you do not choose either, the fight doesn't happen. See Enir Ilim section below for endgame consequences.",
       tags: [LEDA, HORNSENT]
     },
     {
@@ -247,12 +247,12 @@ const list = {
     },
     {
       id: '32cca996-af5f-4178-9e20-e707f20db3b4',
-      description: 'Give Ansbach the Secret Rite Scroll, found just past the Fourth Floor Storeroom Grace. Continue forward until you find stairs leading down . Reload the area and speak to him again. Choose whether to give Freya his message (see Enir Ilim section for engame consequences). If you do, speak to Ansbach again.',
+      description: 'Give Ansbach the Secret Rite Scroll, found just past the Fourth Floor Storeroom Grace. Continue forward until you find stairs leading down . Reload the area and speak to him again. Choose whether to give Freya his message (see Enir Ilim section for end game consequences). If you do, speak to Ansbach again.',
       tags: [ANSBACH, FREYJA]
     },
     {
       id: '0204ad74-2403-4862-873e-fb7245652f3d',
-      description: 'Summon Hornsent to fight Mesmer and speak to him after the fight (Required for quest - See Enir Ilim for more engame consequences)',
+      description: 'Summon Hornsent to fight Messmer and speak to him after the fight (Required for quest - See Enir Ilim for more end game consequences)',
       tags: [HORNSENT]
     },
     {
@@ -267,7 +267,7 @@ const list = {
     },
     {
       id: '299a2945-0e91-4504-b2d5-665c2be48da4',
-      description: 'If you did not help Hornsent in the fight against Leda, return to the First Floor Storeroom where Ansbach was to find a pair of summon signs for a fight between Leda and Ansbach. Choosing Ansbach will give you a unique weapon . Choosing Leda gives you a unique talisman . You can also skip this fight. See Enir Ilim section for engame consequences.',
+      description: 'If you did not help Hornsent in the fight against Leda, return to the First Floor Storeroom where Ansbach was to find a pair of summon signs for a fight between Leda and Ansbach. Choosing Ansbach will give you a unique weapon . Choosing Leda gives you a unique talisman . You can also skip this fight. See Enir Ilim section for end game consequences.',
       tags: [ANSBACH, LEDA]
     },
     {
@@ -301,7 +301,7 @@ const list = {
     },
     {
       id: '1b2cf3f6-689d-4757-900b-45428ea34720',
-      description: "Hornsent will attack you if he is alive and you don't summon him for the Mesmer fight",
+      description: "Hornsent will attack you if he is alive and you don't summon him for the Messmer fight",
       tags: [HORNSENT]
     },
     {

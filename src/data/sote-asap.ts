@@ -113,7 +113,7 @@ const list = {
     },
     {
       id: 'f0246825-123f-4d53-a59a-03306c5285b4',
-      description: "Defeat Mohg, Lord of Blood, in Mohgwyn Dynasty Mausoleum. You can make the fight easier by using Purifying Crystal Tear, Mohg's Shackle and weapons or effects that inflict bleed, for example Rivers of Blood, Swarm of Flies, Reduvia, Cross Naginata, Eleonora's Poleblade, Gargoyle's Twinblade, etc, depending on your build",
+      description: "Defeat Mohg, Lord of Blood, in Mohgwyn Dynasty Mausoleum. You can summon to get help to defeat him. You can also make the fight easier by using Purifying Crystal Tear, Mohg's Shackle and weapons or effects that inflict bleed, for example Rivers of Blood, Swarm of Flies, Reduvia, Cross Naginata, Eleonora's Poleblade, Gargoyle's Twinblade, etc, depending on your build",
       tags: []
     },
   ]

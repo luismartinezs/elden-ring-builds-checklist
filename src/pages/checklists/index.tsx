@@ -1,13 +1,8 @@
 import { type GetStaticProps } from "next";
 import { lists } from "~/data";
 import Head from "next/head";
-import FeatureSection from "~/components/FeatureSection";
-import Hero from "~/components/Hero";
-import { HeroSection } from "~/components/HeroSection";
 import { PageLayout } from "~/layouts/PageLayout";
 import { Checklists } from "~/components/Checklists";
-import Image from "next/image";
-import Link from "next/link";
 
 export const getStaticProps: GetStaticProps = () => {
   return {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { cn } from "~/utils/cn";
 
@@ -30,7 +30,7 @@ const Separator = ({ thickness = 1 }) => {
 const CookieModal = ({
   message = defaultMessage,
   acceptLabel = "Accept",
-  denyLabel = "Deny",
+  // denyLabel = "Deny",
 }) => {
   const [open, setOpen] = useState(true);
 
@@ -49,12 +49,12 @@ const CookieModal = ({
     }
   }, []);
 
-  const accept = () => {
+  const accept = useCallback(() => {
     if (typeof window !== "undefined") {
       setOpen(false);
       localStorage.setItem("GDPR:accepted", "true");
     }
-  };
+  }, [setOpen]);
 
   // const deny = () => {
   //   if (typeof window !== "undefined") {
@@ -81,9 +81,7 @@ const CookieModal = ({
   }
 
   return (
-    <div
-      className="fixed bottom-10 z-50 w-full elden-ring-background text-white"
-    >
+    <div className="elden-ring-background fixed bottom-10 z-50 w-full text-white">
       <Separator thickness={2} />
       <div className="relative py-2">
         <div className="mx-auto mb-4 flex max-w-xl flex-col items-center justify-center space-y-2 px-4 md:px-0 lg:flex-row lg:space-x-2 lg:space-y-0">
@@ -95,7 +93,7 @@ const CookieModal = ({
         </div>
         <Separator />
         <button
-          className="group flex flex-shrink items-baseline justify-center pt-1 w-full"
+          className="group flex w-full flex-shrink items-baseline justify-center pt-1"
           onClick={accept}
         >
           <div

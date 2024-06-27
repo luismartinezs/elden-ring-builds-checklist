@@ -5,7 +5,7 @@ const { LEDA, FREYJA, MOORE, THIOLLIER, HORNSENT, ANSBACH, QUEELIGN, IGON, DANE,
 const list = {
   id: "f45240fe-9d8c-4200-8e56-3861ebf0b9ab",
   slug: "shadow-of-the-erdtree",
-  title: "Shadow of the Erdtree",
+  title: "Shadow of the Erdtree (WIP)",
   tags: ['new'],
   notes: [
     `THIS IS WORK IN PROGRESS`,

@@ -9,6 +9,7 @@ import { type TChecklist } from '~/features/checklist'
 import moonveilSamurai from './moonveil-samurai'
 import prepDlc from './prep-dlc'
 import sote from './sote-game-progress'
+import soteAsap from './sote-asap'
 
 
 const lists: TChecklist[] = [
@@ -16,6 +17,7 @@ const lists: TChecklist[] = [
   simpleGameProgress as TChecklist,
   sote,
   prepDlc,
+  soteAsap,
   newGamePlusProgress as TChecklist,
   beforeNgPlus,
   moonveilSamurai,

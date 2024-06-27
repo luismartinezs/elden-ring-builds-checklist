@@ -18,7 +18,7 @@ export function Footer() {
   return (
     <footer className="container mx-auto max-w-7xl px-2 py-2 font-medium xl:px-0">
       <div className="flex justify-between">
-        <div className="text-sm text-stone-400"><a href="https://www.webdevluis.com/" target="_blank">Luis Martinez</a> @2023</div>
+        <div className="text-sm text-stone-400"><a href="https://www.webdevluis.com/" target="_blank">Luis Martinez</a> @2024</div>
         <div className="flex justify-center space-x-6">
           {links.map(({ label, icon: Icon, href }) => (
             <a

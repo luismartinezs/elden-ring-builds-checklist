@@ -36,13 +36,13 @@ const list = {
       tags: []
     },
     {
-      id: '57d6459a-e986-4f97-b651-92af4c20c3fc',
-      description: 'Pick Whetstone Knife from Gatefront Ruins',
+      id: 'd8487a9c-3444-4ead-b11e-fb4decfb5518',
+      description: 'Rest in Gatefront Site of Grace to get Torrent',
       tags: []
     },
     {
-      id: 'd8487a9c-3444-4ead-b11e-fb4decfb5518',
-      description: 'Rest in Gatefront Site of Grace to get Torrent',
+      id: '57d6459a-e986-4f97-b651-92af4c20c3fc',
+      description: 'Pick Whetstone Knife from Gatefront Ruins',
       tags: []
     },
     {
@@ -478,7 +478,7 @@ const list = {
     },
     {
       id: '054a08f7-70ba-4ede-a188-b3a286808cb5',
-      description: 'Beat Ref Wolf of Radagon in Raya Lucaria',
+      description: 'Beat Red Wolf of Radagon in Raya Lucaria',
       tags: []
     },
     {

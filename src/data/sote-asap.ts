@@ -4,7 +4,7 @@ const list = {
   title: "Reach SotE ASAP",
   notes: [
     'This list is aimed to provide a minimal list of steps to reach SotE, skipping everything else. I included some obvious steps that while not strictly necessary are just convenient, such as getting Torrent.',
-    "If you need a more beginner friendly path, check <a href=\"checklists/prep-dlc\">Prepare for DLC</a>"
+    "If you need a more beginner friendly path, check <a href=\"prep-dlc\">Prepare for DLC</a>"
   ],
   tags: ['new'],
   items: [

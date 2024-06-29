@@ -1883,7 +1883,7 @@ export const items = [
   },
   {
     id: '81fc1668-21af-4a10-acfb-34ed93c8a115',
-    description: 'Beat Malenia',
+    description: 'Defeat Malenia, Blade of Miquella',
     tags: [OPTIONAL, MILLICENT_QUESTLINE, NGPLUS, ALL_REMEMBERANCES]
   },
   {

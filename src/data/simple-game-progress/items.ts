@@ -416,7 +416,7 @@ export const items = [
   },
   {
     id: '20c9774e-370d-4629-8d21-28c36d60deb2',
-    description: 'Find Hyetta north of the Gate Town Bridge, easter Liurnia of the Lakes (in front of the southern broken bridge in the east side of the lake, above the cliffs) and give her a Shabriri Grape. Exhaust her dialogue. Reload the area, and exhaust her dialogue again',
+    description: 'Find Hyetta north of the Gate Town Bridge, easter Liurnia of the Lakes (in front of the southern broken bridge in the east side of the lake, above the cliffs) and give her a Shabriri Grape. Exhaust her dialogue. Reload the area, and exhaust her dialogue again. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166642" target="_blank">Location</a>',
     tags: [HYETTA_QUESTLINE]
   },
   {
@@ -630,7 +630,7 @@ export const items = [
   },
   {
     id: '143197cd-8e4b-4934-ba17-4e35eb28214d',
-    description: 'Find Hyetta in Bellum Church in Liurnia of the Lakes (the path toward the Dectus Lift from the East Raya Lucaria Gate grace, hugging the left side) and give her the Fingerprint Grape',
+    description: 'Find Hyetta in Bellum Church in Liurnia of the Lakes (the path toward the Dectus Lift from the East Raya Lucaria Gate grace, hugging the left side) and give her the Fingerprint Grape. If Hyetta is not there, make sure you have exhauster her dialog in her previous location.',
     tags: [HYETTA_QUESTLINE]
   },
   {

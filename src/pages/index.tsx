@@ -35,6 +35,11 @@ export default function Landing({
       <Head>
         <title>Elden Ring Checklists - Elden Hub</title>
         <meta name="description" content="Checklists for the video game Elden Ring" />
+        <link
+          rel="canonical"
+          href="https://eldenringbuilds.vercel.app/"
+          key="canonical"
+        />
       </Head>
       <PageLayout>
         <div className="flex flex-col mb-16">

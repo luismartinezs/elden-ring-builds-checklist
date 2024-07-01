@@ -108,8 +108,13 @@ export default function ChecklistPage({
       <Head>
         <title>{checklist.title} | Elden Ring Checklists - Elden Hub</title>
         <meta name="description" content={checklist.title} />
+        <link
+          rel="canonical"
+          href={`https://eldenringbuilds.vercel.app/checklists/${checklist.slug}`}
+          key="canonical"
+        />
       </Head>
-      <SectionWrapper className="py-0 relative isolate !my-0">
+      <SectionWrapper className="relative isolate !my-0 py-0">
         <div className="sticky top-[66px] z-10 -mx-4 mb-4 flex justify-between bg-stone-900 px-4 py-4">
           <h1 className="text-2xl">{checklist.title}</h1>
           <SettingsMenu />

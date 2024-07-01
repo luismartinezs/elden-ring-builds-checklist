@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { Accordion } from "~/components/Accordion";
 import { Heading } from "~/components/Heading";
@@ -133,6 +134,18 @@ const faq = [
 function FaqPage() {
   return (
     <PageLayout>
+      <Head>
+        <title>Frequently Asked Questions | Elden Ring Checklists - Elden Hub</title>
+        <meta
+          name="description"
+          content="Frequently asked questions about Elden Ring Checklists - Elden Hub"
+        />
+        <link
+          rel="canonical"
+          href="https://eldenringbuilds.vercel.app/faq"
+          key="canonical"
+        />
+      </Head>
       <SectionWrapper>
         <Heading.H1 className="mb-3">Frequently Asked Questions</Heading.H1>
         <div>

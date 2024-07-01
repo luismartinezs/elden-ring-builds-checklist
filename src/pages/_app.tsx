@@ -105,8 +105,6 @@ const App: AppType<{ session: Session | null }> = ({
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
           />
-          {/* Google Site Verification */}
-          <meta name="google-site-verification" content="w-pLQz21PWiQX668ORYlEZfbAhUWK118uvyMA_9H5pI" />
         </Head>
         <Component {...pageProps} />
       </SessionProvider>

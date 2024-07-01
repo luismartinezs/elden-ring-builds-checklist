@@ -40,6 +40,8 @@ export default function Landing({
           href="https://eldenringbuilds.vercel.app/"
           key="canonical"
         />
+        {/* Google Site Verification */}
+        <meta name="google-site-verification" content="w-pLQz21PWiQX668ORYlEZfbAhUWK118uvyMA_9H5pI" />
       </Head>
       <PageLayout>
         <div className="flex flex-col mb-16">

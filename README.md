@@ -44,6 +44,12 @@ This is to make it easier to play the game without having to look up guides cons
 - Add tag to `src/features/tags/tags.ts`
 - Add button to `src/components/SettingsMenu/SettingsMenu.tsx`
 
+## Generate sitemap
+
+- Run `pnpm build` locally
+- Run `pnpm sitemap` (there was a script `postbuild`, I replaced it)
+- Paste the content of `sitemap-0.xml` to `sitemap.xml` (google has problems to read `sitemap-0.xml`)
+
 ## Notes
 
 - When to add the `OPTIONAL` tag to a step?

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "postbuild": "next-sitemap",
+    "sitemap": "next-sitemap",
     "dev": "next dev",
     "postinstall": "prisma generate",
     "lint": "next lint",

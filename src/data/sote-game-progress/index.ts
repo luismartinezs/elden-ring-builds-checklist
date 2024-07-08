@@ -15,7 +15,6 @@ const list = {
     'You might need to toggle on/off new filters for them to work'
   ],
   items: [
-    // GRAVESIDE PLAIN
     {
       id: '160aace3-77ee-486c-b9dc-22560b2b5527',
       description: 'Speak to Leda at the Cocoon of the Empyrean Grace where you defeated Mohg',
@@ -26,6 +25,7 @@ const list = {
       description: 'Interact with the cocoon in the Empyrean Grace to enter the Realm of Shadow',
       tags: []
     },
+    // GRAVESITE PLAIN (CENTRAL)
     {
       id: 'cba6b945-f280-48bb-be9d-cd4f79384947',
       description: 'Speak to Freyja and Hornsent at the Three-Path Cross Grace',
@@ -41,6 +41,8 @@ const list = {
       description: "Head south to find a Forager Brood for an item, located SE of the Cliffside Terminus grace. These NPCs look like the Kindred of Rot enemy, but they are unaggressive, and killing them will result in Moore invading you and then permanently dying. If Moore dies for any reason, the forager brood will disappear",
       tags: [MOORE, FORAGER]
     },
+    // GRAVESITE PLAIN (WESTERN)
+    // BELURAT
     {
       id: '59b21622-00aa-4f5f-8b10-e882be11006e',
       description: 'Defeat the invading Fire Knight Queelign, just past the Small Private Altar Grace in Belurat',
@@ -165,7 +167,7 @@ const list = {
     },
     {
       id: '32f7f51b-5a51-4fe3-8859-77b43740730d',
-      description: 'Speak to Thiollier after defeating the Putrescent Knight. Imbibe the nectar from St. Trina four times. Then speak to Thiollier and exhaust her dialogue. Imbibe the nectar again. This time Thiollier will invade. Defeat her. Then imbibe the nectar again and speak to Thiollier again. St. Trina should repeat herself if you continue imbibing.',
+      description: 'Speak to Thiollier after defeating the Putrescent Knight. Imbibe the nectar from St. Trina four times. Then speak to Thiollier and exhaust his dialogue. Imbibe the nectar again. This time Thiollier will invade. Defeat him. Then imbibe the nectar again and speak to Thiollier again. St. Trina should repeat herself if you continue imbibing.',
       tags: [THIOLLIER]
     },
     {
@@ -316,7 +318,7 @@ const list = {
     },
     {
       id: '30773b77-d479-4384-b447-a75d4bfabc0f',
-      description: 'Thiollier can be summoned to help you if you told her all that St. Trina said',
+      description: 'Thiollier can be summoned to help you if you told him all that St. Trina said',
       tags: [THIOLLIER]
     },
     {

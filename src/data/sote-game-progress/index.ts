@@ -1,6 +1,6 @@
 import { TAGS } from '~/features/tags'
 
-const { LEDA, FREYJA, MOORE, THIOLLIER, HORNSENT, ANSBACH, QUEELIGN, IGON, DANE, FORAGER, YMIR, JOLAN, DRAGON_PRIESTESS, OPTIONAL } = TAGS
+const { LEDA, FREYJA, MOORE, THIOLLIER, HORNSENT, ANSBACH, QUEELIGN, IGON, DANE, FORAGER, YMIR, JOLAN, DRAGON_PRIESTESS, OPTIONAL, MAP_FRAGMENT, ALL_REMEMBERANCES } = TAGS
 
 const list = {
   id: "f45240fe-9d8c-4200-8e56-3861ebf0b9ab",
@@ -9,6 +9,7 @@ const list = {
   tags: ['new'],
   notes: [
     `THIS IS WORK IN PROGRESS`,
+    `Update: Added main steps up to shadow keep chuch district`,
     `Recommended for second playthroughs.`,
     `This list will be progressively updated and improved, I just wanted to release something quickly. Expect small daily updates. Please report mistakes using the feedback button.`,
     `Thanks to this reddit post: <a href="https://www.reddit.com/r/Eldenring/comments/1dnw7dr/all_npc_interactions_in_shadow_of_the_erdtree/" target="_blank">All NPC Interactions in Shadow of the Erdtree</a>`,
@@ -25,11 +26,27 @@ const list = {
       description: 'Interact with the cocoon in the Empyrean Grace to enter the Realm of Shadow',
       tags: []
     },
-    // GRAVESITE PLAIN (CENTRAL)
+    // GRAVESITE PLAIN (CENTRAL) Recommended Scadutree Blessing Rank: 1-3~ Revered Spirit Ash Blessing: 1-3~
+    {
+      id: 'b14fe46a-2b0a-48aa-9f38-11ddaf1f8d94',
+      description: 'Pick up Map Gravesite Plain nearby starting point',
+      tags: [MAP_FRAGMENT]
+    },
+    {
+      id: '4fbcb6a4-2af2-4a49-a1f7-4e3bfe209610',
+      description: 'Reach the Three-Path Cross Site of Grace, straight north from the starting point',
+      tags: []
+    },
     {
       id: 'cba6b945-f280-48bb-be9d-cd4f79384947',
       description: 'Speak to Freyja and Hornsent at the Three-Path Cross Grace',
       tags: [FREYJA, HORNSENT]
+    },
+    // GRAVESITE PLAIN (WESTERN) Recommended Scadutree Blessing Rank: 1-3~ Revered Spirit Ash Blessing: 1-3~
+    {
+      id: 'f0b69cad-65fa-4aa4-8826-cf65f1d7731d',
+      description: 'From the Three-Path Cross grace head west and activate the Main Gate Cross grace',
+      tags: []
     },
     {
       id: '7fa1ea8c-3218-4e56-8472-c64070e97691',
@@ -37,12 +54,17 @@ const list = {
       tags: [MOORE, ANSBACH]
     },
     {
+      id: '339f2473-288d-4071-820d-6e883f6f275b',
+      description: 'From the Main Gate Cross grace go south aroind the cliffs and activate the Cliffroad Terminus grace',
+      tags: [OPTIONAL]
+    },
+    {
       id: 'dcfdc773-d6a4-4b4c-8f95-8adbbf753b65',
       description: "Head south to find a Forager Brood for an item, located SE of the Cliffside Terminus grace. These NPCs look like the Kindred of Rot enemy, but they are unaggressive, and killing them will result in Moore invading you and then permanently dying. If Moore dies for any reason, the forager brood will disappear",
       tags: [MOORE, FORAGER]
     },
-    // GRAVESITE PLAIN (WESTERN)
-    // BELURAT
+    // BELURAT TOWER SETTLEMENT
+    // Recommended Scadutree Blessing Rank: 4~ Revered Spirit Ash Blessing: 4~
     {
       id: '59b21622-00aa-4f5f-8b10-e882be11006e',
       description: 'Defeat the invading Fire Knight Queelign, just past the Small Private Altar Grace in Belurat',
@@ -60,13 +82,30 @@ const list = {
     },
     {
       id: 'a325b983-a545-430d-8897-222bc6cb0b6f',
-      description: '(Optional) Summon Freyja to fight the Dancing Lion. Then, speak to her at the Three-Path Cross Grace',
+      description: '(Optional) Summon Freyja to fight the Divine Beast Dancing Lion. Then, speak to her at the Three-Path Cross Grace',
       tags: [FREYJA]
+    },
+    {
+      id: '71b352b1-8a47-4a46-8259-aa7d7e8b70a9',
+      description: 'Defeat the Divine Beast Dancing Lion in Belurat',
+      tags: []
     },
     {
       id: '46db7e3d-9e04-4e4f-9f9b-7b420b0a9ede',
       description: 'Return to speak to Hornsent Grandam wearing the Divine Beast Head. Then speak to Hornsent and give him the soup.',
       tags: [HORNSENT]
+    },
+    // "GRAVESITE PLAIN (EASTERN)
+    // Recommended Scadutree Blessing Rank: 4~ Revered Spirit Ash Blessing: 4~"
+    {
+      id: '441c3860-dcb0-42f7-87e8-adf49680dc2c',
+      description: 'From the Three-Path Cross grace, head north east across the Ellac Greatbridge and activate the Castle Front grace',
+      tags: []
+    },
+    {
+      id: '16d7fc13-f609-420d-8efe-e0049fa51f0d',
+      description: 'From the Castle Front grace head south and take the easter-most path to reach the Pillar Path Cross grace',
+      tags: [OPTIONAL]
     },
     {
       id: '6fff135f-b11f-40cb-a58d-02d002d9a2e6',
@@ -74,10 +113,23 @@ const list = {
       tags: [THIOLLIER, MOORE]
     },
     {
+      id: '75780527-172a-49be-b870-08e094f53d03',
+      description: 'From the Pillar Path Cross grace head north west and then immediately south to reach the Pillar Path Waypoint grace',
+      tags: [OPTIONAL]
+    },
+    {
       id: '64674ade-ccd9-4ed0-b3e4-0a3a43beb752',
       description: 'Speak to Igon near the Pillar Path Waypoint Grace. Leave and come back to speak to him again.',
       tags: [IGON]
     },
+    {
+      id: '27efa65e-87b2-4724-8ce3-702b7d07d540',
+      description: "Head south an down from the Pillar Path Waypoint grace to reach the Dragon's Pit grace",
+      tags: [OPTIONAL]
+    },
+    // "CASTLE ENSIS
+    // Recommended Scadutree Blessing Rank: 6~ Revered Spirit Ash Blessing: 6~"
+
     {
       id: 'e16f6de8-4ebc-4773-a37c-2973c270071c',
       description: "Go through the Dragon Pit and head south to speak to the Dragon Communion Priestess at the Grand Altar of Dragon Communion. Choose whether to give her the potion from Thiollier (must be given at night). At the end of her questline, if you don't give her the potion, you receive a consumable and a weapon; if you do, you'll receive an incantation and spirit ashes.",
@@ -85,7 +137,7 @@ const list = {
     },
     {
       id: '0a683160-a101-4810-b197-ec074f2b29d1',
-      description: 'After finding the Cerulean Coast Cross, speak to Ansbach at the Main Gate Cross. Location: To get to the Cerulean Coast, you can either jump down some Ruins from the Dragon Altar or you can head South West from the Castle Front and follow the Elac river. The cross is on a hill to the South West )',
+      description: 'After finding the Cerulean Coast Cross, speak to Ansbach at the Main Gate Cross. Location: To get to the Cerulean Coast, you can either jump down some Ruins from the Dragon Altar or you can head South West from the Castle Front and follow the Elac river. The cross is on a hill to the South West)',
       tags: [ANSBACH]
     },
     {
@@ -93,11 +145,27 @@ const list = {
       description: '(Optional) Summon Leda and Dryleaf Dane to fight Rellana',
       tags: [LEDA, DANE]
     },
-    // SCADU ALTUS / CHURCH DISTRICT
+    {
+      id: 'b92aa5aa-ea41-4f69-a65e-f27936c95129',
+      description: 'Defeat Rellana, Twin Moon Knight in Castle Ensis',
+      tags: []
+    },
+    // "SCADU ALTUS
+    // Recommended Scadutree Blessing Rank: 8~ Revered Spirit Ash Blessing: 5~"
+    {
+      id: '72c208ba-f543-427c-a79d-e07af119d7bc',
+      description: "Reach Highroad Cross grace right after Rellana's boss room",
+      tags: []
+    },
     {
       id: '52a13da4-4a43-42d0-9a4d-93fea13a8484',
       description: 'Talk to Leda and Hornsent at the Highcross Road Grace. Then speak to Freyja at Three-Path Cross Grace',
       tags: [LEDA, HORNSENT, FREYJA]
+    },
+    {
+      id: '9cb43083-9000-4217-a6b1-982aeb4285b5',
+      description: 'Pick up Map: Scadu Altus north from Highroad Cross grace',
+      tags: [MAP_FRAGMENT]
     },
     {
       id: 'a2700708-5631-4eec-bf4e-b81ce5d5d6a4',
@@ -106,8 +174,13 @@ const list = {
     },
     {
       id: 'ef7f61c1-0c0b-43c2-98c9-77cff1f0f053',
-      description: 'Find an injured Forager Brood, located North of the Church of the Crusade . Heal it. Then, reload the area and return to that location.',
+      description: 'Find an injured Forager Brood, located North of the Church of the Crusade. Heal it. Then, reload the area and return to that location.',
       tags: [DANE, LEDA, FORAGER]
+    },
+    {
+      id: 'aad4807d-9bb7-4ccf-90f9-f9e07e0c2c81',
+      description: 'From where you picked the Scadu Altus map, head south east to reach Moorth Ruins',
+      tags: [OPTIONAL]
     },
     {
       id: '1f6548bf-abf0-404d-abba-bd9b5fad6b1b',
@@ -130,16 +203,92 @@ const list = {
       tags: [ANSBACH]
     },
     {
+      id: '7268f0a1-4ed6-4be5-a072-c4e95a60ad27',
+      description: 'Head down the hole in Moorth Ruins and reach Bonny Village. Head through Bonny Gaol in the South East to get to Bonny Village',
+      tags: [OPTIONAL, YMIR]
+    },
+    {
       id: 'db106066-8077-4543-adc9-57446b16e59a',
-      description: 'Head through Bonny Gaol in the South East to get to Bonny Village. Pick up the “O Mother” gesture from a body North East of Bonny Village (needed for Ymir’s questline)',
-      tags: [YMIR]
+      description: 'Get O, Mother gesture north of Bonny Village, in front of a headless statue',
+      tags: [OPTIONAL, YMIR]
+    },
+    {
+      id: 'd5e78d2d-f56a-4f40-b499-e22d8dabc87a',
+      description: 'Going south from Moorth ruins to reach Moorth Highway grace and Fort Reprimand',
+      tags: [OPTIONAL]
+    },
+    {
+      id: '680b0170-fb0d-4af2-98f6-8ed7c3898545',
+      description: 'From Bonny Village grace, head east across the bridges to reach Bridge Leading to Village grace',
+      tags: [OPTIONAL]
     },
     {
       id: '1c99dfec-159e-43af-84ae-0e866b459b3d',
       description: "Once you receive the “Somewhere a Great Rune Has Broken” message, return and exhaust the dialogue with all NPC's (Leda, Hornsent, Thiollier, Freyja, Ansbach, and Moore). Make any choice with Leda - it does not change the outcome. For the consequences of Moore’s choice, see the Enir Ilim section at the bottom.",
       tags: [LEDA, MOORE, HORNSENT, THIOLLIER, FREYJA, ANSBACH]
     },
-    // CERULEAN COAST / FINGER RUINS
+    {
+      id: '9fd2dd74-51a0-4705-9f35-253079e99cee',
+      description: 'From Bridge Leading to Village grace, go north, then west, then south, to reach the Cathedral of Manus Metyr grace',
+      tags: [OPTIONAL]
+    },
+    // "RAUH BASE
+    // Recommended Scadutree Blessing Rank: 9~ Revered Spirit Ash Blessing: 6~"
+    {
+      id: '4f573a65-9b2f-4f8b-8a8c-f2d8439cd91e',
+      description: 'Travel north from Moorth Ruins until reaching a poison swamp, then go across a cave west of the swamp to reach Ancient Ruins Base grace',
+      tags: [OPTIONAL]
+    },
+    {
+      id: '0c01e0e0-687f-4110-b858-64ac95af81fe',
+      description: 'Obtain the Map: Rauh Ruins located south west from the Ancient Ruins Base grace',
+      tags: [MAP_FRAGMENT, OPTIONAL]
+    },
+    // "SHADOW KEEP
+    //  (CHURCH DISTRICT AND SCADUTREE BASE)
+    // Recommended Scadutree Blessing Rank: 9+ Revered Spirit Ash Blessing: 6+"
+    {
+      id: '130cdf49-2e71-44d1-a414-57afc58d6bd0',
+      description: 'From Church District Highroad grace head west and enter Shadow Keep through the Church District Entrance',
+      tags: [OPTIONAL]
+    },
+    {
+      id: '2e5f319e-2f05-4f16-b90c-084dfc1b2861',
+      description: 'Drain the water from the Church District using the lever',
+      tags: [OPTIONAL]
+    },
+    {
+      id: 'e6f3c2f6-aac0-448b-baf8-8214aaae162f',
+      description: 'Reach Tree Worship Passage grace',
+      tags: [OPTIONAL]
+    },
+    {
+      id: '6d299771-9e9e-438b-bd33-198dbc34b6a4',
+      description: 'Defeat Scadutree Avatar',
+      tags: [OPTIONAL, ALL_REMEMBERANCES]
+    },
+    {
+      id: '1718d53e-c09d-4946-af23-962af45d318d',
+      description: "After defeating Scadutree Avatar obtain Miquella's Great Rune",
+      tags: [OPTIONAL]
+    },
+    {
+      id: '1c79db1e-8c01-4fae-b136-93dd0323e432',
+      description: 'From the Church District, reach the Specimen Storehouse and activate the Storehouse, Back Section grace',
+      tags: [OPTIONAL]
+    },
+    {
+      id: 'd3d06756-f54a-49e3-a129-49a7d1e8d20a',
+      description: 'From the Storehouse, Back Section grace, explore the storehouse to reach the Storehouse, Loft Site of Grace',
+      tags: [OPTIONAL]
+    },
+    {
+      id: 'dfc583ff-b709-4c5c-9e65-14ef53ae4962',
+      description: 'From the Storehouse, Loft Site of Grace reach the Shadow Keep, Back Gate Site of Grace ',
+      tags: [OPTIONAL]
+    },
+    // "CERULEAN COAST (SOUTHERN SHORE)
+    // Recommended Scadutree Blessing Rank: 10~ Revered Spirit Ash Blessing: 7~"
     {
       id: '2da2234e-1d10-4e71-8a71-2df90e5de41c',
       description: 'Find a Forager Brood for an item, located just outside the Church District Entrance.',

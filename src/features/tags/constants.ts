@@ -43,6 +43,7 @@ export const TAGS = {
   YMIR: 'ymir-questline',
   JOLAN: 'jolan-questline',
   DRAGON_PRIESTESS: 'dragon-priestess',
+  MAP_FRAGMENT: 'map-fragment',
 } as const;
 
 // these tags are "hidden" tags that are not displayed as filters

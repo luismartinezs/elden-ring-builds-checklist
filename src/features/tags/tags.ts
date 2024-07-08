@@ -383,5 +383,11 @@ export const tags: Record<TTagKeys, {
     questlineRewards: [
     ]
   },
+  [TAGS.MAP_FRAGMENT]: {
+    label: 'Map Fragments',
+    key: TAGS.MAP_FRAGMENT,
+    buttonClasses: 'border-amber-300 text-amber-300 hover:bg-amber-300 hover:text-black focus:ring-amber-300',
+    tagClasses: 'bg-amber-300 text-amber-900',
+  }
 
 }

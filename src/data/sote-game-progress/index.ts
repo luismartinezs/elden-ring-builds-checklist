@@ -54,7 +54,7 @@ const list = {
     },
     {
       id: "335fffcf-0cf4-454f-ac29-8d3637ebcffa",
-      description: 'If you kill any two Forager Broods, you will be invaded by Moore, and defeating him will kill him (locking you out of his questline, and potentially out of Thiollier\'s if you did not progress it) and reward you with his shield, his armor and his bell bearing (in his previous location)',
+      description: 'Forager Broods look like the Kindred of Rot enemy, but they are friendly, and killing them will result in Moore invading you and then permanently dying. If you kill any two Forager Broods, you will be invaded by Moore, and defeating him will kill him (locking you out of his questline, and potentially out of Thiollier\'s if you did not progress it) and reward you with his shield, his armor and his bell bearing (in his previous location). If Moore dies for any reason, all the Forager Brood will disappear',
       tags: [MOORE, FORAGER]
     },
     {
@@ -64,7 +64,7 @@ const list = {
     },
     {
       id: 'dcfdc773-d6a4-4b4c-8f95-8adbbf753b65',
-      description: 'Head south to find a Forager Brood for Forager Brood Cookbook [2], located south east of the Cliffside Terminus grace. These NPCs look like the Kindred of Rot enemy, but they are unaggressive, and killing them will result in Moore invading you and then permanently dying. If Moore dies for any reason, the forager brood will disappear. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381284" target="_blank">Location</a>',
+      description: 'Head south to find a Forager Brood for Forager Brood Cookbook [2], located south east of the Cliffside Terminus grace. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381284" target="_blank">Location</a>',
       tags: [FORAGER]
     },
     // BELURAT TOWER SETTLEMENT

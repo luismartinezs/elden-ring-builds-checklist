@@ -109,7 +109,7 @@ const list = {
     },
     {
       id: "52b050fb-1ae3-4a13-a62b-2e5566a29851",
-      description: "Soak the Lord of Blood's Favor in the maiden's corpse in a handful of ways, depending on what other quests you want to progress.",
+      description: "Soak the Lord of Blood's Favor a maiden's corpse in a handful of ways, depending on what other quests you want to progress.",
       items: [
         {
           id: "9bc585dc-cb79-4649-8a25-465245fb25ec",

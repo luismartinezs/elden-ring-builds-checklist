@@ -483,7 +483,7 @@ const list = {
     },
     {
       id: '299a2945-0e91-4504-b2d5-665c2be48da4',
-      description: 'If you did not help Hornsent in the fight against Leda, return to the First Floor Storeroom where Ansbach was to find a pair of summon signs for a fight between Leda and Ansbach. Choosing Ansbach will give you a unique weapon . Choosing Leda gives you a unique talisman . You can also skip this fight. See Enir Ilim section for end game consequences.',
+      description: 'If you did not help Hornsent in the fight against Leda, return to the First Floor Storeroom where Ansbach was to find a pair of summon signs for a fight between Leda and Ansbach. Choosing Ansbach will give you a unique weapon. Choosing Leda gives you a unique talisman. You can also skip this fight. See Enir Ilim section for end game consequences.',
       tags: [ANSBACH, LEDA]
     },
     {
@@ -491,10 +491,15 @@ const list = {
       description: 'If alive, Hornsent will invade in the Church of the Bud, on the way to the Romina fight',
       tags: [HORNSENT]
     },
+    {
+      id: "0883f874-1ed1-4a2b-9bf9-e48853c41127",
+      description: "(optional) Summon Dryleaf Dane to fight Romina, Saint of the Bud",
+      tags: [DANE]
+    },
     // ENIR ILIM
     {
       id: '260b7f4b-9385-4877-ab05-3f074875e2f1',
-      description: 'In Enir Ilim, some of the NPC’s will attack you and some will help you. This can change slightly, depending on your choices, as outlined below:',
+      description: 'In Enir Ilim, some of the NPCs will attack you and some will help you. This can change slightly, depending on your choices, as outlined below:',
       tags: [
         LEDA,
         FREYJA,

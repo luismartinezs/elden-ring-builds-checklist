@@ -301,6 +301,12 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-orange-300 text-orange-300 hover:bg-orange-300 hover:text-black focus:ring-orange-300',
     tagClasses: 'border border-orange-500 bg-orange-900 text-orange-100 -m-px',
     questlineRewards: [
+      "Dryleaf Arts",
+      "Dane's Hat",
+      "Dryleaf Robe",
+      "Dryleaf Arm Wraps",
+      "Dryleaf Cuissardes",
+      "Dane's Footwork"
     ]
   },
   [TAGS.MOORE]: {

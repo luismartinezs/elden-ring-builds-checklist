@@ -9,11 +9,6 @@ const checklistItems = splitLines.map(([id, description, tagString]) => {
     tags = tagString.split(',').map(tag => tag.trim());
   }
 
-  // if (description && description.startsWith('[OPTIONAL]')) {
-  //   tags = ['OPTIONAL'];
-  //   description = description.replace('[OPTIONAL]', '').trim();
-  // }
-
   if (!description || !id) {
     return null
   }
@@ -25,4 +20,19 @@ const checklistItems = splitLines.map(([id, description, tagString]) => {
   };
 }).filter(Boolean);
 
-console.log(checklistItems);
+// Custom replacer function for JSON.stringify
+function replacer(key, value) {
+  if (key === 'description') {
+    return `\`${value}\``; // Wrap description in backticks without quotes
+  }
+  return value;
+}
+
+// Stringify the checklistItems with custom formatting
+const output = JSON.stringify(checklistItems, replacer, 2)
+  .replace(/"(`.*?`)"/g, '$1') // Remove quotes around backticked descriptions
+  // .replace(/^\[/, '') // Remove opening bracket
+  // .replace(/\]$/, '') // Remove closing bracket
+  .trim(); // Remove any leading/trailing whitespace
+
+console.log(output);

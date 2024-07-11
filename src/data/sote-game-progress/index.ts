@@ -5,11 +5,10 @@ const { LEDA, FREYJA, MOORE, THIOLLIER, HORNSENT, ANSBACH, QUEELIGN, IGON, DANE,
 const list = {
   id: "f45240fe-9d8c-4200-8e56-3861ebf0b9ab",
   slug: "shadow-of-the-erdtree",
-  title: "Shadow of the Erdtree (WIP)",
+  title: "Shadow of the Erdtree",
   tags: ['new'],
   notes: [
-    `THIS IS WORK IN PROGRESS. It will change quite a lot in the following days while I do a second playthrough and clean things up. Please report mistakes using the feedback button`,
-    `Update 11-7: Improved Forager quest to avoid being locked out. Cleaned up steps until Putrescent Knight.`,
+    `Update 11-7: Completed steps. Please, provide feedback if you see mistakes`,
     `Recommended for second playthroughs.`,
     `Thanks to this reddit post: <a href="https://www.reddit.com/r/Eldenring/comments/1dnw7dr/all_npc_interactions_in_shadow_of_the_erdtree/" target="_blank">All NPC Interactions in Shadow of the Erdtree</a>`,
     'You might need to toggle on/off new filters for them to work.'
@@ -91,7 +90,7 @@ const list = {
     },
     {
       id: '71b352b1-8a47-4a46-8259-aa7d7e8b70a9',
-      description: 'Defeat the Divine Beast Dancing Lion in Belurat',
+      description: `Defeat the Divine Beast Dancing Lion in Belurat. It's weak to pierce, fire, bleed and scarlet rot, and strong vs magic, lightning, holy and frost.`,
       tags: []
     },
     {
@@ -166,7 +165,7 @@ const list = {
     },
     {
       id: 'b92aa5aa-ea41-4f69-a65e-f27936c95129',
-      description: 'Defeat Rellana, Twin Moon Knight in Castle Ensis',
+      description: `Defeat Rellana, Twin Moon Knight in Castle Ensis. She's weak to pierce, lightning, poison, scarlet rot and sleep, and strong vs slash and magic`,
       tags: []
     },
     // "SCADU ALTUS
@@ -403,102 +402,385 @@ const list = {
       description: 'Speak to Thiollier after defeating the Putrescent Knight. Imbibe the nectar from St. Trina four times (until St. Trina talks to you). Then speak to Thiollier and exhaust his dialogue. Imbibe the nectar again. This time Thiollier will invade. Defeat him. Then imbibe the nectar again and speak to Thiollier again. St. Trina should repeat herself if you continue imbibing.',
       tags: [THIOLLIER]
     },
-    //     "FINGER RUINS OF RHIA
+    // "FINGER RUINS OF RHIA
     // Recommended Scadutree Blessing Rank: 11~ Revered Spirit Ash Blessing: 7~"
-    // TODO
     {
-      id: '0350ec9c-5b1a-4da5-8082-5fbdd4b841a9',
-      description: 'Follow the Eastern coast to the Finger Ruins of Rhia. Use the Hanging Bell. Then, return to speak to Ymir and Jolan at Manus Metyr',
+      id: '23a5b912-f25f-4b17-873d-7a33ff54ca70',
+      description: 'Make your way to the Finger Ruins of Rhia Grace from Cerulean Coast or from Great Altar of Dragon Communion going around the back side of the huge dragon',
+      tags: [YMIR, JOLAN]
+    },
+    {
+      id: '85c78add-ea30-419d-9cf8-e7fb65d4edc9',
+      description: 'Use the Hole-Laden Necklace to interact with the hanging bell in the center of the Finger Ruins of Rhia',
+      tags: [YMIR, JOLAN]
+    },
+    {
+      id: '1435ccb7-4f03-4a16-86a5-99cfc8b5b862',
+      description: `Speak with Ymir to get the Ruins Map (2nd) and Beloved Stardust. At this point, if you defeat Messmer the Impaler before progressing Ymir and Jolan's questline, it should be possible to summon Jolan for Messmer's fight`,
       tags: [YMIR, JOLAN]
     },
     // "CHARO'S HIDDEN GRAVE
     // Recommended Scadutree Blessing Rank: 11~ Revered Spirit Ash Blessing: 7~"
     {
-      id: 'deed85a0-d283-4ed8-85af-df9ef3e2b6e3',
-      description: 'Access the Hinterlands by using the "O Mother" gesture on the statue of Marika near the Shadow Keep, Back Gate . Follow down to the Finger Ruins of Dheo and use the Hanging Bell. Then, return to speak to Ymir and Jolan at Manus Metyr.',
-      tags: [YMIR, JOLAN]
+      "id": "7b052a9e-27ad-444d-917b-bc9364d12299",
+      "description": `From the Grand Altar of Dragon Communion, go south west to reach Charo's Hidden Grave. If you progress the to the north west, you will reach Charo's Hidden Grave grace, from where you can explore the area`,
+      "tags": [
+        OPTIONAL
+      ]
+    },
+    //     "SCADUVIEW
+    // Recommended Scadutree Blessing Rank: 11~ Revered Spirit Ash Blessing: 8~"
+    {
+      "id": "aed10b05-823c-41de-87a8-d41e1a53ba89",
+      "description": `From Shadow Keep, Back Gate - Site of Grace, defeat Commander Gaius. He's weak to holy and strong vs slash, bleed and frost`,
+      "tags": [
+        OPTIONAL,
+        ALL_REMEMBERANCES
+      ]
+    },
+    //     "HINTERLANDS
+    // Recommended Scadutree Blessing Rank: 13~ Revered Spirit Ash Blessing: 6~"
+    {
+      "id": "9e10b874-f3cb-433e-b168-a75e1d0aa527",
+      "description": `Access the Hinterlands by using \"O, Mother\" gesture in front of Marika's Altar next to Shadow Keep, Back Gate`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
     },
     {
-      id: '6db20904-a1c8-4438-9cf9-2a0d9fb81ab8',
-      description: 'Access the Finger Ruins of Myr by exhausting Ymir’s dialogue and reloading the area until he leaves his throne. Then, examine the throne . After defeating Swordhand of Night Anna, return to speak to Jolan.',
-      tags: [YMIR, JOLAN]
+      "id": "8fc3af74-f88c-41c7-bf79-56f2709b9c12",
+      "description": `From Hinterlands, explore Shaman Village to the east uphill, there is a Minor Erdtree incantation, a Marika's Rune and a Golden Braid talisman (can be useful vs the final boss)`,
+      "tags": [
+        OPTIONAL
+      ]
     },
     {
-      id: '3ae3176c-dd51-418d-9ed6-d7a59d4f4630',
-      description: 'Use the Hanging Bell and fight Metyr.. Then, return to examine Ymir’s throne..',
-      tags: [YMIR]
+      "id": "0df97475-f0bb-4b41-a496-de6f461ab6d0",
+      "description": `Travel east from the Hinterlands and across the bridge, then south, to reach the Fingerstone Hill grace and Finger Ruins of Dheo`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
     },
     {
-      id: '2728ffca-271e-4e98-b681-a1507188442e',
-      description: 'Reload Manus Metyr. Find an item in the cemetery to the West. Speak to Jolan. You can choose to give her an Iris of Grace, resulting in her turning into spirit ashes or an Iris of Occultation, resulting in her dying and dropping her weapon .',
-      tags: [JOLAN]
+      "id": "5af5ec67-5e08-44f7-8317-4ae496e43388",
+      "description": `Reach the center of Finger Ruins of Dheo and interact with the bell and you will be granted the Cerulean Seed Talisman +1`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
     },
     {
-      id: '81d736af-03a9-49ef-92b1-ef0d22f20eed',
-      description: "If you gave Jolan Iris of Grace, return to the Shaman Village. At the Eastern corner, find a series of dropdowns to allow you to access a section Rabbath’s Rise, where you'll find Swordhand of Night Anna",
-      tags: [JOLAN]
-    },
-    // JAGGED PEAK
-    {
-      id: 'd6874eff-5735-468e-8a02-90d749e03fcb',
-      description: 'Speak to Igon after defeating the dragon near the Foot of the Jagged Peak Grace. Then return to the Grand Altar of Dragon Communion to speak to the Dragon Communion Priestess',
-      tags: [IGON, DRAGON_PRIESTESS]
+      "id": "32a84309-b296-4944-8779-08e2b7617c26",
+      "description": `Speak to Ymir in the Cathedral of Manus Methyr to get the Ruins Map (3rd), then fast travel somewhere else, and return to the cathedral. Ymir should not be there. Examine the throne where he was seated to uncover a ladder. Take the ladder down to reach the Finger Ruins of Miyr`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
     },
     {
-      id: '3659fe76-a1bc-4856-a858-a612d9b5f310',
-      description: 'Summon Igon to fight Bayle (required for quest)',
-      tags: [IGON]
+      "id": "2bc05c3c-833a-4de6-adea-b8540c177b39",
+      "description": `Defeat invader Swordhand of Night Anna in Finger Ruins of Miyr`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
     },
     {
-      id: '76b56de6-c918-4584-8235-a0dedaafc086',
-      description: 'Return to Igon',
-      tags: [IGON]
+      "id": "55ef66ba-48bc-4d71-92eb-4597eb5297b4",
+      "description": `Interact with the hanging bell in Finger Ruins of Miyr to be teleported to Metyr, Mother of Fingers arena`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
     },
     {
-      id: '1e94546a-b367-4bf5-a2ee-46675945fe98',
-      description: 'Return to the Dragon Communion Priestess',
-      tags: [DRAGON_PRIESTESS]
+      "id": "6738655f-2399-4629-803c-68eaafa930c4",
+      "description": `Defeat Metyr, Mother of Fingers. She's weak to slash and strong vs magic, fire, lightning and holy. She takes more damage in the belly`,
+      "tags": [
+        YMIR,
+        JOLAN,
+        ALL_REMEMBERANCES
+      ]
     },
-    // SHADOW CASTLE / ANCIENT RUINS
     {
-      id: '709fe7b8-00ab-4e80-975c-a504935a2ef4',
-      description: '(Optional) Summon Freyja and Hornsent to fight the Golden Hippo',
-      tags: [FREYJA, HORNSENT]
+      "id": "bad3e43d-acd3-459e-9dd1-7a493ccfd18f",
+      "description": `Interact with the throne in Cathedral of Manus Metyr, defeat the invader Swordhand of Night Jolan and then defeat Count Ymir, Mother of Fingers. You will receive his set, Ymir's bell bearing and the Maternal Staff`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
+    },
+    {
+      "id": "306956bf-57db-43cb-97b8-e48803b17b54",
+      "description": `Rest at a grace and return to Jolan's initial spot. Give her the Iris of Grace to get Swordhand of Night Jolan spirit ash (and also allow you to progress her questline to get an upgraded spirit summon), or the Iris of Occultation to get the Sword of Night (and her her questline). Note: you might be able to progress Jolan's questline even if you give her the Iris of Occultation, if you have her spirit summon from a previous game cycle (unconfirmed)`,
+      "tags": [
+        JOLAN
+      ]
+    },
+    {
+      "id": "f35dedbb-0748-4042-8bf9-51bfbf6eafa9",
+      "description": `From Shaman Village, drop down the cliffs in the south east until reaching the top of Rabbath's Rise. Here, find Puppet Anna, and you will be able to combine the spirits together getting the Jolan and Anna spirit summon`,
+      "tags": [
+        JOLAN
+      ]
+    },
+    //  JAGGED PEAK
+    // Recommended Scadutree Blessing Rank: 13~ Revered Spirit Ash Blessing: 6~
+    {
+      "id": "6bd7fc07-417b-4133-8f57-65cff477a3a9",
+      "description": `From the Dragon's Pit Terminus grace, go east and defeat the Jagged Peak Drake (not sure if this is needed to complete Igon's questline)`,
+      "tags": [
+        IGON
+      ]
+    },
+    {
+      "id": "59a24488-6c46-416d-9540-8b1ee8fe2a7a",
+      "description": `From the Dragon's Pit Terminus - Site of Grace, take the way left after reaching the sleeping dragon and find the Foot of Jagged Peak - Site of Grace`,
+      "tags": [
+        OPTIONAL,
+        IGON,
+        DRAGON_PRIESTESS
+      ]
+    },
+    {
+      "id": "96792655-cb7c-4174-9ef2-36a1ac410cc0",
+      "description": `From the Foot of Jagged Peak grace, defeat the two Jagged Peak Drakes fighting each other (not sure if this is needed to complete Igon's questline)`,
+      "tags": [
+        IGON
+      ]
+    },
+    {
+      "id": "8a96c0d5-2b47-41d3-bba0-c29432a1d360",
+      "description": `From the Foot of Jagged Peak grace, go past where the two dragons were fighting, find Igon and get Igon's Furled Finger`,
+      "tags": [
+        IGON
+      ]
+    },
+    {
+      "id": "f3eb9595-c3a6-411d-8c43-2c96f95cf39a",
+      "description": `Progress from the Jagged Peak grace up the mountain to reach the Jagged Peak Mountainside - Site of Grace (right after the Ancient Dragon Senessax)`,
+      "tags": [
+        OPTIONAL,
+        IGON,
+        DRAGON_PRIESTESS
+      ]
+    },
+    {
+      "id": "e683fc3d-3a29-401f-91e9-3777ec3f28ba",
+      "description": `Defeat Ancient Dragon Senessax near the Jagged Peak Mountainside grace (not sure if this is needed to complete Igon's questline)`,
+      "tags": [
+        IGON
+      ]
+    },
+    {
+      "id": "ad0605c6-b1f9-400b-96a8-265131d75cf9",
+      "description": `From Jagged Peak Mountainside grace, reach Jagged Peak Summit grace`,
+      "tags": [
+        IGON,
+        OPTIONAL,
+        DRAGON_PRIESTESS
+      ]
+    },
+    {
+      "id": "8db06c83-0add-44c2-87d9-88902b9e4b44",
+      "description": `Summon Igon to assist you in defeating Bayle the Dread. Igon's summon sign is found inside Bayle's arena, near the front of the entrance, in the right side`,
+      "tags": [
+        IGON
+      ]
+    },
+    {
+      "id": "360be8a4-66be-4dff-91b3-7d2df692fb40",
+      "description": `Defeat Bayle The Dread. He's weak to pierce and receives more damage to the head and the leg stump`,
+      "tags": [
+        OPTIONAL,
+        ALL_REMEMBERANCES,
+        DRAGON_PRIESTESS,
+        IGON
+      ]
+    },
+    {
+      "id": "d2660a4c-2708-4507-b073-c9ab62288dd1",
+      "description": `Find Igon near where the two Jagged Peak Drakes were fighting to get his weapon, armor and bell bearing`,
+      "tags": [
+        IGON
+      ]
+    },
+    {
+      "id": "dac4a7f2-1046-4bc5-bac7-b7ed9d610d20",
+      "description": `Go to the Grand Altar of Dragon Communion and get the questline rewards, which will differ depending on whether you used Thiollier's Concoction on her or not`,
+      "tags": [
+        DRAGON_PRIESTESS
+      ]
+    },
+    //     "SHADOW KEEP DEPTHS
+    //  (MAIN GATE TO RECLUSE RIVER)
+    // Recommended Scadutree Blessing Rank: 14~ Revered Spirit Ash Blessing: 7~"
+    {
+      "id": "a5825291-cf61-44c2-ad6c-a8b87a6acc3f",
+      "description": `From the Highroad Cross head north to reach the Shadow Keep Main Gate grace`,
+      "tags": []
+    },
+    {
+      "id": "709fe7b8-00ab-4e80-975c-a504935a2ef4",
+      "description": `Summon Redmane Freyja and Hornsent to assist in the fight against Golden Hippopotamus`,
+      "tags": [
+        FREYJA,
+        HORNSENT
+      ]
+    },
+    {
+      "id": "d6958137-42ab-49c7-8ac9-4bb121a89241",
+      "description": `Defeat Golden Hippopotamus. It's weak to fire and lightning and strong vs bleed and frost`,
+      "tags": []
+    },
+    {
+      id: 'e8b1e2ec-b449-49c9-9fac-eaa69f468568',
+      description: "Past the Main Gate Plaza, you will reach an area with 6 burning boats and a ramp leading down. Go down the ramp to open a shortcut",
+      tags: []
     },
     {
       id: '7a75af68-3002-4505-8af5-bc342b64e429',
-      description: "Past the Main Gate Plaza, you will reach an area with 6 burning boats and a ramp leading down. To the left of the ramp, there are a pair of summon signs for a fight between Leda and Hornsent. Choosing Leda will provide you with a unique talisman . Choosing Hornsent will provide you with a unique Ash of war. It will also lock you out of the Leda/Anbach storeroom fight below . If you do not choose either, the fight doesn't happen. See Enir Ilim section below for endgame consequences.",
+      description: "In the area with 6 burning boats in Shadow Keep, near the ramp, there are a pair of summon signs for a fight between Leda and Hornsent. Choosing Leda will provide you with the Hornsent Set along with the curved sword Falx and the Lacerating Crossed-Tree Talisman (after you talk to Leda again). Choosing Hornsent will provide you with the Ash of War: Swift Slash and Leda's Rune. It will also lock you out of the Leda/Anbach storeroom fight. If you do not choose either, the fight doesn't happen.",
       tags: [LEDA, HORNSENT]
     },
     {
-      id: 'c5296cbd-9b2b-441a-ae2d-456d099d4c50',
-      description: "Head to the Abyssal woods to meet Midra. Here's how to get there: In the same area with 6 burning boats, find a ladder at the end on the left. Climb down and follow the path through a waterfall and an illusory wall until you find a coffin you can climb in. When you arrive, head South along the western wall and descend down the cliff face until you reach the Darklight Catacombs. Head through the Catacombs to reach the Abyssal Woods on the other side.",
-      tags: [OPTIONAL]
+      id: "1278efee-3785-43f8-9be5-f25bc334f0ae",
+      description: `If you chose to side with Leda against Hornsent, speak to Leda to receive the Lacerating Crossed-Tree Talisman. If you rest at a grace, Leda will say she's considering targetting Ansbach.`,
+      tags: [LEDA]
+    },
+    //     "ABYSSAL WOODS
+    // Recommended Scadutree Blessing Rank: 12~ Revered Spirit Ash Blessing: 8~"
+    {
+      "id": "ecc06af8-e60f-4e8f-996d-dd041cbf57eb",
+      "description": `In Shadow Keep, in the southeastern part of the platform with the burning ships there is a ladder going down. Break a secret wall in a room with a painting. Rest in the coffin behind it and reach the Castle Watering Hole grace and the Ruins of Unte`,
+      "tags": [
+        OPTIONAL
+      ]
     },
     {
-      id: 'efd3f6f9-bd7f-4609-9906-a5b9958fc378',
-      description: 'Speak to Ansbach in the first floor of the Specimen Storehouse',
-      tags: [ANSBACH]
+      "id": "17185f3f-b003-4668-b1cc-805994568125",
+      "description": `From the Castle Watering Hole, go south and touch the Recluses' River Upstream grace`,
+      "tags": [
+        OPTIONAL
+      ]
     },
     {
-      id: '7c1533f9-cf21-4f4f-bde7-cf37902d8048',
-      description: 'Speak to Freyja by the Storehouse, Seventh Floor Grace. Then speak to Ansbach on the first floor',
-      tags: [FREYJA, ANSBACH]
+      "id": "41021483-e401-47f6-a22a-8af999c4dc7a",
+      "description": `From the Recluses' River Upstream grace progress down the mountainside path south until reaching the Recluses' River Downstream grace`,
+      "tags": [
+        OPTIONAL
+      ]
     },
     {
-      id: '32cca996-af5f-4178-9e20-e707f20db3b4',
-      description: 'Give Ansbach the Secret Rite Scroll, found just past the Fourth Floor Storeroom Grace. Continue forward until you find stairs leading down . Reload the area and speak to him again. Choose whether to give Freya his message (see Enir Ilim section for end game consequences). If you do, speak to Ansbach again.',
-      tags: [ANSBACH, FREYJA]
+      "id": "c6a126d8-89f0-4e01-8d82-1403638074b9",
+      "description": `From the Recluses' River Downstream grace go south to reach the Darklight Catacombs. Progress through the catacombs and defeat the boss to reach the Forsaken Graveyard grace`,
+      "tags": [
+        OPTIONAL
+      ]
     },
     {
-      id: '0204ad74-2403-4862-873e-fb7245652f3d',
-      description: 'Summon Hornsent to fight Messmer and speak to him after the fight (Required for quest - See Enir Ilim for more end game consequences)',
+      "id": "63a01154-68d6-46d7-ba0d-1ffb045dc96e",
+      "description": `From the Forsaken Graveyard grace go into the Abyssal Woods and touch the Woodland Trail grace`,
+      "tags": [
+        OPTIONAL
+      ]
+    },
+    {
+      "id": "c2217d2d-d6ea-4611-ace4-ba33ad7f3e66",
+      "description": `From the Woodland Trail go south east, find the Church Ruins grace and pick the Map: Abyssal Woods`,
+      "tags": [
+        MAP_FRAGMENT
+      ]
+    },
+    {
+      "id": "c9acaf84-f9e9-4dcf-8aa9-db346d0b948b",
+      "description": `From the Woodland Trail grace go west to touch Abyssal Woods grace, then progress through the area until reaching Midra's Manse and the Manse Hall grace`,
+      "tags": [
+        OPTIONAL
+      ]
+    },
+    {
+      "id": "38450ce5-23ce-4964-85a5-5599805fd061",
+      "description": `Defeat Midra, Lord of Frenzied Flame. He's weak to slash and strong vs fire, poison and scarlet rot. High resistance to fire and madness is recommended`,
+      "tags": [
+        OPTIONAL,
+        ALL_REMEMBERANCES
+      ]
+    },
+    //     "SHADOW KEEP (FROM MAIN PLAZA)
+    // Recommended Scadutree Blessing Rank: 13-14 Revered Spirit Ash Blessing: 8~
+    {
+      "id": "e6725886-b315-4fc7-b334-832575fef820",
+      "description": `From the First Floor Site of Grace, find Ansbach in a room in the same floor and exhaust his dialoge.`,
+      "tags": [
+        ANSBACH, LEDA
+      ]
+    },
+    {
+      "id": "fb65357c-4aa5-484a-8262-6ec228c6af7f",
+      "description": `Explore further the Storehouse until finding the Storehouse, Fourth Floor grace`,
+      "tags": []
+    },
+    {
+      "id": "097f711e-fc88-4565-9c82-c4044af2e70f",
+      "description": `Find the Secret Rite Scroll: From Shadow Keep, Fourth Floor: In the area where you find the opening that leads outside to get to the fifth floor, check all the bookcases, the one closer to the edge of the area, has this item`,
+      "tags": [
+        ANSBACH,
+        FREYJA
+      ]
+    },
+    {
+      "id": "977cde66-6f83-4b57-aa76-b56172191500",
+      "description": `Explore further the Storehouse until finding the Storehouse, Seventh Floor grace`,
+      "tags": []
+    },
+    {
+      "id": "5bbfd0e2-6325-4917-8f16-07c1b32a497e",
+      "description": `Talk to Redmane Freyja next to the Storehouse, Seventh Floor grace`,
+      "tags": [
+        ANSBACH,
+        FREYJA
+      ]
+    },
+    {
+      "id": "40ed6d9a-9119-488b-8792-878a3938a805",
+      "description": `Find Ansbach in the first floor of the Storehouse and give him the Secret Rite Scroll and exhaust his dialogue to get the Letter to Freyja, then return to Freyja, give her the letter and exhaust her dialogue`,
+      "tags": [
+        ANSBACH,
+        FREYJA
+      ]
+    },
+    {
+      "id": "97e6d05d-3827-46f8-8e08-3a058ed19248",
+      "description": `From the Storehouse, Seventh Floor grace reach the sixth floor and pull the lever that causes the specimens to move, after which you can go up the platforms that just moved and up the specimens to reach a balcony that leads to the Dark Chamber Entrance grace`,
+      "tags": []
+    },
+    {
+      "id": "159441c0-bca6-4cf4-8cf0-bf9f1cf8447c",
+      "description": `Optionally, you can summon Hornsent and Jolan to fight Messmer the Impaler, their summon signs are inside the arena, Hornsent's near the part of the arena closest to the entrance, Jolan's in the opposite side (you cannot summon Jolan if you already defeated Metyr Mother of Fingers, and you need to have at least the map to the second finger ruins)`,
+      "tags": [
+        HORNSENT,
+        JOLAN
+      ]
+    },
+    {
+      "id": "1aedaff4-c0a4-4f03-ba7d-1cda76fac64c",
+      "description": `Defeat Messmer the Impaler, he's weak to slash, holy and frost and strong vs fire.`,
+      "tags": []
+    },
+    {
+      id: "39d8f949-0ac4-4d32-9c6a-7ff006213683",
+      description: "After defeating Messmer, you can find Hornsent in the arena and speak to him",
       tags: [HORNSENT]
     },
     {
-      id: 'd138276a-8d44-41c9-af0d-97d61b761899',
-      description: 'Return to Belurat to speak to Hornsent Grandam',
-      tags: [HORNSENT]
+      "id": "464be176-47a3-44e0-bd8c-4dd617d785d1",
+      "description": `Travel to Hornsent Grandam in Belurat, Tower Settlement by teleporting near her site of grace. Speak with her (Divine Beast Head must be equipped) and you will receive a Gourmet Scorpion Stew`,
+      "tags": [
+        OPTIONAL
+      ]
     },
     {
       id: 'c867d42e-61b7-4ed5-96ca-fd5a6e3df9bd',
@@ -507,82 +789,124 @@ const list = {
     },
     {
       id: '299a2945-0e91-4504-b2d5-665c2be48da4',
-      description: 'If you did not help Hornsent in the fight against Leda, return to the First Floor Storeroom where Ansbach was to find a pair of summon signs for a fight between Leda and Ansbach. Choosing Ansbach will give you a unique weapon. Choosing Leda gives you a unique talisman. You can also skip this fight. See Enir Ilim section for end game consequences.',
+      description: `If you did not help Hornsent in the fight against Leda (you helped Leda or skipped the fight) and you summoned Hornsent against Messmer (don't know if that's required), return to the First Floor Storeroom where Ansbach was to find a pair of summon signs for a fight between Leda and Ansbach. If you help Leda, you will get Ansbach items and you will be locked out of his questline (not recommended). If you help Ansbach, you get Ansbach's Longbow and Leda's Rune`,
       tags: [ANSBACH, LEDA]
     },
+    //     ANCIENT RUINS OF RAUH
+    // Recommended Scadutree Blessing Rank: 14~17 Revered Spirit Ash Blessing: 8~
     {
-      id: 'f2cfe6ce-7af4-4705-9476-28296bd65629',
-      description: 'If alive, Hornsent will invade in the Church of the Bud, on the way to the Romina fight',
-      tags: [HORNSENT]
+      "id": "2e055afc-d4de-4357-8ce5-a9909a6c91d9",
+      "description": `From the West Rampart, travel west to reach the Viaduct Minor Tower grace and the Ancient Ruins of Rauh`,
+      "tags": []
     },
     {
-      id: "0883f874-1ed1-4a2b-9bf9-e48853c41127",
-      description: "(optional) Summon Dryleaf Dane to fight Romina, Saint of the Bud",
-      tags: [DANE]
+      "id": "aa0101ba-53e8-4231-b784-6e03a66ba860",
+      "description": `Progress through the Ruins of Rauh until reaching Rauh Ancient Ruins, East grace`,
+      "tags": []
     },
-    // ENIR ILIM
     {
-      id: '260b7f4b-9385-4877-ab05-3f074875e2f1',
-      description: 'In Enir Ilim, some of the NPCs will attack you and some will help you. This can change slightly, depending on your choices, as outlined below:',
-      tags: [
-        LEDA,
-        FREYJA,
-        HORNSENT,
-        MOORE,
-        ANSBACH,
-        THIOLLIER,
+      "id": "152518ca-346f-4f6d-bff9-96ff60e2c2b0",
+      "description": `From Rauh Ancient Ruins, East grace go through the bridge with the Furnace Golem and take a left to reach the Rauh Ancient Ruins, West grace`,
+      "tags": []
+    },
+    {
+      "id": "cea4c1e0-162b-4784-b503-c6da4fc97ac1",
+      "description": `From Rauh Ancient Ruins, West grace progress through the area until reaching Church of the Bud, Main Entrance grace. If / when Hornsent invades you, just run past him to touch the grace`,
+      "tags": []
+    },
+    {
+      "id": "eea6e106-67b3-4862-8a08-312062ccea4c",
+      "description": `Near the Church of the Bud, Main Entrance grace, Hornsent will invade. Defeat him to get his weapon and armor`,
+      "tags": [
+        HORNSENT
+      ]
+    },
+    {
+      "id": "458baebe-5a48-499e-820c-97c7255d3529",
+      "description": `Optionally summon Dryleaf Dane to aid in Romina boss fight`,
+      "tags": [
         DANE
       ]
     },
     {
-      id: 'c25c6e75-9f95-4c47-9eed-14eec06b17b5',
-      description: 'Leda will attack you no matter what.',
-      tags: [LEDA]
+      "id": "75b199a4-2d10-437c-9c26-1226a9985443",
+      "description": `Defeat Romina, Saint of the Bud. She is weak to fire and frost, strong vs slash, and immune to bleed and scarlet rot. A way to cure or resist scarlet rot is recommended`,
+      "tags": []
     },
     {
-      id: '31d872c0-44aa-4dab-9e13-71aa580fc4e2',
-      description: 'Freyja will attack you if you gave her the letter from Ansbach. Otherwise, she stays in the Storehouse until later in the game, when she disappears and leaves an item behind.',
-      tags: [FREYJA]
+      "id": "43ac55d5-fbd1-438f-a012-7c22fd6cf4ed",
+      "description": `Access the Sealing Tree behind Romina's arena and burn it using Messmer's Kindling. You will be teleported to Enir-Ilim`,
+      "tags": []
+    },
+    // ENIR-ILIM
+    // Recommended Scadutree Blessing Rank: 17~20 Revered Spirit Ash Blessing: 8~10
+    {
+      "id": "456ca81a-3d39-45af-b369-6cb295ce1f7e",
+      "description": `Progress through Enir-Ilim to get the graces Enir-Ilim: Outer Wall, First Rise, Spiral Rise and Cleansing Chamber Anteroom, in this order, then find Needle Knight Leda, who will challenge you`,
+      "tags": []
     },
     {
-      id: '1b2cf3f6-689d-4757-900b-45428ea34720',
-      description: "Hornsent will attack you if he is alive and you don't summon him for the Messmer fight",
-      tags: [HORNSENT]
+      "id": "260b7f4b-9385-4877-ab05-3f074875e2f1",
+      "description": `Win the NPC fight near the Cleansing Chamber Anteroom grace in Enir-Ilim`,
+      "tags": [],
+      items: [
+        {
+          "id": "ffa90e53-18bb-499c-ab65-6ee47f7db57f",
+          "description": `Leda and Dane will attack you no matter what`,
+          "tags": [LEDA, DANE]
+        },
+        {
+          "id": "42cc9807-5104-41c2-9967-ca5242e54004",
+          "description": `Freyja will attack you if you progressed her questline until the end, otherwise she will remain in her last location`,
+          "tags": [FREYJA]
+        },
+        {
+          "id": "1fe887f0-d0ab-4e30-a01c-34a99cd91a35",
+          "description": `Hornsent will attack you if he's alive and you did not summon him against Messmer`,
+          "tags": [HORNSENT]
+        },
+        {
+          "id": "17b8131e-109c-475b-b8ac-1bacb49ec089",
+          "description": `Moore will attack if you chose his dialogue option \"Put it behind you\"`,
+          "tags": [MOORE]
+        },
+        {
+          "id": "fbbc1f2d-a9d3-4243-b1c6-f51682960077",
+          "description": `You can summon Thiollier if your progressed his questline until the end`,
+          "tags": [THIOLLIER]
+        },
+        {
+          "id": "ad165eca-fdff-419e-81a5-cdd120b2bc45",
+          "description": `You can summon Ansbach as long as he was not killed and you gave him the Secret Rite Scroll`,
+          "tags": [ANSBACH]
+        },
+      ]
     },
     {
-      id: 'a82d43f7-8d08-4702-bcc4-f8196ce680be',
-      description: "Moore will attack you if you told him to put it behind him. If you tell him to remain sad forever, he dies and you can find his items North of the Church of the Crusade. If you say you don't know, he stays at the Main Gate Cross.",
-      tags: [MOORE]
+      "id": "df043f4a-13ff-4902-99c1-216c7a2028d2",
+      "description": `You can summon Ansbach and Thiollier to aid vs Radahn. You have to summon them at least once to progress their questlines (not confirmed)`,
+      "tags": [
+        THIOLLIER,
+        ANSBACH
+      ]
     },
     {
-      id: 'b57ae31f-46a7-422a-a76b-79b6b45c3589',
-      description: "Ansbach can be summoned to help you, if he's alive and you gave him the scroll",
-      tags: [ANSBACH]
+      "id": "0616a18d-877b-4df0-942e-8f3f8b5612b1",
+      "description": `Defeat Promised Consort Radahn / Radahn, Consort of Miquella. The first phase is weak to pierce, frost, bleed and scarlet rot, and strong vs slash and holy. The second phase is weak vs scarlet rot, holy and pierce, and strong vs everything else`,
+      "tags": []
     },
     {
-      id: '30773b77-d479-4384-b447-a75d4bfabc0f',
-      description: 'Thiollier can be summoned to help you if you told him all that St. Trina said',
-      tags: [THIOLLIER]
+      "id": "0d370ad4-a7e8-4518-8ed4-877e479b8927",
+      "description": `After you defeated Radahn, southeast of the grace you can get the equipment of Ansbach and Thiollier`,
+      "tags": [
+        THIOLLIER,
+        ANSBACH
+      ]
     },
     {
-      id: '60fb2ee0-ad74-4f29-847a-45f39ffc315f',
-      description: 'Dane will attack you, no matter what.',
-      tags: [DANE]
-    },
-    {
-      id: '5fcc6521-72b1-4999-aea4-36b6083f4c31',
-      description: 'Speak to Ansbach at the top of the elevator after the fight.',
-      tags: [ANSBACH]
-    },
-    {
-      id: 'a2dbac0f-ba00-4758-aac1-00f4cc3c4801',
-      description: 'Summon Ansbach and Thiollier for the final boss (Need to verify if this is required for Anbach questline)',
-      tags: [ANSBACH, THIOLLIER]
-    },
-    {
-      id: '3254032c-e71c-4750-b44c-36814d5ce133',
-      description: 'After defeating Radahn and Miquella, rest in a grace or reload the area to find the bodies of Ansbach and Thiollier in the area',
-      tags: [ANSBACH, THIOLLIER]
+      "id": "c0b520a6-390a-45ca-8bc7-cb21d68d8cf2",
+      "description": `In the middle of Radahn's arena you can get the \"Let Us Go Together\" gesture and Miquella's Memory to trigger a short cutscene `,
+      "tags": []
     }
   ]
 }

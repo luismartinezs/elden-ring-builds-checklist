@@ -9,7 +9,7 @@ const list = {
   tags: ['new'],
   notes: [
     `THIS IS WORK IN PROGRESS`,
-    `Update: Added main steps up to shadow keep chuch district`,
+    `Update 11-7: improved Forager quest.`,
     `Recommended for second playthroughs.`,
     `This list will be progressively updated and improved, I just wanted to release something quickly. Expect small daily updates. Please report mistakes using the feedback button.`,
     `Thanks to this reddit post: <a href="https://www.reddit.com/r/Eldenring/comments/1dnw7dr/all_npc_interactions_in_shadow_of_the_erdtree/" target="_blank">All NPC Interactions in Shadow of the Erdtree</a>`,
@@ -55,13 +55,13 @@ const list = {
     },
     {
       id: '339f2473-288d-4071-820d-6e883f6f275b',
-      description: 'From the Main Gate Cross grace go south aroind the cliffs and activate the Cliffroad Terminus grace',
+      description: 'From the Main Gate Cross grace go south around the cliffs and activate the Cliffroad Terminus grace',
       tags: [OPTIONAL]
     },
     {
       id: 'dcfdc773-d6a4-4b4c-8f95-8adbbf753b65',
-      description: "Head south to find a Forager Brood for an item, located SE of the Cliffside Terminus grace. These NPCs look like the Kindred of Rot enemy, but they are unaggressive, and killing them will result in Moore invading you and then permanently dying. If Moore dies for any reason, the forager brood will disappear",
-      tags: [MOORE, FORAGER]
+      description: 'Head south to find a Forager Brood for Forager Brood Cookbook [2], located SE of the Cliffside Terminus grace. These NPCs look like the Kindred of Rot enemy, but they are unaggressive, and killing them will result in Moore invading you and then permanently dying. If Moore dies for any reason, the forager brood will disappear. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381284" target="_blank">Location</a>',
+      tags: [FORAGER]
     },
     // BELURAT TOWER SETTLEMENT
     // Recommended Scadutree Blessing Rank: 4~ Revered Spirit Ash Blessing: 4~
@@ -141,9 +141,14 @@ const list = {
       tags: [ANSBACH]
     },
     {
+      id: 'b2e273f6-dacb-4edb-9ab2-eb2d03415637',
+      description: 'Find a Forager Brood for Forager Brood Cookbook [3], located north norteast of the Cerulean Coast Grace. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382588" target="_blank">Location</a>',
+      tags: [FORAGER]
+    },
+    {
       id: '64efd205-e7a6-4143-a484-e2e506f0d8a1',
-      description: '(Optional) Summon Leda and Dryleaf Dane to fight Rellana',
-      tags: [LEDA, DANE]
+      description: '(Optional) Summon Leda to fight Rellana',
+      tags: [LEDA]
     },
     {
       id: 'b92aa5aa-ea41-4f69-a65e-f27936c95129',
@@ -174,8 +179,13 @@ const list = {
     },
     {
       id: 'ef7f61c1-0c0b-43c2-98c9-77cff1f0f053',
-      description: 'Find an injured Forager Brood, located North of the Church of the Crusade. Heal it. Then, reload the area and return to that location.',
-      tags: [DANE, LEDA, FORAGER]
+      description: 'Find an injured Forager Brood, located North of the Church of the Crusade. Heal it with an item such as a Warming Stone, if successfully healed, it will stand up. Then, reload the area and return to that location to get Forager Brood Cookbook [4]. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382727" target="_blank">Location</a>',
+      tags: [FORAGER, MOORE]
+    },
+    {
+      id: '3100c1c5-5ded-4db0-a458-5c1b0df8d269',
+      description: 'After receiving Forager Brood Cookbook [4], talk to Moore to receive Forager Brood Cookbook [7]',
+      tags: [FORAGER, MOORE]
     },
     {
       id: 'aad4807d-9bb7-4ccf-90f9-f9e07e0c2c81',
@@ -189,12 +199,12 @@ const list = {
     },
     {
       id: '5fff0e9f-825a-412f-85f1-c8366ccd9d3f',
-      description: 'Find a Forager Brood for an item, located NW of the Ruined Forge of Starfall Past.',
+      description: 'Find a Forager Brood for Forager Brood Cookbook [1], located NW of the Ruined Forge of Starfall Past. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380330" target="_blank">Location</a>',
       tags: [FORAGER]
     },
     {
       id: 'd2b90bbc-5e4b-43c0-aff8-e02fe59ae10d',
-      description: 'Find a Forager Brood for an item by heading North from the Moorth Highway through a tunnel at the North end of the lake, on the way to Rauh Base. Note: There are no NPC interactions in Rauh Base, but now is a good time to explore that location.',
+      description: 'Find a Forager Brood for Forager Brood Cookbook [5] by heading North from the Moorth Highway through a tunnel at the North end of the lake, on the way to Rauh Base. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382244" target="_blank">Location</a>',
       tags: [FORAGER]
     },
     {
@@ -204,7 +214,7 @@ const list = {
     },
     {
       id: '7268f0a1-4ed6-4be5-a072-c4e95a60ad27',
-      description: 'Head down the hole in Moorth Ruins and reach Bonny Village. Head through Bonny Gaol in the South East to get to Bonny Village',
+      description: 'Head down the hole in Moorth Ruins and reach Bonny Village. Alternatively, head through Bonny Gaol in the South East to get to Bonny Village',
       tags: [OPTIONAL, YMIR]
     },
     {
@@ -219,18 +229,27 @@ const list = {
     },
     {
       id: '680b0170-fb0d-4af2-98f6-8ed7c3898545',
-      description: 'From Bonny Village grace, head east across the bridges to reach Bridge Leading to Village grace',
+      description: 'From Bonny Village grace, head east across the bridges to reach Bridge Leading to Village grace. If you continue advancing, you will see a message “Somewhere a Great Rune Has Broken”',
       tags: [OPTIONAL]
     },
-    {
-      id: '1c99dfec-159e-43af-84ae-0e866b459b3d',
-      description: "Once you receive the “Somewhere a Great Rune Has Broken” message, return and exhaust the dialogue with all NPC's (Leda, Hornsent, Thiollier, Freyja, Ansbach, and Moore). Make any choice with Leda - it does not change the outcome. For the consequences of Moore’s choice, see the Enir Ilim section at the bottom.",
+    {id: "a5e34a75-2d9f-4ac4-8761-1b99a8f1b24e",
+      description: 'As you approach either the Shadow Keep front entrance, east Scadu Altus (from Bonny village), or Rauh Base from any direction, you will receive a message “Somewhere a Great Rune Has Broken” and "And so too has a powerful charm". At this point: 1/ You can progress through the Stone Coffin Fissure, 2/Many NPC questlines will progress.',
       tags: [LEDA, MOORE, HORNSENT, THIOLLIER, FREYJA, ANSBACH]
     },
     {
       id: '9fd2dd74-51a0-4705-9f35-253079e99cee',
       description: 'From Bridge Leading to Village grace, go north, then west, then south, to reach the Cathedral of Manus Metyr grace',
       tags: [OPTIONAL]
+    },
+    {
+      id: '2da2234e-1d10-4e71-8a71-2df90e5de41c',
+      description: 'Find a Forager Brood for Forager Brood Cookbook [6], located just outside the Church District Entrance. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381262" target="_blank">Location</a>',
+      tags: [FORAGER]
+    },
+    {
+      id: '1c99dfec-159e-43af-84ae-0e866b459b3d',
+      description: "After you receive the “Somewhere a Great Rune Has Broken” message, return and exhaust the dialogue with all NPC's (Leda, Hornsent, Thiollier, Freyja, Ansbach, and Moore). Make any choice with Leda - it does not change the outcome. For the consequences of Moore's choice, see the Enir Ilim section at the bottom. Depending on your choice with Moore, the foragers will disappear, so you should find all the foragers before talking to Moore.",
+      tags: [LEDA, MOORE, HORNSENT, THIOLLIER, FREYJA, ANSBACH]
     },
     // "RAUH BASE
     // Recommended Scadutree Blessing Rank: 9~ Revered Spirit Ash Blessing: 6~"
@@ -242,7 +261,7 @@ const list = {
     {
       id: '0c01e0e0-687f-4110-b858-64ac95af81fe',
       description: 'Obtain the Map: Rauh Ruins located south west from the Ancient Ruins Base grace',
-      tags: [MAP_FRAGMENT, OPTIONAL]
+      tags: [MAP_FRAGMENT]
     },
     // "SHADOW KEEP
     //  (CHURCH DISTRICT AND SCADUTREE BASE)
@@ -290,11 +309,6 @@ const list = {
     // "CERULEAN COAST (SOUTHERN SHORE)
     // Recommended Scadutree Blessing Rank: 10~ Revered Spirit Ash Blessing: 7~"
     {
-      id: '2da2234e-1d10-4e71-8a71-2df90e5de41c',
-      description: 'Find a Forager Brood for an item, located just outside the Church District Entrance.',
-      tags: [FORAGER]
-    },
-    {
       id: 'be03242d-046e-47ae-ba0a-d1b7e23225cf',
       description: 'Use the Prayer Room Key on a locked door in the Church District (North East of Bonny Village) to speak to Queelign. You can choose to give him an Iris of Grace, resulting in him turning into spirit ashes or an Iris of Occultation, resulting in him dying and dropping his weapon',
       tags: [QUEELIGN]
@@ -303,11 +317,6 @@ const list = {
       id: 'cdea3ceb-81c7-45fd-a6bb-6a5d0ad6832e',
       description: 'Speak to Ymir at the Cathedral of Manus Metyr. Reload the area and Jolan will appear by a Pillar. Exhaust her dialogue, then ask Ymir about her.',
       tags: [YMIR, JOLAN]
-    },
-    {
-      id: 'b2e273f6-dacb-4edb-9ab2-eb2d03415637',
-      description: 'Find a Forager Brood for an item, located NE of the Cerulean Coast Grace',
-      tags: [FORAGER]
     },
     {
       id: 'a780b01d-45b6-4d21-a2a4-a95401f36e6b',

@@ -150,6 +150,11 @@ const list = {
       tags: [ANSBACH]
     },
     {
+      id: "60e03341-dfba-459a-a715-cb3084b63608",
+      description: `Pick up Map: Southern Shore. From the Cerulean Coast - Site of Grace, go directly north west`,
+      tags: [MAP_FRAGMENT]
+    },
+    {
       id: 'b2e273f6-dacb-4edb-9ab2-eb2d03415637',
       description: 'Find a Forager Brood for Forager Brood Cookbook [3], located north northeast of the Cerulean Coast Grace. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382588" target="_blank">Location</a>',
       tags: [FORAGER]
@@ -327,15 +332,29 @@ const list = {
       tags: [QUEELIGN, JOLAN]
     },
     {
+      id: '1c79db1e-8c01-4fae-b136-93dd0323e432',
+      description: 'Reach the Storehouse, Back Section grace: from the second floor of the church in the Church District, go through the circular passage with the Fire Knights, then go through the second left and up the elevator.',
+      tags: [OPTIONAL, QUEELIGN, JOLAN]
+    },
+    {
+      id: 'a7dfc66d-e6c1-4829-92cf-59c66955b6c7',
+      description: 'From the Storehouse, Back Section grace, jump down the platforms to reach the Storehouse, First Floor grace',
+      tags: []
+    },
+    {
+      id: "aa24efc9-6e8f-4723-8ed7-5ef7dec3a142",
+      description: "From the Storehouse, First Floor grace, take the left (north-west west) lift down. Take the first exit to the right and continue forward until the end of the hallway, take the right path down and head west to reach the West Rampart grace",
+      tags: []
+    },
+    {
+      id: 'a7dfc66d-e6c1-4829-92cf-59c66955b6c7',
+      description: 'Get the Iris of Grace in the Shadow Keep: the the opposite side of the hallway where the West Rampart grace is located',
+      tags: [QUEELIGN, JOLAN]
+    },
+    {
       id: 'be03242d-046e-47ae-ba0a-d1b7e23225cf',
       description: 'Use the Prayer Room Key on a locked door in the Church District to speak to Queelign. You can choose to give him an Iris of Grace, resulting in him turning into spirit ashes or an Iris of Occultation, resulting in him dying and dropping his weapon. To reach this room, parkour through the roofs in the Church District until dropping down to the second floor of the church, then instead of going through the circular passage with the Fire Knights, go in the opposite direction.',
       tags: [QUEELIGN]
-    },
-    {
-      id: '1c79db1e-8c01-4fae-b136-93dd0323e432',
-      description: 'Reach the Storehouse, Back Section grace: from the second floor of the church in the Church District, go through the circular passage with the Fire Knights, then go through the second left and up the elevator.',
-      // TODO needs more description
-      tags: [OPTIONAL]
     },
     {
       id: '6d299771-9e9e-438b-bd33-198dbc34b6a4',
@@ -361,7 +380,7 @@ const list = {
     // Recommended Scadutree Blessing Rank: 10~ Revered Spirit Ash Blessing: 7~"
     {
       id: 'cdea3ceb-81c7-45fd-a6bb-6a5d0ad6832e',
-      description: 'Speak to Ymir at the Cathedral of Manus Metyr. Reload the area and Jolan will appear by a Pillar. Exhaust her dialogue, then ask Ymir about her.',
+      description: 'Speak to Ymir at the Cathedral of Manus Metyr to receive the Ruins Map and Hole-Laden Necklace. Reload the area and Jolan will appear by a Pillar. Exhaust her dialogue, then ask Ymir about her.',
       tags: [YMIR, JOLAN]
     },
     {
@@ -384,14 +403,19 @@ const list = {
       description: 'Speak to Thiollier after defeating the Putrescent Knight. Imbibe the nectar from St. Trina four times (until St. Trina talks to you). Then speak to Thiollier and exhaust his dialogue. Imbibe the nectar again. This time Thiollier will invade. Defeat him. Then imbibe the nectar again and speak to Thiollier again. St. Trina should repeat herself if you continue imbibing.',
       tags: [THIOLLIER]
     },
+    //     "FINGER RUINS OF RHIA
+    // Recommended Scadutree Blessing Rank: 11~ Revered Spirit Ash Blessing: 7~"
+    // TODO
     {
       id: '0350ec9c-5b1a-4da5-8082-5fbdd4b841a9',
       description: 'Follow the Eastern coast to the Finger Ruins of Rhia. Use the Hanging Bell. Then, return to speak to Ymir and Jolan at Manus Metyr',
       tags: [YMIR, JOLAN]
     },
+    // "CHARO'S HIDDEN GRAVE
+    // Recommended Scadutree Blessing Rank: 11~ Revered Spirit Ash Blessing: 7~"
     {
       id: 'deed85a0-d283-4ed8-85af-df9ef3e2b6e3',
-      description: 'Access the Hinterlands by using the O Mother gesture on the statue of Marika near the Shadow Keep, Back Gate . Follow down to the Finger Ruins of Dheo and use the Hanging Bell. Then, return to speak to Ymir and Jolan at Manus Metyr.',
+      description: 'Access the Hinterlands by using the "O Mother" gesture on the statue of Marika near the Shadow Keep, Back Gate . Follow down to the Finger Ruins of Dheo and use the Hanging Bell. Then, return to speak to Ymir and Jolan at Manus Metyr.',
       tags: [YMIR, JOLAN]
     },
     {

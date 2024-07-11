@@ -8,12 +8,11 @@ const list = {
   title: "Shadow of the Erdtree (WIP)",
   tags: ['new'],
   notes: [
-    `THIS IS WORK IN PROGRESS`,
-    `Update 11-7: improved Forager quest.`,
+    `THIS IS WORK IN PROGRESS. It will change quite a lot in the following days while I do a second playthrough and clean things up. Please report mistakes using the feedback button`,
+    `Update 11-7: Improved Forager quest to avoid being locked out. Cleaned up steps until Putrescent Knight.`,
     `Recommended for second playthroughs.`,
-    `This list will be progressively updated and improved, I just wanted to release something quickly. Expect small daily updates. Please report mistakes using the feedback button.`,
     `Thanks to this reddit post: <a href="https://www.reddit.com/r/Eldenring/comments/1dnw7dr/all_npc_interactions_in_shadow_of_the_erdtree/" target="_blank">All NPC Interactions in Shadow of the Erdtree</a>`,
-    'You might need to toggle on/off new filters for them to work'
+    'You might need to toggle on/off new filters for them to work.'
   ],
   items: [
     {
@@ -54,30 +53,35 @@ const list = {
       tags: [MOORE, ANSBACH]
     },
     {
+      id: "335fffcf-0cf4-454f-ac29-8d3637ebcffa",
+      description: 'If you kill any two Forager Broods, you will be invaded by Moore, and defeating him will kill him (locking you out of his questline, and potentially out of Thiollier\'s if you did not progress it) and reward you with his shield, his armor and his bell bearing (in his previous location)',
+      tags: [MOORE, FORAGER]
+    },
+    {
       id: '339f2473-288d-4071-820d-6e883f6f275b',
       description: 'From the Main Gate Cross grace go south around the cliffs and activate the Cliffroad Terminus grace',
       tags: [OPTIONAL]
     },
     {
       id: 'dcfdc773-d6a4-4b4c-8f95-8adbbf753b65',
-      description: 'Head south to find a Forager Brood for Forager Brood Cookbook [2], located SE of the Cliffside Terminus grace. These NPCs look like the Kindred of Rot enemy, but they are unaggressive, and killing them will result in Moore invading you and then permanently dying. If Moore dies for any reason, the forager brood will disappear. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381284" target="_blank">Location</a>',
+      description: 'Head south to find a Forager Brood for Forager Brood Cookbook [2], located south east of the Cliffside Terminus grace. These NPCs look like the Kindred of Rot enemy, but they are unaggressive, and killing them will result in Moore invading you and then permanently dying. If Moore dies for any reason, the forager brood will disappear. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381284" target="_blank">Location</a>',
       tags: [FORAGER]
     },
     // BELURAT TOWER SETTLEMENT
     // Recommended Scadutree Blessing Rank: 4~ Revered Spirit Ash Blessing: 4~
     {
       id: '59b21622-00aa-4f5f-8b10-e882be11006e',
-      description: 'Defeat the invading Fire Knight Queelign, just past the Small Private Altar Grace in Belurat',
+      description: 'Defeat the invading Fire Knight Queelign, taking a left from the Small Private Altar Grace in Belurat',
       tags: [QUEELIGN]
     },
     {
       id: 'c70c3255-5bb4-4795-9346-8095e7e7e8f0',
-      description: 'After finding the cross in Belurat, speak to Ansbach at the Main Gate Cross. Location: starting at Small Private Altar, continue until you reach a path going left and right. Head left, then climb over the broken walls to the right of the path.',
+      description: 'After finding the cross in Belurat, speak to Ansbach at the Main Gate Cross. Location: starting at Small Private Altar, continue until you reach a path going left and right. Head left until you find small Spider Scorpions, then climb over the broken walls to the right of the path.',
       tags: [ANSBACH]
     },
     {
       id: 'c40568c2-7a0c-4f0b-ba1a-82a1e9191acb',
-      description: "Speak to Hornsent Grandam in the Belurat Storage Room, veering left after the Small Private Altar Grace. You'll first need to pick up the key, which is on the main path between this Grace and the next.",
+      description: "Speak to Hornsent Grandam in the Belurat Storage Room, veering left after the Small Private Altar Grace. You'll first need to pick up the Storeroom Key, which is on the main path between this Grace and the next.",
       tags: [HORNSENT]
     },
     {
@@ -109,7 +113,7 @@ const list = {
     },
     {
       id: '6fff135f-b11f-40cb-a58d-02d002d9a2e6',
-      description: 'Speak to Thiollier at the Pillar Path Cross Grace. Then, speak to Moore at the Main Gate Cross Grace. Then return to Thiollier.',
+      description: 'Speak to Thiollier at the Pillar Path Cross Grace. Then, speak to Moore at the Main Gate Cross Grace to get the Black Syrup. Then return to Thiollier and give him the Black Syrup.',
       tags: [THIOLLIER, MOORE]
     },
     {
@@ -136,18 +140,23 @@ const list = {
       tags: [DRAGON_PRIESTESS]
     },
     {
+      id: "a278cef5-e169-4243-8fb8-929e68072bf6",
+      description: 'Reach the Cerulean Coast Grace. To get to the Cerulean Coast, you can either jump down some Ruins from the Dragon Altar or you can head down the cliff from the Pillar Path Cross adn follow the Ellac river through the Ellac River Cave. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382048" target="_blank">Location</a>',
+      tags: [OPTIONAL, ANSBACH, FORAGER]
+    },
+    {
       id: '0a683160-a101-4810-b197-ec074f2b29d1',
-      description: 'After finding the Cerulean Coast Cross, speak to Ansbach at the Main Gate Cross. Location: To get to the Cerulean Coast, you can either jump down some Ruins from the Dragon Altar or you can head South West from the Castle Front and follow the Elac river. The cross is on a hill to the South West)',
+      description: 'After finding the Cerulean Coast Cross, speak to Ansbach at the Main Gate Cross.',
       tags: [ANSBACH]
     },
     {
       id: 'b2e273f6-dacb-4edb-9ab2-eb2d03415637',
-      description: 'Find a Forager Brood for Forager Brood Cookbook [3], located north norteast of the Cerulean Coast Grace. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382588" target="_blank">Location</a>',
+      description: 'Find a Forager Brood for Forager Brood Cookbook [3], located north northeast of the Cerulean Coast Grace. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382588" target="_blank">Location</a>',
       tags: [FORAGER]
     },
     {
       id: '64efd205-e7a6-4143-a484-e2e506f0d8a1',
-      description: '(Optional) Summon Leda to fight Rellana',
+      description: '(Optional) Summon Leda to fight Rellana in Castle Ensis',
       tags: [LEDA]
     },
     {
@@ -168,6 +177,11 @@ const list = {
       tags: [LEDA, HORNSENT, FREYJA]
     },
     {
+      id: "715310d7-950b-4f40-9cb2-00b186bd70a8",
+      description: 'Pick up the Monk\'s Missive next to the Highcross Road Grace to get the "May the Best Win" gesture',
+      tags: [DANE]
+    },
+    {
       id: '9cb43083-9000-4217-a6b1-982aeb4285b5',
       description: 'Pick up Map: Scadu Altus north from Highroad Cross grace',
       tags: [MAP_FRAGMENT]
@@ -184,28 +198,40 @@ const list = {
     },
     {
       id: '3100c1c5-5ded-4db0-a458-5c1b0df8d269',
-      description: 'After receiving Forager Brood Cookbook [4], talk to Moore to receive Forager Brood Cookbook [7]',
+      description: 'After receiving Forager Brood Cookbook [4], talk to Moore to receive Forager Brood Cookbook [7] (some guides say you need to find all the other forager cookbooks too, can someone confirm?)',
       tags: [FORAGER, MOORE]
     },
     {
       id: 'aad4807d-9bb7-4ccf-90f9-f9e07e0c2c81',
       description: 'From where you picked the Scadu Altus map, head south east to reach Moorth Ruins',
-      tags: [OPTIONAL]
+      tags: [OPTIONAL, DANE]
     },
     {
       id: '1f6548bf-abf0-404d-abba-bd9b5fad6b1b',
-      description: 'Talk to Dryleaf Dane at the Moorth Ruins Grace. Then, talk to Leda at the Highcross Road Grace. Return to Dane and do the “May the Best Win” gesture to trigger a duel.',
-      tags: [DANE, LEDA]
+      description: 'Talk to Dryleaf Dane at the Moorth Ruins Grace. Then, talk to Leda at the Highcross Road Grace. Return to Dane and do the "May the Best Win" gesture to trigger a duel.',
+      tags: [DANE]
     },
     {
       id: '5fff0e9f-825a-412f-85f1-c8366ccd9d3f',
-      description: 'Find a Forager Brood for Forager Brood Cookbook [1], located NW of the Ruined Forge of Starfall Past. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380330" target="_blank">Location</a>',
+      description: 'Find a Forager Brood for Forager Brood Cookbook [1], located north west of the Ruined Forge of Starfall Past. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380330" target="_blank">Location</a>',
+      tags: [FORAGER]
+    },
+    // "RAUH BASE
+    // Recommended Scadutree Blessing Rank: 9~ Revered Spirit Ash Blessing: 6~"
+    {
+      id: 'd2b90bbc-5e4b-43c0-aff8-e02fe59ae10d',
+      description: 'Find a Forager Brood for Forager Brood Cookbook [5] by heading North from the Moorth Highway through a tunnel at the North end of the poison lake, on the way to Rauh Base. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382244" target="_blank">Location</a>',
       tags: [FORAGER]
     },
     {
-      id: 'd2b90bbc-5e4b-43c0-aff8-e02fe59ae10d',
-      description: 'Find a Forager Brood for Forager Brood Cookbook [5] by heading North from the Moorth Highway through a tunnel at the North end of the lake, on the way to Rauh Base. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382244" target="_blank">Location</a>',
-      tags: [FORAGER]
+      id: '4f573a65-9b2f-4f8b-8a8c-f2d8439cd91e',
+      description: 'Reach Ancient Ruins Base grace: Travel north from Moorth Ruins until reaching a poison swamp, then go across a cave west of the swamp',
+      tags: [OPTIONAL]
+    },
+    {
+      id: '0c01e0e0-687f-4110-b858-64ac95af81fe',
+      description: 'Obtain the Map: Rauh Ruins located south west from the Ancient Ruins Base grace',
+      tags: [MAP_FRAGMENT]
     },
     {
       id: 'ae6a1c22-7bad-4975-a0dc-41286bf4ac89',
@@ -214,32 +240,43 @@ const list = {
     },
     {
       id: '7268f0a1-4ed6-4be5-a072-c4e95a60ad27',
-      description: 'Head down the hole in Moorth Ruins and reach Bonny Village. Alternatively, head through Bonny Gaol in the South East to get to Bonny Village',
+      description: 'Head down the hole in Moorth Ruins and reach Bonny Village.',
       tags: [OPTIONAL, YMIR]
     },
     {
       id: 'db106066-8077-4543-adc9-57446b16e59a',
-      description: 'Get O, Mother gesture north of Bonny Village, in front of a headless statue',
+      description: 'Get "O, Mother" gesture north of Bonny Village, in front of a headless statue',
       tags: [OPTIONAL, YMIR]
     },
     {
       id: 'd5e78d2d-f56a-4f40-b499-e22d8dabc87a',
       description: 'Going south from Moorth ruins to reach Moorth Highway grace and Fort Reprimand',
-      tags: [OPTIONAL]
+      tags: [OPTIONAL, QUEELIGN, JOLAN]
+    },
+    {
+      id: '0fc64672-1876-45d8-9fa7-f3dbef41de7b',
+      description: `You need one or two Iris of Occultation and / or Iris of grace for Queelign and Jolan questlines, depending on the rewards you want, so in the following steps just get the ones you need. See the <a href="/npc-questline-rewards">NPC questline rewards</a> page for more information.`,
+      tags: [QUEELIGN, JOLAN]
+    },
+    {
+      id: "5546cdab-66e7-4365-a937-7fbba17ab8ac",
+      description: "Get an Iris of Occultation: From the central hall in Fort Reprimand, drop down a hole and defeat the Horned Warrior.",
+      tags: [QUEELIGN, JOLAN]
     },
     {
       id: '680b0170-fb0d-4af2-98f6-8ed7c3898545',
-      description: 'From Bonny Village grace, head east across the bridges to reach Bridge Leading to Village grace. If you continue advancing, you will see a message “Somewhere a Great Rune Has Broken”',
-      tags: [OPTIONAL]
+      description: 'From Bonny Village grace, head east across the bridges to reach Bridge Leading to Village grace.',
+      tags: [OPTIONAL, YMIR]
     },
-    {id: "a5e34a75-2d9f-4ac4-8761-1b99a8f1b24e",
-      description: 'As you approach either the Shadow Keep front entrance, east Scadu Altus (from Bonny village), or Rauh Base from any direction, you will receive a message “Somewhere a Great Rune Has Broken” and "And so too has a powerful charm". At this point: 1/ You can progress through the Stone Coffin Fissure, 2/Many NPC questlines will progress.',
-      tags: [LEDA, MOORE, HORNSENT, THIOLLIER, FREYJA, ANSBACH]
+    {
+      id: "a5e34a75-2d9f-4ac4-8761-1b99a8f1b24e",
+      description: 'As you approach either the Shadow Keep front entrance, east Scadu Altus (from Bonny village), or Rauh Base from any direction, you will receive a message “Somewhere a Great Rune Has Broken” and "And so too has a powerful charm". At this point: 1/ You can progress through the Stone Coffin Fissure, 2/Many NPC questlines will progress (do not talk to the NPCs yet as some have important choices, see later steps).',
+      tags: []
     },
     {
       id: '9fd2dd74-51a0-4705-9f35-253079e99cee',
       description: 'From Bridge Leading to Village grace, go north, then west, then south, to reach the Cathedral of Manus Metyr grace',
-      tags: [OPTIONAL]
+      tags: [OPTIONAL, YMIR]
     },
     {
       id: '2da2234e-1d10-4e71-8a71-2df90e5de41c',
@@ -247,21 +284,19 @@ const list = {
       tags: [FORAGER]
     },
     {
+      id: "b835f08b-f4a9-4f48-9666-f5dd4f56c94c",
+      description: `Talk to Moore and choose one of the options. "Put it Behind You": Moore will fight you in the end game, after which you can get his loot. "Remain Sad Forever": After you change location, he will move to the north of Church of the Crusade (<a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382727" target="_blank">Location</a>) where you can get his loot, if you make this choice the Forager Broods will disappear. "I Don't Know": Moore will stay in his current location.`,
+      tags: [MOORE]
+    },
+    {
+      id: "a4cd48ce-ec9e-4792-9f79-6eaee5aac030",
+      description: `Talk to Leda and make a choice: "Suggest Thiollier": Nothing will happen. "Suggest Hornsent" and "Make no suggestion": It will trigger an NPC fight later in Shadow Keep and a choice to either side with Leda or with Hornsent.`,
+      tags: [LEDA, HORNSENT]
+    },
+    {
       id: '1c99dfec-159e-43af-84ae-0e866b459b3d',
-      description: "After you receive the “Somewhere a Great Rune Has Broken” message, return and exhaust the dialogue with all NPC's (Leda, Hornsent, Thiollier, Freyja, Ansbach, and Moore). Make any choice with Leda - it does not change the outcome. For the consequences of Moore's choice, see the Enir Ilim section at the bottom. Depending on your choice with Moore, the foragers will disappear, so you should find all the foragers before talking to Moore.",
-      tags: [LEDA, MOORE, HORNSENT, THIOLLIER, FREYJA, ANSBACH]
-    },
-    // "RAUH BASE
-    // Recommended Scadutree Blessing Rank: 9~ Revered Spirit Ash Blessing: 6~"
-    {
-      id: '4f573a65-9b2f-4f8b-8a8c-f2d8439cd91e',
-      description: 'Travel north from Moorth Ruins until reaching a poison swamp, then go across a cave west of the swamp to reach Ancient Ruins Base grace',
-      tags: [OPTIONAL]
-    },
-    {
-      id: '0c01e0e0-687f-4110-b858-64ac95af81fe',
-      description: 'Obtain the Map: Rauh Ruins located south west from the Ancient Ruins Base grace',
-      tags: [MAP_FRAGMENT]
+      description: "Exhaust the dialogue with Hornsent, Thiollier, Freyja, and Ansbach.",
+      tags: [HORNSENT, THIOLLIER, FREYJA, ANSBACH]
     },
     // "SHADOW KEEP
     //  (CHURCH DISTRICT AND SCADUTREE BASE)
@@ -273,17 +308,38 @@ const list = {
     },
     {
       id: '2e5f319e-2f05-4f16-b90c-084dfc1b2861',
-      description: 'Drain the water from the Church District using the lever',
+      description: 'Drain the water from the Church District using the lever: parkour through the roofs sticking to the right side, then drop down inside the church, then go left through the first archway with giant bats.',
       tags: [OPTIONAL]
     },
     {
+      id: 'adcdd0cb-d347-4c5e-876d-8866a28746c4',
+      description: `Get an Iris of Occultation: In the Church District, defeat the second Ulcerated Tree Spirit, the one that does not spawn hear the dead tree. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381818" target="_blank">Location</a>`,
+      tags: [QUEELIGN, JOLAN]
+    },
+    {
       id: 'e6f3c2f6-aac0-448b-baf8-8214aaae162f',
-      description: 'Reach Tree Worship Passage grace',
+      description: 'Reach Tree Worship Passage grace: from the Church District enter the church from the ground floor and stick to the right side until finding a passage and an elevator',
+      tags: [OPTIONAL]
+    },
+    {
+      id: "09da374c-4156-434f-a7ef-6be551a8dd18",
+      description: `Get the Iris of Grace at the altar to Marika above Tree-Worship Sanctum`,
+      tags: [QUEELIGN, JOLAN]
+    },
+    {
+      id: 'be03242d-046e-47ae-ba0a-d1b7e23225cf',
+      description: 'Use the Prayer Room Key on a locked door in the Church District to speak to Queelign. You can choose to give him an Iris of Grace, resulting in him turning into spirit ashes or an Iris of Occultation, resulting in him dying and dropping his weapon. To reach this room, parkour through the roofs in the Church District until dropping down to the second floor of the church, then instead of going through the circular passage with the Fire Knights, go in the opposite direction.',
+      tags: [QUEELIGN]
+    },
+    {
+      id: '1c79db1e-8c01-4fae-b136-93dd0323e432',
+      description: 'Reach the Storehouse, Back Section grace: from the second floor of the church in the Church District, go through the circular passage with the Fire Knights, then go through the second left and up the elevator.',
+      // TODO needs more description
       tags: [OPTIONAL]
     },
     {
       id: '6d299771-9e9e-438b-bd33-198dbc34b6a4',
-      description: 'Defeat Scadutree Avatar',
+      description: `Defeat Scadutree Avatar. It's weak to strike, fire and frostbite, strong vs magic and holy and immune to bleed.`,
       tags: [OPTIONAL, ALL_REMEMBERANCES]
     },
     {
@@ -292,40 +348,40 @@ const list = {
       tags: [OPTIONAL]
     },
     {
-      id: '1c79db1e-8c01-4fae-b136-93dd0323e432',
-      description: 'From the Church District, reach the Specimen Storehouse and activate the Storehouse, Back Section grace',
-      tags: [OPTIONAL]
-    },
-    {
       id: 'd3d06756-f54a-49e3-a129-49a7d1e8d20a',
-      description: 'From the Storehouse, Back Section grace, explore the storehouse to reach the Storehouse, Loft Site of Grace',
+      description: 'Reach the Storehouse, Loft Site of Grace: from the Storehouse, Back Section grace go up the ladder, then up the staircase to the right. There will be a bookshelf immediately on the right side. Walk to the right of the bookshelf and go through the hole in the wall.',
       tags: [OPTIONAL]
     },
     {
       id: 'dfc583ff-b709-4c5c-9e65-14ef53ae4962',
-      description: 'From the Storehouse, Loft Site of Grace reach the Shadow Keep, Back Gate Site of Grace ',
+      description: 'Reach the Shadow Keep, Back Gate Site of Grace: from the Storehouse, Loft Site of Grace go up the elevator, walk through the beams until reaching a cogwheel with an item and a Giant Bat. Drop down the cogwheel, then to the beam next to it and then down to the nearest platform. Go outside and take the elevator down.',
       tags: [OPTIONAL]
     },
     // "CERULEAN COAST (SOUTHERN SHORE)
     // Recommended Scadutree Blessing Rank: 10~ Revered Spirit Ash Blessing: 7~"
-    {
-      id: 'be03242d-046e-47ae-ba0a-d1b7e23225cf',
-      description: 'Use the Prayer Room Key on a locked door in the Church District (North East of Bonny Village) to speak to Queelign. You can choose to give him an Iris of Grace, resulting in him turning into spirit ashes or an Iris of Occultation, resulting in him dying and dropping his weapon',
-      tags: [QUEELIGN]
-    },
     {
       id: 'cdea3ceb-81c7-45fd-a6bb-6a5d0ad6832e',
       description: 'Speak to Ymir at the Cathedral of Manus Metyr. Reload the area and Jolan will appear by a Pillar. Exhaust her dialogue, then ask Ymir about her.',
       tags: [YMIR, JOLAN]
     },
     {
-      id: 'a780b01d-45b6-4d21-a2a4-a95401f36e6b',
-      description: 'Head all the way South to reach the Fissure. (Optional) Summon Thiollier to fight the Putrescent Knight',
+      id: "081b4202-2783-4916-93e6-a0cf94d12f99",
+      description: "Reach the Stone Coffin Fissure: from the Cerulean Coast Cross go to the peninsule in the south west by bordering the coast. Then progress throught he area until reaching the Fissure Depths grace",
+      tags: [OPTIONAL, THIOLLIER]
+    },
+    {
+      id: "115fc199-5fa7-4f5b-b03f-1eedc60ac6ef",
+      description: "(optional) Fall down into the Putrescent Knight arena, find Thiollier's summon sign in front and to the right, and summon him.",
       tags: [THIOLLIER]
     },
     {
+      id: "691a3a3c-d7fd-4252-9111-0feeffacb2b3",
+      description: "Defeat the Putrescent Knight. He's weak to Holy and Scarlet Rot, strong vs slash and pierce and immune to poison, bleed and frostbite. High magic defense is recommended for this fight, you can also jump to avoid his AoE magic attacks.",
+      tags: [OPTIONAL, ALL_REMEMBERANCES]
+    },
+    {
       id: '32f7f51b-5a51-4fe3-8859-77b43740730d',
-      description: 'Speak to Thiollier after defeating the Putrescent Knight. Imbibe the nectar from St. Trina four times. Then speak to Thiollier and exhaust his dialogue. Imbibe the nectar again. This time Thiollier will invade. Defeat him. Then imbibe the nectar again and speak to Thiollier again. St. Trina should repeat herself if you continue imbibing.',
+      description: 'Speak to Thiollier after defeating the Putrescent Knight. Imbibe the nectar from St. Trina four times (until St. Trina talks to you). Then speak to Thiollier and exhaust his dialogue. Imbibe the nectar again. This time Thiollier will invade. Defeat him. Then imbibe the nectar again and speak to Thiollier again. St. Trina should repeat herself if you continue imbibing.',
       tags: [THIOLLIER]
     },
     {

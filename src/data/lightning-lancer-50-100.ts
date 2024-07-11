@@ -1,3 +1,7 @@
+import { TAGS } from '~/features/tags'
+
+const {OPTIONAL} = TAGS
+
 const list = {
   id: "5c0e0436-e1de-44f2-b2f4-09c79cbe95d2",
   slug: "lightning-lancer",
@@ -73,7 +77,7 @@ const list = {
     {
       id: '707cdc90-8101-412e-907d-36866c963616',
       description: 'Get Sacred Scorpion Charm if you want more holy damage at the cost of less defense. Dropped by NPC invader Anastasia, Tarnished-Eater when defeated in her first invasion spot in front of Smoldering Church, Caelid',
-      tags: ['OPTIONAL']
+      tags: [OPTIONAL]
     },
     {
       id: 'a5288085-8787-4f60-91bc-2df0e2646eda',
@@ -93,7 +97,7 @@ const list = {
     {
       id: '238951fa-e47f-4b7b-9c19-87c6c9dce6d8',
       description: 'Get Lightning Scorpion Charm if you want more lightning damage at the cost of less defense. Can be found in the Wyndham Catacombs, at the top of the Wyndham Ruins in Altus Plateau (north from Lux ruins), in a room sealed by an Imp Statue, requires a Stonesword Key',
-      tags: ['OPTIONAL']
+      tags: [OPTIONAL]
     },
     {
       id: '4e598059-2c0e-44b4-aca8-3ab6ecbdc5b7',
@@ -108,7 +112,7 @@ const list = {
     {
       id: 'f5d384ac-1c9d-4ffd-adf8-2180d07a2d43',
       description: "If you don't want to farm the Golden Greatshield, you can continue using Brass Shield and upgrade it to +18. In that case, you don't need 34 STR and you can level up more FAI, VGR and MND instead",
-      tags: ['OPTIONAL']
+      tags: [OPTIONAL]
     },
     {
       id: '78f27fa2-9688-4a3e-ac6f-634cf0e44eb1',
@@ -118,12 +122,12 @@ const list = {
     {
       id: '0f519910-7014-4ab5-8521-6dc8a733a3ce',
       description: "If you have low STR and high FAI (because you're using the Brass Shield), then the Gravel Stone Seal is a better option than the Clawmark Seal. To get it, from the West Capital Rampart site of grace in Leyndell, walk north to the next room with the single guard inside. Jump over the balcony railing to get to the area next to the Fortified Manor with the dragon foot. It is dropped by the Leyndell Knight with the spear, who is supported by an archer Leyndell Knight",
-      tags: ['OPTIONAL']
+      tags: [OPTIONAL]
     },
     {
       id: '489bd4a3-aa82-493b-9be8-cda8fbd2ef9e',
       description: 'Farm Leyndell Knight Set from Leyndell Knights, from Altus Highway Junction Site of Grace or Leyndell Royal Capital',
-      tags: ['OPTIONAL'],
+      tags: [OPTIONAL],
       items: [
         {
           id: '692cc2b6-3957-4c8e-b0c3-a35f4127d1de',
@@ -150,7 +154,7 @@ const list = {
     {
       id: '4e2b19d8-6519-4375-8daf-d022453c6810',
       description: 'Before burning Erdtree you might want to finish farming Leyndell Knight Set pieces and Golden Greatshield from Leyndell Royal Capital, and get Gravel Stone Seal. Also, get Bolt of Gransax from Leyndell just so you have more options for higher level builds',
-      tags: ['OPTIONAL']
+      tags: [OPTIONAL]
     },
     {
       id: '299a8c77-a8a1-4782-aa2e-51acb7448e72',

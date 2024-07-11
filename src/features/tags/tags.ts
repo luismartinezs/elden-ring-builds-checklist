@@ -333,6 +333,10 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-red-300 text-red-300 hover:bg-red-300 hover:text-black focus:ring-red-300',
     tagClasses: 'bg-red-300 text-red-900',
     questlineRewards: [
+      "Crusade Insignia",
+      "Ash of War: Flame Skewer",
+      "Iris of Grace: Fire Knight Queelign Spirit Ash",
+      "Iris of Occultation: Queelign's Greatsword"
     ]
   },
   [TAGS.HORNSENT]: {
@@ -373,6 +377,8 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-black focus:ring-gray-400',
     tagClasses: 'border border-gray-400 bg-gray-900 text-gray-100 -m-px',
     questlineRewards: [
+      "Iris of Grace: Swordhand of Night Jolan Spirit Ash",
+      "Iris of Occultation: Sword of Night"
     ]
   },
   [TAGS.DRAGON_PRIESTESS]: {

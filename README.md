@@ -54,5 +54,7 @@ This is to make it easier to play the game without having to look up guides cons
 
 - When to add the `OPTIONAL` tag to a step?
   - YES: When the step is an optional part of the playthrough that is not required to reach the final boss. Example: Defeating the Regal Ancestor Spirit boss, defeating Radahn, etc.
-  - NO: When a questline has an optional step. Example: Meeting Alexander in Limgrave.
+  - NO: When a questline has an optional step specific to that questline. Example: Meeting Alexander in Limgrave.
 - I'm considering removing the OPTIONAL tag as I realize it's a bit ambiguous
+- Removing all filters should show a path straight to the final boss
+- Removing all filters except OPTIONAL should show the path to optional areas

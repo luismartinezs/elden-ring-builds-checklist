@@ -70,8 +70,22 @@ const list = {
     },
     {
       id: 'cc6ad072-f390-4be9-b57d-ce2afd38db70',
-      description: "Restore Radahn\'s Great Rune by visiting the Divine Tower of Caelid, and climbing to the top through platforming",
-      tags: []
+      description: "Restore one Great Rune",
+      tags: [],
+      items: [
+        {
+          id: "4b32fb10-9172-4f44-8c13-98bf3392b890",
+          description: "Restore Radahn\'s Great Rune by visiting the Divine Tower of Caelid, and climbing to the top through platforming"
+        },
+        {
+          id: "fbfcd3d8-c67e-49df-8900-2248ba6752c9",
+          description: "Run through Stormveil Castle, defeat Godrick and restore his Great Rune"
+        },
+        {
+          id: "8a04d9e1-94f3-4c6f-89fe-dcdf313a6703",
+          description: "It might be possible to defeat Rennala and get her Great Rune, which does not need to be restored. I don't know. If someone tries this, please let me know."
+        }
+      ]
     },
     {
       id: 'a431b4ea-8d4c-422a-8bd4-fdf9613f5127',
@@ -95,11 +109,24 @@ const list = {
     },
     {
       id: "52b050fb-1ae3-4a13-a62b-2e5566a29851",
-      description: "From the Dectus grace in Liurnia, head to the path south east and reach the Church of Inhibition. Ignore the invader Vyke and just touch the Grace"
-    },
-    {
-      id: "08474511-8c2a-4897-ab1b-5f386a57dfca",
-      description: "In the Church of Inhibition, soak the Lord of Blood's Favor in the maiden's corpse"
+      description: "Soak the Lord of Blood's Favor in the maiden's corpse in a handful of ways, depending on what other quests you want to progress.",
+      items: [
+        {
+          id: "9bc585dc-cb79-4649-8a25-465245fb25ec",
+          description: "From the Dectus grace in Liurnia, head to the path south east and reach the Church of Inhibition. Ignore the invader Vyke and just touch the Grace, then in the Church of Inhibition, soak the Lord of Blood's Favor in the maiden's corpse."
+        }, {
+          id: "f5fd6a49-4fbe-4f54-926e-32d0f24912e6",
+          description: "If you also want to progress Nepheli's questline to get 2 x Ancient Dragon Smithing Stones, you can go to the Four Belfries in Liurnia, take the magic portal to Chapel of Anticipation, defeat the Grafted Scion and soak the item in the maiden's corpse found inside the chapel."
+        },
+        {
+          id: "262affed-6f47-41c6-a9ee-88f402250dfc",
+          description: "Kill Irina next to the Bridge of Sacrifice and soak the Lord of Blood's Favor in her corpse (might also be possible to do it after she is dead when you deliver the letter to Edgar in Castle Morne, not sure)."
+        },
+        {
+          id: "a170db7a-18ef-4f4d-9eca-9a0062f87996",
+          description: "Kill Hyetta near the Lake-Facing Cliffs site of grace and soak the Lord of Blood's Favor in her corpse."
+        }
+      ]
     },
     {
       id: '87eb2aff-b579-4343-996f-fb1a6d02174c',

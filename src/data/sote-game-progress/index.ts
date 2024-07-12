@@ -201,7 +201,7 @@ const list = {
     },
     {
       id: '3100c1c5-5ded-4db0-a458-5c1b0df8d269',
-      description: 'After receiving Forager Brood Cookbook [4], talk to Moore to receive Forager Brood Cookbook [7] (some guides say you need to find all the other forager cookbooks too, can someone confirm?)',
+      description: 'After receiving Forager Brood Cookbook [4], talk to Moore to receive Forager Brood Cookbook [7]',
       tags: [FORAGER, MOORE]
     },
     {

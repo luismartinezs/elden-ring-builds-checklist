@@ -8,7 +8,7 @@ const list = {
   title: "Shadow of the Erdtree",
   tags: ['new'],
   notes: [
-    `Update 11-7: Completed steps. Please, provide feedback if you see mistakes`,
+    `Update 12-7: Checklist complete. Please, provide feedback if you see mistakes`,
     `Recommended for second playthroughs.`,
     `Thanks to this reddit post: <a href="https://www.reddit.com/r/Eldenring/comments/1dnw7dr/all_npc_interactions_in_shadow_of_the_erdtree/" target="_blank">All NPC Interactions in Shadow of the Erdtree</a>`,
     'You might need to toggle on/off new filters for them to work.'

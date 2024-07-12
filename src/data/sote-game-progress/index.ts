@@ -416,7 +416,7 @@ const list = {
     },
     {
       id: '1435ccb7-4f03-4a16-86a5-99cfc8b5b862',
-      description: `Speak with Ymir to get the Ruins Map (2nd) and Beloved Stardust. At this point, if you defeat Messmer the Impaler before progressing Ymir and Jolan's questline, it should be possible to summon Jolan for Messmer's fight`,
+      description: `Speak with Ymir to get the Ruins Map (2nd) and Beloved Stardust. Then speak to Jolan. She should say something about placing her trust in you. At this point, if you do not care about summoning Jolan to aid against Messmer, you can now progress Ymir and Jolan's questline until the end. Note: you can choose one of two summons to aid against Messmer: Hornsent or Jolan, but not both.`,
       tags: [YMIR, JOLAN]
     },
     // "CHARO'S HIDDEN GRAVE
@@ -436,94 +436,6 @@ const list = {
       "tags": [
         OPTIONAL,
         ALL_REMEMBERANCES
-      ]
-    },
-    //     "HINTERLANDS
-    // Recommended Scadutree Blessing Rank: 13~ Revered Spirit Ash Blessing: 6~"
-    {
-      "id": "9e10b874-f3cb-433e-b168-a75e1d0aa527",
-      "description": `Access the Hinterlands by using \"O, Mother\" gesture in front of Marika's Altar next to Shadow Keep, Back Gate`,
-      "tags": [
-        YMIR,
-        JOLAN
-      ]
-    },
-    {
-      "id": "8fc3af74-f88c-41c7-bf79-56f2709b9c12",
-      "description": `From Hinterlands, explore Shaman Village to the east uphill, there is a Minor Erdtree incantation, a Marika's Rune and a Golden Braid talisman (can be useful vs the final boss)`,
-      "tags": [
-        OPTIONAL
-      ]
-    },
-    {
-      "id": "0df97475-f0bb-4b41-a496-de6f461ab6d0",
-      "description": `Travel east from the Hinterlands and across the bridge, then south, to reach the Fingerstone Hill grace and Finger Ruins of Dheo`,
-      "tags": [
-        YMIR,
-        JOLAN
-      ]
-    },
-    {
-      "id": "5af5ec67-5e08-44f7-8317-4ae496e43388",
-      "description": `Reach the center of Finger Ruins of Dheo and interact with the bell and you will be granted the Cerulean Seed Talisman +1`,
-      "tags": [
-        YMIR,
-        JOLAN
-      ]
-    },
-    {
-      "id": "32a84309-b296-4944-8779-08e2b7617c26",
-      "description": `Speak to Ymir in the Cathedral of Manus Methyr to get the Ruins Map (3rd), then fast travel somewhere else, and return to the cathedral. Ymir should not be there. Examine the throne where he was seated to uncover a ladder. Take the ladder down to reach the Finger Ruins of Miyr`,
-      "tags": [
-        YMIR,
-        JOLAN
-      ]
-    },
-    {
-      "id": "2bc05c3c-833a-4de6-adea-b8540c177b39",
-      "description": `Defeat invader Swordhand of Night Anna in Finger Ruins of Miyr`,
-      "tags": [
-        YMIR,
-        JOLAN
-      ]
-    },
-    {
-      "id": "55ef66ba-48bc-4d71-92eb-4597eb5297b4",
-      "description": `Interact with the hanging bell in Finger Ruins of Miyr to be teleported to Metyr, Mother of Fingers arena`,
-      "tags": [
-        YMIR,
-        JOLAN
-      ]
-    },
-    {
-      "id": "6738655f-2399-4629-803c-68eaafa930c4",
-      "description": `Defeat Metyr, Mother of Fingers. She's weak to slash and strong vs magic, fire, lightning and holy. She takes more damage in the belly`,
-      "tags": [
-        YMIR,
-        JOLAN,
-        ALL_REMEMBERANCES
-      ]
-    },
-    {
-      "id": "bad3e43d-acd3-459e-9dd1-7a493ccfd18f",
-      "description": `Interact with the throne in Cathedral of Manus Metyr, defeat the invader Swordhand of Night Jolan and then defeat Count Ymir, Mother of Fingers. You will receive his set, Ymir's bell bearing and the Maternal Staff`,
-      "tags": [
-        YMIR,
-        JOLAN
-      ]
-    },
-    {
-      "id": "306956bf-57db-43cb-97b8-e48803b17b54",
-      "description": `Rest at a grace and return to Jolan's initial spot. Give her the Iris of Grace to get Swordhand of Night Jolan spirit ash (and also allow you to progress her questline to get an upgraded spirit summon), or the Iris of Occultation to get the Sword of Night (and her her questline). Note: you might be able to progress Jolan's questline even if you give her the Iris of Occultation, if you have her spirit summon from a previous game cycle (unconfirmed)`,
-      "tags": [
-        JOLAN
-      ]
-    },
-    {
-      "id": "f35dedbb-0748-4042-8bf9-51bfbf6eafa9",
-      "description": `From Shaman Village, drop down the cliffs in the south east until reaching the top of Rabbath's Rise. Here, find Puppet Anna, and you will be able to combine the spirits together getting the Jolan and Anna spirit summon`,
-      "tags": [
-        JOLAN
       ]
     },
     //  JAGGED PEAK
@@ -757,9 +669,10 @@ const list = {
       "description": `From the Storehouse, Seventh Floor grace reach the sixth floor and pull the lever that causes the specimens to move, after which you can go up the platforms that just moved and up the specimens to reach a balcony that leads to the Dark Chamber Entrance grace`,
       "tags": []
     },
+    // TODO
     {
       "id": "159441c0-bca6-4cf4-8cf0-bf9f1cf8447c",
-      "description": `Optionally, you can summon Hornsent and Jolan to fight Messmer the Impaler, their summon signs are inside the arena, Hornsent's near the part of the arena closest to the entrance, Jolan's in the opposite side (you cannot summon Jolan if you already defeated Metyr Mother of Fingers, and you need to have at least the map to the second finger ruins)`,
+      "description": `Optionally, you can summon either Hornsent or Jolan (if you progressed her questline to the point where he gives you some praise) to fight Messmer the Impaler, their summon signs are inside the arena, within the circular room, near the entrance: Hornsent's to the right and Jolan's to the left. If you use one summon sign, the other will disappear. Note that you cannot summon Jolan if you progress her and Ymir's questline further. If you do not summon Hornsent, he will not invade in the Ruins of Rauh and he will attack you in the NPC battle in Enir-Ilim.`,
       "tags": [
         HORNSENT,
         JOLAN
@@ -791,6 +704,94 @@ const list = {
       id: '299a2945-0e91-4504-b2d5-665c2be48da4',
       description: `If you did not help Hornsent in the fight against Leda (you helped Leda or skipped the fight) and you summoned Hornsent against Messmer (don't know if that's required), return to the First Floor Storeroom where Ansbach was to find a pair of summon signs for a fight between Leda and Ansbach. If you help Leda, you will get Ansbach items and you will be locked out of his questline (not recommended). If you help Ansbach, you get Ansbach's Longbow and Leda's Rune`,
       tags: [ANSBACH, LEDA]
+    },
+       //     "HINTERLANDS
+    // Recommended Scadutree Blessing Rank: 13~ Revered Spirit Ash Blessing: 6~"
+    {
+      "id": "9e10b874-f3cb-433e-b168-a75e1d0aa527",
+      "description": `Access the Hinterlands by using "O, Mother" gesture in front of Marika's Altar next to Shadow Keep, Back Gate`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
+    },
+    {
+      "id": "8fc3af74-f88c-41c7-bf79-56f2709b9c12",
+      "description": `From Hinterlands, explore Shaman Village to the east uphill, there is a Minor Erdtree incantation, a Marika's Rune and a Golden Braid talisman (can be useful vs the final boss)`,
+      "tags": [
+        OPTIONAL
+      ]
+    },
+    {
+      "id": "0df97475-f0bb-4b41-a496-de6f461ab6d0",
+      "description": `Travel east from the Hinterlands and across the bridge, then south, to reach the Fingerstone Hill grace and Finger Ruins of Dheo`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
+    },
+    {
+      "id": "5af5ec67-5e08-44f7-8317-4ae496e43388",
+      "description": `Reach the center of Finger Ruins of Dheo and interact with the bell and you will be granted the Cerulean Seed Talisman +1`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
+    },
+    {
+      "id": "32a84309-b296-4944-8779-08e2b7617c26",
+      "description": `Speak to Ymir in the Cathedral of Manus Methyr to get the Ruins Map (3rd), then fast travel somewhere else, and return to the cathedral. Ymir should not be there. Examine the throne where he was seated to uncover a ladder. Take the ladder down to reach the Finger Ruins of Miyr`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
+    },
+    {
+      "id": "2bc05c3c-833a-4de6-adea-b8540c177b39",
+      "description": `Defeat invader Swordhand of Night Anna in Finger Ruins of Miyr`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
+    },
+    {
+      "id": "55ef66ba-48bc-4d71-92eb-4597eb5297b4",
+      "description": `Interact with the hanging bell in Finger Ruins of Miyr to be teleported to Metyr, Mother of Fingers arena`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
+    },
+    {
+      "id": "6738655f-2399-4629-803c-68eaafa930c4",
+      "description": `Defeat Metyr, Mother of Fingers. She's weak to slash and strong vs magic, fire, lightning and holy. She takes more damage in the belly`,
+      "tags": [
+        YMIR,
+        JOLAN,
+        ALL_REMEMBERANCES
+      ]
+    },
+    {
+      "id": "bad3e43d-acd3-459e-9dd1-7a493ccfd18f",
+      "description": `Interact with the throne in Cathedral of Manus Metyr, defeat the invader Swordhand of Night Jolan and then defeat Count Ymir, Mother of Fingers. You will receive his set, Ymir's bell bearing and the Maternal Staff`,
+      "tags": [
+        YMIR,
+        JOLAN
+      ]
+    },
+    {
+      "id": "306956bf-57db-43cb-97b8-e48803b17b54",
+      "description": `Rest at a grace and return to Jolan's initial spot. Give her the Iris of Grace to get Swordhand of Night Jolan spirit ash (and also allow you to progress her questline to get an upgraded spirit summon), or the Iris of Occultation to get the Sword of Night (and her her questline).`,
+      "tags": [
+        JOLAN
+      ]
+    },
+    {
+      "id": "f35dedbb-0748-4042-8bf9-51bfbf6eafa9",
+      "description": `If you gave Jolan the Iris of Grace: From Shaman Village, drop down the cliffs in the south east until reaching the top of Rabbath's Rise. Here, find Puppet Anna, and you will be able to combine the spirits together getting the Jolan and Anna spirit summon. Note: If you gave Jolan the Iris of Occulation, even if you already have Swordhand of Night Jolan spirit ash from a previous game cycle, you will not be able to get the Jolan and Anna spirit summon in this game cycle.`,
+      "tags": [
+        JOLAN
+      ]
     },
     //     ANCIENT RUINS OF RAUH
     // Recommended Scadutree Blessing Rank: 14~17 Revered Spirit Ash Blessing: 8~
@@ -867,7 +868,7 @@ const list = {
         },
         {
           "id": "17b8131e-109c-475b-b8ac-1bacb49ec089",
-          "description": `Moore will attack if you chose his dialogue option \"Put it behind you\"`,
+          "description": `Moore will attack if you chose his dialogue option "Put it behind you"`,
           "tags": [MOORE]
         },
         {
@@ -892,7 +893,7 @@ const list = {
     },
     {
       "id": "0616a18d-877b-4df0-942e-8f3f8b5612b1",
-      "description": `Defeat Promised Consort Radahn / Radahn, Consort of Miquella. The first phase is weak to pierce, frost, bleed and scarlet rot, and strong vs slash and holy. The second phase is weak vs scarlet rot, holy and pierce, and strong vs everything else`,
+      "description": `Defeat Promised Consort Radahn / Radahn, Consort of Miquella. The first phase is weak to pierce, frost, bleed and scarlet rot, and strong vs slash and holy. The second phase is weak vs scarlet rot, holy and pierce, and strong vs everything else. The achilles hell of this boss is tanky builds. For example, this <a href="https://eip.gg/elden-ring/build-planner/?buildId=clyicood8010kd4ow26f37260" target="_blank">tank build</a> breaks the boss. Hold the shield up. Poke with the weapon. Win.`,
       "tags": []
     },
     {
@@ -905,7 +906,7 @@ const list = {
     },
     {
       "id": "c0b520a6-390a-45ca-8bc7-cb21d68d8cf2",
-      "description": `In the middle of Radahn's arena you can get the \"Let Us Go Together\" gesture and Miquella's Memory to trigger a short cutscene `,
+      "description": `In the middle of Radahn's arena you can get the "Let Us Go Together" gesture and Miquella's Memory to trigger a short cutscene `,
       "tags": []
     }
   ]

@@ -10,7 +10,6 @@ const list = {
   notes: [
     `Update 12-7: Checklist complete. Please, provide feedback if you see mistakes`,
     `Recommended for second playthroughs.`,
-    `Thanks to this reddit post: <a href="https://www.reddit.com/r/Eldenring/comments/1dnw7dr/all_npc_interactions_in_shadow_of_the_erdtree/" target="_blank">All NPC Interactions in Shadow of the Erdtree</a>`,
     'You might need to toggle on/off new filters for them to work.'
   ],
   items: [

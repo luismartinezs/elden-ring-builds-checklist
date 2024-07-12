@@ -892,7 +892,7 @@ const list = {
     },
     {
       "id": "0616a18d-877b-4df0-942e-8f3f8b5612b1",
-      "description": `Defeat Promised Consort Radahn / Radahn, Consort of Miquella. The first phase is weak to pierce, frost, bleed and scarlet rot, and strong vs slash and holy. The second phase is weak vs scarlet rot, holy and pierce, and strong vs everything else. The achilles hell of this boss is tanky builds. For example, this <a href="https://eip.gg/elden-ring/build-planner/?buildId=clyicood8010kd4ow26f37260" target="_blank">tank build</a> breaks the boss. Hold the shield up. Poke with the weapon. Win.`,
+      "description": `Defeat Promised Consort Radahn / Radahn, Consort of Miquella. The first phase is weak to pierce, frost, bleed and scarlet rot, and strong vs slash and holy. The second phase is weak vs scarlet rot, holy and pierce, and strong vs everything else. The achilles heel of this boss is tanky builds. For example, this <a href="https://eip.gg/elden-ring/build-planner/?buildId=clyicood8010kd4ow26f37260" target="_blank">tank build</a> breaks the boss. Hold the shield up. Poke with the weapon. Win.`,
       "tags": []
     },
     {

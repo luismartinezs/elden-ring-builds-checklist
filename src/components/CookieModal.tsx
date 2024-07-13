@@ -1,3 +1,4 @@
+// cookie not needed with Umami
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { cn } from "~/utils/cn";

@@ -79,11 +79,12 @@ export const ShareModal = ({
           <AiOutlineClose size={20} />
         </Button>
         <p className="mb-2 text-xl font-medium">
-          Find this app useful? Share it with your friends! 🙏
+          Dost thou find this app to be of service? I beseech thee, share it
+          with thy companions.
         </p>
         <p className="mb-4 text-stone-400">
-          Please, if you are using this app and it helps you, share it. I helps
-          A TON.
+          If this app hath aided thee on thy journey, I humbly implore thee to
+          share it. Thy assistance is most cherished.
         </p>
         <div className="flex flex-wrap items-center gap-2">
           <button

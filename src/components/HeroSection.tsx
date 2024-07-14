@@ -29,7 +29,7 @@ export function HeroSection() {
         </h1>
       </div>
       <p className="text-center text-xl text-stone-300 md:text-2xl xl:text-3xl">
-        Replay the game without looking at guides every 5 minutes
+        Replay the game without googling for guides every 5 minutes
       </p>
       <div className="flex flex-col items-center justify-center">
         <PrimaryLinkButton

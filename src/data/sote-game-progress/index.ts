@@ -336,7 +336,7 @@ const list = {
     },
     {
       id: 'a7dfc66d-e6c1-4829-92cf-59c66955b6c7',
-      description: 'From the Storehouse, Back Section grace, jump down the platforms to reach the Storehouse, First Floor grace',
+      description: 'Reach the Storehouse, First Floor grace in Shadow Keep. From the Storehouse, Back Section grace, jump down the platforms to the grace (the Storehouse, Back Section grace is reachable entering Shadow Keep through the Church District). Alternatively reach this grace by progressing through Shadow Keep from the main entrance in Scadu Altus.',
       tags: []
     },
     {

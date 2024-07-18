@@ -543,7 +543,7 @@ const list = {
     },
     {
       "id": "d6958137-42ab-49c7-8ac9-4bb121a89241",
-      "description": `Defeat Golden Hippopotamus. It's weak to fire and lightning and strong vs bleed and frost`,
+      "description": `Defeat Golden Hippopotamus. It's weak to fire and lightning and strong vs bleed and frost (this boss might be optional, to be confirmed)`,
       "tags": []
     },
     {

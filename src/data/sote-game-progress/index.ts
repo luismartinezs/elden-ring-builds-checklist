@@ -8,7 +8,7 @@ const list = {
   title: "Shadow of the Erdtree",
   tags: ['new'],
   notes: [
-    `Update 12-7: Checklist complete. Please, provide feedback if you see mistakes`,
+    `Update 23-8: Added tags to intermediate steps of NPC questlines. Please, provide feedback if you see mistakes`,
     `Recommended for second playthroughs.`,
     'You might need to toggle on/off new filters for them to work.'
   ],
@@ -52,7 +52,7 @@ const list = {
     },
     {
       id: "335fffcf-0cf4-454f-ac29-8d3637ebcffa",
-      description: 'Forager Broods look like the Kindred of Rot enemy, but they are friendly, and killing them will result in Moore invading you and then permanently dying. If you kill any two Forager Broods, you will be invaded by Moore, and defeating him will kill him (locking you out of his questline, and potentially out of Thiollier\'s if you did not progress it) and reward you with his shield, his armor and his bell bearing (in his previous location). If Moore dies for any reason, all the Forager Brood will disappear',
+      description: "Forager Broods look like the Kindred of Rot enemy, but they are friendly, and killing them will result in Moore invading you and then permanently dying. If you kill any two Forager Broods, you will be invaded by Moore, and defeating him will kill him (locking you out of his questline, and potentially out of Thiollier\'s if you did not progress it) and reward you with his shield, his armor and his bell bearing (in his previous location). If Moore dies for any reason, all the Forager Brood will disappear. If you only care about Moore's items, you can probably ignore the Forager Broods.",
       tags: [MOORE, FORAGER]
     },
     {
@@ -107,17 +107,17 @@ const list = {
     {
       id: '16d7fc13-f609-420d-8efe-e0049fa51f0d',
       description: 'From the Castle Front grace head south and take the easter-most path to reach the Pillar Path Cross grace',
-      tags: [OPTIONAL]
+      tags: [OPTIONAL, THIOLLIER, MOORE, ANSBACH, FORAGER, IGON, DRAGON_PRIESTESS]
     },
     {
       id: '6fff135f-b11f-40cb-a58d-02d002d9a2e6',
-      description: 'Speak to Thiollier at the Pillar Path Cross Grace. Then, speak to Moore at the Main Gate Cross Grace to get the Black Syrup. Then return to Thiollier and give him the Black Syrup.',
-      tags: [THIOLLIER, MOORE]
+      description: "Speak to Thiollier at the Pillar Path Cross Grace. Then, speak to Moore at the Main Gate Cross Grace to get the Black Syrup. Then return to Thiollier and give him the Black Syrup (I don't know if this is required to progress Moore's questline, probably not). Exhaust dialogue with Thiollier to obtain Thiollier's Concoction.",
+      tags: [THIOLLIER, MOORE, DRAGON_PRIESTESS]
     },
     {
       id: '75780527-172a-49be-b870-08e094f53d03',
       description: 'From the Pillar Path Cross grace head north west and then immediately south to reach the Pillar Path Waypoint grace',
-      tags: [OPTIONAL]
+      tags: [OPTIONAL, ANSBACH, FORAGER, THIOLLIER, IGON, DRAGON_PRIESTESS]
     },
     {
       id: '64674ade-ccd9-4ed0-b3e4-0a3a43beb752',
@@ -127,20 +127,25 @@ const list = {
     {
       id: '27efa65e-87b2-4724-8ce3-702b7d07d540',
       description: "Head south an down from the Pillar Path Waypoint grace to reach the Dragon's Pit grace",
-      tags: [OPTIONAL]
+      tags: [OPTIONAL, ANSBACH, FORAGER, DRAGON_PRIESTESS, THIOLLIER]
     },
     // "CASTLE ENSIS
     // Recommended Scadutree Blessing Rank: 6~ Revered Spirit Ash Blessing: 6~"
+    {
+      id: 'a6c8e1ca-45c6-4d74-b083-25481ddce50f',
+      description: 'Go through the Dragon Pit (you have to jump down a deep cliff) and head south to Reach the Grand Altar of Dragon Communion grace',
+      tags: [OPTIONAL, ANSBACH, FORAGER, DRAGON_PRIESTESS, THIOLLIER]
+    },
 
     {
       id: 'e16f6de8-4ebc-4773-a37c-2973c270071c',
-      description: "Go through the Dragon Pit and head south to speak to the Dragon Communion Priestess at the Grand Altar of Dragon Communion. Choose whether to give her the potion from Thiollier (must be given at night). At the end of her questline, if you don't give her the potion, you receive a consumable and a weapon; if you do, you'll receive an incantation and spirit ashes.",
+      description: "Speak to the Dragon Communion Priestess at the Grand Altar of Dragon Communion. Choose whether to give her the potion from Thiollier (must be given at night). At the end of her questline, if you don't give her the potion, you receive a consumable and a weapon; if you do, you'll receive an incantation and spirit ashes.",
       tags: [DRAGON_PRIESTESS]
     },
     {
       id: "a278cef5-e169-4243-8fb8-929e68072bf6",
-      description: 'Reach the Cerulean Coast Grace. To get to the Cerulean Coast, you can either jump down some Ruins from the Dragon Altar or you can head down the cliff from the Pillar Path Cross adn follow the Ellac river through the Ellac River Cave. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382048" target="_blank">Location</a>',
-      tags: [OPTIONAL, ANSBACH, FORAGER]
+      description: 'Reach the Cerulean Coast Grace. To get to the Cerulean Coast, you can either jump down some Ruins from the Dragon Altar or you can head down the cliff from the Pillar Path Cross and follow the Ellac river through the Ellac River Cave. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382048" target="_blank">Location</a>',
+      tags: [OPTIONAL, ANSBACH, FORAGER, THIOLLIER]
     },
     {
       id: '0a683160-a101-4810-b197-ec074f2b29d1',
@@ -207,7 +212,7 @@ const list = {
     {
       id: 'aad4807d-9bb7-4ccf-90f9-f9e07e0c2c81',
       description: 'From where you picked the Scadu Altus map, head south east to reach Moorth Ruins',
-      tags: [OPTIONAL, DANE]
+      tags: [OPTIONAL, DANE, QUEELIGN, JOLAN, YMIR, FORAGER, MAP_FRAGMENT]
     },
     {
       id: '1f6548bf-abf0-404d-abba-bd9b5fad6b1b',
@@ -229,7 +234,7 @@ const list = {
     {
       id: '4f573a65-9b2f-4f8b-8a8c-f2d8439cd91e',
       description: 'Reach Ancient Ruins Base grace: Travel north from Moorth Ruins until reaching a poison swamp, then go across a cave west of the swamp',
-      tags: [OPTIONAL]
+      tags: [OPTIONAL, MAP_FRAGMENT]
     },
     {
       id: '0c01e0e0-687f-4110-b858-64ac95af81fe',
@@ -238,23 +243,23 @@ const list = {
     },
     {
       id: 'ae6a1c22-7bad-4975-a0dc-41286bf4ac89',
-      description: 'After finding the Scaduview Cross, speak to Ansbach. Location: From Moorth Highway, South Grace, head out toward the encampment and follow the Eastern cliffside around. Pass the closed Spiritspring, you will find rocks to break to open the Spiritspring. Take that up to this cross.',
+      description: 'After finding the Scaduview Cross, speak to Ansbach. Location: From Moorth Highway, South Grace (<a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380349">located here</a>), head out toward the encampment and follow the Eastern cliffside around. Pass the closed Spiritspring, you will find rocks to break to open the Spiritspring. Take that up to this cross. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382068">Location</a>',
       tags: [ANSBACH]
     },
     {
       id: '7268f0a1-4ed6-4be5-a072-c4e95a60ad27',
       description: 'Head down the hole in Moorth Ruins and reach Bonny Village.',
-      tags: [OPTIONAL, YMIR]
+      tags: [OPTIONAL, YMIR, QUEELIGN, JOLAN, FORAGER]
     },
     {
       id: 'db106066-8077-4543-adc9-57446b16e59a',
       description: 'Get "O, Mother" gesture north of Bonny Village, in front of a headless statue',
-      tags: [OPTIONAL, YMIR]
+      tags: [OPTIONAL, YMIR, JOLAN]
     },
     {
       id: 'd5e78d2d-f56a-4f40-b499-e22d8dabc87a',
-      description: 'Going south from Moorth ruins to reach Moorth Highway grace and Fort Reprimand',
-      tags: [OPTIONAL, QUEELIGN, JOLAN]
+      description: 'Go south from Moorth ruins to reach Moorth Highway grace and Fort Reprimand',
+      tags: [OPTIONAL, QUEELIGN, JOLAN, FORAGER]
     },
     {
       id: '0fc64672-1876-45d8-9fa7-f3dbef41de7b',
@@ -269,7 +274,7 @@ const list = {
     {
       id: '680b0170-fb0d-4af2-98f6-8ed7c3898545',
       description: 'From Bonny Village grace, head east across the bridges to reach Bridge Leading to Village grace.',
-      tags: [OPTIONAL, YMIR]
+      tags: [OPTIONAL, YMIR, QUEELIGN, JOLAN, FORAGER]
     },
     {
       id: "a5e34a75-2d9f-4ac4-8761-1b99a8f1b24e",
@@ -277,9 +282,14 @@ const list = {
       tags: []
     },
     {
+      id: 'b1821467-984b-4f25-820b-9a62a370bd7b',
+      description: 'From Bridge Leading to Village grace, head north to reach Church District Highroad grace.',
+      tags: [OPTIONAL, YMIR, QUEELIGN, JOLAN, FORAGER]
+    },
+    {
       id: '9fd2dd74-51a0-4705-9f35-253079e99cee',
-      description: 'From Bridge Leading to Village grace, go north, then west, then south, to reach the Cathedral of Manus Metyr grace',
-      tags: [OPTIONAL, YMIR]
+      description: 'From Church District Highroad grace, go south to reach the Cathedral of Manus Metyr grace',
+      tags: [OPTIONAL, YMIR, JOLAN]
     },
     {
       id: '2da2234e-1d10-4e71-8a71-2df90e5de41c',
@@ -307,26 +317,26 @@ const list = {
     {
       id: '130cdf49-2e71-44d1-a414-57afc58d6bd0',
       description: 'From Church District Highroad grace head west and enter Shadow Keep through the Church District Entrance',
-      tags: [OPTIONAL]
+      tags: [OPTIONAL, QUEELIGN, JOLAN]
     },
     {
       id: '2e5f319e-2f05-4f16-b90c-084dfc1b2861',
       description: 'Drain the water from the Church District using the lever: parkour through the roofs sticking to the right side, then drop down inside the church, then go left through the first archway with giant bats.',
-      tags: [OPTIONAL]
+      tags: [OPTIONAL, QUEELIGN, JOLAN]
     },
     {
       id: 'adcdd0cb-d347-4c5e-876d-8866a28746c4',
-      description: `Get an Iris of Occultation: In the Church District, defeat the second Ulcerated Tree Spirit, the one that does not spawn hear the dead tree. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381818" target="_blank">Location</a>`,
+      description: `Get an Iris of Occultation: In the Church District, defeat the second Ulcerated Tree Spirit, the one that does not spawn near the dead tree. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381818" target="_blank">Location</a>`,
       tags: [QUEELIGN, JOLAN]
     },
     {
       id: 'e6f3c2f6-aac0-448b-baf8-8214aaae162f',
       description: 'Reach Tree Worship Passage grace: from the Church District enter the church from the ground floor and stick to the right side until finding a passage and an elevator',
-      tags: [OPTIONAL]
+      tags: [OPTIONAL, QUEELIGN, JOLAN]
     },
     {
       id: "09da374c-4156-434f-a7ef-6be551a8dd18",
-      description: `Get the Iris of Grace at the altar to Marika above Tree-Worship Sanctum`,
+      description: `Get the Iris of Grace at the altar to Marika near Tree-Worship Sanctum grace`,
       tags: [QUEELIGN, JOLAN]
     },
     {
@@ -346,7 +356,7 @@ const list = {
     },
     {
       id: 'a7dfc66d-e6c1-4829-92cf-59c66955b6c7',
-      description: 'Get the Iris of Grace in the Shadow Keep: the the opposite side of the hallway where the West Rampart grace is located',
+      description: 'Get the Iris of Grace in the Shadow Keep: in the opposite side of the hallway where the West Rampart grace is located',
       tags: [QUEELIGN, JOLAN]
     },
     {
@@ -367,12 +377,12 @@ const list = {
     {
       id: 'd3d06756-f54a-49e3-a129-49a7d1e8d20a',
       description: 'Reach the Storehouse, Loft Site of Grace: from the Storehouse, Back Section grace go up the ladder, then up the staircase to the right. There will be a bookshelf immediately on the right side. Walk to the right of the bookshelf and go through the hole in the wall.',
-      tags: [OPTIONAL]
+      tags: [OPTIONAL, YMIR, JOLAN]
     },
     {
       id: 'dfc583ff-b709-4c5c-9e65-14ef53ae4962',
       description: 'Reach the Shadow Keep, Back Gate Site of Grace: from the Storehouse, Loft Site of Grace go up the elevator, walk through the beams until reaching a cogwheel with an item and a Giant Bat. Drop down the cogwheel, then to the beam next to it and then down to the nearest platform. Go outside and take the elevator down.',
-      tags: [OPTIONAL]
+      tags: [OPTIONAL, YMIR, JOLAN]
     },
     // "CERULEAN COAST (SOUTHERN SHORE)
     // Recommended Scadutree Blessing Rank: 10~ Revered Spirit Ash Blessing: 7~"
@@ -543,7 +553,7 @@ const list = {
     },
     {
       "id": "d6958137-42ab-49c7-8ac9-4bb121a89241",
-      "description": `Defeat Golden Hippopotamus. It's weak to fire and lightning and strong vs bleed and frost (this boss might be optional, to be confirmed)`,
+      "description": `Defeat Golden Hippopotamus if you didn't. It's weak to fire and lightning and strong vs bleed and frost (this boss might be optional, to be confirmed)`,
       "tags": []
     },
     {
@@ -671,7 +681,7 @@ const list = {
     // TODO
     {
       "id": "159441c0-bca6-4cf4-8cf0-bf9f1cf8447c",
-      "description": `Optionally, you can summon either Hornsent or Jolan (if you progressed her questline to the point where he gives you some praise) to fight Messmer the Impaler, their summon signs are inside the arena, within the circular room, near the entrance: Hornsent's to the right and Jolan's to the left. If you use one summon sign, the other will disappear. Note that you cannot summon Jolan if you progress her and Ymir's questline further. If you do not summon Hornsent, he will not invade in the Ruins of Rauh and he will attack you in the NPC battle in Enir-Ilim.`,
+      "description": `Optionally, you can summon either Hornsent or Jolan (if you progressed her questline to the point where she gives you some praise) to fight Messmer the Impaler, their summon signs are inside the arena, within the circular room, near the entrance: Hornsent's to the right and Jolan's to the left. If you use one summon sign, the other will disappear. Note that you cannot summon Jolan if you progress her and Ymir's questline further. If you do not summon Hornsent, he will not invade in the Ruins of Rauh and he will attack you in the NPC battle in Enir-Ilim.`,
       "tags": [
         HORNSENT,
         JOLAN
@@ -704,11 +714,11 @@ const list = {
       description: `If you did not help Hornsent in the fight against Leda (you helped Leda or skipped the fight) and you summoned Hornsent against Messmer (don't know if that's required), return to the First Floor Storeroom where Ansbach was to find a pair of summon signs for a fight between Leda and Ansbach. If you help Leda, you will get Ansbach items and you will be locked out of his questline (not recommended). If you help Ansbach, you get Ansbach's Longbow and Leda's Rune`,
       tags: [ANSBACH, LEDA]
     },
-       //     "HINTERLANDS
+    //     "HINTERLANDS
     // Recommended Scadutree Blessing Rank: 13~ Revered Spirit Ash Blessing: 6~"
     {
       "id": "9e10b874-f3cb-433e-b168-a75e1d0aa527",
-      "description": `Access the Hinterlands by using "O, Mother" gesture in front of Marika's Altar next to Shadow Keep, Back Gate`,
+      "description": `Access the Hinterlands by using "O, Mother" gesture in front of Marika's Altar next to the Shadow Keep, Back Gate grace`,
       "tags": [
         YMIR,
         JOLAN

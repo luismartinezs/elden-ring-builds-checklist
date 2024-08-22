@@ -99,7 +99,7 @@ function Settings() {
       </div>
       <p className="w-full text-left text-stone-300">
         Filters apply to <em>all</em> checklists of the <em>selected</em>{" "}
-        profile
+        profile. All Rem. = All Remembrances
       </p>
       <div className="flex items-center gap-2">
         <div className="my-4 flex flex-wrap items-center gap-1">

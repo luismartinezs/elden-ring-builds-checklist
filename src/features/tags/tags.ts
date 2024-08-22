@@ -150,7 +150,7 @@ export const tags: Record<TTagKeys, {
     ]
   },
   [TAGS.ALL_REMEMBERANCES]: {
-    label: 'All Remembrances',
+    label: 'All Rem.',
     key: TAGS.ALL_REMEMBERANCES,
     buttonClasses: 'border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black focus:ring-amber-400',
     tagClasses: 'bg-amber-400 text-black',
@@ -321,7 +321,7 @@ export const tags: Record<TTagKeys, {
     label: 'Ansbach',
     key: TAGS.ANSBACH,
     buttonClasses: 'border-orange-200 text-orange-200 hover:bg-orange-200 hover:text-black focus:ring-orange-200',
-    tagClasses: 'bg-orange-200 text-orange-900',
+    tagClasses: 'bg-orange-200 text-gray-900',
     questlineRewards: [
     ]
   },
@@ -329,7 +329,7 @@ export const tags: Record<TTagKeys, {
     label: 'Thiollier',
     key: TAGS.THIOLLIER,
     buttonClasses: 'border-purple-300 text-purple-300 hover:bg-purple-300 hover:text-black focus:ring-purple-300',
-    tagClasses: 'border border-purple-500 bg-purple-900 text-purple-100 -m-px',
+    tagClasses: 'border border-purple-500 bg-purple-300 text-gray-800 -m-px',
     questlineRewards: [
     ]
   },
@@ -337,7 +337,7 @@ export const tags: Record<TTagKeys, {
     label: 'Queelign',
     key: TAGS.QUEELIGN,
     buttonClasses: 'border-red-300 text-red-300 hover:bg-red-300 hover:text-black focus:ring-red-300',
-    tagClasses: 'bg-red-300 text-red-900',
+    tagClasses: 'bg-red-300 text-gray-800',
     questlineRewards: [
       "Crusade Insignia",
       "Ash of War: Flame Skewer",
@@ -357,7 +357,7 @@ export const tags: Record<TTagKeys, {
     label: 'Igon',
     key: TAGS.IGON,
     buttonClasses: 'border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-black focus:ring-orange-500',
-    tagClasses: 'border border-orange-500 bg-orange-900 text-orange-100 -m-px',
+    tagClasses: 'border border-orange-700 bg-orange-900 text-orange-100 -m-px',
     questlineRewards: [
     ]
   },
@@ -365,7 +365,7 @@ export const tags: Record<TTagKeys, {
     label: 'Foragers',
     key: TAGS.FORAGER,
     buttonClasses: 'border-red-600 text-red-600 hover:bg-red-600 hover:text-black focus:ring-red-600',
-    tagClasses: 'border border-red-200 bg-red-600 text-white -m-px',
+    tagClasses: 'bg-red-300 text-gray-800',
     questlineRewards: [
     ]
   },
@@ -391,12 +391,12 @@ export const tags: Record<TTagKeys, {
     label: 'Dragon Priestess',
     key: TAGS.DRAGON_PRIESTESS,
     buttonClasses: 'border-rose-300 text-rose-300 hover:bg-rose-300 hover:text-black focus:ring-rose-300',
-    tagClasses: 'bg-rose-300 text-rose-900',
+    tagClasses: 'bg-rose-300 text-gray-800',
     questlineRewards: [
     ]
   },
   [TAGS.MAP_FRAGMENT]: {
-    label: 'Map Fragments',
+    label: 'Maps',
     key: TAGS.MAP_FRAGMENT,
     buttonClasses: 'border-amber-300 text-amber-300 hover:bg-amber-300 hover:text-black focus:ring-amber-300',
     tagClasses: 'bg-amber-300 text-amber-900',

@@ -171,7 +171,7 @@ export const items = [
   },
   {
     id: '1e158447-b964-481d-a85f-ced438fb45a5',
-    description: 'Defeat Leonine Misbegotten, the boss of Castle Morne (Weeping Peninsula)',
+    description: 'Defeat Leonine Misbegotten, the boss of Castle Morne (Weeping Peninsula). It is strong vs magic, holy and lightning, and weak vs slash and fire',
     tags: [HYETTA_QUESTLINE]
   },
   {
@@ -237,7 +237,7 @@ export const items = [
   // STORMVEIL CASTLE L30-40 +3-4
   {
     id: '7aba047b-6da2-46ab-9f3a-0c5acf36e752',
-    description: 'Defeat Margit, the Fell Omen',
+    description: 'Defeat Margit, the Fell Omen. He\'s strong vs holy and weak to slash.',
     tags: [NGPLUS]
   },
   {
@@ -264,7 +264,7 @@ export const items = [
   },
   {
     id: 'b9690395-5806-49d1-85fb-89411478266b',
-    description: 'Beat Godrick in Stormhill Castle (or alternatively beat any one of the other Shardbearers: Radahn, Rykard, or Rennala)',
+    description: 'Beat Godrick in Stormhill Castle (or alternatively beat any one of the other Shardbearers: Radahn, Rykard, or Rennala). Godrick is strong vs holy and weak vs standard, slash, strike and pierce.',
     tags: [NGPLUS]
   },
   {
@@ -441,7 +441,7 @@ export const items = [
   },
   {
     id: '0f198bb6-04cf-4f22-be36-15cb2e10fd95',
-    description: 'Defeat the Grafted Scion',
+    description: 'Defeat the Grafted Scion. Grafted Scions are strong vs magic, fire, lightning and holy, and weak to slash, bleed and frost. Receive a lot of damage from healing incantations',
     tags: [NEPHELI_QUESTLINE, VARRE_QUESTLINE]
   },
   {
@@ -499,7 +499,7 @@ export const items = [
   },
   {
     id: '054a08f7-70ba-4ede-a188-b3a286808cb5',
-    description: 'Beat Red Wolf of Radagon in Raya Lucaria',
+    description: 'Beat Red Wolf of Radagon in Raya Lucaria. It\'s string vs magic, bleed and frost, and weak vs slash',
     tags: [NGPLUS]
   },
   {
@@ -525,7 +525,7 @@ export const items = [
   },
   {
     id: 'd7a3f9a6-f5d8-4c2e-85fc-102a3bdeb792',
-    description: "Beat Rennala. Or, just for game progression (excluding quests), beat any one of the other remaining Shardbearers that you didn't defeat yet: Godrick, Radahn, or Rykard.",
+    description: "Beat Rennala. Or, just for game progression (excluding quests), beat any one of the other remaining Shardbearers that you didn't defeat yet: Godrick, Radahn, or Rykard. Rennala is very strong vs magic, strong vs all status effects, and weak vs standard, slash and pierce",
     tags: [ALWAYS_SHOW, NGPLUS, SELLEN_QUESTLINE]
   },
   // LIURNIA EAST 50-60 +4-6
@@ -549,7 +549,7 @@ export const items = [
   },
   {
     id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
-    description: 'Beat Loretta in Caria Manor',
+    description: 'Beat Royal Knight Loretta in Caria Manor. She is strong vs magic and fire, and weak vs lightning',
     tags: [RANNI_QUESTLINE, SELLEN_QUESTLINE]
   },
   {
@@ -598,7 +598,7 @@ export const items = [
   },
   {
     id: '2d87bde3-61d2-4991-896f-d53d17123d86',
-    description: 'Beat Ancestor Spirit in Siofra river, which you can access through the Siofra Well in Mistwood',
+    description: 'Beat Ancestor Spirit in Siofra river, which you can access through the Siofra Well in Mistwood. It\'s strong vs magic and status effects, and weak vs fire and holy',
     tags: [OPTIONAL, NGPLUS]
   },
 
@@ -657,7 +657,7 @@ export const items = [
       },
       {
         id: 'feed873b-be6b-4af0-a653-cc0947166ac4',
-        description: 'B) Through the Ruin-Strewn Precipice after defeating Magma Wyrm Makar. Accessible going north past the Bellum church, north of the path toward the Dectus Lift from the Main Academy Gate site of grace',
+        description: 'B) Through the Ruin-Strewn Precipice after defeating Magma Wyrm Makar. Accessible going north past the Bellum church, north of the path toward the Dectus Lift from the Main Academy Gate site of grace. Magma Wyrm Makar is very strong vs fire, strong vs frost and weak vs standard, strike, pierce and sleep',
         tags: [NGPLUS],
       },
       {
@@ -800,7 +800,7 @@ export const items = [
   },
   {
     id: 'be885107-017a-44a5-a6c0-3c911e0c15de',
-    description: "Defeat Commander O'Neil, located in the Swamp of Aeonia (central Caelid). He will drop the Unalloyed Gold Needle. You can cheese O'Neil by sneaking behind him and repeatedly casting Posion Mist (FAI 12)",
+    description: "Defeat Commander O'Neil, located in the Swamp of Aeonia (central Caelid). He will drop the Unalloyed Gold Needle. You can cheese O'Neil by sneaking behind him and repeatedly casting Posion Mist (FAI 12). He is strong vs slash, immune to scarlet rot, and weak to pierce",
     tags: [MILLICENT_QUESTLINE]
   },
   {
@@ -830,7 +830,7 @@ export const items = [
   },
   {
     id: '7d2912a9-f6d1-45a1-bdb6-36ba9a63f0c6',
-    description: 'Radahn Festival should be active now, and you can defeat Starscourge Radahn',
+    description: 'Radahn Festival should be active now, and you can defeat Starscourge Radahn. He is strong vs hoy and sleep, and weak vs pierce and scarlet rot',
     tags: [OPTIONAL, RANNI_QUESTLINE, ALEXANDER_QUESTLINE, NGPLUS, ALL_REMEMBERANCES, SELLEN_QUESTLINE]
   },
   {
@@ -892,12 +892,12 @@ export const items = [
   },
   {
     id: '4b183117-666d-4d64-9f51-2484e0f1d764',
-    description: 'Beat Regal Ancestor Spirit in Siofra river, the part reachable after beating Mimic Tear (Nokron)',
+    description: 'Beat Regal Ancestor Spirit in Siofra river, the part reachable after beating Mimic Tear (Nokron). It is strong vs magic and status effects, and weak vs fire and holy',
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   {
     id: '03c2239f-0006-40d2-ac76-4fa27340b5a7',
-    description: 'Beat Valiant Gargoyles in Siofra Aqueduct, and access Deeproot Depths through the coffin in their arena',
+    description: 'Beat Valiant Gargoyles in Siofra Aqueduct, and access Deeproot Depths through the coffin in their arena. They are strong vs slash, pierce, fire, lightning, holy and status effects, and weak vs strike',
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   // DEEPROOT DEPTHS 80-90 +15-20
@@ -1088,7 +1088,7 @@ export const items = [
   },
   {
     id: 'a5318288-6ea7-49dd-bd82-1b59456cfc4b',
-    description: "Defeat Godskin Noble in the Temple of Eiglay (Volcano Manor) to get the Serpent's Amnion",
+    description: "Defeat Godskin Noble in the Temple of Eiglay (Volcano Manor) to get the Serpent's Amnion. He is strong vs fire, holy and strike, and weak vs slash, bleed and sleep. Sleep pots are extremely effective to incapacitate him.",
     tags: [RYA_QUESTLINE]
   },
   {
@@ -1187,7 +1187,7 @@ export const items = [
   },
   {
     id: '5e0dd977-dfcc-4a9f-8604-b6d7b303a6b2',
-    description: 'Go to Dominula, Windmill Village (East of the "Road of Iniquity Side Path" Site of Grace. Follow the main path southeast, then bend east), and defeat the Godskin Apostle. You can summon Millicent for this battle',
+    description: 'Go to Dominula, Windmill Village (East of the "Road of Iniquity Side Path" Site of Grace. Follow the main path southeast, then bend east), and defeat the Godskin Apostle. You can summon Millicent for this battle. The Godskin Apostle is strong vs fire and holy, and weak vs slash, bleed and sleep',
     tags: [MILLICENT_QUESTLINE]
   },
   {
@@ -1223,7 +1223,7 @@ export const items = [
   },
   {
     id: 'c399c03e-adbf-4d14-b993-d207677089a8',
-    description: 'Beat Draconic Tree Sentinel to access Leyndell',
+    description: 'Beat Draconic Tree Sentinel to access Leyndell. He is strong vs slash, fire, lightning, bleed and frost, and weak vs standard, strike and pierce',
     tags: [NGPLUS]
   },
   // LEYNDELL 90-110 +15-20
@@ -1440,7 +1440,7 @@ export const items = [
   },
   {
     id: '76b7e4a0-77f3-4f48-a55e-ba59bce9cb2d',
-    description: 'Defeat Astel, Naturalborn of the Void',
+    description: 'Defeat Astel, Naturalborn of the Void. It is strong vs magic, fire, lightning, holy and frost, and weak vs standard, slash, strike and pierce',
     tags: [RANNI_QUESTLINE, ALL_REMEMBERANCES]
   },
   {
@@ -1491,7 +1491,7 @@ export const items = [
   },
   {
     id: 'ca3d9a16-b81b-4be1-bb69-b7a3a704e862',
-    description: 'Beat Godfrey shade',
+    description: 'Beat Godfrey, First Elden Lord (Golden Shade). He is strong vs holy, and weak vs pierce and lightning',
     tags: [NGPLUS]
   },
   {
@@ -1533,7 +1533,7 @@ export const items = [
   },
   {
     id: 'aed334cf-8397-453c-87d5-16922af7c955',
-    description: 'Defeat Morgott, The Omen King, the interact with with the Erdtree to activate the Grace',
+    description: 'Defeat Morgott, The Omen King, the interact with with the Erdtree to activate the Grace. Morgott is strong vs holy and sleep, and weak vs slash and lightning',
     tags: [NGPLUS]
   },
   {
@@ -1673,7 +1673,7 @@ export const items = [
   },
   {
     id: '48a216e3-249c-4720-928a-e8faa7e34806',
-    description: 'Defeat Rykard, Lord of Blasphemy',
+    description: 'Defeat Rykard, Lord of Blasphemy. He is very strong vs fire, and weak to standard, slash, pierce and frost',
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES, VOLCANO_MANOR_ASSASSINATION, PATCHES_QUESTLINE, RYA_QUESTLINE]
   },
   {
@@ -1729,13 +1729,13 @@ export const items = [
   },
   {
     id: '1c79f7d4-5078-4503-8587-0c8190959121',
-    description: 'Defeat Fire Giant',
+    description: 'Defeat Fire Giant. He is strong vs fire and frost, and weak vs slash. Because of his huge health bar, percentage based damage is recommended: bleed, poison, scarlet rot and weapons like the Black Knife. You can summon Torrent for this fight',
     tags: [NGPLUS]
   },
   // BEFORE BURNING ERDTREE
   {
     id: 'cf171be4-c5f4-4149-b71f-a4c6c6d9efef',
-    description: 'Defeat Mohg, the Omen down the Leyndell Sewers, then attack the alter behind the chest to reveal a secret area',
+    description: 'Defeat Mohg, the Omen down the Leyndell Sewers, then attack the alter behind the chest to reveal a secret area. He is very strong vs fire, strong vs status effects, and weak vs standard, slash, strike, and pierce',
     tags: [HYETTA_QUESTLINE]
   },
   {
@@ -1761,7 +1761,7 @@ export const items = [
   },
   {
     id: 'b7edec68-9875-4eb4-b4cc-e967333caebd',
-    description: "To fight Fortissax, progress Ranni's quest until receiving the Carian Inverted Statue. Use the statue in the Divine Tower of Liurnia, reach the top, get the Cursemark of Death and give it to Fia. Reload the area and inspect her dream",
+    description: "To fight Lichdragon Fortissax, progress Ranni's quest until receiving the Carian Inverted Statue. Use the statue in the Divine Tower of Liurnia, reach the top, get the Cursemark of Death and give it to Fia. Reload the area and inspect her dream. It is strong vs lightning and holy, and weak vs pierce",
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   // MOHGWYN PALACE 110-140 +20-24
@@ -1789,7 +1789,7 @@ export const items = [
   },
   {
     id: 'd01f819f-3b97-4551-9b08-1e6282f76552',
-    description: 'Get Haligtree Secret Medallion (Right) from Castle Sol in Mountaintops of the Giants',
+    description: 'Get Haligtree Secret Medallion (Right) from Castle Sol in Mountaintops of the Giants. To reach it, you will have to defeat Commander Niall. He is strong vs slash and weak to pierce',
     tags: [OPTIONAL, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, NGPLUS, ALL_REMEMBERANCES]
   },
   // CONSECRATED SNOWFIELD 100-120 +20-24
@@ -1832,10 +1832,15 @@ export const items = [
   },
   {
     id: 'a38284d6-48d6-46f8-a9b3-5ddc7394ec72',
-    description: "Reach Mohgwyn Palace either from Varre's quest or from Consecrated Snowfield and beat Mohg. Beforehand, it would be useful to get the Purifying Crystal Tear first from killing Eleonora, Violet Bloody Finger at the Second Church of Marika in Altus Plateau. If Eleonora does not invade, follow Yura's questline",
+    description: "Reach Mohgwyn Palace either from Varre's quest or from Consecrated Snowfield and beat Mohg, Lord of Blood. Beforehand, it would be useful to get the Purifying Crystal Tear first from killing Eleonora, Violet Bloody Finger at the Second Church of Marika in Altus Plateau. If Eleonora does not invade, follow Yura's questline. Mohg is very strong vs fire, and weak vs standard, slash, strike, pierce and bleed",
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   // MIQUELLA'S HALIGTREE 120-150 +25
+  {
+    id: "2554253d-5e49-4380-9f56-83ba0e134b66",
+    description: "Progress through Miquella's Haligtree and defeat Loretta, Knight of the Haligtree. She is strong vs magic, fire, bleed and frost, and weak vs lightning",
+    tags: [OPTIONAL, NGPLUS]
+  },
   {
     id: '37fd75e6-f278-457b-8f48-7983d33d39d2',
     description: 'Get Seedbed Curse (until you get 5) from Elphael, Brace of the Haligtree: From the Prayer Room Grace, head forwards until the end of stairs with two crossbowman above you. Jump on to the arch to the right and hop on to the platform to the left with the Crimson Teardrop Scarab. To the left should be a room with a Cleanrot Knight and a chest containing Cleanrot Knight Finlay Ashes. Hop onto the arch to the north-west and follow it up to a balcony. Follow the balcony to its end and the item will be found on a body sitting in a chair above the ballistae and the Putrid Avatar',
@@ -1878,12 +1883,12 @@ export const items = [
   },
   {
     id: '0d3d7ba1-a092-40fd-80dd-980bca710bdf',
-    description: "Return to Gowry in Gowry's Shack. If he is alive, talk to him and kill him to get the Flock's Canvas Talisman and Gowry's Bell Bearing (might need to do defeat Malenia before, I'm not sure)",
+    description: "Return to Gowry in Gowry's Shack. If he is alive, talk to him and kill him to get the Flock's Canvas Talisman and Gowry's Bell Bearing (might need to defeat Malenia before, I'm not sure)",
     tags: [MILLICENT_QUESTLINE]
   },
   {
     id: '81fc1668-21af-4a10-acfb-34ed93c8a115',
-    description: 'Defeat Malenia, Blade of Miquella',
+    description: "Defeat Malenia, Blade of Miquella. She is strong vs holy, poison and scarlet rot, and weak vs fire, bleed and frost. To avoid Waterfowl Dance, stay at a distance. When she goes into the air, throw a frost pot at her to disrupt the attack. Otherwise, run away, after the second slash, stop running and roll toward her. There are other ways to avoid this attack (particularly if you're close to her) like Bloodhound Step ash of war or Vow of the Indomitable. To avoid Scarlet Aeonia, if she is not very far, the easiest way is to lock off, run toward her and past her, and then run to one side so she does not have enough time to turn around and misses you. For Phantom Spirits, roll backwards twice, then roll forward twice, then roll to the left twice, following the timing of the attacks.",
     tags: [OPTIONAL, MILLICENT_QUESTLINE, NGPLUS, ALL_REMEMBERANCES]
   },
   {
@@ -1909,7 +1914,7 @@ export const items = [
   },
   {
     id: '24a9bc62-996a-4efe-9cfd-f37760e1e658',
-    description: 'Beat Godskin Duo',
+    description: 'Beat Godskin Duo. Summoning Knight Bernahl, if available, makes this fight relatively easy. Otherwise, Sleep Pots are extremely effective. They are strong vs strike, fire and holy, and weak to slash, sleep and bleed.',
     tags: [NGPLUS]
   },
   {
@@ -1961,7 +1966,7 @@ export const items = [
   },
   {
     id: '9d441ec1-1981-4333-8433-8f0391e3873c',
-    description: 'Beat Placidusax',
+    description: "Beat Dragonlord Placidusax. It is weak to pierce and strong vs everything else. Since it is large, spells such as Pest Threads, Ancient Dragons' Lightning Strike and Shard Spiral, and skills such as Black Flame Tornade, are very effective.",
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   {
@@ -1971,7 +1976,7 @@ export const items = [
   },
   {
     id: '4b29d14f-ec7a-4729-a457-5af706963d61',
-    description: 'Defeat Maliketh, The Black Blade',
+    description: 'Defeat Maliketh, The Black Blade. He is strong vs holy and sleep, and weak vs standard, slash, strike and pierce. The item Blasphemous Claw  lets you do a special kind of parry on Maliketh, on two of his attacks: Black Blade attack (indicated by white aura around sword) and vertical double-spin attack. Blasphemous Claw is dropped by Recusant Bernahl upon defeat at Crumbling Farum Azula',
     tags: [NGPLUS]
   },
   {
@@ -1992,17 +1997,17 @@ export const items = [
   // LEYNDELL, CAPITAL OF ASH 120-180 +25
   {
     id: '065851a5-2baf-4466-8c3c-1125d38d09f4',
-    description: 'Beat Gideon',
+    description: 'Beat Sir Gideon Ofnir, The All-Knowing. He is strong vs magic and weak vs strike, pierce, lightning, sleep and madness',
     tags: [NGPLUS]
   },
   {
     id: '48d7b453-e4da-4266-a59c-44836c771598',
-    description: 'Beat Godfrey',
+    description: 'Beat Godfrey, First Elden Lord and Hoarah Loux, Warrior. He is strong vs holy and sleep, and weak vs pierce and lightning (phase 1) and slash (phase 2)',
     tags: [NGPLUS]
   },
   {
     id: '80046f4a-f025-428e-9381-b08df9088402',
-    description: 'Beat Radagon and Elden Beast',
+    description: 'Beat Radagon of the Golden Order and Elden Beast. Radagon is strong vs holy, immune to bleed, and weak vs strike and fire. Elden Beast is strong vs holy, immune to status effects, and weak to physical damage. You can summon Torrent for the fight against Elden Beast',
     tags: [NGPLUS]
   },
   {
@@ -2189,7 +2194,7 @@ export const items = [
     items: [
       {
         id: 'fc400bd0-00f0-4e1b-873e-eac45d4528b2',
-        description: 'Can be obtained from a chest in a room underneath the massive skeleton and throne at Ainsel River, near the Dragonkin Soldier of Nokstella site of grace. This area is reachable by taking the lift down, located north of the Divine Tower of Liurnia',
+        description: 'Can be obtained from a chest in a room underneath the massive skeleton and throne at Ainsel River, near the Dragonkin Soldier of Nokstella site of grace. This area is reachable by taking the lift down, located north of the Divine Tower of Liurnia. Dragonkin Soldier of Nokstella is strong vs lightning and frost, and weak to slash',
         tags: [OPTIONAL, NGPLUS]
       },
       {

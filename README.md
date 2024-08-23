@@ -69,7 +69,7 @@ This is to make it easier to play the game without having to look up guides cons
   - [ ] ghost gloveworts to SotE
 - [x] add share button to all pages (it copies url to clipboard)
 - [ ] ER improvements
-  - [ ] weaknesses and resistances for base game bosses
+  - [x] weaknesses and resistances for base game bosses
   - [ ] memory stones
   - [ ] legendary items
   - [ ] check of the remaining side quests which ones i should add, and add them

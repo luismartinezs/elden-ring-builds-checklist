@@ -19,7 +19,7 @@ export default function DebugPage() {
     <>
       <p>This page exists only for debugging purposes</p>
       <p>
-        If you're here and you're not a dev, it's an accident, go back to the{" "}
+        If you&apos;re here and you&apos;re not a dev, it&apos;s an accident, go back to the{" "}
         <Link href="/">home page</Link>
       </p>
       <p>Duplicate ids (there should be nothing here):</p>

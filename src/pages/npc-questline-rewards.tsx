@@ -10,7 +10,7 @@ import { useIsClient } from "usehooks-ts";
 import { SectionWrapper } from "~/components/SectionWrapper";
 import Head from "next/head";
 import { SOTE_TAGS } from "~/features/tags";
-import { TTagValue } from "~/features/tags/tags";
+import type { TTagValue } from "~/features/tags/tags";
 
 function Reward({ reward }: { reward: string }) {
   return <span className="whitespace-normal">{reward}</span>;

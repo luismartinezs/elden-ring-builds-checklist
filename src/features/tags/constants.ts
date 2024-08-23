@@ -1,4 +1,4 @@
-import { ValueOf } from "~/types";
+import type { ValueOf } from "~/types";
 
 // src/constants/tags.ts
 export const TAGS = {

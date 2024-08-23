@@ -68,4 +68,5 @@ export const SOTE_TAGS: Array<ValueOf<typeof TAGS>> = [
   TAGS.DRAGON_PRIESTESS,
   TAGS.FORAGER,
   TAGS.MAP_FRAGMENT,
+  TAGS.ANSBACH
 ];

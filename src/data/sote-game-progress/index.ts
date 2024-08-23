@@ -8,9 +8,11 @@ const list = {
   title: "Shadow of the Erdtree",
   tags: ['new'],
   notes: [
-    `Update 23-8: Added tags to intermediate steps of NPC questlines. Please, provide feedback if you see mistakes`,
+    `Update 23-8: Added tags to intermediate steps of NPC questlines. Added tags for dungeons. Added somber and regular ancient dragon smithing stones under the "optional" tag.`,
     `Recommended for second playthroughs.`,
-    'You might need to toggle on/off new filters for them to work.'
+    'You might need to toggle on/off new filters for them to work.',
+    'Please let me know if you see any errors.',
+    'Note (23-8): I fixed a bug that might have caused a small number of steps to become unchecked if you had checked them.',
   ],
   items: [
     {
@@ -105,14 +107,19 @@ const list = {
       tags: [DUNGEON]
     },
     {
+      id: '8625a916-524c-444b-a150-7e4542b4b731',
+      description: 'North of the Three-Path Cross grace, in the lake, defeat the Ghostflame Dragon to get a Somber Ancient Dragon Smithing Stone',
+      tags: [OPTIONAL]
+    },
+    {
       id: '441c3860-dcb0-42f7-87e8-adf49680dc2c',
       description: 'From the Three-Path Cross grace, head north east across the Ellac Greatbridge and activate the Castle Front grace',
       tags: []
     },
     {
-      id: '441c3860-dcb0-42f7-87e8-adf49680dc2c',
-      description: 'From the Castle Front grace head southeast, taking the right side path and hugging the right side, to find the entrance to the Ruined Forge Lava Intake',
-      tags: [DUNGEON]
+      id: '4184eb8f-4a55-4600-978d-289f355f0338',
+      description: 'From the Castle Front grace head southeast, taking the right side path and hugging the right side, to find the entrance to the Ruined Forge Lava Intake. Interact with the furnace to obtain an Ancient Dragon Smithing Stone',
+      tags: [DUNGEON, OPTIONAL]
     },
     {
       id: '16d7fc13-f609-420d-8efe-e0049fa51f0d',
@@ -130,6 +137,11 @@ const list = {
       tags: [OPTIONAL, ANSBACH, FORAGER, THIOLLIER, IGON, DRAGON_PRIESTESS, DUNGEON]
     },
     {
+      id: '8205e138-aaf9-4bf6-a411-4b5e634ea5d4',
+      description: 'From the Pillar Path Waypoint grace take the path that goes uphill and go south to reach the Supressing Pillar and find an Ancient Dragon Smithing Stone',
+      tags: [OPTIONAL]
+    },
+    {
       id: '64674ade-ccd9-4ed0-b3e4-0a3a43beb752',
       description: 'Speak to Igon near the Pillar Path Waypoint Grace. Leave and come back to speak to him again.',
       tags: [IGON]
@@ -138,6 +150,11 @@ const list = {
       id: '27efa65e-87b2-4724-8ce3-702b7d07d540',
       description: "Head south an down from the Pillar Path Waypoint grace to reach the Dragon's Pit grace",
       tags: [OPTIONAL, ANSBACH, FORAGER, DRAGON_PRIESTESS, THIOLLIER, DUNGEON]
+    },
+    {
+      id: "aa2f88ea-9974-4b1f-8369-419081b8fc02",
+      description: "Kill the Magma Wyrm in the Dragon's Pit to get an Ancient Dragon Smithing Stone",
+      tag: [OPTIONAL]
     },
     // "CASTLE ENSIS
     // Recommended Scadutree Blessing Rank: 6~ Revered Spirit Ash Blessing: 6~"
@@ -166,6 +183,11 @@ const list = {
       id: "60e03341-dfba-459a-a715-cb3084b63608",
       description: `Pick up Map: Southern Shore. From the Cerulean Coast - Site of Grace, go directly north west`,
       tags: [MAP_FRAGMENT]
+    },
+    {
+      id: '94f70492-e36c-45e5-96a8-528cf6487299',
+      description: 'Defeat the Ghostflame Dragon found South of the Cerulean Coast Site of Grace to get a Somber Ancient Dragon Smithing Stone',
+      tags: [OPTIONAL]
     },
     {
       id: 'b2e273f6-dacb-4edb-9ab2-eb2d03415637',
@@ -236,8 +258,8 @@ const list = {
     },
     {
       id: '017687f5-d1e9-43fa-85b7-36a06aedcd1c',
-      description: 'From the Moorth Ruins go south east to find the Ruined Forge of Starfall Past',
-      tags: [DUNGEON]
+      description: 'From the Moorth Ruins go south east to find the Ruined Forge of Starfall Past. Interact with the furnace to obtain an Ancient Dragon Smithing Stone and the Ancient Meteoric Ore Greatsword',
+      tags: [DUNGEON, OPTIONAL]
     },
     {
       id: '5fff0e9f-825a-412f-85f1-c8366ccd9d3f',
@@ -263,8 +285,8 @@ const list = {
     },
     {
       id: 'c37c2ca9-5f16-4e31-b502-bfbb1df13511',
-      description: 'From the Ancient Ruins Base grace go north to reach Taylew\'s Ruined Forge',
-      tags: [DUNGEON]
+      description: 'From the Ancient Ruins Base grace go north to reach Taylew\'s Ruined Forge. Find two Ancient Dragon Smithing Stones within: one in the balcony just next the central platform, the other interacting with the furnace',
+      tags: [DUNGEON, OPTIONAL]
     },
     {
       id: 'f269bd87-59ff-4b06-b5b2-721c9991a35b',
@@ -315,6 +337,11 @@ const list = {
       id: "5546cdab-66e7-4365-a937-7fbba17ab8ac",
       description: "Get an Iris of Occultation: From the central hall in Fort Reprimand, drop down a hole and defeat the Horned Warrior.",
       tags: [QUEELIGN, JOLAN]
+    },
+    {
+      id: "b3ad5826-b588-4b15-9912-2695ab91ac6b",
+      description: "Defeat the Ghostflame Dragon in between the Moorth Highway and Fort Reprimand to get a Somber Ancient Dragon Smithing Stone",
+      tags: [OPTIONAL]
     },
     {
       id: '680b0170-fb0d-4af2-98f6-8ed7c3898545',
@@ -390,7 +417,7 @@ const list = {
       tags: [OPTIONAL, QUEELIGN, JOLAN]
     },
     {
-      id: 'a7dfc66d-e6c1-4829-92cf-59c66955b6c7',
+      id: '04dd86ea-ccdb-40d6-8493-1dad1ff05b24',
       description: 'Reach the Storehouse, First Floor grace in Shadow Keep. From the Storehouse, Back Section grace, jump down the platforms to the grace (the Storehouse, Back Section grace is reachable entering Shadow Keep through the Church District). Alternatively reach this grace by progressing through Shadow Keep from the main entrance in Scadu Altus.',
       tags: []
     },
@@ -542,9 +569,16 @@ const list = {
     },
     {
       "id": "e683fc3d-3a29-401f-91e9-3777ec3f28ba",
-      "description": `Defeat Ancient Dragon Senessax near the Jagged Peak Mountainside grace (not sure if this is needed to complete Igon's questline)`,
+      "description": `Defeat Ancient Dragon Senessax near the Jagged Peak Mountainside grace to get an Ancient Dragon Smithing Stone and a Somber Ancient Dragon Smithing Stone (not sure if this is needed to complete Igon's questline)`,
       "tags": [
-        IGON
+        IGON, OPTIONAL
+      ]
+    },
+    {
+      "id": "062575a3-e366-487c-83e0-ec64259dfe84",
+      "description": `From the Jagged Peak Mountainside Site of Grace, follow the path southwest and use the 2 spiritsprings to get to the elevated areas. Once you make it through the second spiritspring, turn around and drop down the area just below you, follow the path northeast and you'll find a Somber Ancient Dragon Smithing Stone on a corpse`,
+      "tags": [
+        OPTIONAL,
       ]
     },
     {
@@ -554,6 +588,14 @@ const list = {
         IGON,
         OPTIONAL,
         DRAGON_PRIESTESS
+      ]
+    },
+
+    {
+      "id": "06b72481-a02d-41ca-bb6c-cb3a55dc00c2",
+      "description": `Find an Ancient Dragon Smithing Stone next to 3 Skeletal Slimes on the way to Jagged Peak Summit Site of Grace [Map Link], just before the last spiritspring before the site of grace`,
+      "tags": [
+        OPTIONAL,
       ]
     },
     {
@@ -910,6 +952,11 @@ const list = {
       "id": "456ca81a-3d39-45af-b369-6cb295ce1f7e",
       "description": `Progress through Enir-Ilim to get the graces Enir-Ilim: Outer Wall, First Rise, Spiral Rise and Cleansing Chamber Anteroom, in this order, then find Needle Knight Leda, who will challenge you`,
       "tags": []
+    },
+    {
+      "id": "9a15a7ff-447b-497b-9b3a-f09f537a7a06",
+      "description": `Before the Cleansing Chamber Anteroom grace, there is a hallway with two enemies and an elevator in the center. Go down the elevator and down the stairs to find a Somber Ancient Dragon Smithing Stone`,
+      "tags": [OPTIONAL]
     },
     {
       "id": "260b7f4b-9385-4877-ab05-3f074875e2f1",

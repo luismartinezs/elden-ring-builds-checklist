@@ -1,13 +1,17 @@
 import type { TTagKeys } from "./types";
 import { TAGS } from "./constants";
 
-export const tags: Record<TTagKeys, {
+export type TTagValue = {
   label: string;
   key: TTagKeys;
   buttonClasses: string;
   tagClasses: string;
   questlineRewards?: string[];
-}> = {
+}
+
+export type TTags = Record<TTagKeys, TTagValue>
+
+export const tags: TTags = {
   [TAGS.OPTIONAL]: {
     label: 'Optional',
     key: TAGS.OPTIONAL,
@@ -278,13 +282,19 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-black focus:ring-orange-600',
     tagClasses: 'bg-orange-600 text-black',
   },
-  // DLC
+  // SOTE
   [TAGS.LEDA]: {
     label: 'Leda',
     key: TAGS.LEDA,
     buttonClasses: 'border-yellow-100 text-yellow-100 hover:bg-yellow-100 hover:text-black focus:ring-yellow-100',
     tagClasses: 'bg-yellow-100 text-yellow-900',
     questlineRewards: [
+      "Leda's Sword",
+      "Leda's Armor",
+      "If helping Hornsent: Ash of War: Swift Slash, Leda's Rune",
+      "If invading Hornsent: Falx, Caterpillar Mask, Braided Cord Robe, Braided Arm Wraps, Soiled Loincloth, Lacerating Crossed-Tree",
+      "If helping Sir Ansbach: Leda's Rune, Ansbach's Longbow",
+      "If invading Sir Ansbach: Wise Man's Mask, Ansbach's Attire, Ansbach's Manchettes, Ansbach's Boots, Retaliatory Crossed-Tree (This will end Ansbach's questline and lock you out of his final rewards)"
     ]
   },
   [TAGS.FREYJA]: {
@@ -293,6 +303,13 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-amber-200 text-amber-200 hover:bg-amber-200 hover:text-black focus:ring-amber-200',
     tagClasses: 'bg-amber-200 text-amber-900',
     questlineRewards: [
+      "Golden Lion Shield",
+      "Letter for Freyja",
+      "Freyja's Helm",
+      "Freyja's Armor",
+      "Freyja's Gauntlets",
+      "Freyja's Greaves",
+      "Freyja's Greatsword",
     ]
   },
   [TAGS.DANE]: {
@@ -315,6 +332,12 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-teal-300 text-teal-300 hover:bg-teal-300 hover:text-black focus:ring-teal-300',
     tagClasses: 'border border-teal-500 bg-teal-900 text-teal-100 -m-px',
     questlineRewards: [
+      "Verdigris Greatshield",
+      "Verdigris Helm",
+      "Verdigris Armor",
+      "Verdigris Gauntlets",
+      "Verdigris Greaves",
+      "Moore's Bell Bearing",
     ]
   },
   [TAGS.ANSBACH]: {
@@ -323,6 +346,15 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-orange-200 text-orange-200 hover:bg-orange-200 hover:text-black focus:ring-orange-200',
     tagClasses: 'bg-orange-200 text-gray-900',
     questlineRewards: [
+"Secret Rite Scroll",
+"Leda's Rune",
+"Wise Man's Mask",
+"Ansbach's Attire",
+"Ansbach's Manchettes",
+"Ansbach's Boots",
+"Obsidian Lamina",
+"Furious Blade of Ansbach",
+"Obsidian Lamina",
     ]
   },
   [TAGS.THIOLLIER]: {
@@ -331,6 +363,11 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-purple-300 text-purple-300 hover:bg-purple-300 hover:text-black focus:ring-purple-300',
     tagClasses: 'border border-purple-500 bg-purple-300 text-gray-800 -m-px',
     questlineRewards: [
+      "Thiollier's Hidden Needle",
+      "Thiollier's Garb",
+      "Thiollier's Gloves",
+      "Thiollier's Trousers",
+      "St. Trina's Smile",
     ]
   },
   [TAGS.QUEELIGN]: {
@@ -351,6 +388,12 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-cyan-300 text-cyan-300 hover:bg-cyan-300 hover:text-black focus:ring-cyan-300',
     tagClasses: 'border border-cyan-500 bg-cyan-900 text-cyan-100 -m-px',
     questlineRewards: [
+      "Falx",
+      "Caterpillar Mask",
+      "Braided Cord Robe",
+      "Braided Arm Wraps",
+      "Soiled Loincloth",
+      "If helping Hornsent fight Needle Knight Leda: Swift Slash, Leda's Rune"
     ]
   },
   [TAGS.IGON]: {
@@ -359,6 +402,13 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-black focus:ring-orange-500',
     tagClasses: 'border border-orange-700 bg-orange-900 text-orange-100 -m-px',
     questlineRewards: [
+      "Igon's Furled Finger",
+      "Igon's Greatbow",
+      "Igon's Helm",
+      "Igon's Armor",
+      "Igon's Gauntlets",
+      "Igon's Loincloth",
+      "Igon's Bell Bearing",
     ]
   },
   [TAGS.FORAGER]: {
@@ -375,6 +425,14 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-violet-700 text-violet-700 hover:bg-violet-700 hover:text-black focus:ring-violet-700',
     tagClasses: 'border border-violet-700 bg-violet-900 text-violet-100 -m-px',
     questlineRewards: [
+      "Beloved Stardust",
+      "Cerulean Seed Talisman +1",
+      "Ymir's Bell Bearing",
+      "Maternal Staff",
+      "High Priest Hat",
+      "High Priest Robe",
+      "High Priest Gloves",
+      "High Priest Undergarments",
     ]
   },
   [TAGS.JOLAN]: {
@@ -393,6 +451,8 @@ export const tags: Record<TTagKeys, {
     buttonClasses: 'border-rose-300 text-rose-300 hover:bg-rose-300 hover:text-black focus:ring-rose-300',
     tagClasses: 'bg-rose-300 text-gray-800',
     questlineRewards: [
+      "If given Thiollier's Concoction: Dragonbolt of Florissax, Ancient Dragon Florissax",
+      "If not given Thiollier's Concoction: Flowerstone Gavel, Priestess Heart"
     ]
   },
   [TAGS.MAP_FRAGMENT]: {

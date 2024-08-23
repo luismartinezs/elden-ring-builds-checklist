@@ -1,3 +1,5 @@
+import { ValueOf } from "~/types";
+
 // src/constants/tags.ts
 export const TAGS = {
   OPTIONAL: 'OPTIONAL',
@@ -51,3 +53,19 @@ export const EXTRA_TAGS = {
   NGPLUS: 'ng+',
   ALWAYS_SHOW: 'always-show', // I suspect this tag and NGPLUS might be doing the same thing
 }
+
+export const SOTE_TAGS: Array<ValueOf<typeof TAGS>> = [
+  TAGS.LEDA,
+  TAGS.FREYJA,
+  TAGS.MOORE,
+  TAGS.THIOLLIER,
+  TAGS.QUEELIGN,
+  TAGS.HORNSENT,
+  TAGS.IGON,
+  TAGS.DANE,
+  TAGS.YMIR,
+  TAGS.JOLAN,
+  TAGS.DRAGON_PRIESTESS,
+  TAGS.FORAGER,
+  TAGS.MAP_FRAGMENT,
+];

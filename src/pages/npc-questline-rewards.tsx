@@ -9,6 +9,8 @@ import Link from "next/link";
 import { useIsClient } from "usehooks-ts";
 import { SectionWrapper } from "~/components/SectionWrapper";
 import Head from "next/head";
+import { SOTE_TAGS } from "~/features/tags";
+import { TTagValue } from "~/features/tags/tags";
 
 function Reward({ reward }: { reward: string }) {
   return <span className="whitespace-normal">{reward}</span>;
@@ -53,9 +55,20 @@ function QuestlineItem({
 }
 
 function QuestlineRewardsPage() {
-  const tagsWithRewards = Object.values(TAGS)
+  const [tagsWithRewards, soteTagsWithRewards] = Object.values(TAGS)
     .map((tag) => tags[tag])
-    .filter((tag) => tag.questlineRewards?.length);
+    .filter((tag) => tag.questlineRewards?.length)
+    .reduce<[TTagValue[], TTagValue[]]>(
+      (accRewards, tag) => {
+        const isSote = !!SOTE_TAGS.includes(tag.key);
+        if (isSote) {
+          return [accRewards[0], [...accRewards[1], tag]];
+        } else {
+          return [[...accRewards[0], tag], accRewards[1]];
+        }
+      },
+      [[], []]
+    );
 
   if (tagsWithRewards.length === 0) {
     return <PageLayout>No available questlines</PageLayout>;
@@ -88,8 +101,21 @@ function QuestlineRewardsPage() {
             Fextralife Side Quests
           </Link>
         </Paragraph>
+        <Heading.H2>Elden Ring</Heading.H2>
         <ul className="flex flex-col gap-2">
           {tagsWithRewards.map((tag) => (
+            <li key={tag.key} className="border-b border-stone-600 py-2">
+              <QuestlineItem
+                filterTag={tag.key}
+                label={tag.label}
+                questlineRewards={tag.questlineRewards!}
+              />
+            </li>
+          ))}
+        </ul>
+        <Heading.H2 className="mt-10">Shadow of the Erdtree</Heading.H2>
+        <ul className="flex flex-col gap-2">
+          {soteTagsWithRewards.map((tag) => (
             <li key={tag.key} className="border-b border-stone-600 py-2">
               <QuestlineItem
                 filterTag={tag.key}

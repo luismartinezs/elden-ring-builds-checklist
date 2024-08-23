@@ -61,23 +61,23 @@ This is to make it easier to play the game without having to look up guides cons
 
 ## Roadmap
 
-- SotE improvements
-  - add missing NPC rewards
-  - improve SotE tags: add character tag to a step if that step is required for that character questline
-  - add dungeons to SotE
-  - add ancient stores and ghost gloveworts to SotE
-- add share button to all pages (it copies url to clipboard)
-- ER improvements
-  - weaknesses and resistances for base game bosses
-  - memory stones
-  - legendary items
-  - check of the remaining side quests which ones i should add, and add them
-- Growth
-  - Estimate cost of:
-    - domain name
-    - database and authentication
-  - Find someone who wants to be sponsor so I can work on that more and can offset the cost
-    - similar apps (e.g. fextralife, elden ring map)
-    - sponsors of elden ring youtubers eg lilaggy, vaait, etc
-  - if find sponsor that covers costs, build new features to grow site
-  - users can create their own checklists
+- [ ] SotE improvements
+  - [x] add missing NPC rewards
+  - [ ] improve SotE tags: add character tag to a step if that step is required for that character questline
+  - [ ] add dungeons to SotE
+  - [ ] add ancient stores and ghost gloveworts to SotE
+- [ ] add share button to all pages (it copies url to clipboard)
+- [ ] ER improvements
+  - [ ] weaknesses and resistances for base game bosses
+  - [ ] memory stones
+  - [ ] legendary items
+  - [ ] check of the remaining side quests which ones i should add, and add them
+- [ ] Growth
+  - [ ] Estimate cost of:
+    - [ ] domain name
+    - [ ] database and authentication
+  - [ ] Find someone who wants to be sponsor so I can work on that more and can offset the cost
+    - [ ] similar apps (e.g. fextralife, elden ring map)
+    - [ ] sponsors of elden ring youtubers eg lilaggy, vaait, etc
+  - [ ] if find sponsor that covers costs, build new features to grow site
+  - [ ] users can create their own checklists

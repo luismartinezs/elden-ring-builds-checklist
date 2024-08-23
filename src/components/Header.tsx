@@ -10,6 +10,7 @@ import { EldenRingLogo } from "~/components/EldenRingLogo";
 import { AiOutlineClose } from "react-icons/ai";
 import { cn } from "~/utils/cn";
 import Link from "next/link";
+import { CopyToClipboard } from "~/components/CopyToClipboard";
 
 const links = [
   {
@@ -60,6 +61,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
   const { className, ...otherProps } = props;
   const router = useRouter();
   const [open, setOpen] = useState(false);
+  const [currentUrl, setCurrentUrl] = useState("");
 
   const closeMenu = () => {
     setOpen(false);
@@ -73,6 +75,10 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
     closeMenu();
   }, [router.pathname]);
 
+  useEffect(() => {
+    setCurrentUrl(window.location.href);
+  }, []);
+
   return (
     <header className={cn(className, "bg-stone-800 px-2 py-2")} {...otherProps}>
       <nav className="px-4 text-white lg:px-6">
@@ -83,6 +89,9 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
             <span className="text-secondary-500">Hub</span>
           </Link>
           <div className="flex items-center lg:order-2 lg:hidden">
+            <div className="mr-2">
+              <CopyToClipboard textToCopy={currentUrl} />
+            </div>
             <BurgerButton onClick={openMenu} />
           </div>
           <div className="hidden w-full items-center justify-between gap-12 lg:order-1 lg:flex">
@@ -93,7 +102,10 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
                 <span className="text-secondary-500">Hub</span>
               </Link>
             </div>
-            <ul className="mt-4 flex flex-col font-medium lg:mt-0 lg:flex-row lg:space-x-8">
+            <ul className="mt-4 flex flex-col items-center font-medium lg:mt-0 lg:flex-row lg:space-x-8">
+              <li className="flex items-center justify-center">
+                <CopyToClipboard textToCopy={currentUrl} />
+              </li>
               {links.map((link) => (
                 <li key={link.label}>
                   <PrimaryLink href={link.href}>{link.label}</PrimaryLink>

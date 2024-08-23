@@ -44,6 +44,7 @@ function FilterButtons() {
             <FilterButton filterTag={TAGS.DRAGON_PRIESTESS} />
             <FilterButton filterTag={TAGS.FORAGER} />
             <FilterButton filterTag={TAGS.MAP_FRAGMENT} />
+            <FilterButton filterTag={TAGS.DUNGEON} />
           </>
         ) : (
           <>

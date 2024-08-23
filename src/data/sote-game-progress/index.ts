@@ -1,6 +1,6 @@
 import { TAGS } from '~/features/tags'
 
-const { LEDA, FREYJA, MOORE, THIOLLIER, HORNSENT, ANSBACH, QUEELIGN, IGON, DANE, FORAGER, YMIR, JOLAN, DRAGON_PRIESTESS, OPTIONAL, MAP_FRAGMENT, ALL_REMEMBERANCES } = TAGS
+const { LEDA, FREYJA, MOORE, THIOLLIER, HORNSENT, ANSBACH, QUEELIGN, IGON, DANE, FORAGER, YMIR, JOLAN, DRAGON_PRIESTESS, OPTIONAL, MAP_FRAGMENT, ALL_REMEMBERANCES, DUNGEON } = TAGS
 
 const list = {
   id: "f45240fe-9d8c-4200-8e56-3861ebf0b9ab",
@@ -100,14 +100,24 @@ const list = {
     // "GRAVESITE PLAIN (EASTERN)
     // Recommended Scadutree Blessing Rank: 4~ Revered Spirit Ash Blessing: 4~"
     {
+      id: "d37dc756-26e2-4897-b4cb-ed3675a94031",
+      description: "From the Three-Path Cross grace head north west to reach a lake, then go west of the lake to find Belurat Gaol",
+      tags: [DUNGEON]
+    },
+    {
       id: '441c3860-dcb0-42f7-87e8-adf49680dc2c',
       description: 'From the Three-Path Cross grace, head north east across the Ellac Greatbridge and activate the Castle Front grace',
       tags: []
     },
     {
+      id: '441c3860-dcb0-42f7-87e8-adf49680dc2c',
+      description: 'From the Castle Front grace head southeast, taking the right side path and hugging the right side, to find the entrance to the Ruined Forge Lava Intake',
+      tags: [DUNGEON]
+    },
+    {
       id: '16d7fc13-f609-420d-8efe-e0049fa51f0d',
       description: 'From the Castle Front grace head south and take the easter-most path to reach the Pillar Path Cross grace',
-      tags: [OPTIONAL, THIOLLIER, MOORE, ANSBACH, FORAGER, IGON, DRAGON_PRIESTESS]
+      tags: [OPTIONAL, THIOLLIER, MOORE, ANSBACH, FORAGER, IGON, DRAGON_PRIESTESS, DUNGEON]
     },
     {
       id: '6fff135f-b11f-40cb-a58d-02d002d9a2e6',
@@ -117,7 +127,7 @@ const list = {
     {
       id: '75780527-172a-49be-b870-08e094f53d03',
       description: 'From the Pillar Path Cross grace head north west and then immediately south to reach the Pillar Path Waypoint grace',
-      tags: [OPTIONAL, ANSBACH, FORAGER, THIOLLIER, IGON, DRAGON_PRIESTESS]
+      tags: [OPTIONAL, ANSBACH, FORAGER, THIOLLIER, IGON, DRAGON_PRIESTESS, DUNGEON]
     },
     {
       id: '64674ade-ccd9-4ed0-b3e4-0a3a43beb752',
@@ -127,14 +137,14 @@ const list = {
     {
       id: '27efa65e-87b2-4724-8ce3-702b7d07d540',
       description: "Head south an down from the Pillar Path Waypoint grace to reach the Dragon's Pit grace",
-      tags: [OPTIONAL, ANSBACH, FORAGER, DRAGON_PRIESTESS, THIOLLIER]
+      tags: [OPTIONAL, ANSBACH, FORAGER, DRAGON_PRIESTESS, THIOLLIER, DUNGEON]
     },
     // "CASTLE ENSIS
     // Recommended Scadutree Blessing Rank: 6~ Revered Spirit Ash Blessing: 6~"
     {
       id: 'a6c8e1ca-45c6-4d74-b083-25481ddce50f',
-      description: 'Go through the Dragon Pit (you have to jump down a deep cliff) and head south to Reach the Grand Altar of Dragon Communion grace',
-      tags: [OPTIONAL, ANSBACH, FORAGER, DRAGON_PRIESTESS, THIOLLIER]
+      description: 'Go through the Dragon\'s Pit (you have to jump down a deep cliff) and head south to Reach the Grand Altar of Dragon Communion grace',
+      tags: [OPTIONAL, ANSBACH, FORAGER, DRAGON_PRIESTESS, THIOLLIER, DUNGEON]
     },
 
     {
@@ -195,6 +205,11 @@ const list = {
       tags: [MAP_FRAGMENT]
     },
     {
+      id: 'aa4ce55d-96fd-47e8-9ed9-22ddd1e78c6e',
+      description: 'From the Highroad Cross grace, go west to find the Scadu Altus, West grace. From this grace, jump down the cliffs to reach Fog Rift Fort',
+      tags: [DUNGEON]
+    },
+    {
       id: 'a2700708-5631-4eec-bf4e-b81ce5d5d6a4',
       description: 'Defeat the invading Fire Knight Queelign at the Church of the Crusade',
       tags: [QUEELIGN]
@@ -220,6 +235,11 @@ const list = {
       tags: [DANE]
     },
     {
+      id: '017687f5-d1e9-43fa-85b7-36a06aedcd1c',
+      description: 'From the Moorth Ruins go south east to find the Ruined Forge of Starfall Past',
+      tags: [DUNGEON]
+    },
+    {
       id: '5fff0e9f-825a-412f-85f1-c8366ccd9d3f',
       description: 'Find a Forager Brood for Forager Brood Cookbook [1], located north west of the Ruined Forge of Starfall Past. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380330" target="_blank">Location</a>',
       tags: [FORAGER]
@@ -242,6 +262,26 @@ const list = {
       tags: [MAP_FRAGMENT]
     },
     {
+      id: 'c37c2ca9-5f16-4e31-b502-bfbb1df13511',
+      description: 'From the Ancient Ruins Base grace go north to reach Taylew\'s Ruined Forge',
+      tags: [DUNGEON]
+    },
+    {
+      id: 'f269bd87-59ff-4b06-b5b2-721c9991a35b',
+      description: 'From the Ancient Ruins Base grace go south west hugging the left side to reach the Fog Rift Catacombs',
+      tags: [DUNGEON]
+    },
+    {
+      id: '1176e834-5998-474f-bdbb-213811cea804',
+      description: 'From the Ancient Ruins Base grace go south west to reach the Temple Town Ruins, and hug the right side to reach the Temple Town Ruins site of grace. From this grace, go south to the cliff and find some gravestones to go down. Once down, go west to find the entrance to the Rivermouth Cave',
+      tags: [DUNGEON]
+    },
+    {
+      id: '04698082-5d5c-431a-8674-41f601e1ba47',
+      description: 'From the Temple Town Ruins grace progress north constantly hugging the left side to reach the Scorpion River Catacombs',
+      tags: [DUNGEON]
+    },
+    {
       id: 'ae6a1c22-7bad-4975-a0dc-41286bf4ac89',
       description: 'After finding the Scaduview Cross, speak to Ansbach. Location: From Moorth Highway, South Grace (<a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380349">located here</a>), head out toward the encampment and follow the Eastern cliffside around. Pass the closed Spiritspring, you will find rocks to break to open the Spiritspring. Take that up to this cross. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382068">Location</a>',
       tags: [ANSBACH]
@@ -255,6 +295,11 @@ const list = {
       id: 'db106066-8077-4543-adc9-57446b16e59a',
       description: 'Get "O, Mother" gesture north of Bonny Village, in front of a headless statue',
       tags: [OPTIONAL, YMIR, JOLAN]
+    },
+    {
+      id: 'c9f84244-4e3d-4041-aa9f-f647a8985e1c',
+      description: 'From Bonny Village go south across a wooden bridge to find the Bonny Gaol',
+      tags: [DUNGEON]
     },
     {
       id: 'd5e78d2d-f56a-4f40-b499-e22d8dabc87a',
@@ -432,9 +477,16 @@ const list = {
     // Recommended Scadutree Blessing Rank: 11~ Revered Spirit Ash Blessing: 7~"
     {
       "id": "7b052a9e-27ad-444d-917b-bc9364d12299",
-      "description": `From the Grand Altar of Dragon Communion, go south west to reach Charo's Hidden Grave. If you progress the to the north west, you will reach Charo's Hidden Grave grace, from where you can explore the area`,
+      "description": `From the Grand Altar of Dragon Communion, go south west to reach Charo's Hidden Grave. If you progress then to the north west, you will reach Charo's Hidden Grave grace, from where you can explore the area`,
       "tags": [
-        OPTIONAL
+        OPTIONAL, DUNGEON
+      ]
+    },
+    {
+      "id": "be5ebe3c-6265-41ce-a778-fe543922e410",
+      "description": `From Charo's Hidden Grave grace go north west through the stone arch. Keep going north-west until you reach the wall bordering the starting zone. Continue hugging the wall as you move west, and you should find the cave containing Lamenter's Gaol`,
+      "tags": [
+        DUNGEON
       ]
     },
     //     "SCADUVIEW
@@ -577,28 +629,32 @@ const list = {
       "id": "ecc06af8-e60f-4e8f-996d-dd041cbf57eb",
       "description": `In Shadow Keep, in the southeastern part of the platform with the burning ships there is a ladder going down. Break a secret wall in a room with a painting. Rest in the coffin behind it and reach the Castle Watering Hole grace and the Ruins of Unte`,
       "tags": [
-        OPTIONAL
+        OPTIONAL,
+        DUNGEON
       ]
     },
     {
       "id": "17185f3f-b003-4668-b1cc-805994568125",
       "description": `From the Castle Watering Hole, go south and touch the Recluses' River Upstream grace`,
       "tags": [
-        OPTIONAL
+        OPTIONAL,
+        DUNGEON
       ]
     },
     {
       "id": "41021483-e401-47f6-a22a-8af999c4dc7a",
       "description": `From the Recluses' River Upstream grace progress down the mountainside path south until reaching the Recluses' River Downstream grace`,
       "tags": [
-        OPTIONAL
+        OPTIONAL,
+        DUNGEON
       ]
     },
     {
       "id": "c6a126d8-89f0-4e01-8d82-1403638074b9",
       "description": `From the Recluses' River Downstream grace go south to reach the Darklight Catacombs. Progress through the catacombs and defeat the boss to reach the Forsaken Graveyard grace`,
       "tags": [
-        OPTIONAL
+        OPTIONAL,
+        DUNGEON
       ]
     },
     {

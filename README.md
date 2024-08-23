@@ -63,7 +63,7 @@ This is to make it easier to play the game without having to look up guides cons
 
 - [ ] SotE improvements
   - [x] add missing NPC rewards
-  - [ ] improve SotE tags: add character tag to a step if that step is required for that character questline
+  - [x] improve SotE tags: add character tag to a step if that step is required for that character questline
   - [ ] add dungeons to SotE
   - [ ] add ancient stores and ghost gloveworts to SotE
 - [ ] add share button to all pages (it copies url to clipboard)

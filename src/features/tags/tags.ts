@@ -460,6 +460,12 @@ export const tags: TTags = {
     key: TAGS.MAP_FRAGMENT,
     buttonClasses: 'border-amber-300 text-amber-300 hover:bg-amber-300 hover:text-black focus:ring-amber-300',
     tagClasses: 'bg-amber-300 text-amber-900',
+  },
+  [TAGS.DUNGEON]: {
+    label: 'Dungeon',
+    key: TAGS.DUNGEON,
+    buttonClasses: 'border-gray-300 text-gray-300 hover:bg-gray-300 hover:text-black focus:ring-gray-300',
+    tagClasses: 'bg-gray-300 text-gray-900',
   }
 
 }

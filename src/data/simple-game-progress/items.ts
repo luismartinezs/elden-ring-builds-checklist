@@ -149,11 +149,6 @@ export const items = [
     tags: [SACRED_TEAR]
   },
   {
-    id: '2a0af444-beab-45a0-9400-560c9114a9bc',
-    description: "If you don't plan to get Mimic Tear, you can get Lhutel the Headless spirit summon from Tombsward Catacombs south of Weeping Peninsula Erdtree avatar (requires 104 FP)",
-    tags: [OPTIONAL]
-  },
-  {
     id: '73fcc602-563d-4ae9-bdc9-d363dd2ecaf0',
     description: 'Morne Tunnel, in Weeping Peninsula. From the South of the Tower grace then head West and then South around the mountain. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=2318&lat=-214.054&lng=108.91&code=mapA" target="_blank">Location</a>',
     tags: [TUNNELS]

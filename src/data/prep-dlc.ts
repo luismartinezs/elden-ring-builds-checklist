@@ -439,7 +439,7 @@ const list = {
     },
     {
       id: 'a6e8da52-988e-48a5-986c-1d6c87691bde',
-      description: 'Grab Golden Scarab Talisman for rune farming, from the Abandoned Cave in Caelid. You will have to defeat the two Cleanrot Knights. https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167686',
+      description: 'Grab Golden Scarab Talisman for rune farming, from the Abandoned Cave in Caelid. You will have to defeat the two Cleanrot Knights. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167686">Location<a>',
       tags: [OPTIONAL]
     },
     {
@@ -930,7 +930,7 @@ const list = {
     {
       id: '35ea6a80-fe78-419d-b817-002882705950',
       description: 'You can reach Mt. Gelmir and Volcano Manor by going north east from Altus Plateau site of grace until Forest-Spanning Greatbridge grace, crossing the bridge with the magic portal, then heading south west through the only path available',
-      tags: [OPTIONAL]
+      tags: []
     },
     {
       id: '28024d6d-b406-4451-9069-780042759eca',

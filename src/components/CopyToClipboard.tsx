@@ -24,7 +24,7 @@ export const CopyToClipboard = ({ textToCopy }: { textToCopy: string }) => {
             "text-primary-500 border sm:border-2 border-primary-500 hover:bg-primary-500 hover:text-black focus:ring-offset-1 sm:focus:ring-offset-2 focus:ring-primary-500 focus:ring-1 sm:focus:ring-2 focus:ring-offset-stone-900 bg-gray-900",
         }}
       />
-      <Button onClick={handleCopy} variant="magic" className="!mb-0 !px-4">
+      <Button onClick={handleCopy} variant="elden" className="!mb-0 !px-4">
         <FaShareAlt />
         {/* {copied ? 'Copied!' : 'Copy to Clipboard'} */}
       </Button>

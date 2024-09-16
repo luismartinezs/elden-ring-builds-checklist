@@ -28,194 +28,122 @@ function PrivacyPolicy() {
         <Heading.H3>1. Introduction</Heading.H3>
 
         <Paragraph>
-          Welcome to Elden Ring Checklists - Elden Hub ("we," "us," or "our").
-          We are committed to protecting your privacy and ensuring your personal
-          information is handled in a safe and responsible manner. This privacy
-          policy outlines how we collect, use, and protect your personal data
-          when you visit https://eldenringbuilds.vercel.app (the "Site") or use
-          our services.
+          Welcome to Elden Ring Checklists - Elden Hub (&quot;we,&quot;
+          &quot;us,&quot; or &quot;our&quot;). We are committed to protecting
+          your privacy and ensuring your personal information is handled in a
+          safe and responsible manner. This privacy policy outlines how we
+          collect, use, and protect your personal data when you visit
+          https://eldenringbuilds.vercel.app (the &quot;Site&quot;) or use our
+          services.
         </Paragraph>
 
         <Heading.H3>2. Information We Collect</Heading.H3>
 
-        <Paragraph>We may collect the following categories of personal information:</Paragraph>
+        <Paragraph>
+          We do not collect any personal information such as your name, email,
+          or phone number. However, we may collect the following information:
+        </Paragraph>
 
         <List>
           <li>
-            <strong>Personal Identifiers</strong>: Name, email address, IP
-            address, phone number, etc.
+            <strong>Cookies and Tracking Data</strong>: Information related to
+            your interaction with the Site, including page views, browsing
+            history, and preferences.
           </li>
           <li>
-            <strong>Commercial Information</strong>: Purchase history or payment
-            information (if applicable).
-          </li>
-          <li>
-            <strong>Internet or Other Electronic Network Activity</strong>:
-            Browsing history, search history, interaction with our Site.
-          </li>
-          <li>
-            <strong>Geolocation Data</strong>: Physical location or movements.
-          </li>
-          <li>
-            <strong>Other Information</strong>: Any additional information you
-            voluntarily provide.
+            <strong>Analytics</strong>: We use Umami Analytics to track page
+            views and site interactions. No personal data is collected by Umami;
+            it only tracks anonymized data.
           </li>
         </List>
 
         <Heading.H3>3. How We Use Your Information</Heading.H3>
 
-        <Paragraph>We use your personal information for the following purposes:</Paragraph>
-
-        <List>
-          <li>To provide, maintain, and improve our services.</li>
-          <li>To process your transactions and manage your orders.</li>
-          <li>To send marketing communications (with your consent).</li>
-          <li>To respond to your inquiries or customer service requests.</li>
-          <li>To comply with legal obligations and resolve disputes.</li>
-        </List>
-
-        <h3>4. Legal Basis for Processing (GDPR)</h3>
-
         <Paragraph>
-          Under the General Data Protection Regulation (GDPR), we rely on the
-          following legal bases to process your personal data:
+          We use your information for the following purposes:
         </Paragraph>
 
         <List>
+          <li>To improve our services by analyzing user interactions.</li>
           <li>
-            <strong>Consent</strong>: When you have provided your consent (e.g.,
-            for marketing purposes).
+            To display ads relevant to your browsing behavior via Google
+            Adsense.
           </li>
-          <li>
-            <strong>Contract</strong>: When processing is necessary to fulfill a
-            contract with you.
-          </li>
-          <li>
-            <strong>Legal Obligation</strong>: When we are legally required to
-            process your data.
-          </li>
-          <li>
-            <strong>Legitimate Interests</strong>: When processing is in our
-            legitimate business interests and not overridden by your privacy
-            rights.
-          </li>
+          <li>To remember your preferences using cookies and local storage.</li>
         </List>
 
-        <Heading.H3>5. Your Rights (GDPR and CPRA)</Heading.H3>
+        <Heading.H3>4. Cookies and Tracking Technologies</Heading.H3>
 
         <Paragraph>
-          As a resident of the European Union (GDPR) or California (CPRA), you
-          have the following rights regarding your personal data:
+          We use cookies and local storage to enhance your experience on the
+          Site. These include:
         </Paragraph>
 
         <List>
           <li>
-            <strong>Right to Access</strong>: You can request access to the
-            personal data we hold about you.
+            Cookies for saving user preferences and improving your experience.
           </li>
-          <li>
-            <strong>Right to Rectification</strong>: You can request corrections
-            to any inaccurate personal data.
-          </li>
-          <li>
-            <strong>Right to Erasure</strong>: You can request deletion of your
-            personal data under certain conditions.
-          </li>
-          <li>
-            <strong>Right to Restrict Processing</strong>: You can request
-            limitations on how we process your personal data.
-          </li>
-          <li>
-            <strong>Right to Data Portability</strong>: You can request a copy
-            of your personal data in a structured format.
-          </li>
-          <li>
-            <strong>Right to Object</strong>: You can object to the processing
-            of your personal data for certain purposes.
-          </li>
-          <li>
-            <strong>Do Not Sell My Personal Information (CPRA)</strong>: You
-            have the right to opt-out of the sale of your personal information.
-          </li>
+          <li>Google Adsense cookies for displaying personalized ads.</li>
+          <li>Umami cookies for anonymized analytics tracking.</li>
         </List>
 
         <Paragraph>
-          To exercise these rights, please contact us at [Your Contact Email].
+          You have the option to opt-out of non-essential cookies through the
+          cookie modal that appears when you visit the Site.
         </Paragraph>
 
-        <Heading.H3>6. Cookies and Tracking Technologies</Heading.H3>
+        <Heading.H3>5. Data Sharing</Heading.H3>
 
-        <Paragraph>
-          We use cookies and similar tracking technologies to improve your
-          browsing experience on our Site. Cookies help us to:
-        </Paragraph>
-
-        <List>
-          <li>Understand and save user preferences.</li>
-          <li>Track and analyze user interactions with the Site.</li>
-        </List>
-
-        <Paragraph>For more information, see our [Cookie Policy Link].</Paragraph>
-
-        <Heading.H3>7. Data Sharing</Heading.H3>
-
-        <Paragraph>We may share your personal information with:</Paragraph>
+        <Paragraph>We may share anonymized data with the following:</Paragraph>
 
         <List>
           <li>
-            <strong>Service Providers</strong>: Third parties who help us
-            operate the Site and provide services (e.g., payment processors,
-            hosting providers).
+            <strong>Google Adsense</strong>: For displaying personalized
+            advertisements.
           </li>
           <li>
-            <strong>Legal Authorities</strong>: When required by law, such as in
-            response to a court order.
-          </li>
-          <li>
-            <strong>Third Parties</strong>: With your consent or when necessary
-            to fulfill our legitimate interests.
+            <strong>Analytics Services</strong>: Umami Analytics for site
+            performance tracking.
           </li>
         </List>
 
-        <h3>8. International Data Transfers</h3>
+        <Heading.H3>6. International Data Transfers</Heading.H3>
 
         <Paragraph>
-          Your personal information may be transferred to and processed in
-          countries outside of the European Economic Area (EEA). We ensure that
-          any such transfers are in accordance with the GDPR by implementing
-          appropriate safeguards such as standard contractual clauses.
+          Your information may be processed by service providers in countries
+          outside the European Economic Area (EEA). In such cases, we ensure
+          appropriate safeguards are in place, such as standard contractual
+          clauses.
         </Paragraph>
 
-        <Heading.H3>9. Data Retention</Heading.H3>
+        <Heading.H3>7. Data Retention</Heading.H3>
 
         <Paragraph>
-          We will retain your personal data only for as long as necessary to
-          fulfill the purposes for which it was collected or to comply with
-          legal obligations. After that, we will securely delete or anonymize
-          the data.
+          We retain anonymized data as long as necessary for the purposes
+          described in this policy. After that, it is either deleted or
+          anonymized further.
         </Paragraph>
 
-        <Heading.H3>10. Security Measures</Heading.H3>
+        <Heading.H3>8. Security Measures</Heading.H3>
 
         <Paragraph>
-          We take the security of your personal data seriously and implement
-          appropriate technical and organizational measures to protect it from
-          unauthorized access, loss, or misuse.
+          We take the security of your data seriously and implement appropriate
+          measures to protect it from unauthorized access or misuse.
         </Paragraph>
 
-        <Heading.H3>11. Changes to This Policy</Heading.H3>
+        <Heading.H3>9. Changes to This Policy</Heading.H3>
 
         <Paragraph>
-          We may update this privacy policy from time to time. When we do, we
-          will post the updated version on this page with a new effective date.
-          We encourage you to review this policy periodically.
+          We may update this privacy policy from time to time. Any changes will
+          be posted on this page with a new effective date. We encourage you to
+          review this policy periodically.
         </Paragraph>
 
-        <Heading.H3>12. Contact Us</Heading.H3>
+        <Heading.H3>10. Contact Us</Heading.H3>
 
         <Paragraph>
-          If you have any questions or concerns about this privacy policy, or if
-          you would like to exercise any of your rights, please contact us at:
+          If you have any questions or concerns about this privacy policy,
+          please contact us at:
         </Paragraph>
 
         <Paragraph>

@@ -10,8 +10,7 @@ export function List({
   return (
     <ul
       className={cn(
-        "list-disc space-y-2 py-6 text-stone-300",
-        "marker:text-sm marker:text-stone-500",
+        "list-disc space-y-2 ml-4 text-stone-300 mb-8",
         className
       )}
     >

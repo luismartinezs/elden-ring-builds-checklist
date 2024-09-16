@@ -44,7 +44,29 @@ function HeadingH2({
   );
 }
 
+function HeadingH3({
+  className,
+  children,
+  ...rest
+}: HeadingProps & {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <h3
+      className={cn(
+        className,
+        "mb-4 text-lg font-semibold leading-none tracking-tight text-white md:text-xl lg:text-2xl"
+      )}
+      {...rest}
+    >
+      {children}
+    </h3>
+  );
+}
+
 export const Heading = {
   H1: HeadingH1,
   H2: HeadingH2,
+  H3: HeadingH3,
 };

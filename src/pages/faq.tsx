@@ -142,7 +142,7 @@ function FaqPage() {
         />
         <link
           rel="canonical"
-          href="https://eldenringbuilds.vercel.app/faq"
+          href="https://eldenhub.appforgelabs.com/faq"
           key="canonical"
         />
       </Head>

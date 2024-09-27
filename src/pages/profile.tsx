@@ -19,7 +19,7 @@ export default function ProfilePage() {
         <meta name="description" content="Create or update your profiles for EldenHub" />
         <link
           rel="canonical"
-          href="https://eldenringbuilds.vercel.app/profile"
+          href="https://eldenhub.appforgelabs.com/profile"
           key="canonical"
         />
       </Head>

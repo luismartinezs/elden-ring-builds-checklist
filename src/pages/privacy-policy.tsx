@@ -16,7 +16,7 @@ function PrivacyPolicy() {
         />
         <link
           rel="canonical"
-          href="https://eldenringbuilds.vercel.app/privacy-policy"
+          href="https://eldenhub.appforgelabs.com/privacy-policy"
           key="canonical"
         />
       </Head>
@@ -33,7 +33,7 @@ function PrivacyPolicy() {
           your privacy and ensuring your personal information is handled in a
           safe and responsible manner. This privacy policy outlines how we
           collect, use, and protect your personal data when you visit
-          https://eldenringbuilds.vercel.app (the &quot;Site&quot;) or use our
+          https://eldenhub.appforgelabs.com (the &quot;Site&quot;) or use our
           services.
         </Paragraph>
 

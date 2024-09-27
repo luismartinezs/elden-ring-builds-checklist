@@ -30,7 +30,7 @@ const App: AppType<{ session: Session | null }> = ({
           {/* Facebook Meta Tags */}
           <meta
             property="og:url"
-            content="https://eldenringbuilds.vercel.app"
+            content="https://eldenhub.appforgelabs.com"
           />
           <meta property="og:type" content="website" />
           <meta
@@ -50,11 +50,11 @@ const App: AppType<{ session: Session | null }> = ({
           <meta name="twitter:creator" content="@LuisMartinezSu2" />
           <meta
             property="twitter:domain"
-            content="eldenringbuilds.vercel.app"
+            content="eldenhub.appforgelabs.com"
           />
           <meta
             property="twitter:url"
-            content="https://eldenringbuilds.vercel.app"
+            content="https://eldenhub.appforgelabs.com"
           />
           <meta
             name="twitter:title"

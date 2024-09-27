@@ -84,7 +84,7 @@ function QuestlineRewardsPage() {
         />
         <link
           rel="canonical"
-          href="https://eldenringbuilds.vercel.app/npc-questline-rewards"
+          href="https://eldenhub.appforgelabs.com/npc-questline-rewards"
           key="canonical"
         />
       </Head>

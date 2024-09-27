@@ -35,7 +35,7 @@ export default function Landing({
         />
         <link
           rel="canonical"
-          href="https://eldenringbuilds.vercel.app/checklists"
+          href="https://eldenhub.appforgelabs.com/checklists"
           key="canonical"
         />
       </Head>

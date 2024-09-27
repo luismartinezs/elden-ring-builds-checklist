@@ -63,7 +63,7 @@ function ContactPage() {
         />
         <link
           rel="canonical"
-          href="https://eldenringbuilds.vercel.app/contact"
+          href="https://eldenhub.appforgelabs.com/contact"
           key="canonical"
         />
       </Head>

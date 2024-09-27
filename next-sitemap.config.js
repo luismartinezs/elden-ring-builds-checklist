@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://eldenringbuilds.vercel.app/',
+  siteUrl: process.env.SITE_URL || 'https://eldenhub.appforgelabs.com/',
   generateRobotsTxt: true,
   changefreq: 'weekly',
 }

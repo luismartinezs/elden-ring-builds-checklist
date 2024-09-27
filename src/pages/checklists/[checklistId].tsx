@@ -110,7 +110,7 @@ export default function ChecklistPage({
         <meta name="description" content={checklist.title} />
         <link
           rel="canonical"
-          href={`https://eldenringbuilds.vercel.app/checklists/${checklist.slug}`}
+          href={`https://eldenhub.appforgelabs.com/checklists/${checklist.slug}`}
           key="canonical"
         />
       </Head>

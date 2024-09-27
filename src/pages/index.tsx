@@ -37,7 +37,7 @@ export default function Landing({
         <meta name="description" content="Checklists for the video game Elden Ring" />
         <link
           rel="canonical"
-          href="https://eldenringbuilds.vercel.app/"
+          href="https://eldenhub.appforgelabs.com/"
           key="canonical"
         />
         {/* Google Site Verification */}

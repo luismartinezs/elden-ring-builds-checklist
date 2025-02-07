@@ -1,0 +1,13 @@
+---
+description: This rule should be followed to add new filters
+globs: 
+---
+# Adding a new filter
+
+Filters allow to toggle the display of items in a checklist depending on their tags
+
+To add a filter, follow the next instructions:
+
+1. Add a new key to `src/features/tags/constants.ts`. By default the key whould appear in the `TAGS` object, before the line with the comment `// SOTE` (SOTE refers to "Shadow of the Erdtree"). The new key should follow a pattern similar to the existing ones
+2. Add a new tag to `src/features/tags/tags.ts`. Unless specified, only fill in the `label`, `key`, `buttonClasses` and `tagClasses` fields. The key of the tag object should match the key in the `constants.ts` file. Avoid labels which are very long. For the classes, if a color is not specified, then use amber.
+3. Add a button to toggle the filter to `src/components/SettingsMenu/SettingsMenu.tsx`. Unless specified, the filter is not "sote" and should be added after all other FilterButtons

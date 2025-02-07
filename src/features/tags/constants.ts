@@ -31,6 +31,12 @@ export const TAGS = {
   SACRED_TEAR: 'sacred-tear',
   LARVAL_TEAR: 'larval-tear',
   RITUAL_POT: 'ritual-pot',
+  LEGENDARY_WEAPONS_ACH: 'legendary-weapons-ach',
+  LEGENDARY_WEAPONS: 'legendary-weapons',
+  LEGENDARY_ASHES: 'legendary-ashes',
+  LEGENDARY_ASHES_ACH: 'legendary-ashes-ach',
+  LEGENDARY_SPELLS: 'legendary-spells',
+  LEGENDARY_TALISMANS: 'legendary-talismans',
   // SOTE
   LEDA: 'leda-questline',
   FREYJA: 'freyja-questline',

@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT, LEGENDARY_WEAPONS_ACH, LEGENDARY_WEAPONS, LEGENDARY_ASHES, LEGENDARY_SPELLS, LEGENDARY_TALISMANS } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -179,7 +179,11 @@ export const items = [
     description: 'Go to where Irina was, next to Bridge of Sacrifice grace, and talk with Edgar.',
     tags: [HYETTA_QUESTLINE]
   },
-
+  {
+    id: '70ae7823-f107-4017-8a5b-051e5359b441',
+    description: 'Grafted Blade Greatsword: Stolen by the Leonine Misbegotten, the boss of Castle Morne (Weeping Peninsula)',
+    tags: [LEGENDARY_WEAPONS_ACH]
+  },
   {
     id: '0ea07403-34ab-4707-b6f6-68d1e11449e2',
     description: "Note: Yura's questline can be skipped and the player can still get the Purifying Crystal Tear, Eleonora's Poleblade and the Nagakiba",
@@ -537,6 +541,11 @@ export const items = [
   // AINSEL RIVER L50-60 +4-6
   // LIURNIA WEST, CARIA MANOR L50-60 +4-6
   {
+    id: 'e9c27c57-bdf9-413b-ac69-7a330225f33b',
+    description: 'Sword of Night and Flame: Hidden in the Caria Manor. Liurnia. Start from the Manor Lower Level Grace, go toward the left side platforms, and parkour down the rooftops to eventually reach it.',
+    tags: [LEGENDARY_WEAPONS_ACH],
+  },
+  {
     id: "0ba1c797-4998-4834-a990-758e6f6a5768",
     description:
       "Near a golden tree after going down the steps from the Caria Manor Upper Level Site of Grace. Liurnia",
@@ -544,8 +553,8 @@ export const items = [
   },
   {
     id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
-    description: 'Beat Royal Knight Loretta in Caria Manor. She is strong vs magic and fire, and weak vs lightning',
-    tags: [RANNI_QUESTLINE, SELLEN_QUESTLINE]
+    description: 'Beat Royal Knight Loretta in Caria Manor. She is strong vs magic and fire, and weak vs lightning. Note: If you are collecting the legendary weapon Dark Moon Greatsword, follow Ranni\'s questline until the end to get it.',
+    tags: [RANNI_QUESTLINE, SELLEN_QUESTLINE, LEGENDARY_WEAPONS_ACH]
   },
   {
     id: '90813e2a-75de-4167-8603-af4bab0bd2ca',
@@ -607,6 +616,11 @@ export const items = [
     id: '8d9fb6dd-c390-42ff-ae5e-24df91cdda04',
     description: 'Red-Hot Whetblade (Fire and Flame Art). Redmane Castle (south Caelid) From the Chamber Outside The Plaza site of grace, head out the south-side door, west past the flamethrower enemies, and then to the door past the Abductor Virgin and hanging bodies. Note: if you reach Altus before this step, you will need to defeat Radahn to access the rest of Redmane Castle and then talk to Jerren inside Redmane castle near the elevator to Radahn to reset the area.',
     tags: [WHETBLADES]
+  },
+  {
+    id: 'acc2284a-56fe-4874-a6c1-d5a8d5d8827a',
+    description: 'Ruins Greatsword: Defended by the Misbegotten Warrior and Crucible Knight in Redmane Castle. Note: if you reach Altus before this step, you will need to defeat Radahn to access the rest of Redmane Castle and then talk to Jerren inside Redmane castle near the elevator to Radahn to reset the area.',
+    tags: [LEGENDARY_WEAPONS_ACH]
   },
   {
     id: '7353be03-4279-4710-a59a-bfc3290b1b80',
@@ -832,6 +846,11 @@ export const items = [
     id: '214e0b27-c6c2-41a8-8acf-cba7f5ab0b6b',
     description: 'Find Alexander next to the Radahn grace and talk to him',
     tags: [ALEXANDER_QUESTLINE]
+  },
+  {
+    id: 'f049aa3e-d603-41a8-9fb7-9032d7a2f9e4',
+    description: 'Godslayer\'s Greatsword: Defended by the Godskin Apostle beneath the Divine Tower of Caelid. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166668" target="_blank">Location</a>',
+    tags: [LEGENDARY_WEAPONS]
   },
   {
     id: "56421d70-5f43-43ef-9484-a8e26c78f9f2",
@@ -1166,14 +1185,24 @@ export const items = [
     tags: [YURA_QUESTLINE]
   },
   {
+    id: 'acf83ead-4866-4670-90f1-245de9554bc0',
+    description: 'Black Knife: Wielded by the Black Knife Assassin outside Sainted Hero\'s Grave. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167676">Location</a>',
+    tags: [LEGENDARY_WEAPONS]
+  },
+  {
     id: '3e908ded-2825-48c2-b96b-93068276438d',
     description: 'Reach the Shaded Castle, heading north through the valley between the Mt. Gelmir and Altus Plateau regions, heading north from the Altus Tunnel to find your way to the Castle',
-    tags: [MILLICENT_QUESTLINE]
+    tags: [MILLICENT_QUESTLINE, LEGENDARY_WEAPONS_ACH]
   },
   {
     id: '622dccd0-0982-401e-9ab3-58122db1e93a',
     description: "Retrieve the Valkyrie's Prosthesis from the Shaded Castle, in a chest in a room guarded by a single Cleanrot Knight, on the northwestern edge of the castle",
     tags: [MILLICENT_QUESTLINE]
+  },
+  {
+    id: '622dccd0-0982-401e-9ab3-58122db1e93a',
+    description: "Marais Executioner's Sword: Defiled and wielded by Elemer of the Briar, Bell Bearing Hunter and lord of The Shaded Castle.",
+    tags: [LEGENDARY_WEAPONS_ACH],
   },
   {
     id: '1e9eeb4a-6634-4a97-988c-08338bd47e4a',
@@ -1456,7 +1485,7 @@ export const items = [
   {
     id: 'e294f45d-34ec-4f01-a121-4a26cd8b7b11',
     description: 'Place the Dark Moon Ring on Ranni\'s doll finger and Get the Dark Moon Greatsword',
-    tags: [RANNI_QUESTLINE]
+    tags: [RANNI_QUESTLINE, LEGENDARY_WEAPONS_ACH]
   },
   {
     id: '8a776cf3-1d98-41c8-bf25-629fd277e248',
@@ -1488,6 +1517,11 @@ export const items = [
     id: 'ca3d9a16-b81b-4be1-bb69-b7a3a704e862',
     description: 'Beat Godfrey, First Elden Lord (Golden Shade). He is strong vs holy, and weak vs pierce and lightning',
     tags: [NGPLUS]
+  },
+  {
+    id: '12f3e12c-f659-4f07-a2b3-7d6da3b0e17a',
+    description: 'Bolt of Gransax: Embedded into a fragment of Ancient Dragon Gransax\'s spear in Leyndell, Royal Capital. From the Erdtree Sanctuary grace, walk out the western door, take the elevator down, go down the staircase to the walkway, jump down onto the giant spear lodged into the building, and then walk up it',
+    tags: [LEGENDARY_WEAPONS_ACH]
   },
   {
     id: '6d61ad64-1a91-4e38-b316-ce48cc131368',
@@ -1783,6 +1817,11 @@ export const items = [
     tags: [VARRE_QUESTLINE]
   },
   {
+    id: '54afa6b4-3e73-468a-ba7a-42a984f96cb0',
+    description: 'Eclipse Shotel: Left as an offering to the sun in the Church of The Eclipse, Castle Sol, in Mountaintops of the Giants',
+    tags: [LEGENDARY_WEAPONS_ACH]
+  },
+  {
     id: 'd01f819f-3b97-4551-9b08-1e6282f76552',
     description: 'Get Haligtree Secret Medallion (Right) from Castle Sol in Mountaintops of the Giants. To reach it, you will have to defeat Commander Niall. He is strong vs slash and weak to pierce',
     tags: [OPTIONAL, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, NGPLUS, ALL_REMEMBERANCES]
@@ -1803,6 +1842,11 @@ export const items = [
     id: '343e6c7d-7b37-4c27-943d-a40511f311ba',
     description: 'From the Inner Consecrated Snowfield Site of Grace, head southeast to shortly find three Wandering Pilgrims stranded in the snow. One of them is stuck, buried almost up to his armpits. Kill him. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167120">Location</a>',
     tags: [LARVAL_TEAR]
+  },
+  {
+    id: '3a4721ff-f4cf-4906-9c5b-8b7e8aef0775',
+    description: "Golden Order Greatsword: Taken by the Misbegotten Crusader to the Cave of the Forlorn. <a href='https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167161' target='_blank'>Location</a>",
+    tags: [LEGENDARY_WEAPONS_ACH]
   },
   {
     id: "f88a55b3-907a-4940-911e-0f568d1dd4f5",
@@ -1968,6 +2012,11 @@ export const items = [
     id: '2a519808-24ee-41e7-9db9-c04ee98dfa2d',
     description: 'Expore Leyndell Royal Capital and grab any missing items you might need for your current or NG+ build BEFORE defeating Maliketh, as you will lose access to that area',
     tags: [OPTIONAL, NGPLUS]
+  },
+  {
+    id: '3ecc4f11-04c3-4484-a541-88be26e8030a',
+    description: "Devourer's Scepter: Held by Recusant Bernahl. Defeat him in Farum Azula. You have to kill Rykard first for this invasion to happen. To reach him start from the Beside the Great Bridge grace, go up the bridge and head north",
+    tags: [LEGENDARY_WEAPONS_ACH]
   },
   {
     id: '4b29d14f-ec7a-4729-a457-5af706963d61',

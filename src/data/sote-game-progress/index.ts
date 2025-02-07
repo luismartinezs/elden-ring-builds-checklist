@@ -1,6 +1,6 @@
-import { TAGS } from '~/features/tags'
+import { TAGS } from "~/features/tags/constants"
 
-const { LEDA, FREYJA, MOORE, THIOLLIER, HORNSENT, ANSBACH, QUEELIGN, IGON, DANE, FORAGER, YMIR, JOLAN, DRAGON_PRIESTESS, OPTIONAL, MAP_FRAGMENT, ALL_REMEMBERANCES, DUNGEON } = TAGS
+const { LEDA, FREYJA, MOORE, THIOLLIER, HORNSENT, ANSBACH, QUEELIGN, IGON, DANE, FORAGER, YMIR, JOLAN, DRAGON_PRIESTESS, OPTIONAL, MAP_FRAGMENT, ALL_REMEMBERANCES, DUNGEON, LEGENDARY_WEAPONS, LEGENDARY_ASHES } = TAGS
 
 const list = {
   id: "f45240fe-9d8c-4200-8e56-3861ebf0b9ab",
@@ -259,7 +259,7 @@ const list = {
     {
       id: '017687f5-d1e9-43fa-85b7-36a06aedcd1c',
       description: 'From the Moorth Ruins go south east to find the Ruined Forge of Starfall Past. Interact with the furnace to obtain an Ancient Dragon Smithing Stone and the Ancient Meteoric Ore Greatsword',
-      tags: [DUNGEON, OPTIONAL]
+      tags: [DUNGEON, OPTIONAL, LEGENDARY_WEAPONS]
     },
     {
       id: '5fff0e9f-825a-412f-85f1-c8366ccd9d3f',
@@ -290,8 +290,8 @@ const list = {
     },
     {
       id: 'f269bd87-59ff-4b06-b5b2-721c9991a35b',
-      description: 'From the Ancient Ruins Base grace go south west hugging the left side to reach the Fog Rift Catacombs',
-      tags: [DUNGEON]
+      description: 'From the Ancient Ruins Base grace go south west hugging the left side to reach the Fog Rift Catacombs. Within, you can find the Stone-Sheathed Sword',
+      tags: [DUNGEON, LEGENDARY_WEAPONS]
     },
     {
       id: '1176e834-5998-474f-bdbb-213811cea804',
@@ -672,8 +672,14 @@ const list = {
       "description": `In Shadow Keep, in the southeastern part of the platform with the burning ships there is a ladder going down. Break a secret wall in a room with a painting. Rest in the coffin behind it and reach the Castle Watering Hole grace and the Ruins of Unte`,
       "tags": [
         OPTIONAL,
-        DUNGEON
+        DUNGEON,
+        LEGENDARY_WEAPONS
       ]
+    },
+    {
+      id: '74db4278-7b84-468f-b9d3-2dc0b6119e57',
+      description: 'Reach the Altar of Darkness from the Castle Watering Hole grace. Enter the ruins by either using a Hefty Furnace Pot on the dormant Furnace Golem or jumping the southeastern wall. The altar is inside on the right. Use the Stone-Sheathed Sword in the altar to get the Sword of Darkness.',
+      tags: [LEGENDARY_WEAPONS]
     },
     {
       "id": "17185f3f-b003-4668-b1cc-805994568125",
@@ -923,6 +929,11 @@ const list = {
       "tags": []
     },
     {
+      id: 'cd081d4e-098c-45c8-a5df-edae76b8331e',
+      description: 'Reach the Altar of Light. From the Rauh Ancient Ruins, West Site of Grace, navigate southwest through rotted ruins to an outdoor ledge with an invisible bridge. Cross carefully (use Rainbow Stones to detect the path) to reach the circular tower ruins where the altar resides. Use the Stone-Sheathed Sword (or the Sword of Darkness?) in the altar to get the Sword of Light. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382518" target="_blank">Location</a>',
+      tags: [LEGENDARY_WEAPONS]
+    },
+    {
       "id": "eea6e106-67b3-4862-8a08-312062ccea4c",
       "description": `Near the Church of the Bud, Main Entrance grace, Hornsent will invade. Defeat him to get his weapon and armor`,
       "tags": [
@@ -952,6 +963,11 @@ const list = {
       "id": "456ca81a-3d39-45af-b369-6cb295ce1f7e",
       "description": `Progress through Enir-Ilim to get the graces Enir-Ilim: Outer Wall, First Rise, Spiral Rise and Cleansing Chamber Anteroom, in this order, then find Needle Knight Leda, who will challenge you`,
       "tags": []
+    },
+    {
+      id: 'a6cce261-c3e5-4688-a368-be77c76923c0',
+      description: 'Euporia: Hidden in Belurat, Tower Settlement. To get it start from the Spiral Rise grace and explore. If you get lost, <a href="https://www.youtube.com/watch?v=_IiglmjwP9s&ab_channel=Caspahz" target="_blank">follow this guide</a>',
+      tags: [LEGENDARY_WEAPONS]
     },
     {
       "id": "9a15a7ff-447b-497b-9b3a-f09f537a7a06",

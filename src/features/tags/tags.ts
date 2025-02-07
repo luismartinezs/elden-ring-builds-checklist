@@ -279,8 +279,44 @@ export const tags: TTags = {
   [TAGS.RITUAL_POT]: {
     label: 'Ritual Pot',
     key: TAGS.RITUAL_POT,
-    buttonClasses: 'border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-black focus:ring-orange-600',
-    tagClasses: 'bg-orange-600 text-black',
+    buttonClasses: 'border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-black focus:ring-amber-500',
+    tagClasses: 'bg-amber-500 text-black',
+  },
+  [TAGS.LEGENDARY_WEAPONS_ACH]: {
+    label: 'Leg. Weapons (ach.)',
+    key: TAGS.LEGENDARY_WEAPONS_ACH,
+    buttonClasses: 'border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-black focus:ring-amber-500',
+    tagClasses: 'bg-amber-500 text-black',
+  },
+  [TAGS.LEGENDARY_WEAPONS]: {
+    label: 'Leg. Weapons',
+    key: TAGS.LEGENDARY_WEAPONS,
+    buttonClasses: 'border-gray-300 text-gray-300 hover:bg-gray-300 hover:text-black focus:ring-gray-300',
+    tagClasses: 'bg-gray-300 text-black',
+  },
+  [TAGS.LEGENDARY_ASHES]: {
+    label: 'Leg. Ashes',
+    key: TAGS.LEGENDARY_ASHES,
+    buttonClasses: 'border-white text-white hover:bg-white hover:text-black focus:ring-white',
+    tagClasses: 'bg-white text-black',
+  },
+  [TAGS.LEGENDARY_ASHES_ACH]: {
+    label: 'Leg. Ashes (ach.)',
+    key: TAGS.LEGENDARY_ASHES_ACH,
+    buttonClasses: 'border-white text-white hover:bg-white hover:text-black focus:ring-white',
+    tagClasses: 'bg-white text-black',
+  },
+  [TAGS.LEGENDARY_SPELLS]: {
+    label: 'Leg. Spells',
+    key: TAGS.LEGENDARY_SPELLS,
+    buttonClasses: 'border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-black focus:ring-blue-500',
+    tagClasses: 'bg-blue-500 text-black',
+  },
+  [TAGS.LEGENDARY_TALISMANS]: {
+    label: 'Leg. Talismans',
+    key: TAGS.LEGENDARY_TALISMANS,
+    buttonClasses: 'border-emerald-500 text-emerald-500 hover:bg-emerald-500 hover:text-black focus:ring-emerald-500',
+    tagClasses: 'bg-emerald-500 text-black',
   },
   // SOTE
   [TAGS.LEDA]: {

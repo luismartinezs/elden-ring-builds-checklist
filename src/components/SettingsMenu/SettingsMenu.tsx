@@ -45,6 +45,8 @@ function FilterButtons() {
             <FilterButton filterTag={TAGS.FORAGER} />
             <FilterButton filterTag={TAGS.MAP_FRAGMENT} />
             <FilterButton filterTag={TAGS.DUNGEON} />
+            <FilterButton filterTag={TAGS.LEGENDARY_WEAPONS} />
+            <FilterButton filterTag={TAGS.LEGENDARY_ASHES} />
           </>
         ) : (
           <>
@@ -81,6 +83,15 @@ function FilterButtons() {
             <FilterButton filterTag={TAGS.LARVAL_TEAR} />
             <FilterButton filterTag={TAGS.RITUAL_POT} />
             <FilterButton filterTag={TAGS.TUNNELS} />
+          </div>
+          <Divider />
+          <div className="my-3 flex flex-wrap items-center gap-2 md:gap-1">
+            <FilterButton filterTag={TAGS.LEGENDARY_WEAPONS_ACH} />
+            <FilterButton filterTag={TAGS.LEGENDARY_WEAPONS} />
+            <FilterButton filterTag={TAGS.LEGENDARY_ASHES} />
+            <FilterButton filterTag={TAGS.LEGENDARY_ASHES_ACH} />
+            <FilterButton filterTag={TAGS.LEGENDARY_SPELLS} />
+            <FilterButton filterTag={TAGS.LEGENDARY_TALISMANS} />
           </div>
         </>
       )}

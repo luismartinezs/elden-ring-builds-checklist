@@ -75,7 +75,7 @@ export const items = [
       },
       {
         id: '1a279fba-f36b-4524-98f9-b4957e7bbbaa',
-        description: 'Dectus Medallion (Right) from Fort Faroth in Dragonbarrow (Caelid). Easiest way to reach there is from waygate portal behind Third Church of Marika and going south from Bestial Sanctum, or you can just ride all the way there from Limgrave. To get the item you can just run through all the enemies up the stairs, you don\'t need to fight anything',
+        description: 'Dectus Medallion (Right) from Fort Faroth in Dragonbarrow (Caelid). Easiest way to reach there is from waygate portal behind Third Church of Marika and going south from Bestial Sanctum, or you can just ride all the way there from Limgrave. To get the item you can just run through all the enemies up the stairs, you don\'t need to fight anything. Optionally you can get the Radagon\'s Soreseal in Fort Faroth, which is a good early game Talisman',
         tags: [NGPLUS]
       },
     ]
@@ -513,8 +513,13 @@ export const items = [
   },
   {
     id: '054a08f7-70ba-4ede-a188-b3a286808cb5',
-    description: 'Beat Red Wolf of Radagon in Raya Lucaria. It\'s string vs magic, bleed and frost, and weak vs slash',
+    description: 'Beat Red Wolf of Radagon in Raya Lucaria and activate the Debate Parlor grace. It\'s string vs magic, bleed and frost, and weak vs slash',
     tags: [NGPLUS]
+  },
+  {
+    id: 'e7d07e93-5789-41b7-a8bc-5742cc8437f1',
+    description: `Radagon Icon: Found inside a treasure chest on the second floor of the Debate Parlor Site of Grace. To reach it, exit the Debate Parlor room north, make two hard rights and enter the building`,
+    tags: [LEGENDARY_TALISMANS]
   },
   {
     id: "8872b89b-082f-440e-bc9a-d3409e847acc",
@@ -836,6 +841,11 @@ export const items = [
     id: '6d94d45e-94e0-4bb9-a570-66ccc5c2f1ec',
     description: 'Church of Plague in Caelid. Reached by heading southwest from the Fort Faroth grace site and taking the Spiritspring down or from the backstreets of Sellia, Town of Sorcery. Or, coming from Dragonbarrow, jump down a Spirit Spring to the north of the Church',
     tags: [SACRED_TEAR]
+  },
+  {
+    id: 'f2064b8a-8a2f-4430-b801-d85af7139a4b',
+    description: `Radagon's Soreseal: Found on a corpse in Fort Faroth, Caelid. <a href="https://www.youtube.com/watch?v=6tL5cGjIgBE&ab_channel=ItsShatter" target="_blank">Video guide</a>`,
+    tags: [LEGENDARY_TALISMANS]
   },
   {
     id: '4c0725a1-f7d3-4aea-9f75-d55efcfbc105',
@@ -1195,6 +1205,11 @@ export const items = [
     tags: [SACRED_TEAR]
   },
   {
+    id: '5576f7ac-4935-49b4-ac6b-ffc048e50356',
+    description: `Godfrey Icon: Drops from Godefroy the Grafted in the Golden Lineage Evergaol in Altus Plateau, south of the Altus Plateau grace. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167647" target="_blank">Location</a>`,
+    tags: [LEGENDARY_TALISMANS]
+  },
+  {
     id: 'efee0480-6110-4c57-af6e-9ea5d5c31635',
     description: 'Talk to Yura in the Second Church of Marika to get the Nagakiba. To reach this location, go directly north from the Altus Highway Junction grace in Altus Plateau',
     tags: [YURA_QUESTLINE]
@@ -1459,6 +1474,11 @@ export const items = [
     id: '2a396ffd-78b7-479c-9313-12ccd4626814',
     description: 'In Nokstella upper buildings, inside a building with many silver tears and a rolling ball, by killing the ball. You can let the ball and the tears aggro and kill each other. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths',
     tags: [LARVAL_TEAR]
+  },
+  {
+    id: '6e7c104d-cce8-49c5-ae43-1b70a8d11094',
+    description: `Moon of Nokstella. In the highest room of Nokstella, Eternal City, guarded by two Silver Tears and a Nox warrior. Nokstella is reachable by progressing Ranni\'s questline or from the coffin in Deeproot Depths`,
+    tags: [LEGENDARY_TALISMANS]
   },
   {
     id: "d9201005-91e1-4dec-bb62-2435f52443ef",
@@ -1921,6 +1941,11 @@ export const items = [
     tags: [OPTIONAL, NGPLUS]
   },
   {
+    id: '29f2ae6e-60d2-43f3-8b6c-c003f63c6bd9',
+    description: `Marika's Soreseal: Found on an altar in a room requiring a Stonesword Key in Elphael, Brace of the Haligtree. From the Prayer Room Site of Grace, move through the door to the north, and cross over to the walkway that has the Erdtree Avatar. Head to the southern end of the walkway, then jump down the western side, jumping down once again to reach the sealed door. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169301" target="_blank">Location</a>`,
+    tags: [LEGENDARY_TALISMANS]
+  },
+  {
     id: '9ec84570-d38d-44ad-8225-0d918c24835f',
     description: 'Cleanrot Knight Finlay: Found in a chest protected by a knight in Elphael, Brace of the Haligtree. Start at the Prayer Room site of grace, go north to the next grace and roughly half way, there is the chest. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167679" target="_blank">Location</a>',
     tags: [LEGENDARY_ASHES_ACH]
@@ -1969,6 +1994,11 @@ export const items = [
     id: '0d3d7ba1-a092-40fd-80dd-980bca710bdf',
     description: "Return to Gowry in Gowry's Shack. If he is alive, talk to him and kill him to get the Flock's Canvas Talisman and Gowry's Bell Bearing (might need to defeat Malenia before, I'm not sure)",
     tags: [MILLICENT_QUESTLINE]
+  },
+  {
+    id: 'eac54d1d-5cee-4cf3-b6c8-f759d7301519',
+    description: `Dragoncrest Greatshield Talisman: Found in a chest near the Drainage Channel Site of Grace. To reach it, start from the Drainage Channel grace, go over the tree branches, reach the rooftop and jump down to the platform with the chest, guarded by some pests.`,
+    tags: [LEGENDARY_TALISMANS]
   },
   {
     id: '81fc1668-21af-4a10-acfb-34ed93c8a115',
@@ -2064,6 +2094,11 @@ export const items = [
     tags: [LEGENDARY_WEAPONS_ACH]
   },
   {
+    id: '416eae3a-a907-4cd9-9817-7555fbc2ee62',
+    description: `Old Lord's Talisman: Found in a chest in Crumbling Farum Azula. Start from the Beside the Great Bridge grace, go up the bridge and head north. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169443" target="_blank">Location</a>`,
+    tags: [LEGENDARY_TALISMANS]
+  },
+  {
     id: '4b29d14f-ec7a-4729-a457-5af706963d61',
     description: 'Defeat Maliketh, The Black Blade. He is strong vs holy and sleep, and weak vs standard, slash, strike and pierce. The item Blasphemous Claw  lets you do a special kind of parry on Maliketh, on two of his attacks: Black Blade attack (indicated by white aura around sword) and vertical double-spin attack. Blasphemous Claw is dropped by Recusant Bernahl upon defeat at Crumbling Farum Azula',
     tags: [NGPLUS]
@@ -2084,6 +2119,11 @@ export const items = [
     tags: [OPTIONAL, NGPLUS]
   },
   // LEYNDELL, CAPITAL OF ASH 120-180 +25
+  {
+    id: '1c22320a-2e83-422d-bf81-50dfdacf9867',
+    description: `Erdtree's Favor +2: Found on a dead tree surrounded by Ulcerated Tree Spirits in Leyndell, Ashen Capital. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168184" target="_blank">Location</a>`,
+    tags: [LEGENDARY_TALISMANS]
+  },
   {
     id: '065851a5-2baf-4466-8c3c-1125d38d09f4',
     description: 'Beat Sir Gideon Ofnir, The All-Knowing. He is strong vs magic and weak vs strike, pierce, lightning, sleep and madness',

@@ -231,7 +231,7 @@ const list = {
     },
     {
       id: '483f8fbb-2409-432c-a586-7e6120d10ae4',
-      description: "Lusat’s Glintstone Staff (STR 10, INT 52). Found in a chest north of the Nox Swordstress & Nox Priest boss duo's chamber after defeating them, in Sellia, Town of Sorcery, in eastern Caelid. To access the boss you need to light the braziers in Sellia",
+      description: "Lusat's Glintstone Staff (STR 10, INT 52). Found in a chest north of the Nox Swordstress & Nox Priest boss duo's chamber after defeating them, in Sellia, Town of Sorcery, in eastern Caelid. To access the boss you need to light the braziers in Sellia",
       tags: [OPTIONAL]
     },
     {

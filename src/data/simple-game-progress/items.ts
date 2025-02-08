@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT, LEGENDARY_WEAPONS_ACH, LEGENDARY_WEAPONS, LEGENDARY_ASHES, LEGENDARY_SPELLS, LEGENDARY_TALISMANS } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT, LEGENDARY_WEAPONS_ACH, LEGENDARY_WEAPONS, LEGENDARY_ASHES, LEGENDARY_ASHES_ACH, LEGENDARY_SPELLS, LEGENDARY_TALISMANS } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -152,6 +152,11 @@ export const items = [
     id: '73fcc602-563d-4ae9-bdc9-d363dd2ecaf0',
     description: 'Morne Tunnel, in Weeping Peninsula. From the South of the Tower grace then head West and then South around the mountain. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=2318&lat=-214.054&lng=108.91&code=mapA" target="_blank">Location</a>',
     tags: [TUNNELS]
+  },
+  {
+    id: 'cc380636-9bd9-45ef-a590-e87c202acd53',
+    description: 'Lhutel the Headless: Dropped by the Cemetery Shade at the Tombsward Catacombs. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=163989" target="_blank">Location</a>',
+    tags: [LEGENDARY_ASHES_ACH]
   },
   {
     id: '8a19443f-919d-4ba9-891f-b88ad22ae163',
@@ -855,8 +860,8 @@ export const items = [
   {
     id: "56421d70-5f43-43ef-9484-a8e26c78f9f2",
     description:
-      "Dropped by Putrid Tree Spirit in the War Dead Catacombs. From Starscourge Radahn grace, head directly north and hug the cliff until you find the entrance. Caelid. You need to defeat Radahn first.",
-    tags: [GOLDEN_SEED],
+      "A Golden Seed and Redmane Knight Ogha Spirit Ash are dropped by Putrid Tree Spirit in the War Dead Catacombs. From Starscourge Radahn grace, head directly north and hug the cliff until you find the entrance. Caelid. You need to defeat Radahn first.",
+    tags: [GOLDEN_SEED, LEGENDARY_ASHES_ACH],
   },
   {
     id: '710569d9-691d-4a88-8e02-63fc3c559370',
@@ -891,8 +896,8 @@ export const items = [
   },
   {
     id: "40a23af2-c9a0-405b-bbf2-3ffbd67bda6f",
-    description: "get the Mimic Tear spirit summon from Nokron",
-    tags: [OPTIONAL]
+    description: "get the Mimic Tear spirit summon from Nokron. Found in a chest locked behind an imp statue door in Night's Sacred Ground",
+    tags: [OPTIONAL, LEGENDARY_ASHES_ACH]
   },
   {
     id: 'c5b0dfbf-2e28-450c-b87b-6a30a5ec5a17',
@@ -1186,8 +1191,13 @@ export const items = [
   },
   {
     id: 'acf83ead-4866-4670-90f1-245de9554bc0',
-    description: 'Black Knife: Wielded by the Black Knife Assassin outside Sainted Hero\'s Grave. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167676">Location</a>',
+    description: 'Black Knife: Wielded by the Black Knife Assassin outside Sainted Hero\'s Grave. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167676" target="_blank">Location</a>',
     tags: [LEGENDARY_WEAPONS]
+  },
+  {
+    id: 'cee0d282-0f32-40ec-bb6e-a0752bc26e11',
+    description: 'Ancient Dragon Knight Kristoff: Can be found in Sainted Hero\'s Grave west of Leyndell, Royal Capital. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165891" target="_blank">Location</a>',
+    tags: [LEGENDARY_ASHES_ACH]
   },
   {
     id: '3e908ded-2825-48c2-b96b-93068276438d',
@@ -1486,6 +1496,11 @@ export const items = [
     id: 'e294f45d-34ec-4f01-a121-4a26cd8b7b11',
     description: 'Place the Dark Moon Ring on Ranni\'s doll finger and Get the Dark Moon Greatsword',
     tags: [RANNI_QUESTLINE, LEGENDARY_WEAPONS_ACH]
+  },
+  {
+    id: '18b31232-e67e-4b88-896f-8a0c78865c2a',
+    description: 'Black Knife Tiche: Dropped by Alecto, Black Knife Ringleader upon defeat at the Ringleader\'s Evergaol, in Moonlight Altar, Liurnia. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=171212" target="_blank">Location</a>',
+    tags: [LEGENDARY_ASHES_ACH]
   },
   {
     id: '8a776cf3-1d98-41c8-bf25-629fd277e248',
@@ -1879,6 +1894,11 @@ export const items = [
     id: "2554253d-5e49-4380-9f56-83ba0e134b66",
     description: "Progress through Miquella's Haligtree and defeat Loretta, Knight of the Haligtree. She is strong vs magic, fire, bleed and frost, and weak vs lightning",
     tags: [OPTIONAL, NGPLUS]
+  },
+  {
+    id: '9ec84570-d38d-44ad-8225-0d918c24835f',
+    description: 'Cleanrot Knight Finlay: Found in a chest protected by a knight in Elphael, Brace of the Haligtree. Start at the Prayer Room site of grace, go north to the next grace and roughly half way, there is the chest. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167679" target="_blank">Location</a>',
+    tags: [LEGENDARY_ASHES_ACH]
   },
   {
     id: '37fd75e6-f278-457b-8f48-7983d33d39d2',

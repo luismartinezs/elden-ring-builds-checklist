@@ -88,7 +88,6 @@ function FilterButtons() {
           <div className="my-3 flex flex-wrap items-center gap-2 md:gap-1">
             <FilterButton filterTag={TAGS.LEGENDARY_WEAPONS_ACH} />
             <FilterButton filterTag={TAGS.LEGENDARY_WEAPONS} />
-            <FilterButton filterTag={TAGS.LEGENDARY_ASHES} />
             <FilterButton filterTag={TAGS.LEGENDARY_ASHES_ACH} />
             <FilterButton filterTag={TAGS.LEGENDARY_SPELLS} />
             <FilterButton filterTag={TAGS.LEGENDARY_TALISMANS} />

@@ -82,3 +82,12 @@ This is to make it easier to play the game without having to look up guides cons
     - [ ] sponsors of elden ring youtubers eg lilaggy, vaait, etc
   - [ ] if find sponsor that covers costs, build new features to grow site
   - [ ] users can create their own checklists
+
+## Docs
+
+## About legendary items
+
+Some legendary items contribute to an achievement, others do not:
+
+- Contribute to an achievement: suffixed by _ACH
+- Do not contribute to an achievement: not suffixed by _ACH

@@ -1,0 +1,50 @@
+---
+description: Rules for coding style
+globs: 
+---
+# Coding Style Guidelines
+
+## TypeScript Standards
+   - Strict TypeScript checking is enabled
+   - Type imports should use the inline style (configured in ESLint)
+   - Unused variables should be prefixed with underscore
+   - Types should be explicitly defined for better code clarity
+
+## Code Formatting
+   - Uses Prettier for code formatting
+   - Tailwind CSS classes are automatically sorted using prettier-plugin-tailwindcss
+   - ESLint is configured with Next.js and TypeScript recommended rules
+
+## Dependencies and Tools
+   - Package management using pnpm (evidenced by `pnpm-lock.yaml`)
+   - React 18 with Next.js 13
+   - TailwindCSS for styling
+   - React Query (@tanstack/react-query) for data fetching
+   - Uses tRPC for type-safe API calls
+   - Next-Auth for authentication
+
+## Testing and Quality
+   - ESLint is used for code quality checks
+   - TypeScript strict mode is enabled for type safety
+   - Vercel Speed Insights is integrated for performance monitoring
+
+## Component Guidelines
+   - Use functional components with TypeScript
+   - Utilize custom hooks for reusable logic
+   - Implement proper component composition
+   - Use Tailwind CSS for styling with tailwind-merge for class merging
+
+## State Management
+   - Uses React Query for server state
+   - Implements custom hooks for local state management
+   - Uses immer for immutable state updates
+
+## Performance Considerations
+   - Implements PWA capabilities (next-pwa)
+   - Uses React Virtual for efficient list rendering
+   - Implements proper code splitting through Next.js
+
+## Environment and Configuration
+   - Environment variables should be properly typed in `env.mjs`
+   - Sensitive information should be stored in `.env.local`
+   - Production environment variables should be documented in `.env.example`

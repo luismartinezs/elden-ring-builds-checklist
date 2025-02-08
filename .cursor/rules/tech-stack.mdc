@@ -1,0 +1,54 @@
+---
+description: Tech stack used in the project
+globs: 
+---
+# Tech Stack
+
+## Frontend
+- **Framework**: Next.js 13
+- **Language**: TypeScript
+- **UI & Styling**:
+  - React 18.2
+  - TailwindCSS
+  - React Icons
+  - clsx/classnames for conditional classes
+  - tailwind-merge for class merging
+
+## Backend & API
+- **API Layer**: None
+- **Database**: None, use local storage to persist data
+- **Authentication**: None
+- **Email**: Nodemailer
+
+## State Management & Data Fetching
+- **Server State**: TanStack Query (React Query)
+- **Client State**: React Hooks
+- **Immutable Updates**: Immer
+- **Schema Validation**: Zod
+
+## Development & Build Tools
+- **Package Manager**: pnpm
+- **Linting & Formatting**:
+  - ESLint
+  - Prettier
+  - TypeScript ESLint
+- **Build Tools**:
+  - Next.js built-in compiler
+  - PostCSS
+  - Autoprefixer
+
+## Performance & Optimization
+- **Analytics**: Vercel Speed Insights
+- **PWA Support**: next-pwa
+- **Virtualization**: TanStack Virtual
+- **SEO**: next-sitemap
+
+## Type System
+- **Language**: TypeScript
+- **Type Safety**:
+  - Strict TypeScript configuration
+  - Zod for runtime type validation
+
+## Deployment & Infrastructure
+- **Platform**: Vercel
+- **Environment**: Node.js

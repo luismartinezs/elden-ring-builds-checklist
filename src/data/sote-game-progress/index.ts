@@ -123,8 +123,8 @@ const list = {
     },
     {
       id: '16d7fc13-f609-420d-8efe-e0049fa51f0d',
-      description: 'From the Castle Front grace head south and take the easter-most path to reach the Pillar Path Cross grace',
-      tags: [OPTIONAL, THIOLLIER, MOORE, ANSBACH, FORAGER, IGON, DRAGON_PRIESTESS, DUNGEON]
+      description: 'From the Castle Front grace head south and take the easter-most path to reach the Pillar Path Cross grace. If you want to get the legendary spirit ash from the Dragon Priestess, you will have to follow her questline.',
+      tags: [OPTIONAL, THIOLLIER, MOORE, ANSBACH, FORAGER, IGON, DRAGON_PRIESTESS, DUNGEON, LEGENDARY_ASHES]
     },
     {
       id: '6fff135f-b11f-40cb-a58d-02d002d9a2e6',
@@ -166,8 +166,8 @@ const list = {
 
     {
       id: 'e16f6de8-4ebc-4773-a37c-2973c270071c',
-      description: "Speak to the Dragon Communion Priestess at the Grand Altar of Dragon Communion. Choose whether to give her the potion from Thiollier (must be given at night). At the end of her questline, if you don't give her the potion, you receive a consumable and a weapon; if you do, you'll receive an incantation and spirit ashes.",
-      tags: [DRAGON_PRIESTESS]
+      description: "Speak to the Dragon Communion Priestess at the Grand Altar of Dragon Communion. Choose whether to give her the Concoction from Thiollier (must be given at night). At the end of her questline, if you don't give her the potion, you receive a consumable and a weapon; if you do, you'll receive an incantation and a Legendary spirit ashes: Ancient Dragon Florissax.",
+      tags: [DRAGON_PRIESTESS, LEGENDARY_ASHES]
     },
     {
       id: "a278cef5-e169-4243-8fb8-929e68072bf6",
@@ -289,13 +289,28 @@ const list = {
       tags: [DUNGEON, OPTIONAL]
     },
     {
+      id: '1d520a76-7b47-410b-bb87-b61cdf7751a5',
+      description: 'Taylew the Golem Smith: Found at the heart of Taylew\'s Ruined Forge',
+      tags: [LEGENDARY_ASHES]
+    },
+    {
       id: 'f269bd87-59ff-4b06-b5b2-721c9991a35b',
       description: 'From the Ancient Ruins Base grace go south west hugging the left side to reach the Fog Rift Catacombs. Within, you can find the Stone-Sheathed Sword',
       tags: [DUNGEON, LEGENDARY_WEAPONS]
     },
     {
+      id: '764160e2-1116-46cd-9c46-618d27025af8',
+      description: 'Reach the Temple Town Ruins grace: From the Ancient Ruins Base grace go south west',
+      tags: [DUNGEON, LEGENDARY_ASHES]
+    },
+    {
+      id: 'b22652ba-a47b-4509-8fc7-270fef4a058a',
+      description: 'Divine Bird Warrior Ornis: Hidden in a chest near the Temple Town Ruins. <a href="https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382335" target="_blank">Location</a>',
+      tags: [LEGENDARY_ASHES]
+    },
+    {
       id: '1176e834-5998-474f-bdbb-213811cea804',
-      description: 'From the Ancient Ruins Base grace go south west to reach the Temple Town Ruins, and hug the right side to reach the Temple Town Ruins site of grace. From this grace, go south to the cliff and find some gravestones to go down. Once down, go west to find the entrance to the Rivermouth Cave',
+      description: 'From the Temple Town Ruins, and hug the right side to reach the Temple Town Ruins site of grace. From this grace, go south to the cliff and find some gravestones to go down. Once down, go west to find the entrance to the Rivermouth Cave',
       tags: [DUNGEON]
     },
     {
@@ -624,9 +639,10 @@ const list = {
     },
     {
       "id": "dac4a7f2-1046-4bc5-bac7-b7ed9d610d20",
-      "description": `Go to the Grand Altar of Dragon Communion and get the questline rewards, which will differ depending on whether you used Thiollier's Concoction on her or not`,
+      "description": `Go to the Grand Altar of Dragon Communion and get the questline rewards from the Dragon Priestess, which will differ depending on whether you used Thiollier's Concoction on her or not`,
       "tags": [
-        DRAGON_PRIESTESS
+        DRAGON_PRIESTESS,
+        LEGENDARY_ASHES
       ]
     },
     //     "SHADOW KEEP DEPTHS

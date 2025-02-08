@@ -1,4 +1,4 @@
-import { TAGS, EXTRA_TAGS } from '~/features/tags';
+import { TAGS, EXTRA_TAGS, tags } from '~/features/tags';
 
 const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT, LEGENDARY_WEAPONS_ACH, LEGENDARY_WEAPONS, LEGENDARY_ASHES, LEGENDARY_ASHES_ACH, LEGENDARY_SPELLS, LEGENDARY_TALISMANS } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
@@ -120,8 +120,8 @@ export const items = [
   // WEEPING PENINSULA L20-30 +3
   {
     id: '2fa6873f-d44c-4b9c-adda-596b6e7fa74b',
-    description: 'Talk to Sellen at the Waypoint Ruins Cellar grace and select the "I want to learn sorcery" dialogue option. Located Western Limgrave, right east to Agheel Lake, downstairs Waypoint Ruins.',
-    tags: [SELLEN_QUESTLINE]
+    description: 'Talk to Sellen at the Waypoint Ruins Cellar grace and select the "I want to learn sorcery" dialogue option. Located Western Limgrave, right east to Agheel Lake, downstairs Waypoint Ruins. If you want to get the Legendary Spell Stars of Ruin, you will have to progress Sellen\'s questline',
+    tags: [SELLEN_QUESTLINE, LEGENDARY_SPELLS]
   },
   {
     id: 'c2b353c2-e317-4414-b978-ae17257c33a0',
@@ -231,6 +231,11 @@ export const items = [
     id: '3ebfbeb9-f5f8-42fc-957b-2a83ecf15d88',
     description: 'Get 50,000 runes from killing the sleeping dragon Greyoll in Dragonbarrow with bleed (Reduvia, Uchigatana or Bloody slash ash of war)',
     tags: [OPTIONAL]
+  },
+  {
+    id: '60440abd-aed0-4710-86d2-bdefbb2ac9ad',
+    description: 'Greyoll\'s Roar: Can be purchased at the Cathedral of Dragon Communion for three Dragon Hearts after defeating Greyoll in Caelid. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166189" target="_blank">Greyoll Location</a>, <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166067" target="_blank">Cathedral of Dragon Communion Location</a>',
+    tags: [LEGENDARY_SPELLS]
   },
   {
     id: 'c2032110-34a5-4c0d-b8b7-74ab6de2f77d',
@@ -387,6 +392,11 @@ export const items = [
     id: '98f9ae6e-2b36-42c0-94eb-17c92aecbd29',
     description: "Talk to Varré in Rose Church, accept the dialog and get Lord of Blood's Favor",
     tags: [VARRE_QUESTLINE]
+  },
+  {
+    id: '66a02c1f-6695-4eaa-9ab0-ecb38938b2eb',
+    description: 'Flame of the Fell God: Dropped by Adan, Thief of Fire upon defeat. From the Scenic Isle grace go south uphill and then east to reach the Evergaol. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166816" target="_blank">Location</a>',
+    tags: [LEGENDARY_SPELLS]
   },
   {
     id: '772d7a3e-503e-437f-822b-cfac4f7528b9',
@@ -920,6 +930,11 @@ export const items = [
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   // DEEPROOT DEPTHS 80-90 +15-20
+  {
+    id: '66a047e2-dcb9-41ce-b693-109b43a31d1c',
+    description: 'Elden Stars: Can be found near the Great Waterfall Crest site of grace in Deeproot Depths. On a corpse, at the end of a cave with Ants. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168441" target="_blank">Location</a>. Deeproot Depths is accessed by resting in a coffin after defeating the Valiant Gargoyle in Siofra Aqueduct, or alternatively, through a hidden passage near the Frenzied Flame Proscription grace in the Subterranean Shunning-Grounds',
+    tags: [LEGENDARY_SPELLS]
+  },
   // LAKE OF ROT 80-100 +15-20
 
   // MT GELMIR 80-100 +15-20
@@ -937,7 +952,7 @@ export const items = [
   {
     id: 'de07597b-b541-4932-8378-226d7fa57d58',
     description: "Get the Comet Azur spell at the Primeval Sorcerer Azur grace. Reachable from Altus Plateau: start at Altus Plateau or Erdtree-Gazing Hill grace, go north through Wyndham Ruins and find Seethewater River grace. From that grace it's a long straight path around Mt. Gelmir. At the very end you will find Primeval Sorcerer Azur",
-    tags: [SELLEN_QUESTLINE]
+    tags: [SELLEN_QUESTLINE, LEGENDARY_SPELLS]
   },
   {
     id: '5ff38f33-2edd-43d5-bf3c-db0bbf61215d',
@@ -947,7 +962,7 @@ export const items = [
   {
     id: 'cb018c4a-8717-4bf2-908a-f6ef4067dca0',
     description: "Find Lusat in the Sellia Hideaway and get the Stars of Ruin spell. He is behind a secret cave behind an illusory wall. To reach the entrance, start at the Church of the Plague site of grace and head north up the hill and straight under the wooden arch. Look to the North-East for a small graveyard with a single sorcerer enemy wielding a staff and a club. Behind the main headstone, along the cliffside, there's a secret door you can reveal by rolling or attacking it",
-    tags: [SELLEN_QUESTLINE]
+    tags: [SELLEN_QUESTLINE, LEGENDARY_SPELLS]
   },
   {
     id: 'f1ab993b-65d3-41f1-bc29-df9dfc65d386',
@@ -1498,6 +1513,11 @@ export const items = [
     tags: [RANNI_QUESTLINE, LEGENDARY_WEAPONS_ACH]
   },
   {
+    id: '7ea26fc2-df66-4228-af59-91972c4bb601',
+    description: `Ranni's Dark Moon: Found in a chest at the top of the tower at Chelona's Rise, at the Moonlight Altar. One must solve the tower's puzzle to enter. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168058" target="_blank">Spell location</a>, <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170236" target="_blank">First Wise Beast</a>, <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170217" target="_blank">Second Wise Beast</a>, <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170235" target="_blank">Third Wise Beast</a>`,
+    tags: [LEGENDARY_SPELLS]
+  },
+  {
     id: '18b31232-e67e-4b88-896f-8a0c78865c2a',
     description: 'Black Knife Tiche: Dropped by Alecto, Black Knife Ringleader upon defeat at the Ringleader\'s Evergaol, in Moonlight Altar, Liurnia. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=171212" target="_blank">Location</a>',
     tags: [LEGENDARY_ASHES_ACH]
@@ -1653,6 +1673,11 @@ export const items = [
     id: '96d6b2fa-aebd-4c07-b608-486102d7afeb',
     description: "Talk to Corhyn in the bridge south of Stargazers' Ruins right above the Ancient Snow Valley Ruins grace, in Mountaintops of the Giants. If you have the Tonic of Forgetfulness you can optionally offer it to him, but you don't need to",
     tags: [CORHYN_QUESTLINE]
+  },
+  {
+    id: 'ddd0e4db-d34d-4bff-9f4d-72ec271636cd',
+    description: `Founding Rain of Stars: Found in a chest within Heretical Rise, in Mountaintops of the Giants. One must navigate an invisible bridge to get inside. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168642" target="_blank">Location</a>`,
+    tags: [LEGENDARY_SPELLS]
   },
   {
     id: '223a264a-6e74-4942-9c6f-f4c0d9229ac8',

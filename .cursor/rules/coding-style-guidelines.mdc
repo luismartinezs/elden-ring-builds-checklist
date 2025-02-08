@@ -44,7 +44,11 @@ globs:
    - Uses React Virtual for efficient list rendering
    - Implements proper code splitting through Next.js
 
+## Tailwind CSS
+- Do not write `h-4 w-4`, use `size-4` instead to define the equal width and height
+
 ## Environment and Configuration
    - Environment variables should be properly typed in `env.mjs`
    - Sensitive information should be stored in `.env.local`
    - Production environment variables should be documented in `.env.example`
+   - 

@@ -1,3 +1,5 @@
+import ReactComponentName from "react-scan/react-component-name/webpack";
+import MillionLint from "@million/lint";
 /**
  * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially useful
  * for Docker builds.
@@ -29,6 +31,13 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+
+  webpack: (config) => {
+    config.plugins.push(ReactComponentName({}));
+    return config;
+  }
 };
 
-export default withPWA(config);
+export default MillionLint.next({
+  enabled: true
+})(withPWA(config));

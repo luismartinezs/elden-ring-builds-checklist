@@ -1,11 +1,14 @@
 // pages/_document.js
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 class MyDocument extends Document {
   render() {
     return (
       <Html>
         <Head>
+          <Script src="https://unpkg.com/react-scan/dist/install-hook.global.js"
+        strategy="beforeInteractive"/>
           {process.env.NODE_ENV === "production" && (
             <>
               <script

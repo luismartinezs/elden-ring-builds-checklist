@@ -1,0 +1,12 @@
+# Elden Ring Builds Checklist Project Rules
+
+1. Feature-first organization - all new features go in src/features/
+2. Use TypeScript for all new code
+3. Tailwind for styling - no CSS modules
+4. Components follow Container/Presenter pattern
+5. Custom hooks for shared logic
+6. Prisma for all database operations
+7. Mobile-first responsive design
+8. Error handling with proper user feedback
+9. Accessibility is a priority
+10. Keep components small and focused

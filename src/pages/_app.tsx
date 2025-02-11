@@ -1,3 +1,4 @@
+import { Monitoring } from "react-scan/monitoring/next";
 import { type AppType } from "next/app";
 import Head from "next/head";
 import { type Session } from "next-auth";
@@ -108,6 +109,12 @@ const App: AppType<{ session: Session | null }> = ({
         </Head>
         <Component {...pageProps} />
       </SessionProvider>
+      <Monitoring
+        apiKey="RNmghIjWyjH-J6i48OIXKnVPA0sMsmUP" // Safe to expose publically
+        url="https://monitoring.react-scan.com/api/v1/ingest"
+        commit={process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA} // optional but recommended
+        branch={process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF} // optional but recommended
+      />
     </>
   );
 };

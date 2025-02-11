@@ -71,7 +71,7 @@ This is to make it easier to play the game without having to look up guides cons
 - [ ] ER improvements
   - [x] weaknesses and resistances for base game bosses
   - [ ] memory stones
-  - [ ] legendary items
+  - [x] legendary items
   - [ ] check of the remaining side quests which ones i should add, and add them
 - [ ] Growth
   - [ ] Estimate cost of:

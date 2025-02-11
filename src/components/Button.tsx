@@ -1,8 +1,21 @@
 import { forwardRef } from "react";
 import { cn } from "~/utils/cn";
+import { useButtonA11y } from "~/hooks/useButtonA11y";
 
 export type ButtonProps = React.ComponentPropsWithoutRef<"button"> & {
-  variant?: "primary" | "outline" | "danger" | "elden" | "muted" | "ranni" | "caelid"
+  variant?: "primary" | "outline" | "danger" | "elden" | "muted" | "ranni" | "caelid";
+  /**
+   * Optional label for screen readers. Required when button only contains an icon.
+   */
+  'aria-label'?: string;
+  /**
+   * For toggle buttons, indicates whether the button is pressed
+   */
+  'aria-pressed'?: boolean;
+  /**
+   * Additional description for screen readers
+   */
+  'aria-describedby'?: string;
 };
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -12,8 +25,18 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       className,
       variant = "primary",
       disabled,
+      onClick,
+      'aria-label': ariaLabel,
+      'aria-pressed': ariaPressed,
+      'aria-describedby': ariaDescribedBy,
       ...otherProps
     } = props;
+
+    const { buttonProps } = useButtonA11y({
+      onClick,
+      disabled,
+      isPressed: ariaPressed,
+    });
 
     const classes = cn(
       "sm:mb-2 sm:mr-2 rounded-lg px-2 py-2 sm:px-5 sm:py-2.5 text-sm font-medium focus:outline-none sm:focus:ring-4 focus:ring-2",
@@ -35,14 +58,28 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         // caelid: a vibrant red gradient
         "bg-gradient-to-r from-red-500 to-red-700 text-white hover:from-red-600 hover:to-red-700 focus:ring-offset-1 sm:focus:ring-offset-2 focus:ring-red-500 focus:ring-1 sm:focus:ring-2 focus:ring-offset-stone-900 text-black":
           variant === "caelid",
-
       },
       className,
-      disabled && "opacity-50 cursor-not-allowed"
+      // Improved disabled state visibility
+      disabled && "opacity-50 cursor-not-allowed ring-0 pointer-events-none"
     );
 
+    // Ensure icon-only buttons have an aria-label
+    if (!children && !ariaLabel) {
+      console.warn('Button: Icon-only buttons must have an aria-label prop for accessibility');
+    }
+
     return (
-      <button {...otherProps} className={classes} ref={ref}>
+      <button
+        {...otherProps}
+        {...buttonProps}
+        className={classes}
+        ref={ref}
+        disabled={disabled}
+        aria-label={ariaLabel}
+        aria-describedby={ariaDescribedBy}
+        onClick={!disabled ? onClick : undefined}
+      >
         {children}
       </button>
     );

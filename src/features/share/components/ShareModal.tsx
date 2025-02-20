@@ -3,7 +3,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Button } from "~/components/Button";
 import { FaXTwitter, FaFacebook, FaReddit, FaDiscord } from "react-icons/fa6";
 import { cn } from "~/utils/cn";
-import { useFocusTrap } from "../hooks";
+import { useFocusTrap } from "~/hooks/useFocusTrap";
 
 const commonBtnClasses = "rounded px-6 py-2 font-bold text-white";
 const url = env.NEXT_PUBLIC_SITE_URL;

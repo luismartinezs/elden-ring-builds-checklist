@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const STORAGE_KEY = "lastSharePrompt";
 
@@ -8,8 +8,12 @@ export function useShareModal() {
   useEffect(() => {
     const lastPrompt = localStorage.getItem(STORAGE_KEY);
     if (lastPrompt === "shared") return;
+    if (!lastPrompt) {
+      localStorage.setItem(STORAGE_KEY, new Date().toISOString());
+      return;
+    }
 
-    const daysSinceLastPrompt = lastPrompt ? (new Date().getTime() - new Date(lastPrompt).getTime()) / (1000 * 3600 * 24) : Infinity;
+    const daysSinceLastPrompt = (new Date().getTime() - new Date(lastPrompt).getTime()) / (1000 * 3600 * 24)
 
     if (daysSinceLastPrompt >= 30) {
       setShowModal(true);
@@ -33,43 +37,3 @@ export function useShareModal() {
   }
 }
 
-export function useFocusTrap() {
-  const firstFocusableElementRef = useRef<HTMLButtonElement | null>(null);
-  const lastFocusableElementRef = useRef<HTMLButtonElement | null>(null);
-
-  const handleKeyDown = (e: KeyboardEvent) => {
-    // Check if Tab or Shift+Tab was pressed
-    if (e.key === 'Tab') {
-      if (e.shiftKey) {
-        // Shift + Tab
-        if (document.activeElement === firstFocusableElementRef.current) {
-          lastFocusableElementRef.current?.focus();
-          e.preventDefault();
-        }
-      } else {
-        // Tab
-        if (document.activeElement === lastFocusableElementRef.current) {
-          firstFocusableElementRef.current?.focus();
-          e.preventDefault();
-        }
-      }
-    }
-  };
-
-  useEffect(() => {
-    // Add event listener
-    const handleKey = (e: KeyboardEvent) => handleKeyDown(e);
-    document.addEventListener('keydown', handleKey);
-
-    // Remove event listener on cleanup
-    return () => {
-      document.removeEventListener('keydown', handleKey);
-    };
-  }, []);
-
-
-  return {
-    firstFocusableElementRef,
-    lastFocusableElementRef
-  }
-}

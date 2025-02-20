@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useFocusTrap } from "~/features/share/hooks";
+import { useFocusTrap } from "~/hooks/useFocusTrap";
 import { Button } from "./Button";
 import { AiOutlineClose } from "react-icons/ai";
 

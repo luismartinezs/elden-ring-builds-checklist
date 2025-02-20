@@ -68,8 +68,8 @@ export const ShareModal = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900 bg-opacity-40 text-white">
-      <div className="w-full max-w-sm rounded-lg bg-stone-900 p-6 shadow-lg">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 text-white backdrop-blur-sm">
+      <div className="mx-4 w-full max-w-sm rounded-lg border border-stone-700 bg-stone-800 p-6 shadow-xl ring-1 ring-white/10 sm:mx-0 sm:max-w-md md:max-w-lg">
         <Button
           className="float-right !px-2"
           variant="muted"

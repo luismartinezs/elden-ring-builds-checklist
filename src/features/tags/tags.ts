@@ -388,7 +388,7 @@ export const tags: TTags = {
 "Ansbach's Attire",
 "Ansbach's Manchettes",
 "Ansbach's Boots",
-"Obsidian Lamina",
+"Ansbach's Longbow",
 "Furious Blade of Ansbach",
 "Obsidian Lamina",
     ]

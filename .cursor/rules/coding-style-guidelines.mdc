@@ -1,6 +1,6 @@
 ---
 description: Rules for coding style
-globs: 
+globs:
 ---
 # Coding Style Guidelines
 
@@ -51,4 +51,3 @@ globs:
    - Environment variables should be properly typed in `env.mjs`
    - Sensitive information should be stored in `.env.local`
    - Production environment variables should be documented in `.env.example`
-   - 

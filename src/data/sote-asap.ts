@@ -6,7 +6,7 @@ const list = {
     'This list is aimed to provide a minimal list of steps to reach SotE, skipping everything else. I included some obvious steps that while not strictly necessary are just convenient, such as getting Torrent.',
     "If you need a more beginner friendly path, check <a href=\"prep-dlc\">Prepare for DLC</a>"
   ],
-  tags: ['new'],
+  tags: [],
   items: [
     {
       id: '058b7cce-d991-4126-b178-811fae9c55b4',

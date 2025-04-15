@@ -48,6 +48,10 @@ const tagMap: Record<
     className:
       "bg-gradient-to-r from-amber-300 to-yellow-300 text-amber-900 border border-amber-700 outline outline-offset-2 outline-2 outline-yellow-300",
   },
+  sote: {
+    label: "SOTE",
+    className: "bg-[#8B6D3C] text-[#FFF8E7] border border-[#C4A269]",
+  },
   default: {
     label: "tag",
     className: "bg-gray-200 text-gray-800 border border-gray-400",

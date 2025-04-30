@@ -22,6 +22,10 @@ const links = [
     href: "/npc-questline-rewards",
   },
   {
+    label: "Soft Caps",
+    href: "/soft-caps",
+  },
+  {
     label: "Profile",
     href: "/profile",
   },

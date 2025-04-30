@@ -1,0 +1,9 @@
+- Note: you can skip D's questline up to the point where you get the Weathered Dagger, and still get the dagger after starting the Radahn Festival
+- (optional) meet D, Hunter of the Dead in Stormhill, Limgrave, east of Stormhill Shack
+- (optional) defeat Tibia Mariner in Summonwater Village, Stormhill, Limgrave
+- (optional) meet D in Roundtable Hold and show him the Deathroot
+- (optional) Talk to Gurranq in the Bestial Sanctum, Caelid. You can reach him from the teleport directly north from Third Church of Marika
+- (optional) Speak to D in Rountable Hold to unlock him as merchant
+- Receive the Weathered Dagger from Fia in the Roundtable Hold
+- Give the Weathered Dagger to D in Roundtable Hold, reload the area by resting at a grace, and find D's Bell Bearing and the Twinned Set in a newly opened room in Roundtable Hold
+- Find D's twin brother in Nokron, right before the Valiant Gargoyle boss, to get the Inner Order gesture. Optionally, give him the unaltered Twinned Set. If you do so and reload the area, you can summon him for the Valiant Gargoyles fight.

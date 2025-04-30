@@ -1,0 +1,10 @@
+- Find Sorcerer Rogier in Stormveil Castle by the altar of the Chapel in the northwest section, before beating Godrick (optional)
+- After defeating Godrick, talk to Rogier in Roundtable Hold to get Rogier's Rapier +8 with Ash of War: Glintblade Phalanx
+- Defeat the Lesser Ulcerated Tree Spirit below Stormveil Castle (rogier)
+- In the Ulcerated Tree Spirit area below Stormveil Castle, find Rogier's bloodstain and activate it (rogier)
+- In Roundtable Hold talk to Rogier (rogier)
+- Optionally talk to Fia multiple times until exhausting her dialogue to get the Knifeprint Clue (rogier)
+- Obtain the Black Knifeprint from Black Knife Catacombs in Liurnia, behind an illusory wall in the room before dropping down to a flooded pit with levers (rogier)
+- Give the Black Knifeprint to Rogier in Roundtable Hold, reload the area and talk to him again (rogier)
+- Speak to Ranni in Liurnia. If she tells you to leave, talk to Rogier again in Roundtable Hold, and then go talk to Ranni again (rogier)
+- After becoming Ranni's vassal, talk to Rogier in Roundtable Hold, rest at a grace and find in slumber. After resting a handful of times at a grace, eventually Rogier will die and you can get his Bell Bearing and the Spellblade Set (rogier)

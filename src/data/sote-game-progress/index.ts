@@ -11,8 +11,6 @@ const list = {
     `Update 23-8: Added tags to intermediate steps of NPC questlines. Added tags for dungeons. Added somber and regular ancient dragon smithing stones under the "optional" tag.`,
     `Recommended for second playthroughs.`,
     'You might need to toggle on/off new filters for them to work.',
-    'Please let me know if you see any errors.',
-    'Note (23-8): I fixed a bug that might have caused a small number of steps to become unchecked if you had checked them.',
   ],
   items: [
     {

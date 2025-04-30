@@ -9,10 +9,10 @@ export type Announcement = {
 
 // Change this object to show a different announcement
 export const currentAnnouncement: Announcement = {
-  id: "stat-soft-caps-1",
-  message: "Added a new soft stat caps page!",
+  id: "changelog-2025-04-30",
+  message: "Added a few juicy updates to the site!",
   link: {
-    text: "Check it out!",
-    url: "/soft-caps",
+    text: "See what changed!",
+    url: "/changelog",
   },
 };

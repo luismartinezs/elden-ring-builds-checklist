@@ -2,9 +2,11 @@ import React from "react";
 import { PageLayout } from "~/layouts/PageLayout";
 import Head from "next/head";
 import { Heading } from "~/components/Heading";
+import Link from "next/link";
+import { FiExternalLink } from "react-icons/fi";
 
 interface Change {
-  description: string;
+  description: React.ReactNode;
 }
 
 interface ChangelogEntry {
@@ -17,9 +19,42 @@ const changelogData: ChangelogEntry[] = [
   {
     date: "2025-04-30",
     changes: [
-      { description: "Added the changelog page." },
-      { description: "Added the soft caps page." },
-      { description: "Added steps for Fia, D and Rogier questlines" },
+      { description: "Changelog page." },
+      {
+        description: (
+          <span>
+            The <Link href="/soft-caps">soft caps page</Link>.
+          </span>
+        ),
+      },
+      {
+        description: (
+          <span>
+            Steps for Fia, D and Rogier questlines in the{" "}
+            <Link href="checklists/simple-game-progress">main checklist</Link>
+          </span>
+        ),
+      },
+      {
+        description: (
+          <span>
+            A better way to{" "}
+            <a
+              href="https://eldenhub.featurebase.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              provide feedback
+              <span className="sr-only">(opens in new tab)</span>
+              <FiExternalLink
+                className="ml-1 inline-block"
+                aria-hidden="true"
+              />
+            </a>
+            .
+          </span>
+        ),
+      },
     ],
   },
   {

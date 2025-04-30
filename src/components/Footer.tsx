@@ -13,8 +13,8 @@ const mainLinks = [
 const secondaryLinks = [
   { label: "Contact", href: "/contact" },
   { label: "FAQ", href: "/faq" },
-  { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Changelog", href: "/changelog" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 const socialLinks = [

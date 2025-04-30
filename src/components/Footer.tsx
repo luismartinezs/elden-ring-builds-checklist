@@ -2,6 +2,20 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
+// Placeholder links - update these as needed
+const resourceLinks = [
+  { label: "Checklists", href: "/checklists" },
+  { label: "NPC rewards", href: "/npc-questline-rewards" },
+  { label: "Profile", href: "/profile" },
+  { label: "Level Caps", href: "/level-caps" },
+];
+
+const legalLinks = [
+  { label: "Contact", href: "/contact" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+];
+
 const socialLinks = [
   {
     label: "X",
@@ -15,47 +29,71 @@ const socialLinks = [
   },
 ];
 
-const pageLinks = [
-  { label: "Contact", href: "/contact" },
-  { label: "Privacy Policy", href: "/privacy-policy" },
-];
-
 export function Footer() {
   return (
-    <footer className="container mx-auto max-w-7xl px-2 py-2 font-medium xl:px-0">
-      <div className="flex flex-col space-y-4 sm:flex-row sm:justify-between sm:space-y-0">
-        <div className="flex flex-col space-y-2 sm:space-y-0 sm:flex-row space-x-6 text-sm text-stone-400 items-center">
-          <div className="flex items-center space-x-1">
-            <a
-              href="https://www.webdevluis.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Luis Martinez
-            </a>
-            <span>@2024</span>
+    <footer className="border-t border-stone-200 bg-stone-50 dark:border-stone-700 dark:bg-stone-900">
+      <div className="container mx-auto max-w-7xl px-6 py-12 lg:px-8">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+          {/* Placeholder Column 1 */}
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold leading-6 text-stone-900 dark:text-white">Resources</h3>
+            <ul role="list" className="space-y-3">
+              {resourceLinks.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="text-sm leading-6 text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-white"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
-          <div className="flex space-x-4">
-            {pageLinks.map(({ label, href }) => (
-              <Link key={label} href={href} className="hover:text-stone-500">
-                {label}
-              </Link>
-            ))}
+
+          {/* Placeholder Column 2 */}
+          <div className="space-y-4">
+            <h3 className="text-sm font-semibold leading-6 text-stone-900 dark:text-white">Legal</h3>
+            <ul role="list" className="space-y-3">
+              {legalLinks.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="text-sm leading-6 text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-white"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
+
+           {/* Social Column */}
+           <div className="space-y-4 md:col-start-4">
+             <h3 className="text-sm font-semibold leading-6 text-stone-900 dark:text-white">Social</h3>
+             <div className="flex items-center space-x-6">
+              {socialLinks.map(({ label, icon: Icon, href }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-400 hover:text-stone-500 dark:hover:text-white"
+                >
+                  <span className="sr-only">{label}</span>
+                  <Icon className="h-6 w-6" aria-hidden="true" />
+                </a>
+              ))}
+            </div>
+          </div>
+
         </div>
-        <div className="flex justify-center space-x-6">
-          {socialLinks.map(({ label, icon: Icon, href }) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-stone-400 hover:text-stone-500"
-            >
-              <span className="sr-only">{label}</span>
-              <Icon className="h-6 w-6" aria-hidden="true" />
-            </a>
-          ))}
+
+        {/* Bottom section */}
+        <div className="mt-16 border-t border-stone-900/10 pt-8 dark:border-white/10 sm:mt-20 lg:mt-24">
+          <p className="text-xs leading-5 text-stone-500 dark:text-stone-400">
+            &copy; 2024 Luis Martinez. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

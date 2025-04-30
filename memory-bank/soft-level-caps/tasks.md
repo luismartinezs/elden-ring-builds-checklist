@@ -1,0 +1,14 @@
+- [ ] build numeric input component
+- [ ] save stats in current profile in local storage
+- [ ] build stat display component to display soft caps for each stat
+  - [ ] stat bar going from 0 to 99, with visible height. Should look like the hp or mp bars in the game
+  - [ ] under each bar there are some notes as a list
+- [ ] build dynamic widget
+  - [ ] as player changes their stats, widget calculated next stat to level up
+  - [ ] list of inputs (checkboxes)
+    - [ ] archetype: caster / other
+    - [ ] FP for max upgraded flask (checkbox)
+    - [ ] 2 handing (checkbox)
+    - [ ] primary stat (select)
+    - [ ] secondary stat (select)
+  - [ ] box with list of next steps

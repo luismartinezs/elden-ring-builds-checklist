@@ -14,7 +14,7 @@ function HeadingH1({
     <h1
       className={cn(
         className,
-        "mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl"
+        "mb-4 text-3xl font-extrabold leading-none tracking-tight text-white md:text-4xl lg:text-5xl"
       )}
       {...rest}
     >

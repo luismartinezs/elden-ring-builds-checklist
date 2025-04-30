@@ -3,17 +3,18 @@ import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
 // Placeholder links - update these as needed
-const resourceLinks = [
+const mainLinks = [
   { label: "Checklists", href: "/checklists" },
   { label: "NPC rewards", href: "/npc-questline-rewards" },
   { label: "Profile", href: "/profile" },
   { label: "Soft Caps", href: "/soft-caps" },
 ];
 
-const legalLinks = [
+const secondaryLinks = [
   { label: "Contact", href: "/contact" },
   { label: "FAQ", href: "/faq" },
   { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Changelog", href: "/changelog" },
 ];
 
 const socialLinks = [
@@ -36,9 +37,9 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {/* Placeholder Column 1 */}
           <div className="space-y-4">
-            <h3 className="text-sm font-semibold leading-6 text-stone-900 dark:text-white">Resources</h3>
+            <h3 className="text-sm font-semibold leading-6 text-stone-900 dark:text-white">Elden Links</h3>
             <ul role="list" className="space-y-3">
-              {resourceLinks.map((item) => (
+              {mainLinks.map((item) => (
                 <li key={item.label}>
                   <Link
                     href={item.href}
@@ -53,9 +54,9 @@ export function Footer() {
 
           {/* Placeholder Column 2 */}
           <div className="space-y-4">
-            <h3 className="text-sm font-semibold leading-6 text-stone-900 dark:text-white">Legal</h3>
+            <h3 className="text-sm font-semibold leading-6 text-stone-900 dark:text-white">Other Links</h3>
             <ul role="list" className="space-y-3">
-              {legalLinks.map((item) => (
+              {secondaryLinks.map((item) => (
                 <li key={item.label}>
                   <Link
                     href={item.href}

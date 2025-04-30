@@ -258,6 +258,24 @@ export const tags: TTags = {
       "Seedbed Curse",
     ]
   },
+  [TAGS.D_QUESTLINE]: {
+    label: 'D',
+    key: TAGS.D_QUESTLINE,
+    buttonClasses: 'border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-black focus:ring-orange-500',
+    tagClasses: 'bg-orange-500 text-black',
+  },
+  [TAGS.ROGIER_QUESTLINE]: {
+    label: 'Rogier',
+    key: TAGS.ROGIER_QUESTLINE,
+    buttonClasses: 'border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-black focus:ring-teal-400',
+    tagClasses: 'bg-teal-400 text-black',
+  },
+  [TAGS.FIA_QUESTLINE]: {
+    label: 'Fia',
+    key: TAGS.FIA_QUESTLINE,
+    buttonClasses: 'border-gray-300 text-gray-300 hover:bg-gray-800 hover:text-white focus:ring-gray-800',
+    tagClasses: 'bg-gray-900 text-white border border-gray-400 -m-px',
+  },
   [TAGS.GOLDEN_SEED]: {
     label: 'Golden Seed',
     key: TAGS.GOLDEN_SEED,
@@ -382,15 +400,15 @@ export const tags: TTags = {
     buttonClasses: 'border-orange-200 text-orange-200 hover:bg-orange-200 hover:text-black focus:ring-orange-200',
     tagClasses: 'bg-orange-200 text-gray-900',
     questlineRewards: [
-"Secret Rite Scroll",
-"Leda's Rune",
-"Wise Man's Mask",
-"Ansbach's Attire",
-"Ansbach's Manchettes",
-"Ansbach's Boots",
-"Ansbach's Longbow",
-"Furious Blade of Ansbach",
-"Obsidian Lamina",
+      "Secret Rite Scroll",
+      "Leda's Rune",
+      "Wise Man's Mask",
+      "Ansbach's Attire",
+      "Ansbach's Manchettes",
+      "Ansbach's Boots",
+      "Ansbach's Longbow",
+      "Furious Blade of Ansbach",
+      "Obsidian Lamina",
     ]
   },
   [TAGS.THIOLLIER]: {
@@ -503,5 +521,4 @@ export const tags: TTags = {
     buttonClasses: 'border-gray-300 text-gray-300 hover:bg-gray-300 hover:text-black focus:ring-gray-300',
     tagClasses: 'bg-gray-300 text-gray-900',
   }
-
 }

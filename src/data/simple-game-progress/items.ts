@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS, tags } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT, LEGENDARY_WEAPONS_ACH, LEGENDARY_WEAPONS, LEGENDARY_ASHES_ACH, LEGENDARY_SPELLS, LEGENDARY_TALISMANS } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT, LEGENDARY_WEAPONS_ACH, LEGENDARY_WEAPONS, LEGENDARY_ASHES_ACH, LEGENDARY_SPELLS, LEGENDARY_TALISMANS, D_QUESTLINE, ROGIER_QUESTLINE, FIA_QUESTLINE } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -59,6 +59,21 @@ export const items = [
     tags: [SACRED_TEAR]
   },
   {
+    id: "bcbe2f2e-3935-4560-bb1a-d66e2c905840",
+    description: "(optional) meet D, Hunter of the Dead in Stormhill, Limgrave, east of Stormhill Shack",
+    tags: [D_QUESTLINE]
+  },
+  {
+    id: "90d30381-e793-413b-8781-da37301f6b62",
+    description: "(optional) defeat Tibia Mariner in Summonwater Village, Stormhill, Limgrave",
+    tags: [D_QUESTLINE]
+  },
+  {
+    id: "d78e1f00-e938-485f-b4d4-41958cd1a7ad",
+    description: "(optional) meet D in Roundtable Hold and show him the Deathroot",
+    tags: [D_QUESTLINE]
+  },
+  {
     id: "0a31a7cb-b53f-4bc7-9387-d298da1d9bf8",
     description: "Decide how you want to reach Altus Plateau later in the game: A) With the two halves of the Dectus medallion, B) Through the Ruin-Strewn Precipice, accessible going north past the Bellum church, north of the path toward the Dectus Lift, C) By letting the Abductor Virgin at the bottom of Raya Lucaria telport you to Volcano Manor, and defeating the Abductor Virgin duo. (option A is the easiest one, option C is possibly the fastest one)",
     tags: [NGPLUS]
@@ -79,6 +94,18 @@ export const items = [
         tags: [NGPLUS]
       },
     ]
+  },
+  {
+    id: "e126a382-2b42-440a-ba36-ae037ee1ce12",
+    description:
+      "(optional) Talk to Gurranq in the Bestial Sanctum, Caelid. You can reach him from the teleport directly north from Third Church of Marika",
+    tags: [D_QUESTLINE],
+  },
+  {
+    id: "51ba690c-2757-4bc5-bad2-20b30872c444",
+    description:
+      "Speak to D in Rountable Hold",
+    tags: [D_QUESTLINE],
   },
   {
     id: "4bc4e028-c645-431c-ae1b-00157a0462f6",
@@ -255,6 +282,11 @@ export const items = [
     tags: [WHETBLADES]
   },
   {
+    id: '7cee6c15-4126-4835-8b39-6aaf9cea1661',
+    description: 'Find Sorcerer Rogier in Stormveil Castle by the altar of the Chapel in the northwest section, before beating Godrick',
+    tags: [ROGIER_QUESTLINE]
+  },
+  {
     id: '44674406-7a68-4cd5-af01-d2b7713d363b',
     description: 'Talk to Nepheli in the north room of Stormveil Castle courtyard',
     tags: [NEPHELI_QUESTLINE]
@@ -268,13 +300,33 @@ export const items = [
   {
     id: "2d5b9870-3717-48fd-aa52-9b645378a641",
     description:
-      "Dropped by Ulcerated Tree Spirit under Stormveil Castle. Limgrave",
-    tags: [GOLDEN_SEED],
+      "Defeat the Lesser Ulcerated Tree Spirit under Stormveil Castle. Limgrave",
+    tags: [GOLDEN_SEED, ROGIER_QUESTLINE],
   },
   {
     id: 'b9690395-5806-49d1-85fb-89411478266b',
     description: 'Beat Godrick in Stormhill Castle (or alternatively beat any one of the other Shardbearers: Radahn, Rykard, or Rennala). Godrick is strong vs holy and weak vs standard, slash, strike and pierce.',
     tags: [NGPLUS]
+  },
+  {
+    id: 'e0f37cd2-88a8-4b4b-9625-40851fa21be3',
+    description: "After defeating Godrick, talk to Rogier in Roundtable Hold to get Rogier's Rapier +8 with Ash of War: Glintblade Phalanx",
+    tags: [ROGIER_QUESTLINE]
+  },
+  {
+    id: 'fde348c8-899f-413c-b7f3-39c857762de2',
+    description: "In the Ulcerated Tree Spirit area below Stormveil Castle, find Rogier's bloodstain and activate it, then talk to Rogier in Roundtable Hold",
+    tags: [ROGIER_QUESTLINE]
+  },
+  {
+    id: '425e3001-3b29-4bc3-a180-99b3c947bba6',
+    description: "Most of Fia's questline can be skipped. There are two places where Fia's quest is skipped: 1) Activaitng the Radahn Festival: Fia gives you the Weathered Dagger, 2) Burning the Erdtree: Fia will move to Fia's Champions arena in Deeproot Depths",
+    tags: [FIA_QUESTLINE]
+  },
+  {
+    id: '03c5b589-8a67-4d45-9577-949b6d90cd90',
+    description: "(optional) Optionally talk to Fia multiple times until exhausting her dialogue to get the Knifeprint Clue",
+    tags: [ROGIER_QUESTLINE, FIA_QUESTLINE]
   },
   {
     id: '4b32da9d-db54-4496-b07c-c1236d8c71ad',
@@ -513,7 +565,7 @@ export const items = [
   },
   {
     id: '054a08f7-70ba-4ede-a188-b3a286808cb5',
-    description: 'Beat Red Wolf of Radagon in Raya Lucaria and activate the Debate Parlor grace. It\'s string vs magic, bleed and frost, and weak vs slash',
+    description: 'Beat Red Wolf of Radagon in Raya Lucaria and activate the Debate Parlor grace. It\'s strong vs magic, bleed and frost, and weak vs slash',
     tags: [NGPLUS]
   },
   {
@@ -559,6 +611,11 @@ export const items = [
     tags: [SMITHING_STONE_BELL]
   },
   // AINSEL RIVER L50-60 +4-6
+  {
+    id: '3ffa2105-a1e0-428c-8a40-c7a6b64fe72f',
+    description: 'Obtain the Black Knifeprint from Black Knife Catacombs in Liurnia, behind an illusory wall in the room before dropping down to a flooded pit with levers',
+    tags: [ROGIER_QUESTLINE]
+  },
   // LIURNIA WEST, CARIA MANOR L50-60 +4-6
   {
     id: 'e9c27c57-bdf9-413b-ac69-7a330225f33b',
@@ -574,7 +631,7 @@ export const items = [
   {
     id: 'ebb627a5-1cb1-496f-8339-6da8d51587b6',
     description: 'Beat Royal Knight Loretta in Caria Manor. She is strong vs magic and fire, and weak vs lightning. Note: If you are collecting the legendary weapon Dark Moon Greatsword, follow Ranni\'s questline until the end to get it.',
-    tags: [RANNI_QUESTLINE, SELLEN_QUESTLINE, LEGENDARY_WEAPONS_ACH]
+    tags: [RANNI_QUESTLINE, SELLEN_QUESTLINE, LEGENDARY_WEAPONS_ACH, FIA_QUESTLINE]
   },
   {
     id: '90813e2a-75de-4167-8603-af4bab0bd2ca',
@@ -582,9 +639,14 @@ export const items = [
     tags: [LARVAL_TEAR]
   },
   {
+    id: '6a3ee424-5159-4ccc-b1a9-c6114741a5ba',
+    description: "Give the Black Knifeprint to Rogier in Roundtable Hold, reload the area and talk to him again. He should suggest you to serve Ranni, after which you talk to Ranni and become her vassal. If Ranni does not accept you, go back to talk to Rogier until he suggest you become Ranni's vassal",
+    tags: [ROGIER_QUESTLINE]
+  },
+  {
     id: '983e4f51-15f7-4b5a-a927-5eee5c12f5c1',
     description: 'Talk to Ranni, then her servants, then Ranni again. If you don\'t find Ranni, it\'s possible that you have started the Radahn festival, so you will have to kill Radahn before progressing',
-    tags: [RANNI_QUESTLINE]
+    tags: [RANNI_QUESTLINE, FIA_QUESTLINE]
   },
   {
     id: 'b7931f96-7e09-40bb-87dc-468c1c01ccbb',
@@ -600,6 +662,11 @@ export const items = [
     id: '8ff56795-72a5-4753-9299-f4413d23bbb1',
     description: 'Sold for 3000 runes by Pidia, Carian Servant, in Caria Manor (accessed by dropping down from Three Sisters). Liurnia.',
     tags: [LARVAL_TEAR]
+  },
+  {
+    id: '1caa21de-0501-498b-a89e-764d22ae588e',
+    description: "After becoming Ranni's vassal, talk to Rogier in Roundtable Hold, rest at a grace and find him in slumber. After resting a handful of times at a grace, eventually Rogier will die and you can get his Bell Bearing and the Spellblade Set.",
+    tags: [ROGIER_QUESTLINE]
   },
   // high level Limgrave
   {
@@ -715,8 +782,13 @@ export const items = [
   },
   {
     id: 'f1e13540-ebde-451c-928a-252aac611f41',
-    description: "It should be possible to progress Fia's quest now, but Fia's quest can be also skipped as she will be in Deeproot Depths regardless after you burn the Erdtree later",
-    tags: [OPTIONAL, NGPLUS]
+    description: "It will be possible to now progress Fia's quest after Radahn's Festival is activated, but Fia's quest can be also skipped as she will be in Deeproot Depths regardless after you burn the Erdtree",
+    tags: [FIA_QUESTLINE]
+  },
+  {
+    id: 'd9744eb5-d1fb-4237-b017-a12005dea981',
+    description: "Receive the Weathered Dagger from Fia in the Roundtable Hold, then give the Weathered Dagger to D, reload the area by resting at a grace, and find D's Bell Bearing and the Twinned Set in a newly opened room in Roundtable Hold",
+    tags: [FIA_QUESTLINE, D_QUESTLINE]
   },
   {
     id: 'f5033fcc-bfe8-401c-8336-6dca652cb63b',
@@ -864,8 +936,8 @@ export const items = [
   },
   {
     id: '7d2912a9-f6d1-45a1-bdb6-36ba9a63f0c6',
-    description: 'Radahn Festival should be active now, and you can defeat Starscourge Radahn. He is strong vs hoy and sleep, and weak vs pierce and scarlet rot',
-    tags: [OPTIONAL, RANNI_QUESTLINE, ALEXANDER_QUESTLINE, NGPLUS, ALL_REMEMBERANCES, SELLEN_QUESTLINE]
+    description: 'Radahn Festival should be active now, and you can defeat Starscourge Radahn. He is strong vs holy and sleep, and weak vs pierce and scarlet rot',
+    tags: [OPTIONAL, RANNI_QUESTLINE, ALEXANDER_QUESTLINE, NGPLUS, ALL_REMEMBERANCES, SELLEN_QUESTLINE, FIA_QUESTLINE]
   },
   {
     id: '214e0b27-c6c2-41a8-8acf-cba7f5ab0b6b',
@@ -944,6 +1016,18 @@ export const items = [
     id: '66a047e2-dcb9-41ce-b693-109b43a31d1c',
     description: 'Elden Stars: Can be found near the Great Waterfall Crest site of grace in Deeproot Depths. On a corpse, at the end of a cave with Ants. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168441" target="_blank">Location</a>. Deeproot Depths is accessed by resting in a coffin after defeating the Valiant Gargoyle in Siofra Aqueduct, or alternatively, through a hidden passage near the Frenzied Flame Proscription grace in the Subterranean Shunning-Grounds',
     tags: [LEGENDARY_SPELLS]
+  },
+  {
+    id: "dac22469-8749-46e7-ace3-73bad82b3db3",
+    description:
+      "Defeat Fia's Champions in Deeproot Depths",
+    tags: [FIA_QUESTLINE],
+  },
+  {
+    id: "456b965f-62c9-44c1-af87-7968211d8872",
+    description:
+      "Find Fia in Fia's Champions arena, Deeproot Depths and talk to her",
+    tags: [FIA_QUESTLINE],
   },
   // LAKE OF ROT 80-100 +15-20
 
@@ -1240,7 +1324,7 @@ export const items = [
     tags: [MILLICENT_QUESTLINE]
   },
   {
-    id: '622dccd0-0982-401e-9ab3-58122db1e93a',
+    id: 'dd473c61-a367-4f15-9110-e01a07410efc',
     description: "Marais Executioner's Sword: Defiled and wielded by Elemer of the Briar, Bell Bearing Hunter and lord of The Shaded Castle.",
     tags: [LEGENDARY_WEAPONS_ACH],
   },
@@ -1432,7 +1516,7 @@ export const items = [
   {
     id: '6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0',
     description: 'Loot Fingerslayer Blade from Nokron (along with a Great Ghost Glovewort)',
-    tags: [RANNI_QUESTLINE]
+    tags: [RANNI_QUESTLINE, FIA_QUESTLINE]
   },
   {
     id: '05b86aba-43ef-4b34-947c-961d488e5d62',
@@ -1441,8 +1525,8 @@ export const items = [
   },
   {
     id: '588cc80e-1d8e-4853-85bf-7ade0c31fdff',
-    description: 'Talk to Ranni again and give her the Fingerslayer Blade to receive Carian Inverted Statue. Gving the Fingerslayer Blade to Ranni will turn Seluvis into a puppet, so if you want to do Seluvis quest, you must do it before this point.',
-    tags: [RANNI_QUESTLINE]
+    description: 'Talk to Ranni again and give her the Fingerslayer Blade to receive Carian Inverted Statue. Giving the Fingerslayer Blade to Ranni will turn Seluvis into a puppet, so if you want to do Seluvis quest, you must do it before this point.',
+    tags: [RANNI_QUESTLINE, FIA_QUESTLINE]
   },
   {
     id: 'b74b0892-6ec4-42f7-86a5-9abb664deb48',
@@ -1845,13 +1929,33 @@ export const items = [
   },
   {
     id: 'ecb37b68-e9ab-4d8f-bbe0-1dd4b13c8e7e',
-    description: "Fia will relocate to Deeproot depths even if you didn't complete her questline so you can beat Fia's champions",
-    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
+    description: "Fia will relocate to Deeproot depths even if you didn't follow her questline. Defeat Fia's Champions in Deeproot Depths if you didn't do so yet",
+    tags: [FIA_QUESTLINE, ALL_REMEMBERANCES, D_QUESTLINE]
   },
   {
-    id: 'b7edec68-9875-4eb4-b4cc-e967333caebd',
-    description: "To fight Lichdragon Fortissax, progress Ranni's quest until receiving the Carian Inverted Statue. Use the statue in the Divine Tower of Liurnia, reach the top, get the Cursemark of Death and give it to Fia. Reload the area and inspect her dream. It is strong vs lightning and holy, and weak vs pierce",
-    tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
+    id: 'fb30b568-2ff8-420f-9a35-811313963cc0',
+    description: "Get the Cursemark of Death from the top of the Divine Tower of Liurnia. You will need to use the Carian Inverted Statue at the entrance of the tower to access the top",
+    tags: [FIA_QUESTLINE, ALL_REMEMBERANCES]
+  },
+  {
+    id: 'ef17d1ef-2023-427d-88fb-d05e37615dda',
+    description: "Bring the Cursemark of Death to Fia in Deeproot Depths, exhaust her dialog and rest in a grace, then interact with Fia to enter her dream and defeat Lichdragon Fortissax. It is strong vs lightning and holy, and weak vs pierce",
+    tags: [FIA_QUESTLINE, ALL_REMEMBERANCES]
+  },
+  {
+    id: '4bdcc467-2358-4860-bcb1-c56ec5f893e0',
+    description: "Get the Mending Rune of the Death-Prince from Fia",
+    tags: [FIA_QUESTLINE]
+  },
+  {
+    id: 'eb64e086-a405-4cd7-83e4-928fbfc4e0a8',
+    description: "Find D's twin brother in Nokron, right before the Valiant Gargoyle boss, to get the Inner Order gesture. Optionally, give him the unaltered Twinned Set. If you do so and reload the area, you can summon him for the Valiant Gargoyles fight",
+    tags: [D_QUESTLINE, FIA_QUESTLINE]
+  },
+  {
+    id: '36188817-c445-4b52-ac31-947a9bbe9436',
+    description: "Get Fia's Set from Fia's corpse in Deeproot Depths. Reload the area, and find the Twinned Set and the Inseparable Sword from D's brother",
+    tags: [FIA_QUESTLINE, D_QUESTLINE]
   },
   // MOHGWYN PALACE 110-140 +20-24
   {
@@ -2158,6 +2262,11 @@ export const items = [
     id: '68cafc87-0e90-4f00-a806-9643a6254da5',
     description: 'Use the Mending Rune of the Fell Curse to get the Blessing of Despair Ending',
     tags: [DUNG_EATER_QUESTLINE]
+  },
+  {
+    id: '5c6c6f71-1f5d-40be-9349-6c7494847ebd',
+    description: "Use the Mending Rune of the Death-Prince to get the Age of the Duskborn ending",
+    tags: [FIA_QUESTLINE]
   },
   {
     id: '7c524889-f8a9-40bd-83ed-cec150a09764',

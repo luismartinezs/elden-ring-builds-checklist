@@ -66,6 +66,9 @@ function FilterButtons() {
             <FilterButton filterTag={TAGS.DUNG_EATER_QUESTLINE} />
             <FilterButton filterTag={TAGS.RYA_QUESTLINE} />
             <FilterButton filterTag={TAGS.BOGGART_QUESTLINE} />
+            <FilterButton filterTag={TAGS.D_QUESTLINE} />
+            <FilterButton filterTag={TAGS.ROGIER_QUESTLINE} />
+            <FilterButton filterTag={TAGS.FIA_QUESTLINE} />
           </>
         )}
       </div>

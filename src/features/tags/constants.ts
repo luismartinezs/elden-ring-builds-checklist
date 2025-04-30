@@ -37,6 +37,9 @@ export const TAGS = {
   LEGENDARY_ASHES_ACH: 'legendary-ashes-ach',
   LEGENDARY_SPELLS: 'legendary-spells',
   LEGENDARY_TALISMANS: 'legendary-talismans',
+  D_QUESTLINE: 'd-questline',
+  ROGIER_QUESTLINE: 'rogier-questline',
+  FIA_QUESTLINE: 'fia-questline',
   // SOTE
   LEDA: 'leda-questline',
   FREYJA: 'freyja-questline',

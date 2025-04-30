@@ -25,14 +25,17 @@ export const StatSoftCapItem: React.FC<StatSoftCapItemProps> = ({ statKey }) => 
   const { softCaps, items } = levelCapsData[statKey];
 
   return (
-    <div className="w-full mb-4"> {/* Increased bottom margin */}
-      <div className="flex items-center w-full mb-5">
-        <span className="w-24 mr-2 text-right">
-          {statLabelMap[statKey]}
+    <div className="w-full mb-2"> {/* Increased bottom margin */}
+      {/* Container adjusts flex direction based on screen size */}
+      <div className="flex flex-col sm:flex-row sm:items-center w-full mb-7 md:mb-5">
+        {/* Label: Default styles for mobile, overridden for sm+ */}
+        <span className="w-auto mb-1 text-left sm:w-24 sm:mr-2 sm:text-right sm:mb-0">
+          {statLabelMap[statKey]} <span className="md:hidden">({softCaps.join(' / ')})</span>
         </span>
         <div
           className={cn(
-            "relative flex-1 h-[15px] rounded-[2px]",
+            // Apply flex-1 only on sm screens and up for row layout
+            "relative h-[15px] rounded-[2px] w-full sm:flex-1",
             statColorMap[statKey]
           )}
         >
@@ -54,7 +57,7 @@ export const StatSoftCapItem: React.FC<StatSoftCapItemProps> = ({ statKey }) => 
             >
               {/* Add numeric value below marker */}
               <span
-                className="absolute left-1/2 top-full -translate-x-1/2 mt-1 text-white font-medium text-sm"
+                className="absolute left-1/2 top-full -translate-x-1/2 mt-1 text-gray-100 font-medium text-xs md:text-base"
               >
                 {cap}
               </span>

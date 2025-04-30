@@ -29,11 +29,13 @@ export const levelCapsData: Record<TStatKey, StatCapInfo> = {
   str: {
     softCaps: [20, 55, 80],
     items: [
+      '30/45 for clawmark and frenzied flame seals',
     ]
   },
   dex: {
     softCaps: [20, 55, 80],
     items: [
+      '30/45 for frenzied flame seal',
     ]
   },
   int: {

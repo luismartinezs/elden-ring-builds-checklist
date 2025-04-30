@@ -1,11 +1,10 @@
-import ClientOnly from "~/components/ClientOnly";
-import { Feedback } from "~/features/feedback";
 import { Footer } from "~/components/Footer";
 import { Header } from "~/components/Header";
 import { ShareModal, useShareModal } from "~/features/share";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AnnouncementBar } from "~/components/AnnouncementBar";
 import { useAnnouncements } from "~/hooks/useAnnouncements";
+import { FeaturebaseFeedbackLink } from "~/features/feedback/components/FeaturebaseFeedbackLink";
 
 export function PageLayout({ children }: { children: React.ReactNode }) {
   const { showModal, handleClose, handleShare } = useShareModal();
@@ -29,9 +28,7 @@ export function PageLayout({ children }: { children: React.ReactNode }) {
         onShare={() => handleShare()}
       />
       <Footer />
-      <ClientOnly>
-        <Feedback />
-      </ClientOnly>
+      <FeaturebaseFeedbackLink />
       <SpeedInsights />
     </div>
   );

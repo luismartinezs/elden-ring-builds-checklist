@@ -7,7 +7,7 @@ const resourceLinks = [
   { label: "Checklists", href: "/checklists" },
   { label: "NPC rewards", href: "/npc-questline-rewards" },
   { label: "Profile", href: "/profile" },
-  { label: "Level Caps", href: "/level-caps" },
+  { label: "Soft Caps", href: "/soft-caps" },
 ];
 
 const legalLinks = [

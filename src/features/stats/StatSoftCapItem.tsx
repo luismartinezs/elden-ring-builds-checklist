@@ -1,5 +1,6 @@
 import React from 'react';
-import { TStatKey, statLabelMap } from '~/features/stats/stats';
+import type { TStatKey } from '~/features/stats/stats';
+import { statLabelMap } from '~/features/stats/stats';
 import { cn } from '~/utils/cn';
 import { levelCapsData } from '~/data/level-caps-data'; // Import the data
 
@@ -27,7 +28,7 @@ export const StatSoftCapItem: React.FC<StatSoftCapItemProps> = ({ statKey }) => 
   return (
     <div className="w-full mb-2"> {/* Increased bottom margin */}
       {/* Container adjusts flex direction based on screen size */}
-      <div className="flex flex-col sm:flex-row sm:items-center w-full mb-7 md:mb-5">
+      <div className="flex flex-col sm:flex-row sm:items-center w-full mb-7 md:mb-6">
         {/* Label: Default styles for mobile, overridden for sm+ */}
         <span className="w-auto mb-1 text-left sm:w-24 sm:mr-2 sm:text-right sm:mb-0">
           {statLabelMap[statKey]} <span className="md:hidden">({softCaps.join(' / ')})</span>
@@ -67,7 +68,7 @@ export const StatSoftCapItem: React.FC<StatSoftCapItemProps> = ({ statKey }) => 
       </div>
       {/* Display soft cap description items only if they exist */}
       {items.length > 0 && (
-        <div className="flex justify-end w-full mt-1 text-xs text-gray-300">
+        <div className="flex justify-end w-full mt-1 text-xs md:text-sm tracking-wide text-gray-300">
           <div className="flex-1 text-right">
             {/* Map over items and display each one */}
             {items.map((item, index) => (

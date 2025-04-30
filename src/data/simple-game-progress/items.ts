@@ -610,12 +610,12 @@ export const items = [
     description: 'Dropped by the Crystalian Boss at the end of Raya Lucaria Crystal Tunnel (northeastern Liurnia, east from the walking mausoleum in the lake)',
     tags: [SMITHING_STONE_BELL]
   },
-  // AINSEL RIVER L50-60 +4-6
   {
     id: '3ffa2105-a1e0-428c-8a40-c7a6b64fe72f',
-    description: 'Obtain the Black Knifeprint from Black Knife Catacombs in Liurnia, behind an illusory wall in the room before dropping down to a flooded pit with levers',
+    description: 'Obtain the Black Knifeprint from Black Knife Catacombs in Liurnia, behind an illusory wall in the room before dropping down to a flooded pit with levers <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166481" target="_blank">Location</a>',
     tags: [ROGIER_QUESTLINE]
   },
+  // AINSEL RIVER L50-60 +4-6
   // LIURNIA WEST, CARIA MANOR L50-60 +4-6
   {
     id: 'e9c27c57-bdf9-413b-ac69-7a330225f33b',

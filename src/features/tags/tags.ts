@@ -263,18 +263,38 @@ export const tags: TTags = {
     key: TAGS.D_QUESTLINE,
     buttonClasses: 'border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-black focus:ring-orange-500',
     tagClasses: 'bg-orange-500 text-black',
+    questlineRewards: [
+      "Twinned Set",
+      "Litany of Proper Death",
+      "Order's Blade",
+      "Inseparable Sword"
+    ]
   },
   [TAGS.ROGIER_QUESTLINE]: {
     label: 'Rogier',
     key: TAGS.ROGIER_QUESTLINE,
     buttonClasses: 'border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-black focus:ring-teal-400',
     tagClasses: 'bg-teal-400 text-black',
+    questlineRewards: [
+      "Ash of War: Glintstone Pebble",
+      "Ash of War: Carian Greatsword",
+      "Ash of War: Spinning Weapon",
+      "Rogier's Rapier",
+      "Ash of War: Glintblade Phalanx",
+      "Spellblade Set"
+    ]
   },
   [TAGS.FIA_QUESTLINE]: {
     label: 'Fia',
     key: TAGS.FIA_QUESTLINE,
     buttonClasses: 'border-gray-300 text-gray-300 hover:bg-gray-800 hover:text-white focus:ring-gray-800',
     tagClasses: 'bg-gray-900 text-white border border-gray-400 -m-px',
+    questlineRewards: [
+      "Fia's Set",
+      "Baldachin's Blessing",
+      "Radiant Baldachin's Blessing",
+      "Mending Rune of the Death-Prince"
+    ]
   },
   [TAGS.GOLDEN_SEED]: {
     label: 'Golden Seed',

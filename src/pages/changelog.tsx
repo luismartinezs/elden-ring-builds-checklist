@@ -22,6 +22,14 @@ const changelogData: ChangelogEntry[] = [
       {
         description: (
           <span>
+            <Link href="/soft-caps">Soft Caps</Link> page now shows the current
+            profile stats.
+          </span>
+        ),
+      },
+      {
+        description: (
+          <span>
             Added <Link href="/stats">Stats page</Link> where you can set the
             stats of the <Link href="/profile">current profile</Link>
           </span>

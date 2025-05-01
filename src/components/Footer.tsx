@@ -7,6 +7,7 @@ const mainLinks = [
   { label: "Checklists", href: "/checklists" },
   { label: "NPC rewards", href: "/npc-questline-rewards" },
   { label: "Profile", href: "/profile" },
+  { label: "Weapons", href: "/weapons" },
   { label: "Soft Caps", href: "/soft-caps" },
   { label: "Stats", href: "/stats" },
 ];

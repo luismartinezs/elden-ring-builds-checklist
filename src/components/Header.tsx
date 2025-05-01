@@ -26,6 +26,10 @@ const links = [
   //   href: "/stats",
   // },
   {
+    label: "Weapons",
+    href: "/weapons",
+  },
+  {
     label: "Soft Caps",
     href: "/soft-caps",
   },

@@ -5,6 +5,7 @@ import { SectionWrapper } from "~/components/SectionWrapper";
 import { Heading } from "~/components/Heading";
 import { Paragraph } from "~/components/Paragraph";
 import { WeaponsDisplay } from "~/features/weapons/WeaponsDisplay";
+import { StatsWidget } from "~/features/stats/StatsWidget";
 
 const WeaponsPage: React.FC = () => {
   return (
@@ -24,9 +25,12 @@ const WeaponsPage: React.FC = () => {
       <SectionWrapper>
         <Heading.H1>Weapons</Heading.H1>
         <Paragraph>
-          Find a list of weapons you can wield based on your current stats
+          What weapons can you wield based on your current stats?
         </Paragraph>
-        <WeaponsDisplay />
+        <div className="flex flex-col gap-4">
+          <StatsWidget />
+          <WeaponsDisplay />
+        </div>
       </SectionWrapper>
     </PageLayout>
   );

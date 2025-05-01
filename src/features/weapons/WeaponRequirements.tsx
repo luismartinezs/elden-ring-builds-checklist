@@ -26,7 +26,7 @@ export const WeaponRequirements = ({
               key={statLabel}
               className={cn(
                 statColorMap[statKey],
-                "flex size-6 items-center justify-center text-sm font-medium text-black shadow-sm"
+                "flex size-6 items-center justify-center text-sm font-medium text-white shadow-sm"
               )}
             >
               {value}

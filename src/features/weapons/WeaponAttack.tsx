@@ -1,4 +1,6 @@
 import { type Weapon } from "~/types/weapons";
+import { cn } from "~/utils/cn";
+import { dmgColorMap, type TDmgType } from "~/features/stats/dmgtypes";
 
 type WeaponAttackProps = {
   attack: Weapon["attack"];
@@ -6,19 +8,20 @@ type WeaponAttackProps = {
 
 export const WeaponAttack = ({ attack }: WeaponAttackProps) => {
   return (
-    <div className="space-y-1">
-      <div className="text-xs font-medium uppercase text-stone-500 dark:text-stone-400">
-        Attack
-      </div>
-      <div className="grid grid-cols-5 gap-2 text-sm">
-        {Object.entries(attack)
-          .filter(([key]) => key !== "critical")
-          .map(([type, value]) => (
-            <div key={type} className="flex flex-col items-center">
-              <span className="capitalize">{type}</span>
-              <span>{value}</span>
-            </div>
-          ))}
+    <div className="">
+      <div className="flex flex-wrap gap-1">
+        {Object.entries(attack).map(([type, value]) => (
+          <div
+            key={type}
+            className={cn(
+              dmgColorMap[type as TDmgType],
+              "flex size-6 flex-col items-center justify-center text-sm font-medium text-white shadow-sm"
+            )}
+            title={type}
+          >
+            {value}
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ export const WeaponItem = ({ weapon }: WeaponItemProps) => {
         {weapon.category}
       </p>
 
-      <div className="mt-2 space-y-2">
+      <div className="mt-2 space-y-1">
         <WeaponRequirements requirements={weapon.requirements} />
         <WeaponAttack attack={weapon.attack} />
         <WeaponScaling scaling={weapon.scaling} />

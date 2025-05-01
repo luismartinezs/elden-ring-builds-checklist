@@ -1,4 +1,11 @@
 import { type Weapon } from "~/types/weapons";
+import { cn } from "~/utils/cn";
+import { statColorMap, type TStatKey, stats } from "~/features/stats/stats";
+
+// Create reverse mapping from full name to key
+const nameToKey = Object.fromEntries(
+  stats.map((stat) => [stat.name.toLowerCase(), stat.key])
+) as Record<string, TStatKey>;
 
 type WeaponScalingProps = {
   scaling: Weapon["scaling"];
@@ -6,20 +13,25 @@ type WeaponScalingProps = {
 
 export const WeaponScaling = ({ scaling }: WeaponScalingProps) => {
   return (
-    <div className="space-y-1">
-      <div className="text-xs font-medium uppercase text-stone-500 dark:text-stone-400">
-        Scaling
-      </div>
-      <div className="grid grid-cols-5 gap-2 text-sm">
-        {Object.entries(scaling).map(
-          ([stat, grade]) =>
-            grade && (
-              <div key={stat} className="flex flex-col items-center">
-                <span className="capitalize">{stat}</span>
-                <span>{grade}</span>
-              </div>
-            )
-        )}
+    <div>
+      <div className="flex flex-wrap gap-1">
+        {Object.entries(scaling).map(([stat, grade]) => {
+          const statKey = nameToKey[stat];
+          if (!statKey) return null;
+
+          return (
+            <div
+              key={stat}
+              className={cn(
+                statColorMap[statKey],
+                "flex size-6 flex-col items-center justify-center text-sm font-medium text-white shadow-sm"
+              )}
+              title={stat}
+            >
+              {grade ?? "-"}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

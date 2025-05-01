@@ -1,9 +1,10 @@
-export type TDmgType = "Pysical" | "Magic" | "Fire" | "Lightning" | "Holy"
+export type TDmgType = "physical" | "magic" | "fire" | "lightning" | "holy" | "critical"
 
 export const dmgColorMap: Record<TDmgType, string> = {
-  Pysical: "bg-gray-500/60",
-  Magic: "bg-sky-500/60",
-  Fire: "bg-red-500/60",
-  Lightning: "bg-yellow-500/60",
-  Holy: "bg-lime-500/60",
+  physical: "bg-gray-500/60",
+  magic: "bg-sky-500/60",
+  fire: "bg-red-500/60",
+  lightning: "bg-yellow-500/60",
+  holy: "bg-lime-500/60",
+  critical: "bg-purple-500/60",
 };

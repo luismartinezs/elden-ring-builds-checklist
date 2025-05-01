@@ -1,0 +1,1 @@
+We need to scaffold the codebase for the project, based on the provided tech stack. Web search recent premade templates that use the same tech stack, evaluate their quality and provide a few options. If no satisfactory templates are found, just say that

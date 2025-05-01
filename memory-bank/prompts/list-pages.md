@@ -1,0 +1,1 @@
+Given the user requirements, determine what pages and routes are needed, list them and describe the content of each in one short sentence.

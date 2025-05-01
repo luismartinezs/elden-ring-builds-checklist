@@ -44,7 +44,13 @@ export const WeaponsDisplay = () => {
           {isCollapsed ? "Expand" : "Collapse"}
         </button>
       </div>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2">
+      <div
+        className={cn(
+          isCollapsed
+            ? "flex flex-wrap gap-x-2 gap-y-1"
+            : "grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2"
+        )}
+      >
         {weapons?.map((weapon) => (
           <WeaponItem
             key={weapon.name}

@@ -4,6 +4,7 @@ import { WeaponItem } from "./WeaponItem";
 import { useState } from "react";
 import { cn } from "~/utils/cn";
 import { FiChevronDown, FiChevronRight } from "react-icons/fi";
+import { useWeaponFilters } from "./filtering/useWeaponFilters";
 
 export const WeaponsDisplay = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -15,6 +16,8 @@ export const WeaponsDisplay = () => {
     },
   });
 
+  const { filterWeapons } = useWeaponFilters();
+
   if (isLoading) {
     return (
       <div className="flex min-h-[200px] items-center justify-center">
@@ -23,10 +26,21 @@ export const WeaponsDisplay = () => {
     );
   }
 
+  const filteredWeapons = weapons ? filterWeapons(weapons) : [];
+  const totalWeapons = weapons?.length ?? 0;
+  const filteredOutCount = totalWeapons - filteredWeapons.length;
+
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <h2 className="text-2xl font-bold">Weapons</h2>
+        <div className="space-y-1">
+          <h2 className="text-2xl font-bold">Weapons</h2>
+          {filteredOutCount > 0 && (
+            <p className="text-sm text-stone-600 dark:text-stone-400">
+              {filteredOutCount} weapons hidden (stat requirements not met)
+            </p>
+          )}
+        </div>
         <button
           onClick={() => setIsCollapsed(!isCollapsed)}
           className={cn(
@@ -44,6 +58,7 @@ export const WeaponsDisplay = () => {
           {isCollapsed ? "Expand" : "Collapse"}
         </button>
       </div>
+
       <div
         className={cn(
           isCollapsed
@@ -51,7 +66,7 @@ export const WeaponsDisplay = () => {
             : "grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2"
         )}
       >
-        {weapons?.map((weapon) => (
+        {filteredWeapons.map((weapon) => (
           <WeaponItem
             key={weapon.name}
             weapon={weapon}

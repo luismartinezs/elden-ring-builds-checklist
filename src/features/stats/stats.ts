@@ -1,4 +1,6 @@
-export type TStatKey = "vgr" | "mnd" | "end" | "str" | "dex" | "int" | "fai" | "arc";
+export type TAtkStatKey = "str" | "dex" | "int" | "fai" | "arc";
+export type TUtilStatKey = "vgr" | "mnd" | "end";
+export type TStatKey = TAtkStatKey | TUtilStatKey;
 
 // Define the type for the stats state
 export type StatsState = Record<TStatKey, number>;

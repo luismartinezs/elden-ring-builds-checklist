@@ -13,7 +13,7 @@ const StatsPage: React.FC = () => {
         <title>Stats | Elden Ring Checklists - Elden Hub</title>
         <meta
           name="description"
-          content="View Elden Ring statistics and information."
+          content="View and set your Elden Ring profile stats."
         />
         {/* Add canonical URL if applicable */}
         <link

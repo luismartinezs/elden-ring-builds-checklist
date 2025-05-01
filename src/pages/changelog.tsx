@@ -17,6 +17,19 @@ interface ChangelogEntry {
 // Sample changelog data - replace with actual data source later
 const changelogData: ChangelogEntry[] = [
   {
+    date: "2025-05-01",
+    changes: [
+      {
+        description: (
+          <span>
+            Added <Link href="/stats">Stats page</Link> where you can set the
+            stats of the <Link href="/profile">current profile</Link>
+          </span>
+        ),
+      },
+    ],
+  },
+  {
     date: "2025-04-30",
     changes: [
       { description: "Changelog page." },

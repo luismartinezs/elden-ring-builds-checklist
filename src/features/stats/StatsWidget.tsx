@@ -2,8 +2,11 @@ import React, { useCallback } from "react";
 import { stats, type TStatKey } from "./stats";
 import { StatInput } from "./StatInput";
 import { useManageStats } from "./useManageStats"; // Import the hook
+import { useIsClient } from "usehooks-ts";
+import { Heading } from "~/components/Heading";
 
 export const StatsWidget: React.FC = () => {
+  const isClient = useIsClient();
   // Instantiate the hook
   const { getCurrentStats, updateStat } = useManageStats();
   const currentStats = getCurrentStats(); // Get stats from the hook
@@ -16,9 +19,34 @@ export const StatsWidget: React.FC = () => {
     [updateStat] // Add updateStat to dependency array
   );
 
+  // No-op function for server-side rendering
+  const noop = () => undefined;
+
+  if (!isClient) {
+    return (
+      <div>
+        <h2>Character Stats</h2>
+        <div className="flex flex-wrap gap-4">
+          {stats.map((stat) => (
+            <div key={stat.key}>
+              <StatInput
+                statKey={stat.key}
+                label={stat.key}
+                initialValue={10} // Default value for server-side rendering
+                onChange={noop} // Named no-op function
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div>
-      <h2>Character Stats</h2>
+      <Heading.H2 className="!text-base !font-medium">
+        Character Stats
+      </Heading.H2>
       <div className="flex flex-wrap gap-4">
         {stats.map((stat) => (
           <div key={stat.key}>
@@ -31,8 +59,6 @@ export const StatsWidget: React.FC = () => {
           </div>
         ))}
       </div>
-      {/* Optionally display the current state for debugging */}
-      <pre>{JSON.stringify(currentStats, null, 2)}</pre>
     </div>
   );
 };

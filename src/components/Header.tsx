@@ -21,10 +21,10 @@ const links = [
     label: "Profile",
     href: "/profile",
   },
-  {
-    label: "Stats",
-    href: "/stats",
-  },
+  // {
+  //   label: "Stats",
+  //   href: "/stats",
+  // },
   {
     label: "Soft Caps",
     href: "/soft-caps",

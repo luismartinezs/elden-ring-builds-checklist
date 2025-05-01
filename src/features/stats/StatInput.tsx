@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { type TStatKey, statColorMap } from "./stats";
 import { cn } from "~/utils/cn";
 
@@ -26,6 +26,16 @@ export const StatInput: React.FC<StatInputProps> = ({
         : MIN_VALUE;
     return validInitialValue;
   });
+
+  useEffect(() => {
+    if (initialValue !== undefined) {
+      const validInitialValue = Math.max(
+        MIN_VALUE,
+        Math.min(MAX_VALUE, initialValue)
+      );
+      setValue(validInitialValue);
+    }
+  }, [initialValue, MIN_VALUE, MAX_VALUE]);
 
   const handleValueChange = (newValue: number) => {
     const clampedValue = Math.max(MIN_VALUE, Math.min(MAX_VALUE, newValue));

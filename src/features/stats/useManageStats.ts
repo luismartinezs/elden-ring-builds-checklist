@@ -8,25 +8,35 @@ export function useManageStats() {
   const [data, setData] = useLocalStorage<AppData>("appData", initAppData);
 
   const getCurrentStats = (): StatsState => {
-    const stats = data.profiles[data.currentProfile]?.stats ?? initStats;
-    return stats;
+    const currentProfile = data.profiles[data.currentProfile];
+    if (currentProfile && !currentProfile.stats) {
+      // Initialize stats if they don't exist and save to storage
+      setData(produce(data, draft => {
+        draft.profiles[draft.currentProfile]!.stats = { ...initStats };
+      }));
+      return initStats;
+    }
+    return currentProfile?.stats ?? initStats;
   };
 
   const updateStat = (statName: keyof StatsState, value: number) => {
     setData(produce(data, draft => {
-      if (draft.profiles[draft.currentProfile]) {
-        draft.profiles[draft.currentProfile]!.stats[statName] = value;
+      const currentProfile = draft.profiles[draft.currentProfile];
+      if (currentProfile) {
+        if (!currentProfile.stats) {
+          currentProfile.stats = { ...initStats };
+        }
+        currentProfile.stats[statName] = value;
       }
-      return draft;
     }));
   };
 
   const updateAllStats = (newStats: StatsState) => {
     setData(produce(data, draft => {
-      if (draft.profiles[draft.currentProfile]) {
-        draft.profiles[draft.currentProfile]!.stats = newStats;
+      const currentProfile = draft.profiles[draft.currentProfile];
+      if (currentProfile) {
+        currentProfile.stats = newStats;
       }
-      return draft;
     }));
   };
 

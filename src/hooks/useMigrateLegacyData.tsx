@@ -3,6 +3,7 @@ import { lists } from "~/data";
 import { initAppData } from "~/features/checklist/hooks/useManageProfiles";
 import { type AppData } from "~/features/checklist/types";
 import { TAGS } from "~/features/tags";
+import { initStats } from "~/features/stats/stats";
 
 export function useMigrateLegacyData() {
   useEffect(() => {
@@ -24,7 +25,8 @@ export function useMigrateLegacyData() {
     if (legacyDataExists) {
       const defaultProfile = newData.profiles.Default ?? {
         checklists: {},
-        filters: {},
+        filters: {} as Record<string, boolean>,
+        stats: initStats,
       };
 
       legacyKeys.forEach((key) => {

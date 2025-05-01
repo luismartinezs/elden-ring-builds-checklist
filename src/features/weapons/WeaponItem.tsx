@@ -14,7 +14,7 @@ export const WeaponItem = ({ weapon }: WeaponItemProps) => {
   return (
     <div
       className={cn(
-        "rounded-lg border p-4 shadow-sm transition-colors hover:bg-stone-50",
+        "rounded-lg border p-2 shadow-sm transition-colors hover:bg-stone-50",
         "dark:border-stone-800 dark:hover:bg-stone-800/50"
       )}
     >
@@ -30,7 +30,7 @@ export const WeaponItem = ({ weapon }: WeaponItemProps) => {
         {weapon.category}
       </p>
 
-      <div className="mt-4 space-y-4">
+      <div className="mt-2 space-y-2">
         <WeaponRequirements requirements={weapon.requirements} />
         <WeaponAttack attack={weapon.attack} />
         <WeaponScaling scaling={weapon.scaling} />

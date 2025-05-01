@@ -1,4 +1,9 @@
 import { type Weapon } from "~/types/weapons";
+import { cn } from "~/utils/cn";
+import {
+  statusEffectColorMap,
+  type TStatusEffect,
+} from "~/features/stats/statusEffect";
 
 type WeaponStatusEffectsProps = {
   statusBuildup: Weapon["status_buildup"];
@@ -13,16 +18,19 @@ export const WeaponStatusEffects = ({
 
   return (
     <div className="space-y-1">
-      <div className="text-xs font-medium uppercase text-stone-500 dark:text-stone-400">
-        Status Effects
-      </div>
-      <div className="grid grid-cols-4 gap-2 text-sm">
+      <div className="flex flex-wrap gap-1">
         {Object.entries(statusBuildup)
           .filter(([_, value]) => value > 0)
           .map(([effect, value]) => (
-            <div key={effect} className="flex flex-col items-center">
-              <span className="capitalize">{effect.replace("_", " ")}</span>
-              <span>{value}</span>
+            <div
+              key={effect}
+              className={cn(
+                statusEffectColorMap[effect as TStatusEffect],
+                "flex size-6 flex-col items-center justify-center text-sm font-medium text-black shadow-sm"
+              )}
+              title={effect.replace("_", " ")}
+            >
+              {value}
             </div>
           ))}
       </div>

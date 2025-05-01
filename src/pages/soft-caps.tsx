@@ -8,6 +8,7 @@ import { StatSoftCapItem } from "~/features/stats/StatSoftCapItem";
 import { Paragraph } from "~/components/Paragraph";
 import { useManageStats } from "~/features/stats/useManageStats";
 import { Switch } from "~/components/Switch";
+import ClientOnly from "~/components/ClientOnly";
 
 const LevelCapsPage = () => {
   const { getCurrentStats } = useManageStats();
@@ -31,32 +32,34 @@ const LevelCapsPage = () => {
       <SectionWrapper>
         <Heading.H1>Stat Soft Caps</Heading.H1>
 
-        <div className="mb-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <Paragraph className="mb-0">
-            Soft caps can get complicated. If you see a mistake, let me know via
-            the feedback button
-          </Paragraph>
-          <Switch
-            checked={showCurrentStats}
-            onChange={setShowCurrentStats}
-            label="Show Current Profile Stats"
-            className="shrink-0"
-          />
-        </div>
-
-        <Paragraph>All stats hard cap at 99</Paragraph>
-
-        <div className="container mx-auto flex flex-col">
-          {stats.map((stat) => (
-            <StatSoftCapItem
-              key={stat.key}
-              statKey={stat.key}
-              currentStat={
-                showCurrentStats ? currentStats[stat.key] : undefined
-              }
+        <ClientOnly>
+          <div className="mb-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <Paragraph className="mb-0">
+              Soft caps can get complicated. If you see a mistake, let me know
+              via the feedback button
+            </Paragraph>
+            <Switch
+              checked={showCurrentStats}
+              onChange={setShowCurrentStats}
+              label="Show Current Profile Stats"
+              className="shrink-0"
             />
-          ))}
-        </div>
+          </div>
+
+          <Paragraph>All stats hard cap at 99</Paragraph>
+
+          <div className="container mx-auto flex flex-col">
+            {stats.map((stat) => (
+              <StatSoftCapItem
+                key={stat.key}
+                statKey={stat.key}
+                currentStat={
+                  showCurrentStats ? currentStats[stat.key] : undefined
+                }
+              />
+            ))}
+          </div>
+        </ClientOnly>
       </SectionWrapper>
     </PageLayout>
   );

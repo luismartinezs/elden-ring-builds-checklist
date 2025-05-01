@@ -1,6 +1,6 @@
 export type SortDirection = 'asc' | 'desc' | 'off';
 
-export type RequirementSortKey = 'str';
+export type RequirementSortKey = 'str' | 'dex' | 'int' | 'fai' | 'arc';
 
 export interface SortState {
   key: RequirementSortKey;

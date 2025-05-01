@@ -6,9 +6,13 @@ import { cn } from "~/utils/cn";
 import { FiChevronDown, FiChevronRight } from "react-icons/fi";
 import { useWeaponFilters } from "./filtering/useWeaponFilters";
 import { useWeaponSorting } from "./sorting/useWeaponSorting";
-import { SortButton } from "./sorting/SortButton";
-import { type SortDirection, type SortState } from "./sorting/types";
-import { DEFAULT_SORT_STATE, SORT_CONFIGS } from "./sorting/constants";
+import {
+  type RequirementSortKey,
+  type SortDirection,
+  type SortState,
+} from "./sorting/types";
+import { DEFAULT_SORT_STATE } from "./sorting/constants";
+import { SortWeapons } from "./sorting/SortWeapons";
 
 export const WeaponsDisplay = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -25,18 +29,27 @@ export const WeaponsDisplay = () => {
   const { filterWeapons } = useWeaponFilters();
   const { sortWeapons } = useWeaponSorting();
 
-  const handleSortClick = () => {
+  const handleSortChange = (key: RequirementSortKey) => {
     setSortState((prev) => {
-      const nextDirection: SortDirection =
-        prev.direction === "off"
-          ? "asc"
-          : prev.direction === "asc"
-          ? "desc"
-          : "off";
+      // If clicking the same key, cycle through directions
+      if (prev.key === key) {
+        const nextDirection: SortDirection =
+          prev.direction === "off"
+            ? "asc"
+            : prev.direction === "asc"
+            ? "desc"
+            : "off";
 
+        return {
+          ...prev,
+          direction: nextDirection,
+        };
+      }
+
+      // If clicking a different key, start with ascending
       return {
-        ...prev,
-        direction: nextDirection,
+        key,
+        direction: "asc",
       };
     });
   };
@@ -57,10 +70,6 @@ export const WeaponsDisplay = () => {
   );
   const totalWeapons = weapons?.length ?? 0;
   const filteredOutCount = totalWeapons - filteredWeapons.length;
-
-  const sortConfig = SORT_CONFIGS.find(
-    (config) => config.key === sortState.key
-  );
 
   return (
     <div className="space-y-4">
@@ -91,18 +100,7 @@ export const WeaponsDisplay = () => {
         </button>
       </div>
 
-      <div className="flex items-center gap-2">
-        <span className="text-sm font-medium text-stone-600 dark:text-stone-400">
-          Sort by:
-        </span>
-        {sortConfig && (
-          <SortButton
-            direction={sortState.direction}
-            label={sortConfig.label}
-            onClick={handleSortClick}
-          />
-        )}
-      </div>
+      <SortWeapons sortState={sortState} onSortChange={handleSortChange} />
 
       <div
         className={cn(

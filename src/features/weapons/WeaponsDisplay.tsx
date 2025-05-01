@@ -22,7 +22,7 @@ export const WeaponsDisplay = () => {
   return (
     <div className="space-y-4">
       <h2 className="text-2xl font-bold">Weapons</h2>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="sm:gird-cols-2 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
         {weapons?.map((weapon) => (
           <WeaponItem key={weapon.name} weapon={weapon} />
         ))}

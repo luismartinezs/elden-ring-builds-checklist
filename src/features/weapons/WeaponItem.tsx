@@ -5,6 +5,7 @@ import { WeaponAttack } from "./WeaponAttack";
 import { WeaponScaling } from "./WeaponScaling";
 import { WeaponStatusEffects } from "./WeaponStatusEffects";
 import { WeaponAdditionalInfo } from "./WeaponAdditionalInfo";
+import { FiExternalLink } from "react-icons/fi";
 
 type WeaponItemProps = {
   weapon: Weapon;
@@ -13,10 +14,7 @@ type WeaponItemProps = {
 export const WeaponItem = ({ weapon }: WeaponItemProps) => {
   return (
     <div
-      className={cn(
-        "rounded-lg border p-2 shadow-sm transition-colors hover:bg-stone-50",
-        "dark:border-stone-800 dark:hover:bg-stone-800/50"
-      )}
+      className={cn("rounded-lg border p-2 shadow-sm", "dark:border-stone-800")}
     >
       <a
         href={weapon.url}
@@ -24,10 +22,17 @@ export const WeaponItem = ({ weapon }: WeaponItemProps) => {
         rel="noopener noreferrer"
         className="inline-block hover:text-primary-700 dark:hover:text-primary-300"
       >
-        <h3 className="text-lg font-semibold">{weapon.name}</h3>
+        <h3 className="flex items-center text-base font-semibold">
+          {weapon.name}
+          <FiExternalLink
+            className="ml-1 inline-block text-stone-400 dark:text-stone-500"
+            aria-hidden="true"
+            size={14}
+          />
+        </h3>
       </a>
       <p className="text-sm text-stone-500 dark:text-stone-400">
-        {weapon.category}
+        {weapon.category} | {weapon.upgrade_type}
       </p>
 
       <div className="mt-2 space-y-1">
@@ -39,10 +44,7 @@ export const WeaponItem = ({ weapon }: WeaponItemProps) => {
         />
         <WeaponScaling scaling={weapon.scaling} />
         <WeaponStatusEffects statusBuildup={weapon.status_buildup} />
-        <WeaponAdditionalInfo
-          upgradeType={weapon.upgrade_type}
-          damageTypes={weapon.damage_types}
-        />
+        <WeaponAdditionalInfo damageTypes={weapon.damage_types} />
       </div>
     </div>
   );

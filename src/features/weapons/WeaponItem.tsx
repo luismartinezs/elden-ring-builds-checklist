@@ -9,9 +9,10 @@ import { FiExternalLink } from "react-icons/fi";
 
 type WeaponItemProps = {
   weapon: Weapon;
+  isCollapsed: boolean;
 };
 
-export const WeaponItem = ({ weapon }: WeaponItemProps) => {
+export const WeaponItem = ({ weapon, isCollapsed }: WeaponItemProps) => {
   return (
     <div
       className={cn("rounded-lg border p-2 shadow-sm", "dark:border-stone-800")}
@@ -31,21 +32,25 @@ export const WeaponItem = ({ weapon }: WeaponItemProps) => {
           />
         </h3>
       </a>
-      <p className="text-sm text-stone-500 dark:text-stone-400">
-        {weapon.category} | {weapon.upgrade_type}
-      </p>
+      {!isCollapsed && (
+        <>
+          <p className="text-sm text-stone-500 dark:text-stone-400">
+            {weapon.category} | {weapon.upgrade_type}
+          </p>
 
-      <div className="mt-2 space-y-1">
-        <WeaponRequirements requirements={weapon.requirements} />
-        <WeaponScaling scaling={weapon.scaling} />
-        <WeaponAttack
-          attack={weapon.attack}
-          sorceryScaling={weapon.sorcery_scaling}
-          incantationScaling={weapon.incantation_scaling}
-        />
-        <WeaponStatusEffects statusBuildup={weapon.status_buildup} />
-        <WeaponAdditionalInfo damageTypes={weapon.damage_types} />
-      </div>
+          <div className="mt-2 space-y-1">
+            <WeaponRequirements requirements={weapon.requirements} />
+            <WeaponScaling scaling={weapon.scaling} />
+            <WeaponAttack
+              attack={weapon.attack}
+              sorceryScaling={weapon.sorcery_scaling}
+              incantationScaling={weapon.incantation_scaling}
+            />
+            <WeaponStatusEffects statusBuildup={weapon.status_buildup} />
+            <WeaponAdditionalInfo damageTypes={weapon.damage_types} />
+          </div>
+        </>
+      )}
     </div>
   );
 };

@@ -13,6 +13,10 @@ export const WeaponAttack = ({
   sorceryScaling,
   incantationScaling,
 }: WeaponAttackProps) => {
+  const hasSorceryOrIncantationScaling =
+    (typeof sorceryScaling === "number" && sorceryScaling > 0) ||
+    (typeof incantationScaling === "number" && incantationScaling > 0);
+
   return (
     <div className="">
       <div className="flex flex-wrap gap-1">
@@ -28,6 +32,9 @@ export const WeaponAttack = ({
             {value}
           </div>
         ))}
+        {hasSorceryOrIncantationScaling && (
+          <div className="flex h-6 w-px bg-stone-500/60"></div>
+        )}
         {typeof sorceryScaling === "number" && sorceryScaling > 0 && (
           <div
             className="flex size-6 flex-col items-center justify-center bg-blue-600/60 text-sm font-medium text-white shadow-sm"

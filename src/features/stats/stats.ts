@@ -1,5 +1,20 @@
 export type TStatKey = "vgr" | "mnd" | "end" | "str" | "dex" | "int" | "fai" | "arc";
 
+// Define the type for the stats state
+export type StatsState = Record<TStatKey, number>;
+
+// Initial default stats - adjust as needed
+export const initStats: StatsState = {
+  vgr: 10,
+  mnd: 10,
+  end: 10,
+  str: 10,
+  dex: 10,
+  int: 10,
+  fai: 10,
+  arc: 10,
+}
+
 export type TStat = {
   key: TStatKey;
   name: string;
@@ -49,4 +64,15 @@ export const statLabelMap: Record<TStatKey, string> = {
   int: "Intelligence",
   fai: "Faith",
   arc: "Arcane",
+};
+
+export const statColorMap: Record<TStatKey, string> = {
+  vgr: "bg-red-500/60",
+  mnd: "bg-blue-500/60",
+  end: "bg-green-500/60",
+  str: "bg-orange-500/60",
+  dex: "bg-teal-500/60",
+  int: "bg-sky-500/60",
+  fai: "bg-yellow-300/60",
+  arc: "bg-pink-500/60",
 };

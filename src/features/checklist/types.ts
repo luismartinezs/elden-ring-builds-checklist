@@ -1,3 +1,5 @@
+import { type StatsState } from "~/features/stats/stats";
+
 interface TDeepChecklistItem {
   id: string;
   description: string;
@@ -26,6 +28,7 @@ export type Filters = Record<string, boolean>;
 export type Profile = {
   checklists: Checklist;
   filters: Filters;
+  stats: StatsState;
 }
 
 export type AppData = {

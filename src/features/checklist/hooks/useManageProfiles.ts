@@ -2,6 +2,7 @@ import { useLocalStorage } from "usehooks-ts";
 import { type AppData } from "~/features/checklist/types";
 import { produce } from "immer"
 import { TAGS } from "~/features/tags";
+import { initStats } from "~/features/stats/stats";
 
 export const initFilters = { ...Object.fromEntries(Object.values(TAGS).map(val => ([val, false]))), completed: false } as Record<string, boolean>
 
@@ -10,6 +11,7 @@ export const initAppData: AppData = {
     "Default": {
       checklists: {},
       filters: initFilters,
+      stats: initStats
     },
   },
   currentProfile: "Default",
@@ -35,7 +37,7 @@ export function useManageProfiles() {
     }
 
     setData(produce(data, draft => {
-      draft.profiles[profileName] = { checklists: {}, filters: initFilters };
+      draft.profiles[profileName] = { checklists: {}, filters: initFilters, stats: initStats };
       draft.currentProfile = profileName;
       return draft
     }))

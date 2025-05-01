@@ -1,6 +1,7 @@
 ---
 description: Rules for coding style
 globs:
+alwaysApply: false
 ---
 # Coding Style Guidelines
 
@@ -33,6 +34,7 @@ globs:
    - Utilize custom hooks for reusable logic
    - Implement proper component composition
    - Use Tailwind CSS for styling with tailwind-merge for class merging
+   - Always use named exports, never use default exports
 
 ## State Management
    - Uses React Query for server state

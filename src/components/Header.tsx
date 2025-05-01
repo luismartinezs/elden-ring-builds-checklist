@@ -18,16 +18,20 @@ const links = [
     href: "/checklists",
   },
   {
-    label: "NPC rewards",
-    href: "/npc-questline-rewards",
+    label: "Profile",
+    href: "/profile",
+  },
+  {
+    label: "Stats",
+    href: "/stats",
   },
   {
     label: "Soft Caps",
     href: "/soft-caps",
   },
   {
-    label: "Profile",
-    href: "/profile",
+    label: "NPC rewards",
+    href: "/npc-questline-rewards",
   },
   {
     label: "FAQ",

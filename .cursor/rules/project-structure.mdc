@@ -1,6 +1,7 @@
 ---
 description: Project structure rules
-globs: 
+globs:
+alwaysApply: false
 ---
 # Project Structure Rules
 

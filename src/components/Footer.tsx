@@ -8,6 +8,7 @@ const mainLinks = [
   { label: "NPC rewards", href: "/npc-questline-rewards" },
   { label: "Profile", href: "/profile" },
   { label: "Soft Caps", href: "/soft-caps" },
+  { label: "Stats", href: "/stats" },
 ];
 
 const secondaryLinks = [
@@ -37,7 +38,9 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {/* Placeholder Column 1 */}
           <div className="space-y-4">
-            <h3 className="text-sm font-semibold leading-6 text-stone-900 dark:text-white">Elden Links</h3>
+            <h3 className="text-sm font-semibold leading-6 text-stone-900 dark:text-white">
+              Elden Links
+            </h3>
             <ul role="list" className="space-y-3">
               {mainLinks.map((item) => (
                 <li key={item.label}>
@@ -54,7 +57,9 @@ export function Footer() {
 
           {/* Placeholder Column 2 */}
           <div className="space-y-4">
-            <h3 className="text-sm font-semibold leading-6 text-stone-900 dark:text-white">Other Links</h3>
+            <h3 className="text-sm font-semibold leading-6 text-stone-900 dark:text-white">
+              Other Links
+            </h3>
             <ul role="list" className="space-y-3">
               {secondaryLinks.map((item) => (
                 <li key={item.label}>
@@ -69,10 +74,12 @@ export function Footer() {
             </ul>
           </div>
 
-           {/* Social Column */}
-           <div className="space-y-4 md:col-start-4">
-             <h3 className="text-sm font-semibold leading-6 text-stone-900 dark:text-white">Social</h3>
-             <div className="flex items-center space-x-6">
+          {/* Social Column */}
+          <div className="space-y-4 md:col-start-4">
+            <h3 className="text-sm font-semibold leading-6 text-stone-900 dark:text-white">
+              Social
+            </h3>
+            <div className="flex items-center space-x-6">
               {socialLinks.map(({ label, icon: Icon, href }) => (
                 <a
                   key={label}
@@ -87,11 +94,10 @@ export function Footer() {
               ))}
             </div>
           </div>
-
         </div>
 
         {/* Bottom section */}
-        <div className="mt-16 border-t border-stone-900/10 pt-8 dark:border-white/10 sm:mt-20 lg:mt-24">
+        <div className="mt-16 border-t border-stone-900/10 pt-8 sm:mt-20 lg:mt-24 dark:border-white/10">
           <p className="text-xs leading-5 text-stone-500 dark:text-stone-400">
             &copy; 2024 Luis Martinez. All rights reserved.
           </p>

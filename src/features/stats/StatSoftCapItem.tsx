@@ -3,23 +3,25 @@ import type { TStatKey } from "~/features/stats/stats";
 import { statLabelMap, statColorMap } from "~/features/stats/stats";
 import { cn } from "~/utils/cn";
 import { levelCapsData } from "~/data/level-caps-data"; // Import the data
+import { FaUser } from "react-icons/fa";
+import ClientOnly from "~/components/ClientOnly";
 
 type StatSoftCapItemProps = {
   statKey: TStatKey;
+  currentStat?: number;
 };
 
 // Removed the local statSoftCaps definition
 
 export const StatSoftCapItem: React.FC<StatSoftCapItemProps> = ({
   statKey,
+  currentStat,
 }) => {
   // Get soft cap info from imported data
   const { softCaps, items } = levelCapsData[statKey];
 
   return (
     <div className="mb-2 w-full">
-      {" "}
-      {/* Increased bottom margin */}
       {/* Container adjusts flex direction based on screen size */}
       <div className="mb-7 flex w-full flex-col sm:flex-row sm:items-center md:mb-6">
         {/* Label: Default styles for mobile, overridden for sm+ */}
@@ -56,6 +58,22 @@ export const StatSoftCapItem: React.FC<StatSoftCapItemProps> = ({
               </span>
             </div>
           ))}
+
+          {/* Current stat marker */}
+          <ClientOnly>
+            {currentStat && (
+              <div
+                className="absolute -top-1 bottom-0 w-[3px] border border-black bg-primary-500"
+                style={{ left: `${currentStat}%` }}
+                title={`Current: ${currentStat}`}
+              >
+                <FaUser
+                  className="absolute -top-5 left-1/2 hidden -translate-x-1/2 text-primary-500 sm:block"
+                  size={14}
+                />
+              </div>
+            )}
+          </ClientOnly>
         </div>
       </div>
       {/* Display soft cap description items only if they exist */}

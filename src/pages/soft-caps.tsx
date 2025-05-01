@@ -1,13 +1,19 @@
 import Head from "next/head";
-import React from "react";
+import React, { useState } from "react";
 import { Heading } from "~/components/Heading";
 import { SectionWrapper } from "~/components/SectionWrapper";
 import { PageLayout } from "~/layouts/PageLayout";
-import {stats} from "~/features/stats/stats";
+import { stats } from "~/features/stats/stats";
 import { StatSoftCapItem } from "~/features/stats/StatSoftCapItem";
 import { Paragraph } from "~/components/Paragraph";
+import { useManageStats } from "~/features/stats/useManageStats";
+import { Switch } from "~/components/Switch";
 
 const LevelCapsPage = () => {
+  const { getCurrentStats } = useManageStats();
+  const currentStats = getCurrentStats();
+  const [showCurrentStats, setShowCurrentStats] = useState(true);
+
   return (
     <PageLayout>
       <Head>
@@ -25,15 +31,30 @@ const LevelCapsPage = () => {
       <SectionWrapper>
         <Heading.H1>Stat Soft Caps</Heading.H1>
 
-        <Paragraph>
-          Soft caps can get complicated. If you see a mistake, let me know via the feedback button
-        </Paragraph>
+        <div className="mb-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <Paragraph className="mb-0">
+            Soft caps can get complicated. If you see a mistake, let me know via
+            the feedback button
+          </Paragraph>
+          <Switch
+            checked={showCurrentStats}
+            onChange={setShowCurrentStats}
+            label="Show Current Profile Stats"
+            className="shrink-0"
+          />
+        </div>
 
         <Paragraph>All stats hard cap at 99</Paragraph>
 
-        <div className="flex flex-col container mx-auto">
+        <div className="container mx-auto flex flex-col">
           {stats.map((stat) => (
-            <StatSoftCapItem key={stat.key} statKey={stat.key} />
+            <StatSoftCapItem
+              key={stat.key}
+              statKey={stat.key}
+              currentStat={
+                showCurrentStats ? currentStats[stat.key] : undefined
+              }
+            />
           ))}
         </div>
       </SectionWrapper>

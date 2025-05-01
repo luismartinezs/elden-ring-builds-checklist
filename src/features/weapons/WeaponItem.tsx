@@ -1,5 +1,10 @@
 import { type Weapon } from "~/types/weapons";
 import { cn } from "~/utils/cn";
+import { WeaponRequirements } from "./WeaponRequirements";
+import { WeaponAttack } from "./WeaponAttack";
+import { WeaponScaling } from "./WeaponScaling";
+import { WeaponStatusEffects } from "./WeaponStatusEffects";
+import { WeaponAdditionalInfo } from "./WeaponAdditionalInfo";
 
 type WeaponItemProps = {
   weapon: Weapon;
@@ -26,93 +31,14 @@ export const WeaponItem = ({ weapon }: WeaponItemProps) => {
       </p>
 
       <div className="mt-4 space-y-4">
-        {/* Requirements */}
-        <div className="space-y-1">
-          <div className="text-xs font-medium uppercase text-stone-500 dark:text-stone-400">
-            Requirements
-          </div>
-          <div className="grid grid-cols-5 gap-2 text-sm">
-            {Object.entries(weapon.requirements).map(
-              ([stat, value]) =>
-                value > 0 && (
-                  <div key={stat} className="flex flex-col items-center">
-                    <span className="capitalize">{stat}</span>
-                    <span>{value}</span>
-                  </div>
-                )
-            )}
-          </div>
-        </div>
-
-        {/* Attack Stats */}
-        <div className="space-y-1">
-          <div className="text-xs font-medium uppercase text-stone-500 dark:text-stone-400">
-            Attack
-          </div>
-          <div className="grid grid-cols-5 gap-2 text-sm">
-            {Object.entries(weapon.attack)
-              .filter(([key]) => key !== "critical")
-              .map(([type, value]) => (
-                <div key={type} className="flex flex-col items-center">
-                  <span className="capitalize">{type}</span>
-                  <span>{value}</span>
-                </div>
-              ))}
-          </div>
-        </div>
-
-        {/* Scaling */}
-        <div className="space-y-1">
-          <div className="text-xs font-medium uppercase text-stone-500 dark:text-stone-400">
-            Scaling
-          </div>
-          <div className="grid grid-cols-5 gap-2 text-sm">
-            {Object.entries(weapon.scaling).map(
-              ([stat, grade]) =>
-                grade && (
-                  <div key={stat} className="flex flex-col items-center">
-                    <span className="capitalize">{stat}</span>
-                    <span>{grade}</span>
-                  </div>
-                )
-            )}
-          </div>
-        </div>
-
-        {/* Status Effects */}
-        {Object.entries(weapon.status_buildup).some(
-          ([_, value]) => value > 0
-        ) && (
-          <div className="space-y-1">
-            <div className="text-xs font-medium uppercase text-stone-500 dark:text-stone-400">
-              Status Effects
-            </div>
-            <div className="grid grid-cols-4 gap-2 text-sm">
-              {Object.entries(weapon.status_buildup)
-                .filter(([_, value]) => value > 0)
-                .map(([effect, value]) => (
-                  <div key={effect} className="flex flex-col items-center">
-                    <span className="capitalize">
-                      {effect.replace("_", " ")}
-                    </span>
-                    <span>{value}</span>
-                  </div>
-                ))}
-            </div>
-          </div>
-        )}
-
-        {/* Additional Info */}
-        <div className="flex flex-wrap gap-4 text-sm text-stone-600 dark:text-stone-300">
-          <div>
-            <span className="font-medium">Upgrade Type:</span>{" "}
-            {weapon.upgrade_type}
-          </div>
-          <div>
-            <span className="font-medium">Damage Types:</span>{" "}
-            {weapon.damage_types.join(", ")}
-          </div>
-        </div>
+        <WeaponRequirements requirements={weapon.requirements} />
+        <WeaponAttack attack={weapon.attack} />
+        <WeaponScaling scaling={weapon.scaling} />
+        <WeaponStatusEffects statusBuildup={weapon.status_buildup} />
+        <WeaponAdditionalInfo
+          upgradeType={weapon.upgrade_type}
+          damageTypes={weapon.damage_types}
+        />
       </div>
     </div>
   );

@@ -4,9 +4,15 @@ import { dmgColorMap, type TDmgType } from "~/features/stats/dmgtypes";
 
 type WeaponAttackProps = {
   attack: Weapon["attack"];
+  sorceryScaling?: number;
+  incantationScaling?: number;
 };
 
-export const WeaponAttack = ({ attack }: WeaponAttackProps) => {
+export const WeaponAttack = ({
+  attack,
+  sorceryScaling,
+  incantationScaling,
+}: WeaponAttackProps) => {
   return (
     <div className="">
       <div className="flex flex-wrap gap-1">
@@ -22,6 +28,22 @@ export const WeaponAttack = ({ attack }: WeaponAttackProps) => {
             {value}
           </div>
         ))}
+        {typeof sorceryScaling === "number" && sorceryScaling > 0 && (
+          <div
+            className="flex size-6 flex-col items-center justify-center bg-blue-600/60 text-sm font-medium text-white shadow-sm"
+            title="Sorcery Scaling"
+          >
+            {sorceryScaling}
+          </div>
+        )}
+        {typeof incantationScaling === "number" && incantationScaling > 0 && (
+          <div
+            className="flex size-6 flex-col items-center justify-center bg-yellow-600/60 text-sm font-medium text-white shadow-sm"
+            title="Incantation Scaling"
+          >
+            {incantationScaling}
+          </div>
+        )}
       </div>
     </div>
   );

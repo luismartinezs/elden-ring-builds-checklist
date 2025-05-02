@@ -7,6 +7,9 @@ interface StatInputProps {
   statKey: TStatKey;
   initialValue?: number;
   onChange?: (value: number) => void;
+  minValue?: number;
+  maxValue?: number;
+  step?: number;
 }
 
 export const StatInput: React.FC<StatInputProps> = ({
@@ -14,31 +17,30 @@ export const StatInput: React.FC<StatInputProps> = ({
   statKey,
   initialValue = 1,
   onChange,
+  minValue = 1,
+  maxValue = 99,
+  step = 1,
 }) => {
-  const MIN_VALUE = 1;
-  const MAX_VALUE = 99;
-  const STEP = 1;
-
   const [value, setValue] = useState<number>(() => {
     const validInitialValue =
-      initialValue >= MIN_VALUE && initialValue <= MAX_VALUE
+      initialValue >= minValue && initialValue <= maxValue
         ? initialValue
-        : MIN_VALUE;
+        : minValue;
     return validInitialValue;
   });
 
   useEffect(() => {
     if (initialValue !== undefined) {
       const validInitialValue = Math.max(
-        MIN_VALUE,
-        Math.min(MAX_VALUE, initialValue)
+        minValue,
+        Math.min(maxValue, initialValue)
       );
       setValue(validInitialValue);
     }
-  }, [initialValue, MIN_VALUE, MAX_VALUE]);
+  }, [initialValue, minValue, maxValue]);
 
   const handleValueChange = (newValue: number) => {
-    const clampedValue = Math.max(MIN_VALUE, Math.min(MAX_VALUE, newValue));
+    const clampedValue = Math.max(minValue, Math.min(maxValue, newValue));
     // Ensure the value is an integer if needed, though type="number" often handles this.
     // clampedValue = Math.floor(clampedValue); // Uncomment if non-integer inputs are possible and undesirable
 
@@ -63,11 +65,11 @@ export const StatInput: React.FC<StatInputProps> = ({
   };
 
   const increment = () => {
-    handleValueChange(value + STEP);
+    handleValueChange(value + step);
   };
 
   const decrement = () => {
-    handleValueChange(value - STEP);
+    handleValueChange(value - step);
   };
 
   return (
@@ -86,7 +88,7 @@ export const StatInput: React.FC<StatInputProps> = ({
       <div className="flex items-stretch">
         <button
           onClick={decrement}
-          disabled={value <= MIN_VALUE}
+          disabled={value <= minValue}
           className="bg-stone-700 px-2 py-0.5 text-sm text-white hover:bg-stone-600 disabled:cursor-not-allowed disabled:opacity-50 md:px-3 md:py-1 md:text-base"
         >
           -
@@ -95,14 +97,14 @@ export const StatInput: React.FC<StatInputProps> = ({
           type="number"
           value={value}
           onChange={handleInputChange}
-          min={MIN_VALUE}
-          max={MAX_VALUE}
-          step={STEP}
+          min={minValue}
+          max={maxValue}
+          step={step}
           className="w-14 border border-stone-700 bg-stone-800 p-1.5 text-center text-xl text-white focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 md:w-16 md:p-2 md:text-2xl"
         />
         <button
           onClick={increment}
-          disabled={value >= MAX_VALUE}
+          disabled={value >= maxValue}
           className="bg-stone-700 px-2 py-0.5 text-sm text-white hover:bg-stone-600 disabled:cursor-not-allowed disabled:opacity-50 md:px-3 md:py-1 md:text-base"
         >
           +

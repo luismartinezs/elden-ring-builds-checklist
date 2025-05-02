@@ -1,5 +1,10 @@
 import { Heading } from "~/components/Heading";
 import { LevelingItem } from "./leveling-item";
+import { useManageStats } from "../stats/useManageStats";
+import { getNextLevels } from "./leveling";
+import ClientOnly from "~/components/ClientOnly";
+import { useManageWeaponFilters } from "../weapon-controls/filtering/useManageWeaponFilters";
+import { twoHandKey } from "../weapon-controls/filtering/two-hand";
 
 const mock = [
   {
@@ -17,18 +22,30 @@ const mock = [
 ] as const;
 
 export const LevelingList = () => {
+  const { getCurrentStats } = useManageStats();
+  const { getCurrentWeaponFilters } = useManageWeaponFilters();
+  const stats = getCurrentStats();
+  const weaponFilters = getCurrentWeaponFilters();
+  const nextLevels = getNextLevels({
+    stats,
+    archetype: "melee",
+    twoHanding: !!weaponFilters[twoHandKey],
+    // steps: 10,
+  });
   return (
     <div className="">
       <Heading.H3 className="!text-base !font-medium">
-        Next level suggestions
+        Suggested leveling order
       </Heading.H3>
-      <ul>
-        {mock.map((item) => (
-          <li key={item.statKey}>
-            <LevelingItem key={item.statKey} {...item} />
-          </li>
-        ))}
-      </ul>
+      <ClientOnly>
+        <ul>
+          {nextLevels.map((item) => (
+            <li key={`${item.stat}-${item.target}`}>
+              <LevelingItem {...item} />
+            </li>
+          ))}
+        </ul>
+      </ClientOnly>
     </div>
   );
 };

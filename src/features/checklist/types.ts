@@ -25,11 +25,19 @@ export type UUID = string;
 export type Checklist = Record<string, UUID[]>;
 export type Filters = Record<string, boolean>;
 export type WeaponFilters = Record<string, boolean>;
+export type StatRequirements = {
+  str?: number;
+  dex?: number;
+  int?: number;
+  fai?: number;
+  arc?: number;
+}
 export type Profile = {
   checklists: Checklist;
   filters: Filters;
   stats: StatsState;
   weaponFilters: WeaponFilters;
+  statRequirements: StatRequirements;
 }
 
 export type AppData = {

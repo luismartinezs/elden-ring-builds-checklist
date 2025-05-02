@@ -22,6 +22,14 @@ const changelogData: ChangelogEntry[] = [
       {
         description: (
           <span>
+            Added <Link href="/leveling-guide">leveling guide</Link> that
+            suggests a leveling order based on stats, weapon requirements, etc.
+          </span>
+        ),
+      },
+      {
+        description: (
+          <span>
             Added <Link href="/weapons">weapons page</Link> where you can filter
             weapons by various parameters.
           </span>

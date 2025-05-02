@@ -79,7 +79,7 @@ export const WeaponsDisplay = () => {
           <h2 className="text-2xl font-bold">Weapons</h2>
           {filteredOutCount > 0 && (
             <p className="text-sm text-stone-600 dark:text-stone-400">
-              {filteredOutCount} weapons hidden (stat requirements not met)
+              {filteredOutCount} weapons hidden
             </p>
           )}
         </div>

@@ -14,6 +14,7 @@ export type SelectProps = {
   placeholder?: string;
   error?: string;
   className?: string;
+  orientation?: "vertical" | "horizontal";
 } & Omit<
   ComponentPropsWithoutRef<"select">,
   "onChange" | "value" | "className"
@@ -27,6 +28,7 @@ export const Select = ({
   placeholder,
   error,
   className,
+  orientation = "vertical",
   ...props
 }: SelectProps) => {
   const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
@@ -34,12 +36,14 @@ export const Select = ({
   };
 
   return (
-    <div className="flex flex-col gap-1.5">
+    <div
+      className={cn(
+        "flex flex-col gap-1.5",
+        orientation === "horizontal" && "flex-row items-center gap-2"
+      )}
+    >
       {label && (
-        <label
-          htmlFor={props.id}
-          className="text-sm font-medium text-stone-200"
-        >
+        <label htmlFor={props.id} className="text-sm text-stone-200">
           {label}
         </label>
       )}

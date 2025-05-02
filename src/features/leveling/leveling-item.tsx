@@ -1,4 +1,5 @@
 import { statLabelMap, type TStatKey } from "~/features/stats/stats";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export const LevelingItem = ({
   statKey,
@@ -7,10 +8,13 @@ export const LevelingItem = ({
   statKey: TStatKey;
   levels: number;
 }) => {
-  const msg =
-    levels > 1
-      ? `${statLabelMap[statKey]} -> ${levels} points`
-      : `${statLabelMap[statKey]} -> 1 point`;
+  const text = levels > 1 ? `${levels} points` : "1 point";
 
-  return <div className="">{msg}</div>;
+  return (
+    <div className="flex items-center gap-2">
+      <span>{statLabelMap[statKey]}</span>
+      <FaArrowRightLong />
+      <span>{text}</span>
+    </div>
+  );
 };

@@ -1,3 +1,4 @@
+import { Heading } from "~/components/Heading";
 import { LevelingItem } from "./leveling-item";
 
 const mock = [
@@ -17,10 +18,10 @@ const mock = [
 
 export const LevelingList = () => {
   return (
-    <div className="w-full max-w-lg">
-      <h3 className="mb-4 text-sm font-medium  tracking-wider">
-        Leveling suggestions
-      </h3>
+    <div className="">
+      <Heading.H3 className="!text-base !font-medium">
+        Next level suggestions
+      </Heading.H3>
       <ul>
         {mock.map((item) => (
           <li key={item.statKey}>

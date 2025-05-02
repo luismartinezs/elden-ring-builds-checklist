@@ -5,32 +5,20 @@ import { getNextLevels } from "./leveling";
 import ClientOnly from "~/components/ClientOnly";
 import { useManageWeaponFilters } from "../weapon-controls/filtering/useManageWeaponFilters";
 import { twoHandKey } from "../weapon-controls/filtering/two-hand";
-
-const mock = [
-  {
-    statKey: "vgr",
-    levels: 3,
-  },
-  {
-    statKey: "mnd",
-    levels: 3,
-  },
-  {
-    statKey: "dex",
-    levels: 1,
-  },
-] as const;
+import { useManageStatRequirements } from "./use-manage-stat-requirements";
 
 export const LevelingList = () => {
   const { getCurrentStats } = useManageStats();
   const { getCurrentWeaponFilters } = useManageWeaponFilters();
+  const { getCurrentStatRequirements } = useManageStatRequirements();
   const stats = getCurrentStats();
   const weaponFilters = getCurrentWeaponFilters();
+  const statRequirements = getCurrentStatRequirements();
   const nextLevels = getNextLevels({
     stats,
     archetype: "melee",
     twoHanding: !!weaponFilters[twoHandKey],
-    // steps: 10,
+    requirements: statRequirements,
   });
   return (
     <div className="">

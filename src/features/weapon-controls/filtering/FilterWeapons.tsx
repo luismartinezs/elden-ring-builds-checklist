@@ -11,7 +11,7 @@ const Pipe = () => {
 export const FilterWeapons = () => {
   return (
     <div>
-      <h2 className="text-xs text-stone-400">Filters</h2>
+      <h2 className="text-xs text-stone-400">Filter</h2>
       <div className="flex flex-wrap items-stretch gap-3 rounded-md border border-stone-500 p-2">
         <TwoHandCheckbox />
         <Pipe />

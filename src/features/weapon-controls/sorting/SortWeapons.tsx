@@ -15,11 +15,9 @@ export function SortWeapons({ sortState, onSortChange }: SortWeaponsProps) {
 
   return (
     <div className="flex flex-col gap-3">
-      <div className="space-y-2">
-        <h3 className="text-sm font-medium text-stone-600 dark:text-stone-400">
-          Sort by Requirements
-        </h3>
-        <div className="flex flex-wrap items-center gap-2">
+      <div className="">
+        <h3 className="text-xs text-stone-400">Sort</h3>
+        <div className="flex flex-wrap items-stretch gap-2 rounded-md border border-stone-500 p-2">
           {requirementConfigs.map((config) => (
             <SortButton
               key={config.key}

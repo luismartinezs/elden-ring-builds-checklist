@@ -7,7 +7,7 @@ const validKeys = statusEffectKeys.slice(0, -1);
 
 export const StatusEffect = () => {
   return (
-    <div className="flex flex-nowrap gap-2">
+    <>
       {validKeys.map((type) => (
         <CheckboxControl
           key={type}
@@ -16,6 +16,6 @@ export const StatusEffect = () => {
           label={toTitleCase(type)}
         />
       ))}
-    </div>
+    </>
   );
 };

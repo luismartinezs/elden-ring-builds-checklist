@@ -18,7 +18,7 @@ const elemDmgTypeToLabel: Record<(typeof elemDmgTypesKeys)[number], string> = {
 
 export const ElementDmg = () => {
   return (
-    <div className="flex flex-nowrap gap-2">
+    <>
       {elemDmgTypesKeys.map((type) => (
         <CheckboxControl
           key={type}
@@ -27,6 +27,6 @@ export const ElementDmg = () => {
           label={elemDmgTypeToLabel[type]}
         />
       ))}
-    </div>
+    </>
   );
 };

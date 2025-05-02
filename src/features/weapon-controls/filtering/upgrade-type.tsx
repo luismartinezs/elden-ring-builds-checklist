@@ -12,7 +12,7 @@ export const upgradeTypeToLabel: Record<
 
 export const UpgradeType = () => {
   return (
-    <div className="flex flex-nowrap gap-2">
+    <>
       {upgradeTypeKeys.map((type) => (
         <CheckboxControl
           key={type}
@@ -21,6 +21,6 @@ export const UpgradeType = () => {
           label={upgradeTypeToLabel[type]}
         />
       ))}
-    </div>
+    </>
   );
 };

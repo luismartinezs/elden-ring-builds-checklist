@@ -77,9 +77,13 @@ export const WeaponsDisplay = () => {
       <div className="flex items-center justify-between">
         <div className="space-y-1">
           <h2 className="text-2xl font-bold">Weapons</h2>
-          {filteredOutCount > 0 && (
+          {filteredOutCount > 0 ? (
             <p className="text-sm text-stone-600 dark:text-stone-400">
               {filteredOutCount} weapons hidden
+            </p>
+          ) : (
+            <p className="text-sm text-stone-600 dark:text-stone-400">
+              All {totalWeapons} weapons
             </p>
           )}
         </div>

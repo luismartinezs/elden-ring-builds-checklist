@@ -11,6 +11,7 @@ const sizeClasses: Record<CheckboxSize, string> = {
 };
 
 export const Checkbox = ({
+  id,
   itemId,
   isChecked,
   onChange,
@@ -18,6 +19,7 @@ export const Checkbox = ({
   size = "md",
   className,
 }: {
+  id?: string;
   itemId: string;
   isChecked: boolean;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -26,6 +28,7 @@ export const Checkbox = ({
   className?: string;
 }) => (
   <input
+    id={id}
     aria-label={label}
     type="checkbox"
     name={itemId}

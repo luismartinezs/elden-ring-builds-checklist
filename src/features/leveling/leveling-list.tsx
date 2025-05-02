@@ -25,7 +25,9 @@ export const LevelingList = () => {
     twoHanding: !!weaponFilters[twoHandKey],
     dmgStats: getDmgStats(options),
     requirements: statRequirements,
+    maxFpFlask: options.maxFpFlask,
   });
+
   return (
     <div className="">
       <Heading.H3 className="!text-base !font-medium">

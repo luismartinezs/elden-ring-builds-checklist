@@ -6,6 +6,7 @@ import { LuSword } from "react-icons/lu";
 import { IoOptionsOutline } from "react-icons/io5";
 import { SelectArchetype } from "./select-archetype";
 import { SelectDmgStats } from "./select-dmg-stats";
+import { FpFlaskCheckbox } from "../weapon-controls/filtering/fp-flask";
 
 export const LvlControls = () => {
   return (
@@ -16,13 +17,15 @@ export const LvlControls = () => {
         </div>
         <div className="flex flex-wrap items-stretch gap-x-6 gap-y-4 rounded-md border border-stone-500 p-2">
           <TwoHandCheckbox />
+          <FpFlaskCheckbox />
           <SelectArchetype />
           <SelectDmgStats />
         </div>
       </div>
       <div>
         <div className="text-stone-400">
-          <LuSword className="inline-block" size={20} /> Weapon requirements
+          <LuSword className="inline-block" size={20} /> Weapon / Spell
+          requirements
         </div>
         <div className="flex flex-wrap items-stretch gap-x-2 gap-y-4 rounded-md border border-stone-500 p-2">
           <ItemRequirements />

@@ -1,6 +1,7 @@
 import { Select } from "~/components/Select";
 import { useOptions } from "./use-options";
 import { archetypes } from "./leveling";
+import { toTitleCase } from "~/utils/text";
 
 export const key = "archetype" as const;
 
@@ -13,7 +14,7 @@ export const SelectArchetype = () => {
       label="Archetype"
       orientation="horizontal"
       options={archetypes.map((archetype) => ({
-        label: archetype,
+        label: toTitleCase(archetype),
         value: archetype,
       }))}
       value={selected ?? undefined}

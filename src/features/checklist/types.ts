@@ -39,6 +39,7 @@ export type Options = {
   dmgint?: boolean
   dmgfai?: boolean
   dmgarc?: boolean
+  maxFpFlask?: boolean
 }
 export type Profile = {
   checklists: Checklist;

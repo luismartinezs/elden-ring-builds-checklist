@@ -24,6 +24,20 @@ const LevelingGuidePage: React.FC = () => {
       <SectionWrapper>
         <Heading.H1>Leveling Guide</Heading.H1>
         <Paragraph>What stat should you level up next?</Paragraph>
+        <Paragraph>
+          This guide is roughly based on this{" "}
+          <a
+            href="https://steamcommunity.com/sharedfiles/filedetails/?id=2765060616"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Stat Breakpoints
+          </a>{" "}
+          guide. And aims to answer the{" "}
+          <span className="italic">eternal question</span>: &quot;What stat
+          should I level up next?&quot;. It is not a &quot;Definitive
+          Guide&quot;, just a helpful companion for when you are lost.
+        </Paragraph>
         <LevelingPage />
       </SectionWrapper>
     </PageLayout>

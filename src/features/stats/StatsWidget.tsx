@@ -13,7 +13,6 @@ export const StatsWidget: React.FC = () => {
 
   const handleStatChange = useCallback(
     (statKey: TStatKey, newValue: number) => {
-      console.log(`Stat changed: ${statKey} = ${newValue}`);
       updateStat(statKey, newValue); // Use updateStat from the hook
     },
     [updateStat] // Add updateStat to dependency array

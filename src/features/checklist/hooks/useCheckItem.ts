@@ -26,8 +26,6 @@ export function useCheckItem() {
     siblingIds?: string[],
     parentId?: string
   } = {}) => {
-    // console.log(`Checking item ${itemId} with parent ${parentId}, children ${childrenIds} and siblings ${siblingIds}`);
-
     updateChecklist(checklistId, produce(checklist, (draft) => {
       const index = draft.indexOf(itemId);
 

@@ -174,8 +174,6 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
      (requirementTarget, addSuggestion, etc.) that already exist.
      ---------------------------------------------------------------- */
 
-  // console.log(JSON.stringify(params, null, 2));
-
   // 0 · Boilerplate set‑up: clamp limit, clone stats, init list
   const limit = clampLimit(statLimit);
   const work: StatsRecord = { ...stats };

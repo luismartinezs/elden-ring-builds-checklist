@@ -8,12 +8,11 @@ export function useToggleFilters() {
 
   const getAllTrue = () => {
     const currentFilters = getCurrentFilters();
-    // console.log('Current Filters in getAllTrue:', JSON.stringify(currentFilters));
     return Object.values(currentFilters).every(Boolean);
   };
 
   return {
-    toggleFilters: (value:boolean) => {
+    toggleFilters: (value: boolean) => {
       updateAllFilters(value);
     },
     allFiltersChecked: getAllTrue()

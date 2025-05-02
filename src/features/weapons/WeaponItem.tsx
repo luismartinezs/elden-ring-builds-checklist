@@ -54,7 +54,14 @@ export const WeaponItem = ({ weapon, isCollapsed }: WeaponItemProps) => {
         </h3>
       </a>
       <p className="text-sm text-stone-500 dark:text-stone-400">
-        {weapon.category} | {weapon.upgrade_type}
+        {weapon.category} | {weapon.upgrade_type}{" "}
+        {weapon.sote ? (
+          <span className="rounded-md bg-stone-700 px-1 py-0.5 text-xs uppercase text-stone-300">
+            sote
+          </span>
+        ) : (
+          ""
+        )}
       </p>
 
       <div className="mt-2 space-y-1">

@@ -2,7 +2,7 @@ import { type Weapon } from "~/types/weapons";
 import { useManageStats } from "~/features/stats/useManageStats";
 import { useManageWeaponFilters } from "./useManageWeaponFilters";
 import { useMemo } from "react";
-import { meetsElemDmgRequirements, meetsStatRequirements, meetsPhysDmgRequirements, meetsStatusEffectRequirements, type WeaponPredicate } from "./predicates";
+import { meetsElemDmgRequirements, meetsStatRequirements, meetsPhysDmgRequirements, meetsStatusEffectRequirements, type WeaponPredicate, meetsUpgradeTypeRequirements } from "./predicates";
 
 
 export function useWeaponFilters() {
@@ -15,7 +15,8 @@ export function useWeaponFilters() {
     meetsStatRequirements,
     meetsElemDmgRequirements,
     meetsPhysDmgRequirements,
-    meetsStatusEffectRequirements
+    meetsStatusEffectRequirements,
+    meetsUpgradeTypeRequirements
   ], []);
 
   const filterWeapons = (weapons: Weapon[]) => {

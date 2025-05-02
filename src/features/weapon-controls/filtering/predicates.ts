@@ -6,6 +6,7 @@ import { elemDmgTypesKeys } from "./element-dmg";
 import { physDmgTypesKeys } from "./phys-dmg";
 import { isSubArray } from "~/utils/issubarray";
 import { statusEffectKeys } from "~/features/stats/statusEffect";
+import { upgradeTypeKeys, upgradeTypeToLabel } from "./upgrade-type";
 
 export type WeaponPredicate = (
   { weapon, stats, filters }: {
@@ -84,6 +85,18 @@ export const meetsStatusEffectRequirements: WeaponPredicate = ({ weapon, filters
     const filterValue = filters[key];
     if (filterValue) {
       return weapon.status_buildup[key] > 0;
+    }
+    return true;
+  });
+}
+
+
+export const meetsUpgradeTypeRequirements: WeaponPredicate = ({ weapon, filters }) => {
+  return upgradeTypeKeys.every((key) => {
+    const filterValue = filters[key];
+    const label = upgradeTypeToLabel[key];
+    if (filterValue) {
+      return weapon.upgrade_type === label;
     }
     return true;
   });

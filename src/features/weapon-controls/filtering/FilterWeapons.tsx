@@ -2,6 +2,7 @@ import { ElementDmg } from "./element-dmg";
 import { PhysDmg } from "./phys-dmg";
 import { StatusEffect } from "./status-effect";
 import { TwoHandCheckbox } from "./two-hand";
+import { UpgradeType } from "./upgrade-type";
 
 const Pipe = () => {
   return <div className="w-px bg-stone-600"></div>;
@@ -19,6 +20,8 @@ export const FilterWeapons = () => {
         <PhysDmg />
         <Pipe />
         <StatusEffect />
+        <Pipe />
+        <UpgradeType />
       </div>
     </div>
   );

@@ -4,15 +4,16 @@ import { WeaponItem } from "./WeaponItem";
 import { useState } from "react";
 import { cn } from "~/utils/cn";
 import { FiChevronDown, FiChevronRight } from "react-icons/fi";
-import { useWeaponFilters } from "./filtering/useWeaponFilters";
-import { useWeaponSorting } from "./sorting/useWeaponSorting";
+import { useWeaponFilters } from "../weapon-controls/filtering/useWeaponFilters";
+import { useWeaponSorting } from "../weapon-controls/sorting/useWeaponSorting";
 import {
   type RequirementSortKey,
   type SortDirection,
   type SortState,
-} from "./sorting/types";
-import { DEFAULT_SORT_STATE } from "./sorting/constants";
-import { SortWeapons } from "./sorting/SortWeapons";
+} from "../weapon-controls/sorting/types";
+import { DEFAULT_SORT_STATE } from "../weapon-controls/sorting/constants";
+import { SortWeapons } from "../weapon-controls/sorting/SortWeapons";
+import { FilterWeapons } from "../weapon-controls/filtering/FilterWeapons";
 
 export const WeaponsDisplay = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -100,6 +101,7 @@ export const WeaponsDisplay = () => {
         </button>
       </div>
 
+      <FilterWeapons />
       <SortWeapons sortState={sortState} onSortChange={handleSortChange} />
 
       <div

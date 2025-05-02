@@ -1,6 +1,7 @@
 import { type Weapon } from "~/types/weapons";
 import { useManageStats } from "~/features/stats/useManageStats";
 import { type TAtkStatKey } from "~/features/stats/stats";
+import { useManageWeaponFilters } from "./useManageWeaponFilters";
 
 // Map TStatKey to weapon requirement keys
 const statKeyToRequirementKey: Record<TAtkStatKey, keyof Weapon["requirements"]> = {
@@ -13,9 +14,12 @@ const statKeyToRequirementKey: Record<TAtkStatKey, keyof Weapon["requirements"]>
 
 export function useWeaponFilters() {
   const { getCurrentStats } = useManageStats();
+  const { getCurrentWeaponFilters } =
+    useManageWeaponFilters();
 
   const filterWeapons = (weapons: Weapon[]) => {
-    const currentStats = getCurrentStats();
+    const stats = getCurrentStats();
+    const filters = getCurrentWeaponFilters();
 
     return weapons.filter((weapon) =>
       // Check if character meets all stat requirements
@@ -26,7 +30,8 @@ export function useWeaponFilters() {
         )?.[0] as TAtkStatKey | undefined;
 
         if (!statKey) return true; // Skip if no matching stat found
-        return currentStats[statKey] >= reqValue;
+        if (statKey === 'str' && filters['2h']) return stats[statKey] * 1.5 >= reqValue;
+        return stats[statKey] >= reqValue;
       })
     );
   };

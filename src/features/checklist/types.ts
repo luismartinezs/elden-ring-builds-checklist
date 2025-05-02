@@ -24,11 +24,12 @@ export interface TChecklist {
 export type UUID = string;
 export type Checklist = Record<string, UUID[]>;
 export type Filters = Record<string, boolean>;
-
+export type WeaponFilters = Record<string, boolean>;
 export type Profile = {
   checklists: Checklist;
   filters: Filters;
   stats: StatsState;
+  weaponFilters: WeaponFilters;
 }
 
 export type AppData = {

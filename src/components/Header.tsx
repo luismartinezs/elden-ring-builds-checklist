@@ -34,6 +34,10 @@ const links = [
     href: "/soft-caps",
   },
   {
+    label: "Leveling Guide",
+    href: "/leveling-guide",
+  },
+  {
     label: "NPC rewards",
     href: "/npc-questline-rewards",
   },
@@ -93,34 +97,36 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
 
   return (
     <header className={cn(className, "bg-stone-800 px-2 py-2")} {...otherProps}>
-      <nav className="px-4 text-white lg:px-6">
+      <nav className="px-4 text-white xl:px-6">
         <div className="relative mx-auto flex max-w-screen-xl flex-wrap items-center justify-between py-2">
-          <LogoLink className="lg:hidden" />
-          <Link className="text-xl font-bold lg:hidden" href="/">
+          <LogoLink className="xl:hidden" />
+          <Link className="text-xl font-bold xl:hidden" href="/">
             <span className="text-primary-500">Elden</span>
             <span className="text-secondary-500">Hub</span>
           </Link>
-          <div className="flex items-center lg:order-2 lg:hidden">
+          <div className="flex items-center xl:order-2 xl:hidden">
             <div className="mr-2">
               <CopyToClipboard textToCopy={currentUrl} />
             </div>
             <BurgerButton onClick={openMenu} />
           </div>
-          <div className="hidden w-full items-center justify-between gap-12 lg:order-1 lg:flex">
+          <div className="hidden w-full items-center justify-between gap-12 xl:order-1 xl:flex">
             <div className="flex items-center gap-4">
               <LogoLink />
-              <Link href="/" className="hidden text-xl font-bold lg:block">
+              <Link href="/" className="hidden text-xl font-bold xl:block">
                 <span className="text-primary-500">Elden</span>
                 <span className="text-secondary-500">Hub</span>
               </Link>
             </div>
-            <ul className="mt-4 flex flex-col items-center font-medium lg:mt-0 lg:flex-row lg:space-x-8">
+            <ul className="mt-4 flex flex-col items-center font-medium xl:mt-0 xl:flex-row xl:space-x-8">
               <li className="flex items-center justify-center">
                 <CopyToClipboard textToCopy={currentUrl} />
               </li>
               {links.map((link) => (
                 <li key={link.label}>
-                  <PrimaryLink href={link.href}>{link.label}</PrimaryLink>
+                  <PrimaryLink href={link.href} className="whitespace-nowrap">
+                    {link.label}
+                  </PrimaryLink>
                 </li>
               ))}
             </ul>
@@ -130,7 +136,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
           {open && (
             <div
               className={cn(
-                "fixed inset-4 z-10 grid grid-cols-1 text-white transition-opacity duration-500 ease-out md:grid-cols-2 lg:hidden",
+                "fixed inset-4 z-10 grid grid-cols-1 text-white transition-opacity duration-500 ease-out md:grid-cols-2 xl:hidden",
                 open ? "opacity-100" : "pointer-events-none opacity-0"
               )}
               id="mobile-menu"
@@ -138,7 +144,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
               <div className="col-span-1 hidden md:block"></div>
               <div
                 className={cn(
-                  "col-span-1 rounded-xl bg-black text-white shadow-xl transition-opacity duration-300 ease-out lg:hidden"
+                  "col-span-1 rounded-xl bg-black text-white shadow-xl transition-opacity duration-300 ease-out xl:hidden"
                 )}
               >
                 <div className="flex h-full flex-col items-center">

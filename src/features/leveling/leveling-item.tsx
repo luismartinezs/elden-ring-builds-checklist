@@ -1,4 +1,4 @@
-import { type TStatKey } from "~/features/stats/stats";
+import { statLabelMap, type TStatKey } from "~/features/stats/stats";
 
 export const LevelingItem = ({
   stat,
@@ -8,10 +8,13 @@ export const LevelingItem = ({
   target: number;
 }) => {
   return (
-    <div className="flex items-center gap-2">
-      <span>
-        Raise <span className="uppercase">{stat}</span> to {target}
-      </span>
+    <div className="flex flex-col">
+      <div>
+        <span>
+          Raise <span className="font-bold">{statLabelMap[stat]}</span>
+        </span>{" "}
+        to <span className="target font-bold text-primary-400">{target}</span>
+      </div>
     </div>
   );
 };

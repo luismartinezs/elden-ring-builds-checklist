@@ -34,7 +34,7 @@ export const LevelingList = () => {
         Suggested leveling order
       </Heading.H3>
       <ClientOnly>
-        <ul>
+        <ul className="flex flex-col gap-1">
           {nextLevels.map((item) => (
             <li key={`${item.stat}-${item.target}`}>
               <LevelingItem {...item} />

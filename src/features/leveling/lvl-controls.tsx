@@ -14,7 +14,6 @@ export const LvlControls = () => {
         </div>
         <div className="flex flex-wrap items-stretch gap-x-2 gap-y-4 rounded-md border border-stone-500 p-2">
           <TwoHandCheckbox />
-          {/* item requirements inputs (similar to stat): str, dex, int, fai, arc */}
           {/* archetype select */}
         </div>
       </div>

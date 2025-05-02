@@ -17,6 +17,19 @@ interface ChangelogEntry {
 // Sample changelog data - replace with actual data source later
 const changelogData: ChangelogEntry[] = [
   {
+    date: "2025-05-02",
+    changes: [
+      {
+        description: (
+          <span>
+            Added <Link href="/weapons">weapons page</Link> where you can filter
+            weapons by various parameters.
+          </span>
+        ),
+      },
+    ],
+  },
+  {
     date: "2025-05-01",
     changes: [
       {

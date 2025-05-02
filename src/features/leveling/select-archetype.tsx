@@ -13,6 +13,7 @@ export const SelectArchetype = () => {
     <Select
       label="Archetype"
       orientation="horizontal"
+      className="gap-1 text-xs sm:gap-2 sm:text-sm"
       options={archetypes.map((archetype) => ({
         label: toTitleCase(archetype),
         value: archetype,

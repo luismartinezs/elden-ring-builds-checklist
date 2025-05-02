@@ -12,8 +12,11 @@ export const FpFlaskCheckbox = () => {
   const onChange = () => mutateOption(key, !isChecked);
 
   return (
-    <div className="flex flex-nowrap items-center gap-1">
-      <label className="cursor-pointer whitespace-nowrap text-sm" htmlFor={id}>
+    <div className="flex flex-nowrap items-center gap-0.5 sm:gap-1">
+      <label
+        className="cursor-pointer whitespace-nowrap text-xs sm:text-sm"
+        htmlFor={id}
+      >
         Max FP flask
       </label>
       <Checkbox

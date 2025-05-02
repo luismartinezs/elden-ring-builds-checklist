@@ -15,7 +15,7 @@ export const LvlControls = () => {
         <div className="flex items-center gap-2 text-stone-400">
           <IoOptionsOutline size={20} /> Options
         </div>
-        <div className="flex flex-wrap items-stretch gap-x-6 gap-y-4 rounded-md border border-stone-500 p-2">
+        <div className="flex flex-wrap items-stretch gap-x-3 gap-y-3 rounded-md border border-stone-500 p-2 sm:gap-x-6 sm:gap-y-6 sm:p-2">
           <TwoHandCheckbox />
           <FpFlaskCheckbox />
           <SelectArchetype />

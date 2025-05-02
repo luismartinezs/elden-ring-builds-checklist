@@ -14,8 +14,11 @@ export const CheckboxControl = ({
   const { value, mutate } = useControl({ key: controlKey, type });
   const id = useId();
   return (
-    <div className="flex flex-nowrap items-center gap-1">
-      <label className="cursor-pointer whitespace-nowrap text-sm" htmlFor={id}>
+    <div className="flex flex-nowrap items-center gap-0.5 sm:gap-1">
+      <label
+        className="cursor-pointer whitespace-nowrap text-xs sm:text-sm"
+        htmlFor={id}
+      >
         {label}
       </label>
       <Checkbox

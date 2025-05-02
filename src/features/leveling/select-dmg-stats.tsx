@@ -17,19 +17,19 @@ export const SelectDmgStats = () => {
 
   return (
     <div>
-      <div className="mb-1 text-sm text-stone-400">
+      <div className="mb-1 text-xs text-stone-400 sm:text-sm">
         Damage stats (usually one or two)
       </div>
-      <div className="flex flex-nowrap items-center gap-2">
+      <div className="flex flex-nowrap items-center gap-1 sm:gap-2">
         {dmgStats.map((stat) => {
           const id = `dmg-stat-${stat}`;
           const key = getDmgStatKey(stat);
           const isChecked = getOptions(key);
           const onChange = () => mutateOption(key, !isChecked);
           return (
-            <div key={stat} className="flex items-start gap-1">
+            <div key={stat} className="flex items-start gap-0.5 sm:gap-1">
               <label
-                className="cursor-pointer whitespace-nowrap uppercase"
+                className="cursor-pointer whitespace-nowrap text-xs uppercase sm:text-sm"
                 htmlFor={id}
               >
                 {stat}

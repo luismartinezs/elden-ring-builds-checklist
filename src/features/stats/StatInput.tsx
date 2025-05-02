@@ -85,11 +85,11 @@ export const StatInput: React.FC<StatInputProps> = ({
           {label}
         </label>
       </div>
-      <div className="flex items-stretch">
+      <div className="flex h-10 items-stretch">
         <button
           onClick={decrement}
           disabled={value <= minValue}
-          className="bg-stone-700 px-2 py-0.5 text-sm text-white hover:bg-stone-600 disabled:cursor-not-allowed disabled:opacity-50 md:px-3 md:py-1 md:text-base"
+          className="h-full bg-stone-700 px-2 text-xs text-white hover:bg-stone-600 disabled:cursor-not-allowed disabled:opacity-50 sm:px-2 sm:text-sm md:px-3 md:text-base"
         >
           -
         </button>
@@ -100,12 +100,12 @@ export const StatInput: React.FC<StatInputProps> = ({
           min={minValue}
           max={maxValue}
           step={step}
-          className="w-14 border border-stone-700 bg-stone-800 p-1.5 text-center text-xl text-white focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 md:w-16 md:p-2 md:text-2xl"
+          className="h-full w-11 border border-stone-700 bg-stone-800 text-center text-base text-white focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 sm:w-14 sm:text-xl md:w-16 md:text-2xl"
         />
         <button
           onClick={increment}
           disabled={value >= maxValue}
-          className="bg-stone-700 px-2 py-0.5 text-sm text-white hover:bg-stone-600 disabled:cursor-not-allowed disabled:opacity-50 md:px-3 md:py-1 md:text-base"
+          className="h-full bg-stone-700 px-2 text-xs text-white hover:bg-stone-600 disabled:cursor-not-allowed disabled:opacity-50 sm:px-2 sm:text-sm md:px-3 md:text-base"
         >
           +
         </button>

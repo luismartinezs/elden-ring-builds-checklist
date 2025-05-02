@@ -87,26 +87,26 @@ export const WeaponsDisplay = () => {
             </p>
           )}
         </div>
-        <button
-          onClick={() => setIsCollapsed(!isCollapsed)}
-          className={cn(
-            "flex items-center gap-1 rounded-lg px-3 py-1.5",
-            "bg-stone-100 text-sm font-medium text-stone-700",
-            "hover:bg-stone-200",
-            "dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
-          )}
-        >
-          {isCollapsed ? (
-            <FiChevronRight className="size-4" />
-          ) : (
-            <FiChevronDown className="size-4" />
-          )}
-          {isCollapsed ? "Expand" : "Collapse"}
-        </button>
       </div>
 
       <FilterWeapons />
       <SortWeapons sortState={sortState} onSortChange={handleSortChange} />
+
+      <button
+        onClick={() => setIsCollapsed(!isCollapsed)}
+        className={cn(
+          "ml-auto flex items-center gap-1 rounded-lg px-3 py-1.5",
+          "text-sm font-medium",
+          "bg-stone-800 text-stone-300 hover:bg-stone-700"
+        )}
+      >
+        {isCollapsed ? (
+          <FiChevronRight className="size-4" />
+        ) : (
+          <FiChevronDown className="size-4" />
+        )}
+        {isCollapsed ? "Expand" : "Collapse"}
+      </button>
 
       <div
         className={cn(

@@ -74,15 +74,20 @@ export const StatInput: React.FC<StatInputProps> = ({
     <div className="flex flex-col items-center md:items-start">
       <div className="mb-1 flex items-center">
         <div
-          className={cn("mr-2 h-3 w-3 rounded-full", statColorMap[statKey])}
+          className={cn(
+            "mr-1.5 h-2.5 w-2.5 rounded-full md:mr-2 md:h-3 md:w-3",
+            statColorMap[statKey]
+          )}
         ></div>
-        <label className="text-sm uppercase text-stone-300">{label}</label>
+        <label className="text-xs uppercase text-stone-300 md:text-sm">
+          {label}
+        </label>
       </div>
       <div className="flex items-stretch">
         <button
           onClick={decrement}
           disabled={value <= MIN_VALUE}
-          className="bg-stone-700 px-3 py-1 text-white hover:bg-stone-600 disabled:cursor-not-allowed disabled:opacity-50"
+          className="bg-stone-700 px-2 py-0.5 text-sm text-white hover:bg-stone-600 disabled:cursor-not-allowed disabled:opacity-50 md:px-3 md:py-1 md:text-base"
         >
           -
         </button>
@@ -93,12 +98,12 @@ export const StatInput: React.FC<StatInputProps> = ({
           min={MIN_VALUE}
           max={MAX_VALUE}
           step={STEP}
-          className="w-16 border border-stone-700 bg-stone-800 p-2 text-center text-2xl text-white focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500"
+          className="w-14 border border-stone-700 bg-stone-800 p-1.5 text-center text-xl text-white focus:border-primary-500 focus:outline-none focus:ring-1 focus:ring-primary-500 md:w-16 md:p-2 md:text-2xl"
         />
         <button
           onClick={increment}
           disabled={value >= MAX_VALUE}
-          className="bg-stone-700 px-3 py-1 text-white hover:bg-stone-600 disabled:cursor-not-allowed disabled:opacity-50"
+          className="bg-stone-700 px-2 py-0.5 text-sm text-white hover:bg-stone-600 disabled:cursor-not-allowed disabled:opacity-50 md:px-3 md:py-1 md:text-base"
         >
           +
         </button>

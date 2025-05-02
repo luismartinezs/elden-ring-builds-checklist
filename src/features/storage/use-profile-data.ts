@@ -40,8 +40,12 @@ export const useProfileData = <K extends keyof Profile>({ objKey, initProfileDat
     }
   }, [data, setData, objKey, initProfileData]);
 
-  const get = () => {
+  // optional key returns one value, if omitted, return everything
+  const get = (key?: keyof Profile[K]) => {
     const currentProfile = data.profiles[data.currentProfile];
+    if (key) {
+      return currentProfile?.[objKey]?.[key];
+    }
     return currentProfile?.[objKey] ?? {};
   }
 

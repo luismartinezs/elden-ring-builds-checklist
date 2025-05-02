@@ -32,12 +32,21 @@ export type StatRequirements = {
   fai?: number;
   arc?: number;
 }
+export type Options = {
+  archetype?: string
+  dmgstr?: boolean
+  dmgdex?: boolean
+  dmgint?: boolean
+  dmgfai?: boolean
+  dmgarc?: boolean
+}
 export type Profile = {
   checklists: Checklist;
   filters: Filters;
   stats: StatsState;
   weaponFilters: WeaponFilters;
   statRequirements: StatRequirements;
+  options: Options;
 }
 
 export type AppData = {

@@ -5,6 +5,7 @@ import { ItemRequirements } from "./item-requirements";
 import { LuSword } from "react-icons/lu";
 import { IoOptionsOutline } from "react-icons/io5";
 import { SelectArchetype } from "./select-archetype";
+import { SelectDmgStats } from "./select-dmg-stats";
 
 export const LvlControls = () => {
   return (
@@ -16,6 +17,7 @@ export const LvlControls = () => {
         <div className="flex flex-wrap items-stretch gap-x-6 gap-y-4 rounded-md border border-stone-500 p-2">
           <TwoHandCheckbox />
           <SelectArchetype />
+          <SelectDmgStats />
         </div>
       </div>
       <div>

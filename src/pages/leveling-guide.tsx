@@ -23,10 +23,7 @@ const LevelingGuidePage: React.FC = () => {
       </Head>
       <SectionWrapper>
         <Heading.H1>Leveling Guide</Heading.H1>
-        <Paragraph>
-          What stat should you level up next? Never ask again &quot;what should
-          I level up next?&quot;
-        </Paragraph>
+        <Paragraph>What stat should you level up next?</Paragraph>
         <LevelingPage />
       </SectionWrapper>
     </PageLayout>

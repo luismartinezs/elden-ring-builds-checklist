@@ -3,7 +3,6 @@ import { stats, type TStatKey } from "./stats";
 import { StatInput } from "./StatInput";
 import { useManageStats } from "./useManageStats"; // Import the hook
 import { useIsClient } from "usehooks-ts";
-import { Heading } from "~/components/Heading";
 import { FaRegUser } from "react-icons/fa";
 
 export const StatsWidget: React.FC = () => {

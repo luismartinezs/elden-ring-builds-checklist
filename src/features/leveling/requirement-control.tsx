@@ -1,16 +1,7 @@
 import { useIsClient } from "usehooks-ts";
-import { StatRequirements } from "../checklist/types";
+import { type StatRequirements } from "../checklist/types";
 import { StatInput } from "../stats/StatInput";
-import { TStatKey } from "../stats/stats";
 import { useManageStatRequirements } from "./use-manage-stat-requirements";
-
-const ReqKeys = [
-  "str-req",
-  "dex-req",
-  "int-req",
-  "fai-req",
-  "arc-req",
-] as const;
 
 const noop = () => undefined;
 
@@ -25,7 +16,7 @@ export const RequirementControl = ({
     useManageStatRequirements();
   const isClient = useIsClient();
 
-  const statRequirements = getCurrentStatRequirements();
+  const statRequirements = getCurrentStatRequirements() as StatRequirements;
 
   const handleChange = (value: number) => {
     updateStatRequirement(statKey, value);

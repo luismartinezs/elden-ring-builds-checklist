@@ -1,4 +1,3 @@
-import { StatInput } from "../stats/StatInput";
 import { type RequirementsKeys } from "./leveling";
 import { RequirementControl } from "./requirement-control";
 

@@ -1,4 +1,4 @@
-import { useCallback, KeyboardEvent } from 'react';
+import { useCallback, type KeyboardEvent } from 'react';
 
 interface UseButtonA11yProps {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;

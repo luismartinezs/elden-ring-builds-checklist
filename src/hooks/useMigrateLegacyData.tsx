@@ -28,6 +28,8 @@ export function useMigrateLegacyData() {
         filters: {} as Record<string, boolean>,
         stats: initStats,
         weaponFilters: {},
+        statRequirements: {},
+        options: {},
       };
 
       legacyKeys.forEach((key) => {

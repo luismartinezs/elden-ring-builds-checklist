@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 import { Accordion } from "~/components/Accordion";
 import { Heading } from "~/components/Heading";

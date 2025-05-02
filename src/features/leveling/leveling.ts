@@ -194,13 +194,16 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
     str: effectiveSTR(stats.str, twoHanding),
   };
   Object.entries(requirements ?? {}).forEach(([key, req]) => {
-    let _req = req;
-    if (effectiveStats[key as keyof StatsRecord] < _req) {
-      // tricky :)
-      if (key === "str" && twoHanding) {
-        _req = ceilDiv(_req, 1.5);
+    // Only proceed if key is a valid stat key and req is a number
+    if (typeof req === 'number' && req > 0 && (key === 'str' || key === 'dex' || key === 'int' || key === 'fai' || key === 'arc')) {
+      let _req = req;
+      const statKey = key as TStatKey;
+      if (typeof effectiveStats[statKey] === 'number' && effectiveStats[statKey] < _req) {
+        if (statKey === "str" && twoHanding) {
+          _req = ceilDiv(_req, 1.5);
+        }
+        push(statKey, _req);
       }
-      push(key as TStatKey, _req);
     }
   });
 

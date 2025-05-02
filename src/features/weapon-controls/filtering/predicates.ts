@@ -3,6 +3,8 @@ import { twoHandKey } from "./two-hand";
 import { type WeaponFilters } from "~/features/checklist/types";
 import { type Weapon } from "~/types/weapons";
 import { elemDmgTypesKeys } from "./element-dmg";
+import { physDmgTypesKeys } from "./phys-dmg";
+import { isSubArray } from "~/utils/issubarray";
 
 export type WeaponPredicate = (
   { weapon, stats, filters }: {
@@ -57,4 +59,21 @@ export const meetsElemDmgRequirements: WeaponPredicate = ({ weapon, filters }) =
     }
     return true
   });
+}
+
+export const meetsPhysDmgRequirements: WeaponPredicate = ({ weapon, filters }) => {
+  /**
+   * Logic:
+   * - if no filters applied, return true
+   * - if one or more filters applied, check the weapon.damage_types array. If all applied filters are present in the array, return true
+   */
+  const noFiltersApplied = physDmgTypesKeys.every((key) => !filters[key]);
+
+  if (noFiltersApplied) {
+    return true;
+  }
+
+  const activeFilters = physDmgTypesKeys.filter((key) => filters[key]);
+
+  return isSubArray(weapon.damage_types, activeFilters);
 }

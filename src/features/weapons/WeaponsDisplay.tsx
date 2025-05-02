@@ -111,13 +111,19 @@ export const WeaponsDisplay = () => {
             : "grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2"
         )}
       >
-        {sortedWeapons.map((weapon) => (
-          <WeaponItem
-            key={weapon.name}
-            weapon={weapon}
-            isCollapsed={isCollapsed}
-          />
-        ))}
+        {sortedWeapons.length === 0 ? (
+          <div className="text-center text-stone-600 dark:text-stone-400">
+            No weapons found, try to remove some filters
+          </div>
+        ) : (
+          sortedWeapons.map((weapon) => (
+            <WeaponItem
+              key={weapon.name}
+              weapon={weapon}
+              isCollapsed={isCollapsed}
+            />
+          ))
+        )}
       </div>
     </div>
   );

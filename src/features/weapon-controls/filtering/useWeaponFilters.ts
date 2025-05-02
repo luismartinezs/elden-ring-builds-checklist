@@ -2,7 +2,7 @@ import { type Weapon } from "~/types/weapons";
 import { useManageStats } from "~/features/stats/useManageStats";
 import { useManageWeaponFilters } from "./useManageWeaponFilters";
 import { useMemo } from "react";
-import { meetsElemDmgRequirements, meetsStatRequirements, type WeaponPredicate } from "./predicates";
+import { meetsElemDmgRequirements, meetsStatRequirements, meetsPhysDmgRequirements, type WeaponPredicate } from "./predicates";
 
 
 export function useWeaponFilters() {
@@ -14,6 +14,7 @@ export function useWeaponFilters() {
   const predicates = useMemo<WeaponPredicate[]>(() => [
     meetsStatRequirements,
     meetsElemDmgRequirements,
+    meetsPhysDmgRequirements,
   ], []);
 
   const filterWeapons = (weapons: Weapon[]) => {

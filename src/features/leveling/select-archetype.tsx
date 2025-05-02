@@ -1,13 +1,7 @@
 import { Select } from "~/components/Select";
 import { useOptions } from "./use-options";
+import { archetypes } from "./leveling";
 
-export const archetypes = [
-  "default",
-  "melee",
-  "caster",
-  "hybrid",
-  "bleed",
-] as const;
 export const key = "archetype" as const;
 
 export const SelectArchetype = () => {

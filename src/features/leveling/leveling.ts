@@ -9,7 +9,14 @@
 ----------------------------------------------------------------*/
 
 import { type TStatKey } from "../stats/stats";
-import { type archetypes } from "./select-archetype";
+
+export const archetypes = [
+  "default",
+  "melee",
+  "caster",
+  "hybrid",
+  "bleed",
+] as const;
 
 /*──────────────── 1 · Public types ────────────────*/
 export interface Requirements {
@@ -159,15 +166,15 @@ export function getNextLevels({
   statLimit?: number;
 }): Recommendation[] {
 
-  console.log('Leveling params:', JSON.stringify({
-    stats,
-    archetype,
-    dmgStats,
-    twoHanding,
-    requirements,
-    steps,
-    statLimit
-  }, null, 4));
+  // console.log('Leveling params:', JSON.stringify({
+  //   stats,
+  //   archetype,
+  //   dmgStats,
+  //   twoHanding,
+  //   requirements,
+  //   steps,
+  //   statLimit
+  // }, null, 4));
 
 
   /* 5‑1 · init */

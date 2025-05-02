@@ -4,6 +4,7 @@ import { StatInput } from "./StatInput";
 import { useManageStats } from "./useManageStats"; // Import the hook
 import { useIsClient } from "usehooks-ts";
 import { Heading } from "~/components/Heading";
+import { FaRegUser } from "react-icons/fa";
 
 export const StatsWidget: React.FC = () => {
   const isClient = useIsClient();
@@ -44,10 +45,11 @@ export const StatsWidget: React.FC = () => {
 
   return (
     <div>
-      <Heading.H2 className="!text-base !font-medium">
+      <h2 className="flex items-center gap-2 text-stone-400">
+        <FaRegUser size={20} className="text-stone-400" />
         Character Stats
-      </Heading.H2>
-      <div className="flex flex-wrap gap-4">
+      </h2>
+      <div className="flex flex-wrap items-stretch gap-x-2 gap-y-4 rounded-md border border-stone-500 p-2">
         {stats.map((stat) => (
           <div key={stat.key}>
             <StatInput

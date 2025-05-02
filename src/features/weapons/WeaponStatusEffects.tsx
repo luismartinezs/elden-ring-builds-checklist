@@ -18,7 +18,7 @@ export const WeaponStatusEffects = ({
 
   return (
     <div className="space-y-1">
-      <div className="flex flex-wrap gap-1">
+      <div className="flex flex-wrap gap-0.5 sm:gap-1">
         {Object.entries(statusBuildup)
           .filter(([_, value]) => value > 0)
           .map(([effect, value]) => (
@@ -26,7 +26,7 @@ export const WeaponStatusEffects = ({
               key={effect}
               className={cn(
                 statusEffectColorMap[effect as TStatusEffect],
-                "flex size-6 flex-col items-center justify-center text-sm font-medium text-black shadow-sm"
+                "flex size-5 flex-col items-center justify-center text-xs font-medium text-black shadow-sm sm:size-6 sm:text-sm"
               )}
               title={effect.replace("_", " ")}
             >

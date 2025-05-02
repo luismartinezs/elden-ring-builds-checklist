@@ -111,8 +111,8 @@ export const WeaponsDisplay = () => {
       <div
         className={cn(
           isCollapsed
-            ? "flex flex-wrap gap-x-2 gap-y-1"
-            : "grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-2"
+            ? "flex flex-wrap gap-x-3 gap-y-1"
+            : "grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-x-0.5 gap-y-2 md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:gap-2"
         )}
       >
         {sortedWeapons.length === 0 ? (

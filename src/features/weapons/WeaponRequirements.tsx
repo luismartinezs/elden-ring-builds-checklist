@@ -16,7 +16,7 @@ export const WeaponRequirements = ({
 }: WeaponRequirementsProps) => {
   return (
     <div className="">
-      <div className="flex gap-1">
+      <div className="flex gap-0.5 sm:gap-1">
         {Object.entries(requirements).map(([statLabel, value]) => {
           const statKey = nameToKey[statLabel];
           if (!statKey) return null;
@@ -26,7 +26,7 @@ export const WeaponRequirements = ({
               key={statLabel}
               className={cn(
                 statColorMap[statKey],
-                "flex size-6 items-center justify-center text-sm font-medium text-white shadow-sm"
+                "flex size-5 items-center justify-center text-xs font-medium text-white shadow-sm sm:size-6 sm:text-sm"
               )}
             >
               {value}

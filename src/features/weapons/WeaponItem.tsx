@@ -36,7 +36,11 @@ export const WeaponItem = ({ weapon, isCollapsed }: WeaponItemProps) => {
 
   return (
     <div
-      className={cn("rounded-lg border p-2 shadow-sm", "dark:border-stone-800")}
+      className={cn(
+        "rounded-lg border shadow-sm",
+        "dark:border-stone-800",
+        "p-1 text-xs md:p-2 md:text-base"
+      )}
     >
       <a
         href={weapon.url}
@@ -44,7 +48,7 @@ export const WeaponItem = ({ weapon, isCollapsed }: WeaponItemProps) => {
         rel="noopener noreferrer"
         className="inline-block hover:text-primary-700 dark:hover:text-primary-300"
       >
-        <h3 className="flex items-center text-base font-semibold">
+        <h3 className="flex items-center text-xs font-semibold md:text-base">
           {weapon.name}
           <FiExternalLink
             className="ml-1 inline-block text-stone-400 dark:text-stone-500"
@@ -53,7 +57,7 @@ export const WeaponItem = ({ weapon, isCollapsed }: WeaponItemProps) => {
           />
         </h3>
       </a>
-      <p className="text-sm text-stone-500 dark:text-stone-400">
+      <p className="text-xs text-stone-500 md:text-sm dark:text-stone-400">
         {weapon.category} | {weapon.upgrade_type}{" "}
         {weapon.sote ? (
           <span className="rounded-md bg-stone-700 px-1 py-0.5 text-xs uppercase text-stone-300">
@@ -63,8 +67,7 @@ export const WeaponItem = ({ weapon, isCollapsed }: WeaponItemProps) => {
           ""
         )}
       </p>
-
-      <div className="mt-2 space-y-1">
+      <div className="mt-1 space-y-0.5 md:mt-2 md:space-y-1">
         <WeaponRequirements requirements={weapon.requirements} />
         <WeaponScaling scaling={weapon.scaling} />
         <WeaponAttack

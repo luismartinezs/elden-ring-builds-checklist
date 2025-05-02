@@ -14,7 +14,7 @@ type WeaponScalingProps = {
 export const WeaponScaling = ({ scaling }: WeaponScalingProps) => {
   return (
     <div>
-      <div className="flex flex-wrap gap-1">
+      <div className="flex flex-wrap gap-0.5 sm:gap-1">
         {Object.entries(scaling).map(([stat, grade]) => {
           const statKey = nameToKey[stat];
           if (!statKey) return null;
@@ -24,7 +24,7 @@ export const WeaponScaling = ({ scaling }: WeaponScalingProps) => {
               key={stat}
               className={cn(
                 statColorMap[statKey],
-                "flex size-6 flex-col items-center justify-center text-sm font-medium text-white shadow-sm"
+                "flex size-5 flex-col items-center justify-center text-xs font-medium text-white shadow-sm sm:size-6 sm:text-sm"
               )}
               title={stat}
             >

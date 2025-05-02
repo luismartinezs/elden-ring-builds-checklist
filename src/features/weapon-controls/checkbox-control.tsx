@@ -15,7 +15,7 @@ export const CheckboxControl = ({
   const id = useId();
   return (
     <div className="flex flex-nowrap items-center gap-1">
-      <label className="whitespace-nowrap text-sm" htmlFor={id}>
+      <label className="cursor-pointer whitespace-nowrap text-sm" htmlFor={id}>
         {label}
       </label>
       <Checkbox
@@ -25,7 +25,7 @@ export const CheckboxControl = ({
         label={label}
         isChecked={!!value}
         onChange={() => mutate(!value)}
-        className="mt-0"
+        className="mt-0 cursor-pointer"
       />
     </div>
   );

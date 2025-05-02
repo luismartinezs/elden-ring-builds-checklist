@@ -6,7 +6,7 @@ import { TwoHandCheckbox } from "./two-hand";
 import { UpgradeType } from "./upgrade-type";
 
 const Pipe = () => {
-  return <div className="w-px bg-stone-600"></div>;
+  return <div className="w-px bg-stone-500"></div>;
 };
 
 export const FilterWeapons = () => {

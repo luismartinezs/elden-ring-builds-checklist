@@ -27,6 +27,7 @@ export function useMigrateLegacyData() {
         checklists: {},
         filters: {} as Record<string, boolean>,
         stats: initStats,
+        weaponFilters: {},
       };
 
       legacyKeys.forEach((key) => {

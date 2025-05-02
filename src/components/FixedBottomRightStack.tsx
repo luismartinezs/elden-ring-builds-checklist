@@ -9,7 +9,6 @@ interface FixedBottomRightStackProps {
 export function FixedBottomRightStack({
   children,
   className,
-  gap = 4,
 }: FixedBottomRightStackProps) {
   return (
     <div

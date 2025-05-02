@@ -11,7 +11,7 @@ export const CheckboxControl = ({
   type: "filter" | "sort";
   label: string;
 }) => {
-  const { value, mutate } = useControl<boolean>({ key: controlKey, type });
+  const { value, mutate } = useControl({ key: controlKey, type });
   const id = useId();
   return (
     <div className="flex flex-nowrap items-center gap-1">

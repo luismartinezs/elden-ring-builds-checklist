@@ -195,10 +195,11 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
   };
   Object.entries(requirements ?? {}).forEach(([key, req]) => {
     let _req = req;
-    if (key === "str" && twoHanding) {
-      _req = ceilDiv(_req, 1.5);
-    }
     if (effectiveStats[key as keyof StatsRecord] < _req) {
+      // tricky :)
+      if (key === "str" && twoHanding) {
+        _req = ceilDiv(_req, 1.5);
+      }
       push(key as TStatKey, _req);
     }
   });

@@ -7,6 +7,7 @@ import { physDmgTypesKeys } from "./phys-dmg";
 import { isSubArray } from "~/utils/issubarray";
 import { statusEffectKeys } from "~/features/stats/statusEffect";
 import { upgradeTypeKeys, upgradeTypeToLabel } from "./upgrade-type";
+import { gameKeys } from "./sote";
 
 export type WeaponPredicate = (
   { weapon, stats, filters }: {
@@ -100,4 +101,12 @@ export const meetsUpgradeTypeRequirements: WeaponPredicate = ({ weapon, filters 
     }
     return true;
   });
+}
+
+export const meetsGameAreaRequirements: WeaponPredicate = ({ weapon, filters }) => {
+  const values = gameKeys.map((key) => filters[key]);
+
+  // if both filters are the same (both on or both off) → include everything
+  // otherwise only include when weapon.sote matches the sote‐flag
+  return values[0] === values[1] || weapon.sote === values[1];
 }

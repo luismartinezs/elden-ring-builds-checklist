@@ -1,5 +1,6 @@
 import { ElementDmg } from "./element-dmg";
 import { PhysDmg } from "./phys-dmg";
+import { GameArea } from "./sote";
 import { StatusEffect } from "./status-effect";
 import { TwoHandCheckbox } from "./two-hand";
 import { UpgradeType } from "./upgrade-type";
@@ -22,6 +23,8 @@ export const FilterWeapons = () => {
         <StatusEffect />
         <Pipe />
         <UpgradeType />
+        <Pipe />
+        <GameArea />
       </div>
     </div>
   );

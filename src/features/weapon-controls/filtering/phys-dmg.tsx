@@ -11,7 +11,7 @@ export const physDmgTypesKeys = [
 
 export const PhysDmg = () => {
   return (
-    <>
+    <div className="flex flex-nowrap gap-2">
       {physDmgTypesKeys.map((type) => (
         <CheckboxControl
           key={type}
@@ -20,6 +20,6 @@ export const PhysDmg = () => {
           label={type}
         />
       ))}
-    </>
+    </div>
   );
 };

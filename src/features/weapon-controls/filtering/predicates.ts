@@ -5,6 +5,7 @@ import { type Weapon } from "~/types/weapons";
 import { elemDmgTypesKeys } from "./element-dmg";
 import { physDmgTypesKeys } from "./phys-dmg";
 import { isSubArray } from "~/utils/issubarray";
+import { statusEffectKeys } from "~/features/stats/statusEffect";
 
 export type WeaponPredicate = (
   { weapon, stats, filters }: {
@@ -76,4 +77,14 @@ export const meetsPhysDmgRequirements: WeaponPredicate = ({ weapon, filters }) =
   const activeFilters = physDmgTypesKeys.filter((key) => filters[key]);
 
   return isSubArray(weapon.damage_types, activeFilters);
+}
+
+export const meetsStatusEffectRequirements: WeaponPredicate = ({ weapon, filters }) => {
+  return statusEffectKeys.every((key) => {
+    const filterValue = filters[key];
+    if (filterValue) {
+      return weapon.status_buildup[key] > 0;
+    }
+    return true;
+  });
 }

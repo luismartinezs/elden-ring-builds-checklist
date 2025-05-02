@@ -12,8 +12,8 @@ export const CheckboxControl = ({
 }) => {
   const { value, mutate } = useControl<boolean>({ key: controlKey, type });
   return (
-    <div className="flex items-center gap-1">
-      <label className="text-sm">{label}</label>
+    <div className="flex flex-nowrap items-center gap-1">
+      <label className="whitespace-nowrap text-sm">{label}</label>
       <Checkbox
         size="sm"
         itemId={controlKey}

@@ -25,7 +25,15 @@ const WeaponsPage: React.FC = () => {
       <SectionWrapper>
         <Heading.H1>Weapons</Heading.H1>
         <Paragraph>
-          What weapons can you wield based on your current stats?
+          What weapons can you wield based on your current stats? Also, if you
+          like this, check also this other amazing{" "}
+          <a
+            href="https://eldenring.tclark.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Elden Ring Weapon Calculator
+          </a>
         </Paragraph>
         <div className="flex flex-col gap-4">
           <StatsWidget />

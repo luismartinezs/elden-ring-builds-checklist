@@ -8,6 +8,7 @@
    • all names use camelCase keys: vgr/mnd/end/str/dex/int/fai/arc
 ----------------------------------------------------------------*/
 
+import { getPreferredOrder } from "~/utils/array-utils";
 import { type TStatKey } from "../stats/stats";
 
 /**
@@ -36,14 +37,20 @@ import { type TStatKey } from "../stats/stats";
  *   - 20 asap -> survival/utility -> 45 -> (80)
  */
 
-const rangedSpellcaster = 'ranged_spellcaster'
-const meleeSpellcaster = 'melee_spellcaster'
+const balanced = 'balanced'
+const ranged = 'ranged'
+const melee = 'melee'
+const glassCannon = 'glass_cannon'
+const tank = 'tank'
 
 export const archetypes = [
-  "default",
-  rangedSpellcaster,
-  meleeSpellcaster
+  balanced,
+  ranged,
+  melee,
+  glassCannon,
+  tank,
 ] as const;
+
 
 /*──────────────── 1 · Public types ────────────────*/
 export interface Requirements {
@@ -59,12 +66,12 @@ export type TMaxFpFlask = boolean;
 
 export type DmgStats = Record<keyof Requirements, boolean>;
 
+export type UtilStats = 'vgr' | 'mnd' | 'end';
+export type UtilStatsRecord = Record<UtilStats, number>;
+
 export type RequirementsKeys = keyof Requirements;
 
-export interface StatsRecord extends Required<Requirements> {
-  vgr: number;
-  mnd: number;
-  end: number;
+export interface StatsRecord extends Required<Requirements>, UtilStatsRecord {
 }
 
 export type Archetype = (typeof archetypes)[number];
@@ -75,7 +82,18 @@ export interface Recommendation {
 }
 
 /*──────────────── 2 · Static reference data ────────────────*/
+const utilStatPriority: Record<string, UtilStats[]> = {
+  default: ['vgr', 'end', 'mnd'],
+  [balanced]: ['vgr', 'end', 'mnd'],
+  [ranged]: ['end', 'vgr', 'mnd'],
+  [melee]: ['vgr', 'end', 'mnd'],
+  [glassCannon]: ['mnd', 'end', 'vgr'],
+  [tank]: ['vgr', 'end', 'mnd'],
+}
+
 export const DMG_KEYS: (keyof DmgStats)[] = ["str", "dex", "int", "fai", "arc"];
+
+const PREFER_DMG_STAT_ORDER = ['fai', 'arc', 'dex', 'str', 'int'] as const
 
 const BREAKPOINTS: Record<TStatKey, number[]> = {
   vgr: [40, 58],
@@ -109,25 +127,6 @@ function nextBreakpoint(
   return BREAKPOINTS[stat].find((bp) => bp > current);
 }
 
-function deriveType(archetype: Archetype) {
-  if (archetype === rangedSpellcaster) {
-    return {
-      melee: false,
-      spellcaster: true
-    }
-  }
-  if (archetype === meleeSpellcaster) {
-    return {
-      melee: true,
-      spellcaster: true
-    }
-  }
-  return {
-    melee: true,
-    spellcaster: false
-  }
-}
-
 /*──────────────── 4 · Mutating helpers ────────────────*/
 /** Push/merge suggestion & update working stats */
 export function addSuggestion(
@@ -154,19 +153,23 @@ type TNextLevelsParams = {
   twoHanding: boolean;
   requirements?: Requirements;
   maxFpFlask?: boolean;
+  isSpellcaster?: boolean;
   steps?: number;
   statLimit?: number;
+  show99?: boolean;
 }
 export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
   const {
     stats,
-    archetype = "default",   // kept only for typing—ignore if unused
+    archetype = balanced,   // kept only for typing—ignore if unused
     dmgStats,
     twoHanding,
     requirements,
     maxFpFlask,
+    isSpellcaster,
     steps = -1,
     statLimit = 99,
+    show99 = false,
   } = params;
   /* ----------------------------------------------------------------
      This is an EMPTY implementation. Insert your step‑by‑step logic
@@ -186,7 +189,14 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
 
   /* =======  YOUR LOGIC STARTS  HERE  ======= */
 
-  // TODO 1: Apply weapon requirements first
+  const dmStatsinUseArr: TStatKey[] = []
+  const dmgStatsNotinUseArr: TStatKey[] = []
+  Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
+    if (req) dmStatsinUseArr.push(key as TStatKey);
+    else dmgStatsNotinUseArr.push(key as TStatKey);
+  });
+
+  // #1: Match Weapon & Spell Requirements
   const effectiveStats = {
     ...stats,
     str: effectiveSTR(stats.str, twoHanding),
@@ -205,18 +215,17 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
     }
   });
 
-  // TODO 2: Prime selected damage stats to 20
+  // #2: Prime selected damage stats to 20
   Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
     if (req) {
       push(key as TStatKey, 20);
     }
   });
-  // TODO 3: Early utility tiers (END 25, VGR 40, etc.)
+  // #3: Baseline Survivability & FP
   // VGR to 40 always
   push("vgr", nextBreakpoint('vgr', work.vgr));
   // if magic archetype (spellcaster)
-  const dType = deriveType(archetype)
-  if (dType.spellcaster) {
+  if (isSpellcaster) {
     // spellcaster
     push("mnd", nextBreakpoint('mnd', work.mnd));
     push("end", nextBreakpoint('end', work.end));
@@ -225,13 +234,18 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
     // not spellcaster
     push("end", 30) // additional stamina
   }
-  if (dType.melee) {
+  if (archetype === melee) {
     // melee VGR 58
     push("vgr", nextBreakpoint('vgr', work.vgr));
   } else {
     // ranged, just move on to dmg stats
   }
-  // TODO 4: Push damage soft caps (STR/Dex 53, INT/Fai 50, ARC 45)
+  // #4. Archetype-Specific Early Buffs
+  // #5. Push damage soft caps to second soft cap
+  // #6. Mid-Game Durability & FP Soft-Caps
+  // #7. Optional Secondary Stat Soft-Cap
+  // #8. Primary (and Secondary) Stat Final Soft-Cap
+  // #9. Late-Game Utility Optimization
   Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
     if (req) {
       const statKey = key as TStatKey;
@@ -241,7 +255,6 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
       }
     }
   });
-  // TODO 5: Additional tiers (END 50, VGR 58, INT/Fai 80, ...)
   if (maxFpFlask) {
     push("mnd", 38);
   }
@@ -259,10 +272,13 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
     }
   });
 
-  // raise all stats to 99
-  // ['vgr', 'mnd', 'end', 'str', 'dex', 'int', 'fai', 'arc'].forEach(stat => {
-  //   push(stat as TStatKey, 99);
-  // });
+  if (show99) {
+    // raise all stats to 99
+    // we can skip this, I see no reason why show this
+    [...(utilStatPriority[archetype] ?? utilStatPriority.default)!, ...dmStatsinUseArr, ...getPreferredOrder(dmgStatsNotinUseArr, PREFER_DMG_STAT_ORDER)].forEach(stat => {
+      push(stat as TStatKey, 99);
+    });
+  }
 
   /* =======  YOUR LOGIC ENDS  HERE  ======= */
 

@@ -26,6 +26,7 @@ export const LevelingList = () => {
     dmgStats: getDmgStats(options),
     requirements: statRequirements,
     maxFpFlask: options.maxFpFlask,
+    isSpellcaster: options.isSpellcaster,
   });
 
   return (

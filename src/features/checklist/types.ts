@@ -40,6 +40,7 @@ export type Options = {
   dmgfai?: boolean
   dmgarc?: boolean
   maxFpFlask?: boolean
+  isSpellcaster?: boolean
 }
 export type Profile = {
   checklists: Checklist;

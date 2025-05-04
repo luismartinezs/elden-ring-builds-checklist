@@ -7,6 +7,7 @@ import { IoOptionsOutline } from "react-icons/io5";
 import { SelectArchetype } from "./select-archetype";
 import { SelectDmgStats } from "./select-dmg-stats";
 import { FpFlaskCheckbox } from "../weapon-controls/filtering/fp-flask";
+import { SpellcasterCheckbox } from "./spellcaster";
 
 export const LvlControls = () => {
   return (
@@ -18,6 +19,7 @@ export const LvlControls = () => {
         <div className="flex flex-wrap items-stretch gap-x-3 gap-y-3 rounded-md border border-stone-500 p-2 sm:gap-x-6 sm:gap-y-6 sm:p-2">
           <TwoHandCheckbox />
           <FpFlaskCheckbox />
+          <SpellcasterCheckbox />
           <SelectArchetype />
           <SelectDmgStats />
         </div>

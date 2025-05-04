@@ -11,7 +11,7 @@ export const SelectArchetype = () => {
 
   return (
     <Select
-      label="Archetype"
+      label="Playstyle"
       orientation="horizontal"
       className="gap-1 text-xs sm:gap-2 sm:text-sm"
       options={archetypes.map((archetype) => ({

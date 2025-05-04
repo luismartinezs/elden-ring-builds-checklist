@@ -45,10 +45,10 @@ const tank = 'tank'
 
 export const archetypes = [
   balanced,
-  ranged,
   melee,
-  glassCannon,
+  ranged,
   tank,
+  glassCannon,
 ] as const;
 
 
@@ -137,18 +137,18 @@ const ceilDiv = (value: number, divisor: number) =>
 
 /** First breakpoint ABOVE current (already adjusted for STR rule) */
 function nextBreakpoint(
-  stat: TStatKey,
   current: number,
   breakpoints: number[],
 ): number | undefined {
   return breakpoints.find((bp) => bp > current);
 }
 
-function getNthBreakpoint(stat: TStatKey, n: number, breakpoints: number[]): number | undefined {
+function getNthBreakpoint(n: number, breakpoints: number[]): number | undefined {
   const actualN = n - 1;
   if (breakpoints.length <= actualN) return undefined;
   return breakpoints[actualN];
 }
+
 
 /*──────────────── 4 · Mutating helpers ────────────────*/
 /** Push/merge suggestion & update working stats */
@@ -195,6 +195,13 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
   const picks: Recommendation[] = [];
   const breakpoints = getBreakpoints({ twoHanding });
 
+  // playstyles
+  const isBalanced = archetype === balanced;
+  const isRanged = archetype === ranged;
+  const isMelee = archetype === melee;
+  const isGlassCannon = archetype === glassCannon;
+  const isTank = archetype === tank;
+
   const push = (stat: TStatKey, target?: number) => {
     if (target !== undefined) addSuggestion(picks, work, stat, Math.min(target, limit));
   };
@@ -204,6 +211,7 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
 
   const dmStatsinUseArr: TStatKey[] = []
   const dmgStatsNotinUseArr: TStatKey[] = []
+
 
   Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
     if (req) dmStatsinUseArr.push(key as TStatKey);
@@ -232,24 +240,41 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
     }
   });
 
+
+
   // #2: Bring selected damage stats to 20
+  if (isTank) {
+    push(vgr, 40)
+    push(end, 25)
+  }
   Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
     if (req) {
       push(key as TStatKey, 20);
     }
   });
 
+  if (isTank) {
+    push(vgr, 58)
+    push(end, 30)
+  }
 
   // #3: Baseline Survivability & FP
-  push(vgr, 40);
+  if (isSpellcaster) {
+    // alternate mnd and vgr to avoid falling short on FP
+    !isGlassCannon && push(vgr, 30)
+    push(mnd, 20)
+    !isGlassCannon && push(vgr, isRanged ? 30 : 40)
+    push(mnd, 40)
+  }
+  !isGlassCannon && push(vgr, isRanged ? 30 : 40);
 
 
   // #4. Archetype-Specific Early Buffs
-  push(end, 25);
+  !isGlassCannon && push(end, isMelee || isRanged ? 30 : 25);
 
-  if (archetype === balanced) {
-    push(mnd, 16); // provide baseline FP
-    push(end, 30);
+  if (isBalanced) {
+    push(mnd, isSpellcaster ? 40 : 16); // provide baseline FP
+    push(end, isSpellcaster ? 25 : 30);
   }
 
 
@@ -257,35 +282,71 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
   Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
     if (req) {
       const statKey = key as TStatKey;
-      const next = getNthBreakpoint(statKey, 2, breakpoints[statKey]);
+      const next = getNthBreakpoint(2, breakpoints[statKey]);
       if (next !== undefined) {
         push(statKey, next);
       }
     }
   });
 
+  if (isTank) {
+    push(end, 50)
+  }
+
 
   // #6. Mid-Game Durability & FP Soft-Caps
-  push(vgr, 58)
+  if (isSpellcaster) push(mnd, 50)
+
+  if (!isSpellcaster) {
+    if (isRanged) {
+      // if ranged delay vgr a bit in favor of more end
+      !isGlassCannon && push(vgr, 40)
+      !isGlassCannon && push(end, 50)
+      !isGlassCannon && push(vgr, 58)
+    } else {
+      !isGlassCannon && push(vgr, 58)
+    }
+  }
 
 
   // #7. Primary (and Secondary) Stat Final Soft-Cap
   Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
     if (req) {
       const statKey = key as TStatKey;
-      const next = getNthBreakpoint(statKey, 3, breakpoints[statKey]);
+      const next = getNthBreakpoint(3, breakpoints[statKey]);
       if (next !== undefined) {
         push(statKey, next);
       }
     }
   });
 
+  if (isSpellcaster) {
+    push(dex, 20)
+    !isGlassCannon && push(vgr, 58)
+    push(dex, 30)
+  }
+
 
   // #8. Late-Game Utility Optimization
+  if (isGlassCannon) {
+    push(end, 30)
+    push(mnd, maxFpFlask ? 38 : 40);
+    push(end, 50)
+    push(mnd, maxFpFlask ? 0 : 50)
+    if (isSpellcaster) {
+      push(dex, 70)
+    }
+    push(vgr, 58)
+  }
+  push(vgr, 58)
   push(end, 30)
   push(mnd, maxFpFlask ? 38 : 40);
   push(end, 50)
   push(mnd, maxFpFlask ? 0 : 50)
+
+  if (isSpellcaster) {
+    push(dex, 70)
+  }
 
 
   //----
@@ -298,10 +359,10 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
   Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
     if (req) {
       const statKey = key as TStatKey;
-      let next = nextBreakpoint(statKey, work[statKey], breakpoints[statKey]);
+      let next = nextBreakpoint(work[statKey], breakpoints[statKey]);
       while (next !== undefined && next <= 99) {
         push(statKey, next);
-        next = nextBreakpoint(statKey, work[statKey], breakpoints[statKey]);
+        next = nextBreakpoint(work[statKey], breakpoints[statKey]);
       }
     }
   });

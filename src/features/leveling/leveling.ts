@@ -9,7 +9,7 @@
 ----------------------------------------------------------------*/
 
 import { getPreferredOrder } from "~/utils/array-utils";
-import { type TStatKey } from "../stats/stats";
+import { type TStatKey, vgr, mnd, end, str, dex, int, fai, arc, TUtilStatKey } from "../stats/stats";
 
 /**
  *
@@ -66,7 +66,7 @@ export type TMaxFpFlask = boolean;
 
 export type DmgStats = Record<keyof Requirements, boolean>;
 
-export type UtilStats = 'vgr' | 'mnd' | 'end';
+export type UtilStats = TUtilStatKey
 export type UtilStatsRecord = Record<UtilStats, number>;
 
 export type RequirementsKeys = keyof Requirements;
@@ -81,29 +81,45 @@ export interface Recommendation {
   target: number; // final value AFTER levelling
 }
 
-/*──────────────── 2 · Static reference data ────────────────*/
-const utilStatPriority: Record<string, UtilStats[]> = {
-  default: ['vgr', 'end', 'mnd'],
-  [balanced]: ['vgr', 'end', 'mnd'],
-  [ranged]: ['end', 'vgr', 'mnd'],
-  [melee]: ['vgr', 'end', 'mnd'],
-  [glassCannon]: ['mnd', 'end', 'vgr'],
-  [tank]: ['vgr', 'end', 'mnd'],
+type TNextLevelsParams = {
+  stats: StatsRecord;
+  archetype?: Archetype;
+  dmgStats?: DmgStats;
+  twoHanding: boolean;
+  requirements?: Requirements;
+  maxFpFlask?: boolean;
+  isSpellcaster?: boolean;
+  steps?: number;
+  statLimit?: number;
+  show99?: boolean;
 }
 
-export const DMG_KEYS: (keyof DmgStats)[] = ["str", "dex", "int", "fai", "arc"];
+/*──────────────── 2 · Static reference data ────────────────*/
+const utilStatPriority: Record<string, UtilStats[]> = {
+  default: [vgr, end, mnd],
+  [balanced]: [vgr, end, mnd],
+  [ranged]: [end, vgr, mnd],
+  [melee]: [vgr, end, mnd],
+  [glassCannon]: [mnd, end, vgr],
+  [tank]: [vgr, end, mnd],
+}
 
-const PREFER_DMG_STAT_ORDER = ['fai', 'arc', 'dex', 'str', 'int'] as const
+export const DMG_KEYS: TStatKey[] = [str, dex, int, fai, arc];
 
-const BREAKPOINTS: Record<TStatKey, number[]> = {
-  vgr: [40, 58],
-  mnd: [40, 50],
-  end: [25, 40, 50, 60],
-  str: [20, 53, 80],
-  dex: [20, 53, 80],
-  int: [20, 50, 80],
-  fai: [20, 50, 80],
-  arc: [20, 45],
+const PREFER_DMG_STAT_ORDER = [fai, arc, dex, str, int] as const
+
+const getBreakpoints = (params: { twoHanding?: boolean } = {}): Record<TStatKey, number[]> => {
+  const { twoHanding } = params;
+  return {
+    [vgr]: [40, 58],
+    [mnd]: [40, 50],
+    [end]: [30, 50],
+    [str]: twoHanding ? [20, 35, 80] : [20, 53],
+    [dex]: [20, 53],
+    [int]: [20, 50, 80],
+    [fai]: [20, 50, 80],
+    [arc]: [20, 45],
+  }
 };
 
 const CAP = 99;          // absolute hard‑cap set by the game
@@ -123,8 +139,15 @@ const ceilDiv = (value: number, divisor: number) =>
 function nextBreakpoint(
   stat: TStatKey,
   current: number,
+  breakpoints: number[],
 ): number | undefined {
-  return BREAKPOINTS[stat].find((bp) => bp > current);
+  return breakpoints.find((bp) => bp > current);
+}
+
+function getNthBreakpoint(stat: TStatKey, n: number, breakpoints: number[]): number | undefined {
+  const actualN = n - 1;
+  if (breakpoints.length <= actualN) return undefined;
+  return breakpoints[actualN];
 }
 
 /*──────────────── 4 · Mutating helpers ────────────────*/
@@ -146,18 +169,7 @@ export function addSuggestion(
 }
 
 /*──────────────── 5 · Main exported API ────────────────*/
-type TNextLevelsParams = {
-  stats: StatsRecord;
-  archetype?: Archetype;
-  dmgStats?: DmgStats;
-  twoHanding: boolean;
-  requirements?: Requirements;
-  maxFpFlask?: boolean;
-  isSpellcaster?: boolean;
-  steps?: number;
-  statLimit?: number;
-  show99?: boolean;
-}
+
 export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
   const {
     stats,
@@ -181,6 +193,7 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
   const limit = clampLimit(statLimit);
   const work: StatsRecord = { ...stats };
   const picks: Recommendation[] = [];
+  const breakpoints = getBreakpoints({ twoHanding });
 
   const push = (stat: TStatKey, target?: number) => {
     if (target !== undefined) addSuggestion(picks, work, stat, Math.min(target, limit));
@@ -191,23 +204,26 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
 
   const dmStatsinUseArr: TStatKey[] = []
   const dmgStatsNotinUseArr: TStatKey[] = []
+
   Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
     if (req) dmStatsinUseArr.push(key as TStatKey);
     else dmgStatsNotinUseArr.push(key as TStatKey);
   });
 
   // #1: Match Weapon & Spell Requirements
+  // effective stats = stats including effective STR based on two-handing / one-handing
   const effectiveStats = {
     ...stats,
     str: effectiveSTR(stats.str, twoHanding),
   };
   Object.entries(requirements ?? {}).forEach(([key, req]) => {
-    // Only proceed if key is a valid stat key and req is a number
-    if (typeof req === 'number' && req > 0 && (key === 'str' || key === 'dex' || key === 'int' || key === 'fai' || key === 'arc')) {
+    const isValidKey = typeof req === 'number' && req > 0 && (key === str || key === dex || key === int || key === fai || key === arc)
+
+    if (isValidKey) {
       let _req = req;
       const statKey = key as TStatKey;
       if (typeof effectiveStats[statKey] === 'number' && effectiveStats[statKey] < _req) {
-        if (statKey === "str" && twoHanding) {
+        if (statKey === str && twoHanding) {
           _req = ceilDiv(_req, 1.5);
         }
         push(statKey, _req);
@@ -215,48 +231,54 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
     }
   });
 
-  // #2: Prime selected damage stats to 20
+  // #2: Bring selected damage stats to 20
   Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
     if (req) {
       push(key as TStatKey, 20);
     }
   });
   // #3: Baseline Survivability & FP
-  // VGR to 40 always
-  push("vgr", nextBreakpoint('vgr', work.vgr));
-  // if magic archetype (spellcaster)
-  if (isSpellcaster) {
-    // spellcaster
-    push("mnd", nextBreakpoint('mnd', work.mnd));
-    push("end", nextBreakpoint('end', work.end));
-    push('dex', 20) // casting speed
-  } else {
-    // not spellcaster
-    push("end", 30) // additional stamina
-  }
-  if (archetype === melee) {
-    // melee VGR 58
-    push("vgr", nextBreakpoint('vgr', work.vgr));
-  } else {
-    // ranged, just move on to dmg stats
-  }
+  push(vgr, 40);
   // #4. Archetype-Specific Early Buffs
+  push(end, 25);
+  push(mnd, 16); // provide baseline FP
+  push(end, 30)
   // #5. Push damage soft caps to second soft cap
-  // #6. Mid-Game Durability & FP Soft-Caps
-  // #7. Optional Secondary Stat Soft-Cap
-  // #8. Primary (and Secondary) Stat Final Soft-Cap
-  // #9. Late-Game Utility Optimization
   Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
     if (req) {
       const statKey = key as TStatKey;
-      const next = nextBreakpoint(statKey, work[statKey]);
+      const next = getNthBreakpoint(statKey, 2, breakpoints[statKey]);
       if (next !== undefined) {
         push(statKey, next);
       }
     }
   });
+  // #6. Mid-Game Durability & FP Soft-Caps
+  push(vgr, 58)
+
+  // #7. Optional Secondary Stat Soft-Cap
+  // #8. Primary (and Secondary) Stat Final Soft-Cap
+  Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
+    if (req) {
+      const statKey = key as TStatKey;
+      const next = getNthBreakpoint(statKey, 3, breakpoints[statKey]);
+      if (next !== undefined) {
+        push(statKey, next);
+      }
+    }
+  });
+  // #9. Late-Game Utility Optimization
+  push(end, 30)
+  push(mnd, 40)
+  push(end, 50)
+  push(mnd, 50)
+
+
+  //----
+
+
   if (maxFpFlask) {
-    push("mnd", 38);
+    push(mnd, 38);
   }
   // Respect: `limit`, `steps`, `twoHanding`
 
@@ -264,10 +286,10 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
   Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
     if (req) {
       const statKey = key as TStatKey;
-      let next = nextBreakpoint(statKey, work[statKey]);
+      let next = nextBreakpoint(statKey, work[statKey], breakpoints[statKey]);
       while (next !== undefined && next <= 99) {
         push(statKey, next);
-        next = nextBreakpoint(statKey, work[statKey]);
+        next = nextBreakpoint(statKey, work[statKey], breakpoints[statKey]);
       }
     }
   });

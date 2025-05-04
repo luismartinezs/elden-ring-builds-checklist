@@ -14,8 +14,18 @@ import { CopyToClipboard } from "~/components/CopyToClipboard";
 
 const links = [
   {
-    label: "Checklists",
+    label: "All checklists",
     href: "/checklists",
+  },
+  {
+    label: "ER checklist",
+    href: "/checklists/simple-game-prrogess",
+    mobileOnly: true,
+  },
+  {
+    label: "SotE checklist",
+    href: "/checklists/shadow-of-the-erdtree",
+    mobileOnly: true,
   },
   {
     label: "Profile",
@@ -122,13 +132,15 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
               <li className="flex items-center justify-center">
                 <CopyToClipboard textToCopy={currentUrl} />
               </li>
-              {links.map((link) => (
-                <li key={link.label}>
-                  <PrimaryLink href={link.href} className="whitespace-nowrap">
-                    {link.label}
-                  </PrimaryLink>
-                </li>
-              ))}
+              {links
+                .filter((link) => !link.mobileOnly)
+                .map((link) => (
+                  <li key={link.label}>
+                    <PrimaryLink href={link.href} className="whitespace-nowrap">
+                      {link.label}
+                    </PrimaryLink>
+                  </li>
+                ))}
             </ul>
           </div>
 
@@ -169,7 +181,7 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
                         <PrimaryLink
                           onClick={closeMenu}
                           href={link.href}
-                          className="flex w-full items-center justify-between px-6 py-5 hover:text-stone-300"
+                          className="flex w-full items-center justify-between px-6 py-5 hover:text-primary-500"
                         >
                           <span className="font-semibold">{link.label}</span>
                           <BsChevronRight size={20} strokeWidth={1} />

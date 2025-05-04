@@ -144,7 +144,7 @@ function Settings() {
             onClick={() => setItems([])}
             variant="outline"
             disabled={items.length === 0}
-            className="mb-3 flex items-center gap-2 whitespace-nowrap"
+            className="!mb-[55px] flex items-center gap-2 whitespace-nowrap"
           >
             <GoAlertFill size={18} />
             Uncheck everything

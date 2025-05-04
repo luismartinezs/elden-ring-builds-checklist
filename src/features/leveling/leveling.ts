@@ -9,7 +9,7 @@
 ----------------------------------------------------------------*/
 
 import { getPreferredOrder } from "~/utils/array-utils";
-import { type TStatKey, vgr, mnd, end, str, dex, int, fai, arc, TUtilStatKey } from "../stats/stats";
+import { type TStatKey, vgr, mnd, end, str, dex, int, fai, arc, TUtilStatKey, TAtkStatKey } from "../stats/stats";
 
 /**
  *
@@ -104,7 +104,7 @@ const utilStatPriority: Record<string, UtilStats[]> = {
   [tank]: [vgr, end, mnd],
 }
 
-export const DMG_KEYS: TStatKey[] = [str, dex, int, fai, arc];
+export const DMG_KEYS: TAtkStatKey[] = [str, dex, int, fai, arc];
 
 const PREFER_DMG_STAT_ORDER = [fai, arc, dex, str, int] as const
 

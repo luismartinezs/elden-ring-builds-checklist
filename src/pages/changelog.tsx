@@ -17,6 +17,20 @@ interface ChangelogEntry {
 // Sample changelog data - replace with actual data source later
 const changelogData: ChangelogEntry[] = [
   {
+    date: "2025-05-04",
+    changes: [
+      {
+        description: (
+          <span>
+            Improved the quality of the{" "}
+            <Link href="/leveling-guide">leveling guide</Link>, adding more
+            playstyles and having a separate &quot;Spellcaster&quot; option.
+          </span>
+        ),
+      },
+    ],
+  },
+  {
     date: "2025-05-02",
     changes: [
       {

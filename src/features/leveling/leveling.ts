@@ -253,12 +253,13 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
     }
   });
 
+
+  // #3: Baseline Survivability & FP
   if (isTank) {
     push(vgr, 58)
     push(end, 30)
   }
 
-  // #3: Baseline Survivability & FP
   if (isSpellcaster) {
     // alternate mnd and vgr to avoid falling short on FP
     !isGlassCannon && push(vgr, 30)

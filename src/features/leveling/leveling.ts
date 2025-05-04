@@ -210,6 +210,7 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
     else dmgStatsNotinUseArr.push(key as TStatKey);
   });
 
+
   // #1: Match Weapon & Spell Requirements
   // effective stats = stats including effective STR based on two-handing / one-handing
   const effectiveStats = {
@@ -237,12 +238,21 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
       push(key as TStatKey, 20);
     }
   });
+
+
   // #3: Baseline Survivability & FP
   push(vgr, 40);
+
+
   // #4. Archetype-Specific Early Buffs
   push(end, 25);
-  push(mnd, 16); // provide baseline FP
-  push(end, 30)
+
+  if (archetype === balanced) {
+    push(mnd, 16); // provide baseline FP
+    push(end, 30);
+  }
+
+
   // #5. Push damage soft caps to second soft cap
   Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
     if (req) {
@@ -253,11 +263,13 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
       }
     }
   });
+
+
   // #6. Mid-Game Durability & FP Soft-Caps
   push(vgr, 58)
 
-  // #7. Optional Secondary Stat Soft-Cap
-  // #8. Primary (and Secondary) Stat Final Soft-Cap
+
+  // #7. Primary (and Secondary) Stat Final Soft-Cap
   Object.entries(dmgStats ?? {}).forEach(([key, req]) => {
     if (req) {
       const statKey = key as TStatKey;
@@ -267,19 +279,19 @@ export function getNextLevels(params: TNextLevelsParams): Recommendation[] {
       }
     }
   });
-  // #9. Late-Game Utility Optimization
+
+
+  // #8. Late-Game Utility Optimization
   push(end, 30)
-  push(mnd, 40)
+  push(mnd, maxFpFlask ? 38 : 40);
   push(end, 50)
-  push(mnd, 50)
+  push(mnd, maxFpFlask ? 0 : 50)
 
 
   //----
 
 
-  if (maxFpFlask) {
-    push(mnd, 38);
-  }
+
   // Respect: `limit`, `steps`, `twoHanding`
 
   // push all stats to all soft caps

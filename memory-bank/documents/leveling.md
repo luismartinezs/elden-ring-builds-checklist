@@ -34,8 +34,8 @@ etc
 - 40V
 - 25E
 - X1 to sc2
-- 58V
 - if X2: X2 to sc2
+- 58V
 - X1 to lsc
 - if X2: X2 to lsc
 - 30E

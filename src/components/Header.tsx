@@ -19,7 +19,7 @@ const links = [
   },
   {
     label: "ER checklist",
-    href: "/checklists/simple-game-prrogess",
+    href: "/checklists/simple-game-progress",
     mobileOnly: true,
   },
   {

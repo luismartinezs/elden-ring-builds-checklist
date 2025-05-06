@@ -28,6 +28,14 @@ const links = [
     mobileOnly: true,
   },
   {
+    label: "Leveling Guide",
+    href: "/leveling-guide",
+  },
+  {
+    label: "Weapons",
+    href: "/weapons",
+  },
+  {
     label: "Profile",
     href: "/profile",
   },
@@ -36,16 +44,8 @@ const links = [
   //   href: "/stats",
   // },
   {
-    label: "Weapons",
-    href: "/weapons",
-  },
-  {
     label: "Soft Caps",
     href: "/soft-caps",
-  },
-  {
-    label: "Leveling Guide",
-    href: "/leveling-guide",
   },
   {
     label: "NPC rewards",

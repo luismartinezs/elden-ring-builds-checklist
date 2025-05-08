@@ -1008,7 +1008,7 @@ export const items = [
   },
   {
     id: '03c2239f-0006-40d2-ac76-4fa27340b5a7',
-    description: 'Beat Valiant Gargoyles in Siofra Aqueduct, and access Deeproot Depths through the coffin in their arena. They are strong vs slash, pierce, fire, lightning, holy and status effects, and weak vs strike',
+    description: 'Beat Valiant Gargoyles in Siofra Aqueduct, and access Deeproot Depths through the coffin in their arena. They are strong vs slash, pierce, fire, lightning, holy and status effects, and weak vs strike. Note: you can also do this later and access Deeproot Depths through the hidden passage near the Frenzied Flame Proscription grace in the Subterranean Shunning-Grounds. If you follow D\'s questline, that will also allow you to summon D\'s brother to help you',
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   // DEEPROOT DEPTHS 80-90 +15-20

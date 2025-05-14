@@ -163,7 +163,7 @@ export const items = [
     tags: [ALEXANDER_QUESTLINE]
   },
   {
-    id: "2b28dfc8-4d6e-47b5-b277-755462fbb2b5",
+    id: "82943139-b08d-4914-97a4-e86f1a81b812",
     description: "Deathtouched Catacombs.  Stormhill, Limgrave. It can be reached by heading west from Saintsbridge.",
     locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164068",
     tags: [CATACOMBS]
@@ -218,7 +218,7 @@ export const items = [
     tags: [TUNNELS]
   },
   {
-    id: "f68651a4-1a1d-4b48-9bdf-6a5733e6160d",
+    id: "a4693576-8670-4d0d-8d0d-6c1f23cf27a1",
     description: "Earthbore Cave. In the north side of Weeping Peninsula, to the west and down the hill from the Lookout Tower.",
     locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=163967",
     tags: [CAVES]
@@ -242,7 +242,7 @@ export const items = [
     tags: [CATACOMBS]
   },
   {
-    id: "f68651a4-1a1d-4b48-9bdf-6a5733e6160d",
+    id: "be3e8c9b-4567-4c66-a267-1c20abd8660c",
     description: "Tombsward Cave, south of the Weeping Evergaol.",
     locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165742",
     tags: [CAVES]
@@ -552,7 +552,7 @@ export const items = [
     tags: [LATENNA_QUESTLINE, CAVES]
   },
   {
-    id: "f68651a4-1a1d-4b48-9bdf-6a5733e6160d",
+    id: "cca5f3d0-8c2d-40a3-a5ac-6f9d6e05d0e9",
     description: "Stillwater Cave. Find the cave entrance by dropping down the southern plateau from the Stormveil Castle entrance of the lake",
     locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166387",
     tags: [CAVES]
@@ -928,7 +928,7 @@ export const items = [
     tags: [TUNNELS]
   },
   {
-    id: 'be83ba65-f7f1-4aa5-bf25-116dbbed9c9d',
+    id: '6f1860ca-4302-4478-8aab-093b13cbc786',
     description: 'Unsightly Catacombs. first traveling to the Perfumer\'s Ruins by heading west from the Abandoned Coffin site of grace.The entrance to the catacombs is found below the ruins, with the door attached to the cliff face in the southwest',
     locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164404",
     tags: [CATACOMBS]
@@ -940,7 +940,7 @@ export const items = [
     tags: [CAVES]
   },
   {
-    id: "51a7fe87-3618-4951-8b6d-d422abb12947",
+    id: "965774d3-1290-429d-9cfa-9082ca6fda08",
     description: "Perfumer's Grotto. north side of the great bridge heading east into the capital. Altus",
     locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167589",
     tags: [CAVES]

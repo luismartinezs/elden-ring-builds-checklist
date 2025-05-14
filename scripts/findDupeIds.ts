@@ -18,7 +18,8 @@ const excludedIds = new Set<string>([
   "6081caa3-6d2b-4b95-b20c-88daae796559",
   "af05491b-d9d0-4fcc-a72b-b34b054e8f47",
   "01a2faf5-a555-4d89-8ddb-cb4e89463367",
-  "6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0"
+  "6792f457-fabc-4ea0-b4d5-aaa4dcaac3e0",
+  "fd49412b-0c2b-4245-ac80-c6a0f4d450af"
 ]);
 
 function findDuplicateIds(items: Item[]): Set<string> {

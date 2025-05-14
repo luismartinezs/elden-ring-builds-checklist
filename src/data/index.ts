@@ -10,7 +10,7 @@ import moonveilSamurai from './moonveil-samurai'
 import prepDlc from './prep-dlc'
 import sote from './sote-game-progress'
 import soteAsap from './sote-asap'
-
+import bossRush from './boss-rush'
 
 const lists: TChecklist[] = [
   // NOTE not sure why but TS gets confused without this type assertion
@@ -25,6 +25,7 @@ const lists: TChecklist[] = [
   templar,
   lightningLancer,
   afflictioner,
+  bossRush,
 ]
 
 export { lists }

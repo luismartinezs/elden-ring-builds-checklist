@@ -9,8 +9,8 @@ export type Announcement = {
 
 // Change this object to show a different announcement
 export const currentAnnouncement: Announcement = {
-  id: "changelog-2025-05-02",
-  message: "Added 2 brand NEW tools!",
+  id: "changelog-2025-05-14",
+  message: "Added filters for catacombs, caves and hero graves!",
   link: {
     text: "See what changed!",
     url: "/changelog",

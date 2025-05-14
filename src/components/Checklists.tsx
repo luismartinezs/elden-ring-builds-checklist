@@ -52,6 +52,10 @@ const tagMap: Record<
     label: "SOTE",
     className: "bg-[#8B6D3C] text-[#FFF8E7] border border-[#C4A269]",
   },
+  preSote: {
+    label: "Pre-SOTE",
+    className: "bg-stone-700 text-stone-400 border border-stone-500",
+  },
   default: {
     label: "tag",
     className: "bg-gray-200 text-gray-800 border border-gray-400",
@@ -87,12 +91,15 @@ export function Checklists({
       <Heading.H2 id="checklists">Checklists</Heading.H2>
       <ul className="mt-4 flex flex-col gap-2 text-2xl">
         {Object.values(checklists).map(({ slug, title, tags }) => (
-          <li key={slug} className="flex flex-wrap items-start gap-1 border-t border-stone-600 first:border-0 pt-1 text-base md:text-lg lg:text-2xl">
+          <li
+            key={slug}
+            className="flex flex-wrap items-start gap-1 border-t border-stone-600 pt-1 text-base first:border-0 md:text-lg lg:text-2xl"
+          >
             <Link href={`/checklists/${slug}`} className="flex-shrink-0">
               {title}
             </Link>
             {tags && (
-              <ul className="ml-1 lg:ml-2 flex flex-wrap items-center gap-2 relative lg:bottom-0.5">
+              <ul className="relative ml-1 flex flex-wrap items-center gap-2 lg:bottom-0.5 lg:ml-2">
                 {tags.map((tag) => {
                   const { label, className } = getTag(tag);
 

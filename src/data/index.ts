@@ -13,13 +13,12 @@ import soteAsap from './sote-asap'
 
 
 const lists: TChecklist[] = [
-  // NOTE not sure why but TS gets confused without this type assertion
-  simpleGameProgress as TChecklist,
+  simpleGameProgress,
   sote,
-  prepDlc,
   soteAsap,
-  newGamePlusProgress as TChecklist,
+  newGamePlusProgress,
   beforeNgPlus,
+  prepDlc,
   moonveilSamurai,
   ranni,
   templar,

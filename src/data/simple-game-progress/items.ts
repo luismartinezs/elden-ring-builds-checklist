@@ -548,7 +548,20 @@ export const items = [
   {
     id: "82983c08-5a06-4d1e-a6a8-dfea29452f1b",
     description: "From Liurnia Lake Shore grace, looking north hug the left wall until finding the entrance to Lakeside Crystal Cave. Progress through the dungeon to find Latenna at the end and grab the grace",
-    tags: [LATENNA_QUESTLINE]
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166448",
+    tags: [LATENNA_QUESTLINE, CAVES]
+  },
+  {
+    id: "f68651a4-1a1d-4b48-9bdf-6a5733e6160d",
+    description: "Stillwater Cave. Find the cave entrance by dropping down the southern plateau from the Stormveil Castle entrance of the lake",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166387",
+    tags: [CAVES]
+  },
+  {
+    id: 'ce17505a-087c-47b0-bb71-82163d8fac26',
+    description: 'Cliffbottom Catacombs, found by following the cliffside south on the east edge of Liurnia of the Lakes',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166469",
+    tags: [CATACOMBS]
   },
   {
     id: '20c9774e-370d-4629-8d21-28c36d60deb2',
@@ -621,6 +634,18 @@ export const items = [
     description: "2 in Jarburg, located in East Liurnia, down the cliffs just South of Carian Study Hall.",
     tags: [RITUAL_POT]
   },
+  {
+    id: "feb58503-8fe7-4287-9f3b-c9f581b75715",
+    description: "Road's End Catacombs. South of Revenger's Shack, Liurnia",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165507",
+    tags: [CATACOMBS]
+  },
+  {
+    id: "e155c17d-a120-4dc2-bcda-24beedc4c812",
+    description: "Academy Crystal Cave. Entrance is found west of the Raya Lucaria Academy",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164423",
+    tags: [CAVES]
+  },
   // RAYA LUCARIA L50-60 +4-6
   {
     id: "96bf5675-a5b6-4b9b-9ef4-7023a8c64aa9",
@@ -682,8 +707,9 @@ export const items = [
   },
   {
     id: '3ffa2105-a1e0-428c-8a40-c7a6b64fe72f',
-    description: 'Obtain the Black Knifeprint from Black Knife Catacombs in Liurnia, behind an illusory wall in the room before dropping down to a flooded pit with levers <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166481" target="_blank">Location</a>',
-    tags: [ROGIER_QUESTLINE]
+    description: 'Obtain the Black Knifeprint from Black Knife Catacombs in Liurnia, behind an illusory wall in the room before dropping down to a flooded pit with levers.',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166481",
+    tags: [ROGIER_QUESTLINE, CATACOMBS]
   },
   // AINSEL RIVER L50-60 +4-6
   // LIURNIA WEST, CARIA MANOR L50-60 +4-6

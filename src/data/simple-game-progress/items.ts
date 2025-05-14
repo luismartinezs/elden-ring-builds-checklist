@@ -78,24 +78,7 @@ export const items = [
     description: "(optional) meet D in Roundtable Hold and show him the Deathroot",
     tags: [D_QUESTLINE]
   },
-  {
-    id: "f68651a4-1a1d-4b48-9bdf-6a5733e6160d",
-    description: "Groveside Cave. Limgrave, just north from Church of Elleh.",
-    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164028",
-    tags: [CAVES]
-  },
-  {
-    id: "81b0398b-d70a-498a-a5cb-936e9ad032ba",
-    description: "Coastal Cave. Western Limgrave, on the southern portion of the western beach.",
-    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164031",
-    tags: [CAVES]
-  },
-  {
-    id: "2b28dfc8-4d6e-47b5-b277-755462fbb2b5",
-    description: "Stormfoot Catacombs. West Limgrave, due West and north from Church of Elleh.",
-    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164033",
-    tags: [CATACOMBS]
-  },
+
   {
     id: "0a31a7cb-b53f-4bc7-9387-d298da1d9bf8",
     description: "Decide how you want to reach Altus Plateau later in the game: A) With the two halves of the Dectus medallion, B) Through the Ruin-Strewn Precipice, accessible going north past the Bellum church, north of the path toward the Dectus Lift, C) By letting the Abductor Virgin at the bottom of Raya Lucaria telport you to Volcano Manor, and defeating the Abductor Virgin duo. (option A is the easiest one, option C is possibly the fastest one)",
@@ -162,17 +145,36 @@ export const items = [
     description: 'Find Alexander in Northern Stormhill, West to the river and North of the Agheel Lake North Site of Grace. Him a few times on the back with any weapon until you free him. He will reward you with some items',
     tags: [ALEXANDER_QUESTLINE]
   },
-  {
-    id: "82943139-b08d-4914-97a4-e86f1a81b812",
-    description: "Deathtouched Catacombs.  Stormhill, Limgrave. It can be reached by heading west from Saintsbridge.",
-    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164068",
-    tags: [CATACOMBS]
-  },
+
   {
     id: '4bf628bc-957c-4dbf-bd29-b8f85870f488',
     description: 'Limgrave Tunnels, on the northern area of the Agheel Lake, just south from "Agheel Lake North" grace',
     locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164025",
     tags: [TUNNELS]
+  },
+  {
+    id: "f68651a4-1a1d-4b48-9bdf-6a5733e6160d",
+    description: "Groveside Cave. Limgrave, just north from Church of Elleh.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164028",
+    tags: [CAVES]
+  },
+  {
+    id: "81b0398b-d70a-498a-a5cb-936e9ad032ba",
+    description: "Coastal Cave. Western Limgrave, on the southern portion of the western beach.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164031",
+    tags: [CAVES]
+  },
+  {
+    id: "2b28dfc8-4d6e-47b5-b277-755462fbb2b5",
+    description: "Stormfoot Catacombs. West Limgrave, due West and north from Church of Elleh.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164033",
+    tags: [CATACOMBS]
+  },
+  {
+    id: "82943139-b08d-4914-97a4-e86f1a81b812",
+    description: "Deathtouched Catacombs.  Stormhill, Limgrave. It can be reached by heading west from Saintsbridge.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164068",
+    tags: [CATACOMBS]
   },
   {
     id: "4c907163-15c9-4853-ba68-322097e5507a",
@@ -326,7 +328,7 @@ export const items = [
 
   {
     id: '3ebfbeb9-f5f8-42fc-957b-2a83ecf15d88',
-    description: 'Get 50,000 runes from killing the sleeping dragon Greyoll in Dragonbarrow with bleed (Reduvia, Uchigatana or Bloody slash ash of war)',
+    description: 'Get 50,000 runes from killing the sleeping dragon Greyoll in Dragonbarrow with bleed (Reduvia, Uchigatana, Flail, or Bloody slash ash of war)',
     tags: [OPTIONAL]
   },
   {
@@ -334,11 +336,11 @@ export const items = [
     description: 'Greyoll\'s Roar: Can be purchased at the Cathedral of Dragon Communion for three Dragon Hearts after defeating Greyoll in Caelid. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166189" target="_blank">Greyoll Location</a>, <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166067" target="_blank">Cathedral of Dragon Communion Location</a>',
     tags: [LEGENDARY_SPELLS]
   },
-  {
-    id: 'c2032110-34a5-4c0d-b8b7-74ab6de2f77d',
-    description: 'By this point, your weapon can be upgraded to +3-4 (1-2)',
-    tags: []
-  },
+  // {
+  //   id: 'c2032110-34a5-4c0d-b8b7-74ab6de2f77d',
+  //   description: 'By this point, your weapon can be upgraded to +3-4 (1-2)',
+  //   tags: []
+  // },
 
   // STORMVEIL CASTLE L30-40 +3-4
   {
@@ -551,18 +553,7 @@ export const items = [
     locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166448",
     tags: [LATENNA_QUESTLINE, CAVES]
   },
-  {
-    id: "cca5f3d0-8c2d-40a3-a5ac-6f9d6e05d0e9",
-    description: "Stillwater Cave. Find the cave entrance by dropping down the southern plateau from the Stormveil Castle entrance of the lake",
-    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166387",
-    tags: [CAVES]
-  },
-  {
-    id: 'ce17505a-087c-47b0-bb71-82163d8fac26',
-    description: 'Cliffbottom Catacombs, found by following the cliffside south on the east edge of Liurnia of the Lakes',
-    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166469",
-    tags: [CATACOMBS]
-  },
+
   {
     id: '20c9774e-370d-4629-8d21-28c36d60deb2',
     description: 'Find Hyetta north of the Gate Town Bridge, easter Liurnia of the Lakes (in front of the southern broken bridge in the east side of the lake, above the cliffs) and give her a Shabriri Grape. Exhaust her dialogue. Reload the area, and exhaust her dialogue again. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166642" target="_blank">Location</a>',
@@ -634,23 +625,13 @@ export const items = [
     description: "2 in Jarburg, located in East Liurnia, down the cliffs just South of Carian Study Hall.",
     tags: [RITUAL_POT]
   },
-  {
-    id: "feb58503-8fe7-4287-9f3b-c9f581b75715",
-    description: "Road's End Catacombs. South of Revenger's Shack, Liurnia",
-    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165507",
-    tags: [CATACOMBS]
-  },
-  {
-    id: "e155c17d-a120-4dc2-bcda-24beedc4c812",
-    description: "Academy Crystal Cave. Entrance is found west of the Raya Lucaria Academy",
-    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164423",
-    tags: [CAVES]
-  },
+
   // RAYA LUCARIA L50-60 +4-6
   {
     id: "96bf5675-a5b6-4b9b-9ef4-7023a8c64aa9",
     description:
-      "At the foot of the golden tree in the middle of Liurna's sunken town below Raya Lucaria.",
+      "At the foot of the golden tree in the middle of Liurna's sunken town below Raya Lucaria (outside Raya Lucaria, nearby the Academy Gate Town grace).",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165193",
     tags: [GOLDEN_SEED],
   },
   {
@@ -671,7 +652,7 @@ export const items = [
   {
     id: "8872b89b-082f-440e-bc9a-d3409e847acc",
     description:
-      "At the foot of a golden tree. In the north-western part of the courtyard, past the Debate Parlor site of grace in Raya Lucaria.",
+      "At the foot of a golden tree. In the north-western part of the courtyard, past the Debate Parlor site of grace inside Raya Lucaria.",
     tags: [GOLDEN_SEED],
   },
   {
@@ -679,11 +660,11 @@ export const items = [
     description: 'Glintstone Whetblade (Magic and Cold). Raya Lucaria Academy Looted from a corpse hanging off the window ledge of an office balcony. From the Debate Parlor site of grace, head west of the courtyard fountain, up the collapsed stairs, past the kneeling Commoners, and into the room with the Twinsage Sorcerer',
     tags: [WHETBLADES]
   },
-  {
-    id: 'b3ac9d19-2b5b-4667-96bd-4af37febd329',
-    description: 'By this point your weapon could be +4-6 (2)',
-    tags: []
-  },
+  // {
+  //   id: 'b3ac9d19-2b5b-4667-96bd-4af37febd329',
+  //   description: 'By this point your weapon could be +4-6 (2)',
+  //   tags: []
+  // },
   {
     id: 'cbcd93c6-4334-4301-ace4-be411f02f3ab',
     description: 'Go through the waygate after the stairs with the giant rolling balls after wolf of Radagon to reach Church of Vows, and get Flame, Cleanse Me incantation (12 FAI) at the fire monk camp southeast of Church of Vows',
@@ -704,6 +685,30 @@ export const items = [
     id: '958046df-4b2e-41dd-9692-d6e74f5d4d1b',
     description: 'Dropped by the Crystalian Boss at the end of Raya Lucaria Crystal Tunnel (northeastern Liurnia, east from the walking mausoleum in the lake)',
     tags: [SMITHING_STONE_BELL]
+  },
+  {
+    id: "cca5f3d0-8c2d-40a3-a5ac-6f9d6e05d0e9",
+    description: "Stillwater Cave. Find the cave entrance by dropping down the southern plateau from the Stormveil Castle entrance of the lake",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166387",
+    tags: [CAVES]
+  },
+  {
+    id: 'ce17505a-087c-47b0-bb71-82163d8fac26',
+    description: 'Cliffbottom Catacombs, found by following the cliffside south on the east edge of Liurnia of the Lakes',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166469",
+    tags: [CATACOMBS]
+  },
+  {
+    id: "feb58503-8fe7-4287-9f3b-c9f581b75715",
+    description: "Road's End Catacombs. South of Revenger's Shack, Liurnia",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165507",
+    tags: [CATACOMBS]
+  },
+  {
+    id: "e155c17d-a120-4dc2-bcda-24beedc4c812",
+    description: "Academy Crystal Cave. Entrance is found west of the Raya Lucaria Academy",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164423",
+    tags: [CAVES]
   },
   {
     id: '3ffa2105-a1e0-428c-8a40-c7a6b64fe72f',
@@ -896,6 +901,27 @@ export const items = [
     tags: [CORHYN_QUESTLINE]
   },
   {
+    id: "01d30b40-f04b-4df2-a7dc-46a0c4c95a95",
+    description:
+      'At the base of the golden tree on the side of the road when headed North from "Altus Highway Junction" Site of Grace. Altus Plateau',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166523",
+    tags: [GOLDEN_SEED],
+  },
+  {
+    id: "565b41cd-d27e-4470-bab4-a68add733dbf",
+    description:
+      "2 at the base of the golden tree on the southwestern edge of the Capital Outskirts. Altus Plateau.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166423",
+    tags: [GOLDEN_SEED],
+  },
+  {
+    id: "4198b455-5418-467c-a8fb-f1346590c259",
+    description:
+      '2 under the larger Golden Tree in the center of the courtyard. Altus Plateau.',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166522",
+    tags: [GOLDEN_SEED],
+  },
+  {
     id: 'f2c7bed2-e302-4f98-aef5-8987532420f1',
     description: 'Talk to Goldmask across the broken bridge in Altus. Reach him by using the teleporter next to the Forest-Spanning Greatbridge grace',
     tags: [CORHYN_QUESTLINE]
@@ -910,12 +936,18 @@ export const items = [
     description: 'Talk to Corhyn across the broken bridge in Altus, next to Goldmask',
     tags: [CORHYN_QUESTLINE]
   },
+  // {
+  //   id: 'ea5372e9-62af-4277-9050-c2b3a0c8a07e',
+  //   description: 'By this point your weapon can be +10-14 (3-5)',
+  //   tags: []
+  // },
   {
-    id: 'ea5372e9-62af-4277-9050-c2b3a0c8a07e',
-    description: 'By this point your weapon can be +10-14 (3-5)',
-    tags: []
+    id: "6fee411a-b7a6-416c-867f-cbb6b8874f66",
+    description:
+      "At the base of a golden tree in the foggy woods where a Minor Erdtree is located, east of a broken great bridge. Altus Plateau",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166644",
+    tags: [GOLDEN_SEED],
   },
-
   {
     id: 'be83ba65-f7f1-4aa5-bf25-116dbbed9c9d',
     description: 'Dropped by Erdtree Burial Watchdog in Wyndham Catacombs, in Altus Plateau. At the top of the Wyndham Ruins, reachable north of Erdtree-Gazing Hill grace',
@@ -924,8 +956,31 @@ export const items = [
   },
   {
     id: 'e373c6f2-0fb9-479a-a7c6-6de82814771c',
-    description: 'Old Altus Tunnel, in central-west Altus Plateau, accessible with two Stonesword Keys. From the Erdtree-Gazing Hill Grace go down into the vallye north, and hug the left side. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=1196&lat=-91.171875&lng=78.604109&code=mapA" target="_blank">Location</a>',
+    description: 'Old Altus Tunnel, in central-west Altus Plateau, accessible with two Stonesword Keys. From the Erdtree-Gazing Hill Grace go down into the vallye north, and hug the left side.',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165480",
     tags: [TUNNELS]
+  },
+  {
+    id: 'bbd31431-ecf6-441f-b07d-6e0b7044c43f',
+    description: 'Altus Tunnel, in Altus. Directly south from the Minor Erdtree in Altus Plateau.',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164408",
+    tags: [TUNNELS]
+  },
+  {
+    id: '28473d9d-19f7-468f-b25f-5739ec5511ec',
+    description: 'Defeat Crystalian Spear and Ringblade boss in Altus Tunnel, directly south from the Minor Erdtree in Altus Plateau',
+    tags: [SOMBER_STONE_BELL]
+  },
+  {
+    id: '8b040470-0f63-4521-a3ef-1c00f3dd78ac',
+    description: 'Sealed Tunnel, found in Capital Outskirts, in Altus. Down at south of the lake right next to the west gate to Leyndell Royal Capital from the outside.',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165471",
+    tags: [TUNNELS]
+  },
+  {
+    id: '0852f8c6-a18d-418c-a4ce-76fa413d7194',
+    description: 'In a chest at the first secret area inside the Sealed Tunnel (Down at south of the lake right next to the west gate to Leyndell Royal Capital from the outside, Altus Plateau)',
+    tags: [SMITHING_STONE_BELL]
   },
   {
     id: '6f1860ca-4302-4478-8aab-093b13cbc786',
@@ -944,32 +999,6 @@ export const items = [
     description: "Perfumer's Grotto. north side of the great bridge heading east into the capital. Altus",
     locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167589",
     tags: [CAVES]
-  },
-  {
-    id: "6fee411a-b7a6-416c-867f-cbb6b8874f66",
-    description:
-      "At the base of a golden tree in the foggy woods where a Minor Erdtree is located, east of a broken great bridge. Altus Plateau",
-    tags: [GOLDEN_SEED],
-  },
-  {
-    id: 'bbd31431-ecf6-441f-b07d-6e0b7044c43f',
-    description: 'Altus Tunnel, in Altus. Directly south from the Minor Erdtree in Altus Plateau. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=5837&lat=-93.49&lng=93.82&code=mapA" target="_blank">Location</a>',
-    tags: [TUNNELS]
-  },
-  {
-    id: '28473d9d-19f7-468f-b25f-5739ec5511ec',
-    description: 'Defeat Crystalian Spear and Ringblade boss in Altus Tunnel, directly south from the Minor Erdtree in Altus Plateau',
-    tags: [SOMBER_STONE_BELL]
-  },
-  {
-    id: '8b040470-0f63-4521-a3ef-1c00f3dd78ac',
-    description: 'Sealed Tunnel, found in Capital Outskirts, in Altus. Down at south of the lake right next to the west gate to Leyndell Royal Capital from the outside. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=2858&lat=-105.75&lng=105.660584&code=mapA" target="_blank">Location</a>',
-    tags: [TUNNELS]
-  },
-  {
-    id: '0852f8c6-a18d-418c-a4ce-76fa413d7194',
-    description: 'In a chest at the first secret area inside the Sealed Tunnel (Down at south of the lake right next to the west gate to Leyndell Royal Capital from the outside, Altus Plateau)',
-    tags: [SMITHING_STONE_BELL]
   },
   // CAELID, RADAHN 60-70 +10-14
   {
@@ -1423,32 +1452,15 @@ export const items = [
   },
   // ALTUS 60-80 +10-14
   {
-    id: "01d30b40-f04b-4df2-a7dc-46a0c4c95a95",
-    description:
-      'At the base of the golden tree on the side of the road when headed North from "Altus Highway Junction" Site of Grace. Altus Plateau',
-    tags: [GOLDEN_SEED],
-  },
-  {
-    id: "565b41cd-d27e-4470-bab4-a68add733dbf",
-    description:
-      "2 at the base of the golden tree on the southwestern edge of the Capital Outskirts. Altus Plateau. <a href=\"https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166423\" target=\"_blank\">Location</a>",
-    tags: [GOLDEN_SEED],
-  },
-  {
     id: "81506999-d1fd-478d-8b13-452c25c5ce14",
     description:
       "Directly South of Outer Wall Phantom Tree site of grace. It drops from the Ulcerated Tree Spirit. Altus Plateau",
     tags: [GOLDEN_SEED],
   },
   {
-    id: "4198b455-5418-467c-a8fb-f1346590c259",
-    description:
-      '2 under the larger Golden Tree in the center of the courtyard. Altus Plateau. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166522" target="_blank">Location</a>',
-    tags: [GOLDEN_SEED],
-  },
-  {
     id: '50700a00-1045-492d-b94d-9abba5c2e17c',
     description: 'Second Church of Marika, in Altus. Go directly north from the Altus Highway Junction grace in Altus Plateau',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166524",
     tags: [SACRED_TEAR]
   },
   {
@@ -1819,11 +1831,11 @@ export const items = [
     description: "Find Corhyn and Goldmask in Leyndell. From the West Capital Ramparts Site of Grace, head south. Follow the path upwards to the colosseum and then head left. Exhaust Corhyn's dialogue",
     tags: [CORHYN_QUESTLINE]
   },
-  {
-    id: '5824fd47-d0bb-43ec-b552-dfe59fc62bc0',
-    description: 'By this point your weapon can be +15-20 (6-7)',
-    tags: []
-  },
+  // {
+  //   id: '5824fd47-d0bb-43ec-b552-dfe59fc62bc0',
+  //   description: 'By this point your weapon can be +15-20 (6-7)',
+  //   tags: []
+  // },
   {
     id: 'ca3d9a16-b81b-4be1-bb69-b7a3a704e862',
     description: 'Beat Godfrey, First Elden Lord (Golden Shade). He is strong vs holy, and weak vs pierce and lightning',
@@ -1970,11 +1982,11 @@ export const items = [
     description: 'First Church of Marika in Mountaintops of the Giants, south of the large freezing lake.',
     tags: [SACRED_TEAR]
   },
-  {
-    id: '30bf91af-7114-4564-a226-6acb5e9f08ea',
-    description: 'By this point your weapon can be +24 (9)',
-    tags: []
-  },
+  // {
+  //   id: '30bf91af-7114-4564-a226-6acb5e9f08ea',
+  //   description: 'By this point your weapon can be +24 (9)',
+  //   tags: []
+  // },
   {
     id: '21e3ee7a-9c14-4de5-84d7-a5a8c1f46288',
     description: 'Church of Repose in Mountaintops of the Giants. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165748" target="_blank">Location</a>',
@@ -1985,11 +1997,11 @@ export const items = [
     description: 'you can get an Ancient Dragon Smithing Stone from a corpse inside the mouth of a big skull south-east of Church of Repose',
     tags: [NGPLUS]
   },
-  {
-    id: '9363b337-a53f-4f44-9c24-2a18a52c7673',
-    description: 'By this point your regular weapon can be fully upgraded +25',
-    tags: []
-  },
+  // {
+  //   id: '9363b337-a53f-4f44-9c24-2a18a52c7673',
+  //   description: 'By this point your regular weapon can be fully upgraded +25',
+  //   tags: []
+  // },
   {
     id: "8fe6d280-9880-4dca-9c81-08456d345fc5",
     description:
@@ -2376,11 +2388,11 @@ export const items = [
     description: 'Get Somber Ancient Dragon Smithing Stone from a gazebo behind the stationary Farum Azula Dragon sitting at the back of the plaza southeast of the Dragon Temple Rooftop site of grace',
     tags: [NGPLUS]
   },
-  {
-    id: '9cde9e8c-7a17-480b-8278-7e7feb1304fd',
-    description: 'By this point your somber weapon can be fully upgraded',
-    tags: []
-  },
+  // {
+  //   id: '9cde9e8c-7a17-480b-8278-7e7feb1304fd',
+  //   description: 'By this point your somber weapon can be fully upgraded',
+  //   tags: []
+  // },
   {
     id: 'df4104e5-dc8d-4a41-bcb0-41f9706fc83e',
     description: 'Found on a body in the abandoned temple on the North side of Crumbling Farum Azula. Next to an alter at the bottom of the elevator next to Beside the Great Bridge Site of Grace',

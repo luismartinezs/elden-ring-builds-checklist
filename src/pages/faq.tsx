@@ -101,6 +101,10 @@ const faq = [
       </p>
     ),
   },
+  {
+    question: "Plz add the steps for the Scoobydoo fragments!",
+    answer: <p>Pfffff... 😭 I don&apos;t want to...</p>,
+  },
 ];
 
 function FaqPage() {

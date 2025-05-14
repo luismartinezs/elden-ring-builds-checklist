@@ -8,9 +8,7 @@ const list = {
   title: "Shadow of the Erdtree",
   tags: ['sote'],
   notes: [
-    `Update 23-8: Added tags to intermediate steps of NPC questlines. Added tags for dungeons. Added somber and regular ancient dragon smithing stones under the "optional" tag.`,
     `Recommended for second playthroughs.`,
-    'You might need to toggle on/off new filters for them to work.',
   ],
   items: [
     {

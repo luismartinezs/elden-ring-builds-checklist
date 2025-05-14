@@ -17,6 +17,21 @@ interface ChangelogEntry {
 // Sample changelog data - replace with actual data source later
 const changelogData: ChangelogEntry[] = [
   {
+    date: "2025-05-14",
+    changes: [
+      {
+        description: (
+          <span>
+            Added new filters for Catacombs, Caves and Hero Graves to the{" "}
+            <Link href="/checklists/simple-game-progress">main checklist</Link>,
+            along with tiny reorderings and tweaks of some steps.
+          </span>
+        ),
+      },
+    ],
+  },
+
+  {
     date: "2025-05-04",
     changes: [
       {

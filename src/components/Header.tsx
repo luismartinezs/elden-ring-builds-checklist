@@ -51,10 +51,10 @@ const links = [
     label: "NPC rewards",
     href: "/npc-questline-rewards",
   },
-  {
-    label: "FAQ",
-    href: "/faq",
-  },
+  // {
+  //   label: "FAQ",
+  //   href: "/faq",
+  // },
 ];
 
 const socialLinks = [

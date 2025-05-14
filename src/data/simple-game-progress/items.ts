@@ -766,16 +766,10 @@ export const items = [
   },
   // high level Limgrave
   {
-    id: "bd4f38da-809c-4452-995b-0dadefea4bb5",
-    description:
-      "Fringefolk Hero's Grave, in Limgrave behind a fog wall in Stranded Graveyard that requires two Stonesword Keys",
-    tags: [HERO_GRAVES],
-  },
-  {
     id: "e80a68b7-f557-434f-a969-ab03b206215a",
     description:
       "Dropped by the Ulcerated Tree Spirit in Fringefolk Hero's Grave next to Stranded Graveyard grace. You will need 2 stonesword keys to access this area. Limgrave",
-    tags: [GOLDEN_SEED],
+    tags: [GOLDEN_SEED, HERO_GRAVES],
   },
   // SIOFRA 50-60 +8-12
   {
@@ -1015,6 +1009,12 @@ export const items = [
     tags: [SOMBER_STONE_BELL]
   },
   {
+    id: "a0e1d5f9-b112-4d1b-9ae1-f559b59312a7",
+    description: "Minor Erdtree Catacombs. traveling east from where the region meets with Limgrave and then looking for the entrance in the cliff face slightly southeast of the tree.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166042",
+    tags: [CATACOMBS]
+  },
+  {
     id: 'cf37795e-81dc-407c-8186-cf7fce297c06',
     description: "Speak with Gowry in Gowry's Shack within Caelid. The Gowry's Shack is found in eastern Caelid, just before Sellia, Town of Sorcery. Players can reach this location by following the Caelid Highway to the east and the north. Or from Sellia Under-Stair grace going south. You can skip this step, but it will enable you to summon Polyanna for O'Neil's fight",
     tags: [MILLICENT_QUESTLINE]
@@ -1070,10 +1070,34 @@ export const items = [
     tags: [LEGENDARY_WEAPONS]
   },
   {
+    id: "8c61d9e5-5355-498e-8d76-d530668262b9",
+    description: "Caelid Catacombs, found due East from the Cathedral of Dragon Communion in Caelid.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166775",
+    tags: [CATACOMBS]
+  },
+  {
     id: "56421d70-5f43-43ef-9484-a8e26c78f9f2",
     description:
       "A Golden Seed and Redmane Knight Ogha Spirit Ash are dropped by Putrid Tree Spirit in the War Dead Catacombs. From Starscourge Radahn grace, head directly north and hug the cliff until you find the entrance. Caelid. You need to defeat Radahn first.",
-    tags: [GOLDEN_SEED, LEGENDARY_ASHES_ACH],
+    tags: [GOLDEN_SEED, LEGENDARY_ASHES_ACH, CATACOMBS],
+  },
+  {
+    id: "74a3d11b-2961-41f9-9de0-40031c2cc855",
+    description: "Abandoned Cave, in Dragonbarrow, Caelid, east of Smoldering Wall Grace on the eastern wall of the canyon.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167686",
+    tags: [CAVES]
+  },
+  {
+    id: "6cc8ebb4-07e9-4938-9fef-a5d9dc6f4cbc",
+    description: "Gaol Cave, in the scarlet lake East of  Fort Gael. It can only be accessed using two Stonesword Keys.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165722",
+    tags: [CAVES]
+  },
+  {
+    id: "2515f046-3b27-4a13-ad14-26df418fe963",
+    description: "Dragonbarrow Cave, following the northernmost road in Dragonbarrow towards the east and looking for the entrance along the cliff face underneath the Minor Erdtree.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166188",
+    tags: [CAVES]
   },
   {
     id: '710569d9-691d-4a88-8e02-63fc3c559370',
@@ -1082,7 +1106,7 @@ export const items = [
   },
   {
     id: '609c347c-c2b5-488b-80e5-1db0d9417a41',
-    description: 'If you defeated Starscourge Radahn, you can now access Nokron',
+    description: 'If you defeated Starscourge Radahn, you can now access Nokron through the large hole in east Limgrave',
     tags: [OPTIONAL, NGPLUS, ALL_REMEMBERANCES]
   },
   // NOKRON CITY AND AQUEDUCT 70-80 +10-14
@@ -1182,7 +1206,7 @@ export const items = [
   {
     id: 'cb018c4a-8717-4bf2-908a-f6ef4067dca0',
     description: "Find Lusat in the Sellia Hideaway and get the Stars of Ruin spell. He is behind a secret cave behind an illusory wall. To reach the entrance, start at the Church of the Plague site of grace and head north up the hill and straight under the wooden arch. Look to the North-East for a small graveyard with a single sorcerer enemy wielding a staff and a club. Behind the main headstone, along the cliffside, there's a secret door you can reveal by rolling or attacking it",
-    tags: [SELLEN_QUESTLINE, LEGENDARY_SPELLS]
+    tags: [SELLEN_QUESTLINE, LEGENDARY_SPELLS, CAVES]
   },
   {
     id: 'f1ab993b-65d3-41f1-bc29-df9dfc65d386',
@@ -2049,6 +2073,25 @@ export const items = [
     tags: [PATCHES_QUESTLINE]
   },
   {
+    id: "ed73f46d-1c07-4684-9fa4-321838f6c781",
+    description: "Spiritcaller Cave, in the Mountaintops of the Giants in the east, along the western bank of the Freezing Lake.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167992",
+    tags: [CAVES]
+  },
+  {
+    id: "608b3667-96af-4398-99db-3d6ac4f2e34a",
+    description: "Giants' Mountaintop Catacombs. in the Mountaintops of the Giants region. To find this dungeon, go north from Zamor Ruins until you reach the bridge with fire monks, then turn south east and follow the slope down to the door.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167428",
+    tags: [CATACOMBS]
+  },
+  {
+    id: "9b9c6da1-a062-46f4-8289-3108275ee9bd",
+    description:
+      "Giant-Conquering Hero's Grave. From Church of Repose go north west and cross a gap to a separate area to reach it.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165641",
+    tags: [HERO_GRAVES],
+  },
+  {
     id: 'a7a70a4b-9f8b-4a6a-bda0-83d9b21a0235',
     description: "Alexander can be summoned for the fight against Fire Giant (you don't need to summon him to complete his questline)",
     tags: [ALEXANDER_QUESTLINE]
@@ -2146,8 +2189,8 @@ export const items = [
   // CONSECRATED SNOWFIELD 100-120 +20-24
   {
     id: '57379897-ef76-4246-af6b-b1db1c957349',
-    description: 'With both halves of Haligtree medallion, access Consecrated Snowfield through the Lift of Rold',
-    tags: [OPTIONAL, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, NGPLUS, ALL_REMEMBERANCES]
+    description: 'With both halves of Haligtree medallion, access Consecrated Snowfield through the Lift of Rold, traversing the Hidden Path to the Haligtree',
+    tags: [OPTIONAL, LATENNA_QUESTLINE, MILLICENT_QUESTLINE, NGPLUS, ALL_REMEMBERANCES, CATACOMBS]
   },
   {
     id: "fdaf0398-fd5e-469b-9bb4-8fb547c7b80d",
@@ -2162,8 +2205,9 @@ export const items = [
   },
   {
     id: '3a4721ff-f4cf-4906-9c5b-8b7e8aef0775',
-    description: "Golden Order Greatsword: Taken by the Misbegotten Crusader to the Cave of the Forlorn. <a href='https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167161' target='_blank'>Location</a>",
-    tags: [LEGENDARY_WEAPONS_ACH]
+    description: "Golden Order Greatsword: Taken by the Misbegotten Crusader to the Cave of the Forlorn.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167161",
+    tags: [LEGENDARY_WEAPONS_ACH, CAVES]
   },
   {
     id: "f88a55b3-907a-4940-911e-0f568d1dd4f5",
@@ -2178,8 +2222,15 @@ export const items = [
   },
   {
     id: '26a53cd6-7fbb-41be-b39c-98a863f88d78',
-    description: 'Yelough Anix Tunnel, in the west of the Consecrated Snowfield, near the Yelough Anix Ruins. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=4491&lat=-77.59375&lng=133.02805&code=mapA" target="_blank">Location</a>',
+    description: 'Yelough Anix Tunnel, in the west of the Consecrated Snowfield, near the Yelough Anix Ruins.',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167153",
     tags: [TUNNELS]
+  },
+  {
+    id: 'fd49412b-0c2b-4245-ac80-c6a0f4d450af',
+    description: 'Consecrated Snowfield Catacombs, from Inner Consecrated Snowfield grace, go east until reaching the wall and then hug the wall south until finding the entrance. Contains 2 Great Grave Gloveworts dropped by the boss.',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167156",
+    tags: [CATACOMBS]
   },
   {
     id: '52bfb466-e488-4a1b-8eab-7a84dc19ab14',

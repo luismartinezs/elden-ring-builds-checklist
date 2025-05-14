@@ -24,6 +24,24 @@ export const tags: TTags = {
     buttonClasses: 'border-stone-400 text-stone-400 hover:bg-stone-400 hover:text-black focus:ring-stone-400',
     tagClasses: 'bg-stone-400 text-black',
   },
+  [TAGS.CATACOMBS]: {
+    label: 'Catacombs',
+    key: TAGS.CATACOMBS,
+    buttonClasses: 'border-gray-300 text-gray-300 hover:bg-gray-300 hover:text-black focus:ring-gray-300',
+    tagClasses: 'bg-gray-300 text-black',
+  },
+  [TAGS.HERO_GRAVES]: {
+    label: 'Hero Graves',
+    key: TAGS.HERO_GRAVES,
+    buttonClasses: 'border-yellow-100 text-yellow-100 hover:bg-yellow-100 hover:text-black focus:ring-yellow-100',
+    tagClasses: 'bg-yellow-100 text-black',
+  },
+  [TAGS.CAVES]: {
+    label: 'Caves',
+    key: TAGS.CAVES,
+    buttonClasses: 'border-stone-300 text-stone-300 hover:bg-stone-300 hover:text-black focus:ring-stone-300',
+    tagClasses: 'bg-stone-300 text-black',
+  },
   [TAGS.VOLCANO_MANOR_ASSASSINATION]: {
     label: 'Tanith',
     key: TAGS.VOLCANO_MANOR_ASSASSINATION,

@@ -4,6 +4,7 @@ interface TDeepChecklistItem {
   id: string;
   description: string;
   tags?: string[];
+  locationLink?: string;
 }
 
 export type TChecklistItem = TDeepChecklistItem & {

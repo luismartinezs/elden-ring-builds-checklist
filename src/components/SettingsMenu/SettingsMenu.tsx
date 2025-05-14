@@ -86,6 +86,9 @@ function FilterButtons() {
             <FilterButton filterTag={TAGS.LARVAL_TEAR} />
             <FilterButton filterTag={TAGS.RITUAL_POT} />
             <FilterButton filterTag={TAGS.TUNNELS} />
+            <FilterButton filterTag={TAGS.CATACOMBS} />
+            <FilterButton filterTag={TAGS.HERO_GRAVES} />
+            <FilterButton filterTag={TAGS.CAVES} />
           </div>
           <Divider />
           <div className="my-3 flex flex-wrap items-center gap-2 md:gap-1">

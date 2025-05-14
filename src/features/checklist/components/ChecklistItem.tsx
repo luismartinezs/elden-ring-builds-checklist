@@ -28,7 +28,11 @@ const ChecklistItem = ({
           onChange={() => onCheck(item.id)}
           label={item.description + " " + item?.tags?.join(", ")}
         />
-        <ChecklistLabel description={item.description} tags={item.tags} />
+        <ChecklistLabel
+          description={item.description}
+          tags={item.tags}
+          locationLink={item.locationLink}
+        />
         {hasNested && (
           <Toggler
             onClick={(evt) => {

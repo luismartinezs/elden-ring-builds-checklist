@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT, LEGENDARY_WEAPONS_ACH, LEGENDARY_WEAPONS, LEGENDARY_ASHES_ACH, LEGENDARY_SPELLS, LEGENDARY_TALISMANS, D_QUESTLINE, ROGIER_QUESTLINE, FIA_QUESTLINE } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT, LEGENDARY_WEAPONS_ACH, LEGENDARY_WEAPONS, LEGENDARY_ASHES_ACH, LEGENDARY_SPELLS, LEGENDARY_TALISMANS, D_QUESTLINE, ROGIER_QUESTLINE, FIA_QUESTLINE, CAVES, CATACOMBS, HERO_GRAVES } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -15,6 +15,11 @@ export const items = [
     id: '684b6a6d-5025-4839-9615-aea8c9b64b36',
     description: 'Buy crafting kit from Kale in the Church of Elleh',
     tags: []
+  },
+  {
+    id: '35059f10-32a0-4921-b5b8-0310c0089da9',
+    description: 'Highly recommended to buy a torch from Kale in the Church of Elleh',
+    tags: [OPTIONAL]
   },
   {
     id: '57d6459a-e986-4f97-b651-92af4c20c3fc',
@@ -72,6 +77,24 @@ export const items = [
     id: "d78e1f00-e938-485f-b4d4-41958cd1a7ad",
     description: "(optional) meet D in Roundtable Hold and show him the Deathroot",
     tags: [D_QUESTLINE]
+  },
+  {
+    id: "f68651a4-1a1d-4b48-9bdf-6a5733e6160d",
+    description: "Groveside Cave. Limgrave, just north from Church of Elleh.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164028",
+    tags: [CAVES]
+  },
+  {
+    id: "81b0398b-d70a-498a-a5cb-936e9ad032ba",
+    description: "Coastal Cave. Western Limgrave, on the southern portion of the western beach.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164031",
+    tags: [CAVES]
+  },
+  {
+    id: "2b28dfc8-4d6e-47b5-b277-755462fbb2b5",
+    description: "Stormfoot Catacombs. West Limgrave, due West and north from Church of Elleh.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164033",
+    tags: [CATACOMBS]
   },
   {
     id: "0a31a7cb-b53f-4bc7-9387-d298da1d9bf8",
@@ -140,9 +163,22 @@ export const items = [
     tags: [ALEXANDER_QUESTLINE]
   },
   {
+    id: "2b28dfc8-4d6e-47b5-b277-755462fbb2b5",
+    description: "Deathtouched Catacombs.  Stormhill, Limgrave. It can be reached by heading west from Saintsbridge.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164068",
+    tags: [CATACOMBS]
+  },
+  {
     id: '4bf628bc-957c-4dbf-bd29-b8f85870f488',
     description: 'Limgrave Tunnels, on the northern area of the Agheel Lake, just south from "Agheel Lake North" grace',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164025",
     tags: [TUNNELS]
+  },
+  {
+    id: "4c907163-15c9-4853-ba68-322097e5507a",
+    description: "Highroad Cave, at the far northside of Limgrave",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164070",
+    tags: [CAVES]
   },
   // WEEPING PENINSULA L20-30 +3
   {
@@ -177,13 +213,39 @@ export const items = [
   },
   {
     id: '73fcc602-563d-4ae9-bdc9-d363dd2ecaf0',
-    description: 'Morne Tunnel, in Weeping Peninsula. From the South of the Tower grace then head West and then South around the mountain. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=2318&lat=-214.054&lng=108.91&code=mapA" target="_blank">Location</a>',
+    description: 'Morne Tunnel, in Weeping Peninsula. From the South of the Tower grace then head West and then South around the mountain.',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164662",
     tags: [TUNNELS]
   },
   {
+    id: "f68651a4-1a1d-4b48-9bdf-6a5733e6160d",
+    description: "Earthbore Cave. In the north side of Weeping Peninsula, to the west and down the hill from the Lookout Tower.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=163967",
+    tags: [CAVES]
+  },
+  {
+    id: 'beb91cca-8f5f-48e5-af14-2de4acd380f2',
+    description: 'Tombsward Catacombs, found by moving directly south from the Church of Pilgrimage.',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=163989",
+    tags: [CATACOMBS]
+  },
+  {
     id: 'cc380636-9bd9-45ef-a590-e87c202acd53',
-    description: 'Lhutel the Headless: Dropped by the Cemetery Shade at the Tombsward Catacombs. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=163989" target="_blank">Location</a>',
+    description: 'Lhutel the Headless: Dropped by the Cemetery Shade at the Tombsward Catacombs.',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=163989",
     tags: [LEGENDARY_ASHES_ACH]
+  },
+  {
+    id: "6ee7e96d-b54a-4d0a-950a-94e2179b7a20",
+    description: "Impaler's Catacombs, in the north eastern side of Weeping Peninsula",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=163961",
+    tags: [CATACOMBS]
+  },
+  {
+    id: "f68651a4-1a1d-4b48-9bdf-6a5733e6160d",
+    description: "Tombsward Cave, south of the Weeping Evergaol.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165742",
+    tags: [CAVES]
   },
   {
     id: '8a19443f-919d-4ba9-891f-b88ad22ae163',
@@ -229,6 +291,7 @@ export const items = [
   {
     id: 'd5d366d3-ba31-4e74-8777-8f1bdf514c21',
     description: 'Approach Murkwater Cave, to be invaded by Bloody Finger Nerijus. Murkwater Cave is found north of Agheel Lake, up the river',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164022",
     tags: [YURA_QUESTLINE]
   },
   {
@@ -240,7 +303,8 @@ export const items = [
   {
     id: '3f7cc832-d965-4dd2-91bc-8288e505c113',
     description: 'Meet Patches at Murkwater Cave as a boss, and accept his surrender (in Limgrave. halfway through the Murkwater River)',
-    tags: [PATCHES_QUESTLINE]
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164022",
+    tags: [PATCHES_QUESTLINE, CAVES]
   },
   {
     id: 'a755ce58-3d0d-4866-823e-d764ab55d3ec',
@@ -251,6 +315,12 @@ export const items = [
     id: '0b78d8fe-7e46-4505-8918-9313a3ad59cd',
     description: "Talk to Patches, reload the game and talk to him again to enable his shop. Optionally buy Margit's Shackle",
     tags: [PATCHES_QUESTLINE]
+  },
+  {
+    id: "40a54f41-a851-4914-b3c5-f664b941bd9f",
+    description: "Murkwater Catacombs, by following the water north-east from Agheel Lake",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164019",
+    tags: [CATACOMBS]
   },
   // CAELID EARLY
 
@@ -669,6 +739,12 @@ export const items = [
     tags: [ROGIER_QUESTLINE]
   },
   // high level Limgrave
+  {
+    id: "bd4f38da-809c-4452-995b-0dadefea4bb5",
+    description:
+      "Fringefolk Hero's Grave, in Limgrave behind a fog wall in Stranded Graveyard that requires two Stonesword Keys",
+    tags: [HERO_GRAVES],
+  },
   {
     id: "e80a68b7-f557-434f-a969-ab03b206215a",
     description:

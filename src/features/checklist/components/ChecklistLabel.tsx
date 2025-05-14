@@ -3,9 +3,11 @@ import { Tag } from "~/features/tags";
 export const ChecklistLabel = ({
   description,
   tags = [],
+  locationLink,
 }: {
   description: string;
   tags?: string[];
+  locationLink?: string;
 }) => (
   <div>
     <span
@@ -22,5 +24,13 @@ export const ChecklistLabel = ({
       aria-hidden="true"
       dangerouslySetInnerHTML={{ __html: description }}
     ></span>
+    {locationLink && (
+      <>
+        {" "}
+        <a href={locationLink} target="_blank" rel="noopener noreferrer">
+          <span className="">Location</span>
+        </a>
+      </>
+    )}
   </div>
 );

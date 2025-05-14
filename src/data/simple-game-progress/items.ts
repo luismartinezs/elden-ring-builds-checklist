@@ -865,7 +865,6 @@ export const items = [
       }
     ]
   },
-
   {
     id: 'bd19aee2-3a7b-419e-9950-c5d2462483d8',
     description: 'Rest in any site of grace in Altus',
@@ -926,12 +925,31 @@ export const items = [
   {
     id: 'be83ba65-f7f1-4aa5-bf25-116dbbed9c9d',
     description: 'Dropped by Erdtree Burial Watchdog in Wyndham Catacombs, in Altus Plateau. At the top of the Wyndham Ruins, reachable north of Erdtree-Gazing Hill grace',
-    tags: [GLOVEWORT_BELL]
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167293",
+    tags: [GLOVEWORT_BELL, CATACOMBS]
   },
   {
     id: 'e373c6f2-0fb9-479a-a7c6-6de82814771c',
     description: 'Old Altus Tunnel, in central-west Altus Plateau, accessible with two Stonesword Keys. From the Erdtree-Gazing Hill Grace go down into the vallye north, and hug the left side. <a href="https://eldenring.wiki.fextralife.com/Interactive+Map?id=1196&lat=-91.171875&lng=78.604109&code=mapA" target="_blank">Location</a>',
     tags: [TUNNELS]
+  },
+  {
+    id: 'be83ba65-f7f1-4aa5-bf25-116dbbed9c9d',
+    description: 'Unsightly Catacombs. first traveling to the Perfumer\'s Ruins by heading west from the Abandoned Coffin site of grace.The entrance to the catacombs is found below the ruins, with the door attached to the cliff face in the southwest',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164404",
+    tags: [CATACOMBS]
+  },
+  {
+    id: "51a7fe87-3618-4951-8b6d-d422abb12947",
+    description: "Sage's Cave. heading northeast from the Abandoned Coffin site of grace, past a large cluster of Poison Flowers. Altus",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166679",
+    tags: [CAVES]
+  },
+  {
+    id: "51a7fe87-3618-4951-8b6d-d422abb12947",
+    description: "Perfumer's Grotto. north side of the great bridge heading east into the capital. Altus",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167589",
+    tags: [CAVES]
   },
   {
     id: "6fee411a-b7a6-416c-867f-cbb6b8874f66",
@@ -1141,6 +1159,12 @@ export const items = [
     tags: [GOLDEN_SEED],
   },
   {
+    id: "6309b263-ece6-47d0-aadc-559684bcd05c",
+    description: "Seethewater Cave, reach it by heading north through the ravine west of Wyndham Ruins. Mt. Gelmir. You'll need two Stonesword Keys to unlock the entrance.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166743",
+    tags: [CAVES]
+  },
+  {
     id: 'b9da8bb8-6125-41bc-bb4c-6143ffdd2a59',
     description: 'Talk to Alexander near the Seethewater Terminus Site of Grace at a lava lake behind a Magma Wyrm, south of Fort Laiedd in Mt. Gelmir. To reach Seethewater Terminus Grace, head north through the ravine west of Wyndham Ruins',
     tags: [ALEXANDER_QUESTLINE]
@@ -1317,6 +1341,19 @@ export const items = [
     tags: [RYA_QUESTLINE]
   },
   {
+    id: "bcc28a2b-7d0b-45be-b824-6f2470af8b2e",
+    description:
+      "Gelmir Hero's Grave. Found in Mt. Gelmir, high above the center of the region. heading northwest from the Bridge of Iniquity site of grace, climbing up the rope ladder to the First Mt. Gelmir Campsite site of grace and heading around west",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168144",
+    tags: [HERO_GRAVES],
+  },
+  {
+    id: "2ebcb0cd-822b-4409-9335-9892f0f80d59",
+    description: "Volcano Cave, reach this location by travelling to the Ninth Mt. Gelmir Campsite Site of Grace and passing the nearby bridge, then hugging the cliff as you travel along the pass north",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166784",
+    tags: [CAVES]
+  },
+  {
     id: 'a5318288-6ea7-49dd-bd82-1b59456cfc4b',
     description: "Defeat Godskin Noble in the Temple of Eiglay (Volcano Manor) to get the Serpent's Amnion. He is strong vs fire, holy and strike, and weak vs slash, bleed and sleep. Sleep pots are extremely effective to incapacitate him.",
     tags: [RYA_QUESTLINE]
@@ -1412,8 +1449,9 @@ export const items = [
   },
   {
     id: 'cee0d282-0f32-40ec-bb6e-a0752bc26e11',
-    description: 'Ancient Dragon Knight Kristoff: Can be found in Sainted Hero\'s Grave west of Leyndell, Royal Capital. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165891" target="_blank">Location</a>',
-    tags: [LEGENDARY_ASHES_ACH]
+    description: 'Ancient Dragon Knight Kristoff: Can be found in Sainted Hero\'s Grave west of Leyndell, Royal Capital.',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165891",
+    tags: [LEGENDARY_ASHES_ACH, HERO_GRAVES]
   },
   {
     id: '3e908ded-2825-48c2-b96b-93068276438d',
@@ -1469,7 +1507,15 @@ export const items = [
   {
     id: 'd65e33d5-3f25-4ded-b5cb-a2fa41928539',
     description: '2 in Auriza Side Tomb, just North-East of Leyndell: In a room with a giant Living Jar. To reach Auriza Side Tomb go down the moat and then north',
-    tags: [RITUAL_POT]
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165611",
+    tags: [RITUAL_POT, CATACOMBS]
+  },
+  {
+    id: "628a5834-730f-4b73-bc7c-15010bf3ae63",
+    description:
+      "Auriza Hero's Grave, found in the eastern section of the Capital Outskirts, reach this location by following the main path within the outskirt walls, all the way to the east",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165526",
+    tags: [HERO_GRAVES],
   },
   {
     id: 'c399c03e-adbf-4d14-b993-d207677089a8',
@@ -1803,7 +1849,7 @@ export const items = [
   },
   {
     id: 'aed334cf-8397-453c-87d5-16922af7c955',
-    description: 'Defeat Morgott, The Omen King, the interact with with the Erdtree to activate the Grace. Morgott is strong vs holy and sleep, and weak vs slash and lightning',
+    description: 'Defeat Morgott, The Omen King, the interact with the Erdtree to activate the Grace. Morgott is strong vs holy and sleep, and weak vs slash and lightning',
     tags: [NGPLUS]
   },
   {
@@ -1825,6 +1871,11 @@ export const items = [
     id: '508d9a63-1bfe-4883-b774-2a0e9052a1c4',
     description: 'Buy and Ancient Dragon Smithing Stone from Gostoc',
     tags: [NEPHELI_QUESTLINE]
+  },
+  {
+    id: '2067ef9b-bb4f-457f-bf79-a8e27cf3c0ae',
+    description: 'Leyndell Catacombs. accessed via the Subterranean Shunning-Grounds. From the Underground Roadside site of grace, head southeast into the large area with pipes beneath. Use the pipes to drop down to the very bottom and then head south to find a crack in the wall past the Giant Crayfish',
+    tags: [CATACOMBS]
   },
   // FORBIDDEN LANDS 110-120 +20-24
   {

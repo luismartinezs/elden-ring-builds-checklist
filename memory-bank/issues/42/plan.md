@@ -23,6 +23,7 @@
       Done: Updated `Footer.tsx` to use the new `DonateButton` component.
 - [x] the DonateButton label should be capitalized
       Done: Capitalized the label in `DonateButton.tsx` to "Donate".
-- [ ] Put the DonateButton under the "other links" section in the footer
+- [x] Put the DonateButton under the "other links" section in the footer
+      Done: Moved `DonateButton` to the "Other Links" section in `Footer.tsx`.
 - [-] Write or update tests
       Ensure the new donate button functionality is covered by appropriate tests, including link functionality and visibility.

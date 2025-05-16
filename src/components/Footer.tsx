@@ -75,6 +75,9 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <DonateButton />
+              </li>
             </ul>
           </div>
 
@@ -96,9 +99,6 @@ export function Footer() {
                   <Icon className="h-6 w-6" aria-hidden="true" />
                 </a>
               ))}
-            </div>
-            <div className="mt-4">
-              <DonateButton />
             </div>
           </div>
         </div>

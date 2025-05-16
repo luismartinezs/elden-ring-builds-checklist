@@ -1,7 +1,6 @@
 import { AiFillGithub } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
-import { Button } from "./Button";
 import { DonateButton } from "~/features/donate/DonateButton";
 
 // Placeholder links - update these as needed

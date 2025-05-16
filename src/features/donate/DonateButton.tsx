@@ -1,12 +1,17 @@
 import { Button } from "~/components/Button";
 
-export function DonateButton() {
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface DonateButtonProps {
+  // Future props can be added here
+}
+
+export function DonateButton({}: DonateButtonProps = {}) {
   const donationUrl = process.env.NEXT_PUBLIC_DONATION_URL;
 
   if (!donationUrl) {
-    // Optionally handle the case where the URL is not set,
-    // though env validation should catch this.
-    // console.warn("Donation URL is not set.");
+    if (process.env.NODE_ENV === "development") {
+      console.warn("Donation URL is not set.");
+    }
     return null;
   }
 

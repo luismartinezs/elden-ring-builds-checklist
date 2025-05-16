@@ -19,7 +19,8 @@
       Done: Created the `src/features/donate` directory.
 - [x] in the donate folder, create a new component called `DonateButton.tsx` (copy the component content from the current Footer.tsx)
       Done: Created `src/features/donate/DonateButton.tsx` with the donate button logic.
-- [ ] use this component in the Footer, replacing the existing donate button
+- [x] use this component in the Footer, replacing the existing donate button
+      Done: Updated `Footer.tsx` to use the new `DonateButton` component.
 - [ ] the DonateButton label should be capitalized
 - [ ] Put the DonateButton under the "other links" section in the footer
 - [-] Write or update tests

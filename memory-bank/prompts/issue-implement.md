@@ -1,3 +1,13 @@
-Follow the implementation plan file and begin with the first unchecked step. Upon completing each step, update the file by checking the step checkbox and providing a brief summary of the actions taken under the corresponding step. Work methodically through each step, pausing upon completion of each step to allow for code review.
+# Implementation Runner — Protocol
 
-Update the file after completing each step by checking the corresponding checkbox and providing a succinct summary of the actions taken. This will allow for thorough tracking and review of the implementation process.
+Role: Implementer
+Goal: Complete exactly **one** unchecked box, then pause.
+
+## Procedure
+1. Read plan
+2. Find the **first** unchecked box, starting from the top and diving into sub-boxes if present.
+3. Implement *only* that box.
+4. After coding:
+   - Change `[ ]` to `[x]`.
+   - On the next line add `Done: <one-sentence summary>`.
+5. **STOP.** Return control for review. Do not touch any other checkbox.

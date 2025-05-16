@@ -1,38 +1,15 @@
-# Add Tips Widget (Donate Button)
+### Add Tips Widget (Donate Button)
 
-## User story description
-As a project maintainer, I want to add a "donate" button to the application's footer so that users can easily find a way to support the project financially.
-
-## User story completion requirements
-- A "donate" button is present in the footer of all pages.
-- The button uses the project's primary color scheme.
-- Clicking the button opens a configurable donation link in a new tab.
-- The donation link is configurable via an environment variable.
-- The new environment variable is documented.
-
-## Tasks
-- [ ] **Configure Environment Variable for Donation Link**
-    - [ ] Define a new client-side environment variable `NEXT_PUBLIC_DONATION_URL` in `src/env.mjs`.
-        - [ ] Add `NEXT_PUBLIC_DONATION_URL: z.string().url()` to the `client` schema.
-        - [ ] Add `NEXT_PUBLIC_DONATION_URL: process.env.NEXT_PUBLIC_DONATION_URL` to `runtimeEnv`.
-    - [ ] Add `NEXT_PUBLIC_DONATION_URL` to the `.env.example` file with a placeholder URL.
-    - [ ] Document the new environment variable in the project README or relevant documentation.
-    - **Testing:**
-        - [ ] Verify that the application builds successfully after changes to `src/env.mjs`.
-        - [ ] Check that the environment variable can be set in a local `.env` file and is accessible in the application.
-
-- [ ] **Implement Donate Button in Footer**
-    - [ ] Import the `Button` component in `src/components/Footer.tsx`.
-    - [ ] Add an anchor (`<a>`) tag in `src/components/Footer.tsx` that wraps the `Button` component.
-        - [ ] Set the `href` attribute of the anchor tag to `process.env.NEXT_PUBLIC_DONATION_URL`.
-        - [ ] Set the `target` attribute to `_blank` to open the link in a new tab.
-        - [ ] Set the `rel` attribute to `noopener noreferrer` for security.
-    - [ ] Use the `Button` component with `variant="primary"` and text "donate".
-        - Example: `<Button variant="primary">donate</Button>`
-    - [ ] Style the button's placement within the footer for visibility and aesthetics, potentially in a new column or section.
-    - **Testing:**
-        - [ ] Verify the "donate" button is visible in the footer on multiple pages.
-        - [ ] Check that the button uses the primary color scheme.
-        - [ ] Click the button and confirm it opens the URL specified in `NEXT_PUBLIC_DONATION_URL` in a new tab.
-        - [ ] Test with a placeholder URL and then with a real donation link if available.
-        - [ ] Ensure the button is responsive and looks good on different screen sizes.
+- [x] **Define Environment Variable for Donation Link**
+      Done: Added NEXT_PUBLIC_DONATION_URL to src/env.mjs for client-side validation and runtime access.
+      Add `NEXT_PUBLIC_DONATION_URL` to `src/env.mjs` for validation and to `runtimeEnv`. This makes the Stripe donation link configurable.
+- [ ] **Update Example Environment File**
+      Add `NEXT_PUBLIC_DONATION_URL` to `.env.example` with a placeholder value to guide users.
+- [ ] **Add Donate Button to Footer Component**
+      Modify `src/components/Footer.tsx` to include an `<a>` tag wrapping the `Button` component. The `href` will use `process.env.NEXT_PUBLIC_DONATION_URL`, and the button will have `variant="primary"` and text "donate". Ensure it opens in a new tab.
+- [ ] **Style Donate Button Placement in Footer**
+      Adjust styling in `src/components/Footer.tsx` if necessary to ensure the donate button is well-placed and visually distinct within the footer, possibly in a new column or section.
+- [ ] **Update Project README**
+      Add documentation for the new `NEXT_PUBLIC_DONATION_URL` environment variable in the project's README file.
+- [-] Write or update tests
+      Ensure the new donate button functionality is covered by appropriate tests, including link functionality and visibility.

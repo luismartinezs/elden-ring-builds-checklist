@@ -3,7 +3,8 @@
 - [x] **Define Environment Variable for Donation Link**
       Done: Added NEXT_PUBLIC_DONATION_URL to src/env.mjs for client-side validation and runtime access.
       Add `NEXT_PUBLIC_DONATION_URL` to `src/env.mjs` for validation and to `runtimeEnv`. This makes the Stripe donation link configurable.
-- [ ] **Update Example Environment File**
+- [x] **Update Example Environment File**
+      Done: Added NEXT_PUBLIC_DONATION_URL to .env.example.
       Add `NEXT_PUBLIC_DONATION_URL` to `.env.example` with a placeholder value to guide users.
 - [ ] **Add Donate Button to Footer Component**
       Modify `src/components/Footer.tsx` to include an `<a>` tag wrapping the `Button` component. The `href` will use `process.env.NEXT_PUBLIC_DONATION_URL`, and the button will have `variant="primary"` and text "donate". Ensure it opens in a new tab.

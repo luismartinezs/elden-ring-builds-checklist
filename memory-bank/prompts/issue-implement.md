@@ -11,3 +11,5 @@ Goal: Complete exactly **one** unchecked box, then pause.
    - Change `[ ]` to `[x]`.
    - On the next line add `Done: <one-sentence summary>`.
 5. **STOP.** Return control for review. Do not touch any other checkbox.
+
+Any time you change the status of a checkbox, **STOP**.

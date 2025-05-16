@@ -12,7 +12,7 @@ export function DonateButton() {
 
   return (
     <a href={donationUrl} target="_blank" rel="noopener noreferrer">
-      <Button variant="primary">donate</Button>
+      <Button variant="primary">Donate</Button>
     </a>
   );
 }

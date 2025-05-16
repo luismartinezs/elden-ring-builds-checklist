@@ -1,7 +1,0 @@
-- [ ] Create a reusable React component (e.g., StatInfoCard) that takes the stat name, caps data, and recommendations as props, as well as any other needed props
-- [ ] use Card components to wrap each stat, each card has a subtle low opacity background of a different color, e.g Vigor = red, Mind = blue, etc
-- [ ] Use a grid or flexbox layout for responsiveness
-- [ ] use light labels followed by bold values for the caps
-- [ ] Add a recommendations subsection, whose content is more subtle than the rest
-- [ ] Make the cap numbers stand out more
-- [ ] Do not use bullets for the lists, it looks bad

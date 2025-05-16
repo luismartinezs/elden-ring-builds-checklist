@@ -3,7 +3,7 @@ description: Project structure rules
 globs:
 alwaysApply: false
 ---
-# Project Structure Rules
+# Project Structure
 
 ## Next.js Application Structure
    - The project follows Next.js conventions with a `src` directory containing the main application code

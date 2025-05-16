@@ -1,6 +1,7 @@
 import { AiFillGithub } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
+import { DonateButton } from "~/features/donate/DonateButton";
 
 // Placeholder links - update these as needed
 const mainLinks = [
@@ -73,6 +74,9 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <DonateButton />
+              </li>
             </ul>
           </div>
 

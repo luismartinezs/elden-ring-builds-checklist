@@ -15,7 +15,8 @@
 - [x] **Update Project README**
       Done: Verified that NEXT_PUBLIC_DONATION_URL is already documented in README.md.
       Add documentation for the new `NEXT_PUBLIC_DONATION_URL` environment variable in the project's README file.
-- [ ] Create a new donate folder under src/features
+- [x] Create a new donate folder under src/features
+      Done: Created the `src/features/donate` directory.
 - [ ] in the donate folder, create a new component called `DonateButton.tsx` (copy the component content from the current Footer.tsx)
 - [ ] use this component in the Footer, replacing the existing donate button
 - [ ] the DonateButton label should be capitalized

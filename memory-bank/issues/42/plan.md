@@ -6,7 +6,8 @@
 - [x] **Update Example Environment File**
       Done: Added NEXT_PUBLIC_DONATION_URL to .env.example.
       Add `NEXT_PUBLIC_DONATION_URL` to `.env.example` with a placeholder value to guide users.
-- [ ] **Add Donate Button to Footer Component**
+- [x] **Add Donate Button to Footer Component**
+      Done: Added donate button to Footer component.
       Modify `src/components/Footer.tsx` to include an `<a>` tag wrapping the `Button` component. The `href` will use `process.env.NEXT_PUBLIC_DONATION_URL`, and the button will have `variant="primary"` and text "donate". Ensure it opens in a new tab.
 - [ ] **Style Donate Button Placement in Footer**
       Adjust styling in `src/components/Footer.tsx` if necessary to ensure the donate button is well-placed and visually distinct within the footer, possibly in a new column or section.

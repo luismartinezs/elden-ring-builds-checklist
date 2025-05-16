@@ -1,6 +1,7 @@
 import { AiFillGithub } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
+import { Button } from "./Button";
 
 // Placeholder links - update these as needed
 const mainLinks = [
@@ -73,6 +74,16 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <a
+                  href={process.env.NEXT_PUBLIC_DONATION_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm leading-6 text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-white"
+                >
+                  <Button variant="primary">donate</Button>
+                </a>
+              </li>
             </ul>
           </div>
 

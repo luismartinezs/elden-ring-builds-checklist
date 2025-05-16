@@ -9,7 +9,8 @@
 - [x] **Add Donate Button to Footer Component**
       Done: Added donate button to Footer component.
       Modify `src/components/Footer.tsx` to include an `<a>` tag wrapping the `Button` component. The `href` will use `process.env.NEXT_PUBLIC_DONATION_URL`, and the button will have `variant="primary"` and text "donate". Ensure it opens in a new tab.
-- [ ] **Style Donate Button Placement in Footer**
+- [x] **Style Donate Button Placement in Footer**
+      Done: Moved donate button to the social column in the footer for better visibility.
       Adjust styling in `src/components/Footer.tsx` if necessary to ensure the donate button is well-placed and visually distinct within the footer, possibly in a new column or section.
 - [ ] **Update Project README**
       Add documentation for the new `NEXT_PUBLIC_DONATION_URL` environment variable in the project's README file.

@@ -74,16 +74,6 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-              <li>
-                <a
-                  href={process.env.NEXT_PUBLIC_DONATION_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm leading-6 text-stone-600 hover:text-stone-900 dark:text-stone-400 dark:hover:text-white"
-                >
-                  <Button variant="primary">donate</Button>
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -105,6 +95,15 @@ export function Footer() {
                   <Icon className="h-6 w-6" aria-hidden="true" />
                 </a>
               ))}
+            </div>
+            <div className="mt-4">
+              <a
+                href={process.env.NEXT_PUBLIC_DONATION_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="primary">donate</Button>
+              </a>
             </div>
           </div>
         </div>

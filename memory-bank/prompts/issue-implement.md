@@ -1,0 +1,3 @@
+Follow the implementation plan file and begin with the first unchecked step. Upon completing each step, update the file by checking the step checkbox and providing a brief summary of the actions taken under the corresponding step. Work methodically through each step, pausing upon completion of each step to allow for code review.
+
+Update the file after completing each step by checking the corresponding checkbox and providing a succinct summary of the actions taken. This will allow for thorough tracking and review of the implementation process.

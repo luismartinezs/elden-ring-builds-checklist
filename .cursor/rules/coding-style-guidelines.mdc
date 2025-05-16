@@ -21,8 +21,6 @@ alwaysApply: false
    - React 18 with Next.js 13
    - TailwindCSS for styling
    - React Query (@tanstack/react-query) for data fetching
-   - Uses tRPC for type-safe API calls
-   - Next-Auth for authentication
 
 ## Testing and Quality
    - ESLint is used for code quality checks

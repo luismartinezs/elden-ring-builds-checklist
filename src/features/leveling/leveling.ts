@@ -9,7 +9,7 @@
 ----------------------------------------------------------------*/
 
 import { getPreferredOrder } from "~/utils/array-utils";
-import { type TStatKey, vgr, mnd, end, str, dex, int, fai, arc, TUtilStatKey, TAtkStatKey } from "../stats/stats";
+import { type TStatKey, vgr, mnd, end, str, dex, int, fai, arc, type TUtilStatKey, type TAtkStatKey } from "../stats/stats";
 
 /**
  *

@@ -20,6 +20,5 @@ alwaysApply: false
    - Each feature should be self-contained with its own components, hooks, and utilities
 
 ## Data Management
-   - The project has some mockup prisma ORM files, but does not use a database
    - Environment variables are managed through `env.mjs` using `@t3-oss/env-nextjs`
    - API routes are located in `src/pages/api`

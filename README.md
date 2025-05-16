@@ -96,13 +96,6 @@ Some legendary items contribute to an achievement, others do not:
 
 To run this project, you will need to add the following environment variables to your `.env` file:
 
-* `DATABASE_URL`: The connection string for your Prisma database.
-* `NEXTAUTH_URL`: The URL of your NextAuth instance.
 * `NEXT_PUBLIC_DONATION_URL`: The URL for the donation button.
-
-### Optional Variables
-* `NEXTAUTH_SECRET`: A secret key for NextAuth. You can generate one using `openssl rand -base64 32`.
-* `DISCORD_CLIENT_ID`: The client ID for your Discord OAuth application (if using Discord authentication).
-* `DISCORD_CLIENT_SECRET`: The client secret for your Discord OAuth application (if using Discord authentication).
 
 An example `.env.example` file is provided.

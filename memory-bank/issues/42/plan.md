@@ -12,7 +12,13 @@
 - [x] **Style Donate Button Placement in Footer**
       Done: Moved donate button to the social column in the footer for better visibility.
       Adjust styling in `src/components/Footer.tsx` if necessary to ensure the donate button is well-placed and visually distinct within the footer, possibly in a new column or section.
-- [ ] **Update Project README**
+- [x] **Update Project README**
+      Done: Verified that NEXT_PUBLIC_DONATION_URL is already documented in README.md.
       Add documentation for the new `NEXT_PUBLIC_DONATION_URL` environment variable in the project's README file.
+- [ ] Create a new donate folder under src/features
+- [ ] in the donate folder, create a new component called `DonateButton.tsx` (copy the component content from the current Footer.tsx)
+- [ ] use this component in the Footer, replacing the existing donate button
+- [ ] the DonateButton label should be capitalized
+- [ ] Put the DonateButton under the "other links" section in the footer
 - [-] Write or update tests
       Ensure the new donate button functionality is covered by appropriate tests, including link functionality and visibility.

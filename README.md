@@ -99,3 +99,5 @@ To run this project, you will need to add the following environment variables to
 * `NEXT_PUBLIC_DONATION_URL`: The URL for the donation button.
 
 An example `.env.example` file is provided.
+
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/luismartinezs/elden-ring-builds-checklist?utm_source=oss&utm_medium=github&utm_campaign=luismartinezs%2Felden-ring-builds-checklist&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)

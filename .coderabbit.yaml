@@ -1,58 +1,50 @@
-# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
-language: "en-US"
-
-# ── GLOBAL INSTRUCTIONS ───────────────────────────────────────────────
-instructions: |
-  • All source lives in `src/**`.  Warn if code appears elsewhere.
-  • Never commit secrets; env-vars are typed in `src/env.mjs` and stored in `.env.local`.
-  • No default exports except static data files in `src/data/`.
-  • No barrel / index re-export files; import from the module directly.
-  • Size limits: files ≤300 lines, functions ≤30 lines, React components ≤50 lines (excluding trivial JSX).
-  • New or changed code must be covered by colocated tests (`*.test.ts*` in same dir).  Flag if none touched.
-  • Slugs are kebab-case; checklist IDs are UUID v4.
-  • Warn on any global CSS; rely on Tailwind utilities instead.
-
-# ── FILE-SPECIFIC RULES ───────────────────────────────────────────────
-file_path_instructions:
-  # TypeScript / JavaScript / React
-  - path: "**/*.{ts,tsx,js,jsx}"
-    instructions: |
-      • Use named exports only.  Exception: default export allowed in `src/data/**`.
-      • Functions with >2 logical params must take a single options object.
-      • All components are functional; class components or legacy lifecycle methods are forbidden.
-      • Custom hooks live in `src/hooks/`; reusable UI lives in `src/components/ui/`.
-      • Type/interface names are prefixed with “T” (`TUser`, `TItemProps`) and use PascalCase.
-      • Generic type parameters must be descriptive (`TItem`, `TId`) — never single letters.
-      • Prefix intentionally unused vars or args with “_”.
-      • Enforce the path alias `~/` rather than relative hell (`../../`).
-
-  # Tailwind usage lives inside TS/TSX, but detect any standalone CSS/LESS
-  - path: "**/*.{css,less,sass,scss}"
-    instructions: |
-      • Avoid standalone style-sheets.  If present, ensure they contain only Tailwind @apply rules and no custom selectors.
-      • Prefer combined utilities (`size-4`) over `w-4 h-4`.
-
-  # Tests
-  - path: "**/*.test.{ts,tsx}"
-    instructions: |
-      • Test file must live beside its subject file (same folder).
-      • Keep test titles descriptive; one “describe” block per subject.
-
-# ── NOISE-REDUCTION FILTERS ───────────────────────────────────────────
-path_filters:
-  - "!node_modules/**"
-  - "!.next/**"
-  - "!dist/**"
-  - "!public/**"
-  - "!**/*.min.js"
-  - "!**/*.lock"
-
-# ── REVIEW BEHAVIOUR ──────────────────────────────────────────────────
+language: en-US
+tone_instructions: 'You are an expert code reviewer in TypeScript, JavaScript, and NodeJS. You work in an enterprise software developer team, providing concise and clear code review advice. You only elaborate or provide detailed explanations when requested'
+early_access: true
+enable_free_tier: true
 reviews:
-  profile: "assertive"
-  request_changes_workflow: true
+  profile: assertive
+  request_changes_workflow: false
   high_level_summary: true
+  review_status: true
   poem: false
+  auto_apply_labels: false
+  labeling_instructions:
+    - label: "pr:simple"
+      instructions: "Apply when the PR can be easily reviewed in less than 2 minutes, such as small bug fixes, documentation updates, or minor configuration changes"
   auto_review:
     enabled: true
     drafts: false
+    base_branches:
+      - "main"
+  path_filters:
+    - '!memory-bank/**'
+  path_instructions:
+    - path: "*"
+      instructions: |
+        • All source lives in `src/**`.  Warn if code appears elsewhere.
+        • Never commit secrets; env-vars are typed in `src/env.mjs` and stored in `.env.local`.
+        • No default exports except static data files in `src/data/`.
+        • No barrel / index re-export files; import from the module directly.
+        • Size limits: files ≤300 lines, functions ≤30 lines, React components ≤50 lines (excluding trivial JSX).
+        • New or changed code must be covered by colocated tests (`*.test.ts*` in same dir).  Flag if none touched.
+        • Slugs are kebab-case; checklist IDs are UUID v4.
+        • Warn on any global CSS; rely on Tailwind utilities instead.
+    - path: "**/*.{ts,tsx,js,jsx}"
+      instructions: |
+        • Use named exports only.  Exception: default export allowed in `src/data/**`.
+        • Functions with >2 logical params must take a single options object.
+        • All components are functional; class components or legacy lifecycle methods are forbidden.
+        • Custom hooks live in `src/hooks/`; reusable UI lives in `src/components/ui/`.
+        • Type/interface names are prefixed with "T" (`TUser`, `TItemProps`) and use PascalCase.
+        • Generic type parameters must be descriptive (`TItem`, `TId`) — never single letters.
+        • Prefix intentionally unused vars or args with "_".
+        • Enforce the path alias `~/` rather than relative hell (`../../`).
+    - path: "**/*.{css,less,sass,scss}"
+      instructions: |
+        • Avoid standalone style-sheets.  If present, ensure they contain only Tailwind @apply rules and no custom selectors.
+        • Prefer combined utilities (`size-4`) over `w-4 h-4`.
+    - path: "**/*.test.{ts,tsx}"
+      instructions: |
+        • Test file must live beside its subject file (same folder).
+        • Keep test titles descriptive; one "describe" block per subject.

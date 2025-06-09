@@ -17,6 +17,19 @@ interface ChangelogEntry {
 // Sample changelog data - replace with actual data source later
 const changelogData: ChangelogEntry[] = [
   {
+    date: "2025-06-09",
+    changes: [
+      {
+        description: (
+          <span>
+            Added new filters for Memory Stones to the{" "}
+            <Link href="/checklists/simple-game-progress">main checklist</Link>.
+          </span>
+        ),
+      },
+    ],
+  },
+  {
     date: "2025-05-14",
     changes: [
       {

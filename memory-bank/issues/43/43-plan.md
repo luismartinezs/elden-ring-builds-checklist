@@ -166,6 +166,6 @@ This plan adds the 8 Memory Stones to the checklist and provides a new filter in
 
 ### Update the announcements.ts file
 
-- [ ] **Add a new announcement**
+- [x] **Add a new announcement**
       To inform users about the new Memory Stones feature.
-      - [ ] In `src/data/announcements.ts`, add a new announcement.
+      - [x] In `src/data/announcements.ts`, add a new announcement.

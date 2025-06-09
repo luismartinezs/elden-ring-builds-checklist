@@ -45,7 +45,7 @@ This plan adds the 8 Memory Stones to the checklist and provides a new filter in
 
 - [ ] **Add 8 Memory Stone items to the checklist**
       To populate the checklist with all discoverable Memory Stones in game-progression order.
-      - [ ] In `src/data/simple-game-progress/items.ts`, add the Roundtable Hold Memory Stone.
+      - [x] In `src/data/simple-game-progress/items.ts`, add the Roundtable Hold Memory Stone.
         ```typescript
         // ... existing code ...
           {

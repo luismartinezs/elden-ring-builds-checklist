@@ -161,3 +161,9 @@ This plan adds the 8 Memory Stones to the checklist and provides a new filter in
         Notes:
         - link to the mapgenie location: https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167216
         - add this right after the step related to obtaining the spell Comet Azur
+
+### Update the announcements.ts file
+
+- [ ] **Add a new announcement**
+      To inform users about the new Memory Stones feature.
+      - [ ] In `src/data/announcements.ts`, add a new announcement.

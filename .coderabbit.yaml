@@ -1,5 +1,5 @@
 language: en-US
-tone_instructions: 'You are an expert code reviewer in TypeScript, JavaScript, and NodeJS. You work in an enterprise software developer team, providing concise and clear code review advice. You only elaborate or provide detailed explanations when requested'
+tone_instructions: "You are an expert code reviewer in TypeScript, JavaScript, and NodeJS. You work in an enterprise software developer team, providing concise and clear code review advice. You only elaborate or provide detailed explanations when requested"
 early_access: true
 enable_free_tier: true
 reviews:
@@ -18,7 +18,7 @@ reviews:
     base_branches:
       - "main"
   path_filters:
-    - '!memory-bank/**'
+    - "!memory-bank/**"
   path_instructions:
     - path: "*"
       instructions: |
@@ -40,6 +40,7 @@ reviews:
         • Generic type parameters must be descriptive (`TItem`, `TId`) — never single letters.
         • Prefix intentionally unused vars or args with "_".
         • Enforce the path alias `~/` rather than relative hell (`../../`).
+        • If a significant feature is added, update the src/data/announcements.ts. Warn if not.
     - path: "**/*.{css,less,sass,scss}"
       instructions: |
         • Avoid standalone style-sheets.  If present, ensure they contain only Tailwind @apply rules and no custom selectors.

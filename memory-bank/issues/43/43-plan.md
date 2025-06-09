@@ -149,12 +149,13 @@ This plan adds the 8 Memory Stones to the checklist and provides a new filter in
         ```
         Notes:
         - link to the mapgenie location: https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167023
-      - [ ] In `src/data/simple-game-progress/items.ts`, add the Mt. Gelmir Memory Stone.
+      - [x] In `src/data/simple-game-progress/items.ts`, add the Mt. Gelmir Memory Stone.
         ```typescript
         // ... existing code ...
           {
             id: 'f7e2d9c8-4b1d-4e9c-8a3d-9e6c4a8d7f9b',
             description: 'Defeat Demi-Human Queen Maggie in Mt. Gelmir to get a Memory Stone. She is located nearby the Primeval Sorcerer Azur grace in Mt. Gelmir. How to reach her: From the Seethewater Terminus Site of Grace, head counterclockwise along the plateau\'s western and southern edges past Hermit\'s Shack and to the Craftsman\'s Shack Site of Grace. Head northeast from there past Hermit Village',
+            locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167216",
             tags: [MEMORY_STONE]
           },
         // ... existing code ...

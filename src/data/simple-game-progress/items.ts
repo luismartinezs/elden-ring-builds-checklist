@@ -1263,6 +1263,12 @@ export const items = [
     tags: [SELLEN_QUESTLINE, LEGENDARY_SPELLS]
   },
   {
+    id: 'f7e2d9c8-4b1d-4e9c-8a3d-9e6c4a8d7f9b',
+    description: 'Defeat Demi-Human Queen Maggie in Mt. Gelmir to get a Memory Stone. She is located nearby the Primeval Sorcerer Azur grace in Mt. Gelmir. How to reach her: From the Seethewater Terminus Site of Grace, head counterclockwise along the plateau\'s western and southern edges past Hermit\'s Shack and to the Craftsman\'s Shack Site of Grace. Head northeast from there past Hermit Village',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167216",
+    tags: [MEMORY_STONE]
+  },
+  {
     id: '5ff38f33-2edd-43d5-bf3c-db0bbf61215d',
     description: 'Talk to Sellen at the Waypoint Ruins Cellar grace and select the "Let us journey together" dialogue option. You will receive the Sellian Sealbreaker key.',
     tags: [SELLEN_QUESTLINE]

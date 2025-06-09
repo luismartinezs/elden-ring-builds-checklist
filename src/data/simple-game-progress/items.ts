@@ -337,7 +337,12 @@ export const items = [
     tags: [CATACOMBS]
   },
   // CAELID EARLY
-
+  {
+    id: 'a9b8c7d6-5e3f-4d1e-9a7c-8f2d5e4a7c6d',
+    description: "Lenne's Rise (Caelid): Use the spirit spring to jump onto the balcony and get the Memory Stone from the chest inside.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167023",
+    tags: [MEMORY_STONE]
+  },
   {
     id: '3ebfbeb9-f5f8-42fc-957b-2a83ecf15d88',
     description: 'Get 50,000 runes from killing the sleeping dragon Greyoll in Dragonbarrow with bleed (Reduvia, Uchigatana, Flail, or Bloody slash ash of war)',

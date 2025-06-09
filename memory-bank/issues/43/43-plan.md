@@ -132,7 +132,7 @@ This plan adds the 8 Memory Stones to the checklist and provides a new filter in
         Notes:
         - link to the mapgenie location: https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167143
         - this step should be listed after all the first part of Ranni's quest, after the player went to talk to Ranni in her Rise. Right after any step that involves
-      - [ ] In `src/data/simple-game-progress/items.ts`, add the Lenne's Rise Memory Stone.
+      - [x] In `src/data/simple-game-progress/items.ts`, add the Lenne's Rise Memory Stone.
         ```typescript
         // ... existing code ...
           // CAELID EARLY
@@ -140,6 +140,7 @@ This plan adds the 8 Memory Stones to the checklist and provides a new filter in
           {
             id: 'a9b8c7d6-5e3f-4d1e-9a7c-8f2d5e4a7c6d',
             description: "Lenne's Rise (Caelid): Use the spirit spring to jump onto the balcony and get the Memory Stone from the chest inside.",
+            locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167023",
             tags: [MEMORY_STONE]
           },
           {

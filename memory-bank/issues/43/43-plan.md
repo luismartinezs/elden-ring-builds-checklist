@@ -14,9 +14,9 @@ This plan adds the 8 Memory Stones to the checklist and provides a new filter in
         // ... existing code ...
         ```
 
-- [ ] **Register the `MEMORY_STONE` tag object**
-      To define the label and styling for the Memory Stone filter button and item tags.
-      - [ ] In `src/features/tags/tags.ts`, add the tag definition for `MEMORY_STONE`.
+- [x] **Register the `MEMORY_STONE` tag object**
+      Done: Registered the `MEMORY_STONE` tag object with its label and styles.
+      - [x] In `src/features/tags/tags.ts`, add the tag definition for `MEMORY_STONE`.
         ```typescript
         // ... existing code ...
           [TAGS.MEMORY_STONE]: {

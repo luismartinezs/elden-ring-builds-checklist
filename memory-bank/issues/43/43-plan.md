@@ -29,9 +29,9 @@ This plan adds the 8 Memory Stones to the checklist and provides a new filter in
         ```
         Note: add right before the `// SOTE` comment
 
-- [ ] **Add the `MEMORY_STONE` filter button**
+- [x] **Add the `MEMORY_STONE` filter button**
       So users can toggle the visibility of Memory Stone items in the checklist.
-      - [ ] In `src/components/SettingsMenu/SettingsMenu.tsx`, insert a new `FilterButton` for the `MEMORY_STONE` tag.
+      - [x] In `src/components/SettingsMenu/SettingsMenu.tsx`, insert a new `FilterButton` for the `MEMORY_STONE` tag.
         ```tsx
         // ... existing code ...
                   <div className="my-3 flex flex-wrap items-center gap-2 md:gap-1">

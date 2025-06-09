@@ -1,27 +1,40 @@
 # Write implementation plan
-Write an implementation plan for the task provided. Break down the task into commit-size units
+Generate a **commit-sized checklist** that is detailed enough for a junior developer to implement without opening the outline again.
 
-## How to write the checklist
-1. Treat each **top-level checkbox** as a change that could fit in one Git commit:
-   - Touches one file *or* a tight cluster of 1-3 files.
-   - Adds or edits no more than ~15 lines of code per file (ignore this for verbose languages or heavy config files)
-2. If a step needs finer detail, nest **sub-checkboxes** under it (≤ 5 per parent).
-3. Each step should be small and clear enough for a junior developer to implement.
-4. Keep every box actionable: after checking it the diff should compile and tests should pass.
-5. End the list with
-   `- [ ] Write or update tests`.
+## 1. Granularity rules
+1. Every **top-level checkbox** must correspond to one Git commit:
+   - Touches either **one file** *or* a tight cluster of ≤ 3 related files.
+   - Adds/edits roughly ≤ 15 LOC per file (ignore for large config or data files).
+2. Add **sub-checkboxes** for fine detail:
+   - Spell out each specific insertion, deletion, or edit (e.g., “+ `MY_CONST` constant at line 45 of `constants.ts`”).
+   - Include any literal strings, labels, or UI text being added so the dev can copy-paste.
+3. Keep every box actionable: after ticking it, the codebase must compile and tests must pass.
 
-## Output format
+## 2. Context-retention rules
+- Quote *only* the necessary snippet of code or JSON being added/edited—avoid full files.
+
+## 3. Description rules
+- Begin with a **concise task title** (`### …`), then a 1-sentence summary.
+- Inside each checkbox, start with a strong verb (“Add”, “Insert”, “Create”, “Register”…).
+- After the verb, give a short *why* (“to enable filtering”, “so users can toggle visibility”).
+- Use simple, direct sentences; avoid fluff.
+
+## 4. Mandatory footer
+Finish with
+`- [ ] Write or update tests`
+(This must always be the last checkbox.)
+
+## 5. Output format
 ```md
-### {{Concise title of the task}}
+### <Concise title>
 
-{{concise description of task and deliverable}}
+<1-sentence summary>
 
-- [ ] **First narrow change**
-      Short phrase why it matters.
-- [ ] **Next narrow change**
+- [ ] **Top-level change**
+      Why it matters.
+      - [ ] Sub-change A with line/file reference and literal content
+      - [ ] Sub-change B …
+- [ ] **Next top-level change**
       …
 - [ ] Write or update tests
 ```
-
-Do not attempt to implement the plan, just write it down.

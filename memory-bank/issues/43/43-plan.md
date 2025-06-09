@@ -78,7 +78,7 @@ This plan adds the 8 Memory Stones to the checklist and provides a new filter in
         // ... existing code ...
         ```
         Note: link to the mapgenie location: https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164676
-      - [ ] In `src/data/simple-game-progress/items.ts`, add the Converted Tower Memory Stone.
+      - [x] In `src/data/simple-game-progress/items.ts`, add the Converted Tower Memory Stone.
         ```typescript
         // ... existing code ...
           {

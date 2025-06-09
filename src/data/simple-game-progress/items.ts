@@ -683,6 +683,12 @@ export const items = [
     tags: [OPTIONAL]
   },
   {
+    id: 'b5e8c1a4-3f7d-4b9e-8a1c-9e2c8a7d6f5b',
+    description: "Converted Tower (Liurnia of the Lakes): Obtain the Memory Stone by using the 'Erudition' gesture in front of the statue. You can get the gesture from Thops after giving him an Academy Glintstone Key. Thops is located in the Church of Irith. To get an additional Academy Glintstone Key, you have to parkour the ceilings in Raya Lucaria until reaching the top area of the church of the Cuckoo. It is also possible to skip the quest and enter the tower by jumping on the right side of the tower with Torrent.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166183",
+    tags: [MEMORY_STONE]
+  },
+  {
     id: 'd7a3f9a6-f5d8-4c2e-85fc-102a3bdeb792',
     description: "Beat Rennala. Or, just for game progression (excluding quests), beat any one of the other remaining Shardbearers that you didn't defeat yet: Godrick, Radahn, or Rykard. Rennala is very strong vs magic, strong vs all status effects, and weak vs standard, slash and pierce",
     tags: [ALWAYS_SHOW, NGPLUS, SELLEN_QUESTLINE]
@@ -2685,5 +2691,5 @@ export const items = [
     id: "48e9bfbf-7187-4fdd-9608-a43db1879fe3",
     description: "If you plan to use a different build into NG+, respec with Rennala and make sure you have the equipment you need before going to New Game +",
     tags: [OPTIONAL, NGPLUS]
-  }
+  },
 ]

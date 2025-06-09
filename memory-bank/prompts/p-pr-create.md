@@ -1,0 +1,1 @@
+Create a PR draft on github for the current branch to merge to the main branch of the upstream repo. Use the currently checked out git branch as PR title, leave the body empty, then after the PR is created, output the PR URL

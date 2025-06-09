@@ -653,8 +653,8 @@ export const items = [
   },
   {
     id: '054a08f7-70ba-4ede-a188-b3a286808cb5',
-    description: 'Beat Red Wolf of Radagon in Raya Lucaria and activate the Debate Parlor grace. It\'s strong vs magic, bleed and frost, and weak vs slash',
-    tags: [NGPLUS]
+    description: 'Beat Red Wolf of Radagon in Raya Lucaria and activate the Debate Parlor grace. It\'s strong vs magic, bleed and frost, and weak vs slash. The boss will drop a Memory Stone upon defeat.',
+    tags: [NGPLUS, MEMORY_STONE]
   },
   {
     id: 'e7d07e93-5789-41b7-a8bc-5742cc8437f1',

@@ -91,7 +91,7 @@ This plan adds the 8 Memory Stones to the checklist and provides a new filter in
         Notes:
         - this step should show up once the play can go inside Raya Lucaria Academy
         - link to the mapgenie location: https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166183
-      - [ ] In `src/data/simple-game-progress/items.ts`, add the Red Wolf of Radagon Memory Stone.
+      - [x] In `src/data/simple-game-progress/items.ts`, add the Red Wolf of Radagon Memory Stone.
         ```typescript
         // ... existing code ...
             description: 'Beat Red Wolf of Radagon in Raya Lucaria and activate the Debate Parlor grace. It\'s strong vs magic, bleed and frost, and weak vs slash. The boss will drop a Memory Stone upon defeat.',

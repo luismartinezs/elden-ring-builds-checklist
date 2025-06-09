@@ -62,7 +62,7 @@ This plan adds the 8 Memory Stones to the checklist and provides a new filter in
             id: 'fd2775db-5c31-41af-b4e2-b32a05d2a6f5',
         // ... existing code ...
         ```
-      - [ ] In `src/data/simple-game-progress/items.ts`, add the Oridys's Rise Memory Stone.
+      - [x] In `src/data/simple-game-progress/items.ts`, add the Oridys's Rise Memory Stone.
         ```typescript
         // ... existing code ...
             locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=163989",

@@ -205,6 +205,12 @@ export const items = [
     tags: [HYETTA_QUESTLINE]
   },
   {
+    id: 'a3d2e5b7-7c1f-4d9e-8b3a-5f8c1e2a3d4f',
+    description: "Oridys's Rise (Weeping Peninsula): Solve the three wise beasts puzzle to get a Memory Stone. The puzzle requires you to find and kill three spectral turtles.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164676",
+    tags: [MEMORY_STONE]
+  },
+  {
     id: '3f73105e-8ed4-4398-9f01-0f5552d2d969',
     description: 'Callu Baptismal Church, directly south of Ailing Village in Weeping Peninsula. Limgrave. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164844" target="_blank">Location</a>',
     tags: [SACRED_TEAR]

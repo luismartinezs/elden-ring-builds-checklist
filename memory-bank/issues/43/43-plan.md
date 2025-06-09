@@ -2,9 +2,9 @@
 
 This plan adds the 8 Memory Stones to the checklist and provides a new filter in the settings menu to toggle their visibility.
 
-- [ ] **Create `MEMORY_STONE` tag constant**
-      To provide a consistent key for identifying Memory Stone items and their corresponding filter.
-      - [ ] In `src/features/tags/constants.ts`, insert the `MEMORY_STONE` constant.
+- [x] **Create `MEMORY_STONE` tag constant**
+      Done: Added the `MEMORY_STONE` tag constant.
+      - [x] In `src/features/tags/constants.ts`, insert the `MEMORY_STONE` constant.
         ```typescript
         // ... existing code ...
           FIA_QUESTLINE: 'fia-questline',

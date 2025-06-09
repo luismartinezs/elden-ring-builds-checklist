@@ -593,7 +593,7 @@ export const items = [
   },
   {
     id: '0f198bb6-04cf-4f22-be36-15cb2e10fd95',
-    description: 'Defeat the Grafted Scion. Grafted Scions are strong vs magic, fire, lightning and holy, and weak to slash, bleed and frost. Receive a lot of damage from healing incantations',
+    description: 'Defeat the Grafted Scion. Grafted Scions are strong vs magic, fire, lightning and holy, and weak to slash, bleed and frost. They receive heavy damage from healing incantations',
     tags: [NEPHELI_QUESTLINE, VARRE_QUESTLINE]
   },
   {
@@ -636,6 +636,12 @@ export const items = [
     id: 'fd0bafb4-5adc-4add-a0da-4beca2f6c711',
     description: "2 in Jarburg, located in East Liurnia, down the cliffs just South of Carian Study Hall.",
     tags: [RITUAL_POT]
+  },
+  {
+    id: 'd9e8c7a6-5f1d-4e8c-9b5a-3f7d1e8a9c4b',
+    description: "Testu's Rise (Liurnia of the Lakes): Solve the three wise beasts puzzle to get a Memory Stone. The puzzle requires you to find and kill three spectral turtles. The tower is located in an island directly north of Raya Lucaria Academy.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167213",
+    tags: [MEMORY_STONE]
   },
 
   // RAYA LUCARIA L50-60 +4-6

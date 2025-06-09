@@ -101,7 +101,7 @@ This plan adds the 8 Memory Stones to the checklist and provides a new filter in
             id: 'e7d07e93-5789-41b7-a8bc-5742cc8437f1',
         // ... existing code ...
         ```
-      - [ ] In `src/data/simple-game-progress/items.ts`, add the Testu's Rise Memory Stone.
+      - [x] In `src/data/simple-game-progress/items.ts`, add the Testu's Rise Memory Stone.
         ```typescript
         // ... existing code ...
             locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164423",

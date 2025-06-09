@@ -779,6 +779,12 @@ export const items = [
     tags: [SELUVIS_QUESTLINE]
   },
   {
+    id: 'e1f3a9c8-7d5e-4c6b-8a9d-2e7c5a9d8f3a',
+    description: "Seluvis's Rise (Liurnia of the Lakes): Found in a chest at the top of Seluvis's Rise, in the Three Sisters area, accessible after Caria Manor.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167143",
+    tags: [MEMORY_STONE]
+  },
+  {
     id: 'c962fdce-6197-4bfa-b2d2-bf986444c117',
     description: 'After Caria Manor, go West of the Manor then head South. Along the cliffs on the East side, you can jump down, back into Caria manor. Sold by Pidia for 1500 runes. Liurnia',
     tags: [RITUAL_POT]

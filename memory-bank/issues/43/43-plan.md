@@ -119,7 +119,7 @@ This plan adds the 8 Memory Stones to the checklist and provides a new filter in
         Notes:
         - link to the mapgenie location: https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167213
         - this step can be easily done before raya lucaria academy, as one of the area errands in Liurnia. I think it would make sense to list it next (before or after) to the first item that references anything in northern Liurnia
-      - [ ] In `src/data/simple-game-progress/items.ts`, add the Seluvis's Rise Memory Stone.
+      - [x] In `src/data/simple-game-progress/items.ts`, add the Seluvis's Rise Memory Stone.
         ```typescript
         // ... existing code ...
           {

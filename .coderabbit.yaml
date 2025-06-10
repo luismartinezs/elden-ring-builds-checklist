@@ -31,7 +31,7 @@ reviews:
         • Warn on any global CSS; rely on Tailwind utilities instead.
     - path: "**/*.{ts,tsx,js,jsx}"
       instructions: |
-        • Use named exports only.  Exception: default export allowed in `src/data/**`.
+        • Use named exports only. Exceptions: default export allowed in `src/data/**`, Next.js pages (`src/pages/**`).
         • Functions with >2 logical params must take a single options object.
         • All components are functional; class components or legacy lifecycle methods are forbidden.
         • Custom hooks live in `src/hooks/`; reusable UI lives in `src/components/ui/`.

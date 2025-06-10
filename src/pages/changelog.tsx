@@ -5,19 +5,19 @@ import { Heading } from "~/components/Heading";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 
-interface Change {
+interface TChange {
   description: React.ReactNode;
 }
 
-interface ChangelogEntry {
+interface TChangelogEntry {
   date: string;
-  changes: Change[];
+  changes: TChange[];
 }
 
 // Sample changelog data - replace with actual data source later
-const changelogData: ChangelogEntry[] = [
+const changelogData: TChangelogEntry[] = [
   {
-    date: "2025-06-09",
+    date: "2025-06-10",
     changes: [
       {
         description: (

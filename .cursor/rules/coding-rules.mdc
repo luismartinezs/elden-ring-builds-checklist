@@ -1,0 +1,65 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# Coding Rules
+
+This document outlines the coding rules and conventions for this project.
+
+### Build & Scripts
+
+- Use `pnpm` as the package manager.
+- Run development server: `pnpm dev`
+- Run tests: `pnpm test`
+- Run tests in watch mode: `pnpm test:watch`
+- Build for production: `pnpm build`
+- Lint the codebase: `pnpm lint`
+
+### Tech Stack
+
+- **Framework**: Next.js 13
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: TanStack Query (React Query) for server state.
+- **API**: tRPC for typesafe APIs.
+- **Schema Validation**: Zod
+- **Testing**: Vitest
+
+### Style
+
+- Use the `cn` utility for conditional CSS classes.
+- Sort Tailwind CSS classes automatically with the Prettier plugin.
+- Use Immer for immutable state updates in complex state objects.
+- Use Sonner for toast notifications.
+- Co-locate components, hooks, and types within the feature folder they belong to.
+
+### Naming
+
+- **Components**: PascalCase (e.g., `MyComponent.tsx`).
+- **Hooks**: camelCase with `use` prefix (e.g., `useMyHook.ts`).
+- **Types**: PascalCase for interfaces and types (e.g., `type MyType = { ... }`).
+- **Test files**: Suffix with `.test.ts` (e.g., `my-util.test.ts`).
+- **Other Files**: kebab-case for all other files.
+
+### Architecture
+
+- Follow a Feature-Sliced Design approach.
+- Create new features in the `src/features` directory.
+- Place reusable components, hooks, and utils in `src/components`, `src/hooks`, and `src/utils` respectively.
+- Store global types in `src/types`.
+- Use the `~/*` path alias to import from the `src/` directory.
+
+### Testing
+
+- Write tests using Vitest.
+- Co-locate test files with the code they are testing.
+
+### Misc
+
+- Use `@t3-oss/env-nextjs` for environment variable validation.
+- The sitemap is automatically generated on post-build via `next-sitemap`.
+- The application is a Progressive Web App (PWA).
+- `console.log` statements are automatically removed from production builds.
+
+If a user instruction conflicts with any rule, obey the user.

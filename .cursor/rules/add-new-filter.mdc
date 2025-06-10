@@ -1,6 +1,7 @@
 ---
 description: This rule should be followed to add new filters
-globs: 
+globs:
+alwaysApply: false
 ---
 # Adding a new filter
 

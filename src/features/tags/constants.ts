@@ -43,6 +43,7 @@ export const TAGS = {
   D_QUESTLINE: 'd-questline',
   ROGIER_QUESTLINE: 'rogier-questline',
   FIA_QUESTLINE: 'fia-questline',
+  MEMORY_STONE: 'memory-stone',
   // SOTE
   LEDA: 'leda-questline',
   FREYJA: 'freyja-questline',

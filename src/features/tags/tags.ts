@@ -374,6 +374,12 @@ export const tags: TTags = {
     buttonClasses: 'border-emerald-500 text-emerald-500 hover:bg-emerald-500 hover:text-black focus:ring-emerald-500',
     tagClasses: 'bg-emerald-500 text-black',
   },
+  [TAGS.MEMORY_STONE]: {
+    label: 'Memory Stone',
+    key: TAGS.MEMORY_STONE,
+    buttonClasses: 'border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black focus:ring-blue-400',
+    tagClasses: 'bg-blue-400 text-black',
+  },
   // SOTE
   [TAGS.LEDA]: {
     label: 'Leda',

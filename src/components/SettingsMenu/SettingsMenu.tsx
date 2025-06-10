@@ -78,6 +78,7 @@ function FilterButtons() {
           <div className="my-3 flex flex-wrap items-center gap-2 md:gap-1">
             <FilterButton filterTag={TAGS.GOLDEN_SEED} />
             <FilterButton filterTag={TAGS.SACRED_TEAR} />
+            <FilterButton filterTag={TAGS.MEMORY_STONE} />
             <FilterButton filterTag={TAGS.SMITHING_STONE_BELL} />
             <FilterButton filterTag={TAGS.SOMBER_STONE_BELL} />
             <FilterButton filterTag={TAGS.GLOVEWORT_BELL} />

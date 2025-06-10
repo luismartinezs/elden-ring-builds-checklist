@@ -1,5 +1,5 @@
 language: en-US
-tone_instructions: 'You are an expert code reviewer in TypeScript, JavaScript, and NodeJS. You work in an enterprise software developer team, providing concise and clear code review advice. You only elaborate or provide detailed explanations when requested'
+tone_instructions: "You are an expert code reviewer in TypeScript, JavaScript, and NodeJS. You work in an enterprise software developer team, providing concise and clear code review advice. You only elaborate or provide detailed explanations when requested"
 early_access: true
 enable_free_tier: true
 reviews:
@@ -11,14 +11,13 @@ reviews:
   auto_apply_labels: false
   labeling_instructions:
     - label: "pr:simple"
-      instructions: "Apply when the PR can be easily reviewed in less than 2 minutes, such as small bug fixes, documentation updates, or minor configuration changes"
-  auto_review:
-    enabled: true
-    drafts: false
-    base_branches:
-      - "main"
-  path_filters:
-    - '!memory-bank/**'
+      instructions: "Apply when the PR can be easily reviewed in less than 2 minutes, having a tiny number of changes, trivial to understand and approve without much context"
+    - label: "pr:has-ui"
+      instructions: "Apply when the PR includes changes to the UI"
+    - label: "pr:breaking-change"
+      instructions: |
+        Apply when public API surface, DB schema, or major version is changed.
+        Trigger if `BREAKING CHANGE:` appears in commit body or title.
   path_instructions:
     - path: "*"
       instructions: |
@@ -32,7 +31,7 @@ reviews:
         • Warn on any global CSS; rely on Tailwind utilities instead.
     - path: "**/*.{ts,tsx,js,jsx}"
       instructions: |
-        • Use named exports only.  Exception: default export allowed in `src/data/**`.
+        • Use named exports only. Exceptions: default export allowed in `src/data/**`, Next.js pages (`src/pages/**`).
         • Functions with >2 logical params must take a single options object.
         • All components are functional; class components or legacy lifecycle methods are forbidden.
         • Custom hooks live in `src/hooks/`; reusable UI lives in `src/components/ui/`.
@@ -40,6 +39,7 @@ reviews:
         • Generic type parameters must be descriptive (`TItem`, `TId`) — never single letters.
         • Prefix intentionally unused vars or args with "_".
         • Enforce the path alias `~/` rather than relative hell (`../../`).
+        • If a significant feature is added, update the src/data/announcements.ts. Warn if not.
     - path: "**/*.{css,less,sass,scss}"
       instructions: |
         • Avoid standalone style-sheets.  If present, ensure they contain only Tailwind @apply rules and no custom selectors.
@@ -48,3 +48,10 @@ reviews:
       instructions: |
         • Test file must live beside its subject file (same folder).
         • Keep test titles descriptive; one "describe" block per subject.
+  path_filters:
+    - "!memory-bank/**"
+  auto_review:
+    enabled: true
+    drafts: false
+    base_branches:
+      - "main"

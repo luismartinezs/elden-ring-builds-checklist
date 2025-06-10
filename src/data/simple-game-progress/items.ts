@@ -1,6 +1,6 @@
 import { TAGS, EXTRA_TAGS } from '~/features/tags';
 
-const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT, LEGENDARY_WEAPONS_ACH, LEGENDARY_WEAPONS, LEGENDARY_ASHES_ACH, LEGENDARY_SPELLS, LEGENDARY_TALISMANS, D_QUESTLINE, ROGIER_QUESTLINE, FIA_QUESTLINE, CAVES, CATACOMBS, HERO_GRAVES } = TAGS
+const { ALL_REMEMBERANCES, NEPHELI_QUESTLINE, OPTIONAL, RANNI_QUESTLINE, VARRE_QUESTLINE, SMITHING_STONE_BELL, SOMBER_STONE_BELL, GLOVEWORT_BELL, GHOST_GLOVEWORT_BELL, SELUVIS_QUESTLINE, WHETBLADES, LATENNA_QUESTLINE, ALEXANDER_QUESTLINE, MILLICENT_QUESTLINE, VOLCANO_MANOR_ASSASSINATION, HYETTA_QUESTLINE, DUNG_EATER_QUESTLINE, SELLEN_QUESTLINE, PATCHES_QUESTLINE, YURA_QUESTLINE, CORHYN_QUESTLINE, RYA_QUESTLINE, TUNNELS, BOGGART_QUESTLINE, GOLDEN_SEED, SACRED_TEAR, LARVAL_TEAR, RITUAL_POT, LEGENDARY_WEAPONS_ACH, LEGENDARY_WEAPONS, LEGENDARY_ASHES_ACH, LEGENDARY_SPELLS, LEGENDARY_TALISMANS, D_QUESTLINE, ROGIER_QUESTLINE, FIA_QUESTLINE, CAVES, CATACOMBS, HERO_GRAVES, MEMORY_STONE } = TAGS
 const { NGPLUS, ALWAYS_SHOW } = EXTRA_TAGS
 
 /**
@@ -44,8 +44,14 @@ export const items = [
   },
   {
     id: '2ffa52b8-8b74-4111-a975-4da2c97d3c4c',
-    description: 'Let Magrit kill you to access Roundtable Hold',
+    description: 'Let Magrit kill you so that Melina teleports you to Roundtable Hold',
     tags: []
+  },
+  {
+    id: 'f9e6c4a8-5d2e-4e1c-8c7a-3b9e4a3d4f6b',
+    description:
+      'Purchase Memory Stone from Twin Maiden Husks in Roundtable Hold for 3,000 Runes.',
+    tags: [MEMORY_STONE]
   },
   {
     id: 'fd2775db-5c31-41af-b4e2-b32a05d2a6f5',
@@ -199,6 +205,12 @@ export const items = [
     tags: [HYETTA_QUESTLINE]
   },
   {
+    id: 'a3d2e5b7-7c1f-4d9e-8b3a-5f8c1e2a3d4f',
+    description: "Oridys's Rise (Weeping Peninsula): Solve the three wise beasts puzzle to get a Memory Stone. The puzzle requires you to find and kill three spectral turtles.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164676",
+    tags: [MEMORY_STONE]
+  },
+  {
     id: '3f73105e-8ed4-4398-9f01-0f5552d2d969',
     description: 'Callu Baptismal Church, directly south of Ailing Village in Weeping Peninsula. Limgrave. <a href="https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164844" target="_blank">Location</a>',
     tags: [SACRED_TEAR]
@@ -325,7 +337,12 @@ export const items = [
     tags: [CATACOMBS]
   },
   // CAELID EARLY
-
+  {
+    id: 'a9b8c7d6-5e3f-4d1e-9a7c-8f2d5e4a7c6d',
+    description: "Lenne's Rise (Caelid): Use the spirit spring to jump onto the balcony and get the Memory Stone from the chest inside. Easily reachable through the teleport directly north from Third Church of Marika, then from Bestial Sanctum going south east, sticking to the left side, then south.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167023",
+    tags: [MEMORY_STONE]
+  },
   {
     id: '3ebfbeb9-f5f8-42fc-957b-2a83ecf15d88',
     description: 'Get 50,000 runes from killing the sleeping dragon Greyoll in Dragonbarrow with bleed (Reduvia, Uchigatana, Flail, or Bloody slash ash of war)',
@@ -581,7 +598,7 @@ export const items = [
   },
   {
     id: '0f198bb6-04cf-4f22-be36-15cb2e10fd95',
-    description: 'Defeat the Grafted Scion. Grafted Scions are strong vs magic, fire, lightning and holy, and weak to slash, bleed and frost. Receive a lot of damage from healing incantations',
+    description: 'Defeat the Grafted Scion. Grafted Scions are strong vs magic, fire, lightning and holy, and weak to slash, bleed and frost. They receive heavy damage from healing incantations',
     tags: [NEPHELI_QUESTLINE, VARRE_QUESTLINE]
   },
   {
@@ -625,6 +642,12 @@ export const items = [
     description: "2 in Jarburg, located in East Liurnia, down the cliffs just South of Carian Study Hall.",
     tags: [RITUAL_POT]
   },
+  {
+    id: 'd9e8c7a6-5f1d-4e8c-9b5a-3f7d1e8a9c4b',
+    description: "Testu's Rise (Liurnia of the Lakes): Solve the three wise beasts puzzle to get a Memory Stone. The puzzle requires you to find and kill three spectral turtles. The tower is located in an island directly north of Raya Lucaria Academy.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167213",
+    tags: [MEMORY_STONE]
+  },
 
   // RAYA LUCARIA L50-60 +4-6
   {
@@ -641,8 +664,8 @@ export const items = [
   },
   {
     id: '054a08f7-70ba-4ede-a188-b3a286808cb5',
-    description: 'Beat Red Wolf of Radagon in Raya Lucaria and activate the Debate Parlor grace. It\'s strong vs magic, bleed and frost, and weak vs slash',
-    tags: [NGPLUS]
+    description: 'Beat Red Wolf of Radagon in Raya Lucaria and activate the Debate Parlor grace. It\'s strong vs magic, bleed and frost, and weak vs slash. The boss will drop a Memory Stone upon defeat.',
+    tags: [NGPLUS, MEMORY_STONE]
   },
   {
     id: 'e7d07e93-5789-41b7-a8bc-5742cc8437f1',
@@ -669,6 +692,12 @@ export const items = [
     id: 'cbcd93c6-4334-4301-ace4-be411f02f3ab',
     description: 'Go through the waygate after the stairs with the giant rolling balls after wolf of Radagon to reach Church of Vows, and get Flame, Cleanse Me incantation (12 FAI) at the fire monk camp southeast of Church of Vows',
     tags: [OPTIONAL]
+  },
+  {
+    id: 'b5e8c1a4-3f7d-4b9e-8a1c-9e2c8a7d6f5b',
+    description: "Converted Tower (Liurnia of the Lakes): Obtain the Memory Stone by using the 'Erudition' gesture in front of the statue. You can get the gesture from Thops after giving him an Academy Glintstone Key. Thops is located in the Church of Irith. To get an additional Academy Glintstone Key, you have to parkour the ceilings in Raya Lucaria until reaching the top area of the church of the Cuckoo. It is also possible to skip the quest and enter the tower by jumping on the right side of the tower with Torrent.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166183",
+    tags: [MEMORY_STONE]
   },
   {
     id: 'd7a3f9a6-f5d8-4c2e-85fc-102a3bdeb792',
@@ -753,6 +782,12 @@ export const items = [
     id: 'b7931f96-7e09-40bb-87dc-468c1c01ccbb',
     description: "Talk to Seluvis in Seluvis's Rise to get Seluvis's Potion (beware that giving this item to certain NPCs can lock you out of their quests)",
     tags: [SELUVIS_QUESTLINE]
+  },
+  {
+    id: 'e1f3a9c8-7d5e-4c6b-8a9d-2e7c5a9d8f3a',
+    description: "Seluvis's Rise (Liurnia of the Lakes): Found in a chest at the top of Seluvis's Rise, in the Three Sisters area, accessible after Caria Manor.",
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167143",
+    tags: [MEMORY_STONE]
   },
   {
     id: 'c962fdce-6197-4bfa-b2d2-bf986444c117',
@@ -1226,6 +1261,12 @@ export const items = [
     id: 'de07597b-b541-4932-8378-226d7fa57d58',
     description: "Get the Comet Azur spell at the Primeval Sorcerer Azur grace. Reachable from Altus Plateau: start at Altus Plateau or Erdtree-Gazing Hill grace, go north through Wyndham Ruins and find Seethewater River grace. From that grace it's a long straight path around Mt. Gelmir. At the very end you will find Primeval Sorcerer Azur",
     tags: [SELLEN_QUESTLINE, LEGENDARY_SPELLS]
+  },
+  {
+    id: 'f7e2d9c8-4b1d-4e9c-8a3d-9e6c4a8d7f9b',
+    description: 'Defeat Demi-Human Queen Maggie in Mt. Gelmir to get a Memory Stone. She is located nearby the Primeval Sorcerer Azur grace in Mt. Gelmir. How to reach her: From the Seethewater Terminus Site of Grace, head counterclockwise along the plateau\'s western and southern edges past Hermit\'s Shack and to the Craftsman\'s Shack Site of Grace. Head northeast from there past Hermit Village',
+    locationLink: "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167216",
+    tags: [MEMORY_STONE]
   },
   {
     id: '5ff38f33-2edd-43d5-bf3c-db0bbf61215d',
@@ -2673,5 +2714,5 @@ export const items = [
     id: "48e9bfbf-7187-4fdd-9608-a43db1879fe3",
     description: "If you plan to use a different build into NG+, respec with Rennala and make sure you have the equipment you need before going to New Game +",
     tags: [OPTIONAL, NGPLUS]
-  }
+  },
 ]

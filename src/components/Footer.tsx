@@ -105,7 +105,7 @@ export function Footer() {
         {/* Bottom section */}
         <div className="mt-16 border-t border-stone-900/10 pt-8 sm:mt-20 lg:mt-24 dark:border-white/10">
           <p className="text-xs leading-5 text-stone-500 dark:text-stone-400">
-            &copy; 2024 Luis Martinez. All rights reserved.
+            &copy; 2024 AppForgeLabs LLC. All rights reserved.
           </p>
         </div>
       </div>

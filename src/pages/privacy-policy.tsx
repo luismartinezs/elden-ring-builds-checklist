@@ -147,13 +147,9 @@ function PrivacyPolicy() {
         </Paragraph>
 
         <Paragraph>
-          Luis Martinez Suarez
+          AppForgeLabs LLC
           <br />
-          Carrer Port Joan 12-16, Roses, Girona, Spain
-          <br />
-          Email: luismartinezwebdev@gmail.com
-          <br />
-          Phone: +34 613 054 554
+          Email: hello@appforgelabs.com
         </Paragraph>
       </SectionWrapper>
     </PageLayout>

@@ -87,7 +87,7 @@ const App: AppType = ({ Component, pageProps }) => {
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="theme-color" content="#000000" />
 
-        <meta name="author" content="Luis Martinez Suarez" />
+        <meta name="author" content="AppForgeLabs LLC" />
         <link rel="author" href="https://www.linkedin.com/in/luismarsu/" />
         <meta
           name="viewport"

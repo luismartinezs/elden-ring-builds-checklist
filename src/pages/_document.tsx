@@ -7,8 +7,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <Script src="https://unpkg.com/react-scan/dist/install-hook.global.js"
-        strategy="beforeInteractive"/>
+          <Script
+            src="https://unpkg.com/react-scan/dist/install-hook.global.js"
+            strategy="beforeInteractive"
+          />
           {process.env.NODE_ENV === "production" && (
             <>
               <script
@@ -23,6 +25,15 @@ class MyDocument extends Document {
               ></script>
             </>
           )}
+          {
+            // monetag verification
+            process.env.NODE_ENV === "production" && (
+              <meta
+                name="monetag"
+                content="45dc46a0d13b0f8a084f371db148960a"
+              ></meta>
+            )
+          }
         </Head>
         <body>
           <Main />

@@ -34,7 +34,7 @@ const config = {
   webpack: (config) => {
     config.plugins.push(ReactComponentName({}));
     return config;
-  }
+  },
 };
 
-export default withPWA(config)
+export default withPWA(config);

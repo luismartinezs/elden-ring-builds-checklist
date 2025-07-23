@@ -1,6 +1,5 @@
 import { Monitoring } from "react-scan/monitoring/next";
 import { type AppType } from "next/app";
-import Script from "next/script";
 import Head from "next/head";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import React from "react";
@@ -95,13 +94,6 @@ const App: AppType = ({ Component, pageProps }) => {
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
         />
       </Head>
-      {process.env.NODE_ENV === "production" && (
-        <Script
-          id="monetag-interstitial-script"
-          strategy="lazyOnload"
-          src="//groleegni.net/401/9612705"
-        />
-      )}
       <Component {...pageProps} />
       <Monitoring
         apiKey="RNmghIjWyjH-J6i48OIXKnVPA0sMsmUP" // Safe to expose publically

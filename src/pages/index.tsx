@@ -34,17 +34,23 @@ export default function Landing({
     <>
       <Head>
         <title>Elden Ring Checklists - Elden Hub</title>
-        <meta name="description" content="Checklists for the video game Elden Ring" />
+        <meta
+          name="description"
+          content="Checklists for the video game Elden Ring"
+        />
         <link
           rel="canonical"
           href="https://eldenhub.appforgelabs.com/"
           key="canonical"
         />
         {/* Google Site Verification */}
-        <meta name="google-site-verification" content="w-pLQz21PWiQX668ORYlEZfbAhUWK118uvyMA_9H5pI" />
+        <meta
+          name="google-site-verification"
+          content="w-pLQz21PWiQX668ORYlEZfbAhUWK118uvyMA_9H5pI"
+        />
       </Head>
       <PageLayout>
-        <div className="flex flex-col mb-16">
+        <div className="mb-16 flex flex-col">
           <HeroSection />
           <FeatureSection />
 
@@ -85,7 +91,7 @@ export default function Landing({
             link={
               <Link
                 href="/checklists/ranni"
-                className="fancy-gradient-secondary mt-2 inline-block rounded-lg bg-gradient-to-br px-4 py-4 font-bold text-black focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-1 focus:ring-offset-stone-900 sm:mb-2 sm:mr-2 sm:px-5 sm:py-2.5 sm:focus:ring-4 sm:focus:ring-offset-2 uppercase"
+                className="fancy-gradient-secondary mt-2 inline-block rounded-lg bg-gradient-to-br px-4 py-4 font-bold uppercase text-black focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-1 focus:ring-offset-stone-900 sm:mb-2 sm:mr-2 sm:px-5 sm:py-2.5 sm:focus:ring-4 sm:focus:ring-offset-2"
               >
                 Start Ranni Playthrough
               </Link>

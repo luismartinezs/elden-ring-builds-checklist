@@ -25,15 +25,22 @@ class MyDocument extends Document {
               ></script>
             </>
           )}
-          {
-            // monetag verification
-            process.env.NODE_ENV === "production" && (
+          {process.env.NODE_ENV === "production" && (
+            <>
+              {/* monetag verification */}
               <meta
                 name="monetag"
                 content="45dc46a0d13b0f8a084f371db148960a"
               ></meta>
-            )
-          }
+              {/* monetag in page push */}
+              {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+              <script
+                src="/monetag-inpagepush.js"
+                data-cfasync="false"
+                type="text/javascript"
+              />
+            </>
+          )}
         </Head>
         <body>
           <Main />

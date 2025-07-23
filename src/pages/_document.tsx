@@ -18,12 +18,11 @@ class MyDocument extends Document {
                 src="https://cloud.umami.is/script.js"
                 data-website-id="e4f0541a-4d50-44ac-b9f3-b81b078dade9"
               ></script>
-              {/* no google ads */}
-              {/* <script
+              <script
                 async
                 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6379293593579449"
                 crossOrigin="anonymous"
-              ></script> */}
+              ></script>
             </>
           )}
         </Head>

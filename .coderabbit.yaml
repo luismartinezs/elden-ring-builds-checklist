@@ -49,7 +49,7 @@ reviews:
         • Test file must live beside its subject file (same folder).
         • Keep test titles descriptive; one "describe" block per subject.
   path_filters:
-    - "!memory-bank/**"
+    - "!context/**"
   auto_review:
     enabled: true
     drafts: false

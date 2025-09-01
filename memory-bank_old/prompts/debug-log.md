@@ -1,1 +1,0 @@
-Insert logs in strategic locations within the codebase to identify the root cause of the bug. Use a consistent, unique marker (e.g., console.log('DEBUG_ISSUE_NUMBER: ', 'specific debug message');) for each log to ensure they are easily identifiable and removable. Ensure logs are placed to effectively trace the issue without redundancy

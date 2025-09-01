@@ -6,7 +6,7 @@
 
 **Steps:**
 1. Analyze diff: Review the code changes (additions, deletions, modifications) from the provided diff of the pull request to understand the scope and purpose of the changes
-2. Retrieve task context: The task context is provided in the memory-bank/issues/[issue_number] folder (replace [issue_number] with the actual issue number I provided)
+2. Retrieve task context: The task context is provided in the context/issues/[issue_number] folder (replace [issue_number] with the actual issue number I provided)
 3. Review task context: Review the additional task context to identify the problem solved, requirements met, or feature added, and use this to inform the PR content
 4. Structure the PR: Follow the provided PR template EXACTLY to write the PR.
 

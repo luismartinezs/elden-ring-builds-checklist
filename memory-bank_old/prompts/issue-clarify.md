@@ -1,3 +1,0 @@
-Evaluate the initial clarity of a given task or issue on a scale from 0 to 100. If the initial clarity is below 95, ask questions to improve the clarity until it reaches 95 or higher. Along with each question, propose one good possible answer and one alternative answer. Ask all questions at once, and then wait for the user to respond before proceeding. Once the clarity reaches 95 or more, outline the task or issue accordingly.
-
-Your task is to provide a clear and well-defined outline of the task or issue, ensuring that it is easily understandable. Please ensure that your responses are flexible and allow for various relevant and creative scenarios.

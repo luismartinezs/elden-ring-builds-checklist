@@ -1,1 +1,0 @@
-Using the provided logs, determine the root cause of the reported bug and propose a specific, actionable fix

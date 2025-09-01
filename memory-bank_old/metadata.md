@@ -1,3 +1,0 @@
-- Repository URL (origin): https://github.com/luismartinezs/elden-ring-builds-checklist
-- Upstream repository URL: https://github.com/luismartinezs/elden-ring-builds-checklist
-- Main branch name: "main"

@@ -1,1 +1,0 @@
-Create a PR on github for the current branch, to the main branch. Use the current git branch as title, leave the body empty, then let me know the PR URL

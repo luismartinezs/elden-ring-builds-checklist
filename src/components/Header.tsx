@@ -28,6 +28,10 @@ const links = [
     mobileOnly: true,
   },
   {
+    label: "Challenges",
+    href: "/challenges",
+  },
+  {
     label: "Leveling Guide",
     href: "/leveling-guide",
   },

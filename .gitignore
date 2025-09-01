@@ -50,3 +50,6 @@ yarn-error.log*
 # Million Lint
 .million
 screenshots
+
+.codanna
+.fastembed_*

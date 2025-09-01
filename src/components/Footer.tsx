@@ -6,6 +6,7 @@ import { DonateButton } from "~/features/donate/DonateButton";
 // Placeholder links - update these as needed
 const mainLinks = [
   { label: "Checklists", href: "/checklists" },
+  { label: "Challenges", href: "/challenges" },
   { label: "NPC rewards", href: "/npc-questline-rewards" },
   { label: "Profile", href: "/profile" },
   { label: "Weapons", href: "/weapons" },

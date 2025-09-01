@@ -10,6 +10,7 @@ export const initAppData: AppData = {
   profiles: {
     "Default": {
       checklists: {},
+      challenges: {},
       // these filters are for the checklists
       filters: initFilters,
       stats: initStats,
@@ -41,7 +42,7 @@ export function useManageProfiles() {
     }
 
     setData(produce(data, draft => {
-      draft.profiles[profileName] = { checklists: {}, filters: initFilters, stats: initStats, weaponFilters: {}, statRequirements: {}, options: {} };
+      draft.profiles[profileName] = { checklists: {}, challenges: {}, filters: initFilters, stats: initStats, weaponFilters: {}, statRequirements: {}, options: {} };
       draft.currentProfile = profileName;
       return draft
     }))

@@ -43,8 +43,10 @@ export type Options = {
   maxFpFlask?: boolean
   isSpellcaster?: boolean
 }
+export type Challenges = Record<string, UUID[]>;
 export type Profile = {
   checklists: Checklist;
+  challenges: Challenges;
   filters: Filters;
   stats: StatsState;
   weaponFilters: WeaponFilters;

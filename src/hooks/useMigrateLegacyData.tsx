@@ -25,6 +25,7 @@ export function useMigrateLegacyData() {
     if (legacyDataExists) {
       const defaultProfile = newData.profiles.Default ?? {
         checklists: {},
+        challenges: {},
         filters: {} as Record<string, boolean>,
         stats: initStats,
         weaponFilters: {},

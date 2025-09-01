@@ -2,10 +2,13 @@ Incremental challenge list
 
 Rolling, jumping, crouching, parrying always allowed
 
-- Install Boss Arena Sandbox mod
+- Install Boss Arena Sandbox mod: https://www.nexusmods.com/eldenring/mods/5645
 - Upgrade to NG+
-- Pick one boss, and beat it with:
-- Base John Elden, no Spirit Ashes, no consumables, no spells, https://er-build-planner.nyasu.business/?b=7d30046e7342e8
+- Pick one boss
+- Setup this build: https://er-build-planner.nyasu.business/?b=7d30046e7342e8
+- Each step increases difficult and is incremental, keep all previous conditions as you move forward
+
+- No Spirit Ashes, no consumables, no spells
 - No guard counters
 - No shield, switch to claymore +25 quality + square off
 - No riposte / critical hit / backstabs

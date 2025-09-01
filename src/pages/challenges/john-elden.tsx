@@ -1,9 +1,25 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useState } from "react";
 import { PageLayout } from "~/layouts/PageLayout";
 import { Checkbox } from "~/features/checklist/components/Checkbox";
 import { useCheckChallenge } from "~/features/checklist/hooks/useCheckChallenge";
 import { useManageChallenges } from "~/features/checklist/hooks/useManageChallenges";
+import { Select } from "~/components/Select";
+
+const bossOptions = [
+  { label: "Margit", value: "margit" },
+  { label: "Godrick", value: "godrick" },
+  { label: "Rennala", value: "rennala" },
+  { label: "Radahn", value: "radahn" },
+  { label: "Morgott", value: "morgott" },
+  { label: "Rykard", value: "rykard" },
+  { label: "Mohg", value: "mohg" },
+  { label: "Malenia", value: "malenia" },
+  { label: "Godfrey", value: "godfrey" },
+  { label: "Radagon", value: "radagon" },
+  { label: "Elden Beast", value: "elden-beast" },
+];
 
 const challenges = [
   {
@@ -16,7 +32,7 @@ const challenges = [
   },
   {
     id: "e3c7d4f5-6061-89ab-cdef-012345678901",
-    text: "No shield, switch to claymore +25 quality + square off",
+    text: "No shield, switch to Claymore",
   },
   {
     id: "f4d6e5g6-7172-9abc-def0-123456789012",
@@ -80,7 +96,9 @@ function ChallengeCheckbox({
 }
 
 export default function JohnEldenChallenge() {
-  const { checkChallenge, isChecked, checkedItems } = useCheckChallenge("john-elden");
+  const [selectedBoss, setSelectedBoss] = useState<string>("");
+  const { checkChallenge, isChecked, checkedItems } =
+    useCheckChallenge("john-elden");
   const { updateChallenge } = useManageChallenges();
 
   const handleUncheckAll = () => {
@@ -140,18 +158,18 @@ export default function JohnEldenChallenge() {
             </p>
           </div>
 
-          <div className="mb-6 rounded-lg border border-amber-400/30 bg-stone-800/50 p-6">
-            <h2 className="mb-4 text-xl font-semibold text-amber-400">
+          <div className="mb-6 flex flex-col gap-4 rounded-lg border border-amber-400/30 bg-stone-800/50 p-6">
+            <h2 className="text-xl font-semibold text-amber-400">
               Setup Instructions
             </h2>
-            <p className="mb-4 text-stone-300">
+            <p className="text-stone-300">
               This works on PC only, don't really know how it could work on
               console, sorry...
             </p>
-            <p className="mb-4 text-stone-300">
+            <p className="text-stone-300">
               Rolling, jumping, crouching, parrying always allowed.
             </p>
-            <ul className="space-y-2 text-stone-300">
+            <ul className="list-disc space-y-1 pl-4 text-stone-300">
               <li>
                 Install{" "}
                 <a
@@ -164,7 +182,7 @@ export default function JohnEldenChallenge() {
                 </a>
               </li>
               <li>Advance to NG+</li>
-              <li>Pick one boss</li>
+              <li>Select one boss</li>
               <li>
                 Setup{" "}
                 <a
@@ -183,6 +201,19 @@ export default function JohnEldenChallenge() {
                 previous conditions as you move forward
               </li>
             </ul>
+          </div>
+
+          <div className="mb-6 rounded-lg border border-amber-400/30 bg-stone-800/50 p-6">
+            <h2 className="mb-4 text-xl font-semibold text-amber-400">
+              Select Boss
+            </h2>
+            <Select
+              options={bossOptions}
+              value={selectedBoss}
+              onChange={setSelectedBoss}
+              placeholder="Choose a boss to challenge"
+              className="max-w-xs"
+            />
           </div>
 
           <div className="rounded-lg border border-amber-400/30 bg-stone-800/50 p-6">

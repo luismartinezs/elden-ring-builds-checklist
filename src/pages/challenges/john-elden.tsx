@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageLayout } from "~/layouts/PageLayout";
 import { Checkbox } from "~/features/checklist/components/Checkbox";
 import { useCheckChallenge } from "~/features/checklist/hooks/useCheckChallenge";
+import { useManageChallenges } from "~/features/checklist/hooks/useManageChallenges";
 
 const challenges = [
   {
@@ -79,7 +80,12 @@ function ChallengeCheckbox({
 }
 
 export default function JohnEldenChallenge() {
-  const { checkChallenge, isChecked } = useCheckChallenge("john-elden");
+  const { checkChallenge, isChecked, checkedItems } = useCheckChallenge("john-elden");
+  const { updateChallenge } = useManageChallenges();
+
+  const handleUncheckAll = () => {
+    updateChallenge("john-elden", []);
+  };
 
   return (
     <>
@@ -180,9 +186,19 @@ export default function JohnEldenChallenge() {
           </div>
 
           <div className="rounded-lg border border-amber-400/30 bg-stone-800/50 p-6">
-            <h2 className="mb-4 text-xl font-semibold text-amber-400">
-              Challenge Conditions
-            </h2>
+            <div className="mb-4 flex items-center justify-between">
+              <h2 className="text-xl font-semibold text-amber-400">
+                Challenge Conditions
+              </h2>
+              {checkedItems.length > 0 && (
+                <button
+                  onClick={handleUncheckAll}
+                  className="rounded bg-stone-700 px-3 py-1 text-sm text-stone-300 transition-colors hover:bg-stone-600 hover:text-white"
+                >
+                  Uncheck All
+                </button>
+              )}
+            </div>
             <div className="space-y-3">
               {challenges.map((challenge) => (
                 <ChallengeCheckbox

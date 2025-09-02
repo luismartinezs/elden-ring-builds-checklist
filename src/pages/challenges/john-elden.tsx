@@ -321,7 +321,7 @@ export default function JohnEldenChallenge() {
                     <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-amber-300/80">
                       {group.title}
                     </h3>
-                    <div className="grid grid-cols-1 gap-2 text-xs sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-2 text-sm sm:grid-cols-2 lg:grid-cols-3">
                       {group.bosses.map((boss) => {
                         const isSelected = boss.value === selectedBoss;
                         return (
@@ -331,7 +331,7 @@ export default function JohnEldenChallenge() {
                             role="radio"
                             aria-checked={isSelected}
                             onClick={() => setSelectedBoss(boss.value)}
-                            className={`flex cursor-pointer items-center justify-between rounded px-2 py-1 text-left transition-colors hover:bg-amber-400/10 ${
+                            className={`flex cursor-pointer items-center justify-between rounded px-2 py-2 sm:py-1 text-left transition-colors hover:bg-amber-400/10 ${
                               isSelected
                                 ? "border border-amber-400/30 bg-amber-400/20"
                                 : "bg-stone-700/50"

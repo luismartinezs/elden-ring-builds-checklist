@@ -43,7 +43,7 @@ export type Options = {
   maxFpFlask?: boolean
   isSpellcaster?: boolean
 }
-export type Challenges = Record<string, UUID[]>;
+export type Challenges = Record<string, UUID[] | Record<string, UUID[]>>;
 export type Profile = {
   checklists: Checklist;
   challenges: Challenges;

@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useState } from "react";
 import { PageLayout } from "~/layouts/PageLayout";
 import { Checkbox } from "~/features/checklist/components/Checkbox";
 import { useCheckChallenge } from "~/features/checklist/hooks/useCheckChallenge";
 import { useManageChallenges } from "~/features/checklist/hooks/useManageChallenges";
 import { Select } from "~/components/Select";
+import { useLocalStorage } from "usehooks-ts";
 
 const bossOptions = [
   { label: "Margit", value: "margit" },
@@ -96,13 +96,13 @@ function ChallengeCheckbox({
 }
 
 export default function JohnEldenChallenge() {
-  const [selectedBoss, setSelectedBoss] = useState<string>("");
+  const [selectedBoss, setSelectedBoss] = useLocalStorage<string>("john-elden-selected-boss", bossOptions[0]?.value ?? "margit");
   const { checkChallenge, isChecked, checkedItems } =
-    useCheckChallenge("john-elden");
+    useCheckChallenge("john-elden", selectedBoss);
   const { updateChallenge } = useManageChallenges();
 
   const handleUncheckAll = () => {
-    updateChallenge("john-elden", []);
+    updateChallenge("john-elden", [], selectedBoss);
   };
 
   return (
@@ -130,16 +130,16 @@ export default function JohnEldenChallenge() {
           </h1>
 
           <blockquote className="mb-10 border-l-4 border-amber-400/50 pl-6 italic text-stone-300">
-            "Ohhh… my lambkin. So eager to test your mettle, are you? To pit
-            yourself against a single foe, again and again, until you've peeled
+&ldquo;Ohhh… my lambkin. So eager to test your mettle, are you? To pit
+            yourself against a single foe, again and again, until you&rsquo;ve peeled
             away every comfort, every scrap of crutch, until nothing remains but
             naked steel and your wits? Mm, how delightful. Most Tarnished fling
-            themselves at grace's guidance and die nameless, but you… you choose
+            themselves at grace&rsquo;s guidance and die nameless, but you… you choose
             the harder path. Each step, more cruel than the last, strips you
             bare, until your strength alone decides your fate. And when you
-            fall, you'll fall without ceremony. Yet should you endure… ah, then
+            fall, you&rsquo;ll fall without ceremony. Yet should you endure… ah, then
             you may truly call yourself worthy. Now then, shall we begin? Heh…
-            heh heh."
+            heh heh.&rdquo;
           </blockquote>
 
           <div className="mb-6 rounded-lg border border-amber-400/30 bg-stone-800/50 p-6">
@@ -163,7 +163,7 @@ export default function JohnEldenChallenge() {
               Setup Instructions
             </h2>
             <p className="text-stone-300">
-              This works on PC only, don't really know how it could work on
+              This works on PC only, don&rsquo;t really know how it could work on
               console, sorry...
             </p>
             <p className="text-stone-300">
@@ -211,7 +211,6 @@ export default function JohnEldenChallenge() {
               options={bossOptions}
               value={selectedBoss}
               onChange={setSelectedBoss}
-              placeholder="Choose a boss to challenge"
               className="max-w-xs"
             />
           </div>

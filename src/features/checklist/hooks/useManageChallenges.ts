@@ -10,7 +10,23 @@ export function useManageChallenges() {
     return data.profiles[data.currentProfile]?.challenges ?? {};
   };
 
-  const updateChallenge = (challengeKey: string, uuids: string[]) => {
+  const getBossSpecificChallenges = (challengeKey: string, bossKey?: string): string[] => {
+    const challenges = getCurrentChallenges()[challengeKey];
+    
+    if (!bossKey) {
+      // Return regular challenge array or empty array
+      return Array.isArray(challenges) ? challenges : [];
+    }
+    
+    // For boss-specific challenges
+    if (challenges && typeof challenges === 'object' && !Array.isArray(challenges)) {
+      return (challenges as Record<string, string[]>)[bossKey] ?? [];
+    }
+    
+    return [];
+  };
+
+  const updateChallenge = (challengeKey: string, uuids: string[], bossKey?: string) => {
     if (!data.profiles[data.currentProfile]) {
       throw new Error("Profile not initialized, this is probably a bug");
     }
@@ -19,7 +35,21 @@ export function useManageChallenges() {
       if (!currentProfile.challenges) {
         currentProfile.challenges = {};
       }
-      currentProfile.challenges[challengeKey] = uuids;
+      
+      if (!bossKey) {
+        // Regular challenge
+        currentProfile.challenges[challengeKey] = uuids;
+      } else {
+        // Boss-specific challenge
+        const existing = currentProfile.challenges[challengeKey];
+        if (!existing || Array.isArray(existing)) {
+          // Initialize boss-specific structure
+          currentProfile.challenges[challengeKey] = { [bossKey]: uuids };
+        } else {
+          // Update existing boss-specific structure
+          (currentProfile.challenges[challengeKey] as Record<string, string[]>)[bossKey] = uuids;
+        }
+      }
 
       return draft;
     }))
@@ -27,6 +57,7 @@ export function useManageChallenges() {
 
   return {
     getCurrentChallenges,
+    getBossSpecificChallenges,
     updateChallenge,
   };
 }

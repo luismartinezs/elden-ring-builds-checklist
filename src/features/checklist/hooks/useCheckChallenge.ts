@@ -1,13 +1,13 @@
 import { produce } from "immer";
 import { useManageChallenges } from "~/features/checklist/hooks/useManageChallenges";
 
-export function useCheckChallenge(challengeKey: string) {
+export function useCheckChallenge(challengeKey: string, bossKey?: string) {
   const {
-    getCurrentChallenges,
+    getBossSpecificChallenges,
     updateChallenge
   } = useManageChallenges();
 
-  const challenges = getCurrentChallenges()[challengeKey] ?? [];
+  const challenges = getBossSpecificChallenges(challengeKey, bossKey);
 
   const checkChallenge = (itemId: string) => {
     updateChallenge(challengeKey, produce(challenges, (draft) => {
@@ -22,7 +22,7 @@ export function useCheckChallenge(challengeKey: string) {
       }
 
       return draft;
-    }));
+    }), bossKey);
   };
 
   const isChecked = (itemId: string) => challenges.includes(itemId);

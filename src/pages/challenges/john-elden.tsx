@@ -6,77 +6,93 @@ import { useCheckChallenge } from "~/features/checklist/hooks/useCheckChallenge"
 import { useManageChallenges } from "~/features/checklist/hooks/useManageChallenges";
 import { useLocalStorage } from "usehooks-ts";
 
-const bossOptions = [
-  // Main progression bosses
-  { label: "Margit, the Fell Omen", value: "margit" },
-  { label: "Godrick the Grafted", value: "godrick" },
-  { label: "Rennala, Queen of the Full Moon", value: "rennala" },
-  { label: "Starscourge Radahn", value: "radahn" },
-  { label: "Morgott, the Omen King", value: "morgott" },
-  { label: "Rykard, Lord of Blasphemy", value: "rykard" },
-  { label: "Fire Giant", value: "fire-giant" },
-  { label: "Godfrey / Hoarah Loux", value: "godfrey-hoarah-loux" },
-  { label: "Radagon of the Golden Order", value: "radagon" },
-  { label: "Elden Beast", value: "elden-beast" },
-  { label: "Radagon / Elden Beast", value: "radagon-elden-beast" },
-  { label: "Mohg, Lord of Blood", value: "mohg-lord" },
-  { label: "Malenia, Blade of Miquella", value: "malenia" },
-  
-  // Dragons
-  { label: "Flying Dragon Agheel", value: "dragon-agheel" },
-  { label: "Glintstone Dragon Smarag", value: "dragon-smarag" },
-  { label: "Decaying Ekzykes", value: "dragon-ekzykes" },
-  { label: "Flying Dragon Greyll", value: "dragon-greyll" },
-  { label: "Glintstone Dragon Adula", value: "dragon-adula" },
-  { label: "Ancient Dragon Lansseax", value: "dragon-lansseax" },
-  { label: "Borealis, the Freezing Fog", value: "dragon-borealis" },
-  { label: "Dragonkin Soldier of Nokstella", value: "dragonkin-nokstella" },
-  { label: "Dragonkin Soldier (Siofra)", value: "dragonkin-siofra" },
-  { label: "Dragonkin Soldier (Lake of Rot)", value: "dragonkin-lake-rot" },
-  { label: "Lichdragon Fortissax", value: "lichdragon-fortissax" },
-  { label: "Beast Clergyman / Maliketh", value: "maliketh" },
-  { label: "Dragonlord Placidusax", value: "dragonlord-placidusax" },
-  
-  // Other major bosses
-  { label: "Godskin Noble (Volcano Manor)", value: "godskin-noble" },
-  { label: "Godskin Apostle (Caelid)", value: "godskin-apostle" },
-  { label: "Godskin Duo", value: "godskin-duo" },
-  { label: "Regal Ancestor Spirit", value: "regal-ancestor-spirit" },
-  { label: "Ancestor Spirit", value: "ancestor-spirit" },
-  { label: "Astel, Naturalborn of the Void", value: "astel" },
-  { label: "Leonine Misbegotten", value: "leonine-misbegotten" },
-  { label: "Red Wolf of Radagon", value: "red-wolf" },
-  { label: "Royal Knight Loretta", value: "royal-knight-loretta" },
-  { label: "Magma Wyrm Makar", value: "magma-wyrm-makar" },
-  { label: "Elemer of the Briar", value: "elemer" },
-  { label: "Commander O'Neil", value: "commander-oneil" },
-  { label: "Mimic Tear", value: "mimic-tear" },
-  { label: "Misbegotten Warrior & Crucible Knight", value: "misbegotten-crucible" },
-  { label: "Godfrey, First Elden Lord (Golden Shade)", value: "godfrey-golden-shade" },
-  { label: "Crucible Knight Siluria", value: "crucible-knight-siluria" },
-  { label: "Fia's Champions", value: "fias-champions" },
-  { label: "Magma Wyrm (Mt. Gelmir)", value: "magma-wyrm-gelmir" },
-  { label: "Valiant Gargoyles", value: "valiant-gargoyles" },
-  { label: "Commander Niall", value: "commander-niall" },
-  { label: "Mohg, the Omen", value: "mohg-omen" },
-  { label: "Sir Gideon Ofnir, the All-Knowing", value: "gideon" },
-  { label: "Loretta, Knight of the Haligtree", value: "loretta-haligtree" },
-  { label: "Great Wyrm Theodorix", value: "great-wyrm-theodorix" },
-  
-  // Shadow of the Erdtree
-  { label: "Divine Beast Dancing Lion", value: "dancing-lion" },
-  { label: "Rellana, Twin Moon Knight", value: "rellana" },
-  { label: "Golden Hippopotamus", value: "golden-hippopotamus" },
-  { label: "Putrescent Knight", value: "putrescent-knight" },
-  { label: "Scadutree Avatar", value: "scadutree-avatar" },
-  { label: "Commander Gaius", value: "commander-gaius" },
-  { label: "Messmer the Impaler", value: "messmer" },
-  { label: "Midra, Lord of Frenzied Flame", value: "midra" },
-  { label: "Romina, Saint of the Bud", value: "romina" },
-  { label: "Metyr, Mother of Fingers", value: "metyr" },
-  { label: "Promised Consort Radahn", value: "promised-consort-radahn" },
-  { label: "Bayle the Dread", value: "bayle" },
+const bossGroups = [
+  {
+    title: "Main bosses",
+    bosses: [
+      { label: "Godrick the Grafted", value: "godrick" },
+      { label: "Rennala, Queen of the Full Moon", value: "rennala" },
+      { label: "Regal Ancestor Spirit", value: "regal-ancestor-spirit" },
+      { label: "Starscourge Radahn", value: "radahn" },
+      { label: "Astel, Naturalborn of the Void", value: "astel" },
+      { label: "Lichdragon Fortissax", value: "lichdragon-fortissax" },
+      { label: "Morgott, the Omen King", value: "morgott" },
+      { label: "Rykard, Lord of Blasphemy", value: "rykard" },
+      { label: "Beast Clergyman / Maliketh", value: "maliketh" },
+      { label: "Fire Giant", value: "fire-giant" },
+      { label: "Godfrey / Hoarah Loux", value: "godfrey-hoarah-loux" },
+      { label: "Dragonlord Placidusax", value: "dragonlord-placidusax" },
+      { label: "Radagon / Elden Beast", value: "radagon-elden-beast" },
+      { label: "Radagon of the Golden Order", value: "radagon" },
+      { label: "Elden Beast", value: "elden-beast" },
+      { label: "Mohg, Lord of Blood", value: "mohg-lord" },
+      { label: "Malenia, Blade of Miquella", value: "malenia" },
+    ],
+  },
+  {
+    title: "Minor bosses",
+    bosses: [
+      { label: "Leonine Misbegotten", value: "leonine-misbegotten" },
+      { label: "Margit, the Fell Omen", value: "margit" },
+      { label: "Dragonkin Soldier of Nokstella", value: "dragonkin-nokstella" },
+      { label: "Flying Dragon Agheel", value: "dragon-agheel" },
+      { label: "Ancestor Spirit", value: "ancestor-spirit" },
+      { label: "Red Wolf of Radagon", value: "red-wolf" },
+      { label: "Royal Knight Loretta", value: "royal-knight-loretta" },
+      { label: "Magma Wyrm Makar", value: "magma-wyrm-makar" },
+      { label: "Elemer of the Briar", value: "elemer" },
+      { label: "Commander O'Neil", value: "commander-oneil" },
+      { label: "Dragonkin Soldier (Siofra)", value: "dragonkin-siofra" },
+      { label: "Glintstone Dragon Smarag", value: "dragon-smarag" },
+      { label: "Mimic Tear", value: "mimic-tear" },
+      {
+        label: "Misbegotten Warrior & Crucible Knight",
+        value: "misbegotten-crucible",
+      },
+      {
+        label: "Godfrey, First Elden Lord (Golden Shade)",
+        value: "godfrey-golden-shade",
+      },
+      { label: "Godskin Noble (Volcano Manor)", value: "godskin-noble" },
+      { label: "Crucible Knight Siluria", value: "crucible-knight-siluria" },
+      { label: "Fia's Champions", value: "fias-champions" },
+      { label: "Magma Wyrm (Mt. Gelmir)", value: "magma-wyrm-gelmir" },
+      { label: "Valiant Gargoyles", value: "valiant-gargoyles" },
+      { label: "Ancient Dragon Lansseax", value: "dragon-lansseax" },
+      { label: "Dragonkin Soldier (Lake of Rot)", value: "dragonkin-lake-rot" },
+      { label: "Commander Niall", value: "commander-niall" },
+      { label: "Decaying Ekzykes", value: "dragon-ekzykes" },
+      { label: "Mohg, the Omen", value: "mohg-omen" },
+      { label: "Godskin Apostle (Caelid)", value: "godskin-apostle" },
+      { label: "Flying Dragon Greyll", value: "dragon-greyll" },
+      { label: "Glintstone Dragon Adula", value: "dragon-adula" },
+      { label: "Godskin Duo", value: "godskin-duo" },
+      { label: "Sir Gideon Ofnir, the All-Knowing", value: "gideon" },
+      { label: "Borealis, the Freezing Fog", value: "dragon-borealis" },
+      { label: "Loretta, Knight of the Haligtree", value: "loretta-haligtree" },
+      { label: "Great Wyrm Theodorix", value: "great-wyrm-theodorix" },
+    ],
+  },
+  {
+    title: "Shadow of the Erdtree",
+    bosses: [
+      { label: "Divine Beast Dancing Lion", value: "dancing-lion" },
+      { label: "Rellana, Twin Moon Knight", value: "rellana" },
+      { label: "Golden Hippopotamus", value: "golden-hippopotamus" },
+      { label: "Putrescent Knight", value: "putrescent-knight" },
+      { label: "Scadutree Avatar", value: "scadutree-avatar" },
+      { label: "Commander Gaius", value: "commander-gaius" },
+      { label: "Messmer the Impaler", value: "messmer" },
+      { label: "Midra, Lord of Frenzied Flame", value: "midra" },
+      { label: "Romina, Saint of the Bud", value: "romina" },
+      { label: "Metyr, Mother of Fingers", value: "metyr" },
+      { label: "Promised Consort Radahn", value: "promised-consort-radahn" },
+      { label: "Bayle the Dread", value: "bayle" },
+    ],
+  },
 ];
+
+const bossOptions = bossGroups.flatMap((group) => group.bosses);
 
 const challenges = [
   {
@@ -153,33 +169,44 @@ function ChallengeCheckbox({
 }
 
 export default function JohnEldenChallenge() {
-  const [selectedBoss, setSelectedBoss] = useLocalStorage<string>("john-elden-selected-boss", bossOptions[0]?.value ?? "margit");
-  const { checkChallenge, isChecked, checkedItems } =
-    useCheckChallenge("john-elden", selectedBoss);
+  const [selectedBoss, setSelectedBoss] = useLocalStorage<string>(
+    "john-elden-selected-boss",
+    bossOptions[0]?.value ?? "margit"
+  );
+  const { checkChallenge, isChecked, checkedItems } = useCheckChallenge(
+    "john-elden",
+    selectedBoss
+  );
   const { updateChallenge, getBossSpecificChallenges } = useManageChallenges();
 
-  // Calculate progress for each boss
-  const bossOptionsWithProgress = bossOptions.map(boss => {
-    const bossCheckedItems = getBossSpecificChallenges("john-elden", boss.value);
-    const checkedCount = bossCheckedItems.length;
-    const totalCount = challenges.length;
-    
-    let statusColor = "";
-    if (checkedCount === 0) {
-      statusColor = ""; // Normal state
-    } else if (checkedCount === totalCount) {
-      statusColor = "text-green-400"; // All completed
-    } else {
-      statusColor = "text-amber-400"; // In progress
-    }
-    
-    return {
-      ...boss,
-      label: `${boss.label} (${checkedCount}/${totalCount})`,
-      statusColor,
-      progress: { checked: checkedCount, total: totalCount }
-    };
-  });
+  // Calculate progress for each boss group
+  const bossGroupsWithProgress = bossGroups.map((group) => ({
+    ...group,
+    bosses: group.bosses.map((boss) => {
+      const bossCheckedItems = getBossSpecificChallenges(
+        "john-elden",
+        boss.value
+      );
+      const checkedCount = bossCheckedItems.length;
+      const totalCount = challenges.length;
+
+      let statusColor = "";
+      if (checkedCount === 0) {
+        statusColor = ""; // Normal state
+      } else if (checkedCount === totalCount) {
+        statusColor = "text-green-400"; // All completed
+      } else {
+        statusColor = "text-amber-400"; // In progress
+      }
+
+      return {
+        ...boss,
+        label: `${boss.label} (${checkedCount}/${totalCount})`,
+        statusColor,
+        progress: { checked: checkedCount, total: totalCount },
+      };
+    }),
+  }));
 
   const handleUncheckAll = () => {
     updateChallenge("john-elden", [], selectedBoss);
@@ -210,16 +237,16 @@ export default function JohnEldenChallenge() {
           </h1>
 
           <blockquote className="mb-10 border-l-4 border-amber-400/50 pl-6 italic text-stone-300">
-&ldquo;Ohhh… my lambkin. So eager to test your mettle, are you? To pit
-            yourself against a single foe, again and again, until you&rsquo;ve peeled
-            away every comfort, every scrap of crutch, until nothing remains but
-            naked steel and your wits? Mm, how delightful. Most Tarnished fling
-            themselves at grace&rsquo;s guidance and die nameless, but you… you choose
-            the harder path. Each step, more cruel than the last, strips you
-            bare, until your strength alone decides your fate. And when you
-            fall, you&rsquo;ll fall without ceremony. Yet should you endure… ah, then
-            you may truly call yourself worthy. Now then, shall we begin? Heh…
-            heh heh.&rdquo;
+            &ldquo;Ohhh… my lambkin. So eager to test your mettle, are you? To
+            pit yourself against a single foe, again and again, until
+            you&rsquo;ve peeled away every comfort, every scrap of crutch, until
+            nothing remains but naked steel and your wits? Mm, how delightful.
+            Most Tarnished fling themselves at grace&rsquo;s guidance and die
+            nameless, but you… you choose the harder path. Each step, more cruel
+            than the last, strips you bare, until your strength alone decides
+            your fate. And when you fall, you&rsquo;ll fall without ceremony.
+            Yet should you endure… ah, then you may truly call yourself worthy.
+            Now then, shall we begin? Heh… heh heh.&rdquo;
           </blockquote>
 
           <div className="mb-6 rounded-lg border border-amber-400/30 bg-stone-800/50 p-6">
@@ -243,8 +270,8 @@ export default function JohnEldenChallenge() {
               Setup Instructions
             </h2>
             <p className="text-stone-300">
-              This works on PC only, don&rsquo;t really know how it could work on
-              console, sorry...
+              This works on PC only, don&rsquo;t really know how it could work
+              on console, sorry...
             </p>
             <p className="text-stone-300">
               Rolling, jumping, crouching, parrying always allowed.
@@ -288,29 +315,48 @@ export default function JohnEldenChallenge() {
               Select Boss
             </h2>
             <div role="radiogroup" aria-label="Select boss for challenge">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-xs">
-                {bossOptionsWithProgress.map((boss) => {
-                  const isSelected = boss.value === selectedBoss;
-                  return (
-                    <button
-                      key={boss.value}
-                      type="button"
-                      role="radio"
-                      aria-checked={isSelected}
-                      onClick={() => setSelectedBoss(boss.value)}
-                      className={`flex items-center justify-between rounded px-2 py-1 transition-colors cursor-pointer hover:bg-amber-400/10 text-left ${
-                        isSelected ? 'bg-amber-400/20 border border-amber-400/30' : 'bg-stone-700/50'
-                      }`}
-                    >
-                      <span className={`font-medium truncate mr-2 ${boss.statusColor || 'text-stone-300'}`}>
-                        {boss.label}
-                      </span>
-                      <span className={`text-xs flex-shrink-0 ${boss.statusColor || 'text-stone-400'}`}>
-                        {boss.progress.checked}/{boss.progress.total}
-                      </span>
-                    </button>
-                  );
-                })}
+              <div className="space-y-6">
+                {bossGroupsWithProgress.map((group) => (
+                  <div key={group.title}>
+                    <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-amber-300/80">
+                      {group.title}
+                    </h3>
+                    <div className="grid grid-cols-1 gap-2 text-xs sm:grid-cols-2 lg:grid-cols-3">
+                      {group.bosses.map((boss) => {
+                        const isSelected = boss.value === selectedBoss;
+                        return (
+                          <button
+                            key={boss.value}
+                            type="button"
+                            role="radio"
+                            aria-checked={isSelected}
+                            onClick={() => setSelectedBoss(boss.value)}
+                            className={`flex cursor-pointer items-center justify-between rounded px-2 py-1 text-left transition-colors hover:bg-amber-400/10 ${
+                              isSelected
+                                ? "border border-amber-400/30 bg-amber-400/20"
+                                : "bg-stone-700/50"
+                            }`}
+                          >
+                            <span
+                              className={`mr-2 truncate font-medium ${
+                                boss.statusColor || "text-stone-300"
+                              }`}
+                            >
+                              {boss.label}
+                            </span>
+                            <span
+                              className={`flex-shrink-0 text-xs ${
+                                boss.statusColor || "text-stone-400"
+                              }`}
+                            >
+                              {boss.progress.checked}/{boss.progress.total}
+                            </span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

@@ -4,7 +4,6 @@ import { PageLayout } from "~/layouts/PageLayout";
 import { Checkbox } from "~/features/checklist/components/Checkbox";
 import { useCheckChallenge } from "~/features/checklist/hooks/useCheckChallenge";
 import { useManageChallenges } from "~/features/checklist/hooks/useManageChallenges";
-import { Select } from "~/components/Select";
 import { useLocalStorage } from "usehooks-ts";
 
 const bossOptions = [
@@ -99,7 +98,30 @@ export default function JohnEldenChallenge() {
   const [selectedBoss, setSelectedBoss] = useLocalStorage<string>("john-elden-selected-boss", bossOptions[0]?.value ?? "margit");
   const { checkChallenge, isChecked, checkedItems } =
     useCheckChallenge("john-elden", selectedBoss);
-  const { updateChallenge } = useManageChallenges();
+  const { updateChallenge, getBossSpecificChallenges } = useManageChallenges();
+
+  // Calculate progress for each boss
+  const bossOptionsWithProgress = bossOptions.map(boss => {
+    const bossCheckedItems = getBossSpecificChallenges("john-elden", boss.value);
+    const checkedCount = bossCheckedItems.length;
+    const totalCount = challenges.length;
+    
+    let statusColor = "";
+    if (checkedCount === 0) {
+      statusColor = ""; // Normal state
+    } else if (checkedCount === totalCount) {
+      statusColor = "text-green-400"; // All completed
+    } else {
+      statusColor = "text-amber-400"; // In progress
+    }
+    
+    return {
+      ...boss,
+      label: `${boss.label} (${checkedCount}/${totalCount})`,
+      statusColor,
+      progress: { checked: checkedCount, total: totalCount }
+    };
+  });
 
   const handleUncheckAll = () => {
     updateChallenge("john-elden", [], selectedBoss);
@@ -207,12 +229,32 @@ export default function JohnEldenChallenge() {
             <h2 className="mb-4 text-xl font-semibold text-amber-400">
               Select Boss
             </h2>
-            <Select
-              options={bossOptions}
-              value={selectedBoss}
-              onChange={setSelectedBoss}
-              className="max-w-xs"
-            />
+            <div role="radiogroup" aria-label="Select boss for challenge">
+              <div className="grid grid-cols-2 gap-2 text-xs">
+                {bossOptionsWithProgress.map((boss) => {
+                  const isSelected = boss.value === selectedBoss;
+                  return (
+                    <button
+                      key={boss.value}
+                      type="button"
+                      role="radio"
+                      aria-checked={isSelected}
+                      onClick={() => setSelectedBoss(boss.value)}
+                      className={`flex items-center justify-between rounded px-2 py-1 transition-colors cursor-pointer hover:bg-amber-400/10 ${
+                        isSelected ? 'bg-amber-400/20 border border-amber-400/30' : 'bg-stone-700/50'
+                      }`}
+                    >
+                      <span className={`font-medium ${boss.statusColor || 'text-stone-300'}`}>
+                        {boss.value === 'elden-beast' ? 'Elden Beast' : boss.value.charAt(0).toUpperCase() + boss.value.slice(1)}
+                      </span>
+                      <span className={`text-xs ${boss.statusColor || 'text-stone-400'}`}>
+                        {boss.progress.checked}/{boss.progress.total}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
           </div>
 
           <div className="rounded-lg border border-amber-400/30 bg-stone-800/50 p-6">

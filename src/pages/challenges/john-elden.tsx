@@ -214,16 +214,18 @@ function ChallengeCheckbox({
         label={challenge.text}
         size="sm"
       />
-      <span className="text-stone-300">{challenge.text}</span>
+      <span className="leading-relaxed text-stone-300">{challenge.text}</span>
     </div>
   );
 }
 
 function ChallengeText({ text }: { text: string | React.ReactNode }) {
   return (
-    <div className="flex items-center gap-2 py-1 italic text-stone-300">
-      <FaArrowRight />
-      {text}
+    <div className="py-2 text-stone-300">
+      <div className="flex items-start gap-2 sm:items-center">
+        <FaArrowRight className="mt-1 flex-shrink-0 text-amber-400 sm:mt-0" />
+        <span className="italic leading-relaxed">{text}</span>
+      </div>
     </div>
   );
 }
@@ -317,11 +319,12 @@ export default function JohnEldenChallenge() {
             </h2>
             <p className="text-stone-300">
               Strip away every safety net until nothing remains but your
-              knowledge of the boss. You start as &quot;John Elden&quot;, the most default
-              classic knight and, step by step, remove shields, armor, healing,
-              and upgrades. Each restriction forces you to adapt, sharpening
-              your timing, spacing, and recognition of openings. By the end, you
-              face the boss at rune level 1 with a +0 weapon.
+              knowledge of the boss. You start as &quot;John Elden&quot;, the
+              most default classic knight and, step by step, remove shields,
+              armor, healing, and upgrades. Each restriction forces you to
+              adapt, sharpening your timing, spacing, and recognition of
+              openings. By the end, you face the boss without leveling and with
+              a +0 weapon.
             </p>
           </div>
 

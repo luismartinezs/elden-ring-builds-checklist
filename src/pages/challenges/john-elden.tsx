@@ -5,6 +5,7 @@ import { Checkbox } from "~/features/checklist/components/Checkbox";
 import { useCheckChallenge } from "~/features/checklist/hooks/useCheckChallenge";
 import { useManageChallenges } from "~/features/checklist/hooks/useManageChallenges";
 import { useLocalStorage } from "usehooks-ts";
+import { getAriaChecked } from "~/utils/getAriaChecked";
 
 const bossGroups = [
   {
@@ -133,15 +134,15 @@ const challenges = [
   },
   {
     id: "l0j9k1m2-d7d8-f012-3456-789012345678",
-    text: "RL1 weapon +25 (NG)",
+    text: "No leveling, weapon +25 (NG)",
   },
   {
     id: "m1k8l2n3-e8e9-0123-4567-890123456789",
-    text: "RL1 weapon +0 (NG)",
+    text: "No leveling, weapon +0 (NG)",
   },
   {
     id: "n2l7m3o4-f9fa-1234-5678-901234567890",
-    text: "RL1 weapon +0 hitless (NG)",
+    text: "No leveling, weapon +0 hitless (NG)",
   },
 ];
 
@@ -254,14 +255,12 @@ export default function JohnEldenChallenge() {
               What is the John Elden Challenge?
             </h2>
             <p className="text-stone-300">
-              This challenge is about stripping away every safety net until
-              nothing remains but your knowledge of the boss. You start as a
-              fully equipped knight and, step by step, remove shields, armor,
-              healing, and upgrades. Each restriction forces you to adapt,
-              sharpening your timing, spacing, and recognition of openings. By
-              the end, you face the boss at rune level 1, naked and weaponless,
-              where survival depends entirely on mastery rather than stats or
-              gear
+              Strip away every safety net until nothing remains but your
+              knowledge of the boss. You start as "John Elden", the most default
+              classic knight and, step by step, remove shields, armor, healing,
+              and upgrades. Each restriction forces you to adapt, sharpening
+              your timing, spacing, and recognition of openings. By the end, you
+              face the boss at rune level 1 with a +0 weapon.
             </p>
           </div>
 
@@ -286,7 +285,8 @@ export default function JohnEldenChallenge() {
                   className="text-amber-400 underline hover:text-amber-300"
                 >
                   Boss Arena Sandbox mod
-                </a>
+                </a>{" "}
+                and create a new character
               </li>
               <li>Advance to NG+</li>
               <li>Select one boss</li>
@@ -306,6 +306,19 @@ export default function JohnEldenChallenge() {
               <li>
                 Each step increases difficulty and is incremental, keep all
                 previous conditions as you move forward
+              </li>
+              <li>
+                For no leveling build, create a new character to be at NG, and
+                use this{" "}
+                <a
+                  href="https://er-build-planner.nyasu.business/?b=52f8f949c84b21"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-400 underline hover:text-amber-300"
+                >
+                  John Elden No level build
+                </a>
+                .
               </li>
             </ul>
           </div>
@@ -329,9 +342,9 @@ export default function JohnEldenChallenge() {
                             key={boss.value}
                             type="button"
                             role="radio"
-                            aria-checked={isSelected}
+                            aria-checked={getAriaChecked(isSelected)}
                             onClick={() => setSelectedBoss(boss.value)}
-                            className={`flex cursor-pointer items-center justify-between rounded px-2 py-2 sm:py-1 text-left transition-colors hover:bg-amber-400/10 ${
+                            className={`flex cursor-pointer items-center justify-between rounded px-2 py-2 text-left transition-colors hover:bg-amber-400/10 sm:py-1 ${
                               isSelected
                                 ? "border border-amber-400/30 bg-amber-400/20"
                                 : "bg-stone-700/50"

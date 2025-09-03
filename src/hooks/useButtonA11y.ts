@@ -1,4 +1,5 @@
 import { useCallback, type KeyboardEvent } from 'react';
+import { getBooleanString } from '~/utils/getBooleanString';
 
 interface UseButtonA11yProps {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -9,8 +10,8 @@ interface UseButtonA11yProps {
 interface UseButtonA11yReturn {
   buttonProps: {
     role: 'button';
-    'aria-disabled': boolean;
-    'aria-pressed'?: boolean;
+    'aria-disabled': "true" | "false";
+    'aria-pressed'?: "true" | "false";
     onKeyDown: (event: KeyboardEvent<HTMLButtonElement>) => void;
     tabIndex: number;
   };
@@ -41,8 +42,8 @@ export const useButtonA11y = ({
   return {
     buttonProps: {
       role: 'button',
-      'aria-disabled': disabled,
-      ...(typeof isPressed !== 'undefined' && { 'aria-pressed': isPressed }),
+      'aria-disabled': getBooleanString(disabled),
+      ...(typeof isPressed !== 'undefined' && { 'aria-pressed': getBooleanString(isPressed) }),
       onKeyDown: handleKeyDown,
       tabIndex: disabled ? -1 : 0,
     },

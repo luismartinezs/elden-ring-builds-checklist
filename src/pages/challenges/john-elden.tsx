@@ -99,7 +99,20 @@ const bossOptions = bossGroups.flatMap((group) => group.bosses);
 const challenges = [
   {
     type: "text" as const,
-    text: "Use Longsword (1H) + Kite shield",
+    text: (
+      <>
+        Start with{" "}
+        <a
+          href="https://er-build-planner.nyasu.business/?b=7d30046e7342e8"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-amber-400 underline hover:text-amber-300"
+        >
+          John Elden build
+        </a>{" "}
+        using Longsword 1H + Kite shield
+      </>
+    ),
   },
   {
     id: "c1a9b2",
@@ -119,7 +132,7 @@ const challenges = [
   {
     id: "f4d6e5",
     type: "checkbox" as const,
-    text: "Unequip shield, Claymore 2H only",
+    text: "No shield, Claymore 2H only",
   },
   {
     id: "g5e5f6",
@@ -148,7 +161,19 @@ const challenges = [
   },
   {
     type: "text" as const,
-    text: "Switch to NG character",
+    text: (
+      <>
+        Switch to NG character
+        <a
+          href="https://er-build-planner.nyasu.business/?b=52f8f949c84b21"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-amber-400 underline hover:text-amber-300"
+        >
+          John Elden No Level build
+        </a>
+      </>
+    ),
   },
   {
     id: "l0j9k1",
@@ -169,7 +194,7 @@ const challenges = [
 
 type ChallengeItem =
   | { id: string; type: "checkbox"; text: string }
-  | { type: "text"; text: string };
+  | { type: "text"; text: string | React.ReactNode };
 
 function ChallengeCheckbox({
   challenge,
@@ -194,7 +219,7 @@ function ChallengeCheckbox({
   );
 }
 
-function ChallengeText({ text }: { text: string }) {
+function ChallengeText({ text }: { text: string | React.ReactNode }) {
   return (
     <div className="flex items-center gap-2 py-1 italic text-stone-300">
       <FaArrowRight />

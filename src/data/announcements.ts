@@ -9,10 +9,10 @@ export type Announcement = {
 
 // Change this object to show a different announcement
 export const currentAnnouncement: Announcement = {
-  id: "changelog-2025-05-14",
-  message: "Added filters for Memory Stones!",
+  id: "john-elden-challenge-2025-09-03",
+  message: "New John Elden Challenge added!",
   link: {
-    text: "See what changed!",
-    url: "/changelog",
+    text: "Try the challenge!",
+    url: "/challenges/john-elden",
   },
 };

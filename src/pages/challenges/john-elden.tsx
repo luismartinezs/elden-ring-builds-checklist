@@ -6,6 +6,7 @@ import { useCheckChallenge } from "~/features/checklist/hooks/useCheckChallenge"
 import { useManageChallenges } from "~/features/checklist/hooks/useManageChallenges";
 import { useLocalStorage } from "usehooks-ts";
 import { getAriaChecked } from "~/utils/getAriaChecked";
+import { FaArrowRight } from "react-icons/fa";
 
 const bossGroups = [
   {
@@ -24,7 +25,7 @@ const bossGroups = [
       { label: "Godfrey / Hoarah Loux", value: "godfrey-hoarah-loux" },
       { label: "Dragonlord Placidusax", value: "dragonlord-placidusax" },
       { label: "Radagon / Elden Beast", value: "radagon-elden-beast" },
-      { label: "Radagon of the Golden Order", value: "radagon" },
+      { label: "Radagon", value: "radagon" },
       { label: "Elden Beast", value: "elden-beast" },
       { label: "Mohg, Lord of Blood", value: "mohg-lord" },
       { label: "Malenia, Blade of Miquella", value: "malenia" },
@@ -97,61 +98,85 @@ const bossOptions = bossGroups.flatMap((group) => group.bosses);
 
 const challenges = [
   {
-    id: "c1a9b2d3-4e5f-6789-abcd-ef0123456789",
+    type: "text" as const,
+    text: "Use Longsword (1H) + Kite shield",
+  },
+  {
+    id: "c1a9b2",
+    type: "checkbox" as const,
     text: "No Spirit Ashes, no consumables, no spells",
   },
   {
-    id: "d2b8c3e4-5f60-789a-bcde-f01234567890",
+    id: "d2b8c3",
+    type: "checkbox" as const,
     text: "No great rune active",
   },
   {
-    id: "e3c7d4f5-6061-89ab-cdef-012345678901",
+    id: "e3c7d4",
+    type: "checkbox" as const,
     text: "No guard counters",
   },
   {
-    id: "f4d6e5g6-7172-9abc-def0-123456789012",
-    text: "No shield, switch to claymore",
+    id: "f4d6e5",
+    type: "checkbox" as const,
+    text: "Unequip shield, Claymore 2H only",
   },
   {
-    id: "g5e5f6h7-8283-abcd-ef01-234567890123",
+    id: "g5e5f6",
+    type: "checkbox" as const,
     text: "No armor (naked)",
   },
   {
-    id: "h6f4g7i8-9394-bcde-f012-345678901234",
+    id: "h6f4g7",
+    type: "checkbox" as const,
     text: "No riposte / critical hit / backstabs",
   },
   {
-    id: "i7g3h8j9-a4a5-cdef-0123-456789012345",
+    id: "i7g3h8",
+    type: "checkbox" as const,
     text: "No Flask of Wondrous Physick",
   },
   {
-    id: "j8h2i9k0-b5b6-def0-1234-567890123456",
+    id: "j8h2i9",
+    type: "checkbox" as const,
     text: "No talismans",
   },
   {
-    id: "k9i1j0l1-c6c7-ef01-2345-678901234567",
+    id: "k9i1j0",
+    type: "checkbox" as const,
     text: "No crimson flask, no healing",
   },
   {
-    id: "l0j9k1m2-d7d8-f012-3456-789012345678",
+    type: "text" as const,
+    text: "Switch to NG character",
+  },
+  {
+    id: "l0j9k1",
+    type: "checkbox" as const,
     text: "No leveling, weapon +25 (NG)",
   },
   {
-    id: "m1k8l2n3-e8e9-0123-4567-890123456789",
+    id: "m1k8l2",
+    type: "checkbox" as const,
     text: "No leveling, weapon +0 (NG)",
   },
   {
-    id: "n2l7m3o4-f9fa-1234-5678-901234567890",
+    id: "n2l7m3",
+    type: "checkbox" as const,
     text: "No leveling, weapon +0 hitless (NG)",
   },
 ];
+
+type ChallengeItem =
+  | { id: string; type: "checkbox"; text: string }
+  | { type: "text"; text: string };
 
 function ChallengeCheckbox({
   challenge,
   onCheck,
   isChecked,
 }: {
-  challenge: { id: string; text: string };
+  challenge: ChallengeItem & { type: "checkbox" };
   onCheck: (itemId: string) => void;
   isChecked: boolean;
 }) {
@@ -165,6 +190,15 @@ function ChallengeCheckbox({
         size="sm"
       />
       <span className="text-stone-300">{challenge.text}</span>
+    </div>
+  );
+}
+
+function ChallengeText({ text }: { text: string }) {
+  return (
+    <div className="flex items-center gap-2 py-1 italic text-stone-300">
+      <FaArrowRight />
+      {text}
     </div>
   );
 }
@@ -189,7 +223,9 @@ export default function JohnEldenChallenge() {
         boss.value
       );
       const checkedCount = bossCheckedItems.length;
-      const totalCount = challenges.length;
+      const totalCount = challenges.filter(
+        (challenge) => challenge.type === "checkbox"
+      ).length;
 
       let statusColor = "";
       if (checkedCount === 0) {
@@ -379,6 +415,7 @@ export default function JohnEldenChallenge() {
               <h2 className="text-xl font-semibold text-amber-400">
                 Challenge Conditions
               </h2>
+
               {checkedItems.length > 0 && (
                 <button
                   onClick={handleUncheckAll}
@@ -388,15 +425,29 @@ export default function JohnEldenChallenge() {
                 </button>
               )}
             </div>
+            <p className="mb-4 text-stone-300">
+              Conditions are incremental, keep all previous conditions as you
+              progress
+            </p>
             <div className="space-y-3">
-              {challenges.map((challenge) => (
-                <ChallengeCheckbox
-                  key={challenge.id}
-                  challenge={challenge}
-                  onCheck={checkChallenge}
-                  isChecked={isChecked(challenge.id)}
-                />
-              ))}
+              {challenges.map((challenge, index) => {
+                if (challenge.type === "text") {
+                  return (
+                    <ChallengeText
+                      key={`text-${index}`}
+                      text={challenge.text}
+                    />
+                  );
+                }
+                return (
+                  <ChallengeCheckbox
+                    key={challenge.id}
+                    challenge={challenge}
+                    onCheck={checkChallenge}
+                    isChecked={isChecked(challenge.id)}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>

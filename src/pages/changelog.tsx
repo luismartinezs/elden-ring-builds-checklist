@@ -17,6 +17,22 @@ interface TChangelogEntry {
 // Sample changelog data - replace with actual data source later
 const changelogData: TChangelogEntry[] = [
   {
+    date: "2025-09-03",
+    changes: [
+      {
+        description: (
+          <span>
+            Added{" "}
+            <Link href="/checklists/john-elden-challenge">
+              John Elden Challenge
+            </Link>{" "}
+            - a Boss Arena challenge with specific rules and progression.
+          </span>
+        ),
+      },
+    ],
+  },
+  {
     date: "2025-06-10",
     changes: [
       {

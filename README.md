@@ -1,6 +1,6 @@
 # Elden Ring Checklists
 
-This is to make it easier to play the game without having to look up guides constantly
+An app for Elden Ring game checklists and challenges to make it easier to play the game without having to look up guides constantly. Features include step-by-step checklists, progressive challenge runs, and character progression tracking.
 
 ## Dev tasks
 

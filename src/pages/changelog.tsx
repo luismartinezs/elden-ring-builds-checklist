@@ -23,7 +23,7 @@ const changelogData: TChangelogEntry[] = [
         description: (
           <span>
             Added{" "}
-            <Link href="/checklists/john-elden-challenge">
+            <Link href="/challenges/john-elden">
               John Elden Challenge
             </Link>{" "}
             - a Boss Arena challenge with specific rules and progression.

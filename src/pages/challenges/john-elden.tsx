@@ -317,7 +317,7 @@ export default function JohnEldenChallenge() {
             </h2>
             <p className="text-stone-300">
               Strip away every safety net until nothing remains but your
-              knowledge of the boss. You start as "John Elden", the most default
+              knowledge of the boss. You start as &quot;John Elden&quot;, the most default
               classic knight and, step by step, remove shields, armor, healing,
               and upgrades. Each restriction forces you to adapt, sharpening
               your timing, spacing, and recognition of openings. By the end, you

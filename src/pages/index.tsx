@@ -50,36 +50,39 @@ export default function Landing({
         />
       </Head>
       <PageLayout>
-        <div className="mb-16 flex flex-col">
+        <div className="flex flex-col">
           <HeroSection />
-          <FeatureSection />
 
           <Hero
             image={
               <Image
-                src="/moonveil-samurai.webp"
+                src="/pure-faith.webp"
                 fill
-                alt="Moonveil Samurai"
+                alt="Pure Faith Caster"
                 className="object-cover"
                 loading="lazy"
               />
             }
-            title="Moonveil Samurai"
-            subtitle="Hold L2. R2. Roll. Repeat."
+            title="Pure Faith Caster"
+            subtitle={'"I named my son Ancient Dragon Lightning Strike, after the most powerful spell in Elden Ring"'}
+            titleClassName="!text-yellow-300"
             link={
               <Link
-                href="/checklists/moonveil-samurai"
-                className="fancy-gradient-secondary mt-2 inline-block rounded-lg bg-gradient-to-br px-4 py-4 font-bold uppercase text-black focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-1 focus:ring-offset-stone-900 sm:mb-2 sm:mr-2 sm:px-5 sm:py-2.5 sm:focus:ring-4 sm:focus:ring-offset-2"
+                href="/checklists/pure-faith-caster"
+                className="fancy-gradient mt-2 inline-block rounded-lg bg-gradient-to-br px-4 py-4 font-bold uppercase text-black focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-1 focus:ring-offset-stone-900 sm:mb-2 sm:mr-2 sm:px-5 sm:py-2.5 sm:focus:ring-4 sm:focus:ring-offset-2"
               >
-                Start Moonveil Playthrough
+                Start Faith Playthrough
               </Link>
             }
           />
-          <Checklists checklists={checklists} />
+
+          <FeatureSection />
+
+
           <Hero
             image={
               <Image
-                src="/ranni.jpg"
+                src="/ranni-build.webp"
                 fill
                 alt="Ranni the Witch"
                 className="object-cover"
@@ -105,6 +108,32 @@ export default function Landing({
               />
             }
           />
+
+          <Checklists checklists={checklists} />
+
+          <Hero
+            image={
+              <Image
+                src="/moonveil-samurai-v3.webp"
+                fill
+                alt="Moonveil Samurai"
+                className="object-cover"
+                loading="lazy"
+              />
+            }
+            title="Moonveil Samurai"
+            subtitle="Hold L2. R2. Roll. Repeat."
+            link={
+              <Link
+                href="/checklists/moonveil-samurai"
+                className="fancy-gradient-secondary mt-2 inline-block rounded-lg bg-gradient-to-br px-4 py-4 font-bold uppercase text-black focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-1 focus:ring-offset-stone-900 sm:mb-2 sm:mr-2 sm:px-5 sm:py-2.5 sm:focus:ring-4 sm:focus:ring-offset-2"
+              >
+                Start Moonveil Playthrough
+              </Link>
+            }
+          />
+
+
         </div>
       </PageLayout>
     </>

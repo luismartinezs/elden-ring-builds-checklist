@@ -10,6 +10,7 @@ import moonveilSamurai from './moonveil-samurai'
 import prepDlc from './prep-dlc'
 import sote from './sote-game-progress'
 import soteAsap from './sote-asap'
+import pureFaithCaster from './pure-faith-caster'
 
 
 const lists: TChecklist[] = [
@@ -24,6 +25,7 @@ const lists: TChecklist[] = [
   templar,
   lightningLancer,
   afflictioner,
+  pureFaithCaster,
 ]
 
 export { lists }

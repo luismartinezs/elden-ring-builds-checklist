@@ -9,10 +9,10 @@ export type Announcement = {
 
 // Change this object to show a different announcement
 export const currentAnnouncement: Announcement = {
-  id: "john-elden-challenge-2025-09-03",
-  message: "New John Elden Challenge added!",
+  id: "pure-faith-caster-2026-02-26",
+  message: "New checklist: Pure Faith Caster!",
   link: {
-    text: "Try the challenge!",
-    url: "/challenges/john-elden",
+    text: "Start your Faith playthrough",
+    url: "/checklists/pure-faith-caster",
   },
 };

@@ -1,19 +1,22 @@
 import React from "react";
 import { Heading } from "./Heading";
 import { SectionWrapper } from "./SectionWrapper";
+import { cn } from "~/utils/cn";
 
 const Hero = ({
   image,
   title,
   subtitle,
   link,
-  icon
+  icon,
+  titleClassName = "!text-sky-200"
 }: {
   image: React.JSX.Element;
   title: string;
   subtitle: string;
   link: React.JSX.Element;
   icon?: React.JSX.Element;
+  titleClassName?: string;
 }) => {
   return (
     <SectionWrapper className="relative !my-0 py-0" fullBleed>
@@ -25,7 +28,7 @@ const Hero = ({
         <p className="text-xl text-stone-100 font-bold text-shadow">{subtitle}</p>
         <div className="flex items-center">
           {icon}
-          <Heading.H2 className="mt-4 text-shadow !text-sky-200">{title}</Heading.H2>
+          <Heading.H2 className={cn("mt-4 text-shadow", titleClassName)}>{title}</Heading.H2>
         </div>
         {link}
       </div>

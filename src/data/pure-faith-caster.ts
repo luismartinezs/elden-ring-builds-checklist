@@ -175,18 +175,18 @@ const list = {
         }
       ]
     },
-    // === Mid-game: Buffs ===
+    // === Liurnia: Crystal Tears & Talismans ===
     {
-      id: "3d243b01-7efd-4359-857f-e8887366ca61",
-      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Flame+Grant+Me+Strength" target="_blank">Flame, Grant Me Strength</a> (FAI 15) behind the flame chariots at Fort Gael in western Caelid. +20% Physical and Fire damage for 30 seconds, stacks with Golden Vow',
+      id: "407d8660-f214-495a-aa34-7a99a84d0548",
+      description: 'Defeat the <a href="https://eldenring.wiki.fextralife.com/Erdtree+Avatar" target="_blank">Erdtree Avatar</a> at the <a href="https://eldenring.wiki.fextralife.com/Minor+Erdtree+(Liurnia+Northeast)" target="_blank">Minor Erdtree in northeastern Liurnia</a> to get the <a href="https://eldenring.wiki.fextralife.com/Lightning-Shrouding+Cracked+Tear" target="_blank">Lightning-Shrouding Cracked Tear</a> and <a href="https://eldenring.wiki.fextralife.com/Holy-Shrouding+Cracked+Tear" target="_blank">Holy-Shrouding Cracked Tear</a>. +20% lightning/holy damage for 3 minutes each',
       tags: []
     },
     {
-      id: "5bf64c5f-fb5d-40b3-9140-ea5cc60877bc",
-      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Golden+Vow" target="_blank">Golden Vow</a> incantation (FAI 25) from a corpse inside the Corpse-Stench Shack in Mt. Gelmir. +15% damage dealt, -10% damage taken for 80 seconds',
+      id: "8c1cb5f2-59ca-4d97-ac70-f77024cdc193",
+      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Radagon+Icon" target="_blank">Radagon Icon</a> talisman from Raya Lucaria Academy. From the Debate Parlor grace, go outside, hook right, over the railing, up the ladder. Shortens casting time',
       tags: []
     },
-    // === Mid-game: Whetblades & Crystal Tears ===
+    // === Caelid (revisit): Whetblade, Tears, Buffs & Spells ===
     {
       id: "058f74c6-c75e-4fe1-b9b2-d3da5888b332",
       description: 'Get the <a href="https://eldenring.wiki.fextralife.com/Red-Hot+Whetblade" target="_blank">Red-Hot Whetblade</a> from Redmane Castle in Caelid (only accessible when the Radahn Festival is inactive). Allows applying Fire and Flame Art affinities to weapons via Ashes of War',
@@ -198,8 +198,29 @@ const list = {
       tags: []
     },
     {
-      id: "407d8660-f214-495a-aa34-7a99a84d0548",
-      description: 'Defeat the <a href="https://eldenring.wiki.fextralife.com/Erdtree+Avatar" target="_blank">Erdtree Avatar</a> at the <a href="https://eldenring.wiki.fextralife.com/Minor+Erdtree+(Liurnia+Northeast)" target="_blank">Minor Erdtree in northeastern Liurnia</a> to get the <a href="https://eldenring.wiki.fextralife.com/Lightning-Shrouding+Cracked+Tear" target="_blank">Lightning-Shrouding Cracked Tear</a> and <a href="https://eldenring.wiki.fextralife.com/Holy-Shrouding+Cracked+Tear" target="_blank">Holy-Shrouding Cracked Tear</a>. +20% lightning/holy damage for 3 minutes each',
+      id: "dae43c8a-3ea4-4f1c-be04-bb27a75bd28d",
+      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Faithful\'s+Canvas+Talisman" target="_blank">Faithful\'s Canvas Talisman</a> from Sellia Crystal Tunnel in Caelid. +4% incantation damage',
+      tags: []
+    },
+    {
+      id: "3d243b01-7efd-4359-857f-e8887366ca61",
+      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Flame+Grant+Me+Strength" target="_blank">Flame, Grant Me Strength</a> (FAI 15) behind the flame chariots at Fort Gael in western Caelid. +20% Physical and Fire damage for 30 seconds, stacks with Golden Vow',
+      tags: []
+    },
+    {
+      id: "71ba62e9-9b91-4d36-ba90-e57fcbc30f0b",
+      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Pest+Threads" target="_blank">Pest Threads</a> (FAI 11) from <a href="https://eldenring.wiki.fextralife.com/Sage+Gowry" target="_blank">Sage Gowry</a> in Caelid for 7500 Runes (requires progressing Millicent\'s quest and giving her the Valkyrie\'s Prosthesis. Tip: turn on the Millicent filter in the simple game checklist to track this). Devastating against large bosses, threads hit dozens of times per cast',
+      tags: []
+    },
+    // === Altus Plateau & Mt. Gelmir & Volcano Manor ===
+    {
+      id: "c0ecac8d-dffc-452e-8d42-bbc4167c7891",
+      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Godfrey+Icon" target="_blank">Godfrey Icon</a> talisman from Golden Lineage Evergaol in Altus Plateau. Defeat Godefroy the Grafted. +15% to charged spells',
+      tags: []
+    },
+    {
+      id: "5bf64c5f-fb5d-40b3-9140-ea5cc60877bc",
+      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Golden+Vow" target="_blank">Golden Vow</a> incantation (FAI 25) from a corpse inside the Corpse-Stench Shack in Mt. Gelmir. +15% damage dealt, -10% damage taken for 80 seconds',
       tags: []
     },
     {
@@ -208,47 +229,41 @@ const list = {
       tags: []
     },
     {
-      id: "1232b0c1-533c-416b-babf-71cf03690bed",
-      description: 'Get the <a href="https://eldenring.wiki.fextralife.com/Sanctified+Whetblade" target="_blank">Sanctified Whetblade</a> from Fortified Manor in Leyndell, Royal Capital. Allows applying Lightning and Sacred affinities to weapons. WARNING: cannot be acquired after defeating Maliketh',
+      id: "2a99f68a-6b79-4aea-8f15-0364495259f4",
+      description: 'Pick up <a href="https://eldenring.wiki.fextralife.com/Erdtree+Seal" target="_blank">Erdtree Seal</a> at Volcano Manor near Prison Town Church grace. Bank it for now. Equip once FAI reaches 69+ as it overtakes Godslayer\'s Seal. S scaling in Faith, highest incantation scaling in the game at 80 FAI',
       tags: []
-    },
-    // === Mid-game: Talismans ===
-    {
-      id: "8c1cb5f2-59ca-4d97-ac70-f77024cdc193",
-      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Radagon+Icon" target="_blank">Radagon Icon</a> talisman from Raya Lucaria Academy. From the Debate Parlor grace, go outside, hook right, over the railing, up the ladder. Shortens casting time',
-      tags: []
-    },
-    {
-      id: "dae43c8a-3ea4-4f1c-be04-bb27a75bd28d",
-      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Faithful\'s+Canvas+Talisman" target="_blank">Faithful\'s Canvas Talisman</a> from Sellia Crystal Tunnel in Caelid. +4% incantation damage',
-      tags: []
-    },
-    {
-      id: "c0ecac8d-dffc-452e-8d42-bbc4167c7891",
-      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Godfrey+Icon" target="_blank">Godfrey Icon</a> talisman from Golden Lineage Evergaol in Altus Plateau. Defeat Godefroy the Grafted. +15% to charged spells',
-      tags: []
-    },
-    // === Mid-game: Weapons ===
-    {
-      id: "80de0b4d-3bdb-49e1-888a-f003753dbc39",
-      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Coded+Sword" target="_blank">Coded Sword</a> from Leyndell, Royal Capital. Upper floor of the Fortified Manor (same building as Sanctified Whetblade). Pure holy damage, ignores shields, 0.0 weight',
-      tags: [OPTIONAL]
     },
     {
       id: "3cf0aeef-1551-4cc2-9fbc-ef821cc70fc7",
       description: 'Get <a href="https://eldenring.wiki.fextralife.com/Blasphemous+Blade" target="_blank">Blasphemous Blade</a> by defeating Rykard, Lord of Blasphemy at Volcano Manor. Gimmick boss fight with provided spear. Best PvE Faith weapon: massive fire damage, healing on hit, knocks enemies flat',
       tags: []
     },
-    // === Mid-game: Spells ===
     {
-      id: "71ba62e9-9b91-4d36-ba90-e57fcbc30f0b",
-      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Pest+Threads" target="_blank">Pest Threads</a> (FAI 11) from <a href="https://eldenring.wiki.fextralife.com/Sage+Gowry" target="_blank">Sage Gowry</a> in Caelid for 7500 Runes (requires progressing Millicent\'s quest and giving her the Valkyrie\'s Prosthesis. Tip: turn on the Millicent filter in the simple game checklist to track this). Devastating against large bosses, threads hit dozens of times per cast',
-      tags: []
+      id: "fa85bfe4-8205-450f-bea4-502ddf83908d",
+      description: 'Target stats around level 50',
+      tags: [],
+      items: [
+        {
+          id: "65a3c73e-7c86-4bd2-9fd2-ae3139c41d68",
+          description: 'VGR 25-30',
+          tags: []
+        },
+        {
+          id: "3af54a60-9908-4cc4-9254-de5feae8457e",
+          description: 'MND 15-18',
+          tags: []
+        },
+        {
+          id: "2e8ad91b-4457-4f80-b20d-fe5d837080b4",
+          description: 'FAI 30-35',
+          tags: []
+        }
+      ]
     },
-    // === Mid-game: Spirit Ashes ===
+    // === Radahn & Nokron ===
     {
       id: "79ee35fc-e244-4786-9b52-bc3b67ee4327",
-      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Greatshield+Soldier+Ashes" target="_blank">Greatshield Soldier Ashes</a> from the graveyard area in Nokron, Eternal City. Five soldiers with tower shields physically trap bosses in place',
+      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Greatshield+Soldier+Ashes" target="_blank">Greatshield Soldier Ashes</a> from the graveyard area in Nokron, Eternal City (accessible after defeating Radahn). Five soldiers with tower shields physically trap bosses in place',
       tags: []
     },
     {
@@ -256,16 +271,16 @@ const list = {
       description: 'Get <a href="https://eldenring.wiki.fextralife.com/Dung+Eater+Puppet" target="_blank">Dung Eater Puppet</a> via Seluvis\'s questline. Give Seluvis\'s Potion to the Dung Eater in the Subterranean Shunning-Grounds. His attacks debuff boss damage negation',
       tags: [OPTIONAL]
     },
+    // === Leyndell, Royal Capital ===
     {
-      id: "c748fdac-10b5-427c-a20a-a510b7ab7ed6",
-      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Black+Knife+Tiche" target="_blank">Black Knife Tiche</a> by defeating Alecto in the Ringleader\'s Evergaol (Moonlight Altar plateau, Ranni\'s questline). Dodges instead of blocking, spams Destined Death projectiles that burn 10% max HP',
-      tags: [OPTIONAL]
-    },
-    // === Mid-game: Erdtree Seal ===
-    {
-      id: "2a99f68a-6b79-4aea-8f15-0364495259f4",
-      description: 'Pick up <a href="https://eldenring.wiki.fextralife.com/Erdtree+Seal" target="_blank">Erdtree Seal</a> at Volcano Manor near Prison Town Church grace. Bank it for now. Equip once FAI reaches 69+ as it overtakes Godslayer\'s Seal. S scaling in Faith, highest incantation scaling in the game at 80 FAI',
+      id: "1232b0c1-533c-416b-babf-71cf03690bed",
+      description: 'Get the <a href="https://eldenring.wiki.fextralife.com/Sanctified+Whetblade" target="_blank">Sanctified Whetblade</a> from Fortified Manor in Leyndell, Royal Capital. Allows applying Lightning and Sacred affinities to weapons. WARNING: cannot be acquired after defeating Maliketh',
       tags: []
+    },
+    {
+      id: "80de0b4d-3bdb-49e1-888a-f003753dbc39",
+      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Coded+Sword" target="_blank">Coded Sword</a> from Leyndell, Royal Capital. Upper floor of the Fortified Manor (same building as Sanctified Whetblade). Pure holy damage, ignores shields, 0.0 weight',
+      tags: [OPTIONAL]
     },
     {
       id: "299284bf-1ecf-442c-bb95-f86207fc144c",
@@ -289,34 +304,42 @@ const list = {
         }
       ]
     },
+    // === Mountaintops of the Giants ===
     {
       id: "d11f6b04-3704-44a2-b907-a32cbc9675cb",
       description: 'Get <a href="https://eldenring.wiki.fextralife.com/Giant\'s+Flame+Take+Thee" target="_blank">Giant\'s Flame Take Thee</a> (FAI 30) from the Mountaintops of the Giants. Defeat Chief Guardian Arghanthy at Guardians\' Garrison for the Giant\'s Prayerbook. Massive AoE fireball',
       tags: []
     },
+    // === Crumbling Farum Azula ===
     {
       id: "e2747f19-5550-4a8a-ab2d-f0fd06af34a3",
       description: 'Get <a href="https://eldenring.wiki.fextralife.com/Ancient+Dragons\'+Lightning+Strike" target="_blank">Ancient Dragons\' Lightning Strike</a> (FAI 26) from Crumbling Farum Azula. Find the Ancient Dragon Prayerbook and give it to Miriel. Highest DPS spell in the game against large bosses',
       tags: []
     },
+    // === Haligtree & Late-game ===
     {
-      id: "21bd27e7-95fc-42ab-90f4-5f178825d004",
-      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Flock\'s+Canvas+Talisman" target="_blank">Flock\'s Canvas Talisman</a>. kill Gowry after completing Millicent\'s questline. Replaces Faithful\'s Canvas, +8% incantation damage',
-      tags: []
+      id: "d2996e9c-50cd-4958-861a-541a8ace8721",
+      description: 'Farm <a href="https://eldenring.wiki.fextralife.com/Envoy\'s+Long+Horn" target="_blank">Envoy\'s Long Horn</a> from Large Oracle Envoys in Leyndell or Haligtree. Bubble Shower ash of war shreds large bosses with tracking holy bubbles',
+      tags: [OPTIONAL]
     },
     {
       id: "28a8dbe9-9e8b-4afb-a6e2-ee14287442bd",
-      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Dragoncrest+Greatshield+Talisman" target="_blank">Dragoncrest Greatshield Talisman</a> from Elphael, Brace of the Haligtree. reduces physical damage taken by 20%',
+      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Dragoncrest+Greatshield+Talisman" target="_blank">Dragoncrest Greatshield Talisman</a> from Elphael, Brace of the Haligtree. Reduces physical damage taken by 20%',
+      tags: []
+    },
+    {
+      id: "c748fdac-10b5-427c-a20a-a510b7ab7ed6",
+      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Black+Knife+Tiche" target="_blank">Black Knife Tiche</a> by defeating Alecto in the Ringleader\'s Evergaol (Moonlight Altar plateau, Ranni\'s questline). Dodges instead of blocking, spams Destined Death projectiles that burn 10% max HP',
+      tags: [OPTIONAL]
+    },
+    {
+      id: "21bd27e7-95fc-42ab-90f4-5f178825d004",
+      description: 'Get <a href="https://eldenring.wiki.fextralife.com/Flock\'s+Canvas+Talisman" target="_blank">Flock\'s Canvas Talisman</a>. Kill Gowry after completing Millicent\'s questline. Replaces Faithful\'s Canvas, +8% incantation damage',
       tags: []
     },
     {
       id: "c2b613ab-e165-46c0-900a-714bcf2e5970",
       description: 'Get <a href="https://eldenring.wiki.fextralife.com/Lord\'s+Divine+Fortification" target="_blank">Lord\'s Divine Fortification</a> (FAI 27) from Gideon Ofnir at Roundtable Hold after defeating Malenia. Reduces Holy damage taken by 60%, trivializes final boss fights',
-      tags: [OPTIONAL]
-    },
-    {
-      id: "d2996e9c-50cd-4958-861a-541a8ace8721",
-      description: 'Farm <a href="https://eldenring.wiki.fextralife.com/Envoy\'s+Long+Horn" target="_blank">Envoy\'s Long Horn</a> from Large Oracle Envoys in Leyndell or Haligtree. Bubble Shower ash of war shreds large bosses with tracking holy bubbles',
       tags: [OPTIONAL]
     },
     {

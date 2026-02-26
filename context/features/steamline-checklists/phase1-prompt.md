@@ -2,6 +2,8 @@
 
 Use this prompt as the **opening message** in a new LLM conversation (Gemini, Claude, etc.) to generate the raw build knowledge for a specific archetype. The LLM's final response will be used as input for Phase 2.
 
+> **Before you start**: Read [checklist-quality-guide.md](./checklist-quality-guide.md) for common pitfalls, the correct region progression order, and formatting rules learned from previous checklists.
+
 ## Instructions
 
 1. Replace `{{BUILD_ARCHETYPE}}` with the build description (e.g. "pure faith incantations", "pure arcane / bleed", "hybrid strength + dexterity quality build")
@@ -12,7 +14,8 @@ Use this prompt as the **opening message** in a new LLM conversation (Gemini, Cl
 6. When the final ordered list is complete, paste it back with the **self-verification prompt** below
 7. Review the flagged items, correct anything that's wrong
 8. **Fact-check against fextralife wiki** (see below). This step is mandatory — LLMs get location/enemy details wrong ~70% of the time
-9. Save the entire conversation as a markdown file (e.g. `convo-pure-arcane.md`)
+9. **Review against the quality guide** — verify region ordering, stat requirements on spells, missability warnings, and formatting rules from [checklist-quality-guide.md](./checklist-quality-guide.md)
+10. Save the entire conversation as a markdown file (e.g. `convo-pure-arcane.md`)
 
 ## Self-Verification Prompt (paste after the final item list is ready)
 

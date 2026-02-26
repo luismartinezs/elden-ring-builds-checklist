@@ -2,6 +2,8 @@
 
 Use this prompt to transform a Phase 1 conversation into a valid TypeScript checklist data file for `src/data/`.
 
+> **Before you start**: Read [checklist-quality-guide.md](./checklist-quality-guide.md) for formatting rules (capitalization, stat requirements inline, region ordering) that the generated code must follow.
+
 ## Instructions
 
 1. Replace `{{CONVERSATION_CONTENT}}` with the full Phase 1 conversation (copy-paste)

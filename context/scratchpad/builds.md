@@ -1,0 +1,7 @@
+- faith + dex (lightning)
+- pure arcane
+- pure strength
+- pure dexterity
+- pure intelligence
+- quality build (strength + dex)
+- strength + arcane

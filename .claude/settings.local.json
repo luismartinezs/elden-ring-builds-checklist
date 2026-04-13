@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": [
+    "sargon-umami",
+    "sargon-resend"
+  ]
+}

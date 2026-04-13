@@ -4,12 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Development Commands
 
-- `pnpm dev` - Start development server
-- `pnpm build` - Build for production (also generates sitemap via postbuild)
-- `pnpm start` - Start production server
-- `pnpm lint` - Run ESLint
-- `pnpm test` - Run tests once with Vitest
-- `pnpm test:watch` - Run tests in watch mode
+- `bun dev` - Start development server
+- `bun run build` - Build for production (also generates sitemap via postbuild)
+- `bun start` - Start production server
+- `bun lint` - Run ESLint
+- `bun test` - Run tests once with Vitest
+- `bun test:watch` - Run tests in watch mode
 
 ## Architecture Overview
 

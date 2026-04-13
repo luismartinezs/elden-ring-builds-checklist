@@ -46,8 +46,8 @@ An app for Elden Ring game checklists and challenges to make it easier to play t
 
 ## Generate sitemap
 
-- Run `pnpm build` locally
-- Run `pnpm sitemap` (there was a script `postbuild`, I replaced it)
+- Run `bun run build` locally
+- Run `bun sitemap` (there was a script `postbuild`, I replaced it)
 - Paste the content of `sitemap-0.xml` to `sitemap.xml` (google has problems to read `sitemap-0.xml`)
 
 ## Notes

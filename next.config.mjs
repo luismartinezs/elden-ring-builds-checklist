@@ -15,20 +15,13 @@ const withPWA = nextPWA({
 
 /** @type {import("next").NextConfig} */
 const config = {
+  // Static export, served by the Cloudflare Worker in ./worker (see wrangler.jsonc).
+  output: "export",
+  images: { unoptimized: true },
   reactStrictMode: true,
   swcMinify: true, // Enable SWC minification for improved performance
   compiler: {
     removeConsole: process.env.NODE_ENV !== "development", // Remove console.log in production
-  },
-
-  /**
-   * If you are using `appDir` then you must comment the below `i18n` config out.
-   *
-   * @see https://github.com/vercel/next.js/issues/41980
-   */
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
   },
 
   webpack: (config) => {

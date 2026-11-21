@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 - `bun dev` - Start development server
 - `bun run build` - Build for production (also generates sitemap via postbuild)
-- `bun start` - Start production server
+- `bun run deploy` - Build and deploy to Cloudflare Workers (eldenhub.appforgelabs.com)
 - `bun lint` - Run ESLint
 - `bun test` - Run tests once with Vitest
 - `bun test:watch` - Run tests in watch mode
@@ -33,6 +33,11 @@ This is a **Next.js application** for Elden Ring game checklists with feature-ba
 - **Leveling**: Character stat management and soft cap calculations  
 - **Profiles**: Multiple save profiles with separate progress
 - **Tags & Filters**: Customizable item filtering (OPTIONAL, character-specific, etc.)
+
+### Hosting
+- Static export (`output: "export"`) served by a Cloudflare Worker (`wrangler.jsonc`, `worker/index.ts`); no Next server at runtime
+- The Worker's only route is `POST /api/send-feedback`, sent through Resend; secrets `RESEND_API_KEY` and `FEEDBACK_TO` live in the Worker
+- Moved off Vercel 2026-11-21 (Hobby account paused for CDN request limits)
 
 ### Technology Stack
 - Next.js 13 with Pages Router
